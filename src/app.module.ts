@@ -10,6 +10,10 @@ import { MessagesModule } from './modules/messages/messages.module';
 import { Message } from './modules/messages/entities/message.entity';
 import { ContentModule } from './modules/content/content.module';
 import { TopicCategory } from './modules/content/entities/topic-category.entity';
+import { Topic } from './modules/content/entities/topic.entity';
+import { Subtopic } from './modules/content/entities/subtopic.entity';
+import { ContentNode } from './modules/content/entities/content-node.entity';
+import { ContentNodeOption } from './modules/content/entities/content-node-option.entity';
 
 @Module({
   imports: [
@@ -22,7 +26,17 @@ import { TopicCategory } from './modules/content/entities/topic-category.entity'
       database: process.env.DB_NAME || 'sema-nami-chatbot',
       synchronize: false,
       autoLoadEntities: true,
-      entities: [User, UserProfile, ChatSession, Message, TopicCategory],
+      entities: [
+        User,
+        UserProfile,
+        ChatSession,
+        Message,
+        TopicCategory,
+        Topic,
+        Subtopic,
+        ContentNode,
+        ContentNodeOption,
+      ],
     }),
     UsersModule,
     ProfileModule,

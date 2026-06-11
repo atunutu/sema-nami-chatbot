@@ -4,12 +4,31 @@ import { AgeBand } from '../../../common/enums/age-band.enum';
 import { Gender } from '../../../common/enums/gender.enum';
 import { Repository } from 'typeorm';
 import { TopicCategory } from '../entities/topic-category.entity';
+import { Topic } from '../entities/topic.entity';
+import { Subtopic } from '../entities/subtopic.entity';
+import { ContentNode } from '../entities/content-node.entity';
+import { InputType } from 'src/common/enums/input-type.enum';
+import { Language } from 'src/common/enums/language.enum';
+import { NodeType } from 'src/common/enums/node-type.enum';
+import { ContentNodeOption } from '../entities/content-node-option.entity';
 
 @Injectable()
 export class ContentService {
   constructor(
     @InjectRepository(TopicCategory)
     private readonly topicCategoriesRepository: Repository<TopicCategory>,
+
+    @InjectRepository(Topic)
+    private readonly topicsRepository: Repository<Topic>,
+
+    @InjectRepository(Subtopic)
+    private readonly subtopicsRepository: Repository<Subtopic>,
+
+    @InjectRepository(ContentNode)
+    private readonly contentNodesRepository: Repository<ContentNode>,
+
+    @InjectRepository(ContentNodeOption)
+    private readonly contentNodeOptionsRepository: Repository<ContentNodeOption>,
   ) {}
 
   async createCategory(data: {
@@ -65,6 +84,256 @@ export class ContentService {
   async findCategoryByCode(code: string): Promise<TopicCategory | null> {
     return this.topicCategoriesRepository.findOne({
       where: { code },
+    });
+  }
+
+  async createTopic(data: {
+    categoryId: string;
+    code: string;
+    titleEn: string;
+    titleSw: string;
+    descriptionEn?: string | null;
+    descriptionSw?: string | null;
+    audienceGender?: Gender | null;
+    ageBandRule?: AgeBand | null;
+    sortOrder?: number;
+    isActive?: boolean;
+  }): Promise<Topic> {
+    const topic = this.topicsRepository.create({
+      categoryId: data.categoryId,
+      code: data.code,
+      titleEn: data.titleEn,
+      titleSw: data.titleSw,
+      descriptionEn: data.descriptionEn ?? null,
+      descriptionSw: data.descriptionSw ?? null,
+      audienceGender: data.audienceGender ?? null,
+      ageBandRule: data.ageBandRule ?? null,
+      sortOrder: data.sortOrder ?? 0,
+      isActive: data.isActive ?? true,
+    });
+
+    return this.topicsRepository.save(topic);
+  }
+
+  async getActiveTopicsByCategoryId(categoryId: string): Promise<Topic[]> {
+    return this.topicsRepository.find({
+      where: {
+        categoryId,
+        isActive: true,
+      },
+      order: {
+        sortOrder: 'ASC',
+        createdAt: 'ASC',
+      },
+    });
+  }
+
+  async getVisibleTopicsByCategoryId(
+    categoryId: string,
+    filters?: {
+      ageBand?: AgeBand | null;
+      gender?: Gender | null;
+    },
+  ): Promise<Topic[]> {
+    const topics = await this.getActiveTopicsByCategoryId(categoryId);
+
+    return topics.filter((topic) => {
+      const genderMatches =
+        !topic.audienceGender || topic.audienceGender === filters?.gender;
+
+      const ageMatches =
+        !topic.ageBandRule || topic.ageBandRule === filters?.ageBand;
+
+      return genderMatches && ageMatches;
+    });
+  }
+
+  async findTopicByCode(code: string): Promise<Topic | null> {
+    return this.topicsRepository.findOne({
+      where: { code },
+    });
+  }
+
+  async createSubtopic(data: {
+    topicId: string;
+    code: string;
+    titleEn: string;
+    titleSw: string;
+    descriptionEn?: string | null;
+    descriptionSw?: string | null;
+    audienceGender?: Gender | null;
+    ageBandRule?: AgeBand | null;
+    sortOrder?: number;
+    isActive?: boolean;
+  }): Promise<Subtopic> {
+    const subtopic = this.subtopicsRepository.create({
+      topicId: data.topicId,
+      code: data.code,
+      titleEn: data.titleEn,
+      titleSw: data.titleSw,
+      descriptionEn: data.descriptionEn ?? null,
+      descriptionSw: data.descriptionSw ?? null,
+      audienceGender: data.audienceGender ?? null,
+      ageBandRule: data.ageBandRule ?? null,
+      sortOrder: data.sortOrder ?? 0,
+      isActive: data.isActive ?? true,
+    });
+
+    return this.subtopicsRepository.save(subtopic);
+  }
+
+  async getActiveSubtopicsByTopicId(topicId: string): Promise<Subtopic[]> {
+    return this.subtopicsRepository.find({
+      where: {
+        topicId,
+        isActive: true,
+      },
+      order: {
+        sortOrder: 'ASC',
+        createdAt: 'ASC',
+      },
+    });
+  }
+
+  async getVisibleSubtopicsByTopicId(
+    topicId: string,
+    filters?: {
+      ageBand?: AgeBand | null;
+      gender?: Gender | null;
+    },
+  ): Promise<Subtopic[]> {
+    const subtopics = await this.getActiveSubtopicsByTopicId(topicId);
+
+    return subtopics.filter((subtopic) => {
+      const genderMatches =
+        !subtopic.audienceGender || subtopic.audienceGender === filters?.gender;
+
+      const ageMatches =
+        !subtopic.ageBandRule || subtopic.ageBandRule === filters?.ageBand;
+
+      return genderMatches && ageMatches;
+    });
+  }
+
+  async findSubtopicByCode(code: string): Promise<Subtopic | null> {
+    return this.subtopicsRepository.findOne({
+      where: { code },
+    });
+  }
+  async createContentNode(data: {
+    categoryId?: string | null;
+    topicId?: string | null;
+    subtopicId?: string | null;
+    nodeKey: string;
+    nodeType: NodeType;
+    language: Language;
+    messageText: string;
+    inputType?: InputType;
+    mediaAssetKey?: string | null;
+    isStartNode?: boolean;
+    isEndNode?: boolean;
+    sortOrder?: number;
+    isActive?: boolean;
+  }): Promise<ContentNode> {
+    const contentNode = this.contentNodesRepository.create({
+      categoryId: data.categoryId ?? null,
+      topicId: data.topicId ?? null,
+      subtopicId: data.subtopicId ?? null,
+      nodeKey: data.nodeKey,
+      nodeType: data.nodeType,
+      language: data.language,
+      messageText: data.messageText,
+      inputType: data.inputType ?? InputType.NONE,
+      mediaAssetKey: data.mediaAssetKey ?? null,
+      isStartNode: data.isStartNode ?? false,
+      isEndNode: data.isEndNode ?? false,
+      sortOrder: data.sortOrder ?? 0,
+      isActive: data.isActive ?? true,
+    });
+
+    return this.contentNodesRepository.save(contentNode);
+  }
+
+  async findContentNodeByKeyAndLanguage(
+    nodeKey: string,
+    language: Language,
+  ): Promise<ContentNode | null> {
+    return this.contentNodesRepository.findOne({
+      where: {
+        nodeKey,
+        language,
+      },
+    });
+  }
+
+  async getActiveContentNodesBySubtopicId(
+    subtopicId: string,
+    language: Language,
+  ): Promise<ContentNode[]> {
+    return this.contentNodesRepository.find({
+      where: {
+        subtopicId,
+        language,
+        isActive: true,
+      },
+      order: {
+        sortOrder: 'ASC',
+        createdAt: 'ASC',
+      },
+    });
+  }
+
+  async getStartContentNodeBySubtopicId(
+    subtopicId: string,
+    language: Language,
+  ): Promise<ContentNode | null> {
+    return this.contentNodesRepository.findOne({
+      where: {
+        subtopicId,
+        language,
+        isStartNode: true,
+        isActive: true,
+      },
+      order: {
+        sortOrder: 'ASC',
+        createdAt: 'ASC',
+      },
+    });
+  }
+  async createContentNodeOption(data: {
+    contentNodeId: string;
+    labelEn: string;
+    labelSw: string;
+    optionValue: string;
+    nextNodeKey: string;
+    sortOrder?: number;
+    isActive?: boolean;
+  }): Promise<ContentNodeOption> {
+    const option = this.contentNodeOptionsRepository.create({
+      contentNodeId: data.contentNodeId,
+      labelEn: data.labelEn,
+      labelSw: data.labelSw,
+      optionValue: data.optionValue,
+      nextNodeKey: data.nextNodeKey,
+      sortOrder: data.sortOrder ?? 0,
+      isActive: data.isActive ?? true,
+    });
+
+    return this.contentNodeOptionsRepository.save(option);
+  }
+
+  async getActiveOptionsByContentNodeId(
+    contentNodeId: string,
+  ): Promise<ContentNodeOption[]> {
+    return this.contentNodeOptionsRepository.find({
+      where: {
+        contentNodeId,
+        isActive: true,
+      },
+      order: {
+        sortOrder: 'ASC',
+        createdAt: 'ASC',
+      },
     });
   }
 }

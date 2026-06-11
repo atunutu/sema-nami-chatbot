@@ -1,19 +1,31 @@
-import { AgeBand } from '../../../common/enums/age-band.enum';
-import { Gender } from '../../../common/enums/gender.enum';
 import {
   Column,
   CreateDateColumn,
   Entity,
+  JoinColumn,
+  ManyToOne,
   OneToMany,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
 import { Topic } from './topic.entity';
+import { AgeBand } from '../../../common/enums/age-band.enum';
+import { Gender } from '../../../common/enums/gender.enum';
+import { ContentNode } from './content-node.entity';
 
-@Entity({ name: 'topic_categories' })
-export class TopicCategory {
+@Entity({ name: 'subtopics' })
+export class Subtopic {
   @PrimaryGeneratedColumn('uuid')
   id: string;
+
+  @Column({ name: 'topic_id', type: 'uuid' })
+  topicId: string;
+
+  @ManyToOne(() => Topic, (topic) => topic.subtopics, {
+    onDelete: 'CASCADE',
+  })
+  @JoinColumn({ name: 'topic_id' })
+  topic: Topic;
 
   @Column({ name: 'code', type: 'varchar', length: 100, unique: true })
   code: string;
@@ -80,6 +92,6 @@ export class TopicCategory {
   })
   updatedAt: Date;
 
-  @OneToMany(() => Topic, (topic) => topic.category)
-  topics?: Topic[];
+  @OneToMany(() => ContentNode, (contentNode) => contentNode.subtopic)
+  contentNodes?: ContentNode[];
 }
