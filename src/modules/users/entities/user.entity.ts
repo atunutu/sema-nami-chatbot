@@ -1,13 +1,16 @@
-import { UserProfile } from 'src/modules/profile/entities/user-profile.entity';
+import { ChatSession } from '../../../modules/session/entities/chat-session.entity';
+import { UserProfile } from '../../../modules/profile/entities/user-profile.entity';
 import {
   Column,
   CreateDateColumn,
   Entity,
   Index,
+  OneToMany,
   OneToOne,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
+import { Message } from '../../../modules/messages/entities/message.entity';
 
 @Entity({ name: 'users' })
 export class User {
@@ -30,6 +33,12 @@ export class User {
 
   @OneToOne(() => UserProfile, (profile) => profile.user)
   profile?: UserProfile;
+
+  @OneToMany(() => ChatSession, (session) => session.user)
+  chatSessions?: ChatSession[];
+
+  @OneToMany(() => Message, (message) => message.user)
+  messages?: Message[];
 
   @CreateDateColumn({
     name: 'created_at',

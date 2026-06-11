@@ -1,0 +1,15 @@
+export enum ChatState {
+  WELCOME = 'welcome',
+  ASK_LANGUAGE = 'ask_language',
+  ASK_AGE_BAND = 'ask_age_band',
+  ASK_GENDER = 'ask_gender',
+  ASK_TOPIC_CATEGORY = 'ask_topic_category',
+  RETURNING_HOME = 'returning_home',
+  CATEGORY_MENU = 'category_menu',
+  TOPIC_MENU = 'topic_menu',
+  SUBTOPIC_MENU = 'subtopic_menu',
+  CONTENT_NODE = 'content_node',
+  FALLBACK = 'fallback',
+  SAFEGUARDING_INTERRUPT = 'safeguarding_interrupt',
+  COMPLETED = 'completed',
+}

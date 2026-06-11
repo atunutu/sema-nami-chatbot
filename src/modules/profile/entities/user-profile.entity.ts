@@ -1,7 +1,7 @@
-import { AgeBand } from 'src/common/enums/age-band.enum';
-import { Gender } from 'src/common/enums/gender.enum';
-import { Language } from 'src/common/enums/language.enum';
-import { User } from 'src/modules/users/entities/user.entity';
+import { AgeBand } from '../../../common/enums/age-band.enum';
+import { Gender } from '../../../common/enums/gender.enum';
+import { Language } from '../../..//common/enums/language.enum';
+import { User } from '../../users/entities/user.entity';
 import {
   Column,
   CreateDateColumn,
