@@ -7,9 +7,11 @@ import { InputType } from 'src/common/enums/input-type.enum';
 import { Language } from 'src/common/enums/language.enum';
 import { MessageType } from 'src/common/enums/message-type.enum';
 import { NodeType } from 'src/common/enums/node-type.enum';
+import { TriggerCategory } from 'src/common/enums/trigger-category.enum';
 import { ContentService } from 'src/modules/content/services/content.service';
 import { MessagesService } from 'src/modules/messages/services/messages.service';
 import { ProfileService } from 'src/modules/profile/services/profile.service';
+import { SafeguardingService } from 'src/modules/safeguarding/services/safeguarding.service';
 import { SessionService } from 'src/modules/session/services/session.service';
 import { UsersService } from 'src/modules/users/services/user.service';
 
@@ -534,7 +536,154 @@ async function run() {
       );
     console.log('Related subtopics from menstrual hygiene:', relatedSubtopics);
     console.log('\n==============================');
-    console.log('10. SESSION COMPLETION TEST');
+    console.log('10. SAFEGUARDING TRIGGER TESTS');
+    console.log('==============================\n');
+
+    const safeguardingService = app.get(SafeguardingService);
+
+    const allTriggersBefore =
+      await safeguardingService.getActiveTriggersByLanguage(Language.EN);
+
+    const hasForcedTrigger = allTriggersBefore.some(
+      (trigger) =>
+        trigger.triggerCategory === TriggerCategory.ABUSE &&
+        trigger.language === Language.EN &&
+        trigger.phrase === 'forced me',
+    );
+
+    if (!hasForcedTrigger) {
+      const createdTrigger = await safeguardingService.createTrigger({
+        triggerCategory: TriggerCategory.ABUSE,
+        language: Language.EN,
+        phrase: 'forced me',
+      });
+      console.log('Created EN abuse trigger:', createdTrigger);
+    } else {
+      console.log('EN abuse trigger already exists.');
+    }
+
+    const allSwTriggersBefore =
+      await safeguardingService.getActiveTriggersByLanguage(Language.SW);
+
+    const hasSwTrigger = allSwTriggersBefore.some(
+      (trigger) =>
+        trigger.triggerCategory === TriggerCategory.ABUSE &&
+        trigger.language === Language.SW &&
+        trigger.phrase === 'amenilazimisha',
+    );
+
+    if (!hasSwTrigger) {
+      const createdSwTrigger = await safeguardingService.createTrigger({
+        triggerCategory: TriggerCategory.ABUSE,
+        language: Language.SW,
+        phrase: 'amenilazimisha',
+      });
+      console.log('Created SW abuse trigger:', createdSwTrigger);
+    } else {
+      console.log('SW abuse trigger already exists.');
+    }
+
+    const detectedEn = await safeguardingService.detectTrigger(
+      'My teacher forced me to do something I did not want.',
+      Language.EN,
+    );
+    console.log('Detected EN trigger:', detectedEn);
+
+    const detectedSw = await safeguardingService.detectTrigger(
+      'Mtu amenilazimisha kufanya kitu ambacho sitaki.',
+      Language.SW,
+    );
+    console.log('Detected SW trigger:', detectedSw);
+
+    const notDetected = await safeguardingService.detectTrigger(
+      'I would like to learn about periods.',
+      Language.EN,
+    );
+    console.log('Non-trigger message result:', notDetected);
+
+    console.log('\n==============================');
+    console.log('11. SAFEGUARDING RESPONSE TESTS');
+    console.log('==============================\n');
+
+    const existingEnResponse =
+      await safeguardingService.getActiveResponseByCategoryAndLanguage(
+        TriggerCategory.ABUSE,
+        Language.EN,
+      );
+
+    if (!existingEnResponse) {
+      const createdEnResponse = await safeguardingService.createResponse({
+        triggerCategory: TriggerCategory.ABUSE,
+        language: Language.EN,
+        responseText:
+          'Thank you for sharing that. What happened is not okay, and your safety matters. If you can, please speak to a trusted adult, healthcare provider, or support service for help.',
+        showReferrals: true,
+        allowReturnToMenu: true,
+      });
+      console.log('Created EN safeguarding response:', createdEnResponse);
+    } else {
+      console.log(
+        'EN safeguarding response already exists:',
+        existingEnResponse,
+      );
+    }
+
+    const existingSwResponse =
+      await safeguardingService.getActiveResponseByCategoryAndLanguage(
+        TriggerCategory.ABUSE,
+        Language.SW,
+      );
+
+    if (!existingSwResponse) {
+      const createdSwResponse = await safeguardingService.createResponse({
+        triggerCategory: TriggerCategory.ABUSE,
+        language: Language.SW,
+        responseText:
+          'Asante kwa kushiriki hilo. Kilichotokea si sawa, na usalama wako ni muhimu. Ikiwa unaweza, tafadhali zungumza na mtu mzima unayemwamini, mhudumu wa afya, au huduma ya msaada.',
+        showReferrals: true,
+        allowReturnToMenu: true,
+      });
+      console.log('Created SW safeguarding response:', createdSwResponse);
+    } else {
+      console.log(
+        'SW safeguarding response already exists:',
+        existingSwResponse,
+      );
+    }
+
+    const abuseEnResponse =
+      await safeguardingService.getActiveResponseByCategoryAndLanguage(
+        TriggerCategory.ABUSE,
+        Language.EN,
+      );
+    console.log('Fetched EN abuse response:', abuseEnResponse);
+
+    const abuseSwResponse =
+      await safeguardingService.getActiveResponseByCategoryAndLanguage(
+        TriggerCategory.ABUSE,
+        Language.SW,
+      );
+    console.log('Fetched SW abuse response:', abuseSwResponse);
+
+    const builtReplyEn = await safeguardingService.buildSafeguardingReply(
+      'My teacher forced me to do something I did not want.',
+      Language.EN,
+    );
+    console.log('Built safeguarding reply EN:', builtReplyEn);
+
+    const builtReplySw = await safeguardingService.buildSafeguardingReply(
+      'Mtu amenilazimisha kufanya kitu ambacho sitaki.',
+      Language.SW,
+    );
+    console.log('Built safeguarding reply SW:', builtReplySw);
+
+    const builtReplyNone = await safeguardingService.buildSafeguardingReply(
+      'I want to learn about menstruation.',
+      Language.EN,
+    );
+    console.log('Built safeguarding reply for safe message:', builtReplyNone);
+    console.log('\n==============================');
+    console.log('12. SESSION COMPLETION TEST');
     console.log('==============================\n');
 
     const completedSession = await sessionService.completeSession(session.id);

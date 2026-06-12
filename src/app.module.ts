@@ -15,6 +15,8 @@ import { Subtopic } from './modules/content/entities/subtopic.entity';
 import { ContentNode } from './modules/content/entities/content-node.entity';
 import { ContentNodeOption } from './modules/content/entities/content-node-option.entity';
 import { SubtopicRelatedLink } from './modules/content/entities/subtopic-related-link.entity';
+import { SafeguardingModule } from './modules/safeguarding/safeguarding.module';
+import { SafeguardingTrigger } from './modules/safeguarding/entities/safeguarding-trigger.entity';
 
 @Module({
   imports: [
@@ -38,6 +40,7 @@ import { SubtopicRelatedLink } from './modules/content/entities/subtopic-related
         ContentNode,
         ContentNodeOption,
         SubtopicRelatedLink,
+        SafeguardingTrigger,
       ],
     }),
     UsersModule,
@@ -45,6 +48,7 @@ import { SubtopicRelatedLink } from './modules/content/entities/subtopic-related
     SessionModule,
     MessagesModule,
     ContentModule,
+    SafeguardingModule,
   ],
   controllers: [],
   providers: [],

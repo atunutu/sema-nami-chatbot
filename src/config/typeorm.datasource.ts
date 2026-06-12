@@ -10,6 +10,8 @@ import { Subtopic } from '../modules/content/entities/subtopic.entity';
 import { ContentNode } from '../modules/content/entities/content-node.entity';
 import { ContentNodeOption } from '../modules/content/entities/content-node-option.entity';
 import { SubtopicRelatedLink } from '../modules/content/entities/subtopic-related-link.entity';
+import { SafeguardingTrigger } from '../modules/safeguarding/entities/safeguarding-trigger.entity';
+import { SafeguardingResponse } from '../modules/safeguarding/entities/safeguarding-response.entity';
 
 export default new DataSource({
   type: 'postgres',
@@ -29,6 +31,8 @@ export default new DataSource({
     ContentNode,
     ContentNodeOption,
     SubtopicRelatedLink,
+    SafeguardingTrigger,
+    SafeguardingResponse,
   ],
   migrations: ['src/database/migrations/*.ts'],
   synchronize: false,
