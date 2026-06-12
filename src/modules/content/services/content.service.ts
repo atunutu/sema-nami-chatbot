@@ -11,6 +11,7 @@ import { InputType } from 'src/common/enums/input-type.enum';
 import { Language } from 'src/common/enums/language.enum';
 import { NodeType } from 'src/common/enums/node-type.enum';
 import { ContentNodeOption } from '../entities/content-node-option.entity';
+import { SubtopicRelatedLink } from '../entities/subtopic-related-link.entity';
 
 @Injectable()
 export class ContentService {
@@ -29,6 +30,9 @@ export class ContentService {
 
     @InjectRepository(ContentNodeOption)
     private readonly contentNodeOptionsRepository: Repository<ContentNodeOption>,
+
+    @InjectRepository(SubtopicRelatedLink)
+    private readonly subtopicRelatedLinksRepository: Repository<SubtopicRelatedLink>,
   ) {}
 
   async createCategory(data: {
@@ -335,5 +339,52 @@ export class ContentService {
         createdAt: 'ASC',
       },
     });
+  }
+
+  async createSubtopicRelatedLink(data: {
+    fromSubtopicId: string;
+    toSubtopicId: string;
+    sortOrder?: number;
+  }): Promise<SubtopicRelatedLink> {
+    const relatedLink = this.subtopicRelatedLinksRepository.create({
+      fromSubtopicId: data.fromSubtopicId,
+      toSubtopicId: data.toSubtopicId,
+      sortOrder: data.sortOrder ?? 0,
+    });
+
+    return this.subtopicRelatedLinksRepository.save(relatedLink);
+  }
+
+  async getRelatedLinksBySubtopicId(
+    fromSubtopicId: string,
+  ): Promise<SubtopicRelatedLink[]> {
+    return this.subtopicRelatedLinksRepository.find({
+      where: { fromSubtopicId },
+      order: {
+        sortOrder: 'ASC',
+        createdAt: 'ASC',
+      },
+    });
+  }
+
+  async getRelatedSubtopicsBySubtopicId(
+    fromSubtopicId: string,
+  ): Promise<Subtopic[]> {
+    const relatedLinks = await this.subtopicRelatedLinksRepository.find({
+      where: { fromSubtopicId },
+      relations: {
+        toSubtopic: true,
+      },
+      order: {
+        sortOrder: 'ASC',
+        createdAt: 'ASC',
+      },
+    });
+
+    return relatedLinks
+      .map((link) => link.toSubtopic)
+      .filter(
+        (subtopic): subtopic is Subtopic => !!subtopic && subtopic.isActive,
+      );
   }
 }

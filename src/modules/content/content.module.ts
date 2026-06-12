@@ -6,6 +6,7 @@ import { Topic } from './entities/topic.entity';
 import { Subtopic } from './entities/subtopic.entity';
 import { ContentNode } from './entities/content-node.entity';
 import { ContentNodeOption } from './entities/content-node-option.entity';
+import { SubtopicRelatedLink } from './entities/subtopic-related-link.entity';
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { ContentNodeOption } from './entities/content-node-option.entity';
       Subtopic,
       ContentNode,
       ContentNodeOption,
+      SubtopicRelatedLink,
     ]),
   ],
   providers: [ContentService],

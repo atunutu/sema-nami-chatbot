@@ -490,7 +490,51 @@ async function run() {
       );
     console.log('Resolved next node by key/language:', resolvedNextNode);
     console.log('\n==============================');
-    console.log('9. SESSION COMPLETION TEST');
+    console.log('9. SUBTOPIC RELATED LINK TESTS');
+    console.log('==============================\n');
+
+    const menstrualHygieneSubtopicForLinks =
+      await contentService.findSubtopicByCode('MENSTRUAL_HYGIENE');
+    if (!menstrualHygieneSubtopicForLinks) {
+      throw new Error('MENSTRUAL_HYGIENE subtopic was not found.');
+    }
+
+    if (!irregularPeriodsSubtopic) {
+      throw new Error('IRREGULAR_PERIODS subtopic was not found.');
+    }
+
+    const existingRelatedLinks =
+      await contentService.getRelatedLinksBySubtopicId(
+        menstrualHygieneSubtopicForLinks.id,
+      );
+
+    const alreadyLinked = existingRelatedLinks.some(
+      (link) => link.toSubtopicId === irregularPeriodsSubtopic.id,
+    );
+
+    if (!alreadyLinked) {
+      const relatedLink = await contentService.createSubtopicRelatedLink({
+        fromSubtopicId: menstrualHygieneSubtopicForLinks.id,
+        toSubtopicId: irregularPeriodsSubtopic.id,
+        sortOrder: 1,
+      });
+      console.log('Created related link:', relatedLink);
+    } else {
+      console.log('Related link already exists:', existingRelatedLinks);
+    }
+
+    const relatedLinks = await contentService.getRelatedLinksBySubtopicId(
+      menstrualHygieneSubtopicForLinks.id,
+    );
+    console.log('Related links from menstrual hygiene:', relatedLinks);
+
+    const relatedSubtopics =
+      await contentService.getRelatedSubtopicsBySubtopicId(
+        menstrualHygieneSubtopicForLinks.id,
+      );
+    console.log('Related subtopics from menstrual hygiene:', relatedSubtopics);
+    console.log('\n==============================');
+    console.log('10. SESSION COMPLETION TEST');
     console.log('==============================\n');
 
     const completedSession = await sessionService.completeSession(session.id);

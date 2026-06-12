@@ -14,6 +14,7 @@ import { Topic } from './modules/content/entities/topic.entity';
 import { Subtopic } from './modules/content/entities/subtopic.entity';
 import { ContentNode } from './modules/content/entities/content-node.entity';
 import { ContentNodeOption } from './modules/content/entities/content-node-option.entity';
+import { SubtopicRelatedLink } from './modules/content/entities/subtopic-related-link.entity';
 
 @Module({
   imports: [
@@ -36,6 +37,7 @@ import { ContentNodeOption } from './modules/content/entities/content-node-optio
         Subtopic,
         ContentNode,
         ContentNodeOption,
+        SubtopicRelatedLink,
       ],
     }),
     UsersModule,

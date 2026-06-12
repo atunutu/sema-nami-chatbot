@@ -9,6 +9,7 @@ import { Topic } from '../modules/content/entities/topic.entity';
 import { Subtopic } from '../modules/content/entities/subtopic.entity';
 import { ContentNode } from '../modules/content/entities/content-node.entity';
 import { ContentNodeOption } from '../modules/content/entities/content-node-option.entity';
+import { SubtopicRelatedLink } from '../modules/content/entities/subtopic-related-link.entity';
 
 export default new DataSource({
   type: 'postgres',
@@ -27,6 +28,7 @@ export default new DataSource({
     Subtopic,
     ContentNode,
     ContentNodeOption,
+    SubtopicRelatedLink,
   ],
   migrations: ['src/database/migrations/*.ts'],
   synchronize: false,
