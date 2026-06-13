@@ -114,4 +114,27 @@ export class SessionService {
 
     return session;
   }
+
+  async updateStateAndLocation(
+    sessionId: string,
+    data: {
+      currentState: ChatState;
+      currentCategoryCode?: string | null;
+      currentTopicCode?: string | null;
+      currentSubtopicCode?: string | null;
+      currentNodeKey?: string | null;
+      previousNodeKey?: string | null;
+    },
+  ): Promise<ChatSession> {
+    await this.chatSessionsRepository.update(sessionId, {
+      currentState: data.currentState,
+      currentCategoryCode: data.currentCategoryCode ?? null,
+      currentTopicCode: data.currentTopicCode ?? null,
+      currentSubtopicCode: data.currentSubtopicCode ?? null,
+      currentNodeKey: data.currentNodeKey ?? null,
+      previousNodeKey: data.previousNodeKey ?? null,
+    });
+
+    return this.getSessionOrFail(sessionId);
+  }
 }

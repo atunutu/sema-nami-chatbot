@@ -387,4 +387,40 @@ export class ContentService {
         (subtopic): subtopic is Subtopic => !!subtopic && subtopic.isActive,
       );
   }
+
+  async getOptionsByNodeKeyAndLanguage(
+    nodeKey: string,
+    language: Language,
+  ): Promise<ContentNodeOption[]> {
+    const node = await this.findContentNodeByKeyAndLanguage(nodeKey, language);
+
+    if (!node) {
+      return [];
+    }
+
+    return this.getActiveOptionsByContentNodeId(node.id);
+  }
+
+  async resolveNextNodeByOption(data: {
+    contentNodeId: string;
+    optionValue: string;
+    language: Language;
+  }): Promise<ContentNode | null> {
+    const options = await this.getActiveOptionsByContentNodeId(
+      data.contentNodeId,
+    );
+
+    const matchedOption = options.find(
+      (option) => option.optionValue === data.optionValue,
+    );
+
+    if (!matchedOption) {
+      return null;
+    }
+
+    return this.findContentNodeByKeyAndLanguage(
+      matchedOption.nextNodeKey,
+      data.language,
+    );
+  }
 }

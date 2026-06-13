@@ -7,10 +7,13 @@ import { InputType } from 'src/common/enums/input-type.enum';
 import { Language } from 'src/common/enums/language.enum';
 import { MessageType } from 'src/common/enums/message-type.enum';
 import { NodeType } from 'src/common/enums/node-type.enum';
+import { ResourceType } from 'src/common/enums/resource-type.enum';
 import { TriggerCategory } from 'src/common/enums/trigger-category.enum';
+import { ChatOrchestratorService } from 'src/modules/chat/services/chat-orchestrator.service';
 import { ContentService } from 'src/modules/content/services/content.service';
 import { MessagesService } from 'src/modules/messages/services/messages.service';
 import { ProfileService } from 'src/modules/profile/services/profile.service';
+import { ReferralsService } from 'src/modules/referrals/services/referrals.service';
 import { SafeguardingService } from 'src/modules/safeguarding/services/safeguarding.service';
 import { SessionService } from 'src/modules/session/services/session.service';
 import { UsersService } from 'src/modules/users/services/user.service';
@@ -682,8 +685,167 @@ async function run() {
       Language.EN,
     );
     console.log('Built safeguarding reply for safe message:', builtReplyNone);
+
     console.log('\n==============================');
-    console.log('12. SESSION COMPLETION TEST');
+    console.log('12. REFERRAL RESOURCE TESTS');
+    console.log('==============================\n');
+
+    const referralsService = app.get(ReferralsService);
+
+    let hotline116 =
+      await referralsService.findReferralResourceByName('Child Helpline 116');
+
+    if (!hotline116) {
+      hotline116 = await referralsService.createReferralResource({
+        resourceType: ResourceType.HOTLINE,
+        name: 'Child Helpline 116',
+        descriptionEn:
+          'A hotline for children and young people needing urgent support.',
+        descriptionSw:
+          'Namba ya msaada kwa watoto na vijana wanaohitaji msaada wa haraka.',
+        contactDetails: '116',
+        locationName: null,
+        region: null,
+        district: null,
+      });
+      console.log('Created hotline resource:', hotline116);
+    } else {
+      console.log('Hotline resource already exists:', hotline116);
+    }
+
+    let socialWelfareDesk = await referralsService.findReferralResourceByName(
+      'Social Welfare Desk',
+    );
+
+    if (!socialWelfareDesk) {
+      socialWelfareDesk = await referralsService.createReferralResource({
+        resourceType: ResourceType.SOCIAL_WELFARE,
+        name: 'Social Welfare Desk',
+        descriptionEn:
+          'Support through local social welfare services for children, adolescents, and families.',
+        descriptionSw:
+          'Msaada kupitia huduma za ustawi wa jamii kwa watoto, vijana, na familia.',
+        contactDetails:
+          'Visit the nearest district or municipal social welfare office.',
+        locationName: null,
+        region: null,
+        district: null,
+      });
+      console.log('Created social welfare resource:', socialWelfareDesk);
+    } else {
+      console.log('Social welfare resource already exists:', socialWelfareDesk);
+    }
+
+    const allReferralResources =
+      await referralsService.getActiveReferralResources();
+    console.log('All active referral resources:', allReferralResources);
+
+    const hotlineResources =
+      await referralsService.getActiveReferralResourcesByType(
+        ResourceType.HOTLINE,
+      );
+    console.log('Hotline referral resources:', hotlineResources);
+
+    const socialWelfareResources =
+      await referralsService.getActiveReferralResourcesByType(
+        ResourceType.SOCIAL_WELFARE,
+      );
+    console.log('Social welfare referral resources:', socialWelfareResources);
+
+    console.log('\n==============================');
+    console.log('13. HELPER METHOD TESTS');
+    console.log('==============================\n');
+
+    const onboardingComplete = await profileService.isOnboardingComplete(
+      user.id,
+    );
+    console.log('Is onboarding complete?', onboardingComplete);
+
+    const syncedSession = await sessionService.updateStateAndLocation(
+      session.id,
+      {
+        currentState: ChatState.CONTENT_NODE,
+        currentCategoryCode: 'PERIODS_MENSTRUAL_HEALTH',
+        currentTopicCode: 'MENSTRUATION',
+        currentSubtopicCode: 'MENSTRUAL_HYGIENE',
+        currentNodeKey: 'MENS_HYGIENE_INTRO',
+        previousNodeKey: null,
+      },
+    );
+    console.log(
+      'Session updated with state + location together:',
+      syncedSession,
+    );
+    const introNodeOptionsByKey =
+      await contentService.getOptionsByNodeKeyAndLanguage(
+        'MENS_HYGIENE_INTRO',
+        Language.EN,
+      );
+    console.log('Options by node key + language:', introNodeOptionsByKey);
+
+    const introNode = await contentService.findContentNodeByKeyAndLanguage(
+      'MENS_HYGIENE_INTRO',
+      Language.EN,
+    );
+
+    if (!introNode) {
+      throw new Error('Intro node was not found for helper test.');
+    }
+
+    const resolvedNextNode2 = await contentService.resolveNextNodeByOption({
+      contentNodeId: introNode.id,
+      optionValue: 'tell_me_more',
+      language: Language.EN,
+    });
+    console.log('Resolved next node by option:', resolvedNextNode2);
+
+    console.log('\n==============================');
+    console.log('14. CHAT ORCHESTRATOR TESTS');
+    console.log('==============================\n');
+
+    const chatOrchestratorService = new ChatOrchestratorService(
+      usersService,
+      profileService,
+      sessionService,
+      contentService,
+    );
+
+    const testPhoneNumber = '255700000002';
+
+    const step1 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: testPhoneNumber,
+      text: 'Hi',
+    });
+    console.log('Orchestrator step 1:', step1);
+
+    const step2 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: testPhoneNumber,
+      interactiveValue: Language.EN,
+    });
+    console.log('Orchestrator step 2:', step2);
+
+    const step3 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: testPhoneNumber,
+      interactiveValue: AgeBand.AGE_18_20,
+    });
+    console.log('Orchestrator step 3:', step3);
+
+    const step4 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: testPhoneNumber,
+      interactiveValue: Gender.FEMALE,
+    });
+    console.log('Orchestrator step 4:', step4);
+
+    const onboardingProfile = await profileService.findByUserId(
+      (await usersService.findOrCreateByWhatsAppPhoneNumber(testPhoneNumber))
+        .id,
+    );
+    console.log(
+      'Onboarding profile after orchestrator flow:',
+      onboardingProfile,
+    );
+    console.log('\n==============================');
+    console.log('15. SESSION COMPLETION TEST');
     console.log('==============================\n');
 
     const completedSession = await sessionService.completeSession(session.id);

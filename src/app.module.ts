@@ -17,6 +17,9 @@ import { ContentNodeOption } from './modules/content/entities/content-node-optio
 import { SubtopicRelatedLink } from './modules/content/entities/subtopic-related-link.entity';
 import { SafeguardingModule } from './modules/safeguarding/safeguarding.module';
 import { SafeguardingTrigger } from './modules/safeguarding/entities/safeguarding-trigger.entity';
+import { ReferralsModule } from './modules/referrals/referrals.module';
+import { ReferralResource } from './modules/referrals/entities/referral-resource.entity';
+import { ChatModule } from './modules/chat/chat.module';
 
 @Module({
   imports: [
@@ -41,6 +44,7 @@ import { SafeguardingTrigger } from './modules/safeguarding/entities/safeguardin
         ContentNodeOption,
         SubtopicRelatedLink,
         SafeguardingTrigger,
+        ReferralResource,
       ],
     }),
     UsersModule,
@@ -49,6 +53,8 @@ import { SafeguardingTrigger } from './modules/safeguarding/entities/safeguardin
     MessagesModule,
     ContentModule,
     SafeguardingModule,
+    ReferralsModule,
+    ChatModule,
   ],
   controllers: [],
   providers: [],

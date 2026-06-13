@@ -119,4 +119,8 @@ export class ProfileService {
 
     return profile;
   }
+  async isOnboardingComplete(userId: string): Promise<boolean> {
+    const profile = await this.findByUserId(userId);
+    return !!profile?.completedOnboarding;
+  }
 }
