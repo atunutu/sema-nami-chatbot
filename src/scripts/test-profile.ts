@@ -810,7 +810,7 @@ async function run() {
       contentService,
     );
 
-    const testPhoneNumber = '255700000002';
+    const testPhoneNumber = `25570000${Date.now().toString().slice(-4)}`;
 
     const step1 = await chatOrchestratorService.processIncomingMessage({
       whatsappPhoneNumber: testPhoneNumber,
@@ -836,10 +836,39 @@ async function run() {
     });
     console.log('Orchestrator step 4:', step4);
 
+    const step5 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: testPhoneNumber,
+      interactiveValue: 'PERIODS_MENSTRUAL_HEALTH',
+    });
+    console.log('Orchestrator step 5:', step5);
+
+    const step6 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: testPhoneNumber,
+      interactiveValue: 'MENSTRUATION',
+    });
+    console.log('Orchestrator step 6:', step6);
     const onboardingProfile = await profileService.findByUserId(
       (await usersService.findOrCreateByWhatsAppPhoneNumber(testPhoneNumber))
         .id,
     );
+    const step7 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: testPhoneNumber,
+      interactiveValue: 'MENSTRUAL_HYGIENE',
+    });
+    console.log('Orchestrator step 7:', step7);
+
+    const step8 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: testPhoneNumber,
+      interactiveValue: 'tell_me_more',
+    });
+    console.log('Orchestrator step 8:', step8);
+
+    const step9 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: testPhoneNumber,
+      interactiveValue: 'main_menu',
+    });
+    console.log('Orchestrator step 9:', step9);
+
     console.log(
       'Onboarding profile after orchestrator flow:',
       onboardingProfile,

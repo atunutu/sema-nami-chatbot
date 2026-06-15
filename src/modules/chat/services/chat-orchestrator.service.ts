@@ -42,11 +42,6 @@ export class ChatOrchestratorService {
     this.profileService = profileService;
     this.sessionService = sessionService;
     this.contentService = contentService;
-
-    console.log('usersService injected?', !!this.usersService);
-    console.log('profileService injected?', !!this.profileService);
-    console.log('sessionService injected?', !!this.sessionService);
-    console.log('contentService injected?', !!this.contentService);
   }
 
   processIncomingMessage = async (
@@ -71,7 +66,46 @@ export class ChatOrchestratorService {
       });
     }
 
-    return this.handleCategoryMenu(session.id);
+    if (session.currentState === ChatState.ASK_TOPIC_CATEGORY) {
+      return this.handleCategorySelection({
+        userId: user.id,
+        sessionId: session.id,
+        interactiveValue: normalizedInput.interactiveValue,
+      });
+    }
+
+    if (session.currentState === ChatState.TOPIC_MENU) {
+      return this.handleTopicSelection({
+        userId: user.id,
+        sessionId: session.id,
+        interactiveValue: normalizedInput.interactiveValue,
+        currentCategoryCode: session.currentCategoryCode,
+      });
+    }
+
+    if (session.currentState === ChatState.SUBTOPIC_MENU) {
+      return this.handleSubtopicSelection({
+        userId: user.id,
+        sessionId: session.id,
+        interactiveValue: normalizedInput.interactiveValue,
+        currentCategoryCode: session.currentCategoryCode,
+        currentTopicCode: session.currentTopicCode,
+      });
+    }
+
+    if (session.currentState === ChatState.CONTENT_NODE) {
+      return this.handleContentNodeSelection({
+        userId: user.id,
+        sessionId: session.id,
+        interactiveValue: normalizedInput.interactiveValue,
+        currentCategoryCode: session.currentCategoryCode,
+        currentTopicCode: session.currentTopicCode,
+        currentSubtopicCode: session.currentSubtopicCode,
+        currentNodeKey: session.currentNodeKey,
+      });
+    }
+
+    return this.handleCategoryMenu(session.id, user.id);
   };
 
   private normalizeInput(input: OrchestratorInput): OrchestratorInput {
@@ -115,7 +149,7 @@ export class ChatOrchestratorService {
         return this.handleGenderStep(data);
 
       case ChatState.ASK_TOPIC_CATEGORY:
-        return this.handleCategoryMenu(data.sessionId);
+        return this.handleCategoryMenu(data.sessionId, data.userId);
 
       default:
         await this.sessionService.updateStateAndLocation(data.sessionId, {
@@ -237,12 +271,24 @@ export class ChatOrchestratorService {
     await this.profileService.updateGender(data.userId, selectedGender);
     await this.profileService.completeOnboarding(data.userId);
 
-    return this.handleCategoryMenu(data.sessionId);
+    return this.handleCategoryMenu(data.sessionId, data.userId);
   }
 
   private async handleCategoryMenu(
     sessionId: string,
+    userId?: string,
   ): Promise<OrchestratorResponse> {
+    let categories = await this.contentService.getActiveCategories();
+
+    if (userId) {
+      const profile = await this.profileService.findByUserId(userId);
+
+      categories = await this.contentService.getVisibleCategories({
+        ageBand: profile?.ageBand ?? null,
+        gender: profile?.gender ?? null,
+      });
+    }
+
     await this.sessionService.updateStateAndLocation(sessionId, {
       currentState: ChatState.ASK_TOPIC_CATEGORY,
       currentCategoryCode: null,
@@ -252,8 +298,6 @@ export class ChatOrchestratorService {
       previousNodeKey: null,
     });
 
-    const categories = await this.contentService.getActiveCategories();
-
     return {
       message: 'What would you like to learn about today?',
       options: categories.map((category) => ({
@@ -262,5 +306,419 @@ export class ChatOrchestratorService {
       })),
       currentState: ChatState.ASK_TOPIC_CATEGORY,
     };
+  }
+
+  private async handleCategorySelection(data: {
+    userId: string;
+    sessionId: string;
+    interactiveValue?: string | null;
+  }): Promise<OrchestratorResponse> {
+    const selectedCategoryCode = data.interactiveValue;
+    const profile = await this.profileService.findByUserId(data.userId);
+
+    if (!selectedCategoryCode) {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
+    }
+
+    const selectedCategory =
+      await this.contentService.findCategoryByCode(selectedCategoryCode);
+
+    if (!selectedCategory || !selectedCategory.isActive) {
+      const visibleCategories = await this.contentService.getVisibleCategories({
+        ageBand: profile?.ageBand ?? null,
+        gender: profile?.gender ?? null,
+      });
+
+      return {
+        message: 'Please choose one of the available topic areas below.',
+        options: visibleCategories.map((category) => ({
+          label: category.titleEn,
+          value: category.code,
+        })),
+        currentState: ChatState.ASK_TOPIC_CATEGORY,
+      };
+    }
+
+    const visibleTopics =
+      await this.contentService.getVisibleTopicsByCategoryId(
+        selectedCategory.id,
+        {
+          ageBand: profile?.ageBand ?? null,
+          gender: profile?.gender ?? null,
+        },
+      );
+
+    await this.sessionService.updateStateAndLocation(data.sessionId, {
+      currentState: ChatState.TOPIC_MENU,
+      currentCategoryCode: selectedCategory.code,
+      currentTopicCode: null,
+      currentSubtopicCode: null,
+      currentNodeKey: null,
+      previousNodeKey: null,
+    });
+
+    return {
+      message: `You chose ${selectedCategory.titleEn}. What would you like to explore next?`,
+      options: visibleTopics.map((topic) => ({
+        label: topic.titleEn,
+        value: topic.code,
+      })),
+      currentState: ChatState.TOPIC_MENU,
+    };
+  }
+
+  private async handleTopicSelection(data: {
+    userId: string;
+    sessionId: string;
+    interactiveValue?: string | null;
+    currentCategoryCode?: string | null;
+  }): Promise<OrchestratorResponse> {
+    const selectedTopicCode = data.interactiveValue;
+    const profile = await this.profileService.findByUserId(data.userId);
+
+    if (!selectedTopicCode) {
+      if (!data.currentCategoryCode) {
+        return this.handleCategoryMenu(data.sessionId, data.userId);
+      }
+
+      const currentCategory = await this.contentService.findCategoryByCode(
+        data.currentCategoryCode,
+      );
+
+      if (!currentCategory) {
+        return this.handleCategoryMenu(data.sessionId, data.userId);
+      }
+
+      const visibleTopics =
+        await this.contentService.getVisibleTopicsByCategoryId(
+          currentCategory.id,
+          {
+            ageBand: profile?.ageBand ?? null,
+            gender: profile?.gender ?? null,
+          },
+        );
+
+      return {
+        message: `You chose ${currentCategory.titleEn}. What would you like to explore next?`,
+        options: visibleTopics.map((topic) => ({
+          label: topic.titleEn,
+          value: topic.code,
+        })),
+        currentState: ChatState.TOPIC_MENU,
+      };
+    }
+
+    const selectedTopic =
+      await this.contentService.findTopicByCode(selectedTopicCode);
+
+    if (!selectedTopic || !selectedTopic.isActive) {
+      if (!data.currentCategoryCode) {
+        return this.handleCategoryMenu(data.sessionId, data.userId);
+      }
+
+      const currentCategory = await this.contentService.findCategoryByCode(
+        data.currentCategoryCode,
+      );
+
+      if (!currentCategory) {
+        return this.handleCategoryMenu(data.sessionId, data.userId);
+      }
+
+      const visibleTopics =
+        await this.contentService.getVisibleTopicsByCategoryId(
+          currentCategory.id,
+          {
+            ageBand: profile?.ageBand ?? null,
+            gender: profile?.gender ?? null,
+          },
+        );
+
+      return {
+        message: 'Please choose one of the available topics below.',
+        options: visibleTopics.map((topic) => ({
+          label: topic.titleEn,
+          value: topic.code,
+        })),
+        currentState: ChatState.TOPIC_MENU,
+      };
+    }
+
+    const visibleSubtopics =
+      await this.contentService.getVisibleSubtopicsByTopicId(selectedTopic.id, {
+        ageBand: profile?.ageBand ?? null,
+        gender: profile?.gender ?? null,
+      });
+
+    await this.sessionService.updateStateAndLocation(data.sessionId, {
+      currentState: ChatState.SUBTOPIC_MENU,
+      currentCategoryCode: data.currentCategoryCode ?? null,
+      currentTopicCode: selectedTopic.code,
+      currentSubtopicCode: null,
+      currentNodeKey: null,
+      previousNodeKey: null,
+    });
+
+    return {
+      message: `You chose ${selectedTopic.titleEn}. What would you like to learn about next?`,
+      options: visibleSubtopics.map((subtopic) => ({
+        label: subtopic.titleEn,
+        value: subtopic.code,
+      })),
+      currentState: ChatState.SUBTOPIC_MENU,
+    };
+  }
+
+  private async handleSubtopicSelection(data: {
+    userId: string;
+    sessionId: string;
+    interactiveValue?: string | null;
+    currentCategoryCode?: string | null;
+    currentTopicCode?: string | null;
+  }): Promise<OrchestratorResponse> {
+    const selectedSubtopicCode = data.interactiveValue;
+    const profile = await this.profileService.findByUserId(data.userId);
+
+    if (!data.currentTopicCode) {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
+    }
+
+    const currentTopic = await this.contentService.findTopicByCode(
+      data.currentTopicCode,
+    );
+
+    if (!currentTopic) {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
+    }
+
+    const visibleSubtopics =
+      await this.contentService.getVisibleSubtopicsByTopicId(currentTopic.id, {
+        ageBand: profile?.ageBand ?? null,
+        gender: profile?.gender ?? null,
+      });
+
+    if (!selectedSubtopicCode) {
+      return {
+        message: `You chose ${currentTopic.titleEn}. What would you like to learn about next?`,
+        options: visibleSubtopics.map((subtopic) => ({
+          label:
+            profile?.preferredLanguage === Language.SW
+              ? subtopic.titleSw
+              : subtopic.titleEn,
+          value: subtopic.code,
+        })),
+        currentState: ChatState.SUBTOPIC_MENU,
+      };
+    }
+
+    const selectedSubtopic =
+      await this.contentService.findSubtopicByCode(selectedSubtopicCode);
+
+    if (!selectedSubtopic || !selectedSubtopic.isActive) {
+      return {
+        message: 'Please choose one of the available subtopics below.',
+        options: visibleSubtopics.map((subtopic) => ({
+          label:
+            profile?.preferredLanguage === Language.SW
+              ? subtopic.titleSw
+              : subtopic.titleEn,
+          value: subtopic.code,
+        })),
+        currentState: ChatState.SUBTOPIC_MENU,
+      };
+    }
+
+    const language = profile?.preferredLanguage ?? Language.EN;
+
+    const startNode = await this.contentService.getStartContentNodeBySubtopicId(
+      selectedSubtopic.id,
+      language,
+    );
+
+    if (!startNode) {
+      return {
+        message: 'Sorry, I could not load this content right now.',
+        options: [
+          {
+            label: language === Language.SW ? 'Menyu Kuu' : 'Main Menu',
+            value: 'main_menu',
+          },
+        ],
+        currentState: ChatState.FALLBACK,
+      };
+    }
+
+    return this.buildContentNodeResponse({
+      sessionId: data.sessionId,
+      currentCategoryCode: data.currentCategoryCode ?? null,
+      currentTopicCode: currentTopic.code,
+      currentSubtopicCode: selectedSubtopic.code,
+      nodeKey: startNode.nodeKey,
+      language,
+      previousNodeKey: null,
+    });
+  }
+
+  private async buildContentNodeResponse(data: {
+    sessionId: string;
+    currentCategoryCode?: string | null;
+    currentTopicCode?: string | null;
+    currentSubtopicCode?: string | null;
+    nodeKey: string;
+    language: Language;
+    previousNodeKey?: string | null;
+  }): Promise<OrchestratorResponse> {
+    const node = await this.contentService.findContentNodeByKeyAndLanguage(
+      data.nodeKey,
+      data.language,
+    );
+
+    if (!node || !node.isActive) {
+      return {
+        message: 'Sorry, I could not load this content right now.',
+        options: [
+          { label: 'Main Menu', value: 'main_menu' },
+          { label: 'Start Again', value: 'start_again' },
+        ],
+        currentState: ChatState.FALLBACK,
+      };
+    }
+
+    const options = await this.contentService.getActiveOptionsByContentNodeId(
+      node.id,
+    );
+
+    await this.sessionService.updateStateAndLocation(data.sessionId, {
+      currentState: ChatState.CONTENT_NODE,
+      currentCategoryCode: data.currentCategoryCode ?? null,
+      currentTopicCode: data.currentTopicCode ?? null,
+      currentSubtopicCode: data.currentSubtopicCode ?? null,
+      currentNodeKey: node.nodeKey,
+      previousNodeKey: data.previousNodeKey ?? null,
+    });
+
+    return {
+      message: node.messageText,
+      options: options.map((option) => ({
+        label: data.language === Language.SW ? option.labelSw : option.labelEn,
+        value: option.optionValue,
+      })),
+      currentState: ChatState.CONTENT_NODE,
+    };
+  }
+
+  private async handleContentNodeSelection(data: {
+    userId: string;
+    sessionId: string;
+    interactiveValue?: string | null;
+    currentCategoryCode?: string | null;
+    currentTopicCode?: string | null;
+    currentSubtopicCode?: string | null;
+    currentNodeKey?: string | null;
+  }): Promise<OrchestratorResponse> {
+    const selectedOptionValue = data.interactiveValue;
+    const profile = await this.profileService.findByUserId(data.userId);
+    const language = profile?.preferredLanguage ?? Language.EN;
+
+    if (!data.currentNodeKey) {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
+    }
+
+    if (!selectedOptionValue) {
+      const currentNode =
+        await this.contentService.findContentNodeByKeyAndLanguage(
+          data.currentNodeKey,
+          language,
+        );
+
+      if (!currentNode) {
+        return {
+          message:
+            language === Language.SW
+              ? 'Samahani, siwezi kuendelea na maudhui haya kwa sasa.'
+              : 'Sorry, I could not continue this content right now.',
+          options: [
+            {
+              label: language === Language.SW ? 'Menyu Kuu' : 'Main Menu',
+              value: 'main_menu',
+            },
+          ],
+          currentState: ChatState.FALLBACK,
+        };
+      }
+
+      const options = await this.contentService.getActiveOptionsByContentNodeId(
+        currentNode.id,
+      );
+
+      return {
+        message: currentNode.messageText,
+        options: options.map((option) => ({
+          label: language === Language.SW ? option.labelSw : option.labelEn,
+          value: option.optionValue,
+        })),
+        currentState: ChatState.CONTENT_NODE,
+      };
+    }
+
+    if (selectedOptionValue === 'main_menu') {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
+    }
+
+    const currentNode =
+      await this.contentService.findContentNodeByKeyAndLanguage(
+        data.currentNodeKey,
+        language,
+      );
+
+    if (!currentNode) {
+      return {
+        message:
+          language === Language.SW
+            ? 'Samahani, siwezi kuendelea na maudhui haya kwa sasa.'
+            : 'Sorry, I could not continue this content right now.',
+        options: [
+          {
+            label: language === Language.SW ? 'Menyu Kuu' : 'Main Menu',
+            value: 'main_menu',
+          },
+        ],
+        currentState: ChatState.FALLBACK,
+      };
+    }
+
+    const nextNode = await this.contentService.resolveNextNodeByOption({
+      contentNodeId: currentNode.id,
+      optionValue: selectedOptionValue,
+      language,
+    });
+
+    if (!nextNode) {
+      const currentOptions =
+        await this.contentService.getActiveOptionsByContentNodeId(
+          currentNode.id,
+        );
+
+      return {
+        message:
+          language === Language.SW
+            ? 'Tafadhali chagua moja ya chaguo zilizopo hapa chini.'
+            : 'Please choose one of the available options below.',
+        options: currentOptions.map((option) => ({
+          label: language === Language.SW ? option.labelSw : option.labelEn,
+          value: option.optionValue,
+        })),
+        currentState: ChatState.CONTENT_NODE,
+      };
+    }
+
+    return this.buildContentNodeResponse({
+      sessionId: data.sessionId,
+      currentCategoryCode: data.currentCategoryCode ?? null,
+      currentTopicCode: data.currentTopicCode ?? null,
+      currentSubtopicCode: data.currentSubtopicCode ?? null,
+      nodeKey: nextNode.nodeKey,
+      language,
+      previousNodeKey: currentNode.nodeKey,
+    });
   }
 }
