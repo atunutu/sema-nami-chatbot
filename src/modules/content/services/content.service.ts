@@ -423,4 +423,102 @@ export class ContentService {
       data.language,
     );
   }
+  async findAllContentNodesByKey(nodeKey: string): Promise<ContentNode[]> {
+    return this.contentNodesRepository.find({
+      where: { nodeKey },
+      order: {
+        createdAt: 'ASC',
+      },
+    });
+  }
+
+  async updateCategory(
+    categoryId: string,
+    data: Partial<TopicCategory>,
+  ): Promise<TopicCategory> {
+    await this.topicCategoriesRepository.update(categoryId, data);
+
+    const updated = await this.topicCategoriesRepository.findOne({
+      where: { id: categoryId },
+    });
+
+    if (!updated) {
+      throw new Error(
+        `TopicCategory with ID ${categoryId} was not found after update.`,
+      );
+    }
+
+    return updated;
+  }
+
+  async updateTopic(topicId: string, data: Partial<Topic>): Promise<Topic> {
+    await this.topicsRepository.update(topicId, data);
+
+    const updated = await this.topicsRepository.findOne({
+      where: { id: topicId },
+    });
+
+    if (!updated) {
+      throw new Error(`Topic with ID ${topicId} was not found after update.`);
+    }
+
+    return updated;
+  }
+
+  async updateSubtopic(
+    subtopicId: string,
+    data: Partial<Subtopic>,
+  ): Promise<Subtopic> {
+    await this.subtopicsRepository.update(subtopicId, data);
+
+    const updated = await this.subtopicsRepository.findOne({
+      where: { id: subtopicId },
+    });
+
+    if (!updated) {
+      throw new Error(
+        `Subtopic with ID ${subtopicId} was not found after update.`,
+      );
+    }
+
+    return updated;
+  }
+
+  async updateContentNode(
+    contentNodeId: string,
+    data: Partial<ContentNode>,
+  ): Promise<ContentNode> {
+    await this.contentNodesRepository.update(contentNodeId, data);
+
+    const updated = await this.contentNodesRepository.findOne({
+      where: { id: contentNodeId },
+    });
+
+    if (!updated) {
+      throw new Error(
+        `ContentNode with ID ${contentNodeId} was not found after update.`,
+      );
+    }
+
+    return updated;
+  }
+
+  async updateContentNodeOption(
+    optionId: string,
+    data: Partial<ContentNodeOption>,
+  ): Promise<ContentNodeOption> {
+    await this.contentNodeOptionsRepository.update(optionId, data);
+
+    const updated = await this.contentNodeOptionsRepository.findOne({
+      where: { id: optionId },
+    });
+
+    if (!updated) {
+      throw new Error(
+        `ContentNodeOption with ID ${optionId} was not found after update.`,
+      );
+    }
+
+    return updated;
+  }
 }

@@ -1,0 +1,712 @@
+import { InputType } from '../../../common/enums/input-type.enum';
+import { Language } from '../../../common/enums/language.enum';
+import { NodeType } from '../../../common/enums/node-type.enum';
+
+export const menstruationSeed = {
+  category: {
+    code: 'MENSTRUATION',
+    titleEn: 'Menstruation',
+    titleSw: 'Hedhi',
+    descriptionEn: null,
+    descriptionSw: null,
+    audienceGender: null,
+    ageBandRule: null,
+    sortOrder: 2,
+    isActive: true,
+  },
+
+  topic: {
+    code: 'MENSTRUATION',
+    titleEn: 'Menstruation',
+    titleSw: 'Hedhi',
+    descriptionEn: null,
+    descriptionSw: null,
+    audienceGender: null,
+    ageBandRule: null,
+    sortOrder: 1,
+    isActive: true,
+  },
+
+  subtopics: [
+    {
+      code: 'WHAT_IS_MENSTRUATION',
+      titleEn: 'What is Menstruation',
+      titleSw: 'Hedhi ni Nini',
+      descriptionEn: null,
+      descriptionSw: null,
+      audienceGender: null,
+      ageBandRule: null,
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      code: 'MENSTRUAL_HYGIENE',
+      titleEn: 'Menstrual Hygiene',
+      titleSw: 'Usafi wa Hedhi',
+      descriptionEn: null,
+      descriptionSw: null,
+      audienceGender: null,
+      ageBandRule: null,
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      code: 'MENSTRUAL_PAIN_AND_CONCERNS',
+      titleEn: 'Menstrual Pain and Concerns',
+      titleSw: 'Maumivu na Changamoto za Hedhi',
+      descriptionEn: null,
+      descriptionSw: null,
+      audienceGender: null,
+      ageBandRule: null,
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      code: 'OVULATION_AND_FERTILITY',
+      titleEn: 'Ovulation and Fertility',
+      titleSw: 'Utoaji wa Yai na Uwezo wa Kushika Mimba',
+      descriptionEn: null,
+      descriptionSw: null,
+      audienceGender: null,
+      ageBandRule: null,
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      code: 'MENSTRUATION_MYTHS',
+      titleEn: 'Menstruation Myths',
+      titleSw: 'Dhana Potofu kuhusu Hedhi',
+      descriptionEn: null,
+      descriptionSw: null,
+      audienceGender: null,
+      ageBandRule: null,
+      sortOrder: 5,
+      isActive: true,
+    },
+  ],
+
+  contentNodes: [
+    // WHAT_IS_MENSTRUATION
+    {
+      subtopicCode: 'WHAT_IS_MENSTRUATION',
+      nodeKey: 'WHAT_IS_MENSTRUATION_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Menstruation, commonly called a period, is the monthly shedding of the lining of the uterus through the vagina when pregnancy does not occur. It is a normal biological process and an important sign that the reproductive system is developing.Each month, a girl's body prepares for a possible pregnancy.
+
+The ovaries release an egg,the lining of the uterus becomes thicker and if the egg is not fertilized by sperm, pregnancy does not occur.The body sheds the extra uterine lining and blood through the vagina.This is called menstruation.
+
+Menstruation is a natural part of puberty and reproductive health. It is not a disease, illness, curse, or punishment. Every girl experiences menstruation differently, and variations in cycle length, flow, and symptoms are common.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: 'image_menstrual_hygiene_01',
+      isStartNode: true,
+      isEndNode: false,
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'WHAT_IS_MENSTRUATION',
+      nodeKey: 'WHAT_IS_MENSTRUATION_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Hedhi, ambayo kwa kawaida huitwa hedhi, ni kumwaga kila mwezi kwa utando wa uzazi kupitia uke wakati mimba haitokei. Ni mchakato wa kawaida wa kibiolojia na ishara muhimu kwamba mfumo wa uzazi unakua. Kila mwezi, mwili wa msichana hujiandaa kwa mimba inayowezekana.
+
+Ovari hutoa yai, utando wa uzazi unakuwa mzito na ikiwa yai halijarutubishwa na manii, mimba haitokei. Mwili hutoa utando wa ziada wa uzazi na damu kupitia uke. Hii inaitwa hedhi.
+
+Hedhi ni sehemu ya asili ya kubalehe na afya ya uzazi. Sio ugonjwa, ugonjwa, laana, au adhabu. Kila msichana hupata hedhi tofauti, na tofauti katika urefu wa mzunguko, mtiririko, na dalili ni za kawaida.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: 'image_menstrual_hygiene_01',
+      isStartNode: true,
+      isEndNode: false,
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'WHAT_IS_MENSTRUATION',
+      nodeKey: 'WHAT_IS_MENSTRUATION_02',
+      nodeType: NodeType.RELATED_TOPICS,
+      language: Language.EN,
+      messageText: `Frequently Asked Questions
+
+Q: How long does a period usually last?
+A: Most periods last between 2 and 7 days.
+
+Q: Is it normal to have irregular periods?
+A: Yes. Irregular cycles are common during adolescence.
+
+Q: Can I play sports during my period?
+A: Yes. Physical activity is generally safe during menstruation.
+
+Q: Can stress affect my period?
+A: Yes. Stress may affect menstrual cycles.
+
+Q: Is it normal to have cramps?
+A: Mild cramps are common. Severe pain should be discussed with a healthcare provider.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'WHAT_IS_MENSTRUATION',
+      nodeKey: 'WHAT_IS_MENSTRUATION_02',
+      nodeType: NodeType.RELATED_TOPICS,
+      language: Language.SW,
+      messageText: `Maswali Yanayoulizwa Mara kwa Mara
+
+Swali:Hedhi hudumu kwa muda gani?
+
+Jibu:Kwa kawaida hedhi hudumu kati ya siku 2 hadi 7.
+
+Swali:Je, hedhi isiyo ya kawaida ni jambo la kawaida?
+
+Jibu:Ndiyo. Hasa katika miaka ya mwanzo baada ya hedhi kuanza.
+
+Swali:Je, maumivu wakati wa hedhi ni kawaida?
+
+Jibu:Maumivu madogo ni kawaida, lakini maumivu makali yanahitaji ushauri wa mtoa huduma ya afya
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 2,
+      isActive: true,
+    },
+
+    // MENSTRUAL_HYGIENE
+    {
+      subtopicCode: 'MENSTRUAL_HYGIENE',
+      nodeKey: 'MENSTRUAL_HYGIENE_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Menstrual hygiene refers to the practices that help girls and women manage their menstruation safely, comfortably, and with dignity. Good menstrual hygiene is important for health, confidence, and daily wellbeing. During menstruation, it is important to use clean menstrual products such as sanitary pads, tampons, menstrual cups, or clean reusable cloths that are properly washed and dried before reuse.
+
+Menstrual products should be changed regularly, usually every 4–8 hours depending on the flow, to prevent discomfort, bad odor, skin irritation, and infections. It is also important to wash the genital area daily with clean water and mild soap if available. The vagina naturally cleans itself, so there is no need to use harsh chemicals, perfumes, or vaginal cleansing products.
+
+Girls should wash their hands before and after changing menstrual products to reduce the risk of infections. Used disposable pads should be wrapped and disposed of properly in a bin and should not be flushed down toilets. Reusable materials should be washed thoroughly with clean water and soap and dried in direct sunlight whenever possible.
+
+Many girls continue attending school, playing sports, and participating in normal activities during menstruation. Eating a balanced diet, drinking enough water, and getting adequate rest can also help manage menstrual discomfort. Menstruation is a normal and healthy part of growing up, and maintaining good menstrual hygiene helps girls stay healthy, comfortable, and confident throughout their menstrual cycle.
+
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: true,
+      isEndNode: true,
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENSTRUAL_HYGIENE',
+      nodeKey: 'MENSTRUAL_HYGIENE_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Usafi wa hedhi unamaanisha desturi zinazowasaidia wasichana na wanawake kusimamia hedhi yao kwa usalama, raha, na kwa heshima. Usafi mzuri wa hedhi ni muhimu kwa afya, kujiamini, na ustawi wa kila siku. Wakati wa hedhi, ni muhimu kutumia bidhaa safi za hedhi kama vile pedi za usafi, tamponi, vikombe vya hedhi, au vitambaa safi vinavyoweza kutumika tena ambavyo vimeoshwa na kukaushwa ipasavyo kabla ya kutumika tena.
+
+Bidhaa za hedhi zinapaswa kubadilishwa mara kwa mara, kwa kawaida kila baada ya saa 4-8 kulingana na mtiririko, ili kuzuia usumbufu, harufu mbaya, muwasho wa ngozi, na maambukizi. Pia ni muhimu kuosha sehemu za siri kila siku kwa maji safi na sabuni laini ikiwa inapatikana. Uke hujisafisha yenyewe kiasili, kwa hivyo hakuna haja ya kutumia kemikali kali, manukato, au bidhaa za kusafisha uke.
+
+Wasichana wanapaswa kunawa mikono yao kabla na baada ya kubadilisha bidhaa za hedhi ili kupunguza hatari ya maambukizi. Pedi zilizotumika zinapaswa kufungwa na kutupwa ipasavyo kwenye pipa la taka na hazipaswi kusafishwa vyooni. Vifaa vinavyoweza kutumika tena vinapaswa kuoshwa vizuri kwa maji safi na sabuni na kukaushwa kwenye jua moja kwa moja inapowezekana.
+
+Wasichana wengi wanaendelea kuhudhuria shule, kucheza michezo, na kushiriki katika shughuli za kawaida wakati wa hedhi. Kula lishe bora, kunywa maji ya kutosha, na kupata mapumziko ya kutosha pia kunaweza kusaidia kudhibiti usumbufu wa hedhi. Hedhi ni sehemu ya kawaida na yenye afya njema ya kukua, na kudumisha usafi mzuri wa hedhi huwasaidia wasichana kubaki na afya njema, starehe, na kujiamini katika mzunguko wao wote wa hedhi.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: true,
+      isEndNode: true,
+      sortOrder: 1,
+      isActive: true,
+    },
+
+    // MENSTRUAL_PAIN_AND_CONCERNS
+    {
+      subtopicCode: 'MENSTRUAL_PAIN_AND_CONCERNS',
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `These feelings are normal, especially during the first few years of menstruation. Many girls experience mild abdominal pain, back pain, breast tenderness, bleeding changes, fatigue, headaches and swelling. These symptoms are often normal and vary from person to person. Some girls may feel embarrassed, scared, confused, angry and emotional. RELIEVING PAIN DURING MENSTRUATION
+Some girls experience abdominal pain due to the uterine contractions, which occur when the uterus pushes menstrual blood out.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: true,
+      isEndNode: false,
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENSTRUAL_PAIN_AND_CONCERNS',
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Hisia hizi ni za kawaida, hasa wakati wa miaka ya kwanza ya hedhi. Wasichana wengi hupata maumivu ya tumbo kidogo, maumivu ya mgongo, uchungu wa matiti, mabadiliko ya damu, uchovu, maumivu ya kichwa na uvimbe. Dalili hizi mara nyingi ni za kawaida na hutofautiana kutoka kwa mtu hadi mtu. Baadhi ya wasichana wanaweza kuhisi aibu, woga, kuchanganyikiwa, kukasirika na kihisia. KUTULIZA MAUMIVU WAKATI WA HEDHI
+Baadhi ya wasichana hupata maumivu ya tumbo kutokana na mkakamao wa msukumo wa 
+mji wa mimba, mkakamao huo hutokea wakati mji wa mimba unaposukuma damu ya hedhi 
+itoke. 
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: true,
+      isEndNode: false,
+      sortOrder: 1,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'MENSTRUAL_PAIN_AND_CONCERNS',
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_02',
+      nodeType: NodeType.RELATED_TOPICS,
+      language: Language.EN,
+      messageText: `Below are some tips for things you can do to cope with the pain:
+● Take a plastic bottle filled with warm water or a cloth soaked in warm water and place it under your back or lower abdomen.
+● Drink water: It is good to make sure that your body is well hydrated as this will prevent headaches.
+● Doing light exercise can help reduce pain and bloating
+gas.
+● Painkillers such as paracetamol can help if you are feeling
+severe pain, but remember to use them according to the instructions of a
+health professional.
+If the pain increases, it is best to go to a health care facility for advice
+from a health care provider.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENSTRUAL_PAIN_AND_CONCERNS',
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_02',
+      nodeType: NodeType.RELATED_TOPICS,
+      language: Language.SW,
+      messageText: `
+Hapa chini ni vidokezo vya mambo unayoweza kufanya kukabiliana na maumivu:
+● Chukua chupa ya plastiki iliyojazwa maji ya vuguvugu au kitambaa kilicholowekwa 
+kwenye maji ya vuguvugu na kiweke chini ya mgongo au chini ya tumbo.
+● Kunywa maji: Ni vyema kuhakikisha mwili wako unakuwa na maji ya kutosha kwa 
+kuwa hii itakuepusha kuumwa na kichwa.
+● Kufanya mazoezi mepesi inaweza kukusaidia kupunguza maumivu na tumbo kujaa 
+gesi.
+● Dawa za kupunguza maumivu kama paracetamol zinaweza kusaidia ikiwa unajisikia 
+maumivu makali, lakini kumbuka kutumia kwa mujibu wa maelekezo ya mtaalam wa 
+afya 
+Maumivu yakiongeza ni vema kufika katika kituo cha kutolea huduma za afya kwa ushauri 
+toka kwa mtoa huduma wa afya.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 2,
+      isActive: true,
+    },
+
+    // OVULATION_AND_FERTILITY
+    {
+      subtopicCode: 'OVULATION_AND_FERTILITY',
+      nodeKey: 'OVULATION_AND_FERTILITY_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Most girls experience their first menstrual period between the ages of 9 and 16 years. The first period is called menarche.Some girls may start earlier while others may start later. This is often normal because bodies develop at different rates.A girl can become pregnant if sperm fertilizes an egg after ovulation.
+
+Because ovulation may occur before a menstrual period, pregnancy can happen even before a girl has had her first period.
+
+Menstruation therefore does not protect someone from pregnancy.However, a girl can get pregnant before her first period if a mature egg is fertilized by sperm during unprotected sex. It is best to avoid unprotected sex during puberty. Menstruation occurs every 21 to 35 days. Most women have their period every 28 days. Typically, menstruation lasts 2 to 7 days. Some women experience abdominal pain due to uterine contractions, which occur when the uterus pushes out menstrual blood.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: true,
+      isEndNode: true,
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'OVULATION_AND_FERTILITY',
+      nodeKey: 'OVULATION_AND_FERTILITY_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Wasichana wengi hupata hedhi yao ya kwanza kati ya umri wa miaka 9 na 16. Hedhi ya kwanza inaitwa menarche. Baadhi ya wasichana wanaweza kuanza mapema huku wengine wakichelewa. Hii mara nyingi ni kawaida kwa sababu miili hukua kwa viwango tofauti.Msichana anaweza kupata mimba ikiwa manii itarutubisha yai baada ya ovulation.
+
+Kwa sababu ovulation inaweza kutokea kabla ya hedhi, mimba inaweza kutokea hata kabla ya msichana kupata hedhi yake ya kwanza.
+
+Kwa hivyo, hedhi haimlindi mtu kutokana na ujauzito.Hata hivyo msichana anaweza kupata ujauzito kabla ya kupata hedhi ya kwanza ikiwa yai liliopevuka litarutubishwa na mbegu ya kiume wakati wa tendo la ngono bila kinga. Ni vizuri kujiepusha na ngono isiyo salama wakati wa baleheHedhi hujirudia kila baada ya siku 21 hadi 35. Wanawake wengi hupata hedhi kila baada ya siku 28. Kwa kawaida, hedhi hudumu kwa siku 2 hadi 7. 
+Baadhi ya wanawake hupata maumivu ya tumbo kutokana na mkakamao wa msukumo wa mji wa mimba, mkakamao huo hutokea wakati mji wa mimba unaposukuma damu ya hedhi itoke.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: true,
+      isEndNode: true,
+      sortOrder: 1,
+      isActive: true,
+    },
+
+    // MENSTRUATION_MYTHS
+    {
+      subtopicCode: 'MENSTRUATION_MYTHS',
+      nodeKey: 'MENSTRUATION_MYTHS_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Myths and Facts about menstruation
+
+Myth:-Menstruation is dirty blood.
+
+Fact:-Menstrual blood is a mixture of blood and tissue from the uterus. It is a natural body process.
+
+Myth:-Girls should not attend school during their period.
+
+Fact:-Girls can safely continue attending school and participating in activities.
+
+Myth:-A girl cannot become pregnant before her first period.
+
+Fact:-Pregnancy can occur if ovulation happens before the first menstrual period.
+
+Myth:-Menstruation means a girl is ready for marriage.
+
+Fact:-Menstruation is a biological process and does not mean a girl is physically, emotionally, or socially ready for marriage
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: true,
+      isEndNode: false,
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENSTRUATION_MYTHS',
+      nodeKey: 'MENSTRUATION_MYTHS_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Dhana Potofu na Ukweli kuhusu hedhi
+
+Dhana Potofu:-Hedhi ni damu chafu.
+
+Ukweli:-Hedhi ni mchakato wa kawaida wa mwili.
+
+Dhana Potofu:-Msichana hatakiwi kwenda shule akiwa kwenye hedhi.
+
+Ukweli:-Msichana anaweza kuendelea na masomo na shughuli zake za kawaida.
+
+Dhana Potofu:-Msichana hawezi kupata mimba kabla ya hedhi ya kwanza.
+
+Ukweli:-Mimba inaweza kutokea kama yai limetolewa kabla ya hedhi ya kwanza.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: true,
+      isEndNode: false,
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENSTRUATION_MYTHS',
+      nodeKey: 'MENSTRUATION_MYTHS_02',
+      nodeType: NodeType.RELATED_TOPICS,
+      language: Language.EN,
+      messageText: `Common Concerns from adolescents
+
+"My period has not started yet."
+
+Many girls begin menstruation at different ages. If there are concerns, speaking with a healthcare provider can be helpful.
+
+"My period is irregular."
+
+Irregular periods are common during the first few years after menstruation begins.
+
+"My period is late."
+
+Many factors such as stress, illness, nutrition, physical activity, and pregnancy can affect menstrual cycles.
+
+"I have pain during my period."
+
+Mild discomfort is common, but severe pain should be discussed with a healthcare provider.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENSTRUATION_MYTHS',
+      nodeKey: 'MENSTRUATION_MYTHS_02',
+      nodeType: NodeType.RELATED_TOPICS,
+      language: Language.SW,
+      messageText: `Wasiwasi wa Kawaida kutoka kwa vijana balehe
+
+"Hedhi yangu haijaanza bado." Wasichana wengi huanza hedhi katika umri tofauti. Ikiwa kuna wasiwasi, kuzungumza na mtoa huduma ya afya kunaweza kusaidia.
+
+"Hedhi yangu si ya kawaida." Hedhi zisizo za kawaida ni za kawaida katika miaka michache ya kwanza baada ya hedhi kuanza.
+
+"Hedhi yangu imechelewa." Mambo mengi kama vile msongo wa mawazo, ugonjwa, lishe, shughuli za kimwili, na ujauzito yanaweza kuathiri mzunguko wa hedhi.
+
+"Nina maumivu wakati wa hedhi yangu." Usumbufu mdogo ni wa kawaida, lakini maumivu makali yanapaswa kujadiliwa na mtoa huduma ya afya."
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 2,
+      isActive: true,
+    },
+  ],
+
+  contentNodeOptions: [
+    {
+      nodeKey: 'WHAT_IS_MENSTRUATION_01',
+      optionValue: 'tell_me_more',
+      labelEn: 'Tell me more',
+      labelSw: 'Nieleze zaidi',
+      nextNodeKey: 'WHAT_IS_MENSTRUATION_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'WHAT_IS_MENSTRUATION_01',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'WHAT_IS_MENSTRUATION_01',
+      optionValue: 'back',
+      labelEn: 'Back',
+      labelSw: 'Rudi',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'WHAT_IS_MENSTRUATION_01',
+      optionValue: 'start_again',
+      labelEn: 'Start Again',
+      labelSw: 'Anza Tena',
+      nextNodeKey: 'START_AGAIN',
+      sortOrder: 4,
+      isActive: true,
+    },
+
+    {
+      nodeKey: 'WHAT_IS_MENSTRUATION_02',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'WHAT_IS_MENSTRUATION_02',
+      optionValue: 'back',
+      labelEn: 'Back',
+      labelSw: 'Rudi',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'WHAT_IS_MENSTRUATION_02',
+      optionValue: 'start_again',
+      labelEn: 'Start Again',
+      labelSw: 'Anza Tena',
+      nextNodeKey: 'START_AGAIN',
+      sortOrder: 3,
+      isActive: true,
+    },
+
+    {
+      nodeKey: 'MENSTRUAL_HYGIENE_01',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUAL_HYGIENE_01',
+      optionValue: 'back',
+      labelEn: 'Back',
+      labelSw: 'Rudi',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUAL_HYGIENE_01',
+      optionValue: 'start_again',
+      labelEn: 'Start Again',
+      labelSw: 'Anza Tena',
+      nextNodeKey: 'START_AGAIN',
+      sortOrder: 3,
+      isActive: true,
+    },
+
+    {
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_01',
+      optionValue: 'tell_me_more',
+      labelEn: 'Tell me more',
+      labelSw: 'Nieleze zaidi',
+      nextNodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+
+    {
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_01',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_01',
+      optionValue: 'back',
+      labelEn: 'Back',
+      labelSw: 'Rudi',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_01',
+      optionValue: 'start_again',
+      labelEn: 'Start Again',
+      labelSw: 'Anza Tena',
+      nextNodeKey: 'START_AGAIN',
+      sortOrder: 4,
+      isActive: true,
+    },
+
+    {
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_02',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_02',
+      optionValue: 'back',
+      labelEn: 'Back',
+      labelSw: 'Rudi',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_02',
+      optionValue: 'start_again',
+      labelEn: 'Start Again',
+      labelSw: 'Anza Tena',
+      nextNodeKey: 'START_AGAIN',
+      sortOrder: 3,
+      isActive: true,
+    },
+
+    {
+      nodeKey: 'OVULATION_AND_FERTILITY_01',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'OVULATION_AND_FERTILITY_01',
+      optionValue: 'back',
+      labelEn: 'Back',
+      labelSw: 'Rudi',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'OVULATION_AND_FERTILITY_01',
+      optionValue: 'start_again',
+      labelEn: 'Start Again',
+      labelSw: 'Anza Tena',
+      nextNodeKey: 'START_AGAIN',
+      sortOrder: 3,
+      isActive: true,
+    },
+
+    {
+      nodeKey: 'MENSTRUATION_MYTHS_01',
+      optionValue: 'tell_me_more',
+      labelEn: 'Tell me more',
+      labelSw: 'Nieleze zaidi',
+      nextNodeKey: 'MENSTRUATION_MYTHS_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUATION_MYTHS_01',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUATION_MYTHS_01',
+      optionValue: 'back',
+      labelEn: 'Back',
+      labelSw: 'Rudi',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUATION_MYTHS_01',
+      optionValue: 'start_again',
+      labelEn: 'Start Again',
+      labelSw: 'Anza Tena',
+      nextNodeKey: 'START_AGAIN',
+      sortOrder: 4,
+      isActive: true,
+    },
+
+    {
+      nodeKey: 'MENSTRUATION_MYTHS_02',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUATION_MYTHS_02',
+      optionValue: 'back',
+      labelEn: 'Back',
+      labelSw: 'Rudi',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUATION_MYTHS_02',
+      optionValue: 'start_again',
+      labelEn: 'Start Again',
+      labelSw: 'Anza Tena',
+      nextNodeKey: 'START_AGAIN',
+      sortOrder: 3,
+      isActive: true,
+    },
+  ],
+};

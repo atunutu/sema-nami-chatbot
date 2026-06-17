@@ -7,6 +7,7 @@ import { Subtopic } from './entities/subtopic.entity';
 import { ContentNode } from './entities/content-node.entity';
 import { ContentNodeOption } from './entities/content-node-option.entity';
 import { SubtopicRelatedLink } from './entities/subtopic-related-link.entity';
+import { ContentImportService } from './services/content-import.service';
 
 @Module({
   imports: [
@@ -19,7 +20,7 @@ import { SubtopicRelatedLink } from './entities/subtopic-related-link.entity';
       SubtopicRelatedLink,
     ]),
   ],
-  providers: [ContentService],
-  exports: [ContentService],
+  providers: [ContentService, ContentImportService],
+  exports: [ContentService, ContentImportService],
 })
 export class ContentModule {}

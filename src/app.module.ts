@@ -20,6 +20,8 @@ import { SafeguardingTrigger } from './modules/safeguarding/entities/safeguardin
 import { ReferralsModule } from './modules/referrals/referrals.module';
 import { ReferralResource } from './modules/referrals/entities/referral-resource.entity';
 import { ChatModule } from './modules/chat/chat.module';
+import { WhatsAppModule } from './modules/whatsapp/whatsapp.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
@@ -47,6 +49,9 @@ import { ChatModule } from './modules/chat/chat.module';
         ReferralResource,
       ],
     }),
+    ConfigModule.forRoot({
+      isGlobal: true,
+    }),
     UsersModule,
     ProfileModule,
     SessionModule,
@@ -55,6 +60,7 @@ import { ChatModule } from './modules/chat/chat.module';
     SafeguardingModule,
     ReferralsModule,
     ChatModule,
+    WhatsAppModule,
   ],
   controllers: [],
   providers: [],

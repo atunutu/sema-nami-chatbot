@@ -439,6 +439,222 @@ async function run() {
       await contentService.findSubtopicByCode('MENSTRUAL_HYGIENE');
     console.log('Found subtopic by code:', foundSubtopic);
 
+    const introNodeEnOptions =
+      await contentService.getActiveOptionsByContentNodeId(introNodeEn.id);
+
+    const introOptionValues = introNodeEnOptions.map(
+      (option) => option.optionValue,
+    );
+
+    if (!introOptionValues.includes('tell_me_more')) {
+      await contentService.createContentNodeOption({
+        contentNodeId: introNodeEn.id,
+        labelEn: 'Tell me more',
+        labelSw: 'Nieleze zaidi',
+        optionValue: 'tell_me_more',
+        nextNodeKey: 'MENS_HYGIENE_TIPS',
+        sortOrder: 1,
+      });
+    }
+
+    if (!introOptionValues.includes('main_menu')) {
+      await contentService.createContentNodeOption({
+        contentNodeId: introNodeEn.id,
+        labelEn: 'Main Menu',
+        labelSw: 'Menyu Kuu',
+        optionValue: 'main_menu',
+        nextNodeKey: 'CATEGORY_MENU',
+        sortOrder: 2,
+      });
+    }
+
+    if (!introOptionValues.includes('back')) {
+      await contentService.createContentNodeOption({
+        contentNodeId: introNodeEn.id,
+        labelEn: 'Back',
+        labelSw: 'Rudi',
+        optionValue: 'back',
+        nextNodeKey: 'BACK_ACTION',
+        sortOrder: 3,
+      });
+    }
+
+    if (!introOptionValues.includes('start_again')) {
+      await contentService.createContentNodeOption({
+        contentNodeId: introNodeEn.id,
+        labelEn: 'Start Again',
+        labelSw: 'Anza Tena',
+        optionValue: 'start_again',
+        nextNodeKey: 'START_AGAIN',
+        sortOrder: 4,
+      });
+    }
+
+    console.log(
+      'English intro node options after seed:',
+      await contentService.getActiveOptionsByContentNodeId(introNodeEn.id),
+    );
+
+    if (!tipsNodeEn) {
+      throw new Error('English tips node was not found.');
+    }
+
+    const tipsNodeEnOptions =
+      await contentService.getActiveOptionsByContentNodeId(tipsNodeEn.id);
+
+    const tipsOptionValues = tipsNodeEnOptions.map(
+      (option) => option.optionValue,
+    );
+
+    if (!tipsOptionValues.includes('main_menu')) {
+      await contentService.createContentNodeOption({
+        contentNodeId: tipsNodeEn.id,
+        labelEn: 'Main Menu',
+        labelSw: 'Menyu Kuu',
+        optionValue: 'main_menu',
+        nextNodeKey: 'CATEGORY_MENU',
+        sortOrder: 1,
+      });
+    }
+
+    if (!tipsOptionValues.includes('back')) {
+      await contentService.createContentNodeOption({
+        contentNodeId: tipsNodeEn.id,
+        labelEn: 'Back',
+        labelSw: 'Rudi',
+        optionValue: 'back',
+        nextNodeKey: 'BACK_ACTION',
+        sortOrder: 2,
+      });
+    }
+
+    if (!tipsOptionValues.includes('start_again')) {
+      await contentService.createContentNodeOption({
+        contentNodeId: tipsNodeEn.id,
+        labelEn: 'Start Again',
+        labelSw: 'Anza Tena',
+        optionValue: 'start_again',
+        nextNodeKey: 'START_AGAIN',
+        sortOrder: 3,
+      });
+    }
+
+    console.log(
+      'English tips node options after seed:',
+      await contentService.getActiveOptionsByContentNodeId(tipsNodeEn.id),
+    );
+
+    if (!introNodeSw) {
+      throw new Error('Swahili intro node was not found.');
+    }
+
+    const introNodeSwOptions =
+      await contentService.getActiveOptionsByContentNodeId(introNodeSw.id);
+
+    const introSwOptionValues = introNodeSwOptions.map(
+      (option) => option.optionValue,
+    );
+
+    if (!introSwOptionValues.includes('tell_me_more')) {
+      await contentService.createContentNodeOption({
+        contentNodeId: introNodeSw.id,
+        labelEn: 'Tell me more',
+        labelSw: 'Nieleze zaidi',
+        optionValue: 'tell_me_more',
+        nextNodeKey: 'MENS_HYGIENE_TIPS',
+        sortOrder: 1,
+      });
+    }
+
+    if (!introSwOptionValues.includes('main_menu')) {
+      await contentService.createContentNodeOption({
+        contentNodeId: introNodeSw.id,
+        labelEn: 'Main Menu',
+        labelSw: 'Menyu Kuu',
+        optionValue: 'main_menu',
+        nextNodeKey: 'CATEGORY_MENU',
+        sortOrder: 2,
+      });
+    }
+
+    if (!introSwOptionValues.includes('back')) {
+      await contentService.createContentNodeOption({
+        contentNodeId: introNodeSw.id,
+        labelEn: 'Back',
+        labelSw: 'Rudi',
+        optionValue: 'back',
+        nextNodeKey: 'BACK_ACTION',
+        sortOrder: 3,
+      });
+    }
+
+    if (!introSwOptionValues.includes('start_again')) {
+      await contentService.createContentNodeOption({
+        contentNodeId: introNodeSw.id,
+        labelEn: 'Start Again',
+        labelSw: 'Anza Tena',
+        optionValue: 'start_again',
+        nextNodeKey: 'START_AGAIN',
+        sortOrder: 4,
+      });
+    }
+
+    console.log(
+      'Swahili intro node options after seed:',
+      await contentService.getActiveOptionsByContentNodeId(introNodeSw.id),
+    );
+
+    const tipsNodeSw = await contentService.findContentNodeByKeyAndLanguage(
+      'MENS_HYGIENE_TIPS',
+      Language.SW,
+    );
+
+    if (tipsNodeSw) {
+      const tipsNodeSwOptions =
+        await contentService.getActiveOptionsByContentNodeId(tipsNodeSw.id);
+
+      const tipsSwOptionValues = tipsNodeSwOptions.map(
+        (option) => option.optionValue,
+      );
+
+      if (!tipsSwOptionValues.includes('main_menu')) {
+        await contentService.createContentNodeOption({
+          contentNodeId: tipsNodeSw.id,
+          labelEn: 'Main Menu',
+          labelSw: 'Menyu Kuu',
+          optionValue: 'main_menu',
+          nextNodeKey: 'CATEGORY_MENU',
+          sortOrder: 1,
+        });
+      }
+
+      if (!tipsSwOptionValues.includes('back')) {
+        await contentService.createContentNodeOption({
+          contentNodeId: tipsNodeSw.id,
+          labelEn: 'Back',
+          labelSw: 'Rudi',
+          optionValue: 'back',
+          nextNodeKey: 'BACK_ACTION',
+          sortOrder: 2,
+        });
+      }
+
+      if (!tipsSwOptionValues.includes('start_again')) {
+        await contentService.createContentNodeOption({
+          contentNodeId: tipsNodeSw.id,
+          labelEn: 'Start Again',
+          labelSw: 'Anza Tena',
+          optionValue: 'start_again',
+          nextNodeKey: 'START_AGAIN',
+          sortOrder: 3,
+        });
+      }
+
+      console.log(
+        'Swahili tips node options after seed:',
+        await contentService.getActiveOptionsByContentNodeId(tipsNodeSw.id),
+      );
+    }
     console.log('\n==============================');
     console.log('8. CONTENT NODE OPTION TESTS');
     console.log('==============================\n');
@@ -537,6 +753,7 @@ async function run() {
       await contentService.getRelatedSubtopicsBySubtopicId(
         menstrualHygieneSubtopicForLinks.id,
       );
+
     console.log('Related subtopics from menstrual hygiene:', relatedSubtopics);
     console.log('\n==============================');
     console.log('10. SAFEGUARDING TRIGGER TESTS');
@@ -808,6 +1025,9 @@ async function run() {
       profileService,
       sessionService,
       contentService,
+      safeguardingService,
+      referralsService,
+      messagesService,
     );
 
     const testPhoneNumber = `25570000${Date.now().toString().slice(-4)}`;
@@ -865,19 +1085,263 @@ async function run() {
 
     const step9 = await chatOrchestratorService.processIncomingMessage({
       whatsappPhoneNumber: testPhoneNumber,
-      interactiveValue: 'main_menu',
+      interactiveValue: 'back',
     });
     console.log('Orchestrator step 9:', step9);
+
+    const step10 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: testPhoneNumber,
+      interactiveValue: 'main_menu',
+    });
+    console.log('Orchestrator step 10:', step10);
 
     console.log(
       'Onboarding profile after orchestrator flow:',
       onboardingProfile,
     );
+
     console.log('\n==============================');
-    console.log('15. SESSION COMPLETION TEST');
+    console.log('15. CHAT ORCHESTRATOR SAFEGUARDING TESTS');
     console.log('==============================\n');
 
-    const completedSession = await sessionService.completeSession(session.id);
+    const safeguardingPhoneNumber = '255700000099';
+
+    const sgStep1 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: safeguardingPhoneNumber,
+      text: 'Hi',
+    });
+    console.log('Safeguarding flow step 1:', sgStep1);
+
+    const sgStep2 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: safeguardingPhoneNumber,
+      interactiveValue: Language.EN,
+    });
+    console.log('Safeguarding flow step 2:', sgStep2);
+
+    const sgStep3 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: safeguardingPhoneNumber,
+      interactiveValue: AgeBand.AGE_18_20,
+    });
+    console.log('Safeguarding flow step 3:', sgStep3);
+
+    const sgStep4 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: safeguardingPhoneNumber,
+      interactiveValue: Gender.FEMALE,
+    });
+    console.log('Safeguarding flow step 4:', sgStep4);
+
+    const sgStep5 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: safeguardingPhoneNumber,
+      text: 'My teacher forced me to do something I did not want.',
+    });
+    console.log('Safeguarding flow step 5:', sgStep5);
+    console.log('\n==============================');
+    console.log('16. NAVIGATION FINALIZATION TESTS');
+    console.log('==============================\n');
+
+    const navPhoneNumber = '255700000123';
+
+    const nav1 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: navPhoneNumber,
+      text: 'Hi',
+    });
+    console.log('Nav step 1:', nav1);
+
+    const nav2 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: navPhoneNumber,
+      interactiveValue: Language.EN,
+    });
+    console.log('Nav step 2:', nav2);
+
+    const nav3 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: navPhoneNumber,
+      interactiveValue: AgeBand.AGE_18_20,
+    });
+    console.log('Nav step 3:', nav3);
+
+    const nav4 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: navPhoneNumber,
+      interactiveValue: Gender.FEMALE,
+    });
+    console.log('Nav step 4:', nav4);
+
+    const nav5 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: navPhoneNumber,
+      interactiveValue: 'PERIODS_MENSTRUAL_HEALTH',
+    });
+    console.log('Nav step 5:', nav5);
+
+    const nav6 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: navPhoneNumber,
+      interactiveValue: 'MENSTRUATION',
+    });
+    console.log('Nav step 6:', nav6);
+
+    const nav7 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: navPhoneNumber,
+      interactiveValue: 'MENSTRUAL_HYGIENE',
+    });
+    console.log('Nav step 7:', nav7);
+    const nav8 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: navPhoneNumber,
+      interactiveValue: 'back',
+    });
+    console.log('Nav step 8 - back from content node:', nav8);
+
+    const nav9 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: navPhoneNumber,
+      interactiveValue: 'back',
+    });
+    console.log('Nav step 9 - back from subtopic menu:', nav9);
+
+    const nav10 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: navPhoneNumber,
+      interactiveValue: 'back',
+    });
+    console.log('Nav step 10 - back from topic menu:', nav10);
+
+    const navUser =
+      await usersService.findOrCreateByWhatsAppPhoneNumber(navPhoneNumber);
+    const navSession = await sessionService.getActiveSessionByUserId(
+      navUser.id,
+    );
+    console.log('Navigation session snapshot:', navSession);
+    const nav11 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: navPhoneNumber,
+      interactiveValue: 'main_menu',
+    });
+    console.log('Nav step 11 - main menu from category level:', nav11);
+
+    const nav12 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: navPhoneNumber,
+      interactiveValue: 'PERIODS_MENSTRUAL_HEALTH',
+    });
+    console.log('Nav step 12:', nav12);
+
+    const nav13 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: navPhoneNumber,
+      interactiveValue: 'MENSTRUATION',
+    });
+    console.log('Nav step 13:', nav13);
+
+    const nav14 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: navPhoneNumber,
+      interactiveValue: 'MENSTRUAL_HYGIENE',
+    });
+    console.log('Nav step 14:', nav14);
+
+    const nav15 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: navPhoneNumber,
+      interactiveValue: 'start_again',
+    });
+    console.log('Nav step 15 - start again from content node:', nav15);
+
+    const navUser2 =
+      await usersService.findOrCreateByWhatsAppPhoneNumber(navPhoneNumber);
+    const navSession2 = await sessionService.getActiveSessionByUserId(
+      navUser2.id,
+    );
+    console.log('Navigation session snapshot:', navSession2);
+    const nav16 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: navPhoneNumber,
+      interactiveValue: 'start_again',
+    });
+    console.log('Nav step 16 - start again during onboarding:', nav16);
+
+    console.log('\n==============================');
+    console.log('17. ORCHESTRATOR MESSAGE LOGGING TESTS');
+    console.log('==============================\n');
+
+    const loggingPhoneNumber = '255700000124';
+
+    const logStep1 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: loggingPhoneNumber,
+      text: 'Hi',
+    });
+    console.log('Logging step 1:', logStep1);
+
+    const logStep2 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: loggingPhoneNumber,
+      interactiveValue: Language.EN,
+    });
+    console.log('Logging step 2:', logStep2);
+
+    const loggingUser =
+      await usersService.findOrCreateByWhatsAppPhoneNumber(loggingPhoneNumber);
+    const loggingSession = await sessionService.getActiveSessionByUserId(
+      loggingUser.id,
+    );
+
+    if (!loggingSession) {
+      throw new Error('Logging test session not found.');
+    }
+
+    const loggedMessages = await messagesService.getRecentMessagesBySessionId(
+      loggingSession.id,
+      10,
+    );
+    console.log('Logged messages for orchestrator test:', loggedMessages);
+
+    console.log('\n==============================');
+    console.log('18. SAFEGUARDING MESSAGE FLAG TEST');
+    console.log('==============================\n');
+
+    const safeguardingLoggingPhoneNumber = '255700000125';
+
+    const sgLog1 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: safeguardingLoggingPhoneNumber,
+      text: 'Hi',
+    });
+    console.log('Safeguarding log step 1:', sgLog1);
+
+    const sgLog2 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: safeguardingLoggingPhoneNumber,
+      interactiveValue: Language.EN,
+    });
+    console.log('Safeguarding log step 2:', sgLog2);
+
+    const sgLog3 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: safeguardingLoggingPhoneNumber,
+      interactiveValue: AgeBand.AGE_18_20,
+    });
+    console.log('Safeguarding log step 3:', sgLog3);
+
+    const sgLog4 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: safeguardingLoggingPhoneNumber,
+      interactiveValue: Gender.FEMALE,
+    });
+    console.log('Safeguarding log step 4:', sgLog4);
+
+    const sgLog5 = await chatOrchestratorService.processIncomingMessage({
+      whatsappPhoneNumber: safeguardingLoggingPhoneNumber,
+      text: 'My teacher forced me to do something I did not want.',
+    });
+    console.log('Safeguarding log step 5:', sgLog5);
+
+    const safeguardingLoggingUser =
+      await usersService.findOrCreateByWhatsAppPhoneNumber(
+        safeguardingLoggingPhoneNumber,
+      );
+    const safeguardingLoggingSession =
+      await sessionService.getActiveSessionByUserId(safeguardingLoggingUser.id);
+
+    if (!safeguardingLoggingSession) {
+      throw new Error('Safeguarding logging session not found.');
+    }
+
+    const safeguardingLoggedMessages =
+      await messagesService.getRecentMessagesBySessionId(
+        safeguardingLoggingSession.id,
+        10,
+      );
+    console.log('Safeguarding logged messages:', safeguardingLoggedMessages);
+    console.log('\n==============================');
+    console.log('17. SESSION COMPLETION TEST');
+    console.log('==============================\n');
+
+    const completedSession = await sessionService.completeSession(
+      safeguardingLoggingSession.id,
+    );
     console.log('Completed session:', completedSession);
 
     console.log('\n✅ ALL TESTS COMPLETED SUCCESSFULLY\n');

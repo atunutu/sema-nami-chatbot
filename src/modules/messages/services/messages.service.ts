@@ -68,4 +68,24 @@ export class MessagesService {
       take: limit,
     });
   }
+
+  async markMessageAsSafeguardingTriggered(
+    messageId: string,
+  ): Promise<Message> {
+    await this.messagesRepository.update(messageId, {
+      triggeredSafeguarding: true,
+    });
+
+    const updatedMessage = await this.messagesRepository.findOne({
+      where: { id: messageId },
+    });
+
+    if (!updatedMessage) {
+      throw new Error(
+        `Message with ID ${messageId} was not found after update.`,
+      );
+    }
+
+    return updatedMessage;
+  }
 }

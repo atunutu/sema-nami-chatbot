@@ -7,6 +7,10 @@ import { ContentService } from '../../../modules/content/services/content.servic
 import { ProfileService } from '../../../modules/profile/services/profile.service';
 import { SessionService } from '../../../modules/session/services/session.service';
 import { UsersService } from '../../../modules/users/services/user.service';
+import { ReferralsService } from '../../../modules/referrals/services/referrals.service';
+import { SafeguardingService } from '../../../modules/safeguarding/services/safeguarding.service';
+import { MessagesService } from '../../../modules/messages/services/messages.service';
+import { MessageType } from 'src/common/enums/message-type.enum';
 
 type OrchestratorInput = {
   whatsappPhoneNumber: string;
@@ -31,17 +35,25 @@ export class ChatOrchestratorService {
   private readonly profileService: ProfileService;
   private readonly sessionService: SessionService;
   private readonly contentService: ContentService;
-
+  private readonly safeguardingService: SafeguardingService;
+  private readonly referralsService: ReferralsService;
+  private readonly messagesService: MessagesService;
   constructor(
     usersService: UsersService,
     profileService: ProfileService,
     sessionService: SessionService,
     contentService: ContentService,
+    safeguardingService: SafeguardingService,
+    referralsService: ReferralsService,
+    messagesService: MessagesService,
   ) {
     this.usersService = usersService;
     this.profileService = profileService;
     this.sessionService = sessionService;
     this.contentService = contentService;
+    this.safeguardingService = safeguardingService;
+    this.referralsService = referralsService;
+    this.messagesService = messagesService;
   }
 
   processIncomingMessage = async (
@@ -56,45 +68,331 @@ export class ChatOrchestratorService {
     const profile = await this.profileService.findOrCreateByUserId(user.id);
     const session = await this.sessionService.getOrCreateActiveSession(user.id);
 
-    if (!profile.completedOnboarding) {
-      return this.handleOnboardingFlow({
+    const inboundMessage = await this.messagesService.logInboundMessage({
+      sessionId: session.id,
+      userId: user.id,
+      messageType: this.getInboundMessageType(normalizedInput),
+      messageText: normalizedInput.text ?? null,
+      interactiveValue: normalizedInput.interactiveValue ?? null,
+      triggeredSafeguarding: false,
+      rawPayload: {
+        source: 'chat-orchestrator',
+      },
+    });
+
+    const language = profile.preferredLanguage ?? Language.EN;
+
+    if (normalizedInput.text) {
+      const safeguardingReply =
+        await this.safeguardingService.buildSafeguardingReply(
+          normalizedInput.text,
+          language,
+        );
+
+      if (safeguardingReply?.trigger && safeguardingReply.response) {
+        let message = safeguardingReply.response.responseText;
+
+        if (safeguardingReply.response.showReferrals) {
+          const referralResources =
+            await this.referralsService.getActiveReferralResources();
+
+          message += this.formatReferralResources({
+            language,
+            resources: referralResources,
+          });
+        }
+
+        await this.sessionService.updateStateAndLocation(session.id, {
+          currentState: ChatState.SAFEGUARDING_INTERRUPT,
+          currentCategoryCode: session.currentCategoryCode ?? null,
+          currentTopicCode: session.currentTopicCode ?? null,
+          currentSubtopicCode: session.currentSubtopicCode ?? null,
+          currentNodeKey: session.currentNodeKey ?? null,
+          previousNodeKey: session.previousNodeKey ?? null,
+        });
+
+        await this.messagesService.markMessageAsSafeguardingTriggered(
+          inboundMessage.id,
+        );
+
+        const response: OrchestratorResponse = {
+          message,
+          options: [
+            {
+              label: language === Language.SW ? 'Menyu Kuu' : 'Main Menu',
+              value: 'main_menu',
+            },
+            {
+              label: language === Language.SW ? 'Anza Tena' : 'Start Again',
+              value: 'start_again',
+            },
+          ],
+          currentState: ChatState.SAFEGUARDING_INTERRUPT,
+        };
+
+        await this.logOutboundOrchestratorResponse({
+          sessionId: session.id,
+          userId: user.id,
+          response,
+          triggeredSafeguarding: true,
+        });
+
+        return response;
+      }
+    }
+
+    const action = normalizedInput.interactiveValue;
+
+    if (action === 'main_menu') {
+      const response = await this.handleCategoryMenu(session.id, user.id);
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
+    }
+
+    if (action === 'start_again') {
+      await this.sessionService.updateStateAndLocation(session.id, {
+        currentState: ChatState.WELCOME,
+        currentCategoryCode: null,
+        currentTopicCode: null,
+        currentSubtopicCode: null,
+        currentNodeKey: null,
+        previousNodeKey: null,
+      });
+
+      const response = await this.handleOnboardingFlow({
+        userId: user.id,
+        sessionId: session.id,
+        currentState: ChatState.WELCOME,
+        text: null,
+        interactiveValue: null,
+      });
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
+    }
+
+    if (action === 'back') {
+      const response = await this.handleBackAction({
+        userId: user.id,
+        sessionId: session.id,
+      });
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
+    }
+
+    if (
+      session.currentState === ChatState.ASK_TOPIC_CATEGORY &&
+      action === 'more_categories'
+    ) {
+      const currentPage = this.parseCategoryPageMarker(session.previousNodeKey);
+
+      const response = await this.handleCategoryMenu(
+        session.id,
+        user.id,
+        currentPage + 1,
+      );
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
+    }
+
+    if (
+      session.currentState === ChatState.ASK_TOPIC_CATEGORY &&
+      action === 'category_page_start'
+    ) {
+      const response = await this.handleCategoryMenu(session.id, user.id, 0);
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
+    }
+
+    if (
+      this.isOnboardingState(session.currentState) ||
+      !profile.completedOnboarding
+    ) {
+      const response = await this.handleOnboardingFlow({
         userId: user.id,
         sessionId: session.id,
         currentState: session.currentState,
         text: normalizedInput.text,
         interactiveValue: normalizedInput.interactiveValue,
       });
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
     }
 
     if (session.currentState === ChatState.ASK_TOPIC_CATEGORY) {
-      return this.handleCategorySelection({
+      const response = await this.handleCategorySelection({
         userId: user.id,
         sessionId: session.id,
         interactiveValue: normalizedInput.interactiveValue,
       });
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
+    }
+
+    if (
+      session.currentState === ChatState.TOPIC_MENU &&
+      action === 'more_topics'
+    ) {
+      const currentPage = this.parseTopicPageMarker(session.previousNodeKey);
+
+      const response = await this.handleTopicMenu({
+        userId: user.id,
+        sessionId: session.id,
+        categoryCode: session.currentCategoryCode!,
+        page: currentPage + 1,
+      });
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
+    }
+
+    if (
+      session.currentState === ChatState.TOPIC_MENU &&
+      action === 'topic_page_start'
+    ) {
+      const response = await this.handleTopicMenu({
+        userId: user.id,
+        sessionId: session.id,
+        categoryCode: session.currentCategoryCode!,
+        page: 0,
+      });
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
     }
 
     if (session.currentState === ChatState.TOPIC_MENU) {
-      return this.handleTopicSelection({
+      const response = await this.handleTopicSelection({
         userId: user.id,
         sessionId: session.id,
         interactiveValue: normalizedInput.interactiveValue,
         currentCategoryCode: session.currentCategoryCode,
       });
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
+    }
+
+    if (
+      session.currentState === ChatState.SUBTOPIC_MENU &&
+      action === 'more_subtopics'
+    ) {
+      const currentPage = this.parseSubtopicPageMarker(session.previousNodeKey);
+
+      const response = await this.handleSubtopicMenu({
+        userId: user.id,
+        sessionId: session.id,
+        categoryCode: session.currentCategoryCode!,
+        topicCode: session.currentTopicCode!,
+        page: currentPage + 1,
+      });
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
+    }
+
+    if (
+      session.currentState === ChatState.SUBTOPIC_MENU &&
+      action === 'subtopic_page_start'
+    ) {
+      const response = await this.handleSubtopicMenu({
+        userId: user.id,
+        sessionId: session.id,
+        categoryCode: session.currentCategoryCode!,
+        topicCode: session.currentTopicCode!,
+        page: 0,
+      });
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
     }
 
     if (session.currentState === ChatState.SUBTOPIC_MENU) {
-      return this.handleSubtopicSelection({
+      const response = await this.handleSubtopicSelection({
         userId: user.id,
         sessionId: session.id,
         interactiveValue: normalizedInput.interactiveValue,
         currentCategoryCode: session.currentCategoryCode,
         currentTopicCode: session.currentTopicCode,
       });
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
     }
 
     if (session.currentState === ChatState.CONTENT_NODE) {
-      return this.handleContentNodeSelection({
+      const response = await this.handleContentNodeSelection({
         userId: user.id,
         sessionId: session.id,
         interactiveValue: normalizedInput.interactiveValue,
@@ -103,9 +401,25 @@ export class ChatOrchestratorService {
         currentSubtopicCode: session.currentSubtopicCode,
         currentNodeKey: session.currentNodeKey,
       });
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
     }
 
-    return this.handleCategoryMenu(session.id, user.id);
+    const response = await this.handleCategoryMenu(session.id, user.id);
+
+    await this.logOutboundOrchestratorResponse({
+      sessionId: session.id,
+      userId: user.id,
+      response,
+    });
+
+    return response;
   };
 
   private normalizeInput(input: OrchestratorInput): OrchestratorInput {
@@ -116,6 +430,49 @@ export class ChatOrchestratorService {
     };
   }
 
+  private async handleBackAction(data: {
+    userId: string;
+    sessionId: string;
+  }): Promise<OrchestratorResponse> {
+    const session = await this.sessionService.getActiveSessionByUserId(
+      data.userId,
+    );
+
+    if (!session) {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
+    }
+
+    if (
+      session.currentState === ChatState.CONTENT_NODE &&
+      session.currentTopicCode
+    ) {
+      return this.handleSubtopicMenu({
+        userId: data.userId,
+        sessionId: data.sessionId,
+        categoryCode: session.currentCategoryCode ?? '',
+        topicCode: session.currentTopicCode,
+        page: 0,
+      });
+    }
+
+    if (
+      session.currentState === ChatState.SUBTOPIC_MENU &&
+      session.currentCategoryCode
+    ) {
+      return this.handleTopicMenu({
+        userId: data.userId,
+        sessionId: data.sessionId,
+        categoryCode: session.currentCategoryCode,
+        page: 0,
+      });
+    }
+
+    if (session.currentState === ChatState.TOPIC_MENU) {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
+    }
+
+    return this.handleCategoryMenu(data.sessionId, data.userId);
+  }
   private async handleOnboardingFlow(data: {
     userId: string;
     sessionId: string;
@@ -131,7 +488,7 @@ export class ChatOrchestratorService {
 
         return {
           message:
-            'Welcome to SEMA NAMI. I am here to support you with sexual and reproductive health information. Please choose your language.',
+            'Welcome to SEMA NAMI. Please choose your language.\nKaribu SEMA NAMI. Tafadhali chagua lugha yako.',
           options: [
             { label: 'English', value: Language.EN },
             { label: 'Kiswahili', value: Language.SW },
@@ -157,7 +514,8 @@ export class ChatOrchestratorService {
         });
 
         return {
-          message: 'Please choose your language to continue.',
+          message:
+            'Please choose your language to continue.\nTafadhali chagua lugha yako ili kuendelea.',
           options: [
             { label: 'English', value: Language.EN },
             { label: 'Kiswahili', value: Language.SW },
@@ -176,7 +534,8 @@ export class ChatOrchestratorService {
 
     if (selectedLanguage !== Language.EN && selectedLanguage !== Language.SW) {
       return {
-        message: 'Please choose one of the language options below.',
+        message:
+          'Please choose one of the language options below.\nTafadhali chagua moja ya lugha zilizopo hapa chini.',
         options: [
           { label: 'English', value: Language.EN },
           { label: 'Kiswahili', value: Language.SW },
@@ -277,15 +636,43 @@ export class ChatOrchestratorService {
   private async handleCategoryMenu(
     sessionId: string,
     userId?: string,
+    page = 0,
   ): Promise<OrchestratorResponse> {
     let categories = await this.contentService.getActiveCategories();
+    let language = Language.EN;
 
     if (userId) {
       const profile = await this.profileService.findByUserId(userId);
 
+      language = profile?.preferredLanguage ?? Language.EN;
+
       categories = await this.contentService.getVisibleCategories({
         ageBand: profile?.ageBand ?? null,
         gender: profile?.gender ?? null,
+      });
+    }
+
+    const startIndex = page * this.CATEGORY_PAGE_SIZE;
+    const endIndex = startIndex + this.CATEGORY_PAGE_SIZE;
+    const pagedCategories = categories.slice(startIndex, endIndex);
+    const hasMore = endIndex < categories.length;
+
+    const options = pagedCategories.map((category) => ({
+      label: language === Language.SW ? category.titleSw : category.titleEn,
+      value: category.code,
+    }));
+
+    if (hasMore) {
+      options.push({
+        label: language === Language.SW ? 'Zaidi' : 'More',
+        value: 'more_categories',
+      });
+    }
+
+    if (page > 0) {
+      options.push({
+        label: language === Language.SW ? 'Mwanzo wa orodha' : 'Back to start',
+        value: 'category_page_start',
       });
     }
 
@@ -295,15 +682,15 @@ export class ChatOrchestratorService {
       currentTopicCode: null,
       currentSubtopicCode: null,
       currentNodeKey: null,
-      previousNodeKey: null,
+      previousNodeKey: this.buildCategoryPageMarker(page),
     });
 
     return {
-      message: 'What would you like to learn about today?',
-      options: categories.map((category) => ({
-        label: category.titleEn,
-        value: category.code,
-      })),
+      message:
+        language === Language.SW
+          ? 'Ungependa kujifunza nini leo?'
+          : 'What would you like to learn about today?',
+      options,
       currentState: ChatState.ASK_TOPIC_CATEGORY,
     };
   }
@@ -316,6 +703,13 @@ export class ChatOrchestratorService {
     const selectedCategoryCode = data.interactiveValue;
     const profile = await this.profileService.findByUserId(data.userId);
 
+    if (
+      selectedCategoryCode === 'more_categories' ||
+      selectedCategoryCode === 'category_page_start'
+    ) {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
+    }
+
     if (!selectedCategoryCode) {
       return this.handleCategoryMenu(data.sessionId, data.userId);
     }
@@ -324,17 +718,12 @@ export class ChatOrchestratorService {
       await this.contentService.findCategoryByCode(selectedCategoryCode);
 
     if (!selectedCategory || !selectedCategory.isActive) {
-      const visibleCategories = await this.contentService.getVisibleCategories({
-        ageBand: profile?.ageBand ?? null,
-        gender: profile?.gender ?? null,
-      });
-
       return {
-        message: 'Please choose one of the available topic areas below.',
-        options: visibleCategories.map((category) => ({
-          label: category.titleEn,
-          value: category.code,
-        })),
+        message:
+          profile?.preferredLanguage === Language.SW
+            ? 'Tafadhali chagua moja ya maeneo ya mada yaliyopo hapa chini.'
+            : 'Please choose one of the available topic areas below.',
+        options: [],
         currentState: ChatState.ASK_TOPIC_CATEGORY,
       };
     }
@@ -348,21 +737,126 @@ export class ChatOrchestratorService {
         },
       );
 
+    if (visibleTopics.length === 0) {
+      return {
+        message:
+          profile?.preferredLanguage === Language.SW
+            ? 'Samahani, hakuna mada zinazopatikana kwa sasa katika sehemu hii.'
+            : 'Sorry, there are no topics available in this section right now.',
+        options: [
+          {
+            label:
+              profile?.preferredLanguage === Language.SW
+                ? 'Menyu Kuu'
+                : 'Main Menu',
+            value: 'main_menu',
+          },
+        ],
+        currentState: ChatState.FALLBACK,
+      };
+    }
+
+    if (visibleTopics.length === 1) {
+      const selectedTopic = visibleTopics[0];
+
+      return this.handleSubtopicMenu({
+        userId: data.userId,
+        sessionId: data.sessionId,
+        categoryCode: selectedCategory.code,
+        topicCode: selectedTopic.code,
+        page: 0,
+      });
+    }
+
+    return this.handleTopicMenu({
+      userId: data.userId,
+      sessionId: data.sessionId,
+      categoryCode: selectedCategory.code,
+      page: 0,
+    });
+  }
+
+  private readonly CATEGORY_PAGE_SIZE = 8;
+
+  private buildCategoryPageMarker(page: number): string {
+    return `CATEGORY_PAGE_${page}`;
+  }
+
+  private parseCategoryPageMarker(marker?: string | null): number {
+    if (!marker?.startsWith('CATEGORY_PAGE_')) {
+      return 0;
+    }
+
+    const value = Number(marker.replace('CATEGORY_PAGE_', ''));
+    return Number.isNaN(value) ? 0 : value;
+  }
+
+  private async handleTopicMenu(data: {
+    userId: string;
+    sessionId: string;
+    categoryCode: string;
+    page?: number;
+  }): Promise<OrchestratorResponse> {
+    const profile = await this.profileService.findByUserId(data.userId);
+    const language = profile?.preferredLanguage ?? Language.EN;
+
+    const selectedCategory = await this.contentService.findCategoryByCode(
+      data.categoryCode,
+    );
+
+    if (!selectedCategory || !selectedCategory.isActive) {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
+    }
+
+    const visibleTopics =
+      await this.contentService.getVisibleTopicsByCategoryId(
+        selectedCategory.id,
+        {
+          ageBand: profile?.ageBand ?? null,
+          gender: profile?.gender ?? null,
+        },
+      );
+
+    const page = data.page ?? 0;
+    const startIndex = page * this.TOPIC_PAGE_SIZE;
+    const endIndex = startIndex + this.TOPIC_PAGE_SIZE;
+    const pagedTopics = visibleTopics.slice(startIndex, endIndex);
+    const hasMore = endIndex < visibleTopics.length;
+
+    const options = pagedTopics.map((topic) => ({
+      label: language === Language.SW ? topic.titleSw : topic.titleEn,
+      value: topic.code,
+    }));
+
+    if (hasMore) {
+      options.push({
+        label: language === Language.SW ? 'Zaidi' : 'More',
+        value: 'more_topics',
+      });
+    }
+
+    if (page > 0) {
+      options.push({
+        label: language === Language.SW ? 'Mwanzo wa orodha' : 'Back to start',
+        value: 'topic_page_start',
+      });
+    }
+
     await this.sessionService.updateStateAndLocation(data.sessionId, {
       currentState: ChatState.TOPIC_MENU,
       currentCategoryCode: selectedCategory.code,
       currentTopicCode: null,
       currentSubtopicCode: null,
       currentNodeKey: null,
-      previousNodeKey: null,
+      previousNodeKey: this.buildTopicPageMarker(page),
     });
 
     return {
-      message: `You chose ${selectedCategory.titleEn}. What would you like to explore next?`,
-      options: visibleTopics.map((topic) => ({
-        label: topic.titleEn,
-        value: topic.code,
-      })),
+      message:
+        language === Language.SW
+          ? `Umechagua ${selectedCategory.titleSw}. Ungependa kuchunguza nini zaidi?`
+          : `You chose ${selectedCategory.titleEn}. What would you like to explore next?`,
+      options,
       currentState: ChatState.TOPIC_MENU,
     };
   }
@@ -376,6 +870,21 @@ export class ChatOrchestratorService {
     const selectedTopicCode = data.interactiveValue;
     const profile = await this.profileService.findByUserId(data.userId);
 
+    if (
+      data.interactiveValue === 'more_topics' ||
+      data.interactiveValue === 'topic_page_start'
+    ) {
+      if (!data.currentCategoryCode) {
+        return this.handleCategoryMenu(data.sessionId, data.userId);
+      }
+
+      return this.handleTopicMenu({
+        userId: data.userId,
+        sessionId: data.sessionId,
+        categoryCode: data.currentCategoryCode,
+        page: 0,
+      });
+    }
     if (!selectedTopicCode) {
       if (!data.currentCategoryCode) {
         return this.handleCategoryMenu(data.sessionId, data.userId);
@@ -443,29 +952,13 @@ export class ChatOrchestratorService {
       };
     }
 
-    const visibleSubtopics =
-      await this.contentService.getVisibleSubtopicsByTopicId(selectedTopic.id, {
-        ageBand: profile?.ageBand ?? null,
-        gender: profile?.gender ?? null,
-      });
-
-    await this.sessionService.updateStateAndLocation(data.sessionId, {
-      currentState: ChatState.SUBTOPIC_MENU,
-      currentCategoryCode: data.currentCategoryCode ?? null,
-      currentTopicCode: selectedTopic.code,
-      currentSubtopicCode: null,
-      currentNodeKey: null,
-      previousNodeKey: null,
+    return this.handleSubtopicMenu({
+      userId: data.userId,
+      sessionId: data.sessionId,
+      categoryCode: data.currentCategoryCode ?? '',
+      topicCode: selectedTopic.code,
+      page: 0,
     });
-
-    return {
-      message: `You chose ${selectedTopic.titleEn}. What would you like to learn about next?`,
-      options: visibleSubtopics.map((subtopic) => ({
-        label: subtopic.titleEn,
-        value: subtopic.code,
-      })),
-      currentState: ChatState.SUBTOPIC_MENU,
-    };
   }
 
   private async handleSubtopicSelection(data: {
@@ -478,6 +971,22 @@ export class ChatOrchestratorService {
     const selectedSubtopicCode = data.interactiveValue;
     const profile = await this.profileService.findByUserId(data.userId);
 
+    if (
+      data.interactiveValue === 'more_subtopics' ||
+      data.interactiveValue === 'subtopic_page_start'
+    ) {
+      if (!data.currentCategoryCode || !data.currentTopicCode) {
+        return this.handleCategoryMenu(data.sessionId, data.userId);
+      }
+
+      return this.handleSubtopicMenu({
+        userId: data.userId,
+        sessionId: data.sessionId,
+        categoryCode: data.currentCategoryCode,
+        topicCode: data.currentTopicCode,
+        page: 0,
+      });
+    }
     if (!data.currentTopicCode) {
       return this.handleCategoryMenu(data.sessionId, data.userId);
     }
@@ -664,6 +1173,57 @@ export class ChatOrchestratorService {
       return this.handleCategoryMenu(data.sessionId, data.userId);
     }
 
+    if (selectedOptionValue === 'start_again') {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
+    }
+
+    if (selectedOptionValue === 'back') {
+      const profile = await this.profileService.findByUserId(data.userId);
+      const language = profile?.preferredLanguage ?? Language.EN;
+
+      if (!data.currentSubtopicCode || !data.currentTopicCode) {
+        return this.handleCategoryMenu(data.sessionId, data.userId);
+      }
+
+      const currentTopic = await this.contentService.findTopicByCode(
+        data.currentTopicCode,
+      );
+
+      if (!currentTopic) {
+        return this.handleCategoryMenu(data.sessionId, data.userId);
+      }
+
+      const visibleSubtopics =
+        await this.contentService.getVisibleSubtopicsByTopicId(
+          currentTopic.id,
+          {
+            ageBand: profile?.ageBand ?? null,
+            gender: profile?.gender ?? null,
+          },
+        );
+
+      await this.sessionService.updateStateAndLocation(data.sessionId, {
+        currentState: ChatState.SUBTOPIC_MENU,
+        currentCategoryCode: data.currentCategoryCode ?? null,
+        currentTopicCode: data.currentTopicCode ?? null,
+        currentSubtopicCode: null,
+        currentNodeKey: null,
+        previousNodeKey: null,
+      });
+
+      return {
+        message:
+          language === Language.SW
+            ? `Umechagua ${currentTopic.titleSw}. Ungependa kujifunza nini zaidi?`
+            : `You chose ${currentTopic.titleEn}. What would you like to learn about next?`,
+        options: visibleSubtopics.map((subtopic) => ({
+          label: language === Language.SW ? subtopic.titleSw : subtopic.titleEn,
+          value: subtopic.code,
+        })),
+        currentState: ChatState.SUBTOPIC_MENU,
+      };
+    }
+
     const currentNode =
       await this.contentService.findContentNodeByKeyAndLanguage(
         data.currentNodeKey,
@@ -720,5 +1280,183 @@ export class ChatOrchestratorService {
       language,
       previousNodeKey: currentNode.nodeKey,
     });
+  }
+
+  private formatReferralResources(data: {
+    language: Language;
+    resources: {
+      name: string;
+      descriptionEn?: string | null;
+      descriptionSw?: string | null;
+      contactDetails?: string | null;
+    }[];
+  }): string {
+    if (!data.resources.length) {
+      return '';
+    }
+
+    const header =
+      data.language === Language.SW
+        ? '\n\nHuduma za msaada:'
+        : '\n\nSupport options:';
+
+    const lines = data.resources.map((resource) => {
+      const description =
+        data.language === Language.SW
+          ? resource.descriptionSw
+          : resource.descriptionEn;
+
+      const details = [resource.name, description, resource.contactDetails]
+        .filter(Boolean)
+        .join(' - ');
+
+      return `• ${details}`;
+    });
+
+    return `${header}\n${lines.join('\n')}`;
+  }
+
+  private getInboundMessageType(input: OrchestratorInput): MessageType {
+    if (input.interactiveValue) {
+      return MessageType.INTERACTIVE_REPLY;
+    }
+
+    return MessageType.TEXT;
+  }
+
+  private async logOutboundOrchestratorResponse(data: {
+    sessionId: string;
+    userId: string;
+    response: OrchestratorResponse;
+    triggeredSafeguarding?: boolean;
+  }): Promise<void> {
+    await this.messagesService.logOutboundMessage({
+      sessionId: data.sessionId,
+      userId: data.userId,
+      messageType: MessageType.TEXT,
+      messageText: data.response.message,
+      interactiveValue: null,
+      triggeredSafeguarding: data.triggeredSafeguarding ?? false,
+      rawPayload: {
+        options: data.response.options,
+        currentState: data.response.currentState,
+        source: 'chat-orchestrator',
+      },
+    });
+  }
+
+  private isOnboardingState(state: ChatState): boolean {
+    return [
+      ChatState.WELCOME,
+      ChatState.ASK_LANGUAGE,
+      ChatState.ASK_AGE_BAND,
+      ChatState.ASK_GENDER,
+    ].includes(state);
+  }
+  private readonly TOPIC_PAGE_SIZE = 8;
+
+  private buildTopicPageMarker(page: number): string {
+    return `TOPIC_PAGE_${page}`;
+  }
+
+  private parseTopicPageMarker(marker?: string | null): number {
+    if (!marker?.startsWith('TOPIC_PAGE_')) {
+      return 0;
+    }
+
+    const value = Number(marker.replace('TOPIC_PAGE_', ''));
+    return Number.isNaN(value) ? 0 : value;
+  }
+
+  private readonly SUBTOPIC_PAGE_SIZE = 8;
+
+  private buildSubtopicPageMarker(page: number): string {
+    return `SUBTOPIC_PAGE_${page}`;
+  }
+
+  private parseSubtopicPageMarker(marker?: string | null): number {
+    if (!marker?.startsWith('SUBTOPIC_PAGE_')) {
+      return 0;
+    }
+
+    const value = Number(marker.replace('SUBTOPIC_PAGE_', ''));
+    return Number.isNaN(value) ? 0 : value;
+  }
+
+  private async handleSubtopicMenu(data: {
+    userId: string;
+    sessionId: string;
+    categoryCode: string;
+    topicCode: string;
+    page?: number;
+  }): Promise<OrchestratorResponse> {
+    const profile = await this.profileService.findByUserId(data.userId);
+    const language = profile?.preferredLanguage ?? Language.EN;
+
+    const selectedTopic = await this.contentService.findTopicByCode(
+      data.topicCode,
+    );
+
+    if (!selectedTopic || !selectedTopic.isActive) {
+      if (!data.categoryCode) {
+        return this.handleCategoryMenu(data.sessionId, data.userId);
+      }
+
+      return this.handleTopicMenu({
+        userId: data.userId,
+        sessionId: data.sessionId,
+        categoryCode: data.categoryCode,
+        page: 0,
+      });
+    }
+
+    const visibleSubtopics =
+      await this.contentService.getVisibleSubtopicsByTopicId(selectedTopic.id, {
+        ageBand: profile?.ageBand ?? null,
+        gender: profile?.gender ?? null,
+      });
+
+    const page = data.page ?? 0;
+    const startIndex = page * this.SUBTOPIC_PAGE_SIZE;
+    const endIndex = startIndex + this.SUBTOPIC_PAGE_SIZE;
+    const pagedSubtopics = visibleSubtopics.slice(startIndex, endIndex);
+    const hasMore = endIndex < visibleSubtopics.length;
+
+    const options = pagedSubtopics.map((subtopic) => ({
+      label: language === Language.SW ? subtopic.titleSw : subtopic.titleEn,
+      value: subtopic.code,
+    }));
+
+    if (hasMore) {
+      options.push({
+        label: language === Language.SW ? 'Zaidi' : 'More',
+        value: 'more_subtopics',
+      });
+    }
+
+    if (page > 0) {
+      options.push({
+        label: language === Language.SW ? 'Mwanzo wa orodha' : 'Back to start',
+        value: 'subtopic_page_start',
+      });
+    }
+
+    await this.sessionService.updateStateAndLocation(data.sessionId, {
+      currentState: ChatState.SUBTOPIC_MENU,
+      currentCategoryCode: data.categoryCode,
+      currentTopicCode: selectedTopic.code,
+      currentSubtopicCode: null,
+      currentNodeKey: null,
+      previousNodeKey: this.buildSubtopicPageMarker(page),
+    });
+
+    return {
+      message:
+        language === Language.SW
+          ? `Umechagua ${selectedTopic.titleSw}. Ungependa kujifunza nini zaidi?`
+          : `You chose ${selectedTopic.titleEn}. What would you like to learn about next?`,
+      options,
+      currentState: ChatState.SUBTOPIC_MENU,
+    };
   }
 }
