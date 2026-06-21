@@ -24,7 +24,7 @@ import { WhatsAppModule } from './modules/whatsapp/whatsapp.module';
 import { ConfigModule } from '@nestjs/config';
 import { BullModule } from '@nestjs/bull';
 import { CacheModule } from '@nestjs/cache-manager';
-import { redisStore } from 'cache-manager-redis-store';
+import KeyvRedis from '@keyv/redis';
 
 @Module({
   imports: [
@@ -67,15 +67,12 @@ import { redisStore } from 'cache-manager-redis-store';
 
     CacheModule.registerAsync({
       isGlobal: true,
-      useFactory: async () => ({
-        store: await redisStore({
-          socket: {
-            host: process.env.REDIS_HOST ?? '127.0.0.1',
-            port: Number(process.env.REDIS_PORT ?? 6379),
-          },
-          password: process.env.REDIS_PASSWORD || undefined,
-          ttl: 60,
-        }),
+      useFactory: () => ({
+        stores: [
+          new KeyvRedis(
+            `redis://${process.env.REDIS_PASSWORD ? `:${process.env.REDIS_PASSWORD}@` : ''}${process.env.REDIS_HOST ?? '127.0.0.1'}:${Number(process.env.REDIS_PORT ?? 6379)}`,
+          ),
+        ],
       }),
     }),
     UsersModule,

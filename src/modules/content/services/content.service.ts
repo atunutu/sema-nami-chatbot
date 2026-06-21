@@ -1,4 +1,4 @@
-import { Inject, Injectable } from '@nestjs/common';
+import { Inject, Injectable, Logger } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { AgeBand } from '../../../common/enums/age-band.enum';
 import { Gender } from '../../../common/enums/gender.enum';
@@ -12,10 +12,11 @@ import { Language } from 'src/common/enums/language.enum';
 import { NodeType } from 'src/common/enums/node-type.enum';
 import { ContentNodeOption } from '../entities/content-node-option.entity';
 import { SubtopicRelatedLink } from '../entities/subtopic-related-link.entity';
-import { CACHE_MANAGER } from '@nestjs/cache-manager';
+import { CACHE_MANAGER, Cache } from '@nestjs/cache-manager';
 
 @Injectable()
 export class ContentService {
+  private readonly logger = new Logger(ContentService.name);
   constructor(
     @InjectRepository(TopicCategory)
     private readonly topicCategoriesRepository: Repository<TopicCategory>,
@@ -36,11 +37,11 @@ export class ContentService {
     private readonly subtopicRelatedLinksRepository: Repository<SubtopicRelatedLink>,
 
     @Inject(CACHE_MANAGER)
-    private readonly cacheManager: any,
+    private readonly cacheManager: Cache,
   ) {}
 
-  private readonly MENU_CACHE_TTL = 900;
-  private readonly CONTENT_CACHE_TTL = 3600;
+  private readonly MENU_CACHE_TTL = 2 * 60 * 60 * 1000; // 2 hours
+  private readonly CONTENT_CACHE_TTL = 12 * 60 * 60 * 1000; // 12 hours
 
   private buildVisibleCategoriesCacheKey(filters?: {
     ageBand?: AgeBand | null;
@@ -136,7 +137,8 @@ export class ContentService {
 
     const cached = (await this.cacheManager.get(cacheKey)) as
       | TopicCategory[]
-      | undefined;
+      | null;
+
     if (cached) {
       return cached;
     }
@@ -153,9 +155,11 @@ export class ContentService {
       return genderMatches && ageMatches;
     });
 
-    await this.cacheManager.set(cacheKey, visibleCategories, {
-      ttl: this.MENU_CACHE_TTL,
-    });
+    await this.cacheManager.set(
+      cacheKey,
+      visibleCategories,
+      this.MENU_CACHE_TTL,
+    );
 
     return visibleCategories;
   }
@@ -163,9 +167,9 @@ export class ContentService {
   async findCategoryByCode(code: string): Promise<TopicCategory | null> {
     const cacheKey = this.buildCategoryByCodeCacheKey(code);
 
-    const cached = (await this.cacheManager.get(cacheKey)) as
-      | TopicCategory
-      | undefined;
+    const cached = (await this.cacheManager.get(
+      cacheKey,
+    )) as TopicCategory | null;
 
     if (cached) {
       return cached;
@@ -232,9 +236,7 @@ export class ContentService {
   ): Promise<Topic[]> {
     const cacheKey = this.buildVisibleTopicsCacheKey(categoryId, filters);
 
-    const cached = (await this.cacheManager.get(cacheKey)) as
-      | Topic[]
-      | undefined;
+    const cached = (await this.cacheManager.get(cacheKey)) as Topic[] | null;
     if (cached) {
       return cached;
     }
@@ -251,9 +253,11 @@ export class ContentService {
       return genderMatches && ageMatches;
     });
 
-    await this.cacheManager.set(cacheKey, visibleTopics, {
-      ttl: this.CONTENT_CACHE_TTL,
-    });
+    await this.cacheManager.set(
+      cacheKey,
+      visibleTopics,
+      this.CONTENT_CACHE_TTL,
+    );
 
     return visibleTopics;
   }
@@ -261,7 +265,7 @@ export class ContentService {
   async findTopicByCode(code: string): Promise<Topic | null> {
     const cacheKey = this.buildTopicByCodeCacheKey(code);
 
-    const cached = (await this.cacheManager.get(cacheKey)) as Topic | undefined;
+    const cached = (await this.cacheManager.get(cacheKey)) as Topic | null;
     if (cached) {
       return cached;
     }
@@ -327,9 +331,7 @@ export class ContentService {
   ): Promise<Subtopic[]> {
     const cacheKey = this.buildVisibleSubtopicsCacheKey(topicId, filters);
 
-    const cached = (await this.cacheManager.get(cacheKey)) as
-      | Subtopic[]
-      | undefined;
+    const cached = (await this.cacheManager.get(cacheKey)) as Subtopic[] | null;
     if (cached) {
       return cached;
     }
@@ -346,9 +348,11 @@ export class ContentService {
       return genderMatches && ageMatches;
     });
 
-    await this.cacheManager.set(cacheKey, visibleSubtopics, {
-      ttl: this.CONTENT_CACHE_TTL,
-    });
+    await this.cacheManager.set(
+      cacheKey,
+      visibleSubtopics,
+      this.CONTENT_CACHE_TTL,
+    );
 
     return visibleSubtopics;
   }
@@ -356,9 +360,7 @@ export class ContentService {
   async findSubtopicByCode(code: string): Promise<Subtopic | null> {
     const cacheKey = this.buildSubtopicByCodeCacheKey(code);
 
-    const cached = (await this.cacheManager.get(cacheKey)) as
-      | Subtopic
-      | undefined;
+    const cached = (await this.cacheManager.get(cacheKey)) as Subtopic | null;
     if (cached) {
       return cached;
     }
@@ -417,11 +419,12 @@ export class ContentService {
       language,
     );
 
-    const cached = (await this.cacheManager.get(cacheKey)) as
-      | ContentNode
-      | undefined;
+    const cached = (await this.cacheManager.get(
+      cacheKey,
+    )) as ContentNode | null;
 
     if (cached) {
+      this.logger.log(`CACHE HIT: ${cacheKey}`);
       return cached;
     }
 
@@ -565,7 +568,7 @@ export class ContentService {
 
     const cached = (await this.cacheManager.get(cacheKey)) as
       | ContentNodeOption[]
-      | undefined;
+      | null;
     if (cached) {
       return cached;
     }
@@ -704,14 +707,6 @@ export class ContentService {
     return updated;
   }
   async clearAllContentCache(): Promise<void> {
-    const store = this.cacheManager.store;
-
-    if (typeof store.keys !== 'function') {
-      return;
-    }
-
-    const keys: string[] = await store.keys('content:*');
-
-    await Promise.all(keys.map((key) => this.cacheManager.del(key)));
+    await this.cacheManager.clear();
   }
 }
