@@ -3,10 +3,7 @@ import { HttpService } from '@nestjs/axios';
 import { Injectable, Logger, UnauthorizedException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { firstValueFrom } from 'rxjs';
-import { ChatOrchestratorService } from '../../chat/services/chat-orchestrator.service';
 import { Language } from 'src/common/enums/language.enum';
-import { ProfileService } from 'src/modules/profile/services/profile.service';
-import { UsersService } from 'src/modules/users/services/user.service';
 import { InjectQueue } from '@nestjs/bull';
 import type { Queue } from 'bull';
 import {
@@ -66,11 +63,8 @@ export class WhatsAppService {
   private readonly logger = new Logger(WhatsAppService.name);
 
   constructor(
-    private readonly chatOrchestratorService: ChatOrchestratorService,
     private readonly configService: ConfigService,
     private readonly httpService: HttpService,
-    private readonly usersService: UsersService,
-    private readonly profileService: ProfileService,
     @InjectQueue(WHATSAPP_INBOUND_QUEUE)
     private readonly whatsAppInboundQueue: Queue,
   ) {}
@@ -93,9 +87,9 @@ export class WhatsAppService {
       },
       {
         jobId: message.providerMessageId,
-        removeOnComplete: 1000,
-        removeOnFail: 1000,
-        attempts: 3,
+        removeOnComplete: 100,
+        removeOnFail: 500,
+        attempts: 1,
         backoff: {
           type: 'exponential',
           delay: 2000,
@@ -269,7 +263,6 @@ export class WhatsAppService {
       const accessToken = this.configService.get<string>(
         'WHATSAPP_ACCESS_TOKEN',
       );
-      this.logger.log(`Has token: ${!!accessToken}`);
       const phoneNumberId = this.configService.get<string>(
         'WHATSAPP_PHONE_NUMBER_ID',
       );
@@ -293,7 +286,8 @@ export class WhatsAppService {
           body: data.body,
         },
       };
-      console.log(payload);
+
+      this.logger.log(`Sending WhatsApp text message to ${data.to}`);
 
       await firstValueFrom(
         this.httpService.post(url, payload, {
@@ -301,6 +295,7 @@ export class WhatsAppService {
             Authorization: `Bearer ${accessToken}`,
             'Content-Type': 'application/json',
           },
+          timeout: 15000,
         }),
       );
 
@@ -308,7 +303,9 @@ export class WhatsAppService {
     } catch (error: any) {
       this.logger.error(
         `Failed to send WhatsApp text message to ${data.to}: ${error.message}`,
+        error.stack,
       );
+      throw error;
     }
   }
 
@@ -354,13 +351,15 @@ export class WhatsAppService {
       },
     };
 
+    this.logger.log(`Sending WhatsApp buttons message to ${data.to}`);
+
     await firstValueFrom(
       this.httpService.post(url, payload, {
         headers: {
           Authorization: `Bearer ${accessToken}`,
           'Content-Type': 'application/json',
         },
-        timeout: 5000,
+        timeout: 15000,
       }),
     );
 
@@ -414,13 +413,15 @@ export class WhatsAppService {
       },
     };
 
+    this.logger.log(`Sending WhatsApp list message to ${data.to}`);
+
     await firstValueFrom(
       this.httpService.post(url, payload, {
         headers: {
           Authorization: `Bearer ${accessToken}`,
           'Content-Type': 'application/json',
         },
-        timeout: 5000,
+        timeout: 15000,
       }),
     );
 

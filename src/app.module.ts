@@ -20,12 +20,14 @@ import { SafeguardingTrigger } from './modules/safeguarding/entities/safeguardin
 import { ReferralsModule } from './modules/referrals/referrals.module';
 import { ReferralResource } from './modules/referrals/entities/referral-resource.entity';
 import { ChatModule } from './modules/chat/chat.module';
-import { WhatsAppModule } from './modules/whatsapp/whatsapp.module';
+import { WhatsAppWebModule } from './modules/whatsapp/whatsapp-web.module';
 import { ConfigModule } from '@nestjs/config';
 import { BullModule } from '@nestjs/bull';
 import { CacheModule } from '@nestjs/cache-manager';
 import KeyvRedis from '@keyv/redis';
+import { WhatsAppWorkerModule } from './modules/whatsapp/whatsapp-worker.module';
 
+const appMode = process.env.APP_MODE ?? 'web';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -83,7 +85,8 @@ import KeyvRedis from '@keyv/redis';
     SafeguardingModule,
     ReferralsModule,
     ChatModule,
-    WhatsAppModule,
+    WhatsAppWebModule,
+    ...(appMode === 'worker' ? [WhatsAppWorkerModule] : [WhatsAppWebModule]),
   ],
   controllers: [],
   providers: [],
