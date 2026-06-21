@@ -1,4 +1,3 @@
-import { Gender } from '../../../common/enums/gender.enum';
 import { InputType } from '../../../common/enums/input-type.enum';
 import { Language } from '../../../common/enums/language.enum';
 import { NodeType } from '../../../common/enums/node-type.enum';
@@ -57,7 +56,7 @@ export const pubertyAdolescentDevelopmentSeed = {
       titleSw: 'Mabadiliko ya Mwili kwa Wasichana',
       descriptionEn: null,
       descriptionSw: null,
-      audienceGender: Gender.FEMALE,
+      audienceGender: null,
       ageBandRule: null,
       sortOrder: 3,
       isActive: true,
@@ -68,7 +67,7 @@ export const pubertyAdolescentDevelopmentSeed = {
       titleSw: 'Mabadiliko ya Mwili kwa Wavulana',
       descriptionEn: null,
       descriptionSw: null,
-      audienceGender: Gender.MALE,
+      audienceGender: null,
       ageBandRule: null,
       sortOrder: 4,
       isActive: true,

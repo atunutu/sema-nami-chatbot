@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { AgeBand } from '../../../common/enums/age-band.enum';
 import { Gender } from '../../../common/enums/gender.enum';
@@ -12,6 +12,7 @@ import { Language } from 'src/common/enums/language.enum';
 import { NodeType } from 'src/common/enums/node-type.enum';
 import { ContentNodeOption } from '../entities/content-node-option.entity';
 import { SubtopicRelatedLink } from '../entities/subtopic-related-link.entity';
+import { CACHE_MANAGER } from '@nestjs/cache-manager';
 
 @Injectable()
 export class ContentService {
@@ -33,7 +34,66 @@ export class ContentService {
 
     @InjectRepository(SubtopicRelatedLink)
     private readonly subtopicRelatedLinksRepository: Repository<SubtopicRelatedLink>,
+
+    @Inject(CACHE_MANAGER)
+    private readonly cacheManager: any,
   ) {}
+
+  private readonly MENU_CACHE_TTL = 900;
+  private readonly CONTENT_CACHE_TTL = 3600;
+
+  private buildVisibleCategoriesCacheKey(filters?: {
+    ageBand?: AgeBand | null;
+    gender?: Gender | null;
+  }): string {
+    return `content:visible-categories:age=${filters?.ageBand ?? 'any'}:gender=${filters?.gender ?? 'any'}`;
+  }
+
+  private buildCategoryByCodeCacheKey(code: string): string {
+    return `content:category-by-code:${code}`;
+  }
+
+  private buildVisibleTopicsCacheKey(
+    categoryId: string,
+    filters?: {
+      ageBand?: AgeBand | null;
+      gender?: Gender | null;
+    },
+  ): string {
+    return `content:visible-topics:category=${categoryId}:age=${filters?.ageBand ?? 'any'}:gender=${filters?.gender ?? 'any'}`;
+  }
+
+  private buildTopicByCodeCacheKey(code: string): string {
+    return `content:topic-by-code:${code}`;
+  }
+
+  private buildVisibleSubtopicsCacheKey(
+    topicId: string,
+    filters?: {
+      ageBand?: AgeBand | null;
+      gender?: Gender | null;
+    },
+  ): string {
+    return `content:visible-subtopics:topic=${topicId}:age=${filters?.ageBand ?? 'any'}:gender=${filters?.gender ?? 'any'}`;
+  }
+
+  private buildSubtopicByCodeCacheKey(code: string): string {
+    return `content:subtopic-by-code:${code}`;
+  }
+
+  private buildContentNodeByKeyAndLanguageCacheKey(
+    nodeKey: string,
+    language: Language,
+  ): string {
+    return `content:node:${nodeKey}:lang=${language}`;
+  }
+
+  private buildNodeOptionsCacheKey(
+    nodeKey: string,
+    language: Language,
+  ): string {
+    return `content:node-options:${nodeKey}:lang=${language}`;
+  }
 
   async createCategory(data: {
     code: string;
@@ -72,9 +132,18 @@ export class ContentService {
     ageBand?: AgeBand | null;
     gender?: Gender | null;
   }): Promise<TopicCategory[]> {
+    const cacheKey = this.buildVisibleCategoriesCacheKey(filters);
+
+    const cached = (await this.cacheManager.get(cacheKey)) as
+      | TopicCategory[]
+      | undefined;
+    if (cached) {
+      return cached;
+    }
+
     const categories = await this.getActiveCategories();
 
-    return categories.filter((category) => {
+    const visibleCategories = categories.filter((category) => {
       const genderMatches =
         !category.audienceGender || category.audienceGender === filters?.gender;
 
@@ -83,12 +152,34 @@ export class ContentService {
 
       return genderMatches && ageMatches;
     });
+
+    await this.cacheManager.set(cacheKey, visibleCategories, {
+      ttl: this.MENU_CACHE_TTL,
+    });
+
+    return visibleCategories;
   }
 
   async findCategoryByCode(code: string): Promise<TopicCategory | null> {
-    return this.topicCategoriesRepository.findOne({
+    const cacheKey = this.buildCategoryByCodeCacheKey(code);
+
+    const cached = (await this.cacheManager.get(cacheKey)) as
+      | TopicCategory
+      | undefined;
+
+    if (cached) {
+      return cached;
+    }
+
+    const category = await this.topicCategoriesRepository.findOne({
       where: { code },
     });
+
+    if (category) {
+      await this.cacheManager.set(cacheKey, category, this.CONTENT_CACHE_TTL);
+    }
+
+    return category;
   }
 
   async createTopic(data: {
@@ -139,9 +230,18 @@ export class ContentService {
       gender?: Gender | null;
     },
   ): Promise<Topic[]> {
+    const cacheKey = this.buildVisibleTopicsCacheKey(categoryId, filters);
+
+    const cached = (await this.cacheManager.get(cacheKey)) as
+      | Topic[]
+      | undefined;
+    if (cached) {
+      return cached;
+    }
+
     const topics = await this.getActiveTopicsByCategoryId(categoryId);
 
-    return topics.filter((topic) => {
+    const visibleTopics = topics.filter((topic) => {
       const genderMatches =
         !topic.audienceGender || topic.audienceGender === filters?.gender;
 
@@ -150,12 +250,31 @@ export class ContentService {
 
       return genderMatches && ageMatches;
     });
+
+    await this.cacheManager.set(cacheKey, visibleTopics, {
+      ttl: this.CONTENT_CACHE_TTL,
+    });
+
+    return visibleTopics;
   }
 
   async findTopicByCode(code: string): Promise<Topic | null> {
-    return this.topicsRepository.findOne({
+    const cacheKey = this.buildTopicByCodeCacheKey(code);
+
+    const cached = (await this.cacheManager.get(cacheKey)) as Topic | undefined;
+    if (cached) {
+      return cached;
+    }
+
+    const topic = await this.topicsRepository.findOne({
       where: { code },
     });
+
+    if (topic) {
+      await this.cacheManager.set(cacheKey, topic, this.CONTENT_CACHE_TTL);
+    }
+
+    return topic;
   }
 
   async createSubtopic(data: {
@@ -206,9 +325,18 @@ export class ContentService {
       gender?: Gender | null;
     },
   ): Promise<Subtopic[]> {
+    const cacheKey = this.buildVisibleSubtopicsCacheKey(topicId, filters);
+
+    const cached = (await this.cacheManager.get(cacheKey)) as
+      | Subtopic[]
+      | undefined;
+    if (cached) {
+      return cached;
+    }
+
     const subtopics = await this.getActiveSubtopicsByTopicId(topicId);
 
-    return subtopics.filter((subtopic) => {
+    const visibleSubtopics = subtopics.filter((subtopic) => {
       const genderMatches =
         !subtopic.audienceGender || subtopic.audienceGender === filters?.gender;
 
@@ -217,13 +345,35 @@ export class ContentService {
 
       return genderMatches && ageMatches;
     });
+
+    await this.cacheManager.set(cacheKey, visibleSubtopics, {
+      ttl: this.CONTENT_CACHE_TTL,
+    });
+
+    return visibleSubtopics;
   }
 
   async findSubtopicByCode(code: string): Promise<Subtopic | null> {
-    return this.subtopicsRepository.findOne({
+    const cacheKey = this.buildSubtopicByCodeCacheKey(code);
+
+    const cached = (await this.cacheManager.get(cacheKey)) as
+      | Subtopic
+      | undefined;
+    if (cached) {
+      return cached;
+    }
+
+    const subtopic = await this.subtopicsRepository.findOne({
       where: { code },
     });
+
+    if (subtopic) {
+      await this.cacheManager.set(cacheKey, subtopic, this.CONTENT_CACHE_TTL);
+    }
+
+    return subtopic;
   }
+
   async createContentNode(data: {
     categoryId?: string | null;
     topicId?: string | null;
@@ -262,12 +412,31 @@ export class ContentService {
     nodeKey: string,
     language: Language,
   ): Promise<ContentNode | null> {
-    return this.contentNodesRepository.findOne({
+    const cacheKey = this.buildContentNodeByKeyAndLanguageCacheKey(
+      nodeKey,
+      language,
+    );
+
+    const cached = (await this.cacheManager.get(cacheKey)) as
+      | ContentNode
+      | undefined;
+
+    if (cached) {
+      return cached;
+    }
+
+    const node = await this.contentNodesRepository.findOne({
       where: {
         nodeKey,
         language,
       },
     });
+
+    if (node) {
+      await this.cacheManager.set(cacheKey, node, this.CONTENT_CACHE_TTL);
+    }
+
+    return node;
   }
 
   async getActiveContentNodesBySubtopicId(
@@ -392,13 +561,26 @@ export class ContentService {
     nodeKey: string,
     language: Language,
   ): Promise<ContentNodeOption[]> {
+    const cacheKey = this.buildNodeOptionsCacheKey(nodeKey, language);
+
+    const cached = (await this.cacheManager.get(cacheKey)) as
+      | ContentNodeOption[]
+      | undefined;
+    if (cached) {
+      return cached;
+    }
+
     const node = await this.findContentNodeByKeyAndLanguage(nodeKey, language);
 
     if (!node) {
       return [];
     }
 
-    return this.getActiveOptionsByContentNodeId(node.id);
+    const options = await this.getActiveOptionsByContentNodeId(node.id);
+
+    await this.cacheManager.set(cacheKey, options, this.CONTENT_CACHE_TTL);
+
+    return options;
   }
 
   async resolveNextNodeByOption(data: {
@@ -520,5 +702,16 @@ export class ContentService {
     }
 
     return updated;
+  }
+  async clearAllContentCache(): Promise<void> {
+    const store = this.cacheManager.store;
+
+    if (typeof store.keys !== 'function') {
+      return;
+    }
+
+    const keys: string[] = await store.keys('content:*');
+
+    await Promise.all(keys.map((key) => this.cacheManager.del(key)));
   }
 }

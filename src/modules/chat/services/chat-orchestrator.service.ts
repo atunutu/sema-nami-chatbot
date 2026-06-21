@@ -68,18 +68,6 @@ export class ChatOrchestratorService {
     const profile = await this.profileService.findOrCreateByUserId(user.id);
     const session = await this.sessionService.getOrCreateActiveSession(user.id);
 
-    const inboundMessage = await this.messagesService.logInboundMessage({
-      sessionId: session.id,
-      userId: user.id,
-      messageType: this.getInboundMessageType(normalizedInput),
-      messageText: normalizedInput.text ?? null,
-      interactiveValue: normalizedInput.interactiveValue ?? null,
-      triggeredSafeguarding: false,
-      rawPayload: {
-        source: 'chat-orchestrator',
-      },
-    });
-
     const language = profile.preferredLanguage ?? Language.EN;
 
     if (normalizedInput.text) {
@@ -110,10 +98,6 @@ export class ChatOrchestratorService {
           currentNodeKey: session.currentNodeKey ?? null,
           previousNodeKey: session.previousNodeKey ?? null,
         });
-
-        await this.messagesService.markMessageAsSafeguardingTriggered(
-          inboundMessage.id,
-        );
 
         const response: OrchestratorResponse = {
           message,

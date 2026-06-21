@@ -73,6 +73,22 @@ export class Message {
   })
   rawPayload: Record<string, any> | null;
 
+  @Column({
+    name: 'provider',
+    type: 'varchar',
+    length: 50,
+    nullable: true,
+  })
+  provider: string | null;
+
+  @Column({
+    name: 'provider_message_id',
+    type: 'varchar',
+    length: 255,
+    nullable: true,
+  })
+  providerMessageId: string | null;
+
   @CreateDateColumn({
     name: 'created_at',
     type: 'timestamptz',

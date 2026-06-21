@@ -7,6 +7,12 @@ import { ChatOrchestratorService } from '../../chat/services/chat-orchestrator.s
 import { Language } from 'src/common/enums/language.enum';
 import { ProfileService } from 'src/modules/profile/services/profile.service';
 import { UsersService } from 'src/modules/users/services/user.service';
+import { InjectQueue } from '@nestjs/bull';
+import type { Queue } from 'bull';
+import {
+  WHATSAPP_INBOUND_JOB,
+  WHATSAPP_INBOUND_QUEUE,
+} from '../constants/whatsapp-queue.constants';
 
 type VerifyWebhookInput = {
   mode?: string;
@@ -14,10 +20,12 @@ type VerifyWebhookInput = {
   challenge?: string;
 };
 
-type NormalizedWhatsAppMessage = {
+export type NormalizedWhatsAppMessage = {
   whatsappPhoneNumber: string;
-  text?: string | null;
-  interactiveValue?: string | null;
+  providerMessageId: string;
+  text: string | null;
+  interactiveValue: string | null;
+  rawMessage?: Record<string, unknown> | null;
 };
 
 type WhatsAppWebhookPayload = {
@@ -25,6 +33,7 @@ type WhatsAppWebhookPayload = {
     changes?: Array<{
       value?: {
         messages?: Array<{
+          id?: string;
           from?: string;
           type?: string;
           text?: {
@@ -62,7 +71,42 @@ export class WhatsAppService {
     private readonly httpService: HttpService,
     private readonly usersService: UsersService,
     private readonly profileService: ProfileService,
+    @InjectQueue(WHATSAPP_INBOUND_QUEUE)
+    private readonly whatsAppInboundQueue: Queue,
   ) {}
+
+  private async enqueueInboundMessage(
+    message: NormalizedWhatsAppMessage,
+  ): Promise<void> {
+    this.logger.log(
+      `Queueing inbound WhatsApp message ${message.providerMessageId} from ${message.whatsappPhoneNumber}`,
+    );
+
+    const job = await this.whatsAppInboundQueue.add(
+      WHATSAPP_INBOUND_JOB,
+      {
+        whatsappPhoneNumber: message.whatsappPhoneNumber,
+        providerMessageId: message.providerMessageId,
+        text: message.text,
+        interactiveValue: message.interactiveValue,
+        rawPayload: message.rawMessage ?? null,
+      },
+      {
+        jobId: message.providerMessageId,
+        removeOnComplete: 1000,
+        removeOnFail: 1000,
+        attempts: 3,
+        backoff: {
+          type: 'exponential',
+          delay: 2000,
+        },
+      },
+    );
+
+    this.logger.log(
+      `Queued inbound WhatsApp message ${message.providerMessageId} as Bull job ${job.id}`,
+    );
+  }
 
   verifyWebhook(input: VerifyWebhookInput): string {
     const expectedVerifyToken = this.configService.get<string>(
@@ -81,45 +125,18 @@ export class WhatsAppService {
     throw new UnauthorizedException('Invalid webhook verification token.');
   }
 
-  async handleWebhook(payload: WhatsAppWebhookPayload): Promise<void> {
-    if (this.isStatusOnlyWebhook(payload)) {
-      this.logger.log(
-        'Received WhatsApp status webhook; no inbound message to process.',
-      );
-      return;
-    }
-
-    const normalizedMessage = this.extractNormalizedMessage(payload);
+  async handleWebhook(payload: Record<string, any>) {
+    const normalizedMessage = this.extractNormalizedMessage(
+      payload as WhatsAppWebhookPayload,
+    );
 
     if (!normalizedMessage) {
-      this.logger.log(
-        'No supported inbound WhatsApp message found in webhook payload.',
-      );
-      return;
+      return { received: true };
     }
 
-    const orchestratorResponse =
-      await this.chatOrchestratorService.processIncomingMessage(
-        normalizedMessage,
-      );
+    await this.enqueueInboundMessage(normalizedMessage);
 
-    this.logger.log(
-      `WhatsApp inbound normalized: ${JSON.stringify(normalizedMessage)}`,
-    );
-    this.logger.log(
-      `Orchestrator response: ${JSON.stringify(orchestratorResponse)}`,
-    );
-
-    const user = await this.usersService.findOrCreateByWhatsAppPhoneNumber(
-      normalizedMessage.whatsappPhoneNumber,
-    );
-    const profile = await this.profileService.findOrCreateByUserId(user.id);
-
-    await this.sendOrchestratorResponse({
-      to: normalizedMessage.whatsappPhoneNumber,
-      language: profile.preferredLanguage ?? Language.EN,
-      response: orchestratorResponse,
-    });
+    return { received: true };
   }
 
   private isStatusOnlyWebhook(payload: WhatsAppWebhookPayload): boolean {
@@ -139,15 +156,17 @@ export class WhatsAppService {
     const value = change?.value;
     const message = value?.messages?.[0];
 
-    if (!message?.from) {
+    if (!message?.from || !message?.id) {
       return null;
     }
 
     if (message.type === 'text') {
       return {
         whatsappPhoneNumber: message.from,
+        providerMessageId: message.id,
         text: message.text?.body ?? null,
         interactiveValue: null,
+        rawMessage: message,
       };
     }
 
@@ -157,19 +176,23 @@ export class WhatsAppService {
 
       return {
         whatsappPhoneNumber: message.from,
+        providerMessageId: message.id,
         text: null,
         interactiveValue: buttonReplyId ?? listReplyId ?? null,
+        rawMessage: message,
       };
     }
 
     return {
       whatsappPhoneNumber: message.from,
+      providerMessageId: message.id,
       text: null,
       interactiveValue: null,
+      rawMessage: message,
     };
   }
 
-  private async sendOrchestratorResponse(data: {
+  async sendOrchestratorResponse(data: {
     to: string;
     language: Language;
     response: {

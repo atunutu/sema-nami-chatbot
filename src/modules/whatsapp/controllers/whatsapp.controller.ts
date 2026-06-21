@@ -21,6 +21,6 @@ export class WhatsAppController {
   @Post()
   @HttpCode(200)
   async receiveWebhook(@Body() payload: Record<string, any>) {
-    return await this.whatsAppService.handleWebhook(payload);
+    return this.whatsAppService.handleWebhook(payload);
   }
 }

@@ -22,6 +22,9 @@ import { ReferralResource } from './modules/referrals/entities/referral-resource
 import { ChatModule } from './modules/chat/chat.module';
 import { WhatsAppModule } from './modules/whatsapp/whatsapp.module';
 import { ConfigModule } from '@nestjs/config';
+import { BullModule } from '@nestjs/bull';
+import { CacheModule } from '@nestjs/cache-manager';
+import { redisStore } from 'cache-manager-redis-store';
 
 @Module({
   imports: [
@@ -49,8 +52,31 @@ import { ConfigModule } from '@nestjs/config';
         ReferralResource,
       ],
     }),
+    BullModule.forRoot({
+      redis: {
+        host: process.env.REDIS_HOST ?? '127.0.0.1',
+        port: Number(process.env.REDIS_PORT ?? 6379),
+        password: process.env.REDIS_PASSWORD || undefined,
+        maxRetriesPerRequest: null,
+        enableReadyCheck: false,
+      },
+    }),
     ConfigModule.forRoot({
       isGlobal: true,
+    }),
+
+    CacheModule.registerAsync({
+      isGlobal: true,
+      useFactory: async () => ({
+        store: await redisStore({
+          socket: {
+            host: process.env.REDIS_HOST ?? '127.0.0.1',
+            port: Number(process.env.REDIS_PORT ?? 6379),
+          },
+          password: process.env.REDIS_PASSWORD || undefined,
+          ttl: 60,
+        }),
+      }),
     }),
     UsersModule,
     ProfileModule,

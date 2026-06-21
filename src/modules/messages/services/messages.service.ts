@@ -20,6 +20,8 @@ export class MessagesService {
     interactiveValue?: string | null;
     triggeredSafeguarding?: boolean;
     rawPayload?: Record<string, any> | null;
+    provider?: string | null;
+    providerMessageId?: string | null;
   }): Promise<Message> {
     const message = this.messagesRepository.create({
       sessionId: data.sessionId,
@@ -30,6 +32,8 @@ export class MessagesService {
       interactiveValue: data.interactiveValue ?? null,
       triggeredSafeguarding: data.triggeredSafeguarding ?? false,
       rawPayload: data.rawPayload ?? null,
+      provider: data.provider ?? null,
+      providerMessageId: data.providerMessageId ?? null,
     });
 
     return this.messagesRepository.save(message);
@@ -56,6 +60,31 @@ export class MessagesService {
     });
 
     return this.messagesRepository.save(message);
+  }
+
+  async findInboundByProviderMessageId(
+    provider: string,
+    providerMessageId: string,
+  ): Promise<Message | null> {
+    return this.messagesRepository.findOne({
+      where: {
+        provider,
+        providerMessageId,
+        direction: MessageDirection.INBOUND,
+      },
+    });
+  }
+
+  async existsInboundByProviderMessageId(
+    provider: string,
+    providerMessageId: string,
+  ): Promise<boolean> {
+    const existing = await this.findInboundByProviderMessageId(
+      provider,
+      providerMessageId,
+    );
+
+    return !!existing;
   }
 
   async getRecentMessagesBySessionId(
@@ -87,5 +116,14 @@ export class MessagesService {
     }
 
     return updatedMessage;
+  }
+
+  isUniqueConstraintViolation(error: unknown): boolean {
+    return (
+      typeof error === 'object' &&
+      error !== null &&
+      'code' in error &&
+      (error as { code?: string }).code === '23505'
+    );
   }
 }
