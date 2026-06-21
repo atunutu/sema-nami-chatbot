@@ -26,6 +26,7 @@ import { BullModule } from '@nestjs/bull';
 import { CacheModule } from '@nestjs/cache-manager';
 import KeyvRedis from '@keyv/redis';
 import { WhatsAppWorkerModule } from './modules/whatsapp/whatsapp-worker.module';
+import { HealthModule } from './health/health.module';
 
 const appMode = process.env.APP_MODE ?? 'web';
 @Module({
@@ -86,6 +87,7 @@ const appMode = process.env.APP_MODE ?? 'web';
     ReferralsModule,
     ChatModule,
     WhatsAppWebModule,
+    HealthModule,
     ...(appMode === 'worker' ? [WhatsAppWorkerModule] : [WhatsAppWebModule]),
   ],
   controllers: [],
