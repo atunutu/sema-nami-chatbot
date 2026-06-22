@@ -15,6 +15,7 @@ import { CacheModule } from '@nestjs/cache-manager';
 import KeyvRedis from '@keyv/redis';
 import { WhatsAppWorkerModule } from './modules/whatsapp/whatsapp-worker.module';
 import { HealthModule } from './health/health.module';
+import { WhatsAppAllInOneModule } from './modules/whatsapp/whatsapp-all-in-one.module';
 
 const appMode = process.env.APP_MODE ?? 'web';
 
@@ -27,6 +28,15 @@ const redisUrl =
   (redisPassword
     ? `redis://:${redisPassword}@${redisHost}:${redisPort}`
     : `redis://${redisHost}:${redisPort}`);
+
+const parsedRedisUrl = redisUrl ? new URL(redisUrl) : null;
+console.log({
+  APP_MODE: process.env.APP_MODE,
+  REDIS_HOST: process.env.REDIS_HOST,
+  REDIS_PORT: process.env.REDIS_PORT,
+  REDIS_URL: process.env.REDIS_URL,
+  REDIS_PASSWORD_SET: !!process.env.REDIS_PASSWORD,
+});
 @Module({
   imports: [
     TypeOrmModule.forRoot(
@@ -56,15 +66,29 @@ const redisUrl =
                 : false,
           },
     ),
-    BullModule.forRoot({
-      redis: {
-        host: redisHost,
-        port: redisPort,
-        password: redisPassword || undefined,
-        maxRetriesPerRequest: null,
-        enableReadyCheck: false,
-      },
-    }),
+    BullModule.forRoot(
+      parsedRedisUrl
+        ? {
+            redis: {
+              host: parsedRedisUrl.hostname,
+              port: Number(parsedRedisUrl.port || 6379),
+              username: parsedRedisUrl.username || undefined,
+              password: parsedRedisUrl.password || undefined,
+              tls: parsedRedisUrl.protocol === 'rediss:' ? {} : undefined,
+              maxRetriesPerRequest: null,
+              enableReadyCheck: false,
+            },
+          }
+        : {
+            redis: {
+              host: process.env.REDIS_HOST?.trim() || '127.0.0.1',
+              port: Number(process.env.REDIS_PORT || 6379),
+              password: process.env.REDIS_PASSWORD?.trim() || undefined,
+              maxRetriesPerRequest: null,
+              enableReadyCheck: false,
+            },
+          },
+    ),
     ConfigModule.forRoot({
       isGlobal: true,
     }),
@@ -85,7 +109,11 @@ const redisUrl =
     ChatModule,
     WhatsAppWebModule,
     HealthModule,
-    ...(appMode === 'worker' ? [WhatsAppWorkerModule] : [WhatsAppWebModule]),
+    ...(appMode === 'worker'
+      ? [WhatsAppWorkerModule]
+      : appMode === 'all'
+        ? [WhatsAppAllInOneModule]
+        : [WhatsAppWebModule]),
   ],
   controllers: [],
   providers: [],

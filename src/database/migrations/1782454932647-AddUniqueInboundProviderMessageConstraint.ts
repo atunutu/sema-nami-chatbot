@@ -1,7 +1,7 @@
 import { MigrationInterface, QueryRunner } from 'typeorm';
 
-export class AddUniqueInboundProviderMessageConstraint1750000000000 implements MigrationInterface {
-  name = 'AddUniqueInboundProviderMessageConstraint1750000000000';
+export class AddUniqueInboundProviderMessageConstraint1782454932647 implements MigrationInterface {
+  name = 'AddUniqueInboundProviderMessageConstraint1782454932647';
 
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(`
