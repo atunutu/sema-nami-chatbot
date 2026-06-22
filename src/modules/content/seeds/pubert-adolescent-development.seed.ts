@@ -180,16 +180,18 @@ Everyone develops at their own pace.`,
       nodeType: NodeType.RELATED_TOPICS,
       language: Language.SW,
       messageText: `Ujumbe Muhimu kwa vijana balehe ikiwa unajiuliza
- " Nimeingia balehe mapema kabla ya rafiki zangu '',
-Jawabu ni kua -Kila mtu hupitia balehe kwa namna yake.
 
-''Sauti yangu inabadilika'', jua kua mabadiliko ya sauti ni sehemu ya kawaida katika balehe hususani kwa wavulana 
+'Nimeingia balehe mapema kabla ya rafiki zangu',
+Jua Kila mtu hupitia balehe kwa namna yake.
 
- "Ninahisi hisia kila wakati."
+'Sauti yangu inabadilika', 
+Jua kua mabadiliko ya sauti ni sehemu ya kawaida katika balehe hususani kwa wavulana 
+
+'Ninahisi hisia kila wakati.'
 Mabadiliko ya homoni yanaweza kuathiri hisia wakati wa kubalehe.Balehe si ugonjwa.
 
-''Mwili wangu umekua tofauti ukilinganisha na wenzangu ''
-jua kua Mabadiliko ya mwili na hisia ni sehemu ya ukuaji.
+'Mwili wangu umekua tofauti ukilinganisha na wenzangu'
+Jua kua Mabadiliko ya mwili na hisia ni sehemu ya ukuaji.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -204,14 +206,15 @@ jua kua Mabadiliko ya mwili na hisia ni sehemu ya ukuaji.
       nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `For Girls
-1.Breast development
-2.Growth of pubic and underarm hair
-3.Beginning of menstruation (monthly periods)
-4.Increased height and weight
-5.Changes in body shape such as wider hips
-6.Increased sweating and body odor
-7.Acne or pimples
+      messageText: `For Girls:
+
+    1. Breast development
+    2. Growth of pubic and underarm hair
+    3. Beginning of menstruation (monthly periods)
+    4. Increased height and weight
+    5. Changes in body shape such as wider hips
+    6. Increased sweating and body odor
+    7. Acne or pimples
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -225,15 +228,15 @@ jua kua Mabadiliko ya mwili na hisia ni sehemu ya ukuaji.
       nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mabadiliko kwa Wasichana
+      messageText: `Mabadiliko kwa Wasichana:
 
-1.Matiti kuanza kukua
-2.Kuota nywele sehemu za siri na kwapani
-3.Kuanza kupata hedhi
-4.Kuongezeka kwa urefu na uzito
-5.Nyonga kupanuka
-6.Kuongezeka kwa jasho na harufu ya mwili
-7.Chunusi
+    1. Matiti kuanza kukua
+    2. Kuota nywele sehemu za siri na kwapani
+    3. Kuanza kupata hedhi
+    4. Kuongezeka kwa urefu na uzito
+    5. Nyonga kupanuka
+    6. Kuongezeka kwa jasho na harufu ya mwili
+    7. Chunusi
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -249,14 +252,15 @@ jua kua Mabadiliko ya mwili na hisia ni sehemu ya ukuaji.
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `For boys:
-1. Enlargement of the penis and testicles
-2. Growth of pubic, underarm, and facial hair
-3. Deepening of the voice
-4. Increased muscle development
-5. Growth spurts in height
-6. Increased sweating and body odor
-7. Acne or pimples
-8. Wet dreams (nocturnal emissions)`,
+
+    1. Enlargement of the penis and testicles
+    2. Growth of pubic, underarm, and facial hair
+    3. Deepening of the voice
+    4. Increased muscle development
+    5. Growth spurts in height
+    6. Increased sweating and body odor
+    7. Acne or pimples
+    8. Wet dreams (nocturnal emissions)`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -269,16 +273,16 @@ jua kua Mabadiliko ya mwili na hisia ni sehemu ya ukuaji.
       nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mabadiliko kwa Wavulana
+      messageText: `Mabadiliko kwa Wavulana:
 
-1.Uume na korodani kukua
-2.Kuota nywele sehemu za siri, kwapani na usoni
-3.Sauti kuwa nzito
-4.Misuli kuongezeka
-5.Kuongezeka kwa urefu
-6.Jasho na harufu ya mwili kuongezeka
-7.Chunusi
-8.Ndoto za usiku
+    1. Uume na korodani kukua
+    2. Kuota nywele sehemu za siri, kwapani na usoni
+    3. Sauti kuwa nzito
+    4. Misuli kuongezeka
+    5. Kuongezeka kwa urefu
+    6. Jasho na harufu ya mwili kuongezeka
+    7. Chunusi
+    8. Ndoto za usiku
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -295,13 +299,13 @@ jua kua Mabadiliko ya mwili na hisia ni sehemu ya ukuaji.
       language: Language.EN,
       messageText: `Many young people experience emotional changes during puberty because of hormonal changes and new social experiences. These may include
 
-1.Mood swings
-2.Increased sensitivity
-3.Desire for independence
-4.Strong emotions
-5.Attraction to other people
-6.Concern about appearance
-7.Curiosity about relationships
+    1. Mood swings
+    2. Increased sensitivity
+    3. Desire for independence
+    4. Strong emotions
+    5. Attraction to other people
+    6. Concern about appearance
+    7. Curiosity about relationships
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -317,12 +321,12 @@ jua kua Mabadiliko ya mwili na hisia ni sehemu ya ukuaji.
       language: Language.SW,
       messageText: `Mabadiliko ya Kihisia
 
-1.Kubadilika kwa hisia mara kwa mara
-2.Kuwa na hisia kali zaidi
-3.Kutaka kujitegemea
-4.Kuvutiwa na watu wengine
-5.Kujali zaidi mwonekano wa mwili
-6.Kutaka kueleweka na kukubalika
+    1. Kubadilika kwa hisia mara kwa mara
+    2. Kuwa na hisia kali zaidi
+    3. Kutaka kujitegemea
+    4. Kuvutiwa na watu wengine
+    5. Kujali zaidi mwonekano wa mwili
+    6. Kutaka kueleweka na kukubalika
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,

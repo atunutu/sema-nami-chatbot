@@ -80,6 +80,7 @@ export class ContentImportService {
   constructor(private readonly contentService: ContentService) {}
 
   async importSection(seed: SectionSeed): Promise<void> {
+    await this.contentService.clearAllContentCache();
     const category = await this.upsertCategory(seed.category);
     const topic = await this.upsertTopic(seed.topic, category.id);
 
@@ -110,6 +111,7 @@ export class ContentImportService {
     for (const optionSeed of seed.contentNodeOptions) {
       await this.upsertContentNodeOption(optionSeed);
     }
+    await this.contentService.clearAllContentCache();
   }
 
   private async upsertCategory(seed: SeedCategory): Promise<TopicCategory> {

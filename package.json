@@ -24,6 +24,7 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
+    "import:safeguarding-data": "ts-node -r tsconfig-paths/register src/scripts/import-safeguarding-data.ts",
     "import:puberty-content": "ts-node -r tsconfig-paths/register src/scripts/import-puberty-content.ts",
     "import:menstruation-content": "ts-node -r tsconfig-paths/register src/scripts/import-menstruation-content.ts",
     "import:sexual-reproductive-health-content": "ts-node -r tsconfig-paths/register src/scripts/import-sexual-reproductive-health-content.ts",
