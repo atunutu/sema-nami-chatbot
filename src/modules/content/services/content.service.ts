@@ -43,57 +43,73 @@ export class ContentService {
   private readonly MENU_CACHE_TTL = 2 * 60 * 60 * 1000; // 2 hours
   private readonly CONTENT_CACHE_TTL = 12 * 60 * 60 * 1000; // 12 hours
 
-  private buildVisibleCategoriesCacheKey(filters?: {
+  private async buildVersionedContentPrefix(): Promise<string> {
+    const version = await this.getContentCacheVersion();
+    return `content:v${version}`;
+  }
+
+  private async buildVisibleCategoriesCacheKey(filters?: {
     ageBand?: AgeBand | null;
     gender?: Gender | null;
-  }): string {
-    return `content:visible-categories:age=${filters?.ageBand ?? 'any'}:gender=${filters?.gender ?? 'any'}`;
+  }): Promise<string> {
+    const prefix = await this.buildVersionedContentPrefix();
+
+    return `${prefix}:visible-categories:age=${filters?.ageBand ?? 'any'}:gender=${filters?.gender ?? 'any'}`;
   }
 
-  private buildCategoryByCodeCacheKey(code: string): string {
-    return `content:category-by-code:${code}`;
+  private async buildCategoryByCodeCacheKey(code: string): Promise<string> {
+    const prefix = await this.buildVersionedContentPrefix();
+    return `${prefix}:category-by-code:${code}`;
   }
 
-  private buildVisibleTopicsCacheKey(
+  private async buildVisibleTopicsCacheKey(
     categoryId: string,
     filters?: {
       ageBand?: AgeBand | null;
       gender?: Gender | null;
     },
-  ): string {
-    return `content:visible-topics:category=${categoryId}:age=${filters?.ageBand ?? 'any'}:gender=${filters?.gender ?? 'any'}`;
+  ): Promise<string> {
+    const prefix = await this.buildVersionedContentPrefix();
+
+    return `${prefix}:visible-topics:category=${categoryId}:age=${filters?.ageBand ?? 'any'}:gender=${filters?.gender ?? 'any'}`;
   }
 
-  private buildTopicByCodeCacheKey(code: string): string {
-    return `content:topic-by-code:${code}`;
+  private async buildTopicByCodeCacheKey(code: string): Promise<string> {
+    const prefix = await this.buildVersionedContentPrefix();
+    return `${prefix}:topic-by-code:${code}`;
   }
 
-  private buildVisibleSubtopicsCacheKey(
+  private async buildVisibleSubtopicsCacheKey(
     topicId: string,
     filters?: {
       ageBand?: AgeBand | null;
       gender?: Gender | null;
     },
-  ): string {
-    return `content:visible-subtopics:topic=${topicId}:age=${filters?.ageBand ?? 'any'}:gender=${filters?.gender ?? 'any'}`;
+  ): Promise<string> {
+    const prefix = await this.buildVersionedContentPrefix();
+
+    return `${prefix}:visible-subtopics:topic=${topicId}:age=${filters?.ageBand ?? 'any'}:gender=${filters?.gender ?? 'any'}`;
   }
 
-  private buildSubtopicByCodeCacheKey(code: string): string {
-    return `content:subtopic-by-code:${code}`;
+  private async buildSubtopicByCodeCacheKey(code: string): Promise<string> {
+    const prefix = await this.buildVersionedContentPrefix();
+    return `${prefix}:subtopic-by-code:${code}`;
   }
 
-  private buildContentNodeByKeyAndLanguageCacheKey(
+  private async buildContentNodeByKeyAndLanguageCacheKey(
     nodeKey: string,
     language: Language,
-  ): string {
-    return `content:node:${nodeKey}:lang=${language}`;
+  ): Promise<string> {
+    const prefix = await this.buildVersionedContentPrefix();
+    return `${prefix}:node:${nodeKey}:lang=${language}`;
   }
 
-  private buildNodeOptionsCacheKey(
+  private async buildNodeOptionsCacheKey(
     nodeKey: string,
     language: Language,
-  ): string {
-    return `content:node-options:${nodeKey}:lang=${language}`;
+  ): Promise<string> {
+    const prefix = await this.buildVersionedContentPrefix();
+    return `${prefix}:node-options:${nodeKey}:lang=${language}`;
   }
 
   async createCategory(data: {
@@ -133,12 +149,9 @@ export class ContentService {
     ageBand?: AgeBand | null;
     gender?: Gender | null;
   }): Promise<TopicCategory[]> {
-    const cacheKey = this.buildVisibleCategoriesCacheKey(filters);
+    const cacheKey = await this.buildVisibleCategoriesCacheKey(filters);
 
-    const cached = (await this.cacheManager.get(cacheKey)) as
-      | TopicCategory[]
-      | null;
-
+    const cached = await this.cacheManager.get<TopicCategory[]>(cacheKey);
     if (cached) {
       return cached;
     }
@@ -165,12 +178,9 @@ export class ContentService {
   }
 
   async findCategoryByCode(code: string): Promise<TopicCategory | null> {
-    const cacheKey = this.buildCategoryByCodeCacheKey(code);
+    const cacheKey = await this.buildCategoryByCodeCacheKey(code);
 
-    const cached = (await this.cacheManager.get(
-      cacheKey,
-    )) as TopicCategory | null;
-
+    const cached = await this.cacheManager.get<TopicCategory>(cacheKey);
     if (cached) {
       return cached;
     }
@@ -234,9 +244,9 @@ export class ContentService {
       gender?: Gender | null;
     },
   ): Promise<Topic[]> {
-    const cacheKey = this.buildVisibleTopicsCacheKey(categoryId, filters);
+    const cacheKey = await this.buildVisibleTopicsCacheKey(categoryId, filters);
 
-    const cached = (await this.cacheManager.get(cacheKey)) as Topic[] | null;
+    const cached = await this.cacheManager.get<Topic[]>(cacheKey);
     if (cached) {
       return cached;
     }
@@ -253,19 +263,14 @@ export class ContentService {
       return genderMatches && ageMatches;
     });
 
-    await this.cacheManager.set(
-      cacheKey,
-      visibleTopics,
-      this.CONTENT_CACHE_TTL,
-    );
+    await this.cacheManager.set(cacheKey, visibleTopics, this.MENU_CACHE_TTL);
 
     return visibleTopics;
   }
-
   async findTopicByCode(code: string): Promise<Topic | null> {
-    const cacheKey = this.buildTopicByCodeCacheKey(code);
+    const cacheKey = await this.buildTopicByCodeCacheKey(code);
 
-    const cached = (await this.cacheManager.get(cacheKey)) as Topic | null;
+    const cached = await this.cacheManager.get<Topic>(cacheKey);
     if (cached) {
       return cached;
     }
@@ -280,7 +285,6 @@ export class ContentService {
 
     return topic;
   }
-
   async createSubtopic(data: {
     topicId: string;
     code: string;
@@ -329,9 +333,9 @@ export class ContentService {
       gender?: Gender | null;
     },
   ): Promise<Subtopic[]> {
-    const cacheKey = this.buildVisibleSubtopicsCacheKey(topicId, filters);
+    const cacheKey = await this.buildVisibleSubtopicsCacheKey(topicId, filters);
 
-    const cached = (await this.cacheManager.get(cacheKey)) as Subtopic[] | null;
+    const cached = await this.cacheManager.get<Subtopic[]>(cacheKey);
     if (cached) {
       return cached;
     }
@@ -351,16 +355,16 @@ export class ContentService {
     await this.cacheManager.set(
       cacheKey,
       visibleSubtopics,
-      this.CONTENT_CACHE_TTL,
+      this.MENU_CACHE_TTL,
     );
 
     return visibleSubtopics;
   }
 
   async findSubtopicByCode(code: string): Promise<Subtopic | null> {
-    const cacheKey = this.buildSubtopicByCodeCacheKey(code);
+    const cacheKey = await this.buildSubtopicByCodeCacheKey(code);
 
-    const cached = (await this.cacheManager.get(cacheKey)) as Subtopic | null;
+    const cached = await this.cacheManager.get<Subtopic>(cacheKey);
     if (cached) {
       return cached;
     }
@@ -414,17 +418,13 @@ export class ContentService {
     nodeKey: string,
     language: Language,
   ): Promise<ContentNode | null> {
-    const cacheKey = this.buildContentNodeByKeyAndLanguageCacheKey(
+    const cacheKey = await this.buildContentNodeByKeyAndLanguageCacheKey(
       nodeKey,
       language,
     );
 
-    const cached = (await this.cacheManager.get(
-      cacheKey,
-    )) as ContentNode | null;
-
+    const cached = await this.cacheManager.get<ContentNode>(cacheKey);
     if (cached) {
-      this.logger.log(`CACHE HIT: ${cacheKey}`);
       return cached;
     }
 
@@ -564,11 +564,9 @@ export class ContentService {
     nodeKey: string,
     language: Language,
   ): Promise<ContentNodeOption[]> {
-    const cacheKey = this.buildNodeOptionsCacheKey(nodeKey, language);
+    const cacheKey = await this.buildNodeOptionsCacheKey(nodeKey, language);
 
-    const cached = (await this.cacheManager.get(cacheKey)) as
-      | ContentNodeOption[]
-      | null;
+    const cached = await this.cacheManager.get<ContentNodeOption[]>(cacheKey);
     if (cached) {
       return cached;
     }
@@ -707,6 +705,37 @@ export class ContentService {
     return updated;
   }
   async clearAllContentCache(): Promise<void> {
-    await this.cacheManager.clear();
+    await this.bumpContentCacheVersion();
+  }
+
+  private readonly CONTENT_CACHE_VERSION_KEY = 'content:cache-version';
+  private readonly DEFAULT_CONTENT_CACHE_VERSION = '1';
+
+  private async getContentCacheVersion(): Promise<string> {
+    const cachedVersion = await this.cacheManager.get<string>(
+      this.CONTENT_CACHE_VERSION_KEY,
+    );
+
+    if (cachedVersion) {
+      return cachedVersion;
+    }
+
+    await this.cacheManager.set(
+      this.CONTENT_CACHE_VERSION_KEY,
+      this.DEFAULT_CONTENT_CACHE_VERSION,
+      0,
+    );
+
+    return this.DEFAULT_CONTENT_CACHE_VERSION;
+  }
+
+  async bumpContentCacheVersion(): Promise<void> {
+    const currentVersion = await this.getContentCacheVersion();
+    const nextVersion = String(Number(currentVersion) + 1);
+
+    await this.cacheManager.set(this.CONTENT_CACHE_VERSION_KEY, nextVersion, 0);
+    this.logger.log(
+      `Content cache version bumped from ${currentVersion} to ${nextVersion}`,
+    );
   }
 }

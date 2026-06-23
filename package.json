@@ -30,7 +30,9 @@
     "import:sexual-reproductive-health-content": "ts-node -r tsconfig-paths/register src/scripts/import-sexual-reproductive-health-content.ts",
     "import:relationship-and-consent-content": "ts-node -r tsconfig-paths/register src/scripts/import-relationships-content.ts",
     "import:gender-equality-content": "ts-node -r tsconfig-paths/register src/scripts/import-gender-equality-content.ts",
-    "import:digital-safety-content": "ts-node -r tsconfig-paths/register src/scripts/import-digital-safety-content.ts"
+    "import:digital-safety-content": "ts-node -r tsconfig-paths/register src/scripts/import-digital-safety-content.ts",
+    "cache:bump-content": "ts-node -r tsconfig-paths/register src/scripts/bump-content-cache.ts",
+    "redis:flush": "ts-node -r tsconfig-paths/register src/scripts/flush-render-redis.ts"
   },
   "dependencies": {
     "@keyv/redis": "^5.1.6",
@@ -47,6 +49,7 @@
     "ioredis": "^5.11.1",
     "keyv": "^5.6.0",
     "pg": "^8.21.0",
+    "redis": "^5.12.1",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
     "typeorm": "^0.3.30"
