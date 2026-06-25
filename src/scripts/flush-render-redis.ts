@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 import 'dotenv/config';
 import { createClient } from 'redis';
 
@@ -8,6 +10,7 @@ async function run() {
     throw new Error('REDIS_URL is missing.');
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const client = createClient({
     url: redisUrl,
   });
