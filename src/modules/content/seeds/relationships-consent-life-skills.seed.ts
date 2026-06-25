@@ -574,7 +574,7 @@ Kujifunza kuhusu heshima na mipaka kunaweza kuwasaidia vijana kukuza kujiamini, 
 There are 3 main types of communication. 
 `,
       inputType: InputType.BUTTON,
-      mediaAssetKey: null,
+      mediaAssetKey: 'image_image_soft_skills',
       isStartNode: true,
       isEndNode: false,
       sortOrder: 1,
@@ -589,7 +589,7 @@ There are 3 main types of communication.
 Kuna aina kuu 3 za mawasiliano.
 `,
       inputType: InputType.BUTTON,
-      mediaAssetKey: null,
+      mediaAssetKey: 'image_soft_skills',
       isStartNode: true,
       isEndNode: false,
       sortOrder: 1,

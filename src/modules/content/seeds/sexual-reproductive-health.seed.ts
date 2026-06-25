@@ -291,7 +291,7 @@ Miili ya binadamu wote hutofautiana. Tofauti ndogo katika ukubwa au muonekano wa
 
     ● Clitoris: The clitoris is a sensitive organ located at the top of the vulva. It contains many nerve endings.`,
       inputType: InputType.BUTTON,
-      mediaAssetKey: null,
+      mediaAssetKey: 'image_female_reproductive_system',
       isStartNode: false,
       isEndNode: false,
       sortOrder: 2,
@@ -319,7 +319,7 @@ Miili ya binadamu wote hutofautiana. Tofauti ndogo katika ukubwa au muonekano wa
     ● Kinembe: Ni sehemu nyeti iliyo nje ya uke.
 `,
       inputType: InputType.BUTTON,
-      mediaAssetKey: null,
+      mediaAssetKey: 'image_female_reproductive_system',
       isStartNode: false,
       isEndNode: false,
       sortOrder: 2,
@@ -658,7 +658,7 @@ Third Trimester (Weeks 28–40)
     • Preparation for birth
 `,
       inputType: InputType.BUTTON,
-      mediaAssetKey: null,
+      mediaAssetKey: 'image_pregnancy_stages',
       isStartNode: false,
       isEndNode: false,
       sortOrder: 4,
@@ -687,7 +687,7 @@ Kipindi cha Tatu cha Miezi 28–40)
     • Maandalizi ya kuzaliwa
 `,
       inputType: InputType.BUTTON,
-      mediaAssetKey: null,
+      mediaAssetKey: 'image_pregnancy_stages',
       isStartNode: false,
       isEndNode: false,
       sortOrder: 4,

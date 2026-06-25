@@ -917,7 +917,7 @@ Ukatili unaweza kutokea nyumbani, shuleni, mtandaoni, kazini au katika jamii, na
 Children and young people who experience violence often show symptoms such as prolonged sadness, fear, isolation from others, poor school performance or unexplained injuries.
 `,
       inputType: InputType.BUTTON,
-      mediaAssetKey: null,
+      mediaAssetKey: 'image_gender_violence',
       isStartNode: false,
       isEndNode: false,
       sortOrder: 2,
@@ -932,7 +932,7 @@ Children and young people who experience violence often show symptoms such as pr
 Mara nyingi watoto na vijana wanaopitia ukatili huonyesha dalili kama huzuni ya muda mrefu, hofu, kutengwa na wengine, kushuka kwa ufaulu shuleni, au majeraha yasiyoelezeka.
 `,
       inputType: InputType.BUTTON,
-      mediaAssetKey: null,
+      mediaAssetKey: 'image_gender_violence',
       isStartNode: false,
       isEndNode: false,
       sortOrder: 2,

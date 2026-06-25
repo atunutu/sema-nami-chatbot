@@ -468,7 +468,7 @@ Most women have their period every 28 days. Typically, menstruation lasts 2 to 7
 Some women experience abdominal pain due to uterine contractions, which occur when the uterus pushes out menstrual blood.
 `,
       inputType: InputType.BUTTON,
-      mediaAssetKey: null,
+      mediaAssetKey: 'image_menstrual_calendar',
       isStartNode: false,
       isEndNode: true,
       sortOrder: 3,
@@ -484,7 +484,7 @@ Wanawake wengi hupata hedhi kila baada ya siku 28. Kwa kawaida, hedhi hudumu kwa
 Baadhi ya wanawake hupata maumivu ya tumbo kutokana na mkakamao wa msukumo wa mji wa mimba, mkakamao huo hutokea wakati mji wa mimba unaposukuma damu ya hedhi itoke.
 `,
       inputType: InputType.BUTTON,
-      mediaAssetKey: null,
+      mediaAssetKey: 'image_menstrual_calendar',
       isStartNode: false,
       isEndNode: true,
       sortOrder: 3,

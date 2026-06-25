@@ -86,7 +86,7 @@ export class ContentImportService {
   ) {}
 
   async importSection(seed: SectionSeed): Promise<void> {
-    // await this.contentService.clearAllContentCache();
+    await this.contentService.clearAllContentCache();
 
     const sectionLabel = `${seed.category.code} / ${seed.topic.code}`;
     this.logger.log(`Starting import for section: ${sectionLabel}`);

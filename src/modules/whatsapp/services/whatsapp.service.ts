@@ -10,6 +10,7 @@ import {
   WHATSAPP_INBOUND_JOB,
   WHATSAPP_INBOUND_QUEUE,
 } from '../constants/whatsapp-queue.constants';
+import { MEDIA_ASSET_URLS } from '../constants/media-asset-urls';
 
 type VerifyWebhookInput = {
   mode?: string;
@@ -192,11 +193,35 @@ export class WhatsAppService {
     response: {
       message: string;
       options: Array<{ label: string; value: string }>;
+      mediaAssetKey?: string | null;
     };
   }): Promise<void> {
     const sanitizedOptions = this.sanitizeOptions(data.response.options);
     const optionCount = sanitizedOptions.length;
     const body = data.response.message.trim();
+
+    const imageUrl = this.resolveMediaAssetUrl(data.response.mediaAssetKey);
+
+    if (imageUrl) {
+      try {
+        await this.sendImageMessage({
+          to: data.to,
+          imageUrl,
+        });
+      } catch (error: any) {
+        this.logger.warn(
+          `Failed to send WhatsApp image for mediaAssetKey ${data.response.mediaAssetKey}: ${error.message}`,
+        );
+      }
+    }
+
+    // If there is nothing else to send after the image, stop here.
+    if (!body && optionCount === 0) {
+      this.logger.warn(
+        `Orchestrator response for ${data.to} had no text and no options.`,
+      );
+      return;
+    }
 
     if (optionCount === 0) {
       await this.sendTextMessage({
@@ -207,10 +232,9 @@ export class WhatsAppService {
     }
 
     if (this.shouldSplitInteractiveMessage(body)) {
-      await this.sendTextMessage({
-        to: data.to,
-        body,
-      });
+      if (body) {
+        await this.sendTextMessage({ to: data.to, body });
+      }
 
       const choosePrompt = this.getChooseOptionPrompt(data.language);
 
@@ -235,7 +259,7 @@ export class WhatsAppService {
     if (optionCount <= 3) {
       await this.sendButtonsMessage({
         to: data.to,
-        body,
+        body: body || this.getChooseOptionPrompt(data.language),
         options: sanitizedOptions,
       });
       return;
@@ -250,7 +274,7 @@ export class WhatsAppService {
     await this.sendListMessage({
       to: data.to,
       language: data.language,
-      body,
+      body: body || this.getChooseOptionPrompt(data.language),
       options: sanitizedOptions.slice(0, 10),
     });
   }
@@ -448,6 +472,78 @@ export class WhatsAppService {
       seen.add(value);
       return true;
     });
+  }
+
+  private resolveMediaAssetUrl(mediaAssetKey?: string | null): string | null {
+    if (!mediaAssetKey) {
+      return null;
+    }
+
+    return MEDIA_ASSET_URLS[mediaAssetKey] ?? null;
+  }
+
+  private async sendImageMessage(data: {
+    to: string;
+    imageUrl: string;
+    caption?: string;
+  }): Promise<void> {
+    const accessToken = this.configService.get<string>('WHATSAPP_ACCESS_TOKEN');
+    const phoneNumberId = this.configService.get<string>(
+      'WHATSAPP_PHONE_NUMBER_ID',
+    );
+    const apiVersion =
+      this.configService.get<string>('WHATSAPP_API_VERSION') ?? 'v25.0';
+
+    if (!accessToken || !phoneNumberId) {
+      this.logger.warn(
+        'WhatsApp access token or phone number ID is missing. Skipping outbound image send.',
+      );
+      return;
+    }
+
+    const url = `https://graph.facebook.com/${apiVersion}/${phoneNumberId}/messages`;
+
+    const payload = {
+      messaging_product: 'whatsapp',
+      to: data.to,
+      type: 'image',
+      image: {
+        link: data.imageUrl,
+        ...(data.caption?.trim() ? { caption: data.caption.trim() } : {}),
+      },
+    };
+
+    this.logger.log(`Sending WhatsApp image message to ${data.to}`);
+
+    try {
+      await firstValueFrom(
+        this.httpService.post(url, payload, {
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+            'Content-Type': 'application/json',
+          },
+          timeout: 30000,
+        }),
+      );
+
+      this.logger.log(`Sent WhatsApp image message to ${data.to}`);
+    } catch (error: any) {
+      const message = error?.message ?? 'Unknown error';
+
+      if (message.includes('timeout')) {
+        this.logger.warn(
+          `WhatsApp image request timed out for ${data.to}. Meta may still have accepted and delivered it.`,
+        );
+        return;
+      }
+
+      this.logger.error(
+        `Failed to send WhatsApp image message to ${data.to}: ${message}`,
+        error?.stack,
+      );
+
+      throw error;
+    }
   }
 
   private formatButtonTitle(label: string): string {

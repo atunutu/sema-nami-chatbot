@@ -5,8 +5,8 @@ import { NodeType } from '../../../common/enums/node-type.enum';
 export const digitalSafetyAndMentalWellbeingSeed = {
   category: {
     code: 'DIGITAL_SAFETY_AND_MENTAL_WELLBEING',
-    titleEn: 'Digital Safety and Mental Wellbeing',
-    titleSw: 'Usalama wa Kidijitali na Ustawi wa Afya ya Akili',
+    titleEn: 'Mental Wellbeing',
+    titleSw: 'Afya ya Akili',
     descriptionEn: null,
     descriptionSw: null,
     audienceGender: null,
@@ -17,8 +17,8 @@ export const digitalSafetyAndMentalWellbeingSeed = {
 
   topic: {
     code: 'DIGITAL_SAFETY_AND_MENTAL_WELLBEING',
-    titleEn: 'Digital Safety and Mental Wellbeing',
-    titleSw: 'Usalama wa Kidijitali na Ustawi wa Afya ya Akili',
+    titleEn: 'Mental Wellbeing',
+    titleSw: 'Afya ya Akili',
     descriptionEn: null,
     descriptionSw: null,
     audienceGender: null,
@@ -281,7 +281,7 @@ Stress is not always bad. In some situations, it can motivate a person to prepar
 However, when stress becomes too intense or lasts for a long time, it can affect a person's mental, emotional, and physical wellbeing.
 `,
       inputType: InputType.BUTTON,
-      mediaAssetKey: null,
+      mediaAssetKey: 'image_depression',
       isStartNode: true,
       isEndNode: false,
       sortOrder: 1,
@@ -299,7 +299,7 @@ Katika baadhi ya hali, unaweza kumtia moyo mtu kujiandaa, kuzingatia, au kuchuku
 Hata hivyo, msongo wa mawazo unapozidi au kudumu kwa muda mrefu, unaweza kuathiri ustawi wa kiakili, kihisia, na kimwili wa mtu.
 `,
       inputType: InputType.BUTTON,
-      mediaAssetKey: null,
+      mediaAssetKey: 'image_depression',
       isStartNode: true,
       isEndNode: false,
       sortOrder: 1,

@@ -27,6 +27,7 @@ type OrchestratorResponse = {
   message: string;
   options: OrchestratorOption[];
   currentState: ChatState;
+  mediaAssetKey?: string | null;
 };
 
 @Injectable()
@@ -1067,11 +1068,21 @@ export class ChatOrchestratorService {
 
     if (!node || !node.isActive) {
       return {
-        message: 'Sorry, I could not load this content right now.',
+        message:
+          data.language === Language.SW
+            ? 'Samahani, siwezi kupakia maudhui haya kwa sasa.'
+            : 'Sorry, I could not load this content right now.',
         options: [
-          { label: 'Main Menu', value: 'main_menu' },
-          { label: 'Start Again', value: 'start_again' },
+          {
+            label: data.language === Language.SW ? 'Menyu Kuu' : 'Main Menu',
+            value: 'main_menu',
+          },
+          {
+            label: data.language === Language.SW ? 'Anza Tena' : 'Start Again',
+            value: 'start_again',
+          },
         ],
+        mediaAssetKey: null,
         currentState: ChatState.FALLBACK,
       };
     }
@@ -1095,6 +1106,7 @@ export class ChatOrchestratorService {
         label: data.language === Language.SW ? option.labelSw : option.labelEn,
         value: option.optionValue,
       })),
+      mediaAssetKey: node.mediaAssetKey,
       currentState: ChatState.CONTENT_NODE,
     };
   }
@@ -1117,40 +1129,15 @@ export class ChatOrchestratorService {
     }
 
     if (!selectedOptionValue) {
-      const currentNode =
-        await this.contentService.findContentNodeByKeyAndLanguage(
-          data.currentNodeKey,
-          language,
-        );
-
-      if (!currentNode) {
-        return {
-          message:
-            language === Language.SW
-              ? 'Samahani, siwezi kuendelea na maudhui haya kwa sasa.'
-              : 'Sorry, I could not continue this content right now.',
-          options: [
-            {
-              label: language === Language.SW ? 'Menyu Kuu' : 'Main Menu',
-              value: 'main_menu',
-            },
-          ],
-          currentState: ChatState.FALLBACK,
-        };
-      }
-
-      const options = await this.contentService.getActiveOptionsByContentNodeId(
-        currentNode.id,
-      );
-
-      return {
-        message: currentNode.messageText,
-        options: options.map((option) => ({
-          label: language === Language.SW ? option.labelSw : option.labelEn,
-          value: option.optionValue,
-        })),
-        currentState: ChatState.CONTENT_NODE,
-      };
+      return this.buildContentNodeResponse({
+        sessionId: data.sessionId,
+        currentCategoryCode: data.currentCategoryCode ?? null,
+        currentTopicCode: data.currentTopicCode ?? null,
+        currentSubtopicCode: data.currentSubtopicCode ?? null,
+        nodeKey: data.currentNodeKey,
+        language,
+        previousNodeKey: data.currentNodeKey ?? null,
+      });
     }
 
     if (selectedOptionValue === 'main_menu') {
@@ -1237,20 +1224,20 @@ export class ChatOrchestratorService {
     });
 
     if (!nextNode) {
-      const currentOptions =
-        await this.contentService.getActiveOptionsByContentNodeId(
-          currentNode.id,
-        );
-
       return {
         message:
           language === Language.SW
             ? 'Tafadhali chagua moja ya chaguo zilizopo hapa chini.'
             : 'Please choose one of the available options below.',
-        options: currentOptions.map((option) => ({
+        options: (
+          await this.contentService.getActiveOptionsByContentNodeId(
+            currentNode.id,
+          )
+        ).map((option) => ({
           label: language === Language.SW ? option.labelSw : option.labelEn,
           value: option.optionValue,
         })),
+        mediaAssetKey: currentNode.mediaAssetKey,
         currentState: ChatState.CONTENT_NODE,
       };
     }
