@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-return */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { HttpService } from '@nestjs/axios';
 import { Injectable, Logger, UnauthorizedException } from '@nestjs/common';
@@ -11,6 +14,11 @@ import {
   WHATSAPP_INBOUND_QUEUE,
 } from '../constants/whatsapp-queue.constants';
 import { MEDIA_ASSET_URLS } from '../constants/media-asset-urls';
+import {
+  WhatsAppSendPartResult,
+  WhatsAppSendResult,
+  WhatsAppSendPartType,
+} from '../types/whatsapp-send-result.type';
 
 type VerifyWebhookInput = {
   mode?: string;
@@ -195,74 +203,104 @@ export class WhatsAppService {
       options: Array<{ label: string; value: string }>;
       mediaAssetKey?: string | null;
     };
-  }): Promise<void> {
+  }): Promise<WhatsAppSendResult> {
     const sanitizedOptions = this.sanitizeOptions(data.response.options);
     const optionCount = sanitizedOptions.length;
     const body = data.response.message.trim();
-
     const imageUrl = this.resolveMediaAssetUrl(data.response.mediaAssetKey);
+    const parts: WhatsAppSendPartResult[] = [];
 
     if (imageUrl) {
-      try {
-        await this.sendImageMessage({
-          to: data.to,
-          imageUrl,
-        });
-      } catch (error: any) {
-        this.logger.warn(
-          `Failed to send WhatsApp image for mediaAssetKey ${data.response.mediaAssetKey}: ${error.message}`,
-        );
-      }
+      const imageResult = await this.sendImageMessage({
+        to: data.to,
+        imageUrl,
+      });
+
+      parts.push(imageResult);
     }
 
-    // If there is nothing else to send after the image, stop here.
     if (!body && optionCount === 0) {
       this.logger.warn(
         `Orchestrator response for ${data.to} had no text and no options.`,
       );
-      return;
+
+      return {
+        overallStatus: this.buildOverallSendStatus(parts),
+        parts,
+      };
     }
 
     if (optionCount === 0) {
-      await this.sendTextMessage({
-        to: data.to,
-        body,
-      });
-      return;
+      if (body) {
+        parts.push(
+          await this.sendTextMessage({
+            to: data.to,
+            body,
+          }),
+        );
+      }
+
+      return {
+        overallStatus: this.buildOverallSendStatus(parts),
+        parts,
+      };
     }
 
     if (this.shouldSplitInteractiveMessage(body)) {
       if (body) {
-        await this.sendTextMessage({ to: data.to, body });
+        parts.push(
+          await this.sendTextMessage({
+            to: data.to,
+            body,
+          }),
+        );
       }
 
       const choosePrompt = this.getChooseOptionPrompt(data.language);
 
       if (optionCount <= 3) {
-        await this.sendButtonsMessage({
-          to: data.to,
-          body: choosePrompt,
-          options: sanitizedOptions,
-        });
-        return;
+        parts.push(
+          await this.sendButtonsMessage({
+            to: data.to,
+            body: choosePrompt,
+            options: sanitizedOptions,
+          }),
+        );
+
+        return {
+          overallStatus: this.buildOverallSendStatus(parts),
+          parts,
+        };
       }
 
-      await this.sendListMessage({
-        to: data.to,
-        language: data.language,
-        body: choosePrompt,
-        options: sanitizedOptions,
-      });
-      return;
+      parts.push(
+        await this.sendListMessage({
+          to: data.to,
+          language: data.language,
+          body: choosePrompt,
+          options: sanitizedOptions,
+        }),
+      );
+
+      return {
+        overallStatus: this.buildOverallSendStatus(parts),
+        parts,
+      };
     }
 
     if (optionCount <= 3) {
-      await this.sendButtonsMessage({
-        to: data.to,
-        body: body || this.getChooseOptionPrompt(data.language),
-        options: sanitizedOptions,
-      });
-      return;
+      parts.push(
+        await this.sendButtonsMessage({
+          to: data.to,
+          body: body || this.getChooseOptionPrompt(data.language),
+          options: sanitizedOptions,
+        }),
+      );
+
+      return {
+        overallStatus: this.buildOverallSendStatus(parts),
+        parts,
+      };
     }
 
     if (optionCount > 10) {
@@ -271,89 +309,47 @@ export class WhatsAppService {
       );
     }
 
-    await this.sendListMessage({
-      to: data.to,
-      language: data.language,
-      body: body || this.getChooseOptionPrompt(data.language),
-      options: sanitizedOptions.slice(0, 10),
-    });
+    parts.push(
+      await this.sendListMessage({
+        to: data.to,
+        language: data.language,
+        body: body || this.getChooseOptionPrompt(data.language),
+        options: sanitizedOptions.slice(0, 10),
+      }),
+    );
+
+    return {
+      overallStatus: this.buildOverallSendStatus(parts),
+      parts,
+    };
   }
 
   private async sendTextMessage(data: {
     to: string;
     body: string;
-  }): Promise<void> {
-    try {
-      const accessToken = this.configService.get<string>(
-        'WHATSAPP_ACCESS_TOKEN',
-      );
-      const phoneNumberId = this.configService.get<string>(
-        'WHATSAPP_PHONE_NUMBER_ID',
-      );
-      const apiVersion =
-        this.configService.get<string>('WHATSAPP_API_VERSION') ?? 'v25.0';
+  }): Promise<WhatsAppSendPartResult> {
+    const payload = {
+      messaging_product: 'whatsapp',
+      to: data.to,
+      type: 'text',
+      text: {
+        body: data.body,
+      },
+    };
 
-      if (!accessToken || !phoneNumberId) {
-        this.logger.warn(
-          'WhatsApp access token or phone number ID is missing. Skipping outbound send.',
-        );
-        return;
-      }
-
-      const url = `https://graph.facebook.com/${apiVersion}/${phoneNumberId}/messages`;
-
-      const payload = {
-        messaging_product: 'whatsapp',
-        to: data.to,
-        type: 'text',
-        text: {
-          body: data.body,
-        },
-      };
-
-      this.logger.log(`Sending WhatsApp text message to ${data.to}`);
-
-      await firstValueFrom(
-        this.httpService.post(url, payload, {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-            'Content-Type': 'application/json',
-          },
-          timeout: 15000,
-        }),
-      );
-
-      this.logger.log(`Sent WhatsApp text message to ${data.to}`);
-    } catch (error: any) {
-      this.logger.error(
-        `Failed to send WhatsApp text message to ${data.to}: ${error.message}`,
-        error.stack,
-      );
-      throw error;
-    }
+    return this.executeWhatsAppSend({
+      partType: 'text',
+      to: data.to,
+      payload,
+      timeoutMs: 15000,
+    });
   }
 
   private async sendButtonsMessage(data: {
     to: string;
     body: string;
     options: Array<{ label: string; value: string }>;
-  }): Promise<void> {
-    const accessToken = this.configService.get<string>('WHATSAPP_ACCESS_TOKEN');
-    const phoneNumberId = this.configService.get<string>(
-      'WHATSAPP_PHONE_NUMBER_ID',
-    );
-    const apiVersion =
-      this.configService.get<string>('WHATSAPP_API_VERSION') ?? 'v25.0';
-
-    if (!accessToken || !phoneNumberId) {
-      this.logger.warn(
-        'WhatsApp access token or phone number ID is missing. Skipping outbound send.',
-      );
-      return;
-    }
-
-    const url = `https://graph.facebook.com/${apiVersion}/${phoneNumberId}/messages`;
-
+  }): Promise<WhatsAppSendPartResult> {
     const payload = {
       messaging_product: 'whatsapp',
       to: data.to,
@@ -375,19 +371,12 @@ export class WhatsAppService {
       },
     };
 
-    this.logger.log(`Sending WhatsApp buttons message to ${data.to}`);
-
-    await firstValueFrom(
-      this.httpService.post(url, payload, {
-        headers: {
-          Authorization: `Bearer ${accessToken}`,
-          'Content-Type': 'application/json',
-        },
-        timeout: 15000,
-      }),
-    );
-
-    this.logger.log(`Sent WhatsApp buttons message to ${data.to}`);
+    return this.executeWhatsAppSend({
+      partType: 'buttons',
+      to: data.to,
+      payload,
+      timeoutMs: 15000,
+    });
   }
 
   private async sendListMessage(data: {
@@ -395,23 +384,7 @@ export class WhatsAppService {
     language: Language;
     body: string;
     options: Array<{ label: string; value: string }>;
-  }): Promise<void> {
-    const accessToken = this.configService.get<string>('WHATSAPP_ACCESS_TOKEN');
-    const phoneNumberId = this.configService.get<string>(
-      'WHATSAPP_PHONE_NUMBER_ID',
-    );
-    const apiVersion =
-      this.configService.get<string>('WHATSAPP_API_VERSION') ?? 'v25.0';
-
-    if (!accessToken || !phoneNumberId) {
-      this.logger.warn(
-        'WhatsApp access token or phone number ID is missing. Skipping outbound send.',
-      );
-      return;
-    }
-
-    const url = `https://graph.facebook.com/${apiVersion}/${phoneNumberId}/messages`;
-
+  }): Promise<WhatsAppSendPartResult> {
     const payload = {
       messaging_product: 'whatsapp',
       to: data.to,
@@ -437,19 +410,12 @@ export class WhatsAppService {
       },
     };
 
-    this.logger.log(`Sending WhatsApp list message to ${data.to}`);
-
-    await firstValueFrom(
-      this.httpService.post(url, payload, {
-        headers: {
-          Authorization: `Bearer ${accessToken}`,
-          'Content-Type': 'application/json',
-        },
-        timeout: 15000,
-      }),
-    );
-
-    this.logger.log(`Sent WhatsApp list message to ${data.to}`);
+    return this.executeWhatsAppSend({
+      partType: 'list',
+      to: data.to,
+      payload,
+      timeoutMs: 15000,
+    });
   }
 
   private sanitizeOptions(
@@ -486,23 +452,7 @@ export class WhatsAppService {
     to: string;
     imageUrl: string;
     caption?: string;
-  }): Promise<void> {
-    const accessToken = this.configService.get<string>('WHATSAPP_ACCESS_TOKEN');
-    const phoneNumberId = this.configService.get<string>(
-      'WHATSAPP_PHONE_NUMBER_ID',
-    );
-    const apiVersion =
-      this.configService.get<string>('WHATSAPP_API_VERSION') ?? 'v25.0';
-
-    if (!accessToken || !phoneNumberId) {
-      this.logger.warn(
-        'WhatsApp access token or phone number ID is missing. Skipping outbound image send.',
-      );
-      return;
-    }
-
-    const url = `https://graph.facebook.com/${apiVersion}/${phoneNumberId}/messages`;
-
+  }): Promise<WhatsAppSendPartResult> {
     const payload = {
       messaging_product: 'whatsapp',
       to: data.to,
@@ -513,39 +463,12 @@ export class WhatsAppService {
       },
     };
 
-    this.logger.log(`Sending WhatsApp image message to ${data.to}`);
-
-    try {
-      await firstValueFrom(
-        this.httpService.post(url, payload, {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-            'Content-Type': 'application/json',
-          },
-          timeout: 30000,
-        }),
-      );
-
-      this.logger.log(`Sent WhatsApp image message to ${data.to}`);
-    } catch (error: any) {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-      const message = error?.message ?? 'Unknown error';
-
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-      if (message.includes('timeout')) {
-        this.logger.warn(
-          `WhatsApp image request timed out for ${data.to}. Meta may still have accepted and delivered it.`,
-        );
-        return;
-      }
-
-      this.logger.error(
-        `Failed to send WhatsApp image message to ${data.to}: ${message}`,
-        error?.stack,
-      );
-
-      throw error;
-    }
+    return this.executeWhatsAppSend({
+      partType: 'image',
+      to: data.to,
+      payload,
+      timeoutMs: 30000,
+    });
   }
 
   async sendTypingIndicator(data: {
@@ -592,6 +515,131 @@ export class WhatsAppService {
     );
 
     this.logger.log(`Sent WhatsApp typing indicator for ${data.to}`);
+  }
+  private extractProviderMessageId(responseData: any): string | null {
+    return responseData?.messages?.[0]?.id ?? null;
+  }
+
+  private buildOverallSendStatus(
+    parts: WhatsAppSendPartResult[],
+  ): WhatsAppSendResult['overallStatus'] {
+    if (!parts.length) {
+      return 'failed';
+    }
+
+    const statuses = parts.map((part) => part.status);
+
+    if (statuses.every((status) => status === 'sent' || status === 'skipped')) {
+      return 'sent';
+    }
+
+    if (
+      statuses.some((status) => status === 'failed') &&
+      statuses.some(
+        (status) => status === 'sent' || status === 'timeout_uncertain',
+      )
+    ) {
+      return 'partial_failure';
+    }
+
+    if (
+      statuses.every(
+        (status) => status === 'timeout_uncertain' || status === 'skipped',
+      )
+    ) {
+      return 'timeout_uncertain';
+    }
+
+    if (statuses.some((status) => status === 'failed')) {
+      return 'failed';
+    }
+
+    return 'partial_failure';
+  }
+
+  private async executeWhatsAppSend(data: {
+    partType: WhatsAppSendPartType;
+    to: string;
+    payload: Record<string, any>;
+    timeoutMs?: number;
+  }): Promise<WhatsAppSendPartResult> {
+    const accessToken = this.configService.get<string>('WHATSAPP_ACCESS_TOKEN');
+    const phoneNumberId = this.configService.get<string>(
+      'WHATSAPP_PHONE_NUMBER_ID',
+    );
+    const apiVersion =
+      this.configService.get<string>('WHATSAPP_API_VERSION') ?? 'v25.0';
+
+    if (!accessToken || !phoneNumberId) {
+      this.logger.warn(
+        `WhatsApp access token or phone number ID is missing. Skipping ${data.partType} send.`,
+      );
+
+      return {
+        partType: data.partType,
+        status: 'failed',
+        providerMessageId: null,
+        errorMessage: 'Missing WhatsApp access token or phone number ID',
+      };
+    }
+
+    const url = `https://graph.facebook.com/${apiVersion}/${phoneNumberId}/messages`;
+
+    try {
+      const response = await firstValueFrom(
+        this.httpService.post(url, data.payload, {
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+            'Content-Type': 'application/json',
+          },
+          timeout: data.timeoutMs ?? 15000,
+        }),
+      );
+
+      const providerMessageId = this.extractProviderMessageId(response.data);
+
+      this.logger.log(
+        `Sent WhatsApp ${data.partType} message to ${data.to}${
+          providerMessageId
+            ? ` with provider message ID ${providerMessageId}`
+            : ''
+        }`,
+      );
+
+      return {
+        partType: data.partType,
+        status: 'sent',
+        providerMessageId,
+        errorMessage: null,
+      };
+    } catch (error: any) {
+      const errorMessage = error?.message ?? 'Unknown error';
+
+      if (errorMessage.includes('timeout')) {
+        this.logger.warn(
+          `WhatsApp ${data.partType} request timed out for ${data.to}. Meta may still have accepted and delivered it.`,
+        );
+
+        return {
+          partType: data.partType,
+          status: 'timeout_uncertain',
+          providerMessageId: null,
+          errorMessage,
+        };
+      }
+
+      this.logger.error(
+        `Failed to send WhatsApp ${data.partType} message to ${data.to}: ${errorMessage}`,
+        error?.stack,
+      );
+
+      return {
+        partType: data.partType,
+        status: 'failed',
+        providerMessageId: null,
+        errorMessage,
+      };
+    }
   }
   private formatButtonTitle(label: string): string {
     return label.trim().slice(0, 20);

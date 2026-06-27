@@ -103,7 +103,7 @@ export class WhatsAppInboundProcessor {
       interactiveValue: job.data.interactiveValue,
     });
 
-    await this.whatsAppService.sendOrchestratorResponse({
+    const sendResult = await this.whatsAppService.sendOrchestratorResponse({
       to: job.data.whatsappPhoneNumber,
       language: profile.preferredLanguage ?? Language.EN,
       response,
@@ -120,6 +120,8 @@ export class WhatsAppInboundProcessor {
         source: 'whatsapp-processor',
         options: response.options,
         currentState: response.currentState,
+        mediaAssetKey: response.mediaAssetKey ?? null,
+        sendResult,
       },
     });
 
