@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import {
   OnQueueActive,
   OnQueueCompleted,
@@ -20,6 +22,8 @@ import {
 } from '../constants/whatsapp-queue.constants';
 import { WhatsAppService } from '../services/whatsapp.service';
 import { WhatsAppInboundJob } from '../types/whatsapp-inbound-job.type';
+import { WhatsAppFailureLogService } from '../services/whastapp-failure-log.service';
+import { WhatsAppFailureStage } from '../enums/whatsapp-failure-stage.enum';
 
 @Injectable()
 @Processor(WHATSAPP_INBOUND_QUEUE)
@@ -33,6 +37,7 @@ export class WhatsAppInboundProcessor {
     private readonly sessionService: SessionService,
     private readonly chatOrchestratorService: ChatOrchestratorService,
     private readonly whatsAppService: WhatsAppService,
+    private readonly whatsappFailureLogService: WhatsAppFailureLogService,
   ) {}
 
   @Process(WHATSAPP_INBOUND_JOB)
@@ -92,42 +97,90 @@ export class WhatsAppInboundProcessor {
       });
     } catch (error: any) {
       this.logger.warn(
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
         `Failed to send typing indicator for ${job.data.providerMessageId}: ${error.message}`,
       );
+      await this.whatsappFailureLogService.logFailure({
+        sessionId: session.id,
+        userId: user.id,
+        jobId: String(job.id ?? ''),
+        failureStage: WhatsAppFailureStage.TYPING_INDICATOR,
+        phoneNumber: job.data.whatsappPhoneNumber,
+        providerMessageId: job.data.providerMessageId,
+        errorMessage: error.message ?? 'Unknown typing indicator error',
+        errorStack: error.stack ?? null,
+        payload: {
+          jobData: job.data,
+        },
+      });
     }
 
-    const response = await this.chatOrchestratorService.processIncomingMessage({
-      whatsappPhoneNumber: job.data.whatsappPhoneNumber,
-      text: job.data.text,
-      interactiveValue: job.data.interactiveValue,
-    });
+    try {
+      const response =
+        await this.chatOrchestratorService.processIncomingMessage({
+          whatsappPhoneNumber: job.data.whatsappPhoneNumber,
+          text: job.data.text,
+          interactiveValue: job.data.interactiveValue,
+        });
 
-    const sendResult = await this.whatsAppService.sendOrchestratorResponse({
-      to: job.data.whatsappPhoneNumber,
-      language: profile.preferredLanguage ?? Language.EN,
-      response,
-    });
+      const sendResult = await this.whatsAppService.sendOrchestratorResponse({
+        to: job.data.whatsappPhoneNumber,
+        language: profile.preferredLanguage ?? Language.EN,
+        response,
+      });
 
-    await this.messagesService.logOutboundMessage({
-      sessionId: session.id,
-      userId: user.id,
-      messageType: MessageType.TEXT,
-      messageText: response.message,
-      interactiveValue: null,
-      triggeredSafeguarding: false,
-      rawPayload: {
-        source: 'whatsapp-processor',
-        options: response.options,
-        currentState: response.currentState,
-        mediaAssetKey: response.mediaAssetKey ?? null,
-        sendResult,
-      },
-    });
+      if (sendResult.overallStatus !== 'sent') {
+        await this.whatsappFailureLogService.logFailure({
+          sessionId: session.id,
+          userId: user.id,
+          jobId: String(job.id ?? ''),
+          failureStage: WhatsAppFailureStage.OUTBOUND_SEND,
+          phoneNumber: job.data.whatsappPhoneNumber,
+          providerMessageId: job.data.providerMessageId,
+          errorMessage: `Outbound send completed with status ${sendResult.overallStatus}`,
+          payload: {
+            jobData: job.data,
+            response,
+            sendResult,
+          },
+        });
+      }
 
-    this.logger.log(
-      `Processed inbound WhatsApp message: ${job.data.providerMessageId}`,
-    );
+      await this.messagesService.logOutboundMessage({
+        sessionId: session.id,
+        userId: user.id,
+        messageType: MessageType.TEXT,
+        messageText: response.message,
+        interactiveValue: null,
+        triggeredSafeguarding: false,
+        rawPayload: {
+          source: 'whatsapp-processor',
+          options: response.options,
+          currentState: response.currentState,
+          mediaAssetKey: response.mediaAssetKey ?? null,
+          sendResult,
+        },
+      });
+
+      this.logger.log(
+        `Processed inbound WhatsApp message: ${job.data.providerMessageId}`,
+      );
+    } catch (error) {
+      await this.whatsappFailureLogService.logFailure({
+        sessionId: session.id,
+        userId: user.id,
+        jobId: String(job.id ?? ''),
+        failureStage: WhatsAppFailureStage.JOB_PROCESSING,
+        phoneNumber: job.data.whatsappPhoneNumber,
+        providerMessageId: job.data.providerMessageId,
+        errorMessage: error.message ?? 'Unknown job processing error',
+        errorStack: error.stack ?? null,
+        payload: {
+          jobData: job.data,
+        },
+      });
+
+      throw error;
+    }
   }
 
   @OnQueueActive()
@@ -141,10 +194,23 @@ export class WhatsAppInboundProcessor {
   }
 
   @OnQueueFailed()
-  onFailed(job: Job<WhatsAppInboundJob>, error: Error) {
+  async onFailed(job: Job<WhatsAppInboundJob>, error: Error) {
     this.logger.error(
       `Bull job failed: ${job?.id} - ${error.message}`,
       error.stack,
     );
+    await this.whatsappFailureLogService.logFailure({
+      sessionId: null,
+      userId: null,
+      jobId: String(job?.id ?? ''),
+      failureStage: WhatsAppFailureStage.JOB_PROCESSING,
+      phoneNumber: job?.data?.whatsappPhoneNumber ?? null,
+      providerMessageId: job?.data?.providerMessageId ?? null,
+      errorMessage: error.message,
+      errorStack: error.stack ?? null,
+      payload: {
+        jobData: job?.data ?? null,
+      },
+    });
   }
 }
