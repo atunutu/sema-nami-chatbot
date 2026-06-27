@@ -85,6 +85,18 @@ export class WhatsAppInboundProcessor {
       throw error;
     }
 
+    try {
+      await this.whatsAppService.sendTypingIndicator({
+        to: job.data.whatsappPhoneNumber,
+        messageId: job.data.providerMessageId,
+      });
+    } catch (error: any) {
+      this.logger.warn(
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+        `Failed to send typing indicator for ${job.data.providerMessageId}: ${error.message}`,
+      );
+    }
+
     const response = await this.chatOrchestratorService.processIncomingMessage({
       whatsappPhoneNumber: job.data.whatsappPhoneNumber,
       text: job.data.text,

@@ -528,8 +528,10 @@ export class WhatsAppService {
 
       this.logger.log(`Sent WhatsApp image message to ${data.to}`);
     } catch (error: any) {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       const message = error?.message ?? 'Unknown error';
 
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-call
       if (message.includes('timeout')) {
         this.logger.warn(
           `WhatsApp image request timed out for ${data.to}. Meta may still have accepted and delivered it.`,
@@ -546,6 +548,51 @@ export class WhatsAppService {
     }
   }
 
+  async sendTypingIndicator(data: {
+    to: string;
+    messageId: string;
+  }): Promise<void> {
+    const accessToken = this.configService.get<string>('WHATSAPP_ACCESS_TOKEN');
+    const phoneNumberId = this.configService.get<string>(
+      'WHATSAPP_PHONE_NUMBER_ID',
+    );
+    const apiVersion =
+      this.configService.get<string>('WHATSAPP_API_VERSION') ?? 'v25.0';
+
+    if (!accessToken || !phoneNumberId) {
+      this.logger.warn(
+        'WhatsApp access token or phone number ID is missing. Skipping typing indicator.',
+      );
+      return;
+    }
+
+    const url = `https://graph.facebook.com/${apiVersion}/${phoneNumberId}/messages`;
+
+    const payload = {
+      messaging_product: 'whatsapp',
+      status: 'read',
+      message_id: data.messageId,
+      typing_indicator: {
+        type: 'text',
+      },
+    };
+
+    this.logger.log(
+      `Sending WhatsApp typing indicator for ${data.to} using inbound message ${data.messageId}`,
+    );
+
+    await firstValueFrom(
+      this.httpService.post(url, payload, {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+          'Content-Type': 'application/json',
+        },
+        timeout: 10000,
+      }),
+    );
+
+    this.logger.log(`Sent WhatsApp typing indicator for ${data.to}`);
+  }
   private formatButtonTitle(label: string): string {
     return label.trim().slice(0, 20);
   }
