@@ -98,10 +98,10 @@ export class WhatsAppService {
         jobId: message.providerMessageId,
         removeOnComplete: 100,
         removeOnFail: 500,
-        attempts: 1,
+        attempts: 3,
         backoff: {
           type: 'exponential',
-          delay: 2000,
+          delay: 5000,
         },
       },
     );

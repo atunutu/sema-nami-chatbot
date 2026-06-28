@@ -145,6 +145,12 @@ export class WhatsAppInboundProcessor {
         });
       }
 
+      if (this.shouldRetryOutboundSend(sendResult)) {
+        throw new Error(
+          `Outbound WhatsApp send failed with retryable status: ${sendResult.overallStatus}`,
+        );
+      }
+
       await this.messagesService.logOutboundMessage({
         sessionId: session.id,
         userId: user.id,
@@ -164,7 +170,7 @@ export class WhatsAppInboundProcessor {
       this.logger.log(
         `Processed inbound WhatsApp message: ${job.data.providerMessageId}`,
       );
-    } catch (error) {
+    } catch (error: any) {
       await this.whatsappFailureLogService.logFailure({
         sessionId: session.id,
         userId: user.id,
@@ -181,6 +187,35 @@ export class WhatsAppInboundProcessor {
 
       throw error;
     }
+  }
+
+  private shouldRetryOutboundSend(sendResult: {
+    overallStatus: 'sent' | 'timeout_uncertain' | 'failed' | 'partial_failure';
+    parts: Array<{
+      status: 'sent' | 'timeout_uncertain' | 'failed' | 'skipped';
+    }>;
+  }): boolean {
+    if (sendResult.overallStatus === 'sent') {
+      return false;
+    }
+
+    if (sendResult.overallStatus === 'timeout_uncertain') {
+      return false;
+    }
+
+    if (sendResult.overallStatus === 'partial_failure') {
+      return false;
+    }
+
+    const hasSentOrUncertainPart = sendResult.parts.some(
+      (part) => part.status === 'sent' || part.status === 'timeout_uncertain',
+    );
+
+    if (hasSentOrUncertainPart) {
+      return false;
+    }
+
+    return true;
   }
 
   @OnQueueActive()
