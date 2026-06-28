@@ -92,12 +92,7 @@ export const menstruationSeed = {
       nodeKey: 'WHAT_IS_MENSTRUATION_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Menstruation, commonly called a period, is the monthly shedding of the lining of the uterus through the vagina when pregnancy does not occur. It is a normal biological process and an important sign that the reproductive system is developing.Each month, a girl's body prepares for a possible pregnancy.
-
-The ovaries release an egg,the lining of the uterus becomes thicker and if the egg is not fertilized by sperm, pregnancy does not occur.The body sheds the extra uterine lining and blood through the vagina.This is called menstruation.
-
-Menstruation is a natural part of puberty and reproductive health. It is not a disease, illness, curse, or punishment. Every girl experiences menstruation differently, and variations in cycle length, flow, and symptoms are common.
-`,
+      messageText: `Menstruation, commonly called a period, is the monthly shedding of the lining of the uterus through the vagina when pregnancy does not occur. It is a normal biological process and an important sign that the reproductive system is developing.Each month, a girl's body prepares for a possible pregnancy.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: 'image_menstrual_hygiene_01',
       isStartNode: true,
@@ -110,12 +105,7 @@ Menstruation is a natural part of puberty and reproductive health. It is not a d
       nodeKey: 'WHAT_IS_MENSTRUATION_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Hedhi, ambayo kwa kawaida huitwa hedhi, ni kumwaga kila mwezi kwa utando wa uzazi kupitia uke wakati mimba haitokei. Ni mchakato wa kawaida wa kibiolojia na ishara muhimu kwamba mfumo wa uzazi unakua. Kila mwezi, mwili wa msichana hujiandaa kwa mimba inayowezekana.
-
-Ovari hutoa yai, utando wa uzazi unakuwa mzito na ikiwa yai halijarutubishwa na manii, mimba haitokei. Mwili hutoa utando wa ziada wa uzazi na damu kupitia uke. Hii inaitwa hedhi.
-
-Hedhi ni sehemu ya asili ya kubalehe na afya ya uzazi. Sio ugonjwa, ugonjwa, laana, au adhabu. Kila msichana hupata hedhi tofauti, na tofauti katika urefu wa mzunguko, mtiririko, na dalili ni za kawaida.
-`,
+      messageText: `Hedhi, ambayo kwa kawaida huitwa hedhi, ni kumwaga kila mwezi kwa utando wa uzazi kupitia uke wakati mimba haitokei. Ni mchakato wa kawaida wa kibiolojia na ishara muhimu kwamba mfumo wa uzazi unakua. Kila mwezi, mwili wa msichana hujiandaa kwa mimba inayowezekana.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: 'image_menstrual_hygiene_01',
       isStartNode: true,
@@ -126,56 +116,101 @@ Hedhi ni sehemu ya asili ya kubalehe na afya ya uzazi. Sio ugonjwa, ugonjwa, laa
     {
       subtopicCode: 'WHAT_IS_MENSTRUATION',
       nodeKey: 'WHAT_IS_MENSTRUATION_02',
-      nodeType: NodeType.RELATED_TOPICS,
+      nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Frequently Asked Questions
-
-Q: How long does a period usually last?
-A: Most periods last between 2 and 7 days.
-
-Q: Is it normal to have irregular periods?
-A: Yes. Irregular cycles are common during adolescence.
-
-Q: Can I play sports during my period?
-A: Yes. Physical activity is generally safe during menstruation.
-
-Q: Can stress affect my period?
-A: Yes. Stress may affect menstrual cycles.
-
-Q: Is it normal to have cramps?
-A: Mild cramps are common. Severe pain should be discussed with a healthcare provider.
-`,
+      messageText: `The ovaries release an egg,the lining of the uterus becomes thicker and if the egg is not fertilized by sperm, pregnancy does not occur.The body sheds the extra uterine lining and blood through the vagina.This is called menstruation.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 2,
       isActive: true,
     },
     {
       subtopicCode: 'WHAT_IS_MENSTRUATION',
       nodeKey: 'WHAT_IS_MENSTRUATION_02',
-      nodeType: NodeType.RELATED_TOPICS,
+      nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Maswali Yanayoulizwa Mara kwa Mara
+      messageText: `Ovari hutoa yai, utando wa uzazi unakuwa mzito na ikiwa yai halijarutubishwa na manii, mimba haitokei. Mwili hutoa utando wa ziada wa uzazi na damu kupitia uke. Hii inaitwa hedhi.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'WHAT_IS_MENSTRUATION',
+      nodeKey: 'WHAT_IS_MENSTRUATION_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Menstruation is a natural part of puberty and reproductive health. It is not a disease, illness, curse, or punishment. Every girl experiences menstruation differently, and variations in cycle length, flow, and symptoms are common.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'WHAT_IS_MENSTRUATION',
+      nodeKey: 'WHAT_IS_MENSTRUATION_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Hedhi ni sehemu ya asili ya kubalehe na afya ya uzazi. Sio ugonjwa, ugonjwa, laana, au adhabu. Kila msichana hupata hedhi tofauti, na tofauti katika urefu wa mzunguko, mtiririko, na dalili ni za kawaida.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'WHAT_IS_MENSTRUATION',
+      nodeKey: 'WHAT_IS_MENSTRUATION_04',
+      nodeType: NodeType.RELATED_TOPICS,
+      language: Language.EN,
+      messageText: `Frequently Asked Questions 
+Q: How long does a period usually last? 
+A: Most periods last between 2 and 7 days. 
 
-Swali:Hedhi hudumu kwa muda gani?
+Q: Is it normal to have irregular periods? 
+A: Yes. Irregular cycles are common during adolescence. 
 
-Jibu:Kwa kawaida hedhi hudumu kati ya siku 2 hadi 7.
+Q: Can I play sports during my period? 
+A: Yes. Physical activity is generally safe during menstruation. 
 
-Swali:Je, hedhi isiyo ya kawaida ni jambo la kawaida?
+Q: Can stress affect my period? 
+A: Yes. Stress may affect menstrual cycles. 
 
-Jibu:Ndiyo. Hasa katika miaka ya mwanzo baada ya hedhi kuanza.
-
-Swali:Je, maumivu wakati wa hedhi ni kawaida?
-
-Jibu:Maumivu madogo ni kawaida, lakini maumivu makali yanahitaji ushauri wa mtoa huduma ya afya
-`,
+Q: Is it normal to have cramps? 
+A: Mild cramps are common. Severe pain should be discussed with a healthcare provider.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: true,
-      sortOrder: 2,
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'WHAT_IS_MENSTRUATION',
+      nodeKey: 'WHAT_IS_MENSTRUATION_04',
+      nodeType: NodeType.RELATED_TOPICS,
+      language: Language.SW,
+      messageText: `Maswali Yanayoulizwa Mara kwa Mara 
+Swali: Hedhi hudumu kwa muda gani? 
+Jibu: Kwa kawaida hedhi hudumu kati ya siku 2 hadi 7. 
+
+Swali: Je, hedhi isiyo ya kawaida ni jambo la kawaida? 
+Jibu: Ndiyo. Hasa katika miaka ya mwanzo baada ya hedhi kuanza. 
+
+Swali: Je, maumivu wakati wa hedhi ni kawaida? 
+Jibu: Maumivu madogo ni kawaida, lakini maumivu makali yanahitaji ushauri wa mtoa huduma ya afya`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 4,
       isActive: true,
     },
 
@@ -598,207 +633,218 @@ Usumbufu mdogo ni wa kawaida, lakini maumivu makali yanapaswa kujadiliwa na mtoa
   contentNodeOptions: [
     {
       nodeKey: 'WHAT_IS_MENSTRUATION_01',
-      optionValue: 'tell_me_more',
-      labelEn: 'Tell me more',
-      labelSw: 'Nieleze zaidi',
+      optionValue: 'what_happens_next',
+      labelEn: 'What happens next?',
+      labelSw: 'Nini hutokea baada ya hapo?',
       nextNodeKey: 'WHAT_IS_MENSTRUATION_02',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'WHAT_IS_MENSTRUATION_01',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'is_this_normal',
+      labelEn: 'Is this normal?',
+      labelSw: 'Je, hii ni kawaida?',
+      nextNodeKey: 'WHAT_IS_MENSTRUATION_03',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'WHAT_IS_MENSTRUATION_01',
-      optionValue: 'back',
-      labelEn: 'Back',
-      labelSw: 'Rudi',
-      nextNodeKey: 'BACK_ACTION',
+      optionValue: 'common_questions',
+      labelEn: 'Common questions',
+      labelSw: 'Maswali ya kawaida',
+      nextNodeKey: 'WHAT_IS_MENSTRUATION_04',
       sortOrder: 3,
       isActive: true,
     },
     {
-      nodeKey: 'WHAT_IS_MENSTRUATION_01',
-      optionValue: 'start_again',
-      labelEn: 'Start Again',
-      labelSw: 'Anza Tena',
-      nextNodeKey: 'START_AGAIN',
-      sortOrder: 4,
-      isActive: true,
-    },
-
-    {
       nodeKey: 'WHAT_IS_MENSTRUATION_02',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'is_this_normal',
+      labelEn: 'Is this normal?',
+      labelSw: 'Je, hii ni kawaida?',
+      nextNodeKey: 'WHAT_IS_MENSTRUATION_03',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'WHAT_IS_MENSTRUATION_02',
-      optionValue: 'back',
-      labelEn: 'Back',
-      labelSw: 'Rudi',
-      nextNodeKey: 'BACK_ACTION',
+      optionValue: 'common_questions',
+      labelEn: 'Common questions',
+      labelSw: 'Maswali ya kawaida',
+      nextNodeKey: 'WHAT_IS_MENSTRUATION_04',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'WHAT_IS_MENSTRUATION_02',
+      optionValue: 'back_to_start',
+      labelEn: 'Back to the start',
+      labelSw: 'Rudi mwanzo',
+      nextNodeKey: 'WHAT_IS_MENSTRUATION_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'WHAT_IS_MENSTRUATION_03',
+      optionValue: 'common_questions',
+      labelEn: 'Common questions',
+      labelSw: 'Maswali ya kawaida',
+      nextNodeKey: 'WHAT_IS_MENSTRUATION_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'WHAT_IS_MENSTRUATION_03',
+      optionValue: 'what_happens_next',
+      labelEn: 'What happens next?',
+      labelSw: 'Nini hutokea baada ya hapo?',
+      nextNodeKey: 'WHAT_IS_MENSTRUATION_02',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'WHAT_IS_MENSTRUATION_03',
       optionValue: 'start_again',
-      labelEn: 'Start Again',
-      labelSw: 'Anza Tena',
-      nextNodeKey: 'START_AGAIN',
+      labelEn: 'Start again',
+      labelSw: 'Anza tena',
+      nextNodeKey: 'WHAT_IS_MENSTRUATION_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'WHAT_IS_MENSTRUATION_04',
+      optionValue: 'explore_hygiene',
+      labelEn: 'Period hygiene',
+      labelSw: 'Usafi wakati wa hedhi',
+      nextNodeKey: 'MENSTRUAL_HYGIENE_01',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'WHAT_IS_MENSTRUATION_04',
+      optionValue: 'explore_cramps',
+      labelEn: 'Period pain',
+      labelSw: 'Maumivu ya hedhi',
+      nextNodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'WHAT_IS_MENSTRUATION_04',
+      optionValue: 'main_menu',
+      labelEn: 'Main menu',
+      labelSw: 'Menyu kuu',
+      nextNodeKey: 'main_menu',
       sortOrder: 3,
       isActive: true,
     },
 
     {
       nodeKey: 'MENSTRUAL_HYGIENE_01',
-      optionValue: 'tell_me_more',
-      labelEn: 'Tell me more',
-      labelSw: 'Nieleze zaidi',
+      optionValue: 'safe_cleaning',
+      labelEn: 'How should I stay clean?',
+      labelSw: 'Ninawezaje kubaki msafi?',
       nextNodeKey: 'MENSTRUAL_HYGIENE_02',
       sortOrder: 1,
       isActive: true,
     },
-
     {
       nodeKey: 'MENSTRUAL_HYGIENE_01',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'used_products',
+      labelEn: 'What do I do with used products?',
+      labelSw: 'Nifanye nini na bidhaa zilizotumika?',
+      nextNodeKey: 'MENSTRUAL_HYGIENE_03',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'MENSTRUAL_HYGIENE_01',
-      optionValue: 'back',
-      labelEn: 'Back',
-      labelSw: 'Rudi',
-      nextNodeKey: 'BACK_ACTION',
+      optionValue: 'daily_life',
+      labelEn: 'Can I still do normal activities?',
+      labelSw: 'Bado ninaweza kufanya shughuli za kawaida?',
+      nextNodeKey: 'MENSTRUAL_HYGIENE_04',
       sortOrder: 3,
       isActive: true,
     },
     {
-      nodeKey: 'MENSTRUAL_HYGIENE_01',
-      optionValue: 'start_again',
-      labelEn: 'Start Again',
-      labelSw: 'Anza Tena',
-      nextNodeKey: 'START_AGAIN',
-      sortOrder: 4,
-      isActive: true,
-    },
-
-    {
       nodeKey: 'MENSTRUAL_HYGIENE_02',
-      optionValue: 'tell_me_more',
-      labelEn: 'Tell me more',
-      labelSw: 'Nieleze zaidi',
+      optionValue: 'used_products',
+      labelEn: 'What do I do with used products?',
+      labelSw: 'Nifanye nini na bidhaa zilizotumika?',
       nextNodeKey: 'MENSTRUAL_HYGIENE_03',
       sortOrder: 1,
       isActive: true,
     },
-
     {
       nodeKey: 'MENSTRUAL_HYGIENE_02',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'daily_life',
+      labelEn: 'Can I still do normal activities?',
+      labelSw: 'Bado ninaweza kufanya shughuli za kawaida?',
+      nextNodeKey: 'MENSTRUAL_HYGIENE_04',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'MENSTRUAL_HYGIENE_02',
-      optionValue: 'back',
-      labelEn: 'Back',
-      labelSw: 'Rudi',
-      nextNodeKey: 'BACK_ACTION',
+      optionValue: 'back_to_start',
+      labelEn: 'Back to the start',
+      labelSw: 'Rudi mwanzo',
+      nextNodeKey: 'MENSTRUAL_HYGIENE_01',
       sortOrder: 3,
       isActive: true,
     },
     {
-      nodeKey: 'MENSTRUAL_HYGIENE_02',
-      optionValue: 'start_again',
-      labelEn: 'Start Again',
-      labelSw: 'Anza Tena',
-      nextNodeKey: 'START_AGAIN',
-      sortOrder: 4,
-      isActive: true,
-    },
-
-    {
       nodeKey: 'MENSTRUAL_HYGIENE_03',
-      optionValue: 'tell_me_more',
-      labelEn: 'Tell me more',
-      labelSw: 'Nieleze zaidi',
+      optionValue: 'daily_life',
+      labelEn: 'Can I still do normal activities?',
+      labelSw: 'Bado ninaweza kufanya shughuli za kawaida?',
       nextNodeKey: 'MENSTRUAL_HYGIENE_04',
       sortOrder: 1,
       isActive: true,
     },
-
     {
       nodeKey: 'MENSTRUAL_HYGIENE_03',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'safe_cleaning',
+      labelEn: 'How should I stay clean?',
+      labelSw: 'Ninawezaje kubaki msafi?',
+      nextNodeKey: 'MENSTRUAL_HYGIENE_02',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'MENSTRUAL_HYGIENE_03',
-      optionValue: 'back',
-      labelEn: 'Back',
-      labelSw: 'Rudi',
-      nextNodeKey: 'BACK_ACTION',
+      optionValue: 'start_again',
+      labelEn: 'Start again',
+      labelSw: 'Anza tena',
+      nextNodeKey: 'MENSTRUAL_HYGIENE_01',
       sortOrder: 3,
       isActive: true,
     },
     {
-      nodeKey: 'MENSTRUAL_HYGIENE_03',
-      optionValue: 'start_again',
-      labelEn: 'Start Again',
-      labelSw: 'Anza Tena',
-      nextNodeKey: 'START_AGAIN',
-      sortOrder: 4,
-      isActive: true,
-    },
-
-    {
       nodeKey: 'MENSTRUAL_HYGIENE_04',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'period_pain',
+      labelEn: 'Period pain',
+      labelSw: 'Maumivu ya hedhi',
+      nextNodeKey: 'MENSTRUAL_CRAMPS_01',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'MENSTRUAL_HYGIENE_04',
-      optionValue: 'back',
-      labelEn: 'Back',
-      labelSw: 'Rudi',
-      nextNodeKey: 'BACK_ACTION',
+      optionValue: 'what_is_menstruation',
+      labelEn: 'What is menstruation?',
+      labelSw: 'Hedhi ni nini?',
+      nextNodeKey: 'WHAT_IS_MENSTRUATION_01',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'MENSTRUAL_HYGIENE_04',
-      optionValue: 'start_again',
-      labelEn: 'Start Again',
-      labelSw: 'Anza Tena',
-      nextNodeKey: 'START_AGAIN',
+      optionValue: 'main_menu',
+      labelEn: 'Main menu',
+      labelSw: 'Menyu kuu',
+      nextNodeKey: 'main_menu',
       sortOrder: 3,
       isActive: true,
     },
