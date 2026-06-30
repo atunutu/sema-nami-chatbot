@@ -52,8 +52,8 @@ export const menstruationSeed = {
     },
     {
       code: 'MENSTRUAL_PAIN_AND_CONCERNS',
-      titleEn: 'Menstrual Pain and Concerns',
-      titleSw: 'Maumivu na Changamoto za Hedhi',
+      titleEn: 'Menstrual Pain',
+      titleSw: 'Changamoto za Hedhi',
       descriptionEn: null,
       descriptionSw: null,
       audienceGender: null,
@@ -64,7 +64,7 @@ export const menstruationSeed = {
     {
       code: 'OVULATION_AND_FERTILITY',
       titleEn: 'Ovulation and Fertility',
-      titleSw: 'Utoaji wa Yai na Uwezo wa Kushika Mimba',
+      titleSw: 'Kutoa Yai na Kushika Mimba',
       descriptionEn: null,
       descriptionSw: null,
       audienceGender: null,
@@ -118,7 +118,7 @@ export const menstruationSeed = {
       nodeKey: 'WHAT_IS_MENSTRUATION_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `The ovaries release an egg,the lining of the uterus becomes thicker and if the egg is not fertilized by sperm, pregnancy does not occur.The body sheds the extra uterine lining and blood through the vagina.This is called menstruation.`,
+      messageText: `The ovaries release an egg, the lining of the uterus becomes thicker and if the egg is not fertilized by sperm, pregnancy does not occur.The body sheds the extra uterine lining and blood through the vagina. This is called menstruation.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -353,9 +353,6 @@ Hedhi ni sehemu ya kawaida na yenye afya njema ya kukua, na kudumisha usafi mzur
       language: Language.EN,
       messageText: `These feelings are normal, especially during the first few years of menstruation. 
 Many girls experience mild abdominal pain, back pain, breast tenderness, bleeding changes, fatigue, headaches and swelling. 
-
-These symptoms are often normal and vary from person to person. Some girls may feel embarrassed, scared, confused, angry and emotional. 
-Some girls experience abdominal pain due to the uterine contractions, which occur when the uterus pushes menstrual blood out.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -371,10 +368,6 @@ Some girls experience abdominal pain due to the uterine contractions, which occu
       language: Language.SW,
       messageText: `Hisia hizi ni za kawaida, hasa wakati wa miaka ya kwanza ya hedhi. 
 Wasichana wengi hupata maumivu ya tumbo kidogo, maumivu ya mgongo, uchungu wa matiti, mabadiliko ya damu, uchovu, maumivu ya kichwa na uvimbe. 
-Dalili hizi mara nyingi ni za kawaida na hutofautiana kutoka kwa mtu hadi mtu. 
-
-Baadhi ya wasichana wanaweza kuhisi aibu, woga, kuchanganyikiwa, kukasirika na kihisia. 
-Baadhi ya wasichana hupata maumivu ya tumbo kutokana na mkakamao wa msukumo wa mji wa mimba, mkakamao huo hutokea wakati mji wa mimba unaposukuma damu ya hedhi itoke. 
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -387,7 +380,39 @@ Baadhi ya wasichana hupata maumivu ya tumbo kutokana na mkakamao wa msukumo wa m
     {
       subtopicCode: 'MENSTRUAL_PAIN_AND_CONCERNS',
       nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_02',
-      nodeType: NodeType.RELATED_TOPICS,
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `These symptoms are often normal and vary from person to person. Some girls may feel embarrassed, scared, confused, angry and emotional. 
+Some girls experience abdominal pain due to the uterine contractions, which occur when the uterus pushes menstrual blood out.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENSTRUAL_PAIN_AND_CONCERNS',
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Dalili hizi mara nyingi ni za kawaida na hutofautiana kutoka kwa mtu hadi mtu. 
+
+Baadhi ya wasichana wanaweza kuhisi aibu, woga, kuchanganyikiwa, kukasirika na kihisia. 
+Baadhi ya wasichana hupata maumivu ya tumbo kutokana na mkakamao wa msukumo wa mji wa mimba, mkakamao huo hutokea wakati mji wa mimba unaposukuma damu ya hedhi itoke. 
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENSTRUAL_PAIN_AND_CONCERNS',
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_03',
+      nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Below are some tips for things you can do to cope with the pain:
     ● Take a plastic bottle filled with warm water or a cloth soaked in warm water and place it under your back or lower abdomen.
@@ -396,34 +421,58 @@ Baadhi ya wasichana hupata maumivu ya tumbo kutokana na mkakamao wa msukumo wa m
     gas.
     ● Painkillers such as paracetamol can help if you are feeling severe pain, but remember to use them according to the instructions of a
     health professional.
-
-If the pain increases, it is best to go to a health care facility for advice from a health care provider.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
-      sortOrder: 2,
+      isEndNode: false,
+      sortOrder: 3,
       isActive: true,
     },
     {
       subtopicCode: 'MENSTRUAL_PAIN_AND_CONCERNS',
-      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_02',
-      nodeType: NodeType.RELATED_TOPICS,
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_03',
+      nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Hapa chini ni vidokezo vya mambo unayoweza kufanya kukabiliana na maumivu:
     ● Chukua chupa ya plastiki iliyojazwa maji ya vuguvugu au kitambaa kilicholowekwa kwenye maji ya vuguvugu na kiweke chini ya mgongo au chini ya tumbo.
     ● Kunywa maji: Ni vyema kuhakikisha mwili wako unakuwa na maji ya kutosha kwa kuwa hii itakuepusha kuumwa na kichwa.
     ● Kufanya mazoezi mepesi inaweza kukusaidia kupunguza maumivu na tumbo kujaa gesi.
     ● Dawa za kupunguza maumivu kama paracetamol zinaweza kusaidia ikiwa unajisikia maumivu makali, lakini kumbuka kutumia kwa mujibu wa maelekezo ya mtaalam wa afya 
-
-Maumivu yakiongeza ni vema kufika katika kituo cha kutolea huduma za afya kwa ushauri toka kwa mtoa huduma wa afya.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENSTRUAL_PAIN_AND_CONCERNS',
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If the pain increases, it is best to go to a health care facility for advice from a health care provider.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: true,
-      sortOrder: 2,
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENSTRUAL_PAIN_AND_CONCERNS',
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Maumivu yakiongeza ni vema kufika katika kituo cha kutolea huduma za afya kwa ushauri toka kwa mtoa huduma wa afya.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 4,
       isActive: true,
     },
 
@@ -434,9 +483,8 @@ Maumivu yakiongeza ni vema kufika katika kituo cha kutolea huduma za afya kwa us
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Most girls experience their first menstrual period between the ages of 9 and 16 years. 
-The first period is called menarche.Some girls may start earlier while others may start later. 
+The first period is called menarche. Some girls may start earlier while others may start later. 
 This is often normal because bodies develop at different rates.
-A girl can become pregnant if sperm fertilizes an egg after ovulation.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -453,7 +501,6 @@ A girl can become pregnant if sperm fertilizes an egg after ovulation.
       messageText: `Wasichana wengi hupata hedhi yao ya kwanza kati ya umri wa miaka 9 na 16. 
 Hedhi ya kwanza inaitwa menarche. Baadhi ya wasichana wanaweza kuanza mapema huku wengine wakichelewa. 
 Hii mara nyingi ni kawaida kwa sababu miili hukua kwa viwango tofauti.
-Msichana anaweza kupata mimba ikiwa manii itarutubisha yai baada ya ovulation.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -465,11 +512,12 @@ Msichana anaweza kupata mimba ikiwa manii itarutubisha yai baada ya ovulation.
     {
       subtopicCode: 'OVULATION_AND_FERTILITY',
       nodeKey: 'OVULATION_AND_FERTILITY_02',
-      nodeType: NodeType.RELATED_TOPICS,
+      nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Because ovulation may occur before a menstrual period, pregnancy can happen even before a girl has had her first period.
+      messageText: `A girl can become pregnant if sperm fertilizes an egg after ovulation.
+Because ovulation may occur before a menstrual period, pregnancy can happen even before a girl has had her first period.
 Menstruation therefore does not protect someone from pregnancy. However, a girl can get pregnant before her first period if a mature egg is fertilized by sperm during unprotected sex. 
-It is best to avoid unprotected sex during puberty.`,
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -480,11 +528,11 @@ It is best to avoid unprotected sex during puberty.`,
     {
       subtopicCode: 'OVULATION_AND_FERTILITY',
       nodeKey: 'OVULATION_AND_FERTILITY_02',
-      nodeType: NodeType.RELATED_TOPICS,
+      nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Kwa sababu ovulation inaweza kutokea kabla ya hedhi, mimba inaweza kutokea hata kabla ya msichana kupata hedhi yake ya kwanza.
+      messageText: `Msichana anaweza kupata mimba ikiwa manii itarutubisha yai baada ya ovulation.
+Kwa sababu ovulation inaweza kutokea kabla ya hedhi, mimba inaweza kutokea hata kabla ya msichana kupata hedhi yake ya kwanza.
 Kwa hivyo, hedhi haimlindi mtu kutokana na ujauzito. Hata hivyo msichana anaweza kupata ujauzito kabla ya kupata hedhi ya kwanza ikiwa yai liliopevuka litarutubishwa na mbegu ya kiume wakati wa tendo la ngono bila kinga. 
-Ni vizuri kujiepusha na ngono isiyo salama wakati wa balehe.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -496,7 +544,34 @@ Ni vizuri kujiepusha na ngono isiyo salama wakati wa balehe.
     {
       subtopicCode: 'OVULATION_AND_FERTILITY',
       nodeKey: 'OVULATION_AND_FERTILITY_03',
-      nodeType: NodeType.RELATED_TOPICS,
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `It is best to avoid unprotected sex during puberty.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'OVULATION_AND_FERTILITY',
+      nodeKey: 'OVULATION_AND_FERTILITY_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ni vizuri kujiepusha na ngono isiyo salama wakati wa balehe.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'OVULATION_AND_FERTILITY',
+      nodeKey: 'OVULATION_AND_FERTILITY_04',
+      nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Menstruation occurs every 21 to 35 days. 
 Most women have their period every 28 days. Typically, menstruation lasts 2 to 7 days. 
@@ -506,13 +581,13 @@ Some women experience abdominal pain due to uterine contractions, which occur wh
       mediaAssetKey: 'image_menstrual_calendar',
       isStartNode: false,
       isEndNode: true,
-      sortOrder: 3,
+      sortOrder: 4,
       isActive: true,
     },
     {
       subtopicCode: 'OVULATION_AND_FERTILITY',
-      nodeKey: 'OVULATION_AND_FERTILITY_03',
-      nodeType: NodeType.RELATED_TOPICS,
+      nodeKey: 'OVULATION_AND_FERTILITY_04',
+      nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Hedhi hujirudia kila baada ya siku 21 hadi 35. 
 Wanawake wengi hupata hedhi kila baada ya siku 28. Kwa kawaida, hedhi hudumu kwa siku 2 hadi 7. 
@@ -522,7 +597,7 @@ Baadhi ya wanawake hupata maumivu ya tumbo kutokana na mkakamao wa msukumo wa mj
       mediaAssetKey: 'image_menstrual_calendar',
       isStartNode: false,
       isEndNode: true,
-      sortOrder: 3,
+      sortOrder: 4,
       isActive: true,
     },
 
@@ -539,12 +614,6 @@ Fact:-Menstrual blood is a mixture of blood and tissue from the uterus. It is a 
 
 Myth:-Girls should not attend school during their period.
 Fact:-Girls can safely continue attending school and participating in activities.
-
-Myth:-A girl cannot become pregnant before her first period.
-Fact:-Pregnancy can occur if ovulation happens before the first menstrual period.
-
-Myth:-Menstruation means a girl is ready for marriage.
-Fact:-Menstruation is a biological process and does not mean a girl is physically, emotionally, or socially ready for marriage
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -565,9 +634,6 @@ Ukweli:-Hedhi ni mchakato wa kawaida wa mwili.
 
 Dhana Potofu:-Msichana hatakiwi kwenda shule akiwa kwenye hedhi.
 Ukweli:-Msichana anaweza kuendelea na masomo na shughuli zake za kawaida.
-
-Dhana Potofu:-Msichana hawezi kupata mimba kabla ya hedhi ya kwanza.
-Ukweli:-Mimba inaweza kutokea kama yai limetolewa kabla ya hedhi ya kwanza.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -579,7 +645,40 @@ Ukweli:-Mimba inaweza kutokea kama yai limetolewa kabla ya hedhi ya kwanza.
     {
       subtopicCode: 'MENSTRUATION_MYTHS',
       nodeKey: 'MENSTRUATION_MYTHS_02',
-      nodeType: NodeType.RELATED_TOPICS,
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Myth:-A girl cannot become pregnant before her first period.
+Fact:-Pregnancy can occur if ovulation happens before the first menstrual period.
+
+Myth:-Menstruation means a girl is ready for marriage.
+Fact:-Menstruation is a biological process and does not mean a girl is physically, emotionally, or socially ready for marriage
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENSTRUATION_MYTHS',
+      nodeKey: 'MENSTRUATION_MYTHS_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Dhana Potofu:-Msichana hawezi kupata mimba kabla ya hedhi ya kwanza.
+Ukweli:-Mimba inaweza kutokea kama yai limetolewa kabla ya hedhi ya kwanza.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENSTRUATION_MYTHS',
+      nodeKey: 'MENSTRUATION_MYTHS_03',
+      nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Common Concerns from adolescents
 
@@ -588,6 +687,40 @@ Many girls begin menstruation at different ages. If there are concerns, speaking
 
 "My period is irregular."
 Irregular periods are common during the first few years after menstruation begins.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENSTRUATION_MYTHS',
+      nodeKey: 'MENSTRUATION_MYTHS_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Wasiwasi wa Kawaida kutoka kwa vijana balehe
+
+"Hedhi yangu haijaanza bado." 
+Wasichana wengi huanza hedhi katika umri tofauti. Ikiwa kuna wasiwasi, kuzungumza na mtoa huduma ya afya kunaweza kusaidia.
+
+"Hedhi yangu si ya kawaida."
+Hedhi zisizo za kawaida ni za kawaida katika miaka michache ya kwanza baada ya hedhi kuanza.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENSTRUATION_MYTHS',
+      nodeKey: 'MENSTRUATION_MYTHS_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Common Concerns from adolescents
 
 "My period is late."
 Many factors such as stress, illness, nutrition, physical activity, and pregnancy can affect menstrual cycles.
@@ -599,21 +732,15 @@ Mild discomfort is common, but severe pain should be discussed with a healthcare
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: true,
-      sortOrder: 2,
+      sortOrder: 4,
       isActive: true,
     },
     {
       subtopicCode: 'MENSTRUATION_MYTHS',
-      nodeKey: 'MENSTRUATION_MYTHS_02',
-      nodeType: NodeType.RELATED_TOPICS,
+      nodeKey: 'MENSTRUATION_MYTHS_04',
+      nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Wasiwasi wa Kawaida kutoka kwa vijana balehe
-
-"Hedhi yangu haijaanza bado." 
-Wasichana wengi huanza hedhi katika umri tofauti. Ikiwa kuna wasiwasi, kuzungumza na mtoa huduma ya afya kunaweza kusaidia.
-
-"Hedhi yangu si ya kawaida."
-Hedhi zisizo za kawaida ni za kawaida katika miaka michache ya kwanza baada ya hedhi kuanza.
 
 "Hedhi yangu imechelewa." 
 Mambo mengi kama vile msongo wa mawazo, ugonjwa, lishe, shughuli za kimwili, na ujauzito yanaweza kuathiri mzunguko wa hedhi.
@@ -625,7 +752,7 @@ Usumbufu mdogo ni wa kawaida, lakini maumivu makali yanapaswa kujadiliwa na mtoa
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: true,
-      sortOrder: 2,
+      sortOrder: 4,
       isActive: true,
     },
   ],
@@ -635,7 +762,7 @@ Usumbufu mdogo ni wa kawaida, lakini maumivu makali yanapaswa kujadiliwa na mtoa
       nodeKey: 'WHAT_IS_MENSTRUATION_01',
       optionValue: 'what_happens_next',
       labelEn: 'What happens next?',
-      labelSw: 'Nini hutokea baada ya hapo?',
+      labelSw: 'Hedhi Inatokeaje?',
       nextNodeKey: 'WHAT_IS_MENSTRUATION_02',
       sortOrder: 1,
       isActive: true,
@@ -678,10 +805,10 @@ Usumbufu mdogo ni wa kawaida, lakini maumivu makali yanapaswa kujadiliwa na mtoa
     },
     {
       nodeKey: 'WHAT_IS_MENSTRUATION_02',
-      optionValue: 'back_to_start',
-      labelEn: 'Back to the start',
-      labelSw: 'Rudi mwanzo',
-      nextNodeKey: 'WHAT_IS_MENSTRUATION_01',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menu Kuu',
+      nextNodeKey: 'main_menu',
       sortOrder: 3,
       isActive: true,
     },
@@ -698,17 +825,17 @@ Usumbufu mdogo ni wa kawaida, lakini maumivu makali yanapaswa kujadiliwa na mtoa
       nodeKey: 'WHAT_IS_MENSTRUATION_03',
       optionValue: 'what_happens_next',
       labelEn: 'What happens next?',
-      labelSw: 'Nini hutokea baada ya hapo?',
+      labelSw: 'Hedhi Inatokeaje?',
       nextNodeKey: 'WHAT_IS_MENSTRUATION_02',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'WHAT_IS_MENSTRUATION_03',
-      optionValue: 'start_again',
-      labelEn: 'Start again',
-      labelSw: 'Anza tena',
-      nextNodeKey: 'WHAT_IS_MENSTRUATION_01',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'main_menu',
       sortOrder: 3,
       isActive: true,
     },
@@ -743,8 +870,8 @@ Usumbufu mdogo ni wa kawaida, lakini maumivu makali yanapaswa kujadiliwa na mtoa
     {
       nodeKey: 'MENSTRUAL_HYGIENE_01',
       optionValue: 'safe_cleaning',
-      labelEn: 'How should I stay clean?',
-      labelSw: 'Ninawezaje kubaki msafi?',
+      labelEn: 'How do I stay clean?',
+      labelSw: 'Usafi unakuaje?',
       nextNodeKey: 'MENSTRUAL_HYGIENE_02',
       sortOrder: 1,
       isActive: true,
@@ -752,8 +879,8 @@ Usumbufu mdogo ni wa kawaida, lakini maumivu makali yanapaswa kujadiliwa na mtoa
     {
       nodeKey: 'MENSTRUAL_HYGIENE_01',
       optionValue: 'used_products',
-      labelEn: 'What do I do with used products?',
-      labelSw: 'Nifanye nini na bidhaa zilizotumika?',
+      labelEn: 'Handling of pads',
+      labelSw: 'Utumiaji wa pedi',
       nextNodeKey: 'MENSTRUAL_HYGIENE_03',
       sortOrder: 2,
       isActive: true,
@@ -761,8 +888,8 @@ Usumbufu mdogo ni wa kawaida, lakini maumivu makali yanapaswa kujadiliwa na mtoa
     {
       nodeKey: 'MENSTRUAL_HYGIENE_01',
       optionValue: 'daily_life',
-      labelEn: 'Can I still do normal activities?',
-      labelSw: 'Bado ninaweza kufanya shughuli za kawaida?',
+      labelEn: 'Can I stay active?',
+      labelSw: 'Naweza kufanya kazi?',
       nextNodeKey: 'MENSTRUAL_HYGIENE_04',
       sortOrder: 3,
       isActive: true,
@@ -770,8 +897,8 @@ Usumbufu mdogo ni wa kawaida, lakini maumivu makali yanapaswa kujadiliwa na mtoa
     {
       nodeKey: 'MENSTRUAL_HYGIENE_02',
       optionValue: 'used_products',
-      labelEn: 'What do I do with used products?',
-      labelSw: 'Nifanye nini na bidhaa zilizotumika?',
+      labelEn: 'Handling of pads',
+      labelSw: 'Utumiaji wa pedi',
       nextNodeKey: 'MENSTRUAL_HYGIENE_03',
       sortOrder: 1,
       isActive: true,
@@ -779,26 +906,26 @@ Usumbufu mdogo ni wa kawaida, lakini maumivu makali yanapaswa kujadiliwa na mtoa
     {
       nodeKey: 'MENSTRUAL_HYGIENE_02',
       optionValue: 'daily_life',
-      labelEn: 'Can I still do normal activities?',
-      labelSw: 'Bado ninaweza kufanya shughuli za kawaida?',
+      labelEn: 'Can I stay active?',
+      labelSw: 'Naweza kufanya kazi?',
       nextNodeKey: 'MENSTRUAL_HYGIENE_04',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'MENSTRUAL_HYGIENE_02',
-      optionValue: 'back_to_start',
-      labelEn: 'Back to the start',
-      labelSw: 'Rudi mwanzo',
-      nextNodeKey: 'MENSTRUAL_HYGIENE_01',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'main_menu',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'MENSTRUAL_HYGIENE_03',
       optionValue: 'daily_life',
-      labelEn: 'Can I still do normal activities?',
-      labelSw: 'Bado ninaweza kufanya shughuli za kawaida?',
+      labelEn: 'Can I stay active?',
+      labelSw: 'Naweza kufanya kazi?',
       nextNodeKey: 'MENSTRUAL_HYGIENE_04',
       sortOrder: 1,
       isActive: true,
@@ -814,10 +941,10 @@ Usumbufu mdogo ni wa kawaida, lakini maumivu makali yanapaswa kujadiliwa na mtoa
     },
     {
       nodeKey: 'MENSTRUAL_HYGIENE_03',
-      optionValue: 'start_again',
-      labelEn: 'Start again',
-      labelSw: 'Anza tena',
-      nextNodeKey: 'MENSTRUAL_HYGIENE_01',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'main_menu',
       sortOrder: 3,
       isActive: true,
     },
@@ -826,7 +953,7 @@ Usumbufu mdogo ni wa kawaida, lakini maumivu makali yanapaswa kujadiliwa na mtoa
       optionValue: 'period_pain',
       labelEn: 'Period pain',
       labelSw: 'Maumivu ya hedhi',
-      nextNodeKey: 'MENSTRUAL_CRAMPS_01',
+      nextNodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_01',
       sortOrder: 1,
       isActive: true,
     },
@@ -852,65 +979,109 @@ Usumbufu mdogo ni wa kawaida, lakini maumivu makali yanapaswa kujadiliwa na mtoa
     {
       nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_01',
       optionValue: 'tell_me_more',
-      labelEn: 'Tell me more',
-      labelSw: 'Nieleze zaidi',
+      labelEn: 'Why is it painful?',
+      labelSw: 'Sababu za maumivu?',
       nextNodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_02',
       sortOrder: 1,
       isActive: true,
     },
-
     {
       nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_01',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'what_can_help',
+      labelEn: 'What can help?',
+      labelSw: 'Nini kitasaidia?',
+      nextNodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_03',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_01',
-      optionValue: 'back',
-      labelEn: 'Back',
-      labelSw: 'Rudi',
-      nextNodeKey: 'BACK_ACTION',
+      optionValue: 'when_get_help',
+      labelEn: 'When do I get help?',
+      labelSw: 'Nipate msaada lini?',
+      nextNodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_04',
       sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_01',
-      optionValue: 'start_again',
-      labelEn: 'Start Again',
-      labelSw: 'Anza Tena',
-      nextNodeKey: 'START_AGAIN',
-      sortOrder: 4,
       isActive: true,
     },
 
     {
       nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_02',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'what_can_help',
+      labelEn: 'What can help?',
+      labelSw: 'Nini kitasaidia?',
+      nextNodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_03',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_02',
-      optionValue: 'back',
-      labelEn: 'Back',
-      labelSw: 'Rudi',
-      nextNodeKey: 'BACK_ACTION',
+      optionValue: 'when_get_help',
+      labelEn: 'When do I get help?',
+      labelSw: 'Nipate msaada lini?',
+      nextNodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_04',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_02',
-      optionValue: 'start_again',
-      labelEn: 'Start Again',
-      labelSw: 'Anza Tena',
-      nextNodeKey: 'START_AGAIN',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'main_menu',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_03',
+      optionValue: 'when_get_help',
+      labelEn: 'When do I get help?',
+      labelSw: 'Nipate msaada lini?',
+      nextNodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_03',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_03',
+      optionValue: 'tell_me_more',
+      labelEn: 'Why is it painful?',
+      labelSw: 'Sababu za maumivu?',
+      nextNodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_02',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_04',
+      optionValue: 'what_can_help',
+      labelEn: 'What can help?',
+      labelSw: 'Nini kitasaidia?',
+      nextNodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_04',
+      optionValue: 'tell_me_about_ovulation',
+      labelEn: 'Age of first period?',
+      labelSw: 'Hedhi huanza lini?',
+      nextNodeKey: 'OVULATION_AND_FERTILITY_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUAL_PAIN_AND_CONCERNS_04',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
       sortOrder: 3,
       isActive: true,
     },
@@ -918,100 +1089,108 @@ Usumbufu mdogo ni wa kawaida, lakini maumivu makali yanapaswa kujadiliwa na mtoa
     {
       nodeKey: 'OVULATION_AND_FERTILITY_01',
       optionValue: 'tell_me_more',
-      labelEn: 'Tell me more',
-      labelSw: 'Nieleze zaidi',
+      labelEn: 'Causes of pregnancy?',
+      labelSw: 'Mimba hutokeaje?',
       nextNodeKey: 'OVULATION_AND_FERTILITY_02',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'OVULATION_AND_FERTILITY_01',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'cycle_timing',
+      labelEn: 'Cycle timing',
+      labelSw: 'Muda wa mzunguko',
+      nextNodeKey: 'OVULATION_AND_FERTILITY_04',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'OVULATION_AND_FERTILITY_01',
-      optionValue: 'back',
-      labelEn: 'Back',
-      labelSw: 'Rudi',
-      nextNodeKey: 'BACK_ACTION',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
       sortOrder: 3,
       isActive: true,
     },
     {
-      nodeKey: 'OVULATION_AND_FERTILITY_01',
-      optionValue: 'start_again',
-      labelEn: 'Start Again',
-      labelSw: 'Anza Tena',
-      nextNodeKey: 'START_AGAIN',
-      sortOrder: 4,
-      isActive: true,
-    },
-
-    {
       nodeKey: 'OVULATION_AND_FERTILITY_02',
       optionValue: 'tell_me_more',
-      labelEn: 'Tell me more',
-      labelSw: 'Nieleze zaidi',
+      labelEn: 'What should I do?',
+      labelSw: 'Nifanye nini?',
       nextNodeKey: 'OVULATION_AND_FERTILITY_03',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'OVULATION_AND_FERTILITY_02',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'cycle_timing',
+      labelEn: 'Cycle timing',
+      labelSw: 'Muda wa mzunguko',
+      nextNodeKey: 'OVULATION_AND_FERTILITY_04',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'OVULATION_AND_FERTILITY_02',
-      optionValue: 'back',
-      labelEn: 'Back',
-      labelSw: 'Rudi',
-      nextNodeKey: 'BACK_ACTION',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'OVULATION_AND_FERTILITY_02',
-      optionValue: 'start_again',
-      labelEn: 'Start Again',
-      labelSw: 'Anza Tena',
-      nextNodeKey: 'START_AGAIN',
-      sortOrder: 4,
-      isActive: true,
-    },
-    {
-      nodeKey: 'OVULATION_AND_FERTILITY_03',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'OVULATION_AND_FERTILITY_03',
+      optionValue: 'cycle_timing',
+      labelEn: 'Cycle timing',
+      labelSw: 'Muda wa mzunguko',
+      nextNodeKey: 'OVULATION_AND_FERTILITY_04',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'OVULATION_AND_FERTILITY_03',
-      optionValue: 'back',
-      labelEn: 'Back',
-      labelSw: 'Rudi',
-      nextNodeKey: 'BACK_ACTION',
+      optionValue: 'back_to_pregnancy',
+      labelEn: 'Causes of pregnancy?',
+      labelSw: 'Mimba hutokeaje?',
+      nextNodeKey: 'OVULATION_AND_FERTILITY_02',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'OVULATION_AND_FERTILITY_03',
-      optionValue: 'start_again',
-      labelEn: 'Start Again',
-      labelSw: 'Anza Tena',
-      nextNodeKey: 'START_AGAIN',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'OVULATION_AND_FERTILITY_04',
+      optionValue: 'when_pregnancy_happens',
+      labelEn: 'Causes of pregnancy?',
+      labelSw: 'Mimba hutokeaje?',
+      nextNodeKey: 'OVULATION_AND_FERTILITY_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'OVULATION_AND_FERTILITY_04',
+      optionValue: 'menstruation_myths',
+      labelEn: 'Menstruation myths',
+      labelSw: 'Dhana potofu za hedhi',
+      nextNodeKey: 'MENSTRUATION_MYTHS_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'OVULATION_AND_FERTILITY_04',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
       sortOrder: 3,
       isActive: true,
     },
@@ -1019,60 +1198,87 @@ Usumbufu mdogo ni wa kawaida, lakini maumivu makali yanapaswa kujadiliwa na mtoa
     {
       nodeKey: 'MENSTRUATION_MYTHS_01',
       optionValue: 'tell_me_more',
-      labelEn: 'Tell me more',
-      labelSw: 'Nieleze zaidi',
+      labelEn: 'More myths and facts?',
+      labelSw: 'Dhana potofu nyengine?',
       nextNodeKey: 'MENSTRUATION_MYTHS_02',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'MENSTRUATION_MYTHS_01',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'common_concerns',
+      labelEn: 'Common concerns',
+      labelSw: 'Wasiwasi wa kawaida',
+      nextNodeKey: 'MENSTRUATION_MYTHS_03',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'MENSTRUATION_MYTHS_01',
-      optionValue: 'back',
-      labelEn: 'Back',
-      labelSw: 'Rudi',
-      nextNodeKey: 'BACK_ACTION',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
       sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'MENSTRUATION_MYTHS_01',
-      optionValue: 'start_again',
-      labelEn: 'Start Again',
-      labelSw: 'Anza Tena',
-      nextNodeKey: 'START_AGAIN',
-      sortOrder: 4,
       isActive: true,
     },
 
     {
       nodeKey: 'MENSTRUATION_MYTHS_02',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'common_concerns',
+      labelEn: 'Common concerns',
+      labelSw: 'Wasiwasi wa kawaida',
+      nextNodeKey: 'MENSTRUATION_MYTHS_03',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'MENSTRUATION_MYTHS_02',
-      optionValue: 'back',
-      labelEn: 'Back',
-      labelSw: 'Rudi',
-      nextNodeKey: 'BACK_ACTION',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'MENSTRUATION_MYTHS_02',
+      nodeKey: 'MENSTRUATION_MYTHS_03',
+      optionValue: 'more_concerns',
+      labelEn: 'More common concerns',
+      labelSw: 'Wasiwasi mwingine?',
+      nextNodeKey: 'MENSTRUATION_MYTHS_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUATION_MYTHS_03',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUATION_MYTHS_04',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUATION_MYTHS_04',
+      optionValue: 'back',
+      labelEn: 'Back',
+      labelSw: 'Rudi',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENSTRUATION_MYTHS_04',
       optionValue: 'start_again',
       labelEn: 'Start Again',
       labelSw: 'Anza Tena',
