@@ -538,13 +538,9 @@ export class ChatOrchestratorService {
     return {
       message:
         selectedLanguage === Language.SW
-          ? 'Tafadhali chagua umri wako.'
+          ? 'Tafadhali chagua kundi lako la umri.'
           : 'Please choose your age group.',
-      options: [
-        { label: '15–17', value: AgeBand.AGE_15_17 },
-        { label: '18–20', value: AgeBand.AGE_18_20 },
-        { label: '21–24', value: AgeBand.AGE_21_24 },
-      ],
+      options: this.getAgeBandOptions(selectedLanguage),
       currentState: ChatState.ASK_AGE_BAND,
     };
   }
@@ -555,6 +551,8 @@ export class ChatOrchestratorService {
     interactiveValue?: string | null;
   }): Promise<OrchestratorResponse> {
     const selectedAgeBand = data.interactiveValue as AgeBand | null;
+    const profile = await this.profileService.findByUserId(data.userId);
+    const language = profile?.preferredLanguage ?? Language.EN;
 
     if (
       selectedAgeBand !== AgeBand.AGE_15_17 &&
@@ -562,12 +560,11 @@ export class ChatOrchestratorService {
       selectedAgeBand !== AgeBand.AGE_21_24
     ) {
       return {
-        message: 'Please choose one of the age group options below.',
-        options: [
-          { label: '15–17', value: AgeBand.AGE_15_17 },
-          { label: '18–20', value: AgeBand.AGE_18_20 },
-          { label: '21–24', value: AgeBand.AGE_21_24 },
-        ],
+        message:
+          language === Language.SW
+            ? 'Tafadhali chagua moja ya makundi ya umri hapa chini.'
+            : 'Please choose one of the age group options below.',
+        options: this.getAgeBandOptions(language),
         currentState: ChatState.ASK_AGE_BAND,
       };
     }
@@ -579,12 +576,11 @@ export class ChatOrchestratorService {
     });
 
     return {
-      message: 'Please choose your gender.',
-      options: [
-        { label: 'Female', value: Gender.FEMALE },
-        { label: 'Male', value: Gender.MALE },
-        { label: 'Prefer not to say', value: Gender.PREFER_NOT_TO_SAY },
-      ],
+      message:
+        language === Language.SW
+          ? 'Tafadhali chagua jinsia yako.'
+          : 'Please choose your gender.',
+      options: this.getGenderOptions(language),
       currentState: ChatState.ASK_GENDER,
     };
   }
@@ -595,6 +591,8 @@ export class ChatOrchestratorService {
     interactiveValue?: string | null;
   }): Promise<OrchestratorResponse> {
     const selectedGender = data.interactiveValue as Gender | null;
+    const profile = await this.profileService.findByUserId(data.userId);
+    const language = profile?.preferredLanguage ?? Language.EN;
 
     if (
       selectedGender !== Gender.FEMALE &&
@@ -602,12 +600,11 @@ export class ChatOrchestratorService {
       selectedGender !== Gender.PREFER_NOT_TO_SAY
     ) {
       return {
-        message: 'Please choose one of the gender options below.',
-        options: [
-          { label: 'Female', value: Gender.FEMALE },
-          { label: 'Male', value: Gender.MALE },
-          { label: 'Prefer not to say', value: Gender.PREFER_NOT_TO_SAY },
-        ],
+        message:
+          language === Language.SW
+            ? 'Tafadhali chagua moja ya chaguo za jinsia hapa chini.'
+            : 'Please choose one of the gender options below.',
+        options: this.getGenderOptions(language),
         currentState: ChatState.ASK_GENDER,
       };
     }
@@ -618,6 +615,39 @@ export class ChatOrchestratorService {
     return this.handleCategoryMenu(data.sessionId, data.userId);
   }
 
+  private getAgeBandOptions(language: Language) {
+    return [
+      {
+        label: language === Language.SW ? 'Miaka 15–17' : '15–17',
+        value: AgeBand.AGE_15_17,
+      },
+      {
+        label: language === Language.SW ? 'Miaka 18–20' : '18–20',
+        value: AgeBand.AGE_18_20,
+      },
+      {
+        label: language === Language.SW ? 'Miaka 21–24' : '21–24',
+        value: AgeBand.AGE_21_24,
+      },
+    ];
+  }
+
+  private getGenderOptions(language: Language) {
+    return [
+      {
+        label: language === Language.SW ? 'Msichana' : 'Female',
+        value: Gender.FEMALE,
+      },
+      {
+        label: language === Language.SW ? 'Mvulana' : 'Male',
+        value: Gender.MALE,
+      },
+      {
+        label: language === Language.SW ? 'Sitaki kusema' : 'Prefer not to say',
+        value: Gender.PREFER_NOT_TO_SAY,
+      },
+    ];
+  }
   private async handleCategoryMenu(
     sessionId: string,
     userId?: string,
@@ -637,8 +667,18 @@ export class ChatOrchestratorService {
       });
     }
 
-    const startIndex = page * this.CATEGORY_PAGE_SIZE;
-    const endIndex = startIndex + this.CATEGORY_PAGE_SIZE;
+    // Reserve room for:
+    // - More
+    // - Back to start
+    // - Start again
+    const reservedSlots = 1;
+    const categorySlotsPerPage = Math.max(
+      1,
+      this.CATEGORY_PAGE_SIZE - reservedSlots,
+    );
+
+    const startIndex = page * categorySlotsPerPage;
+    const endIndex = startIndex + categorySlotsPerPage;
     const pagedCategories = categories.slice(startIndex, endIndex);
     const hasMore = endIndex < categories.length;
 
@@ -660,6 +700,11 @@ export class ChatOrchestratorService {
         value: 'category_page_start',
       });
     }
+
+    options.push({
+      label: language === Language.SW ? 'Anza Tena' : 'Start Again',
+      value: 'start_again',
+    });
 
     await this.sessionService.updateStateAndLocation(sessionId, {
       currentState: ChatState.ASK_TOPIC_CATEGORY,
@@ -839,8 +884,8 @@ export class ChatOrchestratorService {
     return {
       message:
         language === Language.SW
-          ? `Umechagua ${selectedCategory.titleSw}. Ungependa kuchunguza nini zaidi?`
-          : `You chose ${selectedCategory.titleEn}. What would you like to explore next?`,
+          ? `Ungependa kuchunguza nini kuhusu ${selectedCategory.titleSw}.  `
+          : `What would you like to learn about  ${selectedCategory.titleEn}?`,
       options,
       currentState: ChatState.TOPIC_MENU,
     };
@@ -1185,8 +1230,8 @@ export class ChatOrchestratorService {
       return {
         message:
           language === Language.SW
-            ? `Umechagua ${currentTopic.titleSw}. Ungependa kujifunza nini zaidi?`
-            : `You chose ${currentTopic.titleEn}. What would you like to learn about next?`,
+            ? `Ungependa kujifunza nini zaidi kuhusu ${currentTopic.titleSw}?`
+            : `What would you like to explore next about ${currentTopic.titleEn}?`,
         options: visibleSubtopics.map((subtopic) => ({
           label: language === Language.SW ? subtopic.titleSw : subtopic.titleEn,
           value: subtopic.code,
@@ -1424,8 +1469,8 @@ export class ChatOrchestratorService {
     return {
       message:
         language === Language.SW
-          ? `Umechagua ${selectedTopic.titleSw}. Ungependa kujifunza nini zaidi?`
-          : `You chose ${selectedTopic.titleEn}. What would you like to learn about next?`,
+          ? `Ungependa kujifunza nini zaidi kuhusu ${selectedTopic.titleSw}`
+          : `What would you like to learn about ${selectedTopic.titleEn}`,
       options,
       currentState: ChatState.SUBTOPIC_MENU,
     };
