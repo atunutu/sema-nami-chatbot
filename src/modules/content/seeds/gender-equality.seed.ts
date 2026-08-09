@@ -599,7 +599,7 @@ Sahihi: A - Kweli. Kila mtu anastahili fursa na heshima sawa.
       nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `SEX is the biological difference between being a woman or a man where a person is capable of carrying out gender roles including women producing eggs, carrying a baby, giving birth and breastfeeding and men producing sperm. These roles do not change.
+      messageText: `This is a great question! Many people hear the words sex and gender used together, but they do not mean the same thing. Understanding the difference can help us better understand ourselves, respect others, and challenge harmful stereotypes.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -613,7 +613,7 @@ Sahihi: A - Kweli. Kila mtu anastahili fursa na heshima sawa.
       nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `JINSI ni tofauti ya maumbile ya kibaiolojia ya kuwa mwanamke au mwanaume ambapo mtu ana uwezo wa kumudu majukumu ya jinsi ikiwa ni pamoja na mwanamke kutengeneza yai, kubeba mimba, kuzaa na kunyonyesha na mwanaume kutengeneza mbegu za uzazi. Majukumu haya huwa hayabadiliki.
+      messageText: `Hili ni swali zuri! Watu wengi husikia maneno ngono na jinsia yakitumika pamoja, lakini hayamaanishi kitu kimoja. Kuelewa tofauti kunaweza kutusaidia kujielewa vyema, kuwaheshimu wengine, na kupinga dhana potofu zenye madhara.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -625,53 +625,12 @@ Sahihi: A - Kweli. Kila mtu anastahili fursa na heshima sawa.
 
     {
       subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
-      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_04',
-      nodeType: NodeType.CONTENT,
-      language: Language.EN,
-      messageText: `GENDER is the division of roles between women and men according to the norms and procedures of the respective society.
-It also includes the expectations of society about what the right man should be, and the right woman as well.
-
-Gender issues are constructed by the respective society, varying according to one place or another.
-These roles or expectations can change over time and the society around him.
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 4,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
-      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_04',
-      nodeType: NodeType.CONTENT,
-      language: Language.SW,
-      messageText: `JINSIA ni mgawanyo wa majukumu kati ya mwanamke na mwanaume kulingana na kanuni na taratibu za jamii husika.
-Huhusisha pia matarajio ya jamii kuhusu vile mwanaume sahihi anatakiwa kuwa, na mwanamke sahihi vile vile.
-
-Masuala ya kijinsia hujengwa na jamii husika, hutofautiana kulingana na sehemu moja ama nyingine.
-Majukumu ama matarajio hayo huweza kubadilika kadri ya wakati unavyoenda na hali ya jamii inayomzunguka.
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 4,
-      isActive: true,
-    },
-
-    {
-      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
       nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Attitude/Expectations and Responsibilities of a Man
-    • Be a leader, head of the family
-    • Be brave, can have many lovers
-    • Bring money home (bread winner)
-    • Make decisions
-    • Work hard
-    • Be assertive
+      messageText: `What is Sex?
+
+Sex refers to the biological differences between females and males that people are born with. These differences include physical and reproductive characteristics.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -685,13 +644,9 @@ Majukumu ama matarajio hayo huweza kubadilika kadri ya wakati unavyoenda na hali
       nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mtazamo/Matarajio na Majukumu ya Mwanaume
-    1.Awe kiongozi Kichwa cha familia
-    2.Jasiri Anaweza kuwa na wapenzi wengi
-    3.Alete pesa nyumbani (bread winner)
-    4.Afanye maamuzi
-    5.Afanye kazi ngumu
-    6.Awe na msimamo
+      messageText: `Ngono ni nini?
+
+Ngono inarejelea tofauti za kibiolojia kati ya wanawake na wanaume ambazo watu huzaliwa nazo. Tofauti hizi zinajumuisha sifa za kimwili na uzazi.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -700,25 +655,22 @@ Majukumu ama matarajio hayo huweza kubadilika kadri ya wakati unavyoenda na hali
       sortOrder: 2,
       isActive: true,
     },
+
     {
       subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
       nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_03',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Attitude/Expectations and Responsibilities of a Woman
-    • Get married
-    • Raise children
-    • Do all the housework
-    • Have one lover
-    • Be taken care of by a man (dependent)
-    • Be humble and responsive
-    • Be clean, beautiful
-    • Be gentle
+      messageText: `For example:
+● Females produce eggs, can become pregnant, give birth, and breastfeed.
+● Males produce sperm.
+
+These biological characteristics are determined by the body and do not change because of social expectations or cultural beliefs.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 3,
       isActive: true,
     },
@@ -727,21 +679,540 @@ Majukumu ama matarajio hayo huweza kubadilika kadri ya wakati unavyoenda na hali
       nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mtazamo/ Matarajio na Majukumu ya Mwanamke
-    1.Aolewe
-    • Alee watoto
-    3.Afanye kazi zote za nyumbani
-    4.Awe na mpenzi mmoja
-    5.Atunzwe na mwanaume (tegemezi)
-    6.Awe mnyenyekevu na msikivu
-    7.Awe msafi, mrembo
-    8.Awe mpole
+      messageText: `Kwa mfano:
+● Wanawake hutoa mayai, wanaweza kupata mimba, kuzaa, na kunyonyesha.
+● Wanaume hutoa mbegu za kiume.
+
+Sifa hizi za kibiolojia huamuliwa na mwili na hazibadiliki kwa sababu ya matarajio ya kijamii au imani za kitamaduni.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `What is Gender?
+
+Gender refers to the roles, responsibilities, behaviours, and expectations that society assigns to women and men. These expectations are created by communities and cultures, and they can vary from one place to another and change over time.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Jinsia ni nini?
+
+Jinsia inarejelea majukumu, majukumu, tabia, na matarajio ambayo jamii inawapa wanawake na wanaume. Matarajio haya huundwa na jamii na tamaduni, na yanaweza kutofautiana kutoka sehemu moja hadi nyingine na kubadilika baada ya muda.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 4,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `In other words, gender is about what society believes women and men should do, how they should behave, and what roles they are expected to play.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kwa maneno mengine, jinsia ni kuhusu kile ambacho jamii inaamini wanawake na wanaume wanapaswa kufanya, jinsi wanavyopaswa kuishi, na majukumu gani wanatarajiwa kucheza.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Common Expectations of Men
+
+In many communities, men are often expected to:
+● Be leaders or heads of the family.
+● Be brave and strong.
+● Have many romantic partners.
+● Bring money home as the main breadwinner.
+● Make important family decisions.
+● Work hard.
+● Be assertive.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Matarajio ya Kawaida ya Wanaume
+
+Katika jamii nyingi, wanaume mara nyingi wanatarajiwa:
+● Kuwa viongozi au vichwa vya familia.
+● Kuwa jasiri na hodari.
+● Kuwa na wapenzi wengi wa kimapenzi.
+● Leta pesa nyumbani kama mlinzi mkuu.
+● Fanya maamuzi muhimu ya kifamilia.
+● Fanya kazi kwa bidii.
+● Kuwa na ujasiri.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Common Expectations of Women
+
+Similarly, women are often expected to:
+● Get married.
+● Raise children.
+● Do most or all of the household chores.
+● Have only one romantic partner.
+● Depend on a man for financial support.
+● Be humble and obedient.
+● Always be clean and beautiful.
+● Be gentle and caring.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Matarajio ya Kawaida ya Wanawake
+
+Vivyo hivyo, wanawake mara nyingi wanatarajiwa:
+● Kuoa.
+● Kulea watoto.
+● Kufanya kazi nyingi au zote za nyumbani.
+● Kuwa na mwenzi mmoja tu wa kimapenzi.
+● Mtegemee mwanaume kwa usaidizi wa kifedha.
+● Kuwa mnyenyekevu na mtiifu.
+● Kuwa msafi na mrembo kila wakati.
+● Kuwa mpole na mwenye kujali.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `It's important to remember that these are examples of gender expectations - not rules that every person must follow. These expectations are shaped by society and culture, which means they can differ across communities and change over time.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ni muhimu kukumbuka kwamba hizi ni mifano ya matarajio ya kijinsia - sio sheria ambazo kila mtu lazima azifuate. Matarajio haya yanaundwa na jamii na utamaduni, ambayo ina maana kwamba yanaweza kutofautiana katika jamii na kubadilika baada ya muda.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Some gender expectations can limit opportunities or create unfair pressure for both girls and boys. For example, boys may feel they should never show emotion, while girls may feel they should always put others' needs before their own. Everyone should have the opportunity to develop their talents, make their own choices, and be treated with equal respect, regardless of gender.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Baadhi ya matarajio ya kijinsia yanaweza kupunguza fursa au kusababisha shinikizo lisilo la haki kwa wasichana na wavulana. Kwa mfano, wavulana wanaweza kuhisi hawapaswi kamwe kuonyesha hisia, huku wasichana wakihisi wanapaswa kuweka mahitaji ya wengine mbele ya yao. Kila mtu anapaswa kuwa na fursa ya kukuza vipaji vyao, kufanya maamuzi yao wenyewe, na kutendewa kwa heshima sawa, bila kujali jinsia.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Understanding the difference between sex and gender helps us appreciate diversity, promote equality, and challenge harmful stereotypes. When girls and boys are given equal opportunities to learn, lead, express themselves, and pursue their goals, everyone benefits.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kuelewa tofauti kati ya jinsia na jinsia hutusaidia kuthamini utofauti, kukuza usawa, na kupinga dhana potofu zenye madhara. Wasichana na wavulana wanapopewa fursa sawa za kujifunza, kuongoza, kujieleza, na kufuata malengo yao, kila mtu hufaidika.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_11',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Would you like to learn more about gender equality, gender stereotypes, gender-based violence, healthy relationships, or respectful communication? I'm here to help.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_11',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Je, ungependa kujifunza zaidi kuhusu usawa wa kijinsia, dhana potofu za kijinsia, unyanyasaji unaotokana na jinsia, mahusiano yenye afya, au mawasiliano ya heshima? Niko hapa kukusaidia.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_12',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence, or help with abuse, you do not have to face it alone. You can visit the nearest hospital, health centre, dispensary, or youth-friendly health service for confidential support and guidance. You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader, or healthcare provider.
+
+If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment, or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.
+
+For additional support, guidance, or referrals, you can contact OVAH through:
+Phone/WhatsApp: 0652 522 358
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: true,
-      sortOrder: 3,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_12',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili, au msaada kuhusu unyanyasaji, usibaki peke yako. Unaweza kutembelea hospitali, kituo cha afya, zahanati, au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama. Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini, au mtoa huduma za afya unayemwamini.
+
+Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono, au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.
+
+Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+Simu/WhatsApp: 0652 522 358
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 12,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Gender roles - where do they come from?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Majukumu ya kijinsia - yanatoka wapi?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `● Sex is a biological difference; gender is the roles that society assigns to men and women.
+● Expectations like 'men should be leaders' or 'women should do housework' come from society, not from nature.
+● These expectations can change as society changes.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `● JINSI ni tofauti ya kibiolojia; JINSIA ni majukumu ambayo jamii huyapanga kwa wanaume na wanawake.
+● Matarajio kama 'mwanaume awe kiongozi' au 'mwanamke afanye kazi za nyumbani' hutoka kwa jamii, si kwa asili.
+● Matarajio haya yanaweza kubadilika kadri jamii inavyobadilika.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `True or False: Gender roles never change.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kweli au Uongo: Majukumu ya kijinsia hayabadiliki kamwe.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Correct: B - False. They can change as time and society change.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Sahihi: B - Uongo. Yanaweza kubadilika kadri wakati na jamii zinavyobadilika.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Not quite.
+
+Correct: B - False. They can change as time and society change.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Si sahihi.
+
+Sahihi: B - Uongo. Yanaweza kubadilika kadri wakati na jamii zinavyobadilika.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Have you ever felt restricted by gender expectations?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Umewahi kuhisi kizuizi kutokana na matarajio ya kijinsia?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Would you like to talk about this further? We're here.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'GENDER_ROLES_AND_STEREOTYPES',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ungependa kuzungumza kuhusu hili zaidi? Tuko hapa.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
       isActive: true,
     },
 
@@ -2493,96 +2964,285 @@ Unyanyasaji unaweza kufanywa na watu wanaomjua mwathiriwa. Kuripoti bado ni muhi
     },
     {
       nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_01',
-      optionValue: 'gender_meaning',
-      labelEn: 'Gender meaning',
-      labelSw: 'Maana ya jinsia',
+      optionValue: 'what_is_sex',
+      labelEn: 'What is sex?',
+      labelSw: 'Ngono ni nini?',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_01',
+      optionValue: 'what_is_gender',
+      labelEn: 'What is gender?',
+      labelSw: 'Jinsia ni nini?',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_04',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_01',
+      optionValue: 'stereotypes',
+      labelEn: 'Stereotypes',
+      labelSw: 'Dhana potofu',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_09',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_02',
+      optionValue: 'examples',
+      labelEn: 'Examples',
+      labelSw: 'Mifano',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_02',
+      optionValue: 'what_is_gender',
+      labelEn: 'What is gender?',
+      labelSw: 'Jinsia ni nini?',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_04',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_02',
+      optionValue: 'gender_roles',
+      labelEn: 'Gender roles',
+      labelSw: 'Majukumu jinsia',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_05',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_03',
+      optionValue: 'what_is_gender',
+      labelEn: 'What is gender?',
+      labelSw: 'Jinsia ni nini?',
       nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_04',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_01',
-      optionValue: 'man_expectations',
-      labelEn: 'Man expectations',
-      labelSw: 'Matarajio mwanaume',
-      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_02',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_03',
+      optionValue: 'men_expectations',
+      labelEn: 'Men expectations',
+      labelSw: 'Matarajio wanaume',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_06',
       sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_01',
-      optionValue: 'woman_expectations',
-      labelEn: 'Woman expectations',
-      labelSw: 'Matarajio mwanamke',
-      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_03',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_04',
-      optionValue: 'man_expectations',
-      labelEn: 'Man expectations',
-      labelSw: 'Matarajio mwanaume',
-      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_02',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_04',
-      optionValue: 'woman_expectations',
-      labelEn: 'Woman expectations',
-      labelSw: 'Matarajio mwanamke',
-      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_03',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_04',
-      optionValue: 'violence_types',
-      labelEn: 'Violence',
-      labelSw: 'Ukatili',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_01',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_02',
-      optionValue: 'woman_expectations',
-      labelEn: 'Woman expectations',
-      labelSw: 'Matarajio mwanamke',
-      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_03',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_02',
-      optionValue: 'violence_types',
-      labelEn: 'Violence',
-      labelSw: 'Ukatili',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_01',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_02',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_03',
-      optionValue: 'violence_types',
+      optionValue: 'women_expectations',
+      labelEn: 'Women expect.',
+      labelSw: 'Matarajio wanawake',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_07',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_04',
+      optionValue: 'gender_roles',
+      labelEn: 'Gender roles',
+      labelSw: 'Majukumu jinsia',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_04',
+      optionValue: 'men_expectations',
+      labelEn: 'Men expectations',
+      labelSw: 'Matarajio wanaume',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_06',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_04',
+      optionValue: 'women_expectations',
+      labelEn: 'Women expectations',
+      labelSw: 'Matarajio wanawake',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_07',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_05',
+      optionValue: 'men_expectations',
+      labelEn: 'Men expectations',
+      labelSw: 'Matarajio wanaume',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_05',
+      optionValue: 'women_expectations',
+      labelEn: 'Women expectations.',
+      labelSw: 'Matarajio wanawake',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_05',
+      optionValue: 'not_rules',
+      labelEn: 'Not rules',
+      labelSw: 'Si sheria',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_08',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_06',
+      optionValue: 'women_expectations',
+      labelEn: 'Women expectations.',
+      labelSw: 'Matarajio wanawake',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_06',
+      optionValue: 'not_rules',
+      labelEn: 'Not rules',
+      labelSw: 'Si sheria',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_08',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_06',
+      optionValue: 'stereotypes',
+      labelEn: 'Stereotypes',
+      labelSw: 'Dhana potofu',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_09',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_07',
+      optionValue: 'not_rules',
+      labelEn: 'Not rules',
+      labelSw: 'Si sheria',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_08',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_07',
+      optionValue: 'stereotypes',
+      labelEn: 'Stereotypes',
+      labelSw: 'Dhana potofu',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_09',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_07',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime Uelewa',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_08',
+      optionValue: 'stereotypes',
+      labelEn: 'Stereotypes',
+      labelSw: 'Dhana potofu',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_09',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_08',
+      optionValue: 'why_it_matters',
+      labelEn: 'Why it matters',
+      labelSw: 'Kwa nini muhimu',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_10',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_08',
+      optionValue: 'violence',
       labelEn: 'Violence',
       labelSw: 'Ukatili',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_09',
+      optionValue: 'why_it_matters',
+      labelEn: 'Why it matters',
+      labelSw: 'Kwa nini muhimu',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_10',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_09',
+      optionValue: 'anything_else',
+      labelEn: 'Anything else?',
+      labelSw: 'Kitu kingine?',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_11',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_09',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime Uelewa',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_10',
+      optionValue: 'anything_else',
+      labelEn: 'Anything else?',
+      labelSw: 'Kitu kingine?',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_11',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_10',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime Uelewa',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_10',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_12',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_11',
+      optionValue: 'gender_violence',
+      labelEn: 'Gender violence',
+      labelSw: 'Ukatili kijinsia',
       nextNodeKey: 'TYPES_OF_VIOLENCE_01',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_03',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_11',
       optionValue: 'child_rights',
       labelEn: 'Child rights',
       labelSw: 'Haki za watoto',
@@ -2591,12 +3251,111 @@ Unyanyasaji unaweza kufanywa na watu wanaomjua mwathiriwa. Kuripoti bado ni muhi
       isActive: true,
     },
     {
-      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_03',
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_11',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime Uelewa',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_12',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_01',
+      optionValue: 'start_refresher',
+      labelEn: 'Start refresher',
+      labelSw: 'Anza kujikumbusha',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_02',
+      optionValue: 'start_quiz',
+      labelEn: 'Start quiz',
+      labelSw: 'Anza jaribio',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_03',
+      optionValue: 'true',
+      labelEn: 'A) True',
+      labelSw: 'A) Kweli',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_03',
+      optionValue: 'false',
+      labelEn: 'B) False',
+      labelSw: 'B) Uongo',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_04',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_04',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali linalofuata',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_05',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali linalofuata',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_06',
+      optionValue: 'yes',
+      labelEn: 'A) Yes',
+      labelSw: 'A) Ndiyo',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_06',
+      optionValue: 'no',
+      labelEn: 'B) No',
+      labelSw: 'B) Hapana',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_07',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_12',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'GENDER_ROLES_AND_STEREOTYPES_REFRESHER_07',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 2,
       isActive: true,
     },
     {
