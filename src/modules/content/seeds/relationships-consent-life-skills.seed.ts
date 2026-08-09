@@ -9433,5 +9433,3 @@ Sahihi: B - Uongo. Kujitambua ni kutambua thamani yako, si kudharau wengine.`,
     },
   ],
 };
-
-

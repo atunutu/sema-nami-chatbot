@@ -1,4 +1,4 @@
-import { InputType } from '../../../common/enums/input-type.enum';
+﻿import { InputType } from '../../../common/enums/input-type.enum';
 import { Language } from '../../../common/enums/language.enum';
 import { NodeType } from '../../../common/enums/node-type.enum';
 
@@ -146,8 +146,7 @@ export const genderEqualityAndRightsSeed = {
       nodeKey: 'UNDERSTANDING_GENDER_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `As young people grow, they often notice that society has different expectations for boys and girls. 
-These expectations can influence how people dress, behave, express emotions, choose careers, or participate in family and community activities. 
+      messageText: `Growing up comes with many new experiences, and you may notice that people sometimes have different expectations for boys and girls. Understanding these expectations can help you make informed choices while respecting yourself and others.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -161,8 +160,8 @@ These expectations can influence how people dress, behave, express emotions, cho
       nodeKey: 'UNDERSTANDING_GENDER_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Vijana wanapokua, mara nyingi hugundua kuwa jamii ina matarajio tofauti kwa wavulana na wasichana. 
-Matarajio haya yanaweza kuathiri jinsi watu wanavyovaa, wanavyotenda, wanavyoonyesha hisia, wanavyochagua kazi, au kushiriki katika shughuli za kifamilia na kijamii.`,
+      messageText: `Kukua huja na uzoefu mwingi mpya, na unaweza kugundua kuwa wakati mwingine watu huwa na matarajio tofauti kwa wavulana na wasichana. Kuelewa matarajio haya kunaweza kukusaidia kufanya maamuzi sahihi huku ukijiheshimu wewe mwenyewe na wengine.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -176,13 +175,12 @@ Matarajio haya yanaweza kuathiri jinsi watu wanavyovaa, wanavyotenda, wanavyoony
       nodeKey: 'UNDERSTANDING_GENDER_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `It is important to understand that every person deserves equal respect, opportunities, safety, and support regardless of whether they are a boy or a girl. 
-Young people should be free to develop their talents, pursue education, express themselves respectfully, and make positive life choices without being limited by harmful stereotypes. 
-Appreciating diversity and treating others fairly helps build healthy relationships, confidence, and stronger communities.`,
+      messageText: `As young people grow, they often notice that society has different expectations for boys and girls. These expectations can influence how people dress, behave, express emotions, choose careers, or participate in family and community activities. These expectations are often shaped by culture and society, and they can change over time.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 2,
       isActive: true,
     },
@@ -191,14 +189,408 @@ Appreciating diversity and treating others fairly helps build healthy relationsh
       nodeKey: 'UNDERSTANDING_GENDER_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Ni muhimu kuelewa kwamba kila mtu anastahili heshima, fursa, usalama, na usaidizi sawa bila kujali kama ni mvulana au msichana. 
-Vijana wanapaswa kuwa huru kukuza vipaji vyao, kufuata elimu, kujieleza kwa heshima, na kufanya maamuzi chanya ya maisha bila kuzuiwa na dhana potofu zenye madhara. 
-Kuthamini utofauti na kuwatendea wengine kwa haki husaidia kujenga mahusiano mazuri, kujiamini, na jamii zenye nguvu.`,
+      messageText: `Vijana wanapokua, mara nyingi hugundua kuwa jamii ina matarajio tofauti kwa wavulana na wasichana. Matarajio haya yanaweza kushawishi jinsi watu wanavyovaa, wanavyotenda, wanavyoonyesha hisia, wanavyochagua kazi, au kushiriki katika shughuli za kifamilia na kijamii. Matarajio haya mara nyingi huundwa na utamaduni na jamii, na yanaweza kubadilika baada ya muda.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 2,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `It's important to remember that every person deserves equal respect, opportunities, safety, and support, regardless of whether they are a boy or a girl. Everyone has unique talents, strengths, and dreams, and no one should feel limited because of their gender.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ni muhimu kukumbuka kwamba kila mtu anastahili heshima sawa, fursa, usalama, na usaidizi, bila kujali kama ni mvulana au msichana. Kila mtu ana vipaji, nguvu, na ndoto za kipekee, na hakuna mtu anayepaswa kuhisi amepunguzwa kwa sababu ya jinsia yake.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 3,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Young people should be free to develop their talents, pursue education, express themselves respectfully, and make positive life choices without being held back by harmful stereotypes or unfair expectations. When young people are encouraged to follow their interests and abilities, they are more likely to reach their full potential.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Vijana wanapaswa kuwa huru kukuza vipaji vyao, kufuata elimu, kujieleza kwa heshima, na kufanya maamuzi chanya ya maisha bila kuzuiwa na dhana potofu au matarajio yasiyo ya haki. Vijana wanapohimizwa kufuata mambo wanayopenda na uwezo wao, wana uwezekano mkubwa wa kufikia uwezo wao kamili.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 4,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Appreciating diversity and treating others fairly helps build healthy relationships, confidence, and stronger communities. Respecting one another's differences creates environments where everyone feels valued, included, and able to contribute in meaningful ways.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kuthamini utofauti na kuwatendea wengine kwa haki husaidia kujenga mahusiano mazuri, kujiamini, na jamii zenye nguvu. Kuheshimu tofauti za kila mmoja hujenga mazingira ambapo kila mtu anahisi anathaminiwa, amejumuishwa, na anaweza kuchangia kwa njia zenye maana.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Remember, equality doesn't mean everyone is the same - it means everyone deserves the same respect, opportunities, and chance to succeed. By treating others with kindness, fairness, and respect, you help create a safer and more supportive community for everyone.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kumbuka, usawa haimaanishi kwamba kila mtu ni sawa - inamaanisha kwamba kila mtu anastahili heshima, fursa, na nafasi sawa ya kufanikiwa. Kwa kuwatendea wengine kwa wema, haki, na heshima, unasaidia kuunda jamii salama na inayounga mkono zaidi kila mtu.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Would you like to learn more about gender equality, challenging harmful stereotypes, respectful relationships, or promoting inclusion in your community? I'm here to help.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Je, ungependa kujifunza zaidi kuhusu usawa wa kijinsia, kupinga dhana potofu zenye madhara, mahusiano ya heshima, au kukuza ujumuishaji katika jamii yako? Niko hapa kusaidia.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence, or help with abuse, you do not have to face it alone. You can visit the nearest hospital, health centre, dispensary, or youth-friendly health service for confidential support and guidance. You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader, or healthcare provider.
+
+If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment, or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.
+
+For additional support, guidance, or referrals, you can contact OVAH through:
+Phone/WhatsApp: 0652 522 358
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: true,
-      sortOrder: 2,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili, au msaada kuhusu unyanyasaji, usibaki peke yako. Unaweza kutembelea hospitali, kituo cha afya, zahanati, au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama. Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini, au mtoa huduma za afya unayemwamini.
+
+Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono, au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.
+
+Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+Simu/WhatsApp: 0652 522 358
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 8,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Let's talk about gender and societal expectations.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Tuongee kuhusu jinsia na matarajio ya jamii.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `● Society often has different expectations for boys and girls - but everyone deserves equal respect.
+● Young people should be free to pursue their talents without being constrained by gender stereotypes.
+● Valuing diversity helps build healthy relationships and communities.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `● Jamii mara nyingi ina matarajio tofauti kwa wavulana na wasichana - lakini kila mtu anastahili heshima sawa.
+● Vijana wanapaswa kuwa huru kufuata vipaji vyao bila kuzuiwa na dhana potofu za kijinsia.
+● Kuthamini utofauti husaidia kujenga mahusiano na jamii zenye afya.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `True or False: Boys and girls deserve equal opportunities.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kweli au Uongo: Wavulana na wasichana wanastahili fursa sawa.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Correct: A - True. Everyone deserves equal opportunity and respect.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Sahihi: A - Kweli. Kila mtu anastahili fursa na heshima sawa.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Not quite.
+
+Correct: A - True. Everyone deserves equal opportunity and respect.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Si sahihi.
+
+Sahihi: A - Kweli. Kila mtu anastahili fursa na heshima sawa.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Have you ever seen gender stereotypes hold someone back?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Umewahi kuona dhana potofu za kijinsia zikimzuia mtu?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Do you have an experience you want to talk about? We're here.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_GENDER',
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Una uzoefu unaotaka kuzungumza kuhusu hili? Tuko hapa.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
       isActive: true,
     },
 
@@ -360,9 +752,9 @@ Majukumu ama matarajio hayo huweza kubadilika kadri ya wakati unavyoenda na hali
       language: Language.EN,
       messageText: `VIOLENCE is any act or word that can include, oppression, abuse and control that causes physical, emotional, social or economic harm, such as the use of force, coercion or bodily harm.
 
-Sexual violence is any act of violence against any woman, man or child with the aim of harming the body or person because of their gender. 
+Sexual violence is any act of violence against any woman, man or child with the aim of harming the body or person because of their gender.
 
-Sexual violence includes sexual, psychological, harmful practices and economic and social abuse. 
+Sexual violence includes sexual, psychological, harmful practices and economic and social abuse.
 
 Sexual violence affects women and children more than men.
 `,
@@ -380,9 +772,9 @@ Sexual violence affects women and children more than men.
       language: Language.SW,
       messageText: `UKATILI ni matendo au maneno yanayoweza kujumuisha, ukandamizajiunyanyasaji na udhibiti unaosababisha madhara kimwili, kihisia, kijamii au kiuchumi, kama vile kutumia nguvu, kulazimisha au kudhuru mwili.
 
-Ukatili wa kijinsia ni kitendo chochote cha kikatili anachofanyiwa mtu yeyote mwanamke, mwanaume au mtoto chenye lengo la kumuumiza mwili au kiutu kutokana na jinsia yake. 
+Ukatili wa kijinsia ni kitendo chochote cha kikatili anachofanyiwa mtu yeyote mwanamke, mwanaume au mtoto chenye lengo la kumuumiza mwili au kiutu kutokana na jinsia yake.
 
-Ukatili wa kijinsia unajumuisha ukatili wa kingono, kisaikolojia, mila hatarishi na unyanyasaji wa uchumi na kijamii. 
+Ukatili wa kijinsia unajumuisha ukatili wa kingono, kisaikolojia, mila hatarishi na unyanyasaji wa uchumi na kijamii.
 
 Ukatili wa kijinsia huathiri wanawake na watoto zaidi kuliko wanaume.
 `,
@@ -534,9 +926,9 @@ Types of rape and sodomy
       nodeKey: 'TYPES_OF_VIOLENCE_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Ubakaji/Ulawiti Ni moja kati ya matendo mabaya ya udhalilishaji wa kingono yenye madhara makubwa kwa vijana. 
+      messageText: `Ubakaji/Ulawiti Ni moja kati ya matendo mabaya ya udhalilishaji wa kingono yenye madhara makubwa kwa vijana.
 Ubakaji unahusisha kumwingilia mtu kimwili kwa nguvu bila ridhaa yake.
-    
+
 Aina za ubakaji na ulawiti:
     ● Ubakaji/ulawiti ndani ya ndoa
     ● Ubakaji/ulawiti unaofanywa na kikundi
@@ -588,11 +980,11 @@ Hao wanaweza kuwa wazazi/walezi ,marafiki wa familia ,mwanafamilia,jirani ,mgeni
       nodeKey: 'TYPES_OF_VIOLENCE_11',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Effects of rape and sodomy: 
-      ● Bruises and injuries during physical penetration, 
+      messageText: `Effects of rape and sodomy:
+      ● Bruises and injuries during physical penetration,
       ● Genital mutilation (for women)
-      ● Sexually transmitted infections including HIV 
-      ● Unintended pregnancy and abortion, 
+      ● Sexually transmitted infections including HIV
+      ● Unintended pregnancy and abortion,
       ● Fear, depression, and suicide
       ● Possibility of becoming a drug user due to stress
 `,
@@ -608,11 +1000,11 @@ Hao wanaweza kuwa wazazi/walezi ,marafiki wa familia ,mwanafamilia,jirani ,mgeni
       nodeKey: 'TYPES_OF_VIOLENCE_11',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Madhara ya ubakaji na ulawiti: 
+      messageText: `Madhara ya ubakaji na ulawiti:
       ● michubuko na majeraha wakati wa kuingiliwa kimwili
-      ● Kuharibika kwa viungo vya uzazi (kwa mwanamke) 
-      ● Maambukizi ya magonjwa ya ngono ikiwemo VVU 
-      ● Kupata mimba zisizotarajiwa na utoaji wa mimba 
+      ● Kuharibika kwa viungo vya uzazi (kwa mwanamke)
+      ● Maambukizi ya magonjwa ya ngono ikiwemo VVU
+      ● Kupata mimba zisizotarajiwa na utoaji wa mimba
       ● Hofu, sonona, na kujiua
       ● Uwezekano wa kuwa mtumiaji wa dawa za kulevya kutokana na msongo wa mawazo
 `,
@@ -629,7 +1021,7 @@ Hao wanaweza kuwa wazazi/walezi ,marafiki wa familia ,mwanafamilia,jirani ,mgeni
       nodeKey: 'TYPES_OF_VIOLENCE_12',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Symptoms of a young person who has been raped or sodomized: 
+      messageText: `Symptoms of a young person who has been raped or sodomized:
       ● Cannot walk/sit properly
       ● Tearing, swelling and itching of the genitals
       ● Bleeding from the vagina or anus
@@ -647,10 +1039,10 @@ Hao wanaweza kuwa wazazi/walezi ,marafiki wa familia ,mwanafamilia,jirani ,mgeni
       nodeKey: 'TYPES_OF_VIOLENCE_12',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Dalili za kijana aliyebakwa au kulawitiwa: 
-      ● Hawezi kutembea/kukaa vizuri 
+      messageText: `Dalili za kijana aliyebakwa au kulawitiwa:
+      ● Hawezi kutembea/kukaa vizuri
       ● Kuchanika, kuvimba na kuwashwa sehemu za siri
-      ● Kutoka damu ukeni au njia ya haja kubwa 
+      ● Kutoka damu ukeni au njia ya haja kubwa
       ● Kutoka uchafu ukeni au njia ya haja kubwa
 `,
       inputType: InputType.BUTTON,
@@ -666,7 +1058,7 @@ Hao wanaweza kuwa wazazi/walezi ,marafiki wa familia ,mwanafamilia,jirani ,mgeni
       nodeKey: 'TYPES_OF_VIOLENCE_13',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `How to prevent sexual violence: 
+      messageText: `How to prevent sexual violence:
       ● Avoiding dangerous environments that can lead to violence
       ● Providing education about sexual violence to the community
       ● Improving policies and laws
@@ -686,8 +1078,8 @@ Hao wanaweza kuwa wazazi/walezi ,marafiki wa familia ,mwanafamilia,jirani ,mgeni
       language: Language.SW,
       messageText: `Jinsi ya kuzuia unyanyasaji wa kijinsia
       ● Kujiepusha na mazingira hatarishi yanayoweza kusababisha kufanyiwa ukatili
-      ● Kutoa elimu kuhusu ukatili wa kijinsia kwa jamii 
-      ● Kuboresha sera na sheria 
+      ● Kutoa elimu kuhusu ukatili wa kijinsia kwa jamii
+      ● Kuboresha sera na sheria
       ● Kuwa na uthubutu wa kukataa vitendo vya unyanyasaji
 `,
       inputType: InputType.BUTTON,
@@ -824,13 +1216,13 @@ Hao wanaweza kuwa wazazi/walezi ,marafiki wa familia ,mwanafamilia,jirani ,mgeni
       nodeKey: 'TYPES_OF_VIOLENCE_14',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `NOTE: Information on sexual violence can be provided to: 
-      ● Social Welfare Officer 
-      ● Community Development Officer 
-      ● Police Gender Desk 
-      ● Ward Executive Officer 
-      ● Paralegals 
-      ● Health Care Center 
+      messageText: `NOTE: Information on sexual violence can be provided to:
+      ● Social Welfare Officer
+      ● Community Development Officer
+      ● Police Gender Desk
+      ● Ward Executive Officer
+      ● Paralegals
+      ● Health Care Center
       ● Religious leaders`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -844,13 +1236,13 @@ Hao wanaweza kuwa wazazi/walezi ,marafiki wa familia ,mwanafamilia,jirani ,mgeni
       nodeKey: 'TYPES_OF_VIOLENCE_14',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `KUMBUKA: Taarifa kuhusu ukatili wa kijinsia zinaweza kutolewa kwa: 
-      ● Afisa wa Ustawi wa Jamii 
-      ● Afisa wa Maendeleo ya Jamii 
-      ● Dawati la Polisi Jinsia 
-      ● Afisa Mtendaji wa Kata 
-      ● Wasaidizi wa Kisheria 
-      ● Kituo cha Huduma ya Afya 
+      messageText: `KUMBUKA: Taarifa kuhusu ukatili wa kijinsia zinaweza kutolewa kwa:
+      ● Afisa wa Ustawi wa Jamii
+      ● Afisa wa Maendeleo ya Jamii
+      ● Dawati la Polisi Jinsia
+      ● Afisa Mtendaji wa Kata
+      ● Wasaidizi wa Kisheria
+      ● Kituo cha Huduma ya Afya
       ● Viongozi wa kidini`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -865,7 +1257,7 @@ Hao wanaweza kuwa wazazi/walezi ,marafiki wa familia ,mwanafamilia,jirani ,mgeni
       nodeKey: 'CHILDRENS_RIGHTS_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Children's rights are the freedoms and protections that every child is entitled to simply because they are human beings. 
+      messageText: `Children's rights are the freedoms and protections that every child is entitled to simply because they are human beings.
 These rights help children survive, grow, learn, participate, and be protected from harm.
 In Tanzania, a child is any person below the age of 18 years.
 Children's rights are protected by national laws and international agreements, including the Convention on the Rights of the Child and Tanzania's Law of the Child Act.
@@ -882,9 +1274,9 @@ Children's rights are protected by national laws and international agreements, i
       nodeKey: 'CHILDRENS_RIGHTS_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Haki za watoto ni uhuru na ulinzi ambao kila mtoto anastahili kupata kwa sababu tu ni binadamu. 
-Haki hizi huwasaidia watoto kuishi, kukua, kujifunza, kushiriki, na kulindwa kutokana na madhara. 
-Nchini Tanzania, mtoto ni mtu yeyote aliye chini ya umri wa miaka 18. 
+      messageText: `Haki za watoto ni uhuru na ulinzi ambao kila mtoto anastahili kupata kwa sababu tu ni binadamu.
+Haki hizi huwasaidia watoto kuishi, kukua, kujifunza, kushiriki, na kulindwa kutokana na madhara.
+Nchini Tanzania, mtoto ni mtu yeyote aliye chini ya umri wa miaka 18.
 Haki za watoto zinalindwa na sheria za kitaifa na mikataba ya kimataifa, ikiwa ni pamoja na Mkataba wa Haki za Mtoto na Sheria ya Sheria ya Mtoto ya Tanzania.
 `,
       inputType: InputType.BUTTON,
@@ -919,7 +1311,7 @@ Children's rights help ensure that every child:
       nodeKey: 'CHILDRENS_RIGHTS_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Watoto wanategemea watu wazima kwa ajili ya matunzo, ulinzi, na mwongozo. 
+      messageText: `Watoto wanategemea watu wazima kwa ajili ya matunzo, ulinzi, na mwongozo.
 Haki za watoto husaidia kuhakikisha kwamba kila mtoto:
     ● Yuko salama kutokana na vurugu na unyanyasaji.
     ● Anapata elimu.
@@ -1127,8 +1519,8 @@ Ukweli: Kila mtoto ana haki bila kujali malezi yake.`,
       nodeKey: 'PROTECTION_FROM_ABUSE_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Protection from violence means ensuring that children and young people are safe from any actions that may cause them physical, emotional, sexual or psychological harm. 
-Every child has the right to live in a safe environment that enables them to grow, learn and achieve their dreams without fear of being hurt or abused. 
+      messageText: `Protection from violence means ensuring that children and young people are safe from any actions that may cause them physical, emotional, sexual or psychological harm.
+Every child has the right to live in a safe environment that enables them to grow, learn and achieve their dreams without fear of being hurt or abused.
 Violence can occur at home, at school, online, at work or in the community, and is often perpetrated by people known to the child such as siblings, teachers, neighbours, friends or community leaders.
 `,
       inputType: InputType.BUTTON,
@@ -1143,8 +1535,8 @@ Violence can occur at home, at school, online, at work or in the community, and 
       nodeKey: 'PROTECTION_FROM_ABUSE_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Ulinzi dhidi ya ukatili unamaanisha kuhakikisha kwamba watoto na vijana wako salama dhidi ya vitendo vyovyote vinavyoweza kuwasababishia madhara ya kimwili, kihisia, kingono au kisaikolojia. 
-Kila mtoto ana haki ya kuishi katika mazingira salama yanayomwezesha kukua, kujifunza na kufikia ndoto zake bila hofu ya kuumizwa au kunyanyaswa. 
+      messageText: `Ulinzi dhidi ya ukatili unamaanisha kuhakikisha kwamba watoto na vijana wako salama dhidi ya vitendo vyovyote vinavyoweza kuwasababishia madhara ya kimwili, kihisia, kingono au kisaikolojia.
+Kila mtoto ana haki ya kuishi katika mazingira salama yanayomwezesha kukua, kujifunza na kufikia ndoto zake bila hofu ya kuumizwa au kunyanyaswa.
 Ukatili unaweza kutokea nyumbani, shuleni, mtandaoni, kazini au katika jamii, na mara nyingi hufanywa na watu wanaojulikana na mtoto kama vile ndugu, walimu, majirani, marafiki au viongozi wa jamii.
 `,
       inputType: InputType.BUTTON,
@@ -1160,7 +1552,7 @@ Ukatili unaweza kutokea nyumbani, shuleni, mtandaoni, kazini au katika jamii, na
       nodeKey: 'PROTECTION_FROM_ABUSE_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Types of violence can include beatings, insults, humiliation, isolation, intimidation, sexual contact without consent, forced labour, or deprivation of basic needs such as food, education and healthcare. 
+      messageText: `Types of violence can include beatings, insults, humiliation, isolation, intimidation, sexual contact without consent, forced labour, or deprivation of basic needs such as food, education and healthcare.
 Children and young people who experience violence often show symptoms such as prolonged sadness, fear, isolation from others, poor school performance or unexplained injuries.
 `,
       inputType: InputType.BUTTON,
@@ -1175,7 +1567,7 @@ Children and young people who experience violence often show symptoms such as pr
       nodeKey: 'PROTECTION_FROM_ABUSE_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Aina za ukatili zinaweza kujumuisha kupigwa, kutukanwa, kudhalilishwa, kutengwa, kutishwa, kuguswa kingono bila ridhaa, kulazimishwa kufanya kazi nzito, au kunyimwa mahitaji muhimu kama chakula, elimu na huduma za afya. 
+      messageText: `Aina za ukatili zinaweza kujumuisha kupigwa, kutukanwa, kudhalilishwa, kutengwa, kutishwa, kuguswa kingono bila ridhaa, kulazimishwa kufanya kazi nzito, au kunyimwa mahitaji muhimu kama chakula, elimu na huduma za afya.
 Mara nyingi watoto na vijana wanaopitia ukatili huonyesha dalili kama huzuni ya muda mrefu, hofu, kutengwa na wengine, kushuka kwa ufaulu shuleni, au majeraha yasiyoelezeka.
 `,
       inputType: InputType.BUTTON,
@@ -1251,8 +1643,8 @@ Kuripoti ukatili kunaweza kusaidia kupata msaada na kuzuia madhara zaidi kwa mto
       nodeKey: 'CHILDS_MARRIAGE_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Child marriage is a marriage involving a child or adolescent under the age of 18. 
-At this age, many children are still developing physically, mentally, emotionally and socially, and are therefore not ready to take on the responsibilities of marriage and parenthood. 
+      messageText: `Child marriage is a marriage involving a child or adolescent under the age of 18.
+At this age, many children are still developing physically, mentally, emotionally and socially, and are therefore not ready to take on the responsibilities of marriage and parenthood.
 Child marriage can occur due to poverty, customs and traditions, lack of education, early pregnancy, or pressure from family and society.
 `,
       inputType: InputType.BUTTON,
@@ -1267,8 +1659,8 @@ Child marriage can occur due to poverty, customs and traditions, lack of educati
       nodeKey: 'CHILDS_MARRIAGE_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Ndoa za utotoni ni ndoa zinazohusisha mtoto au kijana mwenye umri chini ya miaka 18. 
-Katika umri huu, watoto wengi bado wanaendelea kukua kimwili, kiakili, kihisia na kijamii, hivyo hawajawa tayari kubeba majukumu ya ndoa na uzazi. 
+      messageText: `Ndoa za utotoni ni ndoa zinazohusisha mtoto au kijana mwenye umri chini ya miaka 18.
+Katika umri huu, watoto wengi bado wanaendelea kukua kimwili, kiakili, kihisia na kijamii, hivyo hawajawa tayari kubeba majukumu ya ndoa na uzazi.
 Ndoa za utotoni zinaweza kutokea kutokana na umaskini, mila na desturi, ukosefu wa elimu, mimba za utotoni, au shinikizo kutoka kwa familia na jamii.
 `,
       inputType: InputType.BUTTON,
@@ -1284,10 +1676,10 @@ Ndoa za utotoni zinaweza kutokea kutokana na umaskini, mila na desturi, ukosefu 
       nodeKey: 'CHILDS_MARRIAGE_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Child marriage can have a profound impact on a child’s life. 
-It often leads to interruption of education, reduced development opportunities, and increased economic dependence. 
+      messageText: `Child marriage can have a profound impact on a child’s life.
+It often leads to interruption of education, reduced development opportunities, and increased economic dependence.
 
-For girls, child marriage increases the risk of early pregnancy, which can pose health challenges for both mother and child. 
+For girls, child marriage increases the risk of early pregnancy, which can pose health challenges for both mother and child.
 It can also increase the likelihood of experiencing sexual violence, emotional abuse, and a lack of decision-making about their own lives.
 `,
       inputType: InputType.BUTTON,
@@ -1302,10 +1694,10 @@ It can also increase the likelihood of experiencing sexual violence, emotional a
       nodeKey: 'CHILDS_MARRIAGE_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Ndoa za utotoni zinaweza kuwa na madhara makubwa kwa maisha ya mtoto. 
-Mara nyingi husababisha kukatishwa masomo, kupunguza fursa za maendeleo, na kuongeza utegemezi wa kiuchumi. 
+      messageText: `Ndoa za utotoni zinaweza kuwa na madhara makubwa kwa maisha ya mtoto.
+Mara nyingi husababisha kukatishwa masomo, kupunguza fursa za maendeleo, na kuongeza utegemezi wa kiuchumi.
 
-Kwa wasichana, ndoa za utotoni huongeza hatari ya kupata ujauzito katika umri mdogo, jambo ambalo linaweza kuleta changamoto za kiafya kwa mama na mtoto. 
+Kwa wasichana, ndoa za utotoni huongeza hatari ya kupata ujauzito katika umri mdogo, jambo ambalo linaweza kuleta changamoto za kiafya kwa mama na mtoto.
 Pia zinaweza kuongeza uwezekano wa kukumbana na ukatili wa kijinsia, unyanyasaji wa kihisia na ukosefu wa maamuzi kuhusu maisha yao wenyewe.
 `,
       inputType: InputType.BUTTON,
@@ -1321,10 +1713,10 @@ Pia zinaweza kuongeza uwezekano wa kukumbana na ukatili wa kijinsia, unyanyasaji
       nodeKey: 'CHILDS_MARRIAGE_03',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Every child has the right to education, health, protection, and the opportunity to determine their own future. 
-Young people should understand that marriage is not a solution to financial or social challenges. 
+      messageText: `Every child has the right to education, health, protection, and the opportunity to determine their own future.
+Young people should understand that marriage is not a solution to financial or social challenges.
 
-Instead, education, life skills, and economic empowerment can help build a better life with more opportunities. 
+Instead, education, life skills, and economic empowerment can help build a better life with more opportunities.
 If a young person feels they are being forced into marriage or knows a child who is facing such a situation, it is important to seek help from trusted parents, teachers, community leaders or social welfare officers.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1338,10 +1730,10 @@ If a young person feels they are being forced into marriage or knows a child who
       nodeKey: 'CHILDS_MARRIAGE_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Kila mtoto ana haki ya kupata elimu, afya, ulinzi na nafasi ya kuamua mustakabali wake. 
-Vijana wanapaswa kuelewa kwamba ndoa si suluhisho la changamoto za kifedha au kijamii. 
+      messageText: `Kila mtoto ana haki ya kupata elimu, afya, ulinzi na nafasi ya kuamua mustakabali wake.
+Vijana wanapaswa kuelewa kwamba ndoa si suluhisho la changamoto za kifedha au kijamii.
 
-Badala yake, elimu, ujuzi wa maisha na uwezeshaji wa kiuchumi vinaweza kusaidia kujenga maisha bora na yenye fursa zaidi. 
+Badala yake, elimu, ujuzi wa maisha na uwezeshaji wa kiuchumi vinaweza kusaidia kujenga maisha bora na yenye fursa zaidi.
 Ikiwa kijana anahisi analazimishwa kuingia kwenye ndoa au anajua mtoto anayekabiliwa na hali hiyo, ni muhimu kutafuta msaada kutoka kwa wazazi wanaoaminika, walimu, viongozi wa jamii au maafisa ustawi wa jamii.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1356,10 +1748,10 @@ Ikiwa kijana anahisi analazimishwa kuingia kwenye ndoa au anajua mtoto anayekabi
       nodeKey: 'SEXUAL_EXPLOITATION_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Sexual exploitation occurs when someone uses their power, age, position, money, gifts, promises or influence to obtain sexual benefits from a child or young person. 
+      messageText: `Sexual exploitation occurs when someone uses their power, age, position, money, gifts, promises or influence to obtain sexual benefits from a child or young person.
 
 Sexual exploitation often does not involve direct force alone, but can also involve threats, deception, promises of help, or taking advantage of a young person’s difficult circumstances to induce them to engage in sexual acts.
-In the Tanzanian context, sexual exploitation can take many forms. 
+In the Tanzanian context, sexual exploitation can take many forms.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1373,10 +1765,10 @@ In the Tanzanian context, sexual exploitation can take many forms.
       nodeKey: 'SEXUAL_EXPLOITATION_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Unyonyaji wa kingono hutokea pale mtu anapotumia madaraka, umri, nafasi, fedha, zawadi, ahadi au ushawishi wake ili kupata manufaa ya kingono kutoka kwa mtoto au kijana. 
+      messageText: `Unyonyaji wa kingono hutokea pale mtu anapotumia madaraka, umri, nafasi, fedha, zawadi, ahadi au ushawishi wake ili kupata manufaa ya kingono kutoka kwa mtoto au kijana.
 
 Mara nyingi unyonyaji wa kingono hauhusishi nguvu za moja kwa moja pekee, bali unaweza kuhusisha vitisho, hila, ahadi za msaada, au kutumia hali ngumu anayopitia kijana ili kumshawishi kufanya vitendo vya kingono.
-Katika mazingira ya Tanzania, unyonyaji wa kingono unaweza kujitokeza kwa njia mbalimbali. 
+Katika mazingira ya Tanzania, unyonyaji wa kingono unaweza kujitokeza kwa njia mbalimbali.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1391,8 +1783,8 @@ Katika mazingira ya Tanzania, unyonyaji wa kingono unaweza kujitokeza kwa njia m
       nodeKey: 'SEXUAL_EXPLOITATION_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `An example is an adult offering a student money, vouchers, transportation, gifts or the promise of academic support in exchange for sexual relations. 
-It can also occur when someone demands sex in exchange for services, employment, school grades or other opportunities. 
+      messageText: `An example is an adult offering a student money, vouchers, transportation, gifts or the promise of academic support in exchange for sexual relations.
+It can also occur when someone demands sex in exchange for services, employment, school grades or other opportunities.
 
 Young people may often fail to recognize that these situations are a form of exploitation because they appear to be helpful or affectionate.
 `,
@@ -1408,8 +1800,8 @@ Young people may often fail to recognize that these situations are a form of exp
       nodeKey: 'SEXUAL_EXPLOITATION_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mfano ni mtu mzima anayempa mwanafunzi fedha, vocha, usafiri, zawadi au ahadi ya kumsaidia kielimu kwa matarajio ya kupata mahusiano ya kingono. 
-Pia unaweza kutokea pale mtu anapodai ngono ili kutoa huduma, ajira, alama za shule au fursa nyingine. 
+      messageText: `Mfano ni mtu mzima anayempa mwanafunzi fedha, vocha, usafiri, zawadi au ahadi ya kumsaidia kielimu kwa matarajio ya kupata mahusiano ya kingono.
+Pia unaweza kutokea pale mtu anapodai ngono ili kutoa huduma, ajira, alama za shule au fursa nyingine.
 
 Mara nyingi vijana wanaweza kushindwa kutambua kuwa hali hizi ni aina ya unyonyaji kwa sababu huonekana kama msaada au mapenzi.
 `,
@@ -1609,8 +2001,8 @@ Receiving support should never require someone to provide sexual activity in ret
       nodeKey: 'TRANSACTIONAL_RELATIONSHIPS_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mtu mzee humnunulia mwanafunzi nguo, muda wa maongezi, usafiri, au milo mara kwa mara na anatarajia shughuli za ngono kama malipo. 
-Hii inaweza kuwa aina ya unyanyaji na usawa wa madaraka. 
+      messageText: `Mtu mzee humnunulia mwanafunzi nguo, muda wa maongezi, usafiri, au milo mara kwa mara na anatarajia shughuli za ngono kama malipo.
+Hii inaweza kuwa aina ya unyanyaji na usawa wa madaraka.
 
 Kupokea usaidizi hakupaswi kamwe kumhitaji mtu kutoa shughuli za ngono kama malipo.`,
       inputType: InputType.BUTTON,
@@ -1641,7 +2033,7 @@ Reporting can also help protect other children from experiencing similar harm.
       nodeKey: 'REPORTING_ABUSE_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Kuripoti unyanyasaji husaidia kuwalinda waathiriwa, kuzuia madhara zaidi, na kuwaunganisha watu na huduma za usaidizi. 
+      messageText: `Kuripoti unyanyasaji husaidia kuwalinda waathiriwa, kuzuia madhara zaidi, na kuwaunganisha watu na huduma za usaidizi.
 Kuripoti kunaweza pia kusaidia kuwalinda watoto wengine kutokana na madhara kama hayo.
 `,
       inputType: InputType.BUTTON,
@@ -1813,29 +2205,47 @@ Unyanyasaji unaweza kufanywa na watu wanaomjua mwathiriwa. Kuripoti bado ni muhi
   contentNodeOptions: [
     {
       nodeKey: 'UNDERSTANDING_GENDER_01',
-      optionValue: 'equal_respect',
-      labelEn: 'Equal respect',
-      labelSw: 'Heshima sawa',
+      optionValue: 'expectations',
+      labelEn: 'Expectations',
+      labelSw: 'Matarajio',
       nextNodeKey: 'UNDERSTANDING_GENDER_02',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_GENDER_01',
-      optionValue: 'gender_roles',
-      labelEn: 'Gender roles',
-      labelSw: 'Majukumu ya jinsia',
-      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_01',
+      optionValue: 'equal_respect',
+      labelEn: 'Equal respect',
+      labelSw: 'Heshima sawa',
+      nextNodeKey: 'UNDERSTANDING_GENDER_03',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_GENDER_01',
-      optionValue: 'child_rights',
-      labelEn: 'Child rights',
-      labelSw: 'Haki za watoto',
-      nextNodeKey: 'CHILDRENS_RIGHTS_01',
+      optionValue: 'gender_roles',
+      labelEn: 'Gender roles',
+      labelSw: 'Majukumu ya jinsia',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_01',
       sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_02',
+      optionValue: 'equal_respect',
+      labelEn: 'Equal respect',
+      labelSw: 'Heshima sawa',
+      nextNodeKey: 'UNDERSTANDING_GENDER_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_02',
+      optionValue: 'free_to_grow',
+      labelEn: 'Free to grow',
+      labelSw: 'Uhuru wa kukua',
+      nextNodeKey: 'UNDERSTANDING_GENDER_04',
+      sortOrder: 2,
       isActive: true,
     },
     {
@@ -1844,25 +2254,241 @@ Unyanyasaji unaweza kufanywa na watu wanaomjua mwathiriwa. Kuripoti bado ni muhi
       labelEn: 'Gender roles',
       labelSw: 'Majukumu ya jinsia',
       nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_03',
+      optionValue: 'free_to_grow',
+      labelEn: 'Free to grow',
+      labelSw: 'Uhuru wa kukua',
+      nextNodeKey: 'UNDERSTANDING_GENDER_04',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'UNDERSTANDING_GENDER_02',
-      optionValue: 'child_rights',
-      labelEn: 'Child rights',
-      labelSw: 'Haki za watoto',
-      nextNodeKey: 'CHILDRENS_RIGHTS_01',
+      nodeKey: 'UNDERSTANDING_GENDER_03',
+      optionValue: 'diversity',
+      labelEn: 'Diversity',
+      labelSw: 'Utofauti',
+      nextNodeKey: 'UNDERSTANDING_GENDER_05',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'UNDERSTANDING_GENDER_02',
+      nodeKey: 'UNDERSTANDING_GENDER_03',
+      optionValue: 'child_rights',
+      labelEn: 'Child rights',
+      labelSw: 'Haki za watoto',
+      nextNodeKey: 'CHILDRENS_RIGHTS_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_04',
+      optionValue: 'diversity',
+      labelEn: 'Diversity',
+      labelSw: 'Utofauti',
+      nextNodeKey: 'UNDERSTANDING_GENDER_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_04',
+      optionValue: 'equality',
+      labelEn: 'Equality',
+      labelSw: 'Usawa',
+      nextNodeKey: 'UNDERSTANDING_GENDER_06',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_04',
+      optionValue: 'stereotypes',
+      labelEn: 'Stereotypes',
+      labelSw: 'Dhana potofu',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_05',
+      optionValue: 'equality',
+      labelEn: 'Equality',
+      labelSw: 'Usawa',
+      nextNodeKey: 'UNDERSTANDING_GENDER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_05',
+      optionValue: 'anything_else',
+      labelEn: 'Anything else?',
+      labelSw: 'Kitu kingine?',
+      nextNodeKey: 'UNDERSTANDING_GENDER_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_05',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime Uelewa',
+      nextNodeKey: 'UNDERSTANDING_GENDER_REFRESHER_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_06',
+      optionValue: 'anything_else',
+      labelEn: 'Anything else?',
+      labelSw: 'Kitu kingine?',
+      nextNodeKey: 'UNDERSTANDING_GENDER_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_06',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime Uelewa',
+      nextNodeKey: 'UNDERSTANDING_GENDER_REFRESHER_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_06',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'UNDERSTANDING_GENDER_08',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_07',
+      optionValue: 'gender_equality',
+      labelEn: 'Gender equality',
+      labelSw: 'Usawa wa jinsia',
+      nextNodeKey: 'GENDER_ROLES_AND_STEREOTYPES_01',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_07',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime Uelewa',
+      nextNodeKey: 'UNDERSTANDING_GENDER_REFRESHER_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_07',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'UNDERSTANDING_GENDER_08',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_08',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_01',
+      optionValue: 'start_refresher',
+      labelEn: 'Start refresher',
+      labelSw: 'Anza kujikumbusha',
+      nextNodeKey: 'UNDERSTANDING_GENDER_REFRESHER_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_02',
+      optionValue: 'start_quiz',
+      labelEn: 'Start quiz',
+      labelSw: 'Anza jaribio',
+      nextNodeKey: 'UNDERSTANDING_GENDER_REFRESHER_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_03',
+      optionValue: 'true',
+      labelEn: 'A) True',
+      labelSw: 'A) Kweli',
+      nextNodeKey: 'UNDERSTANDING_GENDER_REFRESHER_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_03',
+      optionValue: 'false',
+      labelEn: 'B) False',
+      labelSw: 'B) Uongo',
+      nextNodeKey: 'UNDERSTANDING_GENDER_REFRESHER_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_04',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali linalofuata',
+      nextNodeKey: 'UNDERSTANDING_GENDER_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_05',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali linalofuata',
+      nextNodeKey: 'UNDERSTANDING_GENDER_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_06',
+      optionValue: 'yes',
+      labelEn: 'A) Yes',
+      labelSw: 'A) Ndiyo',
+      nextNodeKey: 'UNDERSTANDING_GENDER_REFRESHER_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_06',
+      optionValue: 'no',
+      labelEn: 'B) No',
+      labelSw: 'B) Hapana',
+      nextNodeKey: 'UNDERSTANDING_GENDER_REFRESHER_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_07',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'UNDERSTANDING_GENDER_08',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_GENDER_REFRESHER_07',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 2,
       isActive: true,
     },
     {
