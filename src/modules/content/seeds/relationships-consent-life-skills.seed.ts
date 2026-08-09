@@ -2320,8 +2320,7 @@ Sahihi: B - Uongo. Kuweka mipaka yako ni haki yako.
       nodeKey: 'COMMUNICATION_SKILLS_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Communication is the flow of messages from a sender to a receiver involving a process used to convey information, beliefs, exchange ideas, opinions, experiences, related to various matters in a meaningful and acceptable way.
-There are 3 main types of communication.
+      messageText: `Good communication is an important life skill. It helps you express your thoughts, understand others, build healthy relationships, and make informed decisions.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: 'image_image_soft_skills',
@@ -2335,8 +2334,7 @@ There are 3 main types of communication.
       nodeKey: 'COMMUNICATION_SKILLS_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mawasiliano ni mtiririko wa ujumbe kutoka kwa anayetuma kwenda kwa anayepokea ikihusisha mchakato unaotumika katika kupeana taarifa, imani, kubadilishana mawazo, maoni, uzoefu, kuhusiana na mambo mbalimbali kwa njia yenye maana na inayokubalika.
-Kuna aina kuu 3 za mawasiliano.
+      messageText: `Mawasiliano mazuri ni ujuzi muhimu wa maisha. Hukusaidia kuelezea mawazo yako, kuwaelewa wengine, kujenga mahusiano mazuri, na kufanya maamuzi sahihi.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: 'image_soft_skills',
@@ -2350,10 +2348,8 @@ Kuna aina kuu 3 za mawasiliano.
       nodeKey: 'COMMUNICATION_SKILLS_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `The first type of communication is:
-• Face-to-face communication: It is communication between one person and another, a person and a group or a group and a group where they see each other face to face.
-This communication can be verbal or symbolic.
-The main advantage of this type of communication is that the message reaches the target/targets directly, it provides an opportunity to provide clarification on a controversial matter and feedback is obtained immediately.`,
+      messageText: `Communication is the process of sharing information, ideas, opinions, feelings, and experiences in a way that others can understand. There are three main types of communication:
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -2366,10 +2362,8 @@ The main advantage of this type of communication is that the message reaches the
       nodeKey: 'COMMUNICATION_SKILLS_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Aina ya kwanza ya mawasiliano ni:
-• Mawasiliano ya ana kwa ana: Haya ni mawasiliano kati ya mtu mmoja na mwingine, mtu na kikundi au kikundi na kikundi ambapo wanaonana uso kwa uso.
-Mawasiliano haya yanaweza kuwa ya maneno au ya ishara.
-Faida kubwa ya aina hii ya mawasiliano ni kua ujumbe hufika kwa mlengwa/walengwa moja kwa moja ,hutoa fursa ya kutoa ufafanuzi juu ya jambo lenye utata na mrejesho hupatikana papo kwa papo.`,
+      messageText: `Mawasiliano ni mchakato wa kushiriki taarifa, mawazo, maoni, hisia, na uzoefu kwa njia ambayo wengine wanaweza kuelewa. Kuna aina tatu kuu za mawasiliano:
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -2382,9 +2376,15 @@ Faida kubwa ya aina hii ya mawasiliano ni kua ujumbe hufika kwa mlengwa/walengwa
       nodeKey: 'COMMUNICATION_SKILLS_03',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `The next type of communication is:-
-• Mass communication without face-to-face: It is communication that uses media such as publications, social networks, television and radio.
-The advantage of this type of communication is that it reaches many people at the same time, it takes a short time to reach people, it is exciting (by sight and hearing), it provides an opportunity to see and understand things that cannot be expressed in normal life situations.`,
+      messageText: `1. Face-to-Face Communication
+
+This happens when people communicate directly with each other, either one-on-one or in groups. It can be verbal or through body language.
+
+Benefits:
+  ● Messages are delivered clearly.
+  ● Questions can be answered immediately.
+  ● Feedback is received right away.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -2397,9 +2397,15 @@ The advantage of this type of communication is that it reaches many people at th
       nodeKey: 'COMMUNICATION_SKILLS_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Aina ya pili ya mawasiliano ni:-
-• Mawasiliano ya watu wengi bila kuonana: Haya ni mawasiliano ambayo hutumia vyombo vyahabari kama vile machapisho, mitandao ya kijamii, luninga na redio.
-Faida ya aina hii ya mawasiliano ni kua huwafikia watu wengi kwa wakati mmoja, huchukua muda mfupi kuwafikia watu, huchangamsha (kwa kuona na kusikia), hutoa fursa ya kuona na kuelewa mambo ambayo hayawezi kuonyeshwa katika hali ya kawaida ya maisha.`,
+      messageText: `1. Mawasiliano ya Ana kwa Ana
+
+Hii hutokea wakati watu wanawasiliana moja kwa moja, ama mmoja kwa mmoja au katika vikundi. Inaweza kuwa ya maneno au kupitia lugha ya mwili.
+
+Faida:
+  ● Ujumbe hutolewa waziwazi.
+  ● Maswali yanaweza kujibiwa mara moja.
+  ● Maoni hupokelewa mara moja.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -2412,12 +2418,14 @@ Faida ya aina hii ya mawasiliano ni kua huwafikia watu wengi kwa wakati mmoja, h
       nodeKey: 'COMMUNICATION_SKILLS_04',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `The final and third type of communication is:-
-• Personal communication: This is communication between a person and his/her self.
-It is a very important type for young people, especially adolescents, as it is the only way that gives the young person the opportunity to discuss various matters within themselves by accepting to receive information, reflect and make decisions on their own.
-This is where the young person is required to be calm, creative and courageous in making the right decisions.
-Deciding to engage in risky behavior and matters that affect reproductive health is more about individual decisions.
-The biggest advantage of this type of communication is that it gives him/her the opportunity to reflect on the issue deeply within himself/herself and helps him/her make decisions without rushing.
+      messageText: `2. Mass Communication
+
+This uses media such as television, radio, social media, and publications to reach many people at once.
+
+Benefits:
+  ● Reaches large audiences quickly.
+  ● Shares information in engaging ways using sound, images, or videos.
+  ● Helps people learn about important issues.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -2431,11 +2439,14 @@ The biggest advantage of this type of communication is that it gives him/her the
       nodeKey: 'COMMUNICATION_SKILLS_04',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Aina ya tatu ya mawasiliano ni:-
-• Mawasiliano binafsi: Ni mawasiliano ya mtu na nafsi yake.
-Ni aina muhimu sana kwa vijana hususani kijana balehe kwani ndiyo njia pekee inayompatia kijana nafasi ya kujadili mambo mbalimbali nafsini mwake kwa kukubali kupokea taarifa, kutafakari na kufanya maamuzi akiwa yeye mwenyewe binafsi.
-Hapa ndipo kijana anapotakiwa kuwa mtulivu, mbunifu na mthubutu katika kufanya maamuzi sahihi. Kuamua kuingia katika tabia hatarishi na mambo yanayoathiri afya ya uzazi huzingatia zaidi maamuzi ya mtu binafsi.
-Faida kubwa ya aina hii ya mawasiliano ni kua inampa nafasi ya kutafakari suala kwa kina nafsini mwake na inamsaidia kutoa maamuzi pasipo kukurupuka.
+      messageText: `2. Mawasiliano ya Umma
+
+Hii hutumia vyombo vya habari kama vile televisheni, redio, mitandao ya kijamii, na machapisho ili kuwafikia watu wengi kwa wakati mmoja.
+
+Faida:
+  ● Hufikia hadhira kubwa haraka.
+  ● Hushiriki taarifa kwa njia za kuvutia kwa kutumia sauti, picha, au video.
+  ● Huwasaidia watu kujifunza kuhusu masuala muhimu.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -2446,11 +2457,60 @@ Faida kubwa ya aina hii ya mawasiliano ni kua inampa nafasi ya kutafakari suala 
     },
     {
       subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `3. Personal Communication
+
+This is the conversation you have with yourself through thinking and self-reflection. It helps you understand your feelings, weigh your options, and make thoughtful decisions.
+
+Benefits:
+  ● Encourages careful thinking before acting.
+  ● Builds confidence in decision-making.
+  ● Helps young people avoid rushing into risky choices.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `3. Mawasiliano ya Kibinafsi
+
+Hii ni mazungumzo unayofanya na wewe mwenyewe kupitia kufikiri na kujitafakari. Inakusaidia kuelewa hisia zako, kupima chaguzi zako, na kufanya mawazo maamuzi.
+
+Faida:
+  ● Huhimiza kufikiri kwa makini kabla ya kutenda.
+  ● Hujenga kujiamini katika kufanya maamuzi.
+  ● Huwasaidia vijana kuepuka kukimbilia katika chaguzi hatari.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
       nodeKey: 'COMMUNICATION_SKILLS_06',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `These are communication skills including listening carefully, asking open questions, using stimuli such as nodding, smiling, saying “aha!!”, recognizing the signs that arise during communication and acting on them.
-For example, frowning, giving a summary.`,
+      messageText: `Good Communication Skills
+
+Strong communication involves:
+  ● Listening carefully.
+  ● Asking open questions.
+  ● Showing interest through body language, such as smiling or nodding.
+  ● Giving feedback and summarizing what you've understood.
+  ● Paying attention to verbal and non-verbal cues, such as facial expressions and tone of voice.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -2463,7 +2523,15 @@ For example, frowning, giving a summary.`,
       nodeKey: 'COMMUNICATION_SKILLS_06',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Hizi ni stadi za mawasiliano ikiwemo kusikiliza kwa makini, kuuliza maswali ya wazi, kutumia vihamasisho kwa mfano kutikisa kichwa, kutabasamu, kusema “aha!!”, kutambua ishara zinazojitokeza wakati wa mawasiliano na kuzifanyia kazi.Kwa mfano, kukunja uso, kutoa muhtasari `,
+      messageText: `Ujuzi Bora wa Mawasiliano
+
+Mawasiliano imara yanahusisha:
+  ● Kusikiliza kwa makini.
+  ● Kuuliza maswali wazi.
+  ● Kuonyesha nia kupitia lugha ya mwili, kama vile kutabasamu au kutikisa kichwa.
+  ● Kutoa maoni na kufupisha kile ulichoelewa.
+  ● Kuzingatia ishara za maneno na zisizo za maneno, kama vile sura za uso na sauti.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -2473,7 +2541,63 @@ For example, frowning, giving a summary.`,
     },
     {
       subtopicCode: 'COMMUNICATION_SKILLS',
-      nodeKey: 'COMMUNICATION_SKILLS_05',
+      nodeKey: 'COMMUNICATION_SKILLS_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Good communication helps you build trust, solve problems peacefully, strengthen relationships, and make confident decisions. It's a skill that becomes stronger the more you practice it.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Mawasiliano mazuri hukusaidia kujenga uaminifu, kutatua matatizo kwa amani, kuimarisha mahusiano, na kufanya maamuzi ya kujiamini. Ni ujuzi unaozidi kuwa na nguvu kadri unavyoufanyia mazoezi.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `No, Would you like to learn more about active listening, assertive communication, resolving conflicts, or building healthy relationships? I'm here to help.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Hapana, Ungependa kujifunza zaidi kuhusu kusikiliza kwa vitendo, mawasiliano ya uthubutu, kutatua migogoro, au kujenga mahusiano yenye afya? Niko hapa kukusaidia.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_09',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Common Myths
@@ -2494,17 +2618,18 @@ Myth:
 Giving gifts means someone owes affection or sex.
 
 Fact:
-No one owes sexual activity because they received gifts.`,
+No one owes sexual activity because they received gifts.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
-      sortOrder: 5,
+      isEndNode: false,
+      sortOrder: 9,
       isActive: true,
     },
     {
       subtopicCode: 'COMMUNICATION_SKILLS',
-      nodeKey: 'COMMUNICATION_SKILLS_05',
+      nodeKey: 'COMMUNICATION_SKILLS_09',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Hadithi za Kawaida
@@ -2525,15 +2650,257 @@ Hadithi:
 Kutoa zawadi kunamaanisha mtu ana deni la mapenzi au ngono.
 
 Ukweli:
-Hakuna mtu anayedaiwa shughuli za ngono kwa sababu alipokea zawadi.`,
+Hakuna mtu anayedaiwa shughuli za ngono kwa sababu alipokea zawadi.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence, or help with abuse, you do not have to face it alone. You can visit the nearest hospital, health centre, dispensary, or youth-friendly health service for confidential support and guidance. You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader, or healthcare provider.
+
+If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment, or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.
+
+For additional support, guidance, or referrals, you can contact OVAH through:
+Phone/WhatsApp: 0652 522 358
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: true,
-      sortOrder: 5,
+      sortOrder: 10,
       isActive: true,
     },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili, au msaada kuhusu unyanyasaji, usibaki peke yako. Unaweza kutembelea hospitali, kituo cha afya, zahanati, au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama. Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini, au mtoa huduma za afya unayemwamini.
 
+Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono, au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.
+
+Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+Simu/WhatsApp: 0652 522 358
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Communication skills - essential for your life
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ujuzi wa mawasiliano - muhimu kwa maisha yako
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `● There are three types of communication: face-to-face, through media, and communication with yourself.
+● Listening carefully, asking open questions, and showing understanding are important skills.
+● Good communication helps you be understood and avoid unnecessary conflict.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `● Kuna aina tatu za mawasiliano: ana kwa ana, kupitia vyombo vya habari, na mawasiliano na nafsi yako mwenyewe.
+● Kusikiliza kwa makini, kuuliza maswali ya wazi, na kuonyesha kuelewa ni ujuzi muhimu.
+● Mawasiliano mazuri hukusaidia kueleweka na kuepuka migogoro isiyo ya lazima.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `True or False: Listening is only a small part of good communication.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kweli au Uongo: Kusikiliza ni sehemu ndogo tu ya mawasiliano mazuri.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Correct: B - False. Listening carefully is an important part of good communication.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Sahihi: B - Uongo. Kusikiliza kwa makini ni sehemu muhimu ya mawasiliano mazuri.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Not quite.
+
+Correct: B - False. Listening carefully is an important part of good communication.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Si sahihi.
+
+Sahihi: B - Uongo. Kusikiliza kwa makini ni sehemu muhimu ya mawasiliano mazuri.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `What type of communication do you work on the most?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ni aina gani ya mawasiliano unayoyafanyia kazi zaidi?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Are you having trouble communicating with someone? We're here to help you figure out how to talk.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'COMMUNICATION_SKILLS',
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Una changamoto ya kuwasiliana na mtu fulani? Tuko hapa kukusaidia kufikiria jinsi ya kuzungumza.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
+      isActive: true,
+    },
     {
       subtopicCode: 'DECISION_MAKING_SKILLS',
       nodeKey: 'DECISION_MAKING_SKILLS_01',
@@ -3503,8 +3870,8 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'UNHEALTHY_RELATIONSHIPS_05',
       optionValue: 'talk_skills',
-      labelEn: 'Talk skills',
-      labelSw: 'Ujuzi maongezi',
+      labelEn: 'Communication skills',
+      labelSw: 'Ujuzi wa maongezi',
       nextNodeKey: 'COMMUNICATION_SKILLS_01',
       sortOrder: 3,
       isActive: true,
@@ -3773,8 +4140,8 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'HEALTHY_RELATIONSHIPS_05',
       optionValue: 'talk_skills',
-      labelEn: 'Talk skills',
-      labelSw: 'Ujuzi maongezi',
+      labelEn: 'Communication skills',
+      labelSw: 'Ujuzi wa maongezi',
       nextNodeKey: 'COMMUNICATION_SKILLS_01',
       sortOrder: 3,
       isActive: true,
@@ -3827,8 +4194,8 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'HEALTHY_RELATIONSHIPS_07',
       optionValue: 'talk_skills',
-      labelEn: 'Talk skills',
-      labelSw: 'Ujuzi maongezi',
+      labelEn: 'Communication skills',
+      labelSw: 'Ujuzi wa maongezi',
       nextNodeKey: 'COMMUNICATION_SKILLS_01',
       sortOrder: 3,
       isActive: true,
@@ -4790,164 +5157,326 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
 
     {
       nodeKey: 'COMMUNICATION_SKILLS_01',
-      optionValue: 'face_to_face',
-      labelEn: 'Face to face',
-      labelSw: 'Uso kwa uso',
+      optionValue: 'what_comm',
+      labelEn: 'What is it?',
+      labelSw: 'Ni nini?',
       nextNodeKey: 'COMMUNICATION_SKILLS_02',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'COMMUNICATION_SKILLS_01',
-      optionValue: 'mass_messages',
-      labelEn: 'Mass messages',
-      labelSw: 'Ujumbe kwa wengi',
+      optionValue: 'face_to_face',
+      labelEn: 'Communication Types',
+      labelSw: 'Aina ya mawasiliano',
       nextNodeKey: 'COMMUNICATION_SKILLS_03',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'COMMUNICATION_SKILLS_01',
-      optionValue: 'self_talk',
-      labelEn: 'Self talk',
-      labelSw: 'Kujisemea',
-      nextNodeKey: 'COMMUNICATION_SKILLS_04',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
       nodeKey: 'COMMUNICATION_SKILLS_02',
-      optionValue: 'mass_messages',
-      labelEn: 'Mass messages',
-      labelSw: 'Ujumbe kwa wengi',
+      optionValue: 'face_to_face',
+      labelEn: 'Face to face',
+      labelSw: 'Ana kwa ana',
       nextNodeKey: 'COMMUNICATION_SKILLS_03',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'COMMUNICATION_SKILLS_02',
-      optionValue: 'self_talk',
-      labelEn: 'Self talk',
-      labelSw: 'Kujisemea',
+      optionValue: 'mass_comm',
+      labelEn: 'Mass comm',
+      labelSw: 'Mawasiliano umma',
       nextNodeKey: 'COMMUNICATION_SKILLS_04',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'COMMUNICATION_SKILLS_02',
-      optionValue: 'what_skills',
-      labelEn: 'Soft skills?',
-      labelSw: 'Ujuzi laini ni nini?',
-      nextNodeKey: 'COMMUNICATION_SKILLS_06',
+      optionValue: 'personal_comm',
+      labelEn: 'Personal comm',
+      labelSw: 'Ya kibinafsi',
+      nextNodeKey: 'COMMUNICATION_SKILLS_05',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'COMMUNICATION_SKILLS_03',
-      optionValue: 'self_talk',
-      labelEn: 'Self talk',
-      labelSw: 'Kujisemea?',
+      optionValue: 'mass_comm',
+      labelEn: 'Mass comm',
+      labelSw: 'Mawasiliano umma',
       nextNodeKey: 'COMMUNICATION_SKILLS_04',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'COMMUNICATION_SKILLS_03',
-      optionValue: 'what_skills',
-      labelEn: 'Soft skills?',
-      labelSw: 'Ujuzi laini ni nini?',
-      nextNodeKey: 'COMMUNICATION_SKILLS_06',
+      optionValue: 'personal_comm',
+      labelEn: 'Personal comm',
+      labelSw: 'Ya kibinafsi',
+      nextNodeKey: 'COMMUNICATION_SKILLS_05',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'COMMUNICATION_SKILLS_03',
-      optionValue: 'any_myths',
-      labelEn: 'Any myths?',
-      labelSw: 'Uongo wowote?',
-      nextNodeKey: 'COMMUNICATION_SKILLS_05',
+      optionValue: 'good_skills',
+      labelEn: 'Good skills',
+      labelSw: 'Ujuzi mzuri',
+      nextNodeKey: 'COMMUNICATION_SKILLS_06',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'COMMUNICATION_SKILLS_04',
-      optionValue: 'what_skills',
-      labelEn: 'Soft skills?',
-      labelSw: 'Ujuzi laini ni nini?',
+      optionValue: 'personal_comm',
+      labelEn: 'Personal comm',
+      labelSw: 'Ya kibinafsi',
+      nextNodeKey: 'COMMUNICATION_SKILLS_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_04',
+      optionValue: 'good_skills',
+      labelEn: 'Nice to have',
+      labelSw: 'Ujuzi mzuri ukoje?',
+      nextNodeKey: 'COMMUNICATION_SKILLS_06',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_05',
+      optionValue: 'good_skills',
+      labelEn: 'Nice to have',
+      labelSw: 'Ujuzi mzuri ukoje?',
       nextNodeKey: 'COMMUNICATION_SKILLS_06',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'COMMUNICATION_SKILLS_04',
-      optionValue: 'any_myths',
-      labelEn: 'Any myths?',
-      labelSw: 'Uongo wowote?',
-      nextNodeKey: 'COMMUNICATION_SKILLS_05',
+      nodeKey: 'COMMUNICATION_SKILLS_05',
+      optionValue: 'why_it_matters',
+      labelEn: 'Why it matters?',
+      labelSw: 'Umuhimu wake?',
+      nextNodeKey: 'COMMUNICATION_SKILLS_07',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'COMMUNICATION_SKILLS_04',
-      optionValue: 'how_decide',
-      labelEn: 'How to decide?',
-      labelSw: 'Kufanya maamuzi',
-      nextNodeKey: 'DECISION_MAKING_SKILLS_01',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
       nodeKey: 'COMMUNICATION_SKILLS_06',
-      optionValue: 'any_myths',
-      labelEn: 'Any myths?',
-      labelSw: 'Uongo wowote?',
-      nextNodeKey: 'COMMUNICATION_SKILLS_05',
+      optionValue: 'why_it_matters',
+      labelEn: 'Why it matters?',
+      labelSw: 'Umuhimu wake?',
+      nextNodeKey: 'COMMUNICATION_SKILLS_07',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'COMMUNICATION_SKILLS_06',
-      optionValue: 'how_decide',
-      labelEn: 'How to decide?',
-      labelSw: 'Kufanya maamuzi',
-      nextNodeKey: 'DECISION_MAKING_SKILLS_01',
+      optionValue: 'more_topics',
+      labelEn: 'Anything else?',
+      labelSw: 'Kuna Lingine?',
+      nextNodeKey: 'COMMUNICATION_SKILLS_08',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'COMMUNICATION_SKILLS_06',
-      optionValue: 'negotiate',
-      labelEn: 'Why we negotiate?',
-      labelSw: 'Kwanini majadiliano?',
-      nextNodeKey: 'NEGOTIATION_SKILLS_01',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'COMMUNICATION_SKILLS_05',
-      optionValue: 'how_decide',
-      labelEn: 'How to decide?',
-      labelSw: 'Kufanya maamuzi',
-      nextNodeKey: 'DECISION_MAKING_SKILLS_01',
+      nodeKey: 'COMMUNICATION_SKILLS_07',
+      optionValue: 'more_topics',
+      labelEn: 'Anything else?',
+      labelSw: 'Kuna Lingine?',
+      nextNodeKey: 'COMMUNICATION_SKILLS_08',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'COMMUNICATION_SKILLS_05',
-      optionValue: 'negotiate',
-      labelEn: 'Why we negotiate?',
-      labelSw: 'Kwanini majadiliano?',
-      nextNodeKey: 'NEGOTIATION_SKILLS_01',
+      nodeKey: 'COMMUNICATION_SKILLS_07',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime',
+      nextNodeKey: 'COMMUNICATION_SKILLS_REFRESHER_01',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'COMMUNICATION_SKILLS_05',
+      nodeKey: 'COMMUNICATION_SKILLS_07',
+      optionValue: 'myths',
+      labelEn: 'Common myths',
+      labelSw: 'Dhana potofu',
+      nextNodeKey: 'COMMUNICATION_SKILLS_09',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_08',
+      optionValue: 'healthy_rel',
+      labelEn: 'Yes',
+      labelSw: 'Ndiyo',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_01',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_08',
+      optionValue: 'myths',
+      labelEn: 'Common myths',
+      labelSw: 'Dhana potofu',
+      nextNodeKey: 'COMMUNICATION_SKILLS_09',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_08',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime',
+      nextNodeKey: 'COMMUNICATION_SKILLS_REFRESHER_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_09',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'COMMUNICATION_SKILLS_10',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_09',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime',
+      nextNodeKey: 'COMMUNICATION_SKILLS_REFRESHER_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_09',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
       sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_10',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_01',
+      optionValue: 'start_refresher',
+      labelEn: 'Start refresher',
+      labelSw: 'Anza marejeo',
+      nextNodeKey: 'COMMUNICATION_SKILLS_REFRESHER_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_02',
+      optionValue: 'start_quiz',
+      labelEn: 'Start quiz',
+      labelSw: 'Anza jaribio',
+      nextNodeKey: 'COMMUNICATION_SKILLS_REFRESHER_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_03',
+      optionValue: 'true',
+      labelEn: 'A) True',
+      labelSw: 'A) Kweli',
+      nextNodeKey: 'COMMUNICATION_SKILLS_REFRESHER_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_03',
+      optionValue: 'false',
+      labelEn: 'B) False',
+      labelSw: 'B) Uongo',
+      nextNodeKey: 'COMMUNICATION_SKILLS_REFRESHER_04',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_04',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali lingine',
+      nextNodeKey: 'COMMUNICATION_SKILLS_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_05',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali lingine',
+      nextNodeKey: 'COMMUNICATION_SKILLS_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_06',
+      optionValue: 'listening',
+      labelEn: 'A) Listening',
+      labelSw: 'A) Kusikiliza',
+      nextNodeKey: 'COMMUNICATION_SKILLS_REFRESHER_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_06',
+      optionValue: 'expressing',
+      labelEn: 'B) Expressing',
+      labelSw: 'B) Kujieleza',
+      nextNodeKey: 'COMMUNICATION_SKILLS_REFRESHER_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_06',
+      optionValue: 'both',
+      labelEn: 'C) Both',
+      labelSw: 'C) Zote',
+      nextNodeKey: 'COMMUNICATION_SKILLS_REFRESHER_07',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_06',
+      optionValue: 'still_learning',
+      labelEn: 'D) Still learning',
+      labelSw: 'D) Bado najifunza',
+      nextNodeKey: 'COMMUNICATION_SKILLS_REFRESHER_07',
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_07',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'COMMUNICATION_SKILLS_10',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'COMMUNICATION_SKILLS_REFRESHER_07',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 2,
       isActive: true,
     },
     {
@@ -5627,7 +6156,3 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     },
   ],
 };
-
-
-
-
