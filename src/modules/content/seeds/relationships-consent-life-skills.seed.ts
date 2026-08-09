@@ -158,7 +158,7 @@ export const relationshipsConsentLifeSkillsSeed = {
       nodeKey: 'UNHEALTHY_RELATIONSHIPS_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `An unhealthy relationship is one where respect, trust, safety, and equality are missing. In unhealthy relationships, one person may try to control, manipulate, pressure, threaten, or harm another person.
+      messageText: `Knowing what an unhealthy relationship looks like is just as important as knowing what a healthy one looks like. Recognizing the warning signs can help you protect yourself and seek support when needed.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -172,8 +172,8 @@ export const relationshipsConsentLifeSkillsSeed = {
       nodeKey: 'UNHEALTHY_RELATIONSHIPS_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Uhusiano usio na afya ni ule ambapo heshima, uaminifu, usalama, na usawa vinakosekana. Katika mahusiano yasiyo na afya, mtu mmoja anaweza kujaribu kudhibiti, kuendesha, kumshinikiza, kutishia, au kumdhuru mtu mwingine.
-      `,
+      messageText: `Kujua uhusiano usio na afya ni muhimu kama vile kujua uhusiano wenye afya unaonekanaje. Kutambua ishara za onyo kunaweza kukusaidia kujilinda na kutafuta msaada inapohitajika.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -186,25 +186,7 @@ export const relationshipsConsentLifeSkillsSeed = {
       nodeKey: 'UNHEALTHY_RELATIONSHIPS_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Warning Signs
-    ● Controlling Behaviour Examples: Telling someone who they can talk to, demanding passwords, monitoring phone calls or messages or preventing someone from attending school.
-    ● Jealousy Examples: Constant accusations, demanding proof of loyalty and becoming angry over normal friendships.
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
-      nodeKey: 'UNHEALTHY_RELATIONSHIPS_02',
-      nodeType: NodeType.CONTENT,
-      language: Language.SW,
-      messageText: `Ishara za Onyo
-    ● Mifano ya Kudhibiti Tabia: Kumwambia mtu ambaye anaweza kuzungumza naye, kudai nywila, kufuatilia simu au ujumbe au kumzuia mtu kuhudhuria shule.
-    ● Mifano ya Wivu: Shutuma za mara kwa mara, kudai uthibitisho wa uaminifu na kukasirika kwa urafiki wa kawaida.
+      messageText: `An unhealthy relationship is one where a person feels unsafe, disrespected, controlled, or afraid. It may involve dishonesty, pressure, manipulation, or abuse instead of trust, kindness, and mutual respect.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -213,20 +195,39 @@ export const relationshipsConsentLifeSkillsSeed = {
       sortOrder: 2,
       isActive: true,
     },
-
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Uhusiano usio na afya ni ule ambapo mtu huhisi hana usalama, haheshimiwi, hadhibitiwi, au anaogopa. Huenda ukahusisha kutokuwa mwaminifu, shinikizo, udanganyifu, au unyanyasaji badala ya uaminifu, wema, na heshima ya pande zote.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 2,
+      isActive: true,
+    },
     {
       subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
       nodeKey: 'UNHEALTHY_RELATIONSHIPS_03',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Warning Signs
-    ● Pressure Examples: Pressuring someone into a relationship, pressuring someone to have sex, pressuring someone to send private photos.
-    ● Emotional Abuse Examples: Insults, humiliation, threats and constant criticism.
-    ● Physical Violence Examples: Slapping, hitting, pushing and physical intimidation`,
+      messageText: `Signs of an Unhealthy Relationship
+
+  ● Disrespect
+One person ignores or dismisses the other's feelings, opinions, choices, or boundaries.
+
+Examples:
+  ● Insulting or humiliating someone.
+  ● Refusing to accept "no" as an answer.
+  ● Forcing someone to do things they don't want to do.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 3,
       isActive: true,
     },
@@ -235,25 +236,273 @@ export const relationshipsConsentLifeSkillsSeed = {
       nodeKey: 'UNHEALTHY_RELATIONSHIPS_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Ishara za Onyo
-    ● Mifano ya Shinikizo: Kumshinikiza mtu kwenye uhusiano, kumshinikiza mtu kufanya ngono, kumshinikiza mtu kutuma picha za faragha.
-    ● Mifano ya Unyanyasaji wa Kihisia: Matusi, aibu, vitisho na ukosoaji wa mara kwa mara.
-    ● Mifano ya Ukatili wa Kimwili: Kupigwa kofi, kupigwa, kusukuma na vitisho vya kimwili`,
+      messageText: `Ishara za Uhusiano Usio na Afya
+
+  ● Kutoheshimu
+Mtu mmoja hupuuza au kupuuza hisia, maoni, chaguo, au mipaka ya mwingine.
+
+Mifano:
+  ● Kumtukana au kumdhalilisha mtu.
+  ● Kukataa kukubali "hapana" kama jibu.
+  ● Kumlazimisha mtu kufanya mambo ambayo hawataki kufanya.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Dishonesty and Broken Trust
+Trust is damaged when people are dishonest or fail to respect each other's privacy.
+
+Examples:
+  ● Lying frequently.
+  ● Breaking promises.
+  ● Sharing someone's private information without permission.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ukosefu wa Uaminifu na Kuvunjika kwa Uaminifu
+Uaminifu huharibika wakati watu si waaminifu au wanaposhindwa kuheshimu faragha ya kila mmoja.
+
+Mifano:
+  ● Kusema uongo mara kwa mara.
+  ● Kuvunja ahadi.
+  ● Kushiriki taarifa za faragha za mtu bila ruhusa.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Poor Communication
+Problems are handled through shouting, insults, threats, or silence instead of respectful discussion.
+
+Examples:
+  ● Yelling during disagreements.
+  ● Ignoring someone's feelings.
+  ● Using hurtful words instead of talking calmly.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Mawasiliano Duni
+Matatizo hushughulikiwa kupitia kupiga kelele, matusi, vitisho, au ukimya badala ya majadiliano ya heshima.
+
+Mifano:
+  ● Kupiga kelele wakati wa kutokubaliana.
+  ● Kupuuza hisia za mtu.
+  ● Kutumia maneno ya kuumiza badala ya kuzungumza kwa utulivu.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Control and Unequal Power
+One person tries to control the other's decisions, friendships, appearance, or daily activities.
+
+Examples:
+  ● Telling someone who they can talk to or spend time with.
+  ● Checking someone's phone or social media without permission.
+  ● Using threats, fear, or guilt to get what they want.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Udhibiti na Nguvu Isiyo sawa
+Mtu mmoja anajaribu kudhibiti maamuzi ya mwingine, urafiki, mwonekano, au shughuli za kila siku.
+
+Mifano:
+  ● Kumwambia mtu ambaye anaweza kuzungumza naye au kutumia muda naye.
+  ● Kuangalia simu ya mtu au mitandao ya kijamii bila ruhusa.
+  ● Kutumia vitisho, hofu, au hatia ili kupata anachotaka.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Lack of Support
+Instead of encouraging each other, one person puts the other down or prevents them from reaching their goals.
+
+Examples:
+  ● Discouraging someone from going to school.
+  ● Mocking or criticizing their dreams.
+  ● Making them feel guilty for succeeding.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ukosefu wa Usaidizi
+Badala ya kutiana moyo, mtu mmoja humdharau mwingine au kumzuia kufikia malengo yake.
+
+Mifano:
+  ● Kumkatisha tamaa mtu kwenda shule.
+  ● Kudhihaki au kukosoa ndoto zake.
+  ● Kumfanya ahisi hatia kwa kufanikiwa.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Remember, a healthy relationship should never make you feel afraid, pressured, controlled, or worthless. You deserve relationships where you are respected, listened to, and supported.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kumbuka, uhusiano mzuri haupaswi kamwe kukufanya uhisi hofu, shinikizo, udhibiti, au kutokuwa na thamani. Unastahili mahusiano ambapo unaheshimiwa, unasikilizwa, na kuungwa mkono.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you notice these warning signs in your own relationship or someone else's, talk to a trusted adult, parent, guardian, teacher, school counselor, healthcare provider, or another trusted person. Seeking help is a positive step toward protecting your wellbeing and safety.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ukiona ishara hizi za onyo katika uhusiano wako au wa mtu mwingine, zungumza na mtu mzima unayemwamini, mzazi, mlezi, mwalimu, mshauri wa shule, mtoa huduma ya afya, au mtu mwingine unayemwamini. Kutafuta msaada ni hatua nzuri kuelekea kulinda ustawi na usalama wako.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Would you like to learn more about recognizing emotional abuse, setting healthy boundaries, leaving unhealthy relationships, or where to seek help? I'm here to support you.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: true,
-      sortOrder: 3,
+      sortOrder: 10,
       isActive: true,
     },
-
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ungependa kujifunza zaidi kuhusu kutambua unyanyasaji wa kihisia, kuweka mipaka inayofaa, kuacha mahusiano yasiyofaa, au wapi pa kutafuta msaada? Niko hapa kukusaidia.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 10,
+      isActive: true,
+    },
     {
       subtopicCode: 'HEALTHY_RELATIONSHIPS',
       nodeKey: 'HEALTHY_RELATIONSHIPS_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `A healthy relationship is a relationship where people treat each other with respect, honesty, trust, kindness, and care. Healthy relationships can exist between friends, family members, classmates, romantic partners, and community members.
-A healthy relationship helps people feel safe, valued, supported, and respected.
+      messageText: `Healthy relationships help us feel safe, respected, and supported. They can be with friends, family members, classmates, romantic partners, or people in our community.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -267,7 +516,7 @@ A healthy relationship helps people feel safe, valued, supported, and respected.
       nodeKey: 'HEALTHY_RELATIONSHIPS_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Uhusiano mzuri ni uhusiano ambapo watu hutendeana kwa heshima, uaminifu, uaminifu, wema, na kujaliana. Mahusiano mazuri yanaweza kuwepo kati ya marafiki, wanafamilia, wanafunzi wenza, wenzi wa kimapenzi, na wanajamii. Uhusiano mzuri huwasaidia watu kujisikia salama, wanathaminiwa, wanaungwa mkono, na wanaheshimika.
+      messageText: `Mahusiano yenye afya hutusaidia kujisikia salama, kuheshimiwa, na kuungwa mkono. Yanaweza kuwa na marafiki, wanafamilia, wanafunzi wenza, wapenzi, au watu katika jamii yetu.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -281,9 +530,7 @@ A healthy relationship helps people feel safe, valued, supported, and respected.
       nodeKey: 'HEALTHY_RELATIONSHIPS_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Characteristics of Healthy Relationships
-    ● Respect: Each person respects the other person's feelings, opinions, choices, beliefs, and boundaries. Examples, Listening when someone speaks, accepting "no" as an answer, not forcing someone to do something they do not want.
-    ● Trust: People trust each other and are honest. Examples, Keeping promises, being truthful, and not spreading private information.
+      messageText: `A healthy relationship is built on respect, honesty, trust, kindness, and care. In a healthy relationship, both people feel valued, listened to, and free to be themselves.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -297,9 +544,7 @@ A healthy relationship helps people feel safe, valued, supported, and respected.
       nodeKey: 'HEALTHY_RELATIONSHIPS_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Sifa za Mahusiano Bora
-    ● Heshima: Kila mtu anaheshimu hisia, maoni, chaguo, imani, na mipaka ya mtu mwingine. Mifano, Kusikiliza mtu anapozungumza, kukubali "hapana" kama jibu, kutolazimisha mtu kufanya kitu ambacho hawataki.
-    ● Kuaminiana: Watu wanaaminiana na ni waaminifu. Mifano, Kutimiza ahadi, kuwa wakweli, na kutosambaza taarifa za faragha.
+      messageText: `Mahusiano yenye afya hujengwa juu ya heshima, uaminifu, uaminifu, wema, na utunzaji. Katika uhusiano wenye afya, watu wote wawili huhisi wanathaminiwa, wanasikilizwa, na wako huru kuwa wao wenyewe.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -310,13 +555,59 @@ A healthy relationship helps people feel safe, valued, supported, and respected.
     },
     {
       subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Characteristics of a Healthy Relationship
+Respect
+  ● Each person respects the other's feelings, opinions, choices, beliefs, and boundaries.
+
+Examples:
+  ● Listening when someone is speaking.
+  ● Accepting "no" as an answer.
+  ● Not forcing someone to do something they don't want to do.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Sifa za Uhusiano Wenye Afya
+Heshima
+  ● Kila mtu huheshimu hisia, maoni, chaguo, imani, na mipaka ya mwenzake.
+
+Mifano:
+  ● Kusikiliza mtu anapozungumza.
+  ● Kukubali "hapana" kama jibu.
+  ● Kutokumlazimisha mtu kufanya kitu ambacho hataki kufanya.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
       nodeKey: 'HEALTHY_RELATIONSHIPS_04',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Characteristics of Healthy Relationships
-    ● Good Communication: People talk openly and respectfully. Examples, Expressing feelings calmly, asking questions when confused and solving disagreements through discussion.
-    ● Equality: One person should not control the other. Examples, Decisions are discussed together, both people have equal value and no one uses fear or threats.
-    ● Support: People encourage each other's goals, education, health, and wellbeing. Examples, supporting school attendance, encouraging positive choices and celebrating achievements.`,
+      messageText: `Trust
+  ● Healthy relationships are built on honesty and trust.
+
+Examples:
+  ● Keeping promises.
+  ● Being truthful.
+  ● Respecting each other's privacy and not sharing personal information without permission.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -329,10 +620,14 @@ A healthy relationship helps people feel safe, valued, supported, and respected.
       nodeKey: 'HEALTHY_RELATIONSHIPS_04',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Sifa za Mahusiano Bora
-    ● Mawasiliano Mazuri: Watu huzungumza waziwazi na kwa heshima. Mifano, Kuelezea hisia kwa utulivu, kuuliza maswali wanapochanganyikiwa na kutatua kutokubaliana kupitia majadiliano.
-    ● Usawa: Mtu mmoja hapaswi kumdhibiti mwingine. Mifano, Maamuzi hujadiliwa pamoja, watu wote wana thamani sawa na hakuna anayetumia hofu au vitisho.
-    ● Usaidizi: Watu huhimizana malengo, elimu, afya, na ustawi. Mifano: Kuunga mkono mahudhurio shuleni, kuhimiza chaguzi chanya na kusherehekea mafanikio.`,
+      messageText: `Kuaminiana
+  ● Mahusiano yenye afya hujengwa juu ya uaminifu na uaminifu.
+
+Mifano:
+  ● Kutimiza ahadi.
+  ● Kuwa mkweli.
+  ● Kuheshimu faragha ya kila mmoja na kutoshiriki taarifa binafsi bila ruhusa.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -342,49 +637,588 @@ A healthy relationship helps people feel safe, valued, supported, and respected.
     },
     {
       subtopicCode: 'HEALTHY_RELATIONSHIPS',
-      nodeKey: 'HEALTHY_RELATIONSHIPS_03',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_05',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Common Questions Adolescents Ask
+      messageText: `Good Communication
+  ● People talk openly, honestly, and respectfully.
 
-Q: Is it healthy if my friend gets angry when I spend time with other friends?
-A: Healthy friendships allow people to have multiple friendships and relationships.
-
-Q: Can couples disagree and still have a healthy relationship?
-A: Yes. Disagreements are normal. What matters is how they are handled.
-
-Q: Should someone prove love by giving gifts?
-A: Gifts are not proof of love. Respect, trust, and kindness are more important.`,
+Examples:
+  ● Expressing feelings calmly.
+  ● Asking questions when something is unclear.
+  ● Solving disagreements through respectful discussion.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
-      sortOrder: 3,
+      isEndNode: false,
+      sortOrder: 5,
       isActive: true,
     },
     {
       subtopicCode: 'HEALTHY_RELATIONSHIPS',
-      nodeKey: 'HEALTHY_RELATIONSHIPS_03',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_05',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Maswali Yanayoulizwa Mara kwa Mara na Vijana
+      messageText: `Mawasiliano Mazuri
+  ● Watu huzungumza waziwazi, kwa uaminifu, na kwa heshima.
 
-Swali: Je, ni jambo zuri rafiki yangu akikasirika ninapotumia muda na marafiki wengine?
-Jibu: Urafiki mzuri huruhusu watu kuwa na urafiki na mahusiano mengi.
+Mifano:
+  ● Kuonyesha hisia kwa utulivu.
+  ● Kuuliza maswali wakati jambo halieleweki.
+  ● Kutatua kutokubaliana kupitia majadiliano ya heshima.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Equality
+  ● Both people are equally important, and no one controls or threatens the other.
 
-Swali: Je, wanandoa wanaweza kutokubaliana na bado wakawa na uhusiano mzuri?
-Jibu: Ndiyo. Kutokubaliana ni jambo la kawaida. Kinachojalisha ni jinsi yanavyoshughulikiwa.
+Examples:
+  ● Making decisions together.
+  ● Respecting each other's opinions.
+  ● Treating each other fairly.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Usawa
+  ● Watu wote wawili ni muhimu sawa, na hakuna anayemdhibiti au kumtishia mwenzake.
 
-Swali: Je, mtu anapaswa kuthibitisha upendo kwa kutoa zawadi?
-Jibu: Zawadi si uthibitisho wa upendo. Heshima, uaminifu, na wema ni muhimu zaidi.`,
+Mifano:
+  ● Kufanya maamuzi pamoja.
+  ● Kuheshimu maoni ya kila mmoja.
+  ● Kutendeana kwa haki.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Support
+  ● People encourage each other to grow, learn, and make healthy choices.
+
+Examples:
+  ● Supporting education and personal goals.
+  ● Encouraging positive decisions.
+  ● Celebrating each other's achievements.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kusaidiana
+  ● Watu huhimizana kukua, kujifunza, na kufanya maamuzi yenye afya.
+
+Mifano:
+  ● Kuunga mkono elimu na malengo binafsi.
+  ● Kuhimiza maamuzi chanya.
+  ● Kusherehekea mafanikio ya kila mmoja.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Remember, a healthy relationship should make you feel respected, safe, supported, and able to be yourself. If someone controls you, threatens you, or makes you feel afraid, that is not a healthy relationship.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kumbuka, uhusiano mzuri unapaswa kukufanya uhisi unaheshimiwa, salama, unaungwa mkono, na unaweza kuwa wewe mwenyewe. Ikiwa mtu anakudhibiti, anakutishia, au anakufanya uhisi hofu, huo si uhusiano mzuri.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Would you like to learn more about unhealthy relationships, setting boundaries, communication skills, or recognizing warning signs of abuse? I'm here to help.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: true,
-      sortOrder: 3,
+      sortOrder: 9,
       isActive: true,
     },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ungependa kujifunza zaidi kuhusu mahusiano yasiyo na afya, kuweka mipaka, ujuzi wa mawasiliano, au kutambua dalili za onyo za unyanyasaji? Niko hapa kukusaidia.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Unsafe relationships - how to recognize them
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Mahusiano yasiyo salama - jinsi ya kuyatambua
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `● In an unsafe relationship, one person may control, threaten, or harm the other.
+● Warning signs include excessive jealousy, pressure, verbal abuse, and even physical violence.
+● No one deserves to be controlled or harmed in any relationship.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `● Katika mahusiano yasiyo salama, mtu mmoja anaweza kudhibiti, kutishia, au kudhuru mwenzake.
+● Ishara za onyo ni pamoja na wivu wa kupindukia, shinikizo, matusi, na hata ukatili wa kimwili.
+● Hakuna anayestahili kudhibitiwa au kudhuriwa katika uhusiano wowote.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `True or False: Frequent jealousy is a sign of true love.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kweli au Uongo: Wivu wa mara kwa mara ni ishara ya upendo wa kweli.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Correct: B - False. Excessive jealousy is a sign of control, not love.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Sahihi: B - Uongo. Wivu wa kupindukia ni ishara ya udhibiti, si upendo.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Not quite.
 
+Correct: B - False. Excessive jealousy is a sign of control, not love.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Si sahihi.
+
+Sahihi: B - Uongo. Wivu wa kupindukia ni ishara ya udhibiti, si upendo.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Have you ever seen these signs in a relationship with someone you know?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Umeshawahi kuona ishara hizi katika uhusiano wa mtu unayemjua?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Do you feel like you're in an unsafe relationship? We're here to listen and help.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNHEALTHY_RELATIONSHIPS',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unahisi uko katika uhusiano usio salama? Tuko hapa kukusikiliza na kukusaidia.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `What do good relationships look like?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Mahusiano mazuri yanaonekanaje?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `● Respect, trust, good communication, and equality are the pillars of a good relationship.
+● People in a good relationship listen to each other, take "no" for an answer, and don't force anything on each other.
+● A good relationship makes you feel safe and valued, not controlled.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `● Heshima, uaminifu, mawasiliano mazuri, na usawa ndizo nguzo za uhusiano mzuri.
+● Watu katika uhusiano mzuri husikilizana, hukubali "hapana" kama jibu, na hawalazimishani chochote.
+● Uhusiano mzuri hukufanya ujisikie salama na kuthaminiwa, si kudhibitiwa.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `True or False: Gifts are proof of true love.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kweli au Uongo: Zawadi ni uthibitisho wa upendo wa kweli.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Correct: B - False. Respect and trust are the most important.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Sahihi: B - Uongo. Heshima na uaminifu ndiyo muhimu zaidi.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Not quite.
+
+Correct: B - False. Respect and trust are the most important.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Si sahihi.
+
+Sahihi: B - Uongo. Heshima na uaminifu ndiyo muhimu zaidi.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `What is most important to you in a relationship?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ni nini muhimu zaidi kwako katika uhusiano?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Do you have a question about your relationship? We're here to help.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HEALTHY_RELATIONSHIPS',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Una swali kuhusu uhusiano wako? Tuko hapa kusaidia.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
+      isActive: true,
+    },
     {
       subtopicCode: 'UNDERSTANDING_CONSENT',
       nodeKey: 'UNDERSTANDING_CONSENT_01',
@@ -1754,78 +2588,240 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
   contentNodeOptions: [
     {
       nodeKey: 'UNHEALTHY_RELATIONSHIPS_01',
-      optionValue: 'what_signs',
-      labelEn: 'What are the signs?',
-      labelSw: 'Dalili zikoje?',
+      optionValue: 'what_unhealthy',
+      labelEn: 'What is it?',
+      labelSw: 'Maana yake nini?',
       nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_02',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'UNHEALTHY_RELATIONSHIPS_01',
-      optionValue: 'healthy_signs',
-      labelEn: 'Healthy signs?',
-      labelSw: 'Dalili nzuri',
-      nextNodeKey: 'HEALTHY_RELATIONSHIPS_01',
+      optionValue: 'warning_signs',
+      labelEn: 'Warning signs',
+      labelSw: 'Dalili za onyo',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_03',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'UNHEALTHY_RELATIONSHIPS_01',
-      optionValue: 'what_consent',
-      labelEn: 'What is consent?',
-      labelSw: 'Ridhaa ni nini?',
-      nextNodeKey: 'UNDERSTANDING_CONSENT_01',
+      optionValue: 'healthy_signs',
+      labelEn: 'Healthy signs',
+      labelSw: 'Dalili nzuri',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'UNHEALTHY_RELATIONSHIPS_02',
-      optionValue: 'more_signs',
-      labelEn: 'More signs?',
-      labelSw: 'Dalili zaidi?',
+      optionValue: 'disrespect',
+      labelEn: 'Disrespect signs',
+      labelSw: 'Kutoheshimu',
       nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_03',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'UNHEALTHY_RELATIONSHIPS_02',
-      optionValue: 'need_respect',
-      labelEn: 'Need respect?',
-      labelSw: 'Unahitaji heshima?',
-      nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
+      optionValue: 'broken_trust',
+      labelEn: 'Broken trust',
+      labelSw: 'Uaminifu kuvunjika',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_04',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'UNHEALTHY_RELATIONSHIPS_02',
+      optionValue: 'consent_basics',
+      labelEn: 'Consent basics',
+      labelSw: 'Msingi wa ridhaa',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_03',
+      optionValue: 'broken_trust',
+      labelEn: 'Broken trust',
+      labelSw: 'Uaminifu kuvunjika',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_03',
+      optionValue: 'poor_communication',
+      labelEn: 'Poor communication',
+      labelSw: 'Mawasiliano duni',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_03',
+      optionValue: 'set_boundaries',
+      labelEn: 'Set boundaries',
+      labelSw: 'Weka mipaka',
+      nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_04',
+      optionValue: 'poor_communication',
+      labelEn: 'Poor communication',
+      labelSw: 'Mawasiliano duni',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_04',
+      optionValue: 'control_signs',
+      labelEn: 'Control signs',
+      labelSw: 'Dalili udhibiti',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_06',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_04',
       optionValue: 'healthy_signs',
-      labelEn: 'Healthy signs?',
+      labelEn: 'Healthy signs',
       labelSw: 'Dalili nzuri',
       nextNodeKey: 'HEALTHY_RELATIONSHIPS_01',
       sortOrder: 3,
       isActive: true,
     },
     {
-      nodeKey: 'UNHEALTHY_RELATIONSHIPS_03',
-      optionValue: 'what_healthy',
-      labelEn: 'What is healthy?',
-      labelSw: 'Uhusiano mzuri',
-      nextNodeKey: 'HEALTHY_RELATIONSHIPS_01',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_05',
+      optionValue: 'control_signs',
+      labelEn: 'Control signs',
+      labelSw: 'Dalili udhibiti',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_06',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'UNHEALTHY_RELATIONSHIPS_03',
-      optionValue: 'how_limits',
-      labelEn: 'How to set limits?',
-      labelSw: 'Mipaka vipi?',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_05',
+      optionValue: 'lack_support',
+      labelEn: 'Lack of support',
+      labelSw: 'Kukosa usaidizi',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_05',
+      optionValue: 'talk_skills',
+      labelEn: 'Talk skills',
+      labelSw: 'Ujuzi maongezi',
+      nextNodeKey: 'COMMUNICATION_SKILLS_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_06',
+      optionValue: 'lack_support',
+      labelEn: 'Lack of support',
+      labelSw: 'Kukosa usaidizi',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_06',
+      optionValue: 'seek_support',
+      labelEn: 'Seek support',
+      labelSw: 'Tafuta msaada',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_09',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_06',
+      optionValue: 'key_reminder',
+      labelEn: 'Key reminder',
+      labelSw: 'Kumbuka',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_08',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_07',
+      optionValue: 'key_reminder',
+      labelEn: 'Key reminder',
+      labelSw: 'Kumbuka',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_08',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_07',
+      optionValue: 'seek_support',
+      labelEn: 'Seek support',
+      labelSw: 'Tafuta msaada',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_09',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_07',
+      optionValue: 'healthy_signs',
+      labelEn: 'Healthy signs',
+      labelSw: 'Dalili nzuri',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_08',
+      optionValue: 'seek_support',
+      labelEn: 'Seek support',
+      labelSw: 'Tafuta msaada',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_09',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_08',
+      optionValue: 'more_topics',
+      labelEn: 'More topics',
+      labelSw: 'Mada zaidi',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_10',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_08',
+      optionValue: 'set_boundaries',
+      labelEn: 'Set boundaries',
+      labelSw: 'Kuweka mipaka',
+      nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_09',
+      optionValue: 'more_topics',
+      labelEn: 'More topics',
+      labelSw: 'Mada zaidi',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_10',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_09',
+      optionValue: 'set_boundaries',
+      labelEn: 'Set boundaries',
+      labelSw: 'Kuweka mipaka',
       nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'UNHEALTHY_RELATIONSHIPS_03',
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_09',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
@@ -1834,19 +2830,46 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
       isActive: true,
     },
     {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_10',
+      optionValue: 'how_refuse',
+      labelEn: 'Yes, please',
+      labelSw: 'Ndio, nielezee',
+      nextNodeKey: 'REFUSING_UNWANTED_SEXUAL_PRESSURE_01',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_10',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_10',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
       nodeKey: 'HEALTHY_RELATIONSHIPS_01',
-      optionValue: 'what_qualities',
-      labelEn: 'What qualities?',
-      labelSw: 'Sifa za huu uhusiano',
+      optionValue: 'what_healthy',
+      labelEn: 'What is it?',
+      labelSw: 'Maana yake nini?',
       nextNodeKey: 'HEALTHY_RELATIONSHIPS_02',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'HEALTHY_RELATIONSHIPS_01',
-      optionValue: 'any_questions',
-      labelEn: 'Any questions?',
-      labelSw: 'Maswali ya kujiuliza',
+      optionValue: 'respect',
+      labelEn: 'Show respect',
+      labelSw: 'Heshima',
       nextNodeKey: 'HEALTHY_RELATIONSHIPS_03',
       sortOrder: 2,
       isActive: true,
@@ -1854,91 +2877,397 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'HEALTHY_RELATIONSHIPS_01',
       optionValue: 'what_consent',
-      labelEn: 'What is consent?',
-      labelSw: 'Ridhaa ni nini?',
+      labelEn: 'Consent basics',
+      labelSw: 'Msingi wa ridhaa',
       nextNodeKey: 'UNDERSTANDING_CONSENT_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'HEALTHY_RELATIONSHIPS_02',
-      optionValue: 'more_qualities',
-      labelEn: 'More qualities?',
-      labelSw: 'Sifa zaidi?',
+      optionValue: 'respect',
+      labelEn: 'Show respect',
+      labelSw: 'Heshima',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_02',
+      optionValue: 'trust',
+      labelEn: 'Building trust',
+      labelSw: 'Kuaminiana',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_04',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_02',
+      optionValue: 'unhealthy',
+      labelEn: 'Unhealthy signs',
+      labelSw: 'Dalili mbaya',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_03',
+      optionValue: 'trust',
+      labelEn: 'Building trust',
+      labelSw: 'Kuaminiana',
       nextNodeKey: 'HEALTHY_RELATIONSHIPS_04',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'HEALTHY_RELATIONSHIPS_02',
-      optionValue: 'any_questions',
-      labelEn: 'Any questions?',
-      labelSw: 'Maswali ya kujiuliza',
-      nextNodeKey: 'HEALTHY_RELATIONSHIPS_03',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_03',
+      optionValue: 'communication',
+      labelEn: 'Good communication',
+      labelSw: 'Mawasiliano mazuri',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_05',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'HEALTHY_RELATIONSHIPS_02',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_03',
       optionValue: 'boundaries',
-      labelEn: 'What boundaries?',
-      labelSw: 'Mipaka vipi?',
+      labelEn: 'Set boundaries',
+      labelSw: 'Weka mipaka',
       nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'HEALTHY_RELATIONSHIPS_04',
-      optionValue: 'any_questions',
-      labelEn: 'Any questions?',
-      labelSw: 'Maswali ya kujiuliza',
-      nextNodeKey: 'HEALTHY_RELATIONSHIPS_03',
+      optionValue: 'communication',
+      labelEn: 'Good communication',
+      labelSw: 'Mawasiliano mazuri',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_05',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'HEALTHY_RELATIONSHIPS_04',
-      optionValue: 'what_consent',
-      labelEn: 'What is consent?',
-      labelSw: 'Ridhaa ni nini?',
-      nextNodeKey: 'UNDERSTANDING_CONSENT_01',
+      optionValue: 'equality',
+      labelEn: 'Equal treatment',
+      labelSw: 'Usawa',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_06',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'HEALTHY_RELATIONSHIPS_04',
-      optionValue: 'how_talk',
-      labelEn: 'Communication skills',
-      labelSw: 'Mawasiliano',
+      optionValue: 'what_consent',
+      labelEn: 'Consent basics',
+      labelSw: 'Msingi wa ridhaa',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_05',
+      optionValue: 'equality',
+      labelEn: 'Equal treatment',
+      labelSw: 'Usawa',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_05',
+      optionValue: 'support',
+      labelEn: 'Support each other',
+      labelSw: 'Kusaidiana',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_05',
+      optionValue: 'talk_skills',
+      labelEn: 'Talk skills',
+      labelSw: 'Ujuzi maongezi',
       nextNodeKey: 'COMMUNICATION_SKILLS_01',
       sortOrder: 3,
       isActive: true,
     },
     {
-      nodeKey: 'HEALTHY_RELATIONSHIPS_03',
-      optionValue: 'what_consent',
-      labelEn: 'What is consent?',
-      labelSw: 'Ridhaa ni nini?',
-      nextNodeKey: 'UNDERSTANDING_CONSENT_01',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_06',
+      optionValue: 'support',
+      labelEn: 'Support each other',
+      labelSw: 'Kusaidiana',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_07',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'HEALTHY_RELATIONSHIPS_03',
-      optionValue: 'boundaries',
-      labelEn: 'What boundaries?',
-      labelSw: 'Mipaka vipi?',
-      nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_06',
+      optionValue: 'remember',
+      labelEn: 'Key reminder',
+      labelSw: 'Kumbuka',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_08',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'HEALTHY_RELATIONSHIPS_03',
+      nodeKey: 'HEALTHY_RELATIONSHIPS_06',
+      optionValue: 'boundaries',
+      labelEn: 'Set boundaries',
+      labelSw: 'Weka mipaka',
+      nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_07',
+      optionValue: 'remember',
+      labelEn: 'Key reminder',
+      labelSw: 'Kumbuka',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_08',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_07',
+      optionValue: 'next_topics',
+      labelEn: 'More topics',
+      labelSw: 'Mada zaidi',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_09',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_07',
+      optionValue: 'talk_skills',
+      labelEn: 'Talk skills',
+      labelSw: 'Ujuzi maongezi',
+      nextNodeKey: 'COMMUNICATION_SKILLS_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_08',
+      optionValue: 'next_topics',
+      labelEn: 'More topics',
+      labelSw: 'Mada zaidi',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_09',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_08',
+      optionValue: 'unhealthy',
+      labelEn: 'Unhealthy signs',
+      labelSw: 'Dalili mbaya',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_08',
+      optionValue: 'warning_signs',
+      labelEn: 'Warning signs',
+      labelSw: 'Dalili za onyo',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_02',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_09',
+      optionValue: 'unhealthy',
+      labelEn: 'Yes',
+      labelSw: 'Ndio',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_01',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_09',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_09',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_01',
       sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_01',
+      optionValue: 'start_refresher',
+      labelEn: 'Start refresher',
+      labelSw: 'Anza marejeo',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_02',
+      optionValue: 'start_quiz',
+      labelEn: 'Start quiz',
+      labelSw: 'Anza jaribio',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_03',
+      optionValue: 'true',
+      labelEn: 'A) True',
+      labelSw: 'A) Kweli',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_03',
+      optionValue: 'false',
+      labelEn: 'B) False',
+      labelSw: 'B) Uongo',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_04',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_04',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali lingine',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_05',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali lingine',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_06',
+      optionValue: 'yes',
+      labelEn: 'A) Yes',
+      labelSw: 'A) Ndiyo',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_06',
+      optionValue: 'no',
+      labelEn: 'B) No',
+      labelSw: 'B) Hapana',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_06',
+      optionValue: 'not_sure',
+      labelEn: 'C) Not sure',
+      labelSw: 'C) Sina uhakika',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_REFRESHER_07',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_01',
+      optionValue: 'start_refresher',
+      labelEn: 'Start refresher',
+      labelSw: 'Anza marejeo',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_02',
+      optionValue: 'start_quiz',
+      labelEn: 'Start quiz',
+      labelSw: 'Anza jaribio',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_03',
+      optionValue: 'true',
+      labelEn: 'A) True',
+      labelSw: 'A) Kweli',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_03',
+      optionValue: 'false',
+      labelEn: 'B) False',
+      labelSw: 'B) Uongo',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_04',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_04',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali lingine',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_05',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali lingine',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_06',
+      optionValue: 'honesty',
+      labelEn: 'A) Honesty',
+      labelSw: 'A) Uaminifu',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_06',
+      optionValue: 'communication',
+      labelEn: 'B) Communication',
+      labelSw: 'B) Mawasiliano',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_06',
+      optionValue: 'respect',
+      labelEn: 'C) Respect',
+      labelSw: 'C) Heshima',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_07',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_06',
+      optionValue: 'all',
+      labelEn: 'D) All',
+      labelSw: 'D) Zote',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_REFRESHER_07',
+      sortOrder: 4,
       isActive: true,
     },
     {
@@ -2043,7 +3372,7 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'UNDERSTANDING_CONSENT_04',
       optionValue: 'boundaries',
-      labelEn: 'Do I need boundaries?',
+      labelEn: 'Need boundaries?',
       labelSw: 'Ninahitaji mipaka?',
       nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
       sortOrder: 3,
@@ -2061,7 +3390,7 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'UNDERSTANDING_CONSENT_05',
       optionValue: 'boundaries',
-      labelEn: 'Do I need boundaries?',
+      labelEn: 'Need boundaries?',
       labelSw: 'Ninahitaji mipaka?',
       nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
       sortOrder: 2,
@@ -2079,7 +3408,7 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'UNDERSTANDING_CONSENT_06',
       optionValue: 'boundaries',
-      labelEn: 'Do I need boundaries?',
+      labelEn: 'Need boundaries?',
       labelSw: 'Ninahitaji mipaka?',
       nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
       sortOrder: 1,
@@ -2259,7 +3588,7 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'COMMUNICATION_SKILLS_02',
       optionValue: 'what_skills',
-      labelEn: 'What are soft skills?',
+      labelEn: 'Soft skills?',
       labelSw: 'Ujuzi laini ni nini?',
       nextNodeKey: 'COMMUNICATION_SKILLS_06',
       sortOrder: 3,
@@ -2277,7 +3606,7 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'COMMUNICATION_SKILLS_03',
       optionValue: 'what_skills',
-      labelEn: 'What are soft skills?',
+      labelEn: 'Soft skills?',
       labelSw: 'Ujuzi laini ni nini?',
       nextNodeKey: 'COMMUNICATION_SKILLS_06',
       sortOrder: 2,
@@ -2295,7 +3624,7 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'COMMUNICATION_SKILLS_04',
       optionValue: 'what_skills',
-      labelEn: 'What are soft skills?',
+      labelEn: 'Soft skills?',
       labelSw: 'Ujuzi laini ni nini?',
       nextNodeKey: 'COMMUNICATION_SKILLS_06',
       sortOrder: 1,
@@ -2565,7 +3894,7 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'PEER_PRESSURE_01',
       optionValue: 'what_pressure',
-      labelEn: 'Examples of pressure?',
+      labelEn: 'Peer pressure?',
       labelSw: 'Vishawishi vya rika',
       nextNodeKey: 'PEER_PRESSURE_02',
       sortOrder: 1,
@@ -2772,7 +4101,7 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'SELF_IDENTIFICATION_02',
       optionValue: 'handle_stress',
-      labelEn: 'How to handle stress?',
+      labelEn: 'Handle stress?',
       labelSw: 'Kudhibiti msongo',
       nextNodeKey: 'SELF_IDENTIFICATION_05',
       sortOrder: 3,
@@ -2790,7 +4119,7 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'SELF_IDENTIFICATION_03',
       optionValue: 'handle_stress',
-      labelEn: 'How to handle stress?',
+      labelEn: 'Handle stress?',
       labelSw: 'Kudhibiti msongo',
       nextNodeKey: 'SELF_IDENTIFICATION_05',
       sortOrder: 2,
@@ -2808,7 +4137,7 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'SELF_IDENTIFICATION_04',
       optionValue: 'handle_stress',
-      labelEn: 'How to handle stress?',
+      labelEn: 'Handle stress?',
       labelSw: 'Kudhibiti msongo',
       nextNodeKey: 'SELF_IDENTIFICATION_05',
       sortOrder: 1,
@@ -2889,7 +4218,7 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'SELF_IDENTIFICATION_07',
       optionValue: 'high_assertive',
-      labelEn: 'Why high assertiveness?',
+      labelEn: 'High assertiveness?',
       labelSw: 'Uthubutu wa juu',
       nextNodeKey: 'SELF_IDENTIFICATION_08',
       sortOrder: 1,
@@ -3033,7 +4362,7 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'SELF_IDENTIFICATION_11',
       optionValue: 'relationships',
-      labelEn: 'Healthy Relationships',
+      labelEn: 'Healthy relations',
       labelSw: 'Mahusiano mema',
       nextNodeKey: 'HEALTHY_RELATIONSHIPS_01',
       sortOrder: 2,
