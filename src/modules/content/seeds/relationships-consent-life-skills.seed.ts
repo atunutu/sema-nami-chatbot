@@ -1,4 +1,4 @@
-import { InputType } from '../../../common/enums/input-type.enum';
+﻿import { InputType } from '../../../common/enums/input-type.enum';
 import { Language } from '../../../common/enums/language.enum';
 import { NodeType } from '../../../common/enums/node-type.enum';
 
@@ -1224,7 +1224,7 @@ Sahihi: B - Uongo. Heshima na uaminifu ndiyo muhimu zaidi.
       nodeKey: 'UNDERSTANDING_CONSENT_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Consent means freely agreeing to something without pressure, force, fear, threats, manipulation, or deception. It is about respecting another person's choice and boundaries. A person must make a choice without pressure, fear, threats, force, manipulation, or guilt.
+      messageText: `Consent means freely saying "yes" without pressure, force, fear, threats, manipulation, deception, or guilt. It is about respecting another person's choices and personal boundaries.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1238,7 +1238,7 @@ Sahihi: B - Uongo. Heshima na uaminifu ndiyo muhimu zaidi.
       nodeKey: 'UNDERSTANDING_CONSENT_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Ridhaa ina maana ya kukubali kwa uhuru kitu bila shinikizo, nguvu, hofu, vitisho, udanganyifu, au udanganyifu. Ni kuhusu kuheshimu chaguo na mipaka ya mtu mwingine. Mtu lazima afanye uchaguzi bila shinikizo, hofu, vitisho, nguvu, udanganyifu, au hatia.
+      messageText: `Ridhaa ina maana ya kusema "ndiyo" kwa uhuru bila shinikizo, nguvu, hofu, vitisho, udanganyifu, udanganyifu, au hatia. Ni kuhusu kuheshimu chaguo za mtu mwingine na mipaka ya kibinafsi.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1253,12 +1253,16 @@ Sahihi: B - Uongo. Heshima na uaminifu ndiyo muhimu zaidi.
       nodeKey: 'UNDERSTANDING_CONSENT_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Examples of situations where consent is NOT freely given
-"If you love me, prove it."
-"Everyone else is doing it."
-"If you refuse, I will leave you."
-"If you refuse, I will tell everyone your secrets."
-"I bought you gifts, so you owe me."
+      messageText: `When is consent NOT freely given?
+
+Consent is not valid if someone is pressured or manipulated. Examples include:
+  ● "If you love me, prove it."
+  ● "Everyone else is doing it."
+  ● "If you refuse, I will leave you."
+  ● "If you refuse, I will tell everyone your secrets."
+  ● "I bought you gifts, so you owe me."
+
+These are all forms of pressure, not consent.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1272,12 +1276,16 @@ Sahihi: B - Uongo. Heshima na uaminifu ndiyo muhimu zaidi.
       nodeKey: 'UNDERSTANDING_CONSENT_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mifano ya hali ambapo ridhaa HAIPATWI kwa uhuru
-"Ukinipenda, thibitisha."
-"Kila mtu mwingine anafanya hivyo."
-"Ukikataa, nitakuacha."
-"Ukikataa, nitawaambia kila mtu siri zako."
-"Nilikununulia zawadi, kwa hivyo una deni langu."
+      messageText: `Ridhaa HAIPATWI kwa uhuru lini?
+
+Ridhaa si halali ikiwa mtu anashinikizwa au kudanganywa. Mifano ni pamoja na:
+  ● "Ukinipenda, thibitisha."
+  ● "Kila mtu mwingine anafanya hivyo."
+  ● "Ukikataa, nitakuacha."
+  ● "Ukikataa, nitawaambia kila mtu siri zako."
+  ● "Nilikununulia zawadi, kwa hivyo unadaiwa mimi."
+
+Hizi zote ni aina za shinikizo, sio ridhaa.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1292,8 +1300,13 @@ Sahihi: B - Uongo. Heshima na uaminifu ndiyo muhimu zaidi.
       nodeKey: 'UNDERSTANDING_CONSENT_03',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `These are forms of pressure.
-• A person who feels forced is not giving true consent. Consent must be clear hence consent should never be assumed. Examples: "Yes, I am comfortable with that.", "I agree." When consent is unclear you can observe the following: silence, looking uncomfortable, avoiding eye contact, saying "maybe."and not responding.
+      messageText: `1. Consent must be clear
+
+A person who feels forced is not giving true consent. Consent should never be assumed.
+
+Examples of clear consent include:
+  ● "Yes, I'm comfortable with that."
+  ● "I agree."
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1307,8 +1320,13 @@ Sahihi: B - Uongo. Heshima na uaminifu ndiyo muhimu zaidi.
       nodeKey: 'UNDERSTANDING_CONSENT_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Hizi ni aina za shinikizo.
-• Mtu anayehisi kulazimishwa hatoi ridhaa ya kweli. Ridhaa lazima iwe wazi kwa hivyo ridhaa haipaswi kudhaniwa kamwe. Mifano: "Ndiyo, nimeridhika na hilo.", "Nakubali." Wakati ridhaa haijulikani wazi unaweza kuona yafuatayo; ukimya, kuonekana kutoridhika, kuepuka kutazamana machoni, kusema "labda." na kutojibu.
+      messageText: `1. Ridhaa lazima iwe wazi
+
+Mtu anayehisi kulazimishwa hatoi ridhaa ya kweli. Ridhaa haipaswi kudhaniwa kamwe.
+
+Mifano ya ridhaa iliyo wazi ni pamoja na:
+  ● "Ndiyo, nimeridhika na hilo."
+  ● "Nakubali."
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1323,7 +1341,13 @@ Sahihi: B - Uongo. Heshima na uaminifu ndiyo muhimu zaidi.
       nodeKey: 'UNDERSTANDING_CONSENT_04',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `• A person can change their mind,someone may agree at first and later decide they no longer want to continue, changing one's mind is a right. Example girl agrees to go on a date but later decides she does not want physical contact her decision should be respected.`,
+      messageText: `Signs that consent may not be present include:
+  ● Silence.
+  ● Looking uncomfortable.
+  ● Avoiding eye contact.
+  ● Saying "Maybe."
+  ● Not responding.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1336,7 +1360,13 @@ Sahihi: B - Uongo. Heshima na uaminifu ndiyo muhimu zaidi.
       nodeKey: 'UNDERSTANDING_CONSENT_04',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `• Mtu anaweza kubadilisha mawazo yake, mtu anaweza kukubali mwanzoni na baadaye akaamua kuwa hataki tena kuendelea, kubadilisha mawazo yake ni haki. Mfano: Msichana anakubali kwenda kwenye miadi lakini baadaye anaamua hataki mawasiliano ya kimwili. Uamuzi wake unapaswa kuheshimiwa.`,
+      messageText: `Ishara kwamba ridhaa inaweza isiwepo ni pamoja na:
+  ● Kimya.
+  ● Kuonekana kutojiamini.
+  ● Kuepuka kutazamana machoni.
+  ● Kusema "Labda."
+  ● Kutojibu.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1350,7 +1380,12 @@ Sahihi: B - Uongo. Heshima na uaminifu ndiyo muhimu zaidi.
       nodeKey: 'UNDERSTANDING_CONSENT_05',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `• People should understand what they are agreeing to. A person cannot make a fully informed decision if important information is hidden or if they are deliberately misled. Example something is safe when it is not or giving false information to convince someone.`,
+      messageText: `2. People can change their mind
+
+Someone may agree at first and later decide they no longer want to continue. Changing your mind is always okay, and that decision should be respected.
+
+Example: A girl agrees to go on a date but later decides she does not want physical contact. Her decision must be respected.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1363,7 +1398,12 @@ Sahihi: B - Uongo. Heshima na uaminifu ndiyo muhimu zaidi.
       nodeKey: 'UNDERSTANDING_CONSENT_05',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `• Watu wanapaswa kuelewa wanachokubaliana nacho. Mtu hawezi kufanya uamuzi kamili ikiwa taarifa muhimu zimefichwa au ikiwa zimepotoshwa kimakusudi. Mfano: Kujifanya kitu ni salama wakati si salama au kutoa taarifa za uongo ili kumshawishi mtu.`,
+      messageText: `2. Watu wanaweza kubadilisha mawazo yao
+
+Mtu anaweza kukubali mwanzoni na baadaye akaamua kuwa hataki tena kuendelea. Kubadilisha mawazo yako ni sawa kila wakati, na uamuzi huo unapaswa kuheshimiwa.
+
+Mfano: Msichana anakubali kwenda kwenye miadi lakini baadaye anaamua hataki kugusana kimwili. Uamuzi wake lazima uheshimiwe.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1377,11 +1417,16 @@ Sahihi: B - Uongo. Heshima na uaminifu ndiyo muhimu zaidi.
       nodeKey: 'UNDERSTANDING_CONSENT_06',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `• A person must be able to understand and make decisions. Someone may not be able to give meaningful consent if: They are very young( below 18 based on Tanzania laws), they are unconscious, they are asleep, they are heavily intoxicated, they are being threatened and when they do not understand what is happening.`,
+      messageText: `3. Consent must be informed
+
+People should understand what they are agreeing to. If someone hides important information or lies to convince another person, true consent cannot be given.
+
+Example: Pretending something is safe when it is not or giving false information to pressure someone.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 6,
       isActive: true,
     },
@@ -1390,12 +1435,357 @@ Sahihi: B - Uongo. Heshima na uaminifu ndiyo muhimu zaidi.
       nodeKey: 'UNDERSTANDING_CONSENT_06',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `• Mtu lazima aweze kuelewa na kufanya maamuzi. Mtu anaweza asiweze kutoa idhini yenye maana ikiwa: Ni mdogo sana (chini ya miaka 18 kulingana na sheria za Tanzania), hana fahamu, amelala, amelewa sana, anatishiwa na asipoelewa kinachoendelea.`,
+      messageText: `3. Ridhaa lazima ielezwe
+
+Watu wanapaswa kuelewa wanachokubali. Ikiwa mtu anaficha taarifa muhimu au uongo ili kumshawishi mtu mwingine, ridhaa ya kweli haiwezi kutolewa.
+
+Mfano: Kujifanya kitu ni salama wakati si salama au kutoa taarifa za uongo ili kumshinikiza mtu.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `4. A person must be able to make their own decision
+
+Someone cannot give meaningful consent if they:
+  ● Are below 18 years (under Tanzanian law).
+  ● Are asleep or unconscious.
+  ● Are heavily intoxicated.
+  ● Are being threatened or forced.
+  ● Do not understand what is happening.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `4. Mtu lazima aweze kufanya uamuzi wake mwenyewe
+
+Mtu hawezi kutoa ridhaa yenye maana ikiwa:
+  ● Wako chini ya miaka 18 (chini ya sheria ya Tanzania).
+  ● Wamelala au hawajui.
+  ● Wamelewa sana.
+  ● Wanatishiwa au wanalazimishwa.
+  ● Hawaelewi kinachoendelea.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Remember, consent is about respect, communication, and choice. If the answer is not a clear and willing "yes," then it is not consent. Healthy relationships always respect each person's decisions and boundaries.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kumbuka, ridhaa inahusu heshima, mawasiliano, na chaguo. Ikiwa jibu si "ndiyo" iliyo wazi na yenye nia, basi si ridhaa. Mahusiano yenye afya huheshimu maamuzi na mipaka ya kila mtu.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Would you like to learn more about healthy relationships, setting boundaries, refusing pressure, or recognizing unhealthy behaviours? I'm here to help.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ungependa kujifunza zaidi kuhusu mahusiano yenye afya, kuweka mipaka, kukataa shinikizo, au kutambua tabia zisizofaa? Niko hapa kukusaidia.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence, or help with abuse, you do not have to face it alone. You can visit the nearest hospital, health centre, dispensary, or youth-friendly health service for confidential support and guidance. You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader, or healthcare provider.
+
+If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment, or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.
+
+For additional support, guidance, or referrals, you can contact OVAH through:
+Phone/WhatsApp: 0652 522 358
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: true,
-      sortOrder: 6,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili, au msaada kuhusu unyanyasaji, usibaki peke yako. Unaweza kutembelea hospitali, kituo cha afya, zahanati, au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama. Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini, au mtoa huduma za afya unayemwamini.
+
+Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono, au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.
+
+Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+Simu/WhatsApp: 0652 522 358
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `The word CONSENT is a small word with a big meaning: Would you like us to talk more?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Neno RIDHAA ni neno dogo lenye maana kubwa: Unatamani tuongee zaidi?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `● Consent is accepting something freely — without pressure, fear, or intimidation.
+● Silence is not consent. "Maybe" is not consent. A person can change their mind at any time, and that's okay.
+● No one should pressure you with gifts, threats, or words like "if you love me..."
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `● Ridhaa ni kukubali kitu kwa uhuru wako — bila shinikizo, hofu, au vitisho.
+● Ukimya si ridhaa. "Labda" si ridhaa. Mtu anaweza kubadili mawazo yake wakati wowote, na hilo ni sawa.
+● Hakuna anayepaswa kukushinikiza kwa zawadi, vitisho, au maneno kama "kama unanipenda..."
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Which is an example of PRESSURE, not true consent?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ni ipi ni mfano wa SHINIKIZO, si ridhaa ya kweli?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Correct: B. That is pressure, not true consent.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Sahihi: B. Hilo ni shinikizo, si ridhaa ya kweli.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Not quite.
+
+Correct: B. That is pressure, not true consent.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Si sahihi.
+
+Sahihi: B. Hilo ni shinikizo, si ridhaa ya kweli.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Have you ever felt pressured to do something you didn't want to do?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Je, umewahi kuhisi kushinikizwa kufanya kitu hukutaka?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you feel pressured by someone, we can help you — click here.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_CONSENT',
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kama unahisi unashinikizwa na mtu, tunaweza kukusaidia — bonyeza hapa.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
       isActive: true,
     },
 
@@ -3273,109 +3663,118 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     {
       nodeKey: 'UNDERSTANDING_CONSENT_01',
       optionValue: 'when_not_free',
-      labelEn: 'When is it not free?',
-      labelSw: 'Ridhaa au shinikizo',
+      labelEn: 'Pressure examples',
+      labelSw: 'Mifano ya shinikizo',
       nextNodeKey: 'UNDERSTANDING_CONSENT_02',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_CONSENT_01',
-      optionValue: 'is_clear',
-      labelEn: 'Is it clear?',
-      labelSw: 'Aina za shinikizo',
+      optionValue: 'clear_consent',
+      labelEn: 'Clear consent',
+      labelSw: 'Ridhaa wazi',
       nextNodeKey: 'UNDERSTANDING_CONSENT_03',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_CONSENT_01',
-      optionValue: 'mind_change',
-      labelEn: 'Withdrawing consent',
-      labelSw: 'Kuondoa ridhaa',
-      nextNodeKey: 'UNDERSTANDING_CONSENT_04',
+      optionValue: 'boundaries',
+      labelEn: 'Boundaries',
+      labelSw: 'Mipaka',
+      nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_CONSENT_02',
-      optionValue: 'is_clear',
-      labelEn: 'Is it clear?',
-      labelSw: 'Aina za shinikizo',
+      optionValue: 'clear_consent',
+      labelEn: 'Clear consent',
+      labelSw: 'Ridhaa wazi',
       nextNodeKey: 'UNDERSTANDING_CONSENT_03',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_CONSENT_02',
-      optionValue: 'mind_change',
-      labelEn: 'Withdrawing consent',
-      labelSw: 'Kuondoa ridhaa',
+      optionValue: 'no_consent_signs',
+      labelEn: 'No consent signs',
+      labelSw: 'Ukosefu wa ridhaa',
       nextNodeKey: 'UNDERSTANDING_CONSENT_04',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_CONSENT_02',
-      optionValue: 'do_they_know',
-      labelEn: 'Informed consent',
-      labelSw: 'Ridhaa kwa taarifa',
-      nextNodeKey: 'UNDERSTANDING_CONSENT_05',
+      optionValue: 'refuse_pressure',
+      labelEn: 'Refuse pressure',
+      labelSw: 'Kataa shinikizo',
+      nextNodeKey: 'REFUSING_UNWANTED_SEXUAL_PRESSURE_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_CONSENT_03',
-      optionValue: 'mind_change',
-      labelEn: 'Withdrawing consent',
-      labelSw: 'Kuondoa ridhaa',
+      optionValue: 'no_consent_signs',
+      labelEn: 'No consent signs',
+      labelSw: 'Ukosefu wa ridhaa',
       nextNodeKey: 'UNDERSTANDING_CONSENT_04',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_CONSENT_03',
-      optionValue: 'do_they_know',
-      labelEn: 'Informed consent',
-      labelSw: 'Ridhaa kwa taarifa',
+      optionValue: 'change_mind',
+      labelEn: 'Changing your mind',
+      labelSw: 'Kubadili mawazo',
       nextNodeKey: 'UNDERSTANDING_CONSENT_05',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_CONSENT_03',
-      optionValue: 'who_can',
-      labelEn: 'Who can consent?',
-      labelSw: 'Nani huridhia?',
-      nextNodeKey: 'UNDERSTANDING_CONSENT_06',
+      optionValue: 'healthy_rel',
+      labelEn: 'Healthy relations',
+      labelSw: 'Mahusiano mema',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_CONSENT_04',
-      optionValue: 'do_they_know',
-      labelEn: 'Informed consent',
-      labelSw: 'Ridhaa kwa taarifa',
+      optionValue: 'change_mind',
+      labelEn: 'Changing your mind',
+      labelSw: 'Kubadili mawazo',
       nextNodeKey: 'UNDERSTANDING_CONSENT_05',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_CONSENT_04',
-      optionValue: 'who_can',
-      labelEn: 'Who can consent?',
-      labelSw: 'Nani huridhia?',
+      optionValue: 'informed_consent',
+      labelEn: 'Informed consent',
+      labelSw: 'Ridhaa na taarifa',
       nextNodeKey: 'UNDERSTANDING_CONSENT_06',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_CONSENT_04',
-      optionValue: 'boundaries',
-      labelEn: 'Need boundaries?',
-      labelSw: 'Ninahitaji mipaka?',
-      nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
+      optionValue: 'unsafe_signs',
+      labelEn: 'Unsafe signs',
+      labelSw: 'Dalili hatari',
+      nextNodeKey: 'UNHEALTHY_RELATIONSHIPS_01',
       sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_05',
+      optionValue: 'informed_consent',
+      labelEn: 'Informed consent',
+      labelSw: 'Ridhaa na taarifa',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_06',
+      sortOrder: 1,
       isActive: true,
     },
     {
@@ -3383,52 +3782,214 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
       optionValue: 'who_can',
       labelEn: 'Who can consent?',
       labelSw: 'Nani huridhia?',
-      nextNodeKey: 'UNDERSTANDING_CONSENT_06',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'UNDERSTANDING_CONSENT_05',
-      optionValue: 'boundaries',
-      labelEn: 'Need boundaries?',
-      labelSw: 'Ninahitaji mipaka?',
-      nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_07',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_CONSENT_05',
-      optionValue: 'how_talk',
-      labelEn: 'Communication skills',
-      labelSw: 'Mawasiliano',
-      nextNodeKey: 'COMMUNICATION_SKILLS_01',
+      optionValue: 'boundaries',
+      labelEn: 'Boundaries',
+      labelSw: 'Mipaka',
+      nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_CONSENT_06',
-      optionValue: 'boundaries',
-      labelEn: 'Need boundaries?',
-      labelSw: 'Ninahitaji mipaka?',
-      nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
+      optionValue: 'who_can',
+      labelEn: 'Who can consent?',
+      labelSw: 'Nani huridhia?',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_07',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_CONSENT_06',
-      optionValue: 'how_talk',
-      labelEn: 'Communication skills',
-      labelSw: 'Mawasiliano',
-      nextNodeKey: 'COMMUNICATION_SKILLS_01',
+      optionValue: 'remember',
+      labelEn: 'Key reminder',
+      labelSw: 'Kumbuka',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_08',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_CONSENT_06',
+      optionValue: 'pressure_help',
+      labelEn: 'Pressure help',
+      labelSw: 'Msaada shinikizo',
+      nextNodeKey: 'REFUSING_UNWANTED_SEXUAL_PRESSURE_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_07',
+      optionValue: 'remember',
+      labelEn: 'Key reminder',
+      labelSw: 'Kumbuka',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_08',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_07',
+      optionValue: 'more_topics',
+      labelEn: 'More topics',
+      labelSw: 'Mada zaidi',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_09',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_07',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_10',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_08',
+      optionValue: 'more_topics',
+      labelEn: 'More topics',
+      labelSw: 'Mada zaidi',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_09',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_08',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_08',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_09',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_10',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_09',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_09',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_01',
+      optionValue: 'start_refresher',
+      labelEn: 'Start refresher',
+      labelSw: 'Anza marejeo',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_02',
+      optionValue: 'start_quiz',
+      labelEn: 'Start quiz',
+      labelSw: 'Anza jaribio',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_03',
+      optionValue: 'i_agree',
+      labelEn: 'A) I agree',
+      labelSw: 'A) Nakubali',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_03',
+      optionValue: 'if_refuse',
+      labelEn: 'B) If I refuse',
+      labelSw: 'B) Ukikataa',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_04',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_03',
+      optionValue: 'feel_good',
+      labelEn: 'C) I feel good',
+      labelSw: 'C) Niko sawa',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_05',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_04',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali lingine',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_05',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali lingine',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_06',
+      optionValue: 'yes',
+      labelEn: 'A) Yes',
+      labelSw: 'A) Ndiyo',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_06',
+      optionValue: 'no',
+      labelEn: 'B) No',
+      labelSw: 'B) Hapana',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_06',
+      optionValue: 'no_answer',
+      labelEn: 'C) No answer',
+      labelSw: 'C) Sitaki kujibu',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_REFRESHER_07',
       sortOrder: 3,
       isActive: true,
     },
