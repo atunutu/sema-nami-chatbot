@@ -2907,7 +2907,6 @@ Sahihi: B - Uongo. Kusikiliza kwa makini ni sehemu muhimu ya mawasiliano mazuri.
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Decision-making is the ability to make the right choice and accept the consequences of the choices you have made, thus eliminating regret and setting you free.
-The decision-making process involves important steps that would help you avoid certain risks. One approach that can help predict the outcome of decision-making is the T3 approach.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -2922,8 +2921,6 @@ The decision-making process involves important steps that would help you avoid c
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Kufanya maamuzi ni uwezo wa kufanya chaguo sahihi na kukubali matokeo ya uchaguzi ulioufanya, hivyo kukuondolea majuto na kukuacha huru.
-Mchakato wa kufanya maamuzi unajumuisha hatua muhimu ambazo zingesaidia kuepuka hatari fulani.
-Mkabala mmojawapo unaoweza kusaidia kutabiri matokeo ya kufanya maamuzi ni wa mbinu ya T3.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -2932,50 +2929,58 @@ Mkabala mmojawapo unaoweza kusaidia kutabiri matokeo ya kufanya maamuzi ni wa mb
       sortOrder: 1,
       isActive: true,
     },
-
     {
       subtopicCode: 'DECISION_MAKING_SKILLS',
       nodeKey: 'DECISION_MAKING_SKILLS_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `The decision-making process involves important steps that would help you avoid certain risks. One approach that can help predict the outcome of decision-making is the T3 approach.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Mchakato wa kufanya maamuzi unajumuisha hatua muhimu ambazo zingesaidia kuepuka hatari fulani. Mkabala mmojawapo unaoweza kusaidia kutabiri matokeo ya kufanya maamuzi ni wa mbinu ya T3.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_03',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `The T3s stand for Problem, Solution, and Consequence.
-This approach is used to analyze all the available options - good and bad - in solving a problem and the possible consequences of each choice. The solution with the best results and the fewest losses is chosen.
-In this way, a person anticipates any outcome and is prepared to face it.
+
+This approach is used to analyze all the available options - good and bad - in solving a problem and the possible consequences of each choice.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: false,
-      sortOrder: 2,
+      sortOrder: 3,
       isActive: true,
     },
     {
       subtopicCode: 'DECISION_MAKING_SKILLS',
-      nodeKey: 'DECISION_MAKING_SKILLS_02',
+      nodeKey: 'DECISION_MAKING_SKILLS_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `T3 zinasimama badala ya Tatizo, Tatuzi na Tokeo.
+
 Mkabala huu hutumika kuchambua chaguzi zote zilizopo - nzuri na mbaya - katika kutatua tatizo na matokeo yanayoweza kutokea kwa kila uchaguzi.
-Ufumbuzi wenye matokeo mazuri zaidi na hasara chache zaidi huchaguliwa. Kwa jinsi hii, mtu anatarajia matokeo yoyote na yuko tayari kuyakabili.
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'DECISION_MAKING_SKILLS',
-      nodeKey: 'DECISION_MAKING_SKILLS_03',
-      nodeType: NodeType.CONTENT,
-      language: Language.EN,
-      messageText: `Decision-making steps:-
-    ● Reflect on the situation.
-    ● Seek advice from others.
-    ● Listen to the advice given.
-    ● Consider family and personal values.
-    ● Consider cultural and religious issues.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -2984,36 +2989,13 @@ Ufumbuzi wenye matokeo mazuri zaidi na hasara chache zaidi huchaguliwa. Kwa jins
       sortOrder: 3,
       isActive: true,
     },
-    {
-      subtopicCode: 'DECISION_MAKING_SKILLS',
-      nodeKey: 'DECISION_MAKING_SKILLS_03',
-      nodeType: NodeType.CONTENT,
-      language: Language.SW,
-      messageText: `Hatua za kufanya maamuzi:-
-    ● Tafakari kuhusu hali.
-    ● Tafuta ushauri kutoka kwa wengine.
-    ● Sikiliza ushauri unaotolewa.
-    ● Zingatia amali za familia na zako binafsi.
-    ● Zingatia masuala ya kitamaduni na kiimani.
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 3,
-      isActive: true,
-    },
-
     {
       subtopicCode: 'DECISION_MAKING_SKILLS',
       nodeKey: 'DECISION_MAKING_SKILLS_04',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Decision-making steps:-
-    ● Consider all the opportunities or choices available.
-    ● Consider the possible consequences and consequences of each opportunity.
-    ● Consider the effects of your actions on other people.
-    ● Choose the best alternative.`,
+      messageText: `The solution with the best results and the fewest losses is chosen. In this way, a person anticipates any outcome and is prepared to face it.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -3026,11 +3008,8 @@ Ufumbuzi wenye matokeo mazuri zaidi na hasara chache zaidi huchaguliwa. Kwa jins
       nodeKey: 'DECISION_MAKING_SKILLS_04',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Hatua za kufanya maamuzi:-
-    ● Zingatia fursa au chaguzi zote zilizopo.
-    ● Tafakari madhara na matokeo yanayoweza kutokea kwa kila fursa.
-    ● Zingatia athari za matendo yako kwa watu wengine.
-    ● Chagua mbadala bora.`,
+      messageText: `Ufumbuzi wenye matokeo mazuri zaidi na hasara chache zaidi huchaguliwa. Kwa jinsi hii, mtu anatarajia matokeo yoyote na yuko tayari kuyakabili.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -3038,20 +3017,22 @@ Ufumbuzi wenye matokeo mazuri zaidi na hasara chache zaidi huchaguliwa. Kwa jins
       sortOrder: 4,
       isActive: true,
     },
-
     {
       subtopicCode: 'DECISION_MAKING_SKILLS',
       nodeKey: 'DECISION_MAKING_SKILLS_05',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Decision-making steps:-
-    ● Make a decision.
-    ● Implement the decision.
-    ● Be responsible for the consequences of your actions`,
+      messageText: `Decision-making steps
+  ● Reflect on the situation.
+  ● Seek advice from others.
+  ● Listen to the advice given.
+  ● Consider family and personal values.
+  ● Consider cultural and religious issues.
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 5,
       isActive: true,
     },
@@ -3060,18 +3041,332 @@ Ufumbuzi wenye matokeo mazuri zaidi na hasara chache zaidi huchaguliwa. Kwa jins
       nodeKey: 'DECISION_MAKING_SKILLS_05',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Hatua za kufanya maamuzi:-
-    ● Fanya uamuzi.
-    ● Tekeleza maamuzi.
-    ● Wajibika kwa matokeo ya matendo yako`,
+      messageText: `Hatua za kufanya maamuzi
+  ● Tafakari kuhusu hali.
+  ● Tafuta ushauri kutoka kwa wengine.
+  ● Sikiliza ushauri unaotolewa.
+  ● Zingatia amali za familia na zako binafsi.
+  ● Zingatia masuala ya kitamaduni na kiimani.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Decision-making steps
+  ● Consider all the opportunities or choices available.
+  ● Consider the possible consequences and consequences of each opportunity.
+  ● Consider the effects of your actions on other people.
+  ● Choose the best alternative.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Hatua za kufanya maamuzi
+  ● Zingatia fursa au chaguzi zote zilizopo.
+  ● Tafakari madhara na matokeo yanayoweza kutokea kwa kila fursa.
+  ● Zingatia athari za matendo yako kwa watu wengine.
+  ● Chagua mbadala bora.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Decision-making steps
+  ● Make a decision.
+  ● Implement the decision.
+  ● Be responsible for the consequences of your actions
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Hatua za kufanya maamuzi
+  ● Fanya uamuzi.
+  ● Tekeleza maamuzi.
+  ● Wajibika kwa matokeo ya matendo yako
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence, or help with abuse, you do not have to face it alone. You can visit the nearest hospital, health centre, dispensary, or youth-friendly health service for confidential support and guidance. You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader, or healthcare provider.
+
+If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment, or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.
+
+For additional support, guidance, or referrals, you can contact OVAH through:
+Phone/WhatsApp: 0652 522 358
+`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: true,
-      sortOrder: 5,
+      sortOrder: 8,
       isActive: true,
     },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili, au msaada kuhusu unyanyasaji, usibaki peke yako. Unaweza kutembelea hospitali, kituo cha afya, zahanati, au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama. Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini, au mtoa huduma za afya unayemwamini.
 
+Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono, au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.
+
+Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+Simu/WhatsApp: 0652 522 358
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Making the right decisions - the T3 method
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kufanya maamuzi sahihi - njia ya T3
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `● T3 stands for Problem, Solution, and Consequence — a way to analyze options before making a decision.
+● Think about the consequences of each option before making a decision, and consider your and your family's values.
+● Once you've made a decision, take responsibility for the consequences of your decision.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `● T3 inasimama kwa Tatizo, Tatuzi, na Tokeo — njia ya kuchambua chaguzi kabla ya kuamua.
+● Fikiria kuhusu matokeo ya kila chaguo kabla ya kuamua, na zingatia maadili yako na ya familia.
+● Baada ya kuamua, chukua jukumu la matokeo ya uamuzi wako.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `True or False: Good decisions are made quickly without thinking about the consequences.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kweli au Uongo: Maamuzi mazuri hufanywa haraka bila kufikiria matokeo.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Correct: B - False. Good decisions require considering the consequences first.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Sahihi: B - Uongo. Maamuzi mazuri huhitaji kufikiria matokeo kwanza.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Not quite.
+
+Correct: B - False. Good decisions require considering the consequences first.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Si sahihi.
+
+Sahihi: B - Uongo. Maamuzi mazuri huhitaji kufikiria matokeo kwanza.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `What steps do you use to make difficult decisions?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unatumia hatua gani kufanya maamuzi magumu?
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Do you have a difficult decision you want to talk about? We're here to help you think through it.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'DECISION_MAKING_SKILLS',
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Una uamuzi mgumu unaotaka kuzungumza? Tuko hapa kukusaidia kufikiria.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
+      isActive: true,
+    },
     {
       subtopicCode: 'NEGOTIATION_SKILLS',
       nodeKey: 'NEGOTIATION_SKILLS_01',
@@ -5481,89 +5776,62 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     },
     {
       nodeKey: 'DECISION_MAKING_SKILLS_01',
-      optionValue: 'what_t3',
-      labelEn: 'What is T3?',
-      labelSw: 'T3 ni nini?',
+      optionValue: 't3_method',
+      labelEn: 'T3 method',
+      labelSw: 'Mbinu ya T3',
       nextNodeKey: 'DECISION_MAKING_SKILLS_02',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'DECISION_MAKING_SKILLS_01',
-      optionValue: 'first_steps',
-      labelEn: 'First steps?',
-      labelSw: 'Hatua za kwanza?',
-      nextNodeKey: 'DECISION_MAKING_SKILLS_03',
+      optionValue: 'decision_steps',
+      labelEn: 'Decision steps',
+      labelSw: 'Hatua za maamuzi',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_05',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'DECISION_MAKING_SKILLS_01',
-      optionValue: 'choose_well',
-      labelEn: 'How to choose well?',
-      labelSw: 'Maamuzi mema',
-      nextNodeKey: 'DECISION_MAKING_SKILLS_04',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
       nodeKey: 'DECISION_MAKING_SKILLS_02',
-      optionValue: 'first_steps',
-      labelEn: 'First steps?',
-      labelSw: 'Hatua za kwanza?',
+      optionValue: 'what_t3_means',
+      labelEn: 'What is T3?',
+      labelSw: 'T3 ni nini?',
       nextNodeKey: 'DECISION_MAKING_SKILLS_03',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'DECISION_MAKING_SKILLS_02',
-      optionValue: 'choose_well',
-      labelEn: 'How to choose well?',
-      labelSw: 'NiMaamuzi mema',
-      nextNodeKey: 'DECISION_MAKING_SKILLS_04',
+      optionValue: 'decision_steps',
+      labelEn: 'Decision steps',
+      labelSw: 'Hatua za maamuzi',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_05',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'DECISION_MAKING_SKILLS_02',
-      optionValue: 'then_act',
-      labelEn: 'How to act on it?',
-      labelSw: 'Hatua za maamuzi',
-      nextNodeKey: 'DECISION_MAKING_SKILLS_05',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
       nodeKey: 'DECISION_MAKING_SKILLS_03',
-      optionValue: 'choose_well',
-      labelEn: 'How to choose well?',
-      labelSw: 'NiMaamuzi mema',
+      optionValue: 'how_t3_helps',
+      labelEn: 'How T3 helps?',
+      labelSw: 'T3 husaidiaje?',
       nextNodeKey: 'DECISION_MAKING_SKILLS_04',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'DECISION_MAKING_SKILLS_03',
-      optionValue: 'then_act',
-      labelEn: 'How to act on it?',
+      optionValue: 'decision_steps',
+      labelEn: 'Decision steps',
       labelSw: 'Hatua za maamuzi',
       nextNodeKey: 'DECISION_MAKING_SKILLS_05',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'DECISION_MAKING_SKILLS_03',
-      optionValue: 'negotiate',
-      labelEn: 'Why we negotiate?',
-      labelSw: 'Kwanini majadiliano?',
-      nextNodeKey: 'NEGOTIATION_SKILLS_01',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
       nodeKey: 'DECISION_MAKING_SKILLS_04',
-      optionValue: 'then_act',
-      labelEn: 'How to act on it?',
+      optionValue: 'decision_steps',
+      labelEn: 'Decision steps',
       labelSw: 'Hatua za maamuzi',
       nextNodeKey: 'DECISION_MAKING_SKILLS_05',
       sortOrder: 1,
@@ -5571,47 +5839,191 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     },
     {
       nodeKey: 'DECISION_MAKING_SKILLS_04',
-      optionValue: 'negotiate',
-      labelEn: 'Why we negotiate?',
-      labelSw: 'Kwanini majadiliano?',
-      nextNodeKey: 'NEGOTIATION_SKILLS_01',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_08',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'DECISION_MAKING_SKILLS_04',
-      optionValue: 'peer_pressure',
-      labelEn: 'Whats peer pressure?',
-      labelSw: 'Shinikizo la rika',
-      nextNodeKey: 'PEER_PRESSURE_01',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
       nodeKey: 'DECISION_MAKING_SKILLS_05',
-      optionValue: 'negotiate',
-      labelEn: 'Why we negotiate?',
-      labelSw: 'Kwanini majadiliano?',
-      nextNodeKey: 'NEGOTIATION_SKILLS_01',
+      optionValue: 'more_steps',
+      labelEn: 'More steps',
+      labelSw: 'Hatua zaidi',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_06',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'DECISION_MAKING_SKILLS_05',
-      optionValue: 'peer_pressure',
-      labelEn: 'Whats peer pressure?',
-      labelSw: 'Shinikizo la rika',
-      nextNodeKey: 'PEER_PRESSURE_01',
+      optionValue: 't3_method',
+      labelEn: 'T3 method?',
+      labelSw: 'Mbinu ya T3?',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_02',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'DECISION_MAKING_SKILLS_05',
+      nodeKey: 'DECISION_MAKING_SKILLS_06',
+      optionValue: 'final_steps',
+      labelEn: 'Final steps',
+      labelSw: 'Hatua za mwisho',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_06',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_08',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_07',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_08',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_07',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_07',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
       sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_08',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_01',
+      optionValue: 'start_refresher',
+      labelEn: 'Start refresher',
+      labelSw: 'Anza marejeo',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_02',
+      optionValue: 'start_quiz',
+      labelEn: 'Start quiz',
+      labelSw: 'Anza jaribio',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_03',
+      optionValue: 'true',
+      labelEn: 'A) True',
+      labelSw: 'A) Kweli',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_03',
+      optionValue: 'false',
+      labelEn: 'B) False',
+      labelSw: 'B) Uongo',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_04',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_04',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali lingine',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_05',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali lingine',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_06',
+      optionValue: 'ask_advice',
+      labelEn: 'A) Ask advice',
+      labelSw: 'A) Naomba ushauri',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_06',
+      optionValue: 'think_alone',
+      labelEn: 'B) Think alone',
+      labelSw: 'B) Nafikiria',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_06',
+      optionValue: 'decide_quickly',
+      labelEn: 'C) Decide fast',
+      labelSw: 'C) Naamua haraka',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_07',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_06',
+      optionValue: 'no_method',
+      labelEn: 'D) No method',
+      labelSw: 'D) Sina njia',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_07',
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_07',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_08',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'DECISION_MAKING_SKILLS_REFRESHER_07',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 2,
       isActive: true,
     },
     {
@@ -6156,3 +6568,5 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     },
   ],
 };
+
+
