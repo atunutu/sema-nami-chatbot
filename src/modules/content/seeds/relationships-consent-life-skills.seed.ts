@@ -5069,16 +5069,7 @@ Sahihi: B - Uongo. Hatua ndogo thabiti ndizo huleta mafanikio makubwa.
       nodeKey: 'SELF_IDENTIFICATION_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Life skills for self-awareness
-i. Self-awareness is the first step towards living a healthy life.
-Self-awareness includes:
-    ● Understanding who you are, gender, environment, religion, skin color, culture, and your place in family and society.
-    ● A clear recognition of your responsibilities to yourself, your family, society, country, and the world at large.
-    ● Understanding your needs and what your actions represent in decisions.
-    ● A clear knowledge of your health needs in order to take care of your body.
-    ● A clear understanding of the relationships you want in order to set relationship boundaries
-    ● The ability to make decisions that protect you and be assertive to protect your decisions.
-`,
+      messageText: `Growing up is a journey of discovering who you are and learning how to make choices that help you live a healthy and fulfilling life. Developing self-awareness is one of the most important life skills because it helps you understand yourself, manage challenges, and make decisions that protect your wellbeing.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -5091,15 +5082,7 @@ Self-awareness includes:
       nodeKey: 'SELF_IDENTIFICATION_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Stadi za maisha za kujitambua
-i. Kujitambua ni hatua ya kwanza kuelekea katika kuishi maisha ya afya njema. Kujitambua hujumuisha:
-    ● Kujielewa wewe ni nani, jinsi, mazingira, dini, rangi ya ngozi, utamaduni, na nafasi yako ndani ya familia na jamii.
-    ● Utambuzi bayana wa wajibu wako kwako binafsi, kwa familia, jamii, nchi, na ulimwengu wako kwa ujumla.
-    ● Kuelewa mahitaji yako na amali yako inasimamia nini katika maamuzi.
-    ● Maarifa bayana ya mahitaji yako kwa afya ili uutunze mwili wako.
-    ● Uelewa bayana wa mahusiano unayoyataka ili uweke mipaka ya kimahusiano
-    ● Uwezo wa kufanya maamuzi yanayokulinda na kuwa na msimamo ili kulinda maamuzi yako.
-`,
+      messageText: `Kukua ni safari ya kugundua wewe ni nani na kujifunza jinsi ya kufanya maamuzi yanayokusaidia kuishi maisha yenye afya na yenye kuridhisha. Kukuza kujitambua ni mojawapo ya ujuzi muhimu zaidi wa maisha kwa sababu inakusaidia kujielewa, kudhibiti changamoto, na kufanya maamuzi yanayolinda ustawi wako.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -5112,13 +5095,10 @@ i. Kujitambua ni hatua ya kwanza kuelekea katika kuishi maisha ya afya njema. Ku
       nodeKey: 'SELF_IDENTIFICATION_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `ii. Managing emotions: Emotion is a very intense feeling.
-    ● It can be great joy or happiness, strong anger, unusual anxiety, etc.
-    ● It is a drive within a person's soul.
-    ● Emotions always cool down. It can last for a long time or a short time, but eventually it cools down.
-    ● Never make a decision when you are emotional.
-    ● Wait until you calm down, analyze the situation that caused those emotions and then make a decision.
-    ● Many problems that young people encounter are due to the inability to cope with emotions.`,
+      messageText: `Self-Awareness means understanding who you are and recognizing the values, strengths, and responsibilities that shape your life. It includes:
+● Understanding your identity, including your gender, environment, religion, culture, skin colour, and your place within your family and community.
+● Recognizing your responsibilities to yourself, your family, your community, your country, and the wider world.
+● Understanding your needs and thinking carefully about how your decisions affect your life.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5131,12 +5111,10 @@ i. Kujitambua ni hatua ya kwanza kuelekea katika kuishi maisha ya afya njema. Ku
       nodeKey: 'SELF_IDENTIFICATION_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `ii.Kuhimili mihemko: Mihemko ni msisimko mkubwa sana.
-    ● Inaweza kuwa shangwe au furaha kubwa, hasira kali, bughudha isiyo ya kawaida, n.k.
-    ● Ni msukumo wa ndani ya nafsi ya mtu.
-    ● Siku zote mihemko hupoa. Inaweza kudumu kwa muda mrefu au mfupi, lakini hatimaye hupoa.
-    ● Kamwe usifanye uamuzi ukiwa na mihemko. Subiri hadi utulie, chambua hali iliyosababisha mihemko hiyo kisha fanya uamuzi.
-    ● Matatizo mengi yanayowakuta vijana yanatokana na kukosa uwezo wa kuhimili mhemko.`,
+      messageText: `Kujitambua kunamaanisha kuelewa wewe ni nani na kutambua maadili, nguvu, na majukumu yanayounda maisha yako. Inajumuisha:
+● Kuelewa utambulisho wako, ikiwa ni pamoja na jinsia yako, mazingira, dini, utamaduni, rangi ya ngozi, na nafasi yako ndani ya familia na jamii yako.
+● Kutambua majukumu yako kwako mwenyewe, familia yako, jamii yako, nchi yako, na ulimwengu mpana.
+● Kuelewa mahitaji yako na kufikiria kwa makini kuhusu jinsi maamuzi yako yanavyoathiri maisha yako.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5149,9 +5127,12 @@ i. Kujitambua ni hatua ya kwanza kuelekea katika kuishi maisha ya afya njema. Ku
       nodeKey: 'SELF_IDENTIFICATION_03',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Although great patience is needed, it is not good to make decisions when you are emotional.
-Emotions always have a tendency to “decline” after a certain time.
-And that is the best time to make decisions.`,
+      messageText: `Self-awareness also includes:
+● Knowing your health needs so you can take good care of your body.
+● Understanding the kind of relationships you want and setting healthy boundaries.
+● Making decisions that protect your wellbeing and having the confidence to stand by those decisions.
+
+The better you understand yourself, the more confident you'll become in making choices that reflect your values and goals.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5164,9 +5145,12 @@ And that is the best time to make decisions.`,
       nodeKey: 'SELF_IDENTIFICATION_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Pamoja na kwamba uvumilivu mkubwa unahitajika, siyo vema kufanya maamuzi wakati wa mhemko.
-Wakati wote mhemko una tabia ya “kushuka” baada ya muda fulani.
-Na huo ndio wakati mzuri wa kufanya maamuzi.`,
+      messageText: `Kujitambua pia kunajumuisha:
+● Kujua mahitaji yako ya kiafya ili uweze kutunza mwili wako vizuri.
+● Kuelewa aina ya mahusiano unayotaka na kuweka mipaka yenye afya.
+● Kufanya maamuzi yanayolinda ustawi wako na kuwa na ujasiri wa kusimama na maamuzi hayo.
+
+Kadiri unavyojielewa vyema, ndivyo utakavyokuwa na ujasiri zaidi katika kufanya maamuzi yanayoakisi maadili na malengo yako.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5179,13 +5163,9 @@ Na huo ndio wakati mzuri wa kufanya maamuzi.`,
       nodeKey: 'SELF_IDENTIFICATION_04',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Emotions are emotional reactions in everyday life for an ordinary person, these emotions correspond to the event they are facing at that time.
-In general, emotions are actions of the mind, body and behavior that manifest themselves against the thing that caused the emotion.
-Different types of emotions
-    ● Happiness or disgust
-    ● Acceptance or disapproval
-    ● Anger and fear
-    ● Surprise and anticipation`,
+      messageText: `Managing Your Emotions
+
+Everyone experiences emotions such as happiness, sadness, anger, fear, anxiety, excitement, or disappointment. These emotions are a natural part of life and often change depending on what we are experiencing.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5198,13 +5178,9 @@ Different types of emotions
       nodeKey: 'SELF_IDENTIFICATION_04',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mhemko ni mwitikio wa hisia katika maisha ya kila siku kwa mtu wa kawaida hisia hizi hulingana na tukio analokabiliana nalo katika wakati husika.
-Kwa ujumla hisia ni kitendo cha ufahamu, mwili na tabia zinazojidhihirisha dhidi ya jambo lililopelekea mhemko.
-Aina tofauti za hisia
-    ● Kufurahi au kuchukia
-    ● Kukubalika au kutokubalika
-    ● Hasira na hofu
-    ● Mshangao na matarajio`,
+      messageText: `Kudhibiti Hisia Zako
+
+Kila mtu hupata hisia kama vile furaha, huzuni, hasira, hofu, wasiwasi, msisimko, au kukata tamaa. Hisia hizi ni sehemu ya kawaida ya maisha na mara nyingi hubadilika kulingana na kile tunachopitia.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5217,9 +5193,8 @@ Aina tofauti za hisia
       nodeKey: 'SELF_IDENTIFICATION_05',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `iii. Coping with stress: “Stress” is a state of emotional or psychological distress resulting from a situation, event or thing that is very difficult or challenging.
-    ● Stress leads to different feelings such as fear, anger, hatred, racing heartbeat.
-    ● Factors that contribute to stress include lifestyle, social problems such as relationships, many jobs, abuse, being pregnant, lack of basic needs, lack of money, academic issues`,
+      messageText: `One of the most valuable life skills is learning to manage your emotions before making important decisions. Strong emotions usually become less intense with time, so it's often better to pause, calm down, think about what happened, and then decide what to do.
+Many challenges young people face happen because decisions are made in moments of intense emotion. Taking a moment to reflect can help you make healthier and wiser choices.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5232,10 +5207,8 @@ Aina tofauti za hisia
       nodeKey: 'SELF_IDENTIFICATION_05',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `iii. Kuhimili msongo wa mawazo: “Msongo wa mawazo” ni hali ya maumivu au mfadhaiko wa kihisia au kisaikologia unaotokana na hali,tukio au jambo ambalo ni gumu sana au lenye changamoto kubwa.
-    ● Mambo yanayochangia msongo wa mawazo hupelekea hisia tofauti kujitokeza kama vile woga, hasira, chuki, mapigo ya moyo kwenda mbio.
-    ● Mambo yanayochangja msongo ni pamoja na mtindo wa maisha, matatizo ya kijamii kama mahusiano, kazi nyingi, unyanyasaji, kuwa mjamzito, kukosekana kwa mahitaji ya msingi, uhaba wa fedha, masuala ya kitaaluma
-`,
+      messageText: `Mojawapo ya ujuzi muhimu zaidi wa maisha ni kujifunza kudhibiti hisia zako kabla ya kufanya maamuzi muhimu. Hisia kali kwa kawaida hupungua kadri muda unavyopita, kwa hivyo mara nyingi ni bora kutulia, kutulia, kufikiria kilichotokea, na kisha kuamua cha kufanya.
+Changamoto nyingi ambazo vijana hukabiliana nazo hutokea kwa sababu maamuzi hufanywa wakati wa hisia kali. Kuchukua muda kutafakari kunaweza kukusaidia kufanya maamuzi bora na ya busara.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5248,10 +5221,14 @@ Aina tofauti za hisia
       nodeKey: 'SELF_IDENTIFICATION_06',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `iv. Self-esteem: A young person has a much greater value than he or she thinks he or she has.
-    ● When you value yourself, other people will value you and you have to value yourself after realizing how much you are worth.
-    ● Self-esteem is part of a young person’s recognition that he or she has a much greater value than he or she thinks he or she has.
-    ● When you value yourself, other people will value you and you have to value yourself after realizing how much you are worth.`,
+      messageText: `Some common emotions include:
+● Happiness.
+● Sadness.
+● Acceptance or disapproval.
+● Anger.
+● Fear.
+● Surprise.
+● Anticipation.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5264,11 +5241,14 @@ Aina tofauti za hisia
       nodeKey: 'SELF_IDENTIFICATION_06',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `iv.Kujithamini: Kijana ana thamani kubwa sana pengine kuliko hata anavyo jifikiria yeye.
-    ● Utakapojithamini wewe binafsi na watu wengine watakuthamini na inabidi ujiweke katika thamani uliyonayo baada ya kujitambua kuwa una thamani gani.
-    ● Kujithamini ni sehemu ya kijana kujitambua kuwa ana thamani kubwa sana pengine kuliko hata anavyo jifikiria yeye.
-    ● Utakapojithamini wewe binafsi na watu wengine watakuthamini na inabidi ujiweke katika thamani uliyonayo baada ya kujitambua kuwa una thamani gani.
-`,
+      messageText: `Baadhi ya hisia za kawaida ni pamoja na:
+● Furaha.
+● Huzuni.
+● Kukubali au kutokubali.
+● Hasira.
+● Hofu.
+● Mshangao.
+● Kutarajia.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5281,12 +5261,9 @@ Aina tofauti za hisia
       nodeKey: 'SELF_IDENTIFICATION_07',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `A self-aware young person has assertiveness.
-    ● Assertiveness is the state of defending your rights clearly by expressing your feelings without hurting the feelings of another person.
-    ● When you have assertiveness, you are courageous, confident, self-esteem, and as a result, you will have SELF-AWARENESS.
-    ● This is a skill that enables a person to manage their decisions firmly without wavering.
-    ● It is seen in the words and actions a person makes.
-`,
+      messageText: `Coping with Stress
+
+Stress is the body's natural response to difficult situations or challenges. It can happen because of schoolwork, relationships, financial difficulties, abuse, pregnancy, family problems, lack of basic needs, or other life pressures.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5299,12 +5276,9 @@ Aina tofauti za hisia
       nodeKey: 'SELF_IDENTIFICATION_07',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Kijana aliyejitambua anakuwa na udhubutu.
-    ● Uthubutu ni hali ya kutetea haki yako waziwazi kwa kutoa hisia zako bila ya kuumiza hisia za mtu mwingine.
-    ● Unapokuwa na uthubutu unakuwa na ujasiri, unajiamini, unajithamini, na matokeo yake utakuwa UMEJITAMBUA.
-    ● Hii ni stadi inayomwezesha mtu kusimamia maamuzi yake kwa uthabiti pasipo kutetereka.
-    ● Huonekana kwa maneno na vitendo anavyovifanya mtu.
-`,
+      messageText: `Kukabiliana na Msongo wa Mawazo
+
+Msongo wa Mawazo ni mwitikio wa asili wa mwili kwa hali ngumu au changamoto. Inaweza kutokea kwa sababu ya kazi ya shule, mahusiano, matatizo ya kifedha, unyanyasaji, ujauzito, matatizo ya kifamilia, ukosefu wa mahitaji ya msingi, au shinikizo zingine za maisha.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5317,10 +5291,7 @@ Aina tofauti za hisia
       nodeKey: 'SELF_IDENTIFICATION_08',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `High assertiveness enables you to win but low assertiveness depresses and makes you a person who cannot manage themselves.
-For example, parents can prevent children from developing well by discouraging them that they are incapable.
-Self-awareness in health is a very important part of a young person's life.
-Often we enjoy going with the times more than protecting our health.`,
+      messageText: `Stress may make you feel worried, angry, fearful, overwhelmed, or even cause physical reactions such as a fast heartbeat. The good news is that stress can be managed. Talking to someone you trust, getting enough rest, exercising, breaking problems into smaller steps, and asking for support can all help you cope in healthy ways.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5333,9 +5304,7 @@ Often we enjoy going with the times more than protecting our health.`,
       nodeKey: 'SELF_IDENTIFICATION_08',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Uthubutu wa hali ya juu hukuwezesha kushinda bali uthubutu wa chini hudidimiza na kukufanya mtu usiyeweza kujisimamia.
-Mfano, Wazazi wanavyoweza kuwafanya watoto wasiwe na maendeleo mazuri kwa kuwakatisha tamaa kuwa hawawezi.
-Kujitambua katika afya ni sehemu muhimu sana katika maisha ya kijana.`,
+      messageText: `Msongo wa mawazo unaweza kukufanya uhisi wasiwasi, hasira, woga, kuzidiwa, au hata kusababisha athari za kimwili kama vile mapigo ya moyo ya haraka. Habari njema ni kwamba msongo wa mawazo unaweza kudhibitiwa. Kuzungumza na mtu unayemwamini, kupumzika vya kutosha, kufanya mazoezi, kuvunja matatizo katika hatua ndogo, na kuomba msaada vyote vinaweza kukusaidia kukabiliana na hali kwa njia zenye afya.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5348,9 +5317,9 @@ Kujitambua katika afya ni sehemu muhimu sana katika maisha ya kijana.`,
       nodeKey: 'SELF_IDENTIFICATION_09',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `We often forget that our health is very important so that we can go with the times.
-In the matter of sex, a person who is self-aware will make sure that he remembers to practice safe sex in any environment.
-`,
+      messageText: `Building Healthy Self-Esteem and Assertiveness
+
+Every young person has value, even if they don't always recognize it. Self-esteem means appreciating your worth, believing in your abilities, and treating yourself with respect. When you value yourself, you're more likely to make healthy decisions and build respectful relationships.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5363,10 +5332,9 @@ In the matter of sex, a person who is self-aware will make sure that he remember
       nodeKey: 'SELF_IDENTIFICATION_09',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mara nyingi tunafurahia zaidi kwenda na wakati kuliko kulinda afya zetu.
-Kumbe tunakuwa tunasahau kuwa afya zetu ni muhimu sana ili tuweze kwenda na huo wakati.
-Katika swala la ngono, mtu anayejitambua atahakikisha anakumbuka kufanya ngono salama katika mazingira yoyote yale.
-`,
+      messageText: `Kujenga Kujithamini na Kujiamini Kiafya
+
+Kila kijana ana thamani, hata kama hawaitambui kila wakati. Kujithamini kunamaanisha kuthamini thamani yako, kuamini uwezo wako, na kujiheshimu. Unapojithamini, kuna uwezekano mkubwa wa kufanya maamuzi yenye afya na kujenga mahusiano yenye heshima.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5376,47 +5344,10 @@ Katika swala la ngono, mtu anayejitambua atahakikisha anakumbuka kufanya ngono s
     },
     {
       subtopicCode: 'SELF_IDENTIFICATION',
-      nodeKey: 'SELF_IDENTIFICATION_12',
-      nodeType: NodeType.CONTENT,
-      language: Language.EN,
-      messageText: `In addition to all these things, a young person should also consider the following:
-    ● A self-aware girl will be able to say no to sex if she is not ready to have sex.
-    ● A self-aware girl will not allow anyone to persuade or deceive her into loving her with gifts.
-    ● A self-aware girl will not allow herself to have unwanted pregnancies that can interrupt her studies and life dreams.
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 12,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'SELF_IDENTIFICATION',
-      nodeKey: 'SELF_IDENTIFICATION_12',
-      nodeType: NodeType.CONTENT,
-      language: Language.SW,
-      messageText: `Pamoja na mambo yote hayo, kijana pia anatakiwa azingatie mambo yafuatayo:
-    ● Msichana anayejitambua ataweza kusema hapana kuhusu ngono kama hayuko tayari kushiriki ngono.
-    ● Msichana anayejitambua hataruhusu mtu yeyote amshawishi au kumdanganya kuwa anampenda kwa zawadi.
-    ● Msichana anayejitambua hatarusu kupata mimba zisizotarajiwa ambazo zinaweza kukatisha masomo na ndoto zake za maisha.
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 12,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'SELF_IDENTIFICATION',
       nodeKey: 'SELF_IDENTIFICATION_10',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Additionally:
-    ● A self-aware girl will protect herself by using condoms if she decides to have sex.
-    ● A self-aware girl will protect herself by using family planning methods so that she does not get unwanted pregnancies.
-    ● A self-aware girl will go to a health center if she is pregnant so that she can get professional help.`,
+      messageText: `An important part of self-awareness is assertiveness. Assertiveness means expressing your thoughts, feelings, and rights clearly and respectfully without hurting others. It helps you stand by your decisions, set healthy boundaries, and say "no" when something doesn't feel right.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5429,10 +5360,7 @@ Katika swala la ngono, mtu anayejitambua atahakikisha anakumbuka kufanya ngono s
       nodeKey: 'SELF_IDENTIFICATION_10',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Kwa Kuongeza:
-    ● Msichana anayejitambua atajilinda kwa kutumia kondomu endapo ataamua kushiriki ngono.
-    ● Msichana anayejitambua atajilinda kwa kutumia njia za uzazi wa mpango ili asipate mimba zisizotarajiwa.
-    ● Msichana anayejitambua ataenda kituo cha afya endapo ni mjamzito ili aweze kupata msaada wa kitaalamu.`,
+      messageText: `Sehemu muhimu ya kujitambua ni uthubutu. Uthubutu unamaanisha kuelezea mawazo, hisia, na haki zako waziwazi na kwa heshima bila kuwaumiza wengine. Inakusaidia kusimama na maamuzi yako, kuweka mipaka yenye afya, na kusema "hapana" wakati jambo halihisi sawa.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5445,35 +5373,431 @@ Katika swala la ngono, mtu anayejitambua atahakikisha anakumbuka kufanya ngono s
       nodeKey: 'SELF_IDENTIFICATION_11',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
+      messageText: `High assertiveness helps build confidence, while low assertiveness can make it difficult to protect yourself or make independent decisions. Sometimes negative messages from others can reduce a young person's confidence, but remember that your worth is not determined by what others say about you.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_11',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Uthubutu wa hali ya juu husaidia kujenga kujiamini, huku uthubutu mdogo ukiweza kufanya iwe vigumu kujilinda au kufanya maamuzi huru. Wakati mwingine ujumbe hasi kutoka kwa wengine unaweza kupunguza kujiamini kwa kijana, lakini kumbuka kwamba thamani yako haitegemei kile ambacho wengine wanasema kukuhusu.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_12',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Self-awareness is an important part of protecting your health and building the future you want. Understanding yourself, managing your emotions, coping with stress, and believing in your worth will help you make safer, healthier, and more confident decisions throughout your life.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_12',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kujitambua ni sehemu muhimu ya kulinda afya yako na kujenga mustakabali unaotaka. Kujielewa, kudhibiti hisia zako, kukabiliana na msongo wa mawazo, na kuamini thamani yako kutakusaidia kufanya maamuzi salama, yenye afya njema, na yenye ujasiri zaidi katika maisha yako yote.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_13',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Often, we forget that our health is very important so that we can go with the times. In the matter of sex, a person who is self-aware will make sure that he remembers to practice safe sex in any environment.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_13',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Mara nyingi tunafurahia zaidi kwenda na wakati kuliko kulinda afya zetu. Kumbe tunakuwa tunasahau kuwa afya zetu ni muhimu sana ili tuweze kwenda na huo wakati. Katika swala la ngono, mtu anayejitambua atahakikisha anakumbuka kufanya ngono salama katika mazingira yoyote yale.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_14',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `In addition to all these things, a young person should also consider the following:
+● A self-aware girl will be able to say no to sex if she is not ready to have sex.
+● A self-aware girl will not allow anyone to persuade or deceive her into loving her with gifts.
+● A self-aware girl will not allow herself to have unwanted pregnancies that can interrupt her studies and life dreams.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 14,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_14',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Pamoja na mambo yote hayo, kijana pia anatakiwa azingatie mambo yafuatayo:
+● Msichana anayejitambua ataweza kusema hapana kuhusu ngono kama hayuko tayari kushiriki ngono.
+● Msichana anayejitambua hataruhusu mtu yeyote amshawishi au kumdanganya kuwa anampenda kwa zawadi.
+● Msichana anayejitambua hatarusu kupata mimba zisizotarajiwa ambazo zinaweza kukatisha masomo na ndoto zake za maisha.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 14,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_15',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Additionally:
+● A self-aware girl will protect herself by using condoms if she decides to have sex.
+● A self-aware girl will protect herself by using family planning methods so that she does not get unwanted pregnancies.
+● A self-aware girl will go to a health center if she is pregnant so that she can get professional help.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 15,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_15',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kwa Kuongeza:
+● Msichana anayejitambua atajilinda kwa kutumia kondomu endapo ataamua kushiriki ngono.
+● Msichana anayejitambua atajilinda kwa kutumia njia za uzazi wa mpango ili asipate mimba zisizotarajiwa.
+● Msichana anayejitambua ataenda kituo cha afya endapo ni mjamzito ili aweze kupata msaada wa kitaalamu.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 15,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_16',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
       messageText: `Moreover:
-    ● A self-aware boy will protect himself, respect and protect girls.
-    ● A self-aware boy will not rape a girl.
-    ● A self-aware boy will use condoms and other family planning methods.
-    ● A self-aware boy will protect his partner, will not participate in sexual violence and condemn all risky behaviors.
+● A self-aware boy will protect himself, respect and protect girls.
+● A self-aware boy will not rape a girl.
+● A self-aware boy will use condoms and other family planning methods.
+● A self-aware boy will protect his partner, will not participate in sexual violence and condemn all risky behaviors.
+
 Young people (girls and boys) who are aware of this will seek reproductive health education, will protect themselves from sexually transmitted diseases including HIV/AIDS.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
-      sortOrder: 11,
+      isEndNode: false,
+      sortOrder: 16,
       isActive: true,
     },
     {
       subtopicCode: 'SELF_IDENTIFICATION',
-      nodeKey: 'SELF_IDENTIFICATION_11',
+      nodeKey: 'SELF_IDENTIFICATION_16',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Pia zingatia:
-    ● Mvulana anayejitambua atajilinda, ataheshimu na kulinda wasichana.
-    ● Mvulana anayejitambua hatambaka msichana.
-    ● Mvulana anayejitambua atatumia kondomu na njia nyingine za uzazi wa mpango.
-    ● Mvulana anayejitambua atamlinda mwenzi wake, hatashiriki katika unyanyasaji wa kijinsia na kukemea tabia zote hatarishi.
+● Mvulana anayejitambua atajilinda, ataheshimu na kulinda wasichana.
+● Mvulana anayejitambua hatambaka msichana.
+● Mvulana anayejitambua atatumia kondomu na njia nyingine za uzazi wa mpango.
+● Mvulana anayejitambua atamlinda mwenzi wake, hatashiriki katika unyanyasaji wa kijinsia na kukemea tabia zote hatarishi.
+
 Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, watajilinda na maambukizi ya maradhi ya ngono ikiwemo VVU/UKIMWI.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
+      isEndNode: false,
+      sortOrder: 16,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_17',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Would you like to learn more about decision-making, managing emotions, building self-confidence, coping with stress, or setting healthy relationship boundaries? I'm here to help.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 17,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_17',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Je, ungependa kujifunza zaidi kuhusu kufanya maamuzi, kudhibiti hisia, kujenga kujiamini, kukabiliana na msongo wa mawazo, au kuweka mipaka ya uhusiano mzuri? Niko hapa kukusaidia.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 17,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_18',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence, or help with abuse, you do not have to face it alone. You can visit the nearest hospital, health centre, dispensary, or youth-friendly health service for confidential support and guidance. You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader, or healthcare provider.
+
+If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment, or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.
+
+For additional support, guidance, or referrals, you can contact OVAH through:
+Phone/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
       isEndNode: true,
-      sortOrder: 11,
+      sortOrder: 18,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_18',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili, au msaada kuhusu unyanyasaji, usibaki peke yako. Unaweza kutembelea hospitali, kituo cha afya, zahanati, au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama. Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini, au mtoa huduma za afya unayemwamini.
+
+Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono, au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.
+
+Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 18,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Self-awareness - the first step to a healthy life.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kujitambua - hatua ya kwanza ya maisha ya afya.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `● Self-awareness means understanding who you are, your needs, and your worth.
+● A self-aware young person can say no to unwanted sex, and protect themselves with the right choices.
+● Assertiveness - standing up for your rights without hurting others - is part of self-awareness.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `● Kujitambua kunamaanisha kujielewa wewe ni nani, mahitaji yako, na thamani yako.
+● Kijana anayejitambua anaweza kusema hapana kwa ngono asiyoitaka, na kujilinda kwa maamuzi sahihi.
+● Uthubutu - kutetea haki yako bila kuumiza wengine - ni sehemu ya kujitambua.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `True or False: Self-awareness means seeing yourself as better than others.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kweli au Uongo: Kujitambua kunamaanisha kujiona bora kuliko wengine.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Correct: B - False. Self-awareness is recognizing your worth, not looking down on others.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Sahihi: B - Uongo. Kujitambua ni kutambua thamani yako, si kudharau wengine.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Not quite.
+
+Correct: B - False. Self-awareness is recognizing your worth, not looking down on others.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Si sahihi.
+
+Sahihi: B - Uongo. Kujitambua ni kutambua thamani yako, si kudharau wengine.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `How do you feel about yourself right now?`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unajiona vipi kwa sasa?`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Would you like to talk about your self-confidence? We're here.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SELF_IDENTIFICATION',
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ungependa kuzungumza kuhusu kujiamini kwako? Tuko hapa.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
       isActive: true,
     },
   ],
@@ -8542,326 +8866,569 @@ Vijana (wasichana na wavulana) wanaojitambua watatafuta elimu ya afya ya uzazi, 
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_01',
-      optionValue: 'manage_emotions',
-      labelEn: 'Managing emotions',
-      labelSw: 'Kudhibiti mihemko',
+      optionValue: 'what_is_it',
+      labelEn: 'What is it?',
+      labelSw: 'Maana yake?',
       nextNodeKey: 'SELF_IDENTIFICATION_02',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_01',
-      optionValue: 'wait_first',
-      labelEn: 'Why wait',
-      labelSw: 'Umuhimu wa subra?',
-      nextNodeKey: 'SELF_IDENTIFICATION_03',
+      optionValue: 'emotions',
+      labelEn: 'Types of Emotions',
+      labelSw: 'Aina za Hisia',
+      nextNodeKey: 'SELF_IDENTIFICATION_04',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_01',
-      optionValue: 'types_feelings',
-      labelEn: 'Types of emotions',
-      labelSw: 'Aina za hisia',
-      nextNodeKey: 'SELF_IDENTIFICATION_04',
+      optionValue: 'decisions',
+      labelEn: 'Decisions making',
+      labelSw: 'Kufanya Maamuzi',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_02',
-      optionValue: 'wait_first',
-      labelEn: 'Why wait',
-      labelSw: 'Umuhimu wa subra?',
+      optionValue: 'more_signs',
+      labelEn: 'More signs',
+      labelSw: 'Ishara zaidi',
       nextNodeKey: 'SELF_IDENTIFICATION_03',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_02',
-      optionValue: 'types_feelings',
-      labelEn: 'Types of emotions',
-      labelSw: 'Aina za hisia',
+      optionValue: 'emotions',
+      labelEn: 'Types of Emotions',
+      labelSw: 'Aina za Hisia',
       nextNodeKey: 'SELF_IDENTIFICATION_04',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_02',
-      optionValue: 'handle_stress',
-      labelEn: 'Handle stress?',
-      labelSw: 'Kudhibiti msongo',
-      nextNodeKey: 'SELF_IDENTIFICATION_05',
+      optionValue: 'boundaries',
+      labelEn: 'Setting Boundaries',
+      labelSw: 'Kuweka Mipaka',
+      nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_03',
-      optionValue: 'types_feelings',
-      labelEn: 'Types of emotions',
-      labelSw: 'Aina za hisia',
+      optionValue: 'emotions',
+      labelEn: 'Types of Emotions',
+      labelSw: 'Aina za Hisia',
       nextNodeKey: 'SELF_IDENTIFICATION_04',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_03',
-      optionValue: 'handle_stress',
-      labelEn: 'Handle stress?',
-      labelSw: 'Kudhibiti msongo',
-      nextNodeKey: 'SELF_IDENTIFICATION_05',
+      optionValue: 'health_choices',
+      labelEn: 'Health choices',
+      labelSw: 'Chaguo za afya',
+      nextNodeKey: 'SELF_IDENTIFICATION_13',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_03',
-      optionValue: 'value_yourself',
-      labelEn: 'Self-esteem',
-      labelSw: 'Kujithamini',
-      nextNodeKey: 'SELF_IDENTIFICATION_06',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime Uelewa',
+      nextNodeKey: 'SELF_IDENTIFICATION_REFRESHER_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_04',
-      optionValue: 'handle_stress',
-      labelEn: 'Handle stress?',
-      labelSw: 'Kudhibiti msongo',
+      optionValue: 'pause_first',
+      labelEn: 'Pause first',
+      labelSw: 'Tulia kwanza',
       nextNodeKey: 'SELF_IDENTIFICATION_05',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_04',
-      optionValue: 'value_yourself',
-      labelEn: 'Self-esteem',
-      labelSw: 'Kujithamini',
+      optionValue: 'common_emotions',
+      labelEn: 'Common emotions',
+      labelSw: 'Hisia za kawaida',
       nextNodeKey: 'SELF_IDENTIFICATION_06',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_04',
-      optionValue: 'assertive',
-      labelEn: 'Assertiveness',
-      labelSw: 'Uthubutu',
+      optionValue: 'stress',
+      labelEn: 'Stress',
+      labelSw: 'Msongo',
       nextNodeKey: 'SELF_IDENTIFICATION_07',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_05',
-      optionValue: 'value_yourself',
-      labelEn: 'Self-esteem',
-      labelSw: 'Kujithamini',
+      optionValue: 'common_emotions',
+      labelEn: 'Common emotions',
+      labelSw: 'Hisia za kawaida',
       nextNodeKey: 'SELF_IDENTIFICATION_06',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_05',
-      optionValue: 'assertive',
-      labelEn: 'Assertiveness',
-      labelSw: 'Uthubutu',
+      optionValue: 'stress',
+      labelEn: 'Stress',
+      labelSw: 'Msongo',
       nextNodeKey: 'SELF_IDENTIFICATION_07',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_05',
-      optionValue: 'why_health',
-      labelEn: 'Why safe sex?',
-      labelSw: 'Ngono salama',
-      nextNodeKey: 'SELF_IDENTIFICATION_09',
+      optionValue: 'decisions',
+      labelEn: 'Decision making',
+      labelSw: 'Kufanya Maamuzi',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_06',
-      optionValue: 'assertive',
-      labelEn: 'Assertiveness',
-      labelSw: 'Uthubutu',
+      optionValue: 'stress',
+      labelEn: 'Stress',
+      labelSw: 'Msongo',
       nextNodeKey: 'SELF_IDENTIFICATION_07',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_06',
-      optionValue: 'why_health',
-      labelEn: 'Why safe sex?',
-      labelSw: 'Ngono salama',
+      optionValue: 'self_esteem',
+      labelEn: 'Self-esteem',
+      labelSw: 'Kujithamini',
       nextNodeKey: 'SELF_IDENTIFICATION_09',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_06',
-      optionValue: 'girl_choices',
-      labelEn: 'Girls choices?',
-      labelSw: 'Chaguo za binti',
-      nextNodeKey: 'SELF_IDENTIFICATION_12',
+      optionValue: 'assertiveness',
+      labelEn: 'Assertiveness',
+      labelSw: 'Uthubutu',
+      nextNodeKey: 'SELF_IDENTIFICATION_10',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_07',
-      optionValue: 'high_assertive',
-      labelEn: 'High assertiveness?',
-      labelSw: 'Uthubutu wa juu',
+      optionValue: 'coping_tips',
+      labelEn: 'Coping tips',
+      labelSw: 'Njia za kukabili',
       nextNodeKey: 'SELF_IDENTIFICATION_08',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_07',
-      optionValue: 'why_health',
-      labelEn: 'Why safe sex?',
-      labelSw: 'Ngono salama',
+      optionValue: 'self_esteem',
+      labelEn: 'Self-esteem',
+      labelSw: 'Kujithamini',
       nextNodeKey: 'SELF_IDENTIFICATION_09',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_07',
-      optionValue: 'girl_choices',
-      labelEn: 'Girls choices?',
-      labelSw: 'Chaguo za binti',
-      nextNodeKey: 'SELF_IDENTIFICATION_12',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'SELF_IDENTIFICATION_18',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_08',
-      optionValue: 'why_health',
-      labelEn: 'Why safe sex?',
-      labelSw: 'Ngono salama',
+      optionValue: 'self_esteem',
+      labelEn: 'Self-esteem',
+      labelSw: 'Kujithamini',
       nextNodeKey: 'SELF_IDENTIFICATION_09',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_08',
-      optionValue: 'girl_choices',
-      labelEn: 'Girls choices?',
-      labelSw: 'Chaguo za binti',
-      nextNodeKey: 'SELF_IDENTIFICATION_12',
+      optionValue: 'assertiveness',
+      labelEn: 'Assertiveness',
+      labelSw: 'Uthubutu',
+      nextNodeKey: 'SELF_IDENTIFICATION_10',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_08',
-      optionValue: 'more_choices',
-      labelEn: 'More choices?',
-      labelSw: 'Chaguo zaidi?',
-      nextNodeKey: 'SELF_IDENTIFICATION_10',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'SELF_IDENTIFICATION_18',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_09',
-      optionValue: 'girl_choices',
-      labelEn: 'Girls choices?',
-      labelSw: 'Chaguo za binti',
+      optionValue: 'assertiveness',
+      labelEn: 'Assertiveness',
+      labelSw: 'Uthubutu',
+      nextNodeKey: 'SELF_IDENTIFICATION_10',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_09',
+      optionValue: 'confidence',
+      labelEn: 'Confidence',
+      labelSw: 'Kujiamini',
+      nextNodeKey: 'SELF_IDENTIFICATION_11',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_09',
+      optionValue: 'relationships',
+      labelEn: 'Healthy relations',
+      labelSw: 'Mahusiano mema',
+      nextNodeKey: 'HEALTHY_RELATIONSHIPS_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_10',
+      optionValue: 'confidence',
+      labelEn: 'Confidence',
+      labelSw: 'Kujiamini',
+      nextNodeKey: 'SELF_IDENTIFICATION_11',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_10',
+      optionValue: 'health_choices',
+      labelEn: 'Health choices',
+      labelSw: 'Chaguo za afya',
+      nextNodeKey: 'SELF_IDENTIFICATION_13',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_10',
+      optionValue: 'boundaries',
+      labelEn: 'Setting Boundaries',
+      labelSw: 'Kuweka Mipaka',
+      nextNodeKey: 'RESPECT_AND_BOUNDARIES_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_11',
+      optionValue: 'big_picture',
+      labelEn: 'Big picture',
+      labelSw: 'Picha kubwa',
       nextNodeKey: 'SELF_IDENTIFICATION_12',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'SELF_IDENTIFICATION_09',
-      optionValue: 'more_choices',
-      labelEn: 'More choices?',
-      labelSw: 'Chaguo zaidi?',
-      nextNodeKey: 'SELF_IDENTIFICATION_10',
+      nodeKey: 'SELF_IDENTIFICATION_11',
+      optionValue: 'health_choices',
+      labelEn: 'Health choices',
+      labelSw: 'Chaguo za afya',
+      nextNodeKey: 'SELF_IDENTIFICATION_13',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'SELF_IDENTIFICATION_09',
-      optionValue: 'boys_choices',
-      labelEn: 'Boys choices?',
-      labelSw: 'Chaguo za wavulana?',
-      nextNodeKey: 'SELF_IDENTIFICATION_11',
+      nodeKey: 'SELF_IDENTIFICATION_11',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime Uelewa',
+      nextNodeKey: 'SELF_IDENTIFICATION_REFRESHER_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_12',
-      optionValue: 'more_choices',
-      labelEn: 'More choices?',
-      labelSw: 'Chaguo zaidi?',
-      nextNodeKey: 'SELF_IDENTIFICATION_10',
+      optionValue: 'safe_sex',
+      labelEn: 'Safe sex',
+      labelSw: 'Ngono salama',
+      nextNodeKey: 'SELF_IDENTIFICATION_13',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_12',
-      optionValue: 'boys_choices',
-      labelEn: 'Boys choices?',
-      labelSw: 'Chaguo za wavulana?',
-      nextNodeKey: 'SELF_IDENTIFICATION_11',
+      optionValue: 'girl_choices',
+      labelEn: 'Girls choices',
+      labelSw: 'Chaguo za binti',
+      nextNodeKey: 'SELF_IDENTIFICATION_14',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'SELF_IDENTIFICATION_12',
-      optionValue: 'set_goals',
-      labelEn: 'Planning the future',
-      labelSw: 'Kupanga Malengo',
-      nextNodeKey: 'GOAL_SETTING_AND_FUTURE_PLANNING_01',
+      optionValue: 'boy_choices',
+      labelEn: 'Boys choices',
+      labelSw: 'Chaguo za wavulana',
+      nextNodeKey: 'SELF_IDENTIFICATION_16',
       sortOrder: 3,
       isActive: true,
     },
     {
-      nodeKey: 'SELF_IDENTIFICATION_10',
-      optionValue: 'boys_choices',
-      labelEn: 'Boys choices?',
-      labelSw: 'Chaguo za wavulana?',
-      nextNodeKey: 'SELF_IDENTIFICATION_11',
+      nodeKey: 'SELF_IDENTIFICATION_13',
+      optionValue: 'girl_choices',
+      labelEn: 'Girls choices',
+      labelSw: 'Chaguo za binti',
+      nextNodeKey: 'SELF_IDENTIFICATION_14',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'SELF_IDENTIFICATION_10',
-      optionValue: 'set_goals',
-      labelEn: 'Planning the future',
+      nodeKey: 'SELF_IDENTIFICATION_13',
+      optionValue: 'more_choices',
+      labelEn: 'More choices',
+      labelSw: 'Chaguo zaidi',
+      nextNodeKey: 'SELF_IDENTIFICATION_15',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_13',
+      optionValue: 'consent',
+      labelEn: 'Consent?',
+      labelSw: 'Ridhaa?',
+      nextNodeKey: 'UNDERSTANDING_CONSENT_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_14',
+      optionValue: 'more_choices',
+      labelEn: 'More choices',
+      labelSw: 'Chaguo zaidi',
+      nextNodeKey: 'SELF_IDENTIFICATION_15',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_14',
+      optionValue: 'boy_choices',
+      labelEn: 'Boys choices',
+      labelSw: 'Chaguo za wavulana',
+      nextNodeKey: 'SELF_IDENTIFICATION_16',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_14',
+      optionValue: 'say_no',
+      labelEn: 'How to say no',
+      labelSw: 'Jinsi ya kukataa',
+      nextNodeKey: 'REFUSING_UNWANTED_SEXUAL_PRESSURE_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_15',
+      optionValue: 'boy_choices',
+      labelEn: 'Boys choices',
+      labelSw: 'Chaguo za wavulana',
+      nextNodeKey: 'SELF_IDENTIFICATION_16',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_15',
+      optionValue: 'anything_else',
+      labelEn: 'Anything else?',
+      labelSw: 'Kitu kingine?',
+      nextNodeKey: 'SELF_IDENTIFICATION_17',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_15',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'SELF_IDENTIFICATION_18',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_16',
+      optionValue: 'anything_else',
+      labelEn: 'Anything else?',
+      labelSw: 'Kitu kingine?',
+      nextNodeKey: 'SELF_IDENTIFICATION_17',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_16',
+      optionValue: 'goals',
+      labelEn: 'Setting Goals',
       labelSw: 'Kupanga Malengo',
       nextNodeKey: 'GOAL_SETTING_AND_FUTURE_PLANNING_01',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'SELF_IDENTIFICATION_10',
+      nodeKey: 'SELF_IDENTIFICATION_16',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'SELF_IDENTIFICATION_18',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_17',
+      optionValue: 'decisions',
+      labelEn: 'Decision making',
+      labelSw: 'Kufanya Maamuzi',
+      nextNodeKey: 'DECISION_MAKING_SKILLS_01',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_17',
+      optionValue: 'stress',
+      labelEn: 'Stress',
+      labelSw: 'Msongo',
+      nextNodeKey: 'SELF_IDENTIFICATION_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_17',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime Uelewa',
+      nextNodeKey: 'SELF_IDENTIFICATION_REFRESHER_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_18',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'SELF_IDENTIFICATION_11',
-      optionValue: 'set_goals',
-      labelEn: 'Planning the future',
-      labelSw: 'Kupanga Malengo',
-      nextNodeKey: 'GOAL_SETTING_AND_FUTURE_PLANNING_01',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'SELF_IDENTIFICATION_11',
-      optionValue: 'relationships',
-      labelEn: 'Healthy relations',
-      labelSw: 'Mahusiano mema',
-      nextNodeKey: 'HEALTHY_RELATIONSHIPS_01',
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_01',
+      optionValue: 'start_refresher',
+      labelEn: 'Start refresher',
+      labelSw: 'Anza kujikumbusha',
+      nextNodeKey: 'SELF_IDENTIFICATION_REFRESHER_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_02',
+      optionValue: 'start_quiz',
+      labelEn: 'Start quiz',
+      labelSw: 'Anza jaribio',
+      nextNodeKey: 'SELF_IDENTIFICATION_REFRESHER_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_03',
+      optionValue: 'true',
+      labelEn: 'A) True',
+      labelSw: 'A) Kweli',
+      nextNodeKey: 'SELF_IDENTIFICATION_REFRESHER_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_03',
+      optionValue: 'false',
+      labelEn: 'B) False',
+      labelSw: 'B) Uongo',
+      nextNodeKey: 'SELF_IDENTIFICATION_REFRESHER_04',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'SELF_IDENTIFICATION_11',
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_04',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali linalofuata',
+      nextNodeKey: 'SELF_IDENTIFICATION_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_05',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali linalofuata',
+      nextNodeKey: 'SELF_IDENTIFICATION_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_06',
+      optionValue: 'very_confident',
+      labelEn: 'A) Very confident',
+      labelSw: 'A) Najiamini sana',
+      nextNodeKey: 'SELF_IDENTIFICATION_REFRESHER_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_06',
+      optionValue: 'still_finding',
+      labelEn: 'B) Still finding',
+      labelSw: 'B) Bado najitafuta',
+      nextNodeKey: 'SELF_IDENTIFICATION_REFRESHER_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_06',
+      optionValue: 'confidence_issue',
+      labelEn: 'C) Confidence issue',
+      labelSw: 'C) Changamoto',
+      nextNodeKey: 'SELF_IDENTIFICATION_REFRESHER_07',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_07',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'SELF_IDENTIFICATION_18',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SELF_IDENTIFICATION_REFRESHER_07',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
+      sortOrder: 2,
       isActive: true,
     },
   ],
