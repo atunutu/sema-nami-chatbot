@@ -4473,9 +4473,9 @@ Simu/WhatsApp: 0652 522 358`,
       nodeKey: 'REPORTING_ABUSE_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Reporting abuse helps protect victims, prevent further harm, and connect people with support services.
-Reporting can also help protect other children from experiencing similar harm.
-`,
+      messageText: `Thank you for asking about this.
+If someone experiences abuse, it's important to remember that they deserve to be safe, heard, and supported.
+Reporting abuse is a brave step that can help protect both the person affected and others who may be at risk.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -4488,9 +4488,9 @@ Reporting can also help protect other children from experiencing similar harm.
       nodeKey: 'REPORTING_ABUSE_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Kuripoti unyanyasaji husaidia kuwalinda waathiriwa, kuzuia madhara zaidi, na kuwaunganisha watu na huduma za usaidizi.
-Kuripoti kunaweza pia kusaidia kuwalinda watoto wengine kutokana na madhara kama hayo.
-`,
+      messageText: `Asante kwa kuuliza kuhusu hili.
+Ikiwa mtu atapitia unyanyasaji, ni muhimu kukumbuka kwamba anastahili kuwa salama, kusikilizwa, na kuungwa mkono.
+Kuripoti unyanyasaji ni hatua ya ujasiri ambayo inaweza kusaidia kumlinda mtu aliyeathiriwa na wengine ambao wanaweza kuwa katika hatari.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -4504,18 +4504,8 @@ Kuripoti kunaweza pia kusaidia kuwalinda watoto wengine kutokana na madhara kama
       nodeKey: 'REPORTING_ABUSE_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `What Should Someone Do If Abuse Happens?
-
-Step 1: Ensure Safety- Move to a safe place if possible.
-Step 2: Tell a Trusted Person
-This could include:
-    ● Parent
-    ● Guardian
-    ● Teacher
-    ● School counselor
-    ● Healthcare provider
-    ● Social welfare officer
-`,
+      messageText: `Reporting abuse helps protect victims, prevent further harm, and connect people with the support and services they need.
+It can also help protect other children from experiencing similar harm in the future.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -4528,18 +4518,8 @@ This could include:
       nodeKey: 'REPORTING_ABUSE_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mtu Anapaswa Kufanya Nini Ikiwa Unyanyasaji Utatokea?
-
-Hatua ya 1: Hakikisha Usalama- Hamia mahali salama ikiwezekana.
-Hatua ya 2: Mwambie Mtu Unayemwamini
-Hii inaweza kujumuisha:
-    ● Mzazi
-    ● Mlezi
-    ● Mwalimu
-    ● Mshauri wa shule
-    ● Mtoa huduma ya afya
-    ● Afisa wa ustawi wa jamii
-`,
+      messageText: `Kuripoti unyanyasaji husaidia kuwalinda waathiriwa, kuzuia madhara zaidi, na kuwaunganisha watu na usaidizi na huduma wanazohitaji.
+Inaweza pia kusaidia kuwalinda watoto wengine kutokana na madhara kama hayo katika siku zijazo.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -4550,71 +4530,209 @@ Hii inaweza kujumuisha:
 
     {
       subtopicCode: 'REPORTING_ABUSE',
-      nodeKey: 'REPORTING_ABUSE_04',
+      nodeKey: 'REPORTING_ABUSE_03',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Step 3: Seek Medical Care -Medical support may be important, especially after physical or sexual abuse.`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 4,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'REPORTING_ABUSE',
-      nodeKey: 'REPORTING_ABUSE_04',
-      nodeType: NodeType.CONTENT,
-      language: Language.SW,
-      messageText: `Hatua ya 3: Tafuta Huduma ya Kimatibabu -Msaada wa kimatibabu unaweza kuwa muhimu, hasa baada ya unyanyasaji wa kimwili au kingono.`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 4,
-      isActive: true,
-    },
+      messageText: `What should someone do if abuse happens?
 
-    {
-      subtopicCode: 'REPORTING_ABUSE',
-      nodeKey: 'REPORTING_ABUSE_05',
-      nodeType: NodeType.CONTENT,
-      language: Language.EN,
-      messageText: `Step 4: Report to Relevant Authorities
-Depending on the situation:
-    ● Police
-    ● Social welfare officers
-    ● Child protection services
-    ● School leadership`,
+Step 1: Ensure your safety.
+If possible, move to a safe place where you are away from the person causing harm. Your safety should always come first.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: false,
-      sortOrder: 5,
+      sortOrder: 3,
       isActive: true,
     },
-    {
-      subtopicCode: 'REPORTING_ABUSE',
-      nodeKey: 'REPORTING_ABUSE_05',
-      nodeType: NodeType.CONTENT,
-      language: Language.SW,
-      messageText: `Hatua ya 4: Ripoti kwa Mamlaka Husika
-Kulingana na hali:
-    ● Polisi
-    ● Maafisa wa ustawi wa jamii
-    ● Huduma za ulinzi wa watoto
-    ● Uongozi wa shule`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 5,
-      isActive: true,
-    },
-
     {
       subtopicCode: 'REPORTING_ABUSE',
       nodeKey: 'REPORTING_ABUSE_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Mtu anapaswa kufanya nini ikiwa unyanyasaji utatokea?
+
+Hatua ya 1: Hakikisha usalama wako.
+Ikiwezekana, hamia mahali salama ambapo uko mbali na mtu anayesababisha madhara. Usalama wako unapaswa kuwa wa kwanza kila wakati.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 3,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Step 2: Tell a trusted person.
+You don't have to deal with abuse on your own. Consider talking to someone you trust, such as:
+    ● A parent.
+    ● A guardian.
+    ● A teacher.
+    ● A school counselor.
+    ● A healthcare provider.
+    ● A social welfare officer.
+
+Sharing what happened can help you get the protection and support you deserve.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Hatua ya 2: Mwambie mtu unayemwamini.
+Huna haja ya kukabiliana na unyanyasaji peke yako. Fikiria kuzungumza na mtu unayemwamini, kama vile:
+    ● Mzazi.
+    ● Mlezi.
+    ● Mwalimu.
+    ● Mshauri wa shule.
+    ● Mtoa huduma ya afya.
+    ● Afisa wa ustawi wa jamii.
+
+Kushiriki yaliyotokea kunaweza kukusaidia kupata ulinzi na usaidizi unaostahili.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 4,
+      isActive: true,
+    },
+
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Step 3: Seek medical care.
+Getting medical care may be important, especially after physical or sexual abuse.
+A healthcare provider can treat injuries, provide appropriate care, and offer additional support where needed.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Hatua ya 3: Tafuta huduma ya matibabu.
+Kupata huduma ya matibabu kunaweza kuwa muhimu, hasa baada ya unyanyasaji wa kimwili au kingono.
+Mtoa huduma ya afya anaweza kutibu majeraha, kutoa huduma inayofaa, na kutoa msaada wa ziada inapohitajika.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Step 4: Report to the relevant authorities.
+Depending on the situation, abuse can be reported to:
+    ● The Police.
+    ● Social Welfare Officers.
+    ● Child Protection Services.
+    ● School leadership.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Hatua ya 4: Ripoti kwa mamlaka husika.
+Kulingana na hali hiyo, unyanyasaji unaweza kuripotiwa kwa:
+    ● Polisi.
+    ● Maafisa wa Ustawi wa Jamii.
+    ● Huduma za Ulinzi wa Mtoto.
+    ● Uongozi wa shule.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `These services are there to help protect children and young people, respond to reports of abuse, and connect survivors with the support they need.
+Remember, abuse is never the victim's fault, and no one should have to face it alone.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Huduma hizi zipo ili kusaidia kuwalinda watoto na vijana, kujibu ripoti za unyanyasaji, na kuwaunganisha manusura na usaidizi wanaohitaji.
+Kumbuka, unyanyasaji kamwe si kosa la mwathiriwa, na hakuna mtu anayepaswa kukabiliana nao peke yake.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Reaching out for help is a positive step toward safety, protection, and recovery.
+There are people and services ready to listen, support you, and help you through the process.
+Would you like to learn more about recognizing different types of abuse, staying safe, supporting a friend who has experienced abuse, or where to find help? I'm here to support you.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kutafuta msaada ni hatua nzuri kuelekea usalama, ulinzi, na kupona.
+Kuna watu na huduma zilizo tayari kukusikiliza, kukusaidia, na kukusaidia katika mchakato mzima.
+Ungependa kujifunza zaidi kuhusu kutambua aina tofauti za unyanyasaji, kukaa salama, kumsaidia rafiki ambaye amepitia unyanyasaji, au wapi pa kupata msaada? Niko hapa kukusaidia.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_09',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Common Concerns
@@ -4629,13 +4747,13 @@ Abuse can be committed by people known to the victim. Reporting remains importan
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
-      sortOrder: 3,
+      isEndNode: false,
+      sortOrder: 9,
       isActive: true,
     },
     {
       subtopicCode: 'REPORTING_ABUSE',
-      nodeKey: 'REPORTING_ABUSE_03',
+      nodeKey: 'REPORTING_ABUSE_09',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Hofu za Kawaida
@@ -4650,11 +4768,128 @@ Unyanyasaji unaweza kufanywa na watu wanaomjua mwathiriwa. Kuripoti bado ni muhi
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
-      sortOrder: 3,
+      isEndNode: false,
+      sortOrder: 9,
       isActive: true,
     },
-    // add in chunks
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence, or help with abuse, you do not have to face it alone. You can visit the nearest hospital, health centre, dispensary, or youth-friendly health service for confidential support and guidance. You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader, or healthcare provider.
+
+If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment, or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.
+
+For additional support, guidance, or referrals, you can contact OVAH through:
+Phone/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili, au msaada kuhusu unyanyasaji, usibaki peke yako. Unaweza kutembelea hospitali, kituo cha afya, zahanati, au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama. Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini, au mtoa huduma za afya unayemwamini.
+
+Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono, au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.
+
+Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Reporting violence - an important step to protect yourself.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kuripoti ukatili - hatua muhimu ya kujilinda.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `● If you experience violence: make sure you are in a safe place first, then tell someone you trust.
+● Seek medical attention as soon as possible, especially after physical or sexual violence.
+● Report it to the police, social worker, or school administration - even if the perpetrator is someone you know.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `● Ukipitia ukatili: hakikisha uko mahali salama kwanza, kisha mwambie mtu unayemwamini.
+● Tafuta huduma ya afya haraka iwezekanavyo, hasa baada ya ukatili wa kimwili au kingono.
+● Ripoti kwa polisi, afisa ustawi wa jamii, au uongozi wa shule - hata kama mkosaji ni mtu unayemfahamu.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Do you need help reporting abuse or finding a safe next step? We are here to help.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPORTING_ABUSE',
+      nodeKey: 'REPORTING_ABUSE_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unahitaji msaada kuripoti ukatili au kupata hatua salama? Tuko hapa kusaidia.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 103,
+      isActive: true,
+    },
   ],
 
   contentNodeOptions: [
@@ -7775,78 +8010,51 @@ Unyanyasaji unaweza kufanywa na watu wanaomjua mwathiriwa. Kuripoti bado ni muhi
     },
     {
       nodeKey: 'REPORTING_ABUSE_01',
-      optionValue: 'what_to_do',
-      labelEn: 'What to do',
-      labelSw: 'Cha kufanya',
+      optionValue: 'why_report',
+      labelEn: 'Why report?',
+      labelSw: 'Kwanini niripoti?',
       nextNodeKey: 'REPORTING_ABUSE_02',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'REPORTING_ABUSE_01',
-      optionValue: 'medical_care',
-      labelEn: 'Medical care',
-      labelSw: 'Huduma ya afya',
-      nextNodeKey: 'REPORTING_ABUSE_04',
+      optionValue: 'what_to_do',
+      labelEn: 'What to do',
+      labelSw: 'Cha kufanya',
+      nextNodeKey: 'REPORTING_ABUSE_03',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'REPORTING_ABUSE_01',
-      optionValue: 'concerns',
-      labelEn: 'Common concerns',
-      labelSw: 'Hofu za kawaida',
-      nextNodeKey: 'REPORTING_ABUSE_03',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'REPORTING_ABUSE_10',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'REPORTING_ABUSE_02',
-      optionValue: 'medical_care',
-      labelEn: 'Medical care',
-      labelSw: 'Huduma ya afya',
-      nextNodeKey: 'REPORTING_ABUSE_04',
+      optionValue: 'what_to_do',
+      labelEn: 'What to do',
+      labelSw: 'Cha kufanya',
+      nextNodeKey: 'REPORTING_ABUSE_03',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'REPORTING_ABUSE_02',
-      optionValue: 'authorities',
-      labelEn: 'Notify Authorities',
-      labelSw: 'Ripoti kwa Mamlaka',
-      nextNodeKey: 'REPORTING_ABUSE_05',
+      optionValue: 'concerns',
+      labelEn: 'Common concerns?',
+      labelSw: 'Hofu za kawaida',
+      nextNodeKey: 'REPORTING_ABUSE_09',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'REPORTING_ABUSE_02',
-      optionValue: 'concerns',
-      labelEn: 'Common concerns',
-      labelSw: 'Hofu za kawaida',
-      nextNodeKey: 'REPORTING_ABUSE_03',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'REPORTING_ABUSE_04',
-      optionValue: 'authorities',
-      labelEn: 'Notify Authorities',
-      labelSw: 'Ripoti kwa Mamlaka',
-      nextNodeKey: 'REPORTING_ABUSE_05',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'REPORTING_ABUSE_04',
-      optionValue: 'concerns',
-      labelEn: 'Common concerns',
-      labelSw: 'Hofu za kawaida',
-      nextNodeKey: 'REPORTING_ABUSE_03',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'REPORTING_ABUSE_04',
       optionValue: 'protection',
       labelEn: 'Protection',
       labelSw: 'Ulinzi',
@@ -7855,25 +8063,187 @@ Unyanyasaji unaweza kufanywa na watu wanaomjua mwathiriwa. Kuripoti bado ni muhi
       isActive: true,
     },
     {
+      nodeKey: 'REPORTING_ABUSE_03',
+      optionValue: 'tell_someone',
+      labelEn: 'Tell someone',
+      labelSw: 'Mwambie mtu',
+      nextNodeKey: 'REPORTING_ABUSE_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_03',
+      optionValue: 'medical_care',
+      labelEn: 'Medical care',
+      labelSw: 'Huduma ya afya',
+      nextNodeKey: 'REPORTING_ABUSE_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_03',
+      optionValue: 'authorities',
+      labelEn: 'Report?',
+      labelSw: 'Ripoti?',
+      nextNodeKey: 'REPORTING_ABUSE_06',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_04',
+      optionValue: 'medical_care',
+      labelEn: 'Medical care',
+      labelSw: 'Huduma ya afya',
+      nextNodeKey: 'REPORTING_ABUSE_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_04',
+      optionValue: 'authorities',
+      labelEn: 'Report?',
+      labelSw: 'Ripoti?',
+      nextNodeKey: 'REPORTING_ABUSE_06',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_04',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'REPORTING_ABUSE_10',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
       nodeKey: 'REPORTING_ABUSE_05',
-      optionValue: 'concerns',
-      labelEn: 'Common concerns',
-      labelSw: 'Hofu za kawaida',
-      nextNodeKey: 'REPORTING_ABUSE_03',
+      optionValue: 'authorities',
+      labelEn: 'Report?',
+      labelSw: 'Ripoti?',
+      nextNodeKey: 'REPORTING_ABUSE_06',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'REPORTING_ABUSE_05',
-      optionValue: 'services',
-      labelEn: 'Services',
-      labelSw: 'Huduma',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_07',
+      optionValue: 'concerns',
+      labelEn: 'Common concerns?',
+      labelSw: 'Hofu za kawaida',
+      nextNodeKey: 'REPORTING_ABUSE_09',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'REPORTING_ABUSE_05',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'REPORTING_ABUSE_10',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_06',
+      optionValue: 'services',
+      labelEn: 'Services?',
+      labelSw: 'Huduma?',
+      nextNodeKey: 'REPORTING_ABUSE_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_06',
+      optionValue: 'concerns',
+      labelEn: 'Common concerns',
+      labelSw: 'Hofu za kawaida',
+      nextNodeKey: 'REPORTING_ABUSE_09',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_06',
+      optionValue: 'protection',
+      labelEn: 'Protection from abuse',
+      labelSw: 'Ulinzi',
+      nextNodeKey: 'PROTECTION_FROM_ABUSE_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_07',
+      optionValue: 'what_next',
+      labelEn: 'Anything else?',
+      labelSw: 'Kuna lingine?',
+      nextNodeKey: 'REPORTING_ABUSE_08',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_07',
+      optionValue: 'concerns',
+      labelEn: 'Common concerns',
+      labelSw: 'Hofu za kawaida',
+      nextNodeKey: 'REPORTING_ABUSE_09',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_07',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'REPORTING_ABUSE_10',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_08',
+      optionValue: 'services',
+      labelEn: 'Types of abuse',
+      labelSw: 'Aina za ukatili',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_01',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_08',
+      optionValue: 'protection',
+      labelEn: 'Protection from abuse',
+      labelSw: 'Ulinzi',
+      nextNodeKey: 'PROTECTION_FROM_ABUSE_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_08',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime',
+      nextNodeKey: 'REPORTING_ABUSE_REFRESHER_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_09',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'REPORTING_ABUSE_10',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_09',
+      optionValue: 'protection',
+      labelEn: 'Protection',
+      labelSw: 'Ulinzi',
+      nextNodeKey: 'PROTECTION_FROM_ABUSE_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_09',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
@@ -7882,25 +8252,70 @@ Unyanyasaji unaweza kufanywa na watu wanaomjua mwathiriwa. Kuripoti bado ni muhi
       isActive: true,
     },
     {
-      nodeKey: 'REPORTING_ABUSE_03',
-      optionValue: 'services',
-      labelEn: 'Services',
-      labelSw: 'Huduma',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_07',
+      nodeKey: 'REPORTING_ABUSE_10',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'REPORTING_ABUSE_03',
-      optionValue: 'protection',
-      labelEn: 'Protection',
-      labelSw: 'Ulinzi',
-      nextNodeKey: 'PROTECTION_FROM_ABUSE_01',
+      nodeKey: 'REPORTING_ABUSE_REFRESHER_01',
+      optionValue: 'start_refresher',
+      labelEn: 'Start refresher',
+      labelSw: 'Anza kujikumbusha',
+      nextNodeKey: 'REPORTING_ABUSE_REFRESHER_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_REFRESHER_02',
+      optionValue: 'get_help_now',
+      labelEn: 'Get help now',
+      labelSw: 'Pata msaada sasa',
+      nextNodeKey: 'REPORTING_ABUSE_REFRESHER_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_REFRESHER_02',
+      optionValue: 'report_now',
+      labelEn: 'Report now',
+      labelSw: 'Ripoti sasa',
+      nextNodeKey: 'REPORTING_ABUSE_06',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'REPORTING_ABUSE_03',
+      nodeKey: 'REPORTING_ABUSE_REFRESHER_02',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_REFRESHER_03',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'REPORTING_ABUSE_10',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_REFRESHER_03',
+      optionValue: 'report_now',
+      labelEn: 'Report now',
+      labelSw: 'Ripoti sasa',
+      nextNodeKey: 'REPORTING_ABUSE_06',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPORTING_ABUSE_REFRESHER_03',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
@@ -7910,5 +8325,3 @@ Unyanyasaji unaweza kufanywa na watu wanaomjua mwathiriwa. Kuripoti bado ni muhi
     },
   ],
 };
-
-
