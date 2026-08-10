@@ -9,6 +9,11 @@ export const pubertyAdolescentDevelopmentSeed = {
     titleSw: 'Balehe',
     descriptionEn: null,
     descriptionSw: null,
+    introMessageEn:
+      "Let's talk about puberty and adolescent development. Puberty includes normal physical and emotional changes. These changes happen at different times for different young people.",
+    introMessageSw:
+      'Karibu! Tuzungumze kuhusu balehe na ukuaji wa vijana. Balehe huhusisha mabadiliko ya kawaida ya kimwili na kihisia. Mabadiliko haya hutokea kwa nyakati tofauti kwa vijana tofauti.',
+    introMediaAssetKey: 'image_puberty_changes_01',
     audienceGender: null,
     ageBandRule: null,
     sortOrder: 1,
@@ -83,6 +88,17 @@ export const pubertyAdolescentDevelopmentSeed = {
       sortOrder: 5,
       isActive: true,
     },
+    {
+      code: 'PUBERTY_SUPPORT',
+      titleEn: 'Get Support',
+      titleSw: 'Pata msaada',
+      descriptionEn: null,
+      descriptionSw: null,
+      audienceGender: null,
+      ageBandRule: null,
+      sortOrder: 6,
+      isActive: true,
+    },
   ],
 
   contentNodes: [
@@ -91,8 +107,7 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'BODY_CHANGES_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `During puberty, the body goes through normal physical and emotional changes. These changes can happen at different times for different young people.
-`,
+      messageText: `During puberty, the body goes through normal physical and emotional changes. These changes can happen at different times for different young people.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: 'image_puberty_changes_01',
       isStartNode: true,
@@ -105,8 +120,7 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'BODY_CHANGES_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Wakati wa balehe, mwili hupitia mabadiliko ya kawaida ya kimwili na kihisia. Mabadiliko haya yanaweza kutokea kwa nyakati tofauti kwa vijana tofauti.
-`,
+      messageText: `Wakati wa balehe, mwili hupitia mabadiliko ya kawaida ya kimwili na kihisia. Mabadiliko haya yanaweza kutokea kwa nyakati tofauti kwa vijana tofauti.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: 'image_puberty_changes_01',
       isStartNode: true,
@@ -114,14 +128,65 @@ export const pubertyAdolescentDevelopmentSeed = {
       sortOrder: 1,
       isActive: true,
     },
+    {
+      subtopicCode: 'BODY_CHANGES',
+      nodeKey: 'BODY_CHANGES_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `During puberty, adolescents learn about personal hygiene, body image and self-esteem.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'BODY_CHANGES',
+      nodeKey: 'BODY_CHANGES_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Wakati wa kubalehe, vijana hujifunza kuhusu usafi wa mwili, taswira ya mwili na kujithamini.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'BODY_CHANGES',
+      nodeKey: 'BODY_CHANGES_QUIZ_PLACEHOLDER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Body changes quiz will be added here.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'BODY_CHANGES',
+      nodeKey: 'BODY_CHANGES_QUIZ_PLACEHOLDER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Jaribio la mabadiliko ya mwili litaongezwa hapa.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 3,
+      isActive: true,
+    },
 
     {
       subtopicCode: 'UNDERSTANDING_PUBERTY',
       nodeKey: 'UNDERSTANDING_PUBERTY_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Puberty is the stage of life when a child's body begins to develop into an adult body capable of reproduction. It is a normal and natural part of growing up and happens to everyone, although the timing and pace may differ from one person to another.
-`,
+      messageText: `Puberty is the stage of life when a child's body begins to develop into an adult body capable of reproduction. It is a normal and natural part of growing up.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -134,8 +199,7 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'UNDERSTANDING_PUBERTY_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Balehe ni kipindi cha ukuaji ambapo mwili wa mtoto huanza kubadilika na kuwa mwili wa mtu mzima mwenye uwezo wa kuzaa. Balehe ni sehemu ya kawaida ya maisha na hutokea kwa kila mtu, ingawa muda na kasi ya mabadiliko hutofautiana.
-`,
+      messageText: `Balehe ni kipindi cha ukuaji ambapo mwili wa mtoto huanza kubadilika na kuwa mwili wa mtu mzima mwenye uwezo wa kuzaa. Balehe ni sehemu ya kawaida ya maisha.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -148,8 +212,7 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'UNDERSTANDING_PUBERTY_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Puberty usually begins between the ages of 8–13 years for girls and 9–14 years for boys, although some young people may start earlier or later. These differences are usually normal.
-`,
+      messageText: `Puberty happens to everyone, although the timing and pace may differ from one person to another.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -162,8 +225,7 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'UNDERSTANDING_PUBERTY_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Kwa kawaida wasichana huanza balehe kati ya miaka 8 hadi 13 na wavulana kati ya miaka 9 hadi 14, ingawa wengine wanaweza kuanza mapema au kuchelewa kidogo.
-`,
+      messageText: `Balehe hutokea kwa kila mtu, ingawa muda na kasi ya mabadiliko hutofautiana.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -176,7 +238,7 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'UNDERSTANDING_PUBERTY_03',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `During puberty, the body produces hormones that trigger physical, emotional, and social changes. Hormones are natural chemical messengers produced by glands in the body that help regulate growth and development.`,
+      messageText: `Puberty usually begins between ages 8-13 for girls and 9-14 for boys. Some young people may begin earlier or later. These differences are usually normal.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -189,7 +251,7 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'UNDERSTANDING_PUBERTY_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Wakati wa balehe mwili huzalisha homoni ambazo husababisha mabadiliko ya kimwili, kihisia, na kijamii`,
+      messageText: `Kwa kawaida wasichana huanza balehe kati ya miaka 8 hadi 13 na wavulana kati ya miaka 9 hadi 14, ingawa wengine wanaweza kuanza mapema au kuchelewa kidogo.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -202,19 +264,7 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'UNDERSTANDING_PUBERTY_04',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `The most important message for adolescents would be incase you're asking yourself 
-
-"I started puberty earlier than my friends."
-This is usually normal. Bodies develop at different rates.
-
-"My voice is changing."
-Voice changes are a normal part of puberty, especially for boys.
-
-"I feel emotional all the time."
-Hormonal changes can affect emotions during puberty.
-
-"My body looks different from others."
-Everyone develops at their own pace.`,
+      messageText: `During puberty, the body produces hormones that trigger physical, emotional and social changes. Hormones are natural chemical messengers produced by glands in the body.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -227,20 +277,7 @@ Everyone develops at their own pace.`,
       nodeKey: 'UNDERSTANDING_PUBERTY_04',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Ujumbe Muhimu kwa vijana balehe ikiwa unajiuliza
-
-'Nimeingia balehe mapema kabla ya rafiki zangu',
-Jua Kila mtu hupitia balehe kwa namna yake.
-
-'Sauti yangu inabadilika', 
-Jua kua mabadiliko ya sauti ni sehemu ya kawaida katika balehe hususani kwa wavulana 
-
-'Ninahisi hisia kila wakati.'
-Mabadiliko ya homoni yanaweza kuathiri hisia wakati wa kubalehe.Balehe si ugonjwa.
-
-'Mwili wangu umekua tofauti ukilinganisha na wenzangu'
-Jua kua Mabadiliko ya mwili na hisia ni sehemu ya ukuaji.
-`,
+      messageText: `Wakati wa balehe, mwili huzalisha homoni ambazo husababisha mabadiliko ya kimwili, kihisia na kijamii.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -253,14 +290,7 @@ Jua kua Mabadiliko ya mwili na hisia ni sehemu ya ukuaji.
       nodeKey: 'UNDERSTANDING_PUBERTY_05',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Related Learning Points to adolescents girls and boys
-
-    • Understanding puberty helps young people build self-confidence
-    • Understand body changes
-    • Practice good hygiene
-    • Make informed health decisions
-    • Seek help when needed
-`,
+      messageText: `Sema Nami! Which statement sounds like something you have wondered about?`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -273,14 +303,7 @@ Jua kua Mabadiliko ya mwili na hisia ni sehemu ya ukuaji.
       nodeKey: 'UNDERSTANDING_PUBERTY_05',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Vitu ambavyo vijana wanaweza  Kujifunza Vinavyohusiana kuhusu balehe ni kama vile
-
-    • Kuelewa ujana huwasaidia vijana kujenga kujiamini
-    • Kuelewa mabadiliko ya mwili
-    • Kuzingatia usafi mzuri
-    • Kufanya maamuzi sahihi ya kiafya
-    • Tafuta msaada unapohitajika
-`,
+      messageText: `Sema Nami! Ni jambo gani ambalo umewahi kujiuliza?`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -293,24 +316,11 @@ Jua kua Mabadiliko ya mwili na hisia ni sehemu ya ukuaji.
       nodeKey: 'UNDERSTANDING_PUBERTY_06',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Frequently Asked Questions from adolescents
-
-Q: What causes puberty?
-A: Hormones released by the brain and reproductive organs trigger puberty.
-
-Q: Is it normal to start puberty earlier or later than friends?
-A: Yes. Puberty happens at different times for different people.
-
-Q: Can puberty be stopped?
-A: Puberty is a natural process and should not be stopped unless advised by a healthcare professional.
-
-Q: Why do I feel different from before?
-A: Physical, emotional, and social changes are all part of puberty.
-`,
+      messageText: `"I started puberty earlier than my friends." This is usually normal. Bodies develop at different rates.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 6,
       isActive: true,
     },
@@ -319,36 +329,99 @@ A: Physical, emotional, and social changes are all part of puberty.
       nodeKey: 'UNDERSTANDING_PUBERTY_06',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Maswali Yanayoulizwa Mara kwa Mara
-
-Swali: Nini husababisha balehe?
-Jibu: Homoni zinazozalishwa mwilini husababisha balehe kuanza.
-
-Swali: Je, ni kawaida kuanza balehe mapema au kuchelewa?
-Jibu: Ndiyo. Watu hutofautiana katika ukuaji wao.
-
-Swali: Kwa nini nahisi tofauti siku hizi?
-Jibu: Mwili na akili hupitia mabadiliko mengi wakati wa balehe.
-`,
+      messageText: `"Nimeingia balehe mapema kabla ya rafiki zangu." Kila mtu hupitia balehe kwa namna yake.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 6,
       isActive: true,
     },
+    {
+      subtopicCode: 'UNDERSTANDING_PUBERTY',
+      nodeKey: 'UNDERSTANDING_PUBERTY_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `"My voice is changing." Voice changes are a normal part of puberty, especially for boys.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_PUBERTY',
+      nodeKey: 'UNDERSTANDING_PUBERTY_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `"Sauti yangu inabadilika." Mabadiliko ya sauti ni sehemu ya kawaida ya balehe, hususan kwa wavulana.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_PUBERTY',
+      nodeKey: 'UNDERSTANDING_PUBERTY_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `"I feel emotional all the time." Hormonal changes can affect emotions during puberty. Puberty is not an illness.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_PUBERTY',
+      nodeKey: 'UNDERSTANDING_PUBERTY_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `"Ninahisi hisia kila wakati." Mabadiliko ya homoni yanaweza kuathiri hisia wakati wa kubalehe. Balehe si ugonjwa.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_PUBERTY',
+      nodeKey: 'UNDERSTANDING_PUBERTY_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `"My body looks different from others." Everyone develops at their own pace. Body and emotional changes are part of growing up.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'UNDERSTANDING_PUBERTY',
+      nodeKey: 'UNDERSTANDING_PUBERTY_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `"Mwili wangu umekuwa tofauti ukilinganisha na wenzangu." Mabadiliko ya mwili na hisia ni sehemu ya ukuaji.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
 
     {
       subtopicCode: 'PHYSICAL_CHANGES_IN_GIRLS',
       nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Physical changes in girls include:
-
-    • Breast development
-    • Growth of pubic and underarm hair
-    • Beginning of menstruation (monthly periods)
-`,
+      messageText: `During puberty, girls may experience these physical changes:`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -361,12 +434,7 @@ Jibu: Mwili na akili hupitia mabadiliko mengi wakati wa balehe.
       nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mabadiliko kwa Wasichana:
-
-    • Matiti kuanza kukua
-    • Kuota nywele sehemu za siri na kwapani
-    • Kuanza kupata hedhi
-`,
+      messageText: `Wakati wa balehe, wasichana wanaweza kupitia mabadiliko haya ya mwili:`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -379,11 +447,10 @@ Jibu: Mwili na akili hupitia mabadiliko mengi wakati wa balehe.
       nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `More physical changes in girls:
-
-    • Increased height and weight
-    • Changes in body shape such as wider hips
-`,
+      messageText: `1. Breast development
+2. Growth of pubic and underarm hair
+3. Beginning of menstruation
+4. Increased height and weight`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -396,11 +463,10 @@ Jibu: Mwili na akili hupitia mabadiliko mengi wakati wa balehe.
       nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mabadiliko kwa Wasichana:
-
-    • Kuongezeka kwa urefu na uzito
-    • Nyonga kupanuka
-`,
+      messageText: `1. Matiti kuanza kukua
+5. Kuota nywele sehemu za siri na kwapani
+6. Kuanza kupata hedhi
+4. Kuongezeka kwa urefu na uzito`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -413,11 +479,9 @@ Jibu: Mwili na akili hupitia mabadiliko mengi wakati wa balehe.
       nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_03',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Some more physical changes include:
-
-    • Increased sweating and body odor
-    • Acne or pimples
-`,
+      messageText: `5. Changes in body shape, such as wider hips
+6. Increased sweating and body odour
+7. Acne or pimples`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -430,16 +494,40 @@ Jibu: Mwili na akili hupitia mabadiliko mengi wakati wa balehe.
       nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mabadiliko kwa Wasichana:
-
-    • Kuongezeka kwa jasho na harufu ya mwili
-    • Chunusi
-`,
+      messageText: `5. Nyonga kupanuka
+8. Kuongezeka kwa jasho na harufu ya mwili
+7. Chunusi`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: true,
       sortOrder: 3,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PHYSICAL_CHANGES_IN_GIRLS',
+      nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_LEARNING_POINTS_PLACEHOLDER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Learning points for physical changes in girls will be added here.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PHYSICAL_CHANGES_IN_GIRLS',
+      nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_LEARNING_POINTS_PLACEHOLDER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Mambo ya kujifunza kuhusu mabadiliko ya wasichana yataongezwa hapa.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 4,
       isActive: true,
     },
 
@@ -620,279 +708,302 @@ Jibu: Mwili na akili hupitia mabadiliko mengi wakati wa balehe.
       sortOrder: 2,
       isActive: true,
     },
+    {
+      subtopicCode: 'PUBERTY_SUPPORT',
+      nodeKey: 'PUBERTY_SUPPORT_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, support, or guidance about puberty, you do not have to face it alone. You can speak to a trusted parent, guardian, teacher, counselor, healthcare provider, or a youth-friendly health service.
+
+For additional support, guidance, or referrals, you can contact OVAH through:
+Phone/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: true,
+      isEndNode: true,
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PUBERTY_SUPPORT',
+      nodeKey: 'PUBERTY_SUPPORT_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, msaada, au mwongozo kuhusu balehe, usibaki peke yako. Unaweza kuzungumza na mzazi, mlezi, mwalimu, mshauri, mtoa huduma za afya, au huduma rafiki kwa vijana.
+
+Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: true,
+      isEndNode: true,
+      sortOrder: 1,
+      isActive: true,
+    },
   ],
 
   contentNodeOptions: [
     {
       nodeKey: 'BODY_CHANGES_01',
-      optionValue: 'what_is_puberty',
-      labelEn: 'What is puberty?',
-      labelSw: 'Balehe ni nini?',
-      nextNodeKey: 'UNDERSTANDING_PUBERTY_01',
+      optionValue: 'continue',
+      labelEn: 'Continue',
+      labelSw: 'Endelea',
+      nextNodeKey: 'BODY_CHANGES_02',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'BODY_CHANGES_01',
-      optionValue: 'girls_changes',
-      labelEn: 'Changes in Girls',
-      labelSw: 'Balehe kwa Wasichana',
-      nextNodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_01',
+      nodeKey: 'BODY_CHANGES_02',
+      optionValue: 'back',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'BODY_CHANGES_02',
+      optionValue: 'i_need_support',
+      labelEn: 'I need support',
+      labelSw: 'Nahitaji msaada',
+      nextNodeKey: 'PUBERTY_SUPPORT_01',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'BODY_CHANGES_01',
-      optionValue: 'boys_changes',
-      labelEn: 'Changes in Boys',
-      labelSw: 'Balehe kwa Wavulana',
-      nextNodeKey: 'PHYSICAL_CHANGES_IN_BOYS_01',
+      nodeKey: 'BODY_CHANGES_02',
+      optionValue: 'take_quiz',
+      labelEn: 'Take quiz',
+      labelSw: 'Fanya jaribio',
+      nextNodeKey: 'BODY_CHANGES_QUIZ_PLACEHOLDER_01',
       sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'BODY_CHANGES_QUIZ_PLACEHOLDER_01',
+      optionValue: 'back',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'PUBERTY_SUPPORT_01',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 1,
       isActive: true,
     },
 
     {
       nodeKey: 'UNDERSTANDING_PUBERTY_01',
-      optionValue: 'when_start',
-      labelEn: 'When does it start?',
-      labelSw: 'Huanza lini?',
+      optionValue: 'continue',
+      labelEn: 'Continue',
+      labelSw: 'Endelea',
       nextNodeKey: 'UNDERSTANDING_PUBERTY_02',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'UNDERSTANDING_PUBERTY_01',
-      optionValue: 'hormones',
-      labelEn: 'What are hormones?',
-      labelSw: 'Homoni ni nini?',
-      nextNodeKey: 'UNDERSTANDING_PUBERTY_03',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'UNDERSTANDING_PUBERTY_01',
-      optionValue: 'common_worries',
-      labelEn: 'Common worries',
-      labelSw: 'Wasiwasi wa kawaida',
-      nextNodeKey: 'UNDERSTANDING_PUBERTY_04',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
       nodeKey: 'UNDERSTANDING_PUBERTY_02',
-      optionValue: 'hormones',
-      labelEn: 'What are hormones?',
-      labelSw: 'Homoni ni nini?',
+      optionValue: 'continue',
+      labelEn: 'Continue',
+      labelSw: 'Endelea',
       nextNodeKey: 'UNDERSTANDING_PUBERTY_03',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'UNDERSTANDING_PUBERTY_02',
-      optionValue: 'common_worries',
-      labelEn: 'Common worries',
-      labelSw: 'Wasiwasi wa kawaida',
-      nextNodeKey: 'UNDERSTANDING_PUBERTY_04',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'UNDERSTANDING_PUBERTY_02',
-      optionValue: 'girls_changes',
-      labelEn: 'Changes in Girls',
-      labelSw: 'Balehe kwa Wasichana',
-      nextNodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_01',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
       nodeKey: 'UNDERSTANDING_PUBERTY_03',
-      optionValue: 'girls_changes',
-      labelEn: 'Changes in Girls',
-      labelSw: 'Balehe kwa Wasichana',
-      nextNodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_01',
+      optionValue: 'continue',
+      labelEn: 'Continue',
+      labelSw: 'Endelea',
+      nextNodeKey: 'UNDERSTANDING_PUBERTY_04',
       sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'UNDERSTANDING_PUBERTY_03',
-      optionValue: 'boys_changes',
-      labelEn: 'Changes in Boys',
-      labelSw: 'Balehe kwa Wavulana',
-      nextNodeKey: 'PHYSICAL_CHANGES_IN_BOYS_01',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'UNDERSTANDING_PUBERTY_03',
-      optionValue: 'common_worries',
-      labelEn: 'Common worries',
-      labelSw: 'Wasiwasi wa kawaida',
-      nextNodeKey: 'UNDERSTANDING_PUBERTY_04',
-      sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_PUBERTY_04',
-      optionValue: 'learning_points',
-      labelEn: 'Learning points',
-      labelSw: 'Mambo ya kujifunza',
+      optionValue: 'common_concerns',
+      labelEn: 'Common concerns',
+      labelSw: 'Wasiwasi kawaida',
       nextNodeKey: 'UNDERSTANDING_PUBERTY_05',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'UNDERSTANDING_PUBERTY_04',
-      optionValue: 'puberty_faqs',
-      labelEn: 'Puberty FAQs',
-      labelSw: 'Maswali ya balehe',
-      nextNodeKey: 'UNDERSTANDING_PUBERTY_06',
+      optionValue: 'back',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'UNDERSTANDING_PUBERTY_04',
+      nodeKey: 'UNDERSTANDING_PUBERTY_05',
+      optionValue: 'started_early',
+      labelEn: 'Started early',
+      labelSw: 'Nimeanza mapema',
+      nextNodeKey: 'UNDERSTANDING_PUBERTY_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_PUBERTY_05',
+      optionValue: 'voice_changing',
+      labelEn: 'Voice changing',
+      labelSw: 'Sauti inabadilika',
+      nextNodeKey: 'UNDERSTANDING_PUBERTY_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_PUBERTY_05',
+      optionValue: 'strong_emotions',
+      labelEn: 'Strong emotions',
+      labelSw: 'Hisia nyingi',
+      nextNodeKey: 'UNDERSTANDING_PUBERTY_08',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_PUBERTY_05',
+      optionValue: 'body_different',
+      labelEn: 'Body looks different',
+      labelSw: 'Mwili tofauti',
+      nextNodeKey: 'UNDERSTANDING_PUBERTY_09',
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_PUBERTY_06',
+      optionValue: 'another_concern',
+      labelEn: 'Another concern',
+      labelSw: 'Jambo jingine',
+      nextNodeKey: 'UNDERSTANDING_PUBERTY_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_PUBERTY_06',
+      optionValue: 'back',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_PUBERTY_07',
+      optionValue: 'another_concern',
+      labelEn: 'Another concern',
+      labelSw: 'Jambo jingine',
+      nextNodeKey: 'UNDERSTANDING_PUBERTY_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_PUBERTY_07',
+      optionValue: 'back',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_PUBERTY_08',
+      optionValue: 'another_concern',
+      labelEn: 'Another concern',
+      labelSw: 'Jambo jingine',
+      nextNodeKey: 'UNDERSTANDING_PUBERTY_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'UNDERSTANDING_PUBERTY_08',
       optionValue: 'emotional_changes',
       labelEn: 'Emotional changes',
-      labelSw: 'Mabadiliko ya Kihisia',
+      labelSw: 'Mabadiliko hisia',
       nextNodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_01',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'UNDERSTANDING_PUBERTY_05',
-      optionValue: 'puberty_faqs',
-      labelEn: 'Puberty FAQs',
-      labelSw: 'Maswali ya balehe',
-      nextNodeKey: 'UNDERSTANDING_PUBERTY_06',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'UNDERSTANDING_PUBERTY_05',
-      optionValue: 'body_changes',
-      labelEn: 'Body changes',
-      labelSw: 'Mabadiliko ya mwili',
-      nextNodeKey: 'BODY_CHANGES_01',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'UNDERSTANDING_PUBERTY_05',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'UNDERSTANDING_PUBERTY_06',
-      optionValue: 'learning_points',
-      labelEn: 'Learning points',
-      labelSw: 'Mambo ya kujifunza',
+      nodeKey: 'UNDERSTANDING_PUBERTY_09',
+      optionValue: 'another_concern',
+      labelEn: 'Another concern',
+      labelSw: 'Jambo jingine',
       nextNodeKey: 'UNDERSTANDING_PUBERTY_05',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'UNDERSTANDING_PUBERTY_06',
-      optionValue: 'body_changes',
-      labelEn: 'Body changes',
-      labelSw: 'Mabadiliko ya mwili',
-      nextNodeKey: 'BODY_CHANGES_01',
+      nodeKey: 'UNDERSTANDING_PUBERTY_09',
+      optionValue: 'back',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
       sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'UNDERSTANDING_PUBERTY_06',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
       isActive: true,
     },
 
     {
       nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_01',
-      optionValue: 'what_next',
-      labelEn: 'What happens next?',
-      labelSw: 'Mabadiliko mengine?',
+      optionValue: 'see_changes',
+      labelEn: 'See changes',
+      labelSw: 'Ona mabadiliko',
       nextNodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_02',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_01',
-      optionValue: 'emotional_changes',
-      labelEn: 'Emotional Changes',
-      labelSw: 'Mabadiliko ya kihisia',
-      nextNodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_01',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_01',
-      optionValue: 'boys_changes',
-      labelEn: 'Changes in Boys',
-      labelSw: 'Balehe kwa Wavulana',
-      nextNodeKey: 'PHYSICAL_CHANGES_IN_BOYS_01',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
       nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_02',
-      optionValue: 'sweat_acne',
-      labelEn: 'Anything else?',
-      labelSw: 'Mabadiliko mengine?',
+      optionValue: 'more_changes',
+      labelEn: 'More changes',
+      labelSw: 'Zaidi',
       nextNodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_03',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_02',
-      optionValue: 'boys_changes',
-      labelEn: 'Changes in Boys',
-      labelSw: 'Balehe kwa Wavulana',
-      nextNodeKey: 'PHYSICAL_CHANGES_IN_BOYS_01',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_02',
-      optionValue: 'emotional_changes',
-      labelEn: 'Emotional changes',
-      labelSw: 'Mabadiliko ya kihisia',
-      nextNodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_01',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
       nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_03',
-      optionValue: 'boys_changes',
-      labelEn: 'Changes in Boys',
-      labelSw: 'Balehe kwa Wavulana',
-      nextNodeKey: 'PHYSICAL_CHANGES_IN_BOYS_01',
+      optionValue: 'learning_points',
+      labelEn: 'Learning points',
+      labelSw: 'Mambo ya kujifunza',
+      nextNodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_LEARNING_POINTS_PLACEHOLDER_01',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_03',
-      optionValue: 'emotional_changes',
-      labelEn: 'Emotional changes',
-      labelSw: 'Mabadiliko ya Kihisia',
-      nextNodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_01',
+      optionValue: 'i_need_support',
+      labelEn: 'I need support',
+      labelSw: 'Nahitaji msaada',
+      nextNodeKey: 'PUBERTY_SUPPORT_01',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_03',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'back',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
       sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_LEARNING_POINTS_PLACEHOLDER_01',
+      optionValue: 'back',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 1,
       isActive: true,
     },
 
@@ -909,7 +1020,7 @@ Jibu: Mwili na akili hupitia mabadiliko mengi wakati wa balehe.
       nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_01',
       optionValue: 'emotional_changes',
       labelEn: 'Emotional changes',
-      labelSw: 'Mabadiliko ya Kihisia',
+      labelSw: 'Mabadiliko hisia',
       nextNodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_01',
       sortOrder: 3,
       isActive: true,
@@ -945,7 +1056,7 @@ Jibu: Mwili na akili hupitia mabadiliko mengi wakati wa balehe.
       nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_02',
       optionValue: 'emotional_changes',
       labelEn: 'Emotional changes',
-      labelSw: 'Mabadiliko ya Kihisia',
+      labelSw: 'Mabadiliko hisia',
       nextNodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_01',
       sortOrder: 3,
       isActive: true,
@@ -963,7 +1074,7 @@ Jibu: Mwili na akili hupitia mabadiliko mengi wakati wa balehe.
       nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_03',
       optionValue: 'emotional_changes',
       labelEn: 'Emotional changes',
-      labelSw: 'Mabadiliko ya Kihisia',
+      labelSw: 'Mabadiliko hisia',
       nextNodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_01',
       sortOrder: 2,
       isActive: true,
@@ -992,7 +1103,7 @@ Jibu: Mwili na akili hupitia mabadiliko mengi wakati wa balehe.
       optionValue: 'common_worries',
       labelEn: 'Common worries',
       labelSw: 'Wasiwasi wa kawaida',
-      nextNodeKey: 'UNDERSTANDING_PUBERTY_04',
+      nextNodeKey: 'UNDERSTANDING_PUBERTY_05',
       sortOrder: 2,
       isActive: true,
     },
@@ -1010,7 +1121,7 @@ Jibu: Mwili na akili hupitia mabadiliko mengi wakati wa balehe.
       optionValue: 'common_worries',
       labelEn: 'Common worries',
       labelSw: 'Wasiwasi wa kawaida',
-      nextNodeKey: 'UNDERSTANDING_PUBERTY_04',
+      nextNodeKey: 'UNDERSTANDING_PUBERTY_05',
       sortOrder: 1,
       isActive: true,
     },

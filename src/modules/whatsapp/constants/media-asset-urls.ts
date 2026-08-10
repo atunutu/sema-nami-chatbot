@@ -16,4 +16,7 @@ export const MEDIA_ASSET_URLS: Record<string, string> = {
 
   image_soft_skills:
     'https://ovah-chatbot-images.onrender.com/relationships-consent/Soft%20skills.png',
+
+  image_puberty_changes_01:
+    'https://ovah-chatbot-images.onrender.com/puberty/Puberty%20changes-01-bro.png',
 };
