@@ -505,11 +505,17 @@ export const pubertyAdolescentDevelopmentSeed = {
       isActive: true,
     },
     {
-      subtopicCode: 'PHYSICAL_CHANGES_IN_GIRLS',
-      nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_LEARNING_POINTS_PLACEHOLDER_01',
+      subtopicCode: 'BODY_CHANGES',
+      nodeKey: 'PUBERTY_LEARNING_POINTS_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Learning points for physical changes in girls will be added here.`,
+      messageText: `Understanding puberty helps young people to:
+
+1. Build self-confidence
+2. Understand body changes
+3. Practise good hygiene
+4. Make informed health decisions
+5. Seek help when needed`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -518,11 +524,17 @@ export const pubertyAdolescentDevelopmentSeed = {
       isActive: true,
     },
     {
-      subtopicCode: 'PHYSICAL_CHANGES_IN_GIRLS',
-      nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_LEARNING_POINTS_PLACEHOLDER_01',
+      subtopicCode: 'BODY_CHANGES',
+      nodeKey: 'PUBERTY_LEARNING_POINTS_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mambo ya kujifunza kuhusu mabadiliko ya wasichana yataongezwa hapa.`,
+      messageText: `Kuelewa balehe huwasaidia vijana:
+
+1. Kujenga kujiamini
+2. Kuelewa mabadiliko ya mwili
+3. Kuzingatia usafi mzuri
+4. Kufanya maamuzi sahihi ya kiafya
+5. Kutafuta msaada unapohitajika`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -536,11 +548,7 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Physical changes in boys include:
-
-    • Enlargement of the penis and testicles
-    • Growth of pubic, underarm, and facial hair
-    • Deepening of the voice`,
+      messageText: `During puberty, boys may experience these physical changes:`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -553,12 +561,7 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mabadiliko kwa Wavulana:
-
-    • Uume na korodani kukua
-    • Kuota nywele sehemu za siri, kwapani na usoni
-    • Sauti kuwa nzito
-`,
+      messageText: `Wakati wa balehe, wavulana wanaweza kupitia mabadiliko haya ya mwili:`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -571,10 +574,10 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `More physical changes in boys:
-
-    • Increased muscle development
-    • Growth spurts in height`,
+      messageText: `1. Enlargement of the penis and testicles
+2. Growth of pubic, underarm and facial hair
+3. Deepening of the voice
+4. Increased muscle development`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -587,11 +590,10 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mabadiliko kwa Wavulana:
-
-    • Misuli kuongezeka
-    • Kuongezeka kwa urefu
-`,
+      messageText: `1. Uume na korodani kukua
+5. Kuota nywele sehemu za siri, kwapani na usoni
+6. Sauti kuwa nzito
+4. Misuli kuongezeka`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -604,11 +606,10 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_03',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `More physical changes in boys:
-
-    • Increased sweating and body odor
-    • Acne or pimples
-    • Wet dreams (nocturnal emissions)`,
+      messageText: `5. Growth spurts in height
+6. Increased sweating and body odour
+7. Acne or pimples
+8. Wet dreams or nocturnal emissions`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -621,12 +622,10 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mabadiliko kwa Wavulana:
-
-    • Jasho na harufu ya mwili kuongezeka
-    • Chunusi
-    • Ndoto za usiku
-`,
+      messageText: `5. Kuongezeka kwa urefu
+9. Jasho na harufu ya mwili kuongezeka
+10. Chunusi
+8. Ndoto za usiku`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -975,7 +974,7 @@ Simu/WhatsApp: 0652 522 358`,
       optionValue: 'learning_points',
       labelEn: 'Learning points',
       labelSw: 'Mambo ya kujifunza',
-      nextNodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_LEARNING_POINTS_PLACEHOLDER_01',
+      nextNodeKey: 'PUBERTY_LEARNING_POINTS_01',
       sortOrder: 1,
       isActive: true,
     },
@@ -998,93 +997,75 @@ Simu/WhatsApp: 0652 522 358`,
       isActive: true,
     },
     {
-      nodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_LEARNING_POINTS_PLACEHOLDER_01',
+      nodeKey: 'PUBERTY_LEARNING_POINTS_01',
+      optionValue: 'take_quiz',
+      labelEn: 'Take quiz',
+      labelSw: 'Fanya jaribio',
+      nextNodeKey: 'BODY_CHANGES_QUIZ_PLACEHOLDER_01',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'PUBERTY_LEARNING_POINTS_01',
       optionValue: 'back',
       labelEn: 'Choose topic',
       labelSw: 'Chagua mada',
       nextNodeKey: 'BACK_ACTION',
-      sortOrder: 1,
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'PUBERTY_LEARNING_POINTS_01',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'PUBERTY_SUPPORT_01',
+      sortOrder: 3,
       isActive: true,
     },
 
     {
       nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_01',
-      optionValue: 'what_next',
-      labelEn: 'What happens next?',
-      labelSw: 'Mabadiliko mengine?',
+      optionValue: 'see_changes',
+      labelEn: 'See changes',
+      labelSw: 'Ona mabadiliko',
       nextNodeKey: 'PHYSICAL_CHANGES_IN_BOYS_02',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_01',
-      optionValue: 'emotional_changes',
-      labelEn: 'Emotional changes',
-      labelSw: 'Mabadiliko hisia',
-      nextNodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_01',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_01',
-      optionValue: 'girls_changes',
-      labelEn: 'Changes in Girls',
-      labelSw: 'Balehe kwa Wasichana',
-      nextNodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_01',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
       nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_02',
-      optionValue: 'sweat_acne',
-      labelEn: 'Anything else?',
-      labelSw: 'Mabadiliko mengine?',
+      optionValue: 'more_changes',
+      labelEn: 'More changes',
+      labelSw: 'Zaidi',
       nextNodeKey: 'PHYSICAL_CHANGES_IN_BOYS_03',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_02',
-      optionValue: 'girls_changes',
-      labelEn: 'Changes in Girls',
-      labelSw: 'Balehe kwa Wasichana',
-      nextNodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_01',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_02',
-      optionValue: 'emotional_changes',
-      labelEn: 'Emotional changes',
-      labelSw: 'Mabadiliko hisia',
-      nextNodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_01',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
       nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_03',
-      optionValue: 'girls_changes',
-      labelEn: 'Changes in Girls',
-      labelSw: 'Balehe kwa Wasichana',
-      nextNodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_01',
+      optionValue: 'learning_points',
+      labelEn: 'Learning points',
+      labelSw: 'Mambo ya kujifunza',
+      nextNodeKey: 'PUBERTY_LEARNING_POINTS_01',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_03',
-      optionValue: 'emotional_changes',
-      labelEn: 'Emotional changes',
-      labelSw: 'Mabadiliko hisia',
-      nextNodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_01',
+      optionValue: 'i_need_support',
+      labelEn: 'I need support',
+      labelSw: 'Nahitaji msaada',
+      nextNodeKey: 'PUBERTY_SUPPORT_01',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'PHYSICAL_CHANGES_IN_BOYS_03',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'back',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
       sortOrder: 3,
       isActive: true,
     },
