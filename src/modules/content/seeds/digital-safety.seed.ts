@@ -1,4 +1,4 @@
-import { InputType } from '../../../common/enums/input-type.enum';
+﻿import { InputType } from '../../../common/enums/input-type.enum';
 import { Language } from '../../../common/enums/language.enum';
 import { NodeType } from '../../../common/enums/node-type.enum';
 
@@ -103,11 +103,8 @@ export const digitalSafetyAndMentalWellbeingSeed = {
       nodeKey: 'MENTAL_HEALTH_BASICS_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Mental health refers to how we think, feel, behave, cope with challenges, build relationships, and make decisions.
-Just as physical health affects the body, mental health affects emotions, thoughts, confidence, relationships, school performance, and daily life.
-Mental health is something everyone has, sometimes a person may feel happy, motivated, and hopeful.
-At other times they may feel stressed, sad, overwhelmed, angry, confused, or worried.
-`,
+      messageText: `I'm glad you're asking about mental health.
+Taking care of your mind is just as important as taking care of your body, and understanding mental health is a great place to start.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -120,11 +117,8 @@ At other times they may feel stressed, sad, overwhelmed, angry, confused, or wor
       nodeKey: 'MENTAL_HEALTH_BASICS_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Afya ya akili inahusu jinsi tunavyofikiri, kuhisi, kutenda, kukabiliana na changamoto, kujenga mahusiano, na kufanya maamuzi.
-Kama vile afya ya kimwili inavyoathiri mwili, afya ya akili huathiri hisia, mawazo, kujiamini, mahusiano, utendaji wa shule, na maisha ya kila siku.
-Afya ya akili ni kitu ambacho kila mtu anacho, wakati mwingine mtu anaweza kuhisi furaha, motisha, na matumaini.
-Wakati mwingine anaweza kuhisi msongo wa mawazo, huzuni, kuzidiwa, hasira, kuchanganyikiwa, au wasiwasi.
-`,
+      messageText: `Nimefurahi unauliza kuhusu afya ya akili.
+Kutunza akili yako ni muhimu kama vile kutunza mwili wako, na kuelewa afya ya akili ni mahali pazuri pa kuanzia.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -132,16 +126,12 @@ Wakati mwingine anaweza kuhisi msongo wa mawazo, huzuni, kuzidiwa, hasira, kucha
       sortOrder: 1,
       isActive: true,
     },
-
     {
       subtopicCode: 'MENTAL_HEALTH_BASICS',
       nodeKey: 'MENTAL_HEALTH_BASICS_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Experiencing emotions is a normal part of life.
-Good mental health does not mean feeling happy all the time.
-It means having healthy ways of coping with life's challenges.
-`,
+      messageText: `Mental health refers to how we think, feel, behave, cope with challenges, build relationships, and make decisions.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -154,10 +144,7 @@ It means having healthy ways of coping with life's challenges.
       nodeKey: 'MENTAL_HEALTH_BASICS_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Kupata hisia ni sehemu ya kawaida ya maisha.
-Afya nzuri ya akili haimaanishi kujisikia furaha wakati wote.
-Inamaanisha kuwa na njia nzuri za kukabiliana na changamoto za maisha.
-`,
+      messageText: `Afya ya akili inarejelea jinsi tunavyofikiri, kuhisi, kutenda, kukabiliana na changamoto, kujenga mahusiano, na kufanya maamuzi.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -165,24 +152,13 @@ Inamaanisha kuwa na njia nzuri za kukabiliana na changamoto za maisha.
       sortOrder: 2,
       isActive: true,
     },
-
     {
       subtopicCode: 'MENTAL_HEALTH_BASICS',
       nodeKey: 'MENTAL_HEALTH_BASICS_03',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Why Should Adolescents Care About Mental Health?
-Adolescence is a period of major change, young people experience:
-    ● Physical changes during puberty.
-    ● Emotional changes.
-    ● New responsibilities.
-    ● Academic pressure.
-    ● Friendship challenges.
-    ● Romantic relationships.
-    ● Family expectations.
-    ● Questions about identity and the future.
-
-These experiences can affect mental wellbeing.`,
+      messageText: `Just as physical health affects your body, mental health affects your emotions, thoughts, confidence, relationships, school performance, and daily life.
+The important thing to remember is that everyone has mental health.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -195,18 +171,8 @@ These experiences can affect mental wellbeing.`,
       nodeKey: 'MENTAL_HEALTH_BASICS_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Kwa Nini Vijana Wanapaswa Kujali Afya ya Akili?
-Ujana ni kipindi cha mabadiliko makubwa, vijana hupata:
-    ● Mabadiliko ya kimwili wakati wa kubalehe.
-    ● Mabadiliko ya kihisia.
-    ● Majukumu mapya.
-    ● Shinikizo la kitaaluma.
-    ● Changamoto za urafiki.
-    ● Mahusiano ya kimapenzi.
-    ● Matarajio ya familia.
-    ● Maswali kuhusu utambulisho na mustakabali.
-
-Uzoefu huu unaweza kuathiri ustawi wa akili.`,
+      messageText: `Kama vile afya ya kimwili inavyoathiri mwili wako, afya ya akili huathiri hisia zako, mawazo, kujiamini, mahusiano, utendaji wako wa shule, na maisha ya kila siku.
+Jambo muhimu kukumbuka ni kwamba kila mtu ana afya ya akili.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -219,12 +185,9 @@ Uzoefu huu unaweza kuathiri ustawi wa akili.`,
       nodeKey: 'MENTAL_HEALTH_BASICS_04',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Understanding mental health helps adolescents:
-    ● Manage emotions.
-    ● Build resilience.
-    ● Seek support when needed.
-    ● Develop healthy relationships.
-    ● Make safer decisions.`,
+      messageText: `Sometimes you may feel happy, motivated, and hopeful.
+At other times, you may feel stressed, sad, overwhelmed, angry, confused, or worried.
+All of these emotions are part of being human.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -237,12 +200,9 @@ Uzoefu huu unaweza kuathiri ustawi wa akili.`,
       nodeKey: 'MENTAL_HEALTH_BASICS_04',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Kuelewa afya ya akili huwasaidia vijana:
-    ● Kudhibiti hisia.
-    ● Kujenga ustahimilivu.
-    ● Tafuta msaada inapohitajika.
-    ● Kujenga mahusiano yenye afya.
-    ● Fanya maamuzi salama zaidi.`,
+      messageText: `Wakati mwingine unaweza kujisikia mwenye furaha, mwenye motisha, na mwenye matumaini.
+Wakati mwingine, unaweza kuhisi msongo wa mawazo, huzuni, kuzidiwa, hasira, kuchanganyikiwa, au wasiwasi.
+Hisia hizi zote ni sehemu ya kuwa mwanadamu.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -250,20 +210,14 @@ Uzoefu huu unaweza kuathiri ustawi wa akili.`,
       sortOrder: 4,
       isActive: true,
     },
-
     {
       subtopicCode: 'MENTAL_HEALTH_BASICS',
       nodeKey: 'MENTAL_HEALTH_BASICS_05',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Signs of Positive Mental Health
-A young person may:
-    ✓ Feel hopeful about the future.
-    ✓ Enjoy spending time with friends and family.
-    ✓ Manage stress effectively.
-    ✓ Solve problems appropriately.
-    ✓ Feel confident in their abilities.
-    ✓ Recover from setbacks.`,
+      messageText: `Experiencing different emotions is a normal part of life.
+Having good mental health doesn't mean feeling happy all the time.
+Instead, it means having healthy ways of coping with life's challenges, learning from difficult experiences, and knowing when to seek support if you need it.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -276,14 +230,9 @@ A young person may:
       nodeKey: 'MENTAL_HEALTH_BASICS_05',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Dalili za Afya Bora ya Akili
-Kijana anaweza:
-    ✓ Kuhisi matumaini kuhusu mustakabali.
-    ✓ Furahia kutumia muda na marafiki na familia.
-    ✓ Dhibiti msongo wa mawazo kwa ufanisi.
-    ✓ Suluhisha matatizo ipasavyo.
-    ✓ Kujisikia mwenye ujasiri katika uwezo wake.
-    ✓ Kupona kutokana na vikwazo.`,
+      messageText: `Kupitia hisia tofauti ni sehemu ya kawaida ya maisha.
+Kuwa na afya njema ya akili haimaanishi kujisikia mwenye furaha wakati wote.
+Badala yake, inamaanisha kuwa na njia nzuri za kukabiliana na changamoto za maisha, kujifunza kutokana na uzoefu mgumu, na kujua wakati wa kutafuta msaada ikiwa unahitaji.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -296,8 +245,183 @@ Kijana anaweza:
       nodeKey: 'MENTAL_HEALTH_BASICS_06',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `
-Signs Someone May Be Struggling
+      messageText: `Why should adolescents care about mental health?
+Adolescence is a period of major change, and it's natural for these changes to affect how you think and feel. During this stage of life, many young people experience:
+    ● Physical changes during puberty.
+    ● Emotional changes.
+    ● New responsibilities.
+    ● Academic pressure.
+    ● Friendship challenges.
+    ● Romantic relationships.
+    ● Family expectations.
+    ● Questions about identity and the future.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kwa nini vijana wanapaswa kujali afya ya akili?
+Ujana ni kipindi cha mabadiliko makubwa, na ni kawaida kwa mabadiliko haya kuathiri jinsi unavyofikiri na kuhisi. Katika hatua hii ya maisha, vijana wengi hupata:
+    ● Mabadiliko ya kimwili wakati wa kubalehe.
+    ● Mabadiliko ya kihisia.
+    ● Majukumu mapya.
+    ● Shinikizo la kitaaluma.
+    ● Changamoto za urafiki.
+    ● Mahusiano ya kimapenzi.
+    ● Matarajio ya kifamilia.
+    ● Maswali kuhusu utambulisho na mustakabali.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you're finding some of these changes challenging, you're not alone.
+Many adolescents go through similar experiences, and learning about mental health can help you understand yourself better and respond to these challenges in healthy ways.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unapata baadhi ya mabadiliko haya kuwa magumu, hauko peke yako.
+Vijana wengi hupitia uzoefu kama huo, na kujifunza kuhusu afya ya akili kunaweza kukusaidia kujielewa vyema na kukabiliana na changamoto hizi kwa njia zenye afya.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Understanding mental health helps adolescents to:
+    ● Manage their emotions.
+    ● Build resilience.
+    ● Seek support when needed.
+    ● Develop healthy relationships.
+    ● Make safer and more informed decisions.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kuelewa afya ya akili husaidia vijana:
+    ● Kudhibiti hisia zao.
+    ● Kujenga ustahimilivu.
+    ● Kutafuta msaada inapohitajika.
+    ● Kuendeleza mahusiano yenye afya.
+    ● Kufanya maamuzi salama na yenye ufahamu zaidi.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `The good news is that mental health can be strengthened, just like physical health.
+Taking care of yourself, talking to people you trust, maintaining healthy relationships, getting enough rest, and asking for help when you need it are all positive steps towards improving your mental wellbeing.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Habari njema ni kwamba afya ya akili inaweza kuimarishwa, kama vile afya ya kimwili.
+Kujitunza, kuzungumza na watu unaowaamini, kudumisha mahusiano yenye afya, kupata mapumziko ya kutosha, na kuomba msaada unapohitaji yote ni hatua chanya za kuboresha ustawi wako wa akili.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Signs of Positive Mental Health
+A young person may:
+    ● Feel hopeful about the future.
+    ● Enjoy spending time with friends and family.
+    ● Manage stress effectively.
+    ● Solve problems appropriately.
+    ● Feel confident in their abilities.
+    ● Recover from setbacks.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Dalili za Afya Bora ya Akili
+Kijana anaweza:
+    ● Kuhisi matumaini kuhusu mustakabali.
+    ● Furahia kutumia muda na marafiki na familia.
+    ● Dhibiti msongo wa mawazo kwa ufanisi.
+    ● Suluhisha matatizo ipasavyo.
+    ● Kujisikia mwenye ujasiri katika uwezo wake.
+    ● Kupona kutokana na vikwazo.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_11',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Signs Someone May Be Struggling
 Sometimes young people experience:
     ● Persistent sadness.
     ● Loss of interest in activities.
@@ -308,17 +432,17 @@ Sometimes young people experience:
     ● Withdrawal from friends.
     ● Difficulty concentrating.
     ● Feeling hopeless.
-    ● These feelings may need attention if they continue for a long time or interfere with daily life.`,
+These feelings may need attention if they continue for a long time or interfere with daily life.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
-      sortOrder: 6,
+      isEndNode: false,
+      sortOrder: 11,
       isActive: true,
     },
     {
       subtopicCode: 'MENTAL_HEALTH_BASICS',
-      nodeKey: 'MENTAL_HEALTH_BASICS_06',
+      nodeKey: 'MENTAL_HEALTH_BASICS_11',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Ishara za Mtu Anaweza Kuwa Anapambana
@@ -336,11 +460,262 @@ Hisia hizi zinaweza kuhitaji uangalifu ikiwa zitaendelea kwa muda mrefu au kuing
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
-      sortOrder: 6,
+      isEndNode: false,
+      sortOrder: 11,
       isActive: true,
     },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_12',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Remember, looking after your mental health isn't only important when you're struggling, it's something everyone can do to stay healthy, confident, and prepared for life's challenges.
+Would you like to learn more about emotional wellbeing, managing stress, building self-esteem, coping with anxiety, or knowing when to seek mental health support? I'm here to help.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_12',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kumbuka, kutunza afya yako ya akili si muhimu tu unapopambana, ni jambo ambalo kila mtu anaweza kufanya ili kubaki na afya njema, kujiamini, na kujiandaa kwa changamoto za maisha.
+Ungependa kujifunza zaidi kuhusu ustawi wa kihisia, kudhibiti msongo wa mawazo, kujenga kujithamini, kukabiliana na wasiwasi, au kujua wakati wa kutafuta msaada wa afya ya akili? Niko hapa kukusaidia.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_13',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence, or help with abuse, you do not have to face it alone. You can visit the nearest hospital, health centre, dispensary, or youth-friendly health service for confidential support and guidance. You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader, or healthcare provider.
 
+If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment, or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.
+
+For additional support, guidance, or referrals, you can contact OVAH through:
+Phone/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_13',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili, au msaada kuhusu unyanyasaji, usibaki peke yako. Unaweza kutembelea hospitali, kituo cha afya, zahanati, au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama. Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini, au mtoa huduma za afya unayemwamini.
+
+Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono, au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.
+
+Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Let's talk a little about mental health - as important as physical health.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Twaongee kidogo kuhusu afya ya akili - muhimu kama afya ya mwili.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `● Mental health is how you think, feel, and cope with life's challenges.
+● Feeling sad, anxious, or angry from time to time is normal - good mental health doesn't mean happiness all the time.
+● If these feelings persist for a long time or prevent you from living a normal life, it's a good idea to talk to someone you trust.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `● Afya ya akili ni jinsi unavyofikiri, kuhisi, na kukabiliana na changamoto za maisha.
+● Kuhisi huzuni, wasiwasi, au hasira mara kwa mara ni kawaida - afya nzuri ya akili haimaanishi furaha wakati wote.
+● Hisia hizo zikikaa muda mrefu au kukuzuia kuishi kawaida, ni vizuri kuongea na mtu unayemwamini.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `True or False: Having mental health challenges means a person is weak.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kweli au Uongo: Kuwa na changamoto za afya ya akili kunamaanisha mtu ni dhaifu.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Correct: B - False. Mental health challenges can affect anyone.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Sahihi: B - Uongo. Changamoto za afya ya akili zinaweza kumpata mtu yeyote.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Not quite.
+Correct: B - False. Mental health challenges can affect anyone.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Si sahihi.
+Sahihi: B - Uongo. Changamoto za afya ya akili zinaweza kumpata mtu yeyote.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `What is the best way to relieve stress?`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ni njia gani unayotumia kupunguza msongo wa mawazo?`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you're feeling overwhelmed emotionally, we're not far away - click here to talk to someone.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MENTAL_HEALTH_BASICS',
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kama unahisi mzigo mkubwa kihisia, hatuko mbali - bonyeza hapa kuongea na mtu.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
+      isActive: true,
+    },
     {
       subtopicCode: 'STRESS_MANAGEMENT',
       nodeKey: 'STRESS_MANAGEMENT_01',
@@ -1455,16 +1830,16 @@ Tafuta msaada ikiwa:
   contentNodeOptions: [
     {
       nodeKey: 'MENTAL_HEALTH_BASICS_01',
-      optionValue: 'normal_emotions',
-      labelEn: 'Normal emotions',
-      labelSw: 'Hisia za kawaida',
+      optionValue: 'what_is_it',
+      labelEn: 'What is it?',
+      labelSw: 'Ni nini?',
       nextNodeKey: 'MENTAL_HEALTH_BASICS_02',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'MENTAL_HEALTH_BASICS_01',
-      optionValue: 'why_it_matters',
+      optionValue: 'daily_life',
       labelEn: 'Why it matters',
       labelSw: 'Umuhimu wake',
       nextNodeKey: 'MENTAL_HEALTH_BASICS_03',
@@ -1473,16 +1848,16 @@ Tafuta msaada ikiwa:
     },
     {
       nodeKey: 'MENTAL_HEALTH_BASICS_01',
-      optionValue: 'positive_signs',
-      labelEn: 'Positive signs',
-      labelSw: 'Dalili nzuri',
-      nextNodeKey: 'MENTAL_HEALTH_BASICS_05',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_13',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'MENTAL_HEALTH_BASICS_02',
-      optionValue: 'why_it_matters',
+      optionValue: 'daily_life',
       labelEn: 'Why it matters',
       labelSw: 'Umuhimu wake',
       nextNodeKey: 'MENTAL_HEALTH_BASICS_03',
@@ -1491,63 +1866,63 @@ Tafuta msaada ikiwa:
     },
     {
       nodeKey: 'MENTAL_HEALTH_BASICS_02',
-      optionValue: 'positive_signs',
-      labelEn: 'Positive signs',
-      labelSw: 'Dalili nzuri',
-      nextNodeKey: 'MENTAL_HEALTH_BASICS_05',
+      optionValue: 'emotions',
+      labelEn: 'How does it feel?',
+      labelSw: 'Hisia zake zikoje?',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_04',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'MENTAL_HEALTH_BASICS_02',
-      optionValue: 'get_support',
-      labelEn: 'Getting support',
-      labelSw: 'Kupata msaada',
-      nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
+      optionValue: 'coping',
+      labelEn: 'Is it normal?',
+      labelSw: 'Ni kawaida?',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_05',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'MENTAL_HEALTH_BASICS_03',
-      optionValue: 'how_it_helps',
-      labelEn: 'How it helps',
-      labelSw: 'Inavyosaidia',
+      optionValue: 'emotions',
+      labelEn: 'How does it feel?',
+      labelSw: 'Hisia zake zikoje?',
       nextNodeKey: 'MENTAL_HEALTH_BASICS_04',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'MENTAL_HEALTH_BASICS_03',
-      optionValue: 'positive_signs',
-      labelEn: 'Positive signs',
-      labelSw: 'Dalili nzuri',
-      nextNodeKey: 'MENTAL_HEALTH_BASICS_05',
+      optionValue: 'why_care',
+      labelEn: 'Why care?',
+      labelSw: 'Kwanini nijali?',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_06',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'MENTAL_HEALTH_BASICS_03',
-      optionValue: 'stress',
-      labelEn: 'Stress',
-      labelSw: 'Msongo',
-      nextNodeKey: 'STRESS_MANAGEMENT_01',
+      optionValue: 'positive_signs',
+      labelEn: 'Positive signs',
+      labelSw: 'Dalili nzuri',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_10',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'MENTAL_HEALTH_BASICS_04',
-      optionValue: 'positive_signs',
-      labelEn: 'Positive signs',
-      labelSw: 'Dalili nzuri',
+      optionValue: 'coping',
+      labelEn: 'Is it normal?',
+      labelSw: 'Ni kawaida?',
       nextNodeKey: 'MENTAL_HEALTH_BASICS_05',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'MENTAL_HEALTH_BASICS_04',
-      optionValue: 'struggling_signs',
-      labelEn: 'Struggling signs',
-      labelSw: 'Dalili za changamoto',
+      optionValue: 'why_care',
+      labelEn: 'Why care?',
+      labelSw: 'Kwanini nijali?',
       nextNodeKey: 'MENTAL_HEALTH_BASICS_06',
       sortOrder: 2,
       isActive: true,
@@ -1563,29 +1938,47 @@ Tafuta msaada ikiwa:
     },
     {
       nodeKey: 'MENTAL_HEALTH_BASICS_05',
-      optionValue: 'struggling_signs',
-      labelEn: 'Struggling signs',
-      labelSw: 'Dalili za changamoto',
+      optionValue: 'why_care',
+      labelEn: 'Why care?',
+      labelSw: 'Kwa nini nijali?',
       nextNodeKey: 'MENTAL_HEALTH_BASICS_06',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'MENTAL_HEALTH_BASICS_05',
-      optionValue: 'stress',
-      labelEn: 'Stress',
-      labelSw: 'Msongo',
-      nextNodeKey: 'STRESS_MANAGEMENT_01',
+      optionValue: 'how_it_helps',
+      labelEn: 'How it helps',
+      labelSw: 'Inavyosaidia',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_08',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'MENTAL_HEALTH_BASICS_05',
       optionValue: 'get_support',
-      labelEn: 'Getting support',
-      labelSw: 'Kupata msaada',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
       nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
       sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_06',
+      optionValue: 'not_alone',
+      labelEn: 'You are not alone',
+      labelSw: 'Hauko peke yako',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_06',
+      optionValue: 'how_it_helps',
+      labelEn: 'How it helps',
+      labelSw: 'Inasaidiaje',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_08',
+      sortOrder: 2,
       isActive: true,
     },
     {
@@ -1594,20 +1987,290 @@ Tafuta msaada ikiwa:
       labelEn: 'Stress',
       labelSw: 'Msongo',
       nextNodeKey: 'STRESS_MANAGEMENT_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_07',
+      optionValue: 'how_it_helps',
+      labelEn: 'How it helps',
+      labelSw: 'Inavyosaidia',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_08',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'MENTAL_HEALTH_BASICS_06',
+      nodeKey: 'MENTAL_HEALTH_BASICS_07',
+      optionValue: 'build_it',
+      labelEn: 'How to build it',
+      labelSw: 'Jinsi ya kuijenga',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_09',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_07',
+      optionValue: 'anxiety',
+      labelEn: 'Anxiety?',
+      labelSw: 'Wasiwasi?',
+      nextNodeKey: 'ANXIETY_AND_WORRY_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_08',
+      optionValue: 'build_it',
+      labelEn: 'How to build it',
+      labelSw: 'Jinsi ya kuijenga',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_09',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_08',
+      optionValue: 'positive_signs',
+      labelEn: 'Positive signs',
+      labelSw: 'Dalili nzuri',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_10',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_08',
+      optionValue: 'self_esteem',
+      labelEn: 'Self-esteem',
+      labelSw: 'Kujithamini',
+      nextNodeKey: 'SELF_ESTEEM_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_09',
+      optionValue: 'positive_signs',
+      labelEn: 'Positive signs',
+      labelSw: 'Dalili nzuri',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_10',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_09',
+      optionValue: 'struggling',
+      labelEn: 'Are you Struggling?',
+      labelSw: 'Unapambana?',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_11',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_09',
       optionValue: 'get_support',
-      labelEn: 'Getting support',
-      labelSw: 'Kupata msaada',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_10',
+      optionValue: 'struggling',
+      labelEn: 'Are you Struggling?',
+      labelSw: 'Unapambana?',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_11',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_10',
+      optionValue: 'emotional',
+      labelEn: 'Emotional wellbeing',
+      labelSw: 'Ustawi wa hisia',
+      nextNodeKey: 'EMOTIONAL_WELLBEING_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_10',
+      optionValue: 'stress',
+      labelEn: 'Stress',
+      labelSw: 'Msongo',
+      nextNodeKey: 'STRESS_MANAGEMENT_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_11',
+      optionValue: 'what_next',
+      labelEn: 'What next?',
+      labelSw: 'Nini tena?',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_12',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_11',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
       nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'MENTAL_HEALTH_BASICS_06',
+      nodeKey: 'MENTAL_HEALTH_BASICS_11',
+      optionValue: 'talk_now',
+      labelEn: 'Talk now',
+      labelSw: 'Ongea sasa',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_13',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_12',
+      optionValue: 'emotional',
+      labelEn: 'Emotional wellbeing',
+      labelSw: 'Ustawi wa hisia',
+      nextNodeKey: 'EMOTIONAL_WELLBEING_01',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_12',
+      optionValue: 'stress',
+      labelEn: 'Stress',
+      labelSw: 'Msongo',
+      nextNodeKey: 'STRESS_MANAGEMENT_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_12',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_13',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_01',
+      optionValue: 'start_refresher',
+      labelEn: 'Start refresher',
+      labelSw: 'Anza kujikumbusha',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_02',
+      optionValue: 'start_quiz',
+      labelEn: 'Start quiz',
+      labelSw: 'Anza maswali',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_03',
+      optionValue: 'true',
+      labelEn: 'A) True',
+      labelSw: 'A) Kweli',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_03',
+      optionValue: 'false',
+      labelEn: 'B) False',
+      labelSw: 'B) Uongo',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_04',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_04',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali linalofuata',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_05',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali linalofuata',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_06',
+      optionValue: 'friend',
+      labelEn: 'A) Talk friend',
+      labelSw: 'A) Rafiki',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_06',
+      optionValue: 'sports',
+      labelEn: 'B) Sports',
+      labelSw: 'B) Michezo',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_06',
+      optionValue: 'music',
+      labelEn: 'C) Music',
+      labelSw: 'C) Muziki',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_07',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_06',
+      optionValue: 'not_sure',
+      labelEn: 'D) Not sure',
+      labelSw: 'D) Sijui',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_07',
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_07',
+      optionValue: 'talk_now',
+      labelEn: 'Talk now',
+      labelSw: 'Ongea sasa',
+      nextNodeKey: 'MENTAL_HEALTH_BASICS_13',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_07',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MENTAL_HEALTH_BASICS_REFRESHER_07',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
@@ -1615,7 +2278,6 @@ Tafuta msaada ikiwa:
       sortOrder: 3,
       isActive: true,
     },
-
     {
       nodeKey: 'STRESS_MANAGEMENT_01',
       optionValue: 'stress_sources',
@@ -2036,7 +2698,7 @@ Tafuta msaada ikiwa:
       nodeKey: 'SELF_ESTEEM_04',
       optionValue: 'what_shapes_it',
       labelEn: 'What shapes it?',
-      labelSw: 'Naanzaje kujithamini?',
+      labelSw: 'Kujithamini?',
       nextNodeKey: 'SELF_ESTEEM_05',
       sortOrder: 2,
       isActive: true,
@@ -2054,7 +2716,7 @@ Tafuta msaada ikiwa:
       nodeKey: 'SELF_ESTEEM_03',
       optionValue: 'what_shapes_it',
       labelEn: 'What shapes it?',
-      labelSw: 'Naanzaje kujithamini?',
+      labelSw: 'Kujithamini?',
       nextNodeKey: 'SELF_ESTEEM_05',
       sortOrder: 1,
       isActive: true,
@@ -2432,3 +3094,5 @@ Tafuta msaada ikiwa:
     },
   ],
 };
+
+
