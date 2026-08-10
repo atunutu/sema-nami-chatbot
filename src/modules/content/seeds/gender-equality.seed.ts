@@ -1221,14 +1221,9 @@ Sahihi: B - Uongo. Yanaweza kubadilika kadri wakati na jamii zinavyobadilika.
       nodeKey: 'TYPES_OF_VIOLENCE_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `VIOLENCE is any act or word that can include, oppression, abuse and control that causes physical, emotional, social or economic harm, such as the use of force, coercion or bodily harm.
+      messageText: `Everyone deserves to live in a safe environment where they are treated with dignity, respect, and kindness. Understanding what violence is can help you recognize it, protect yourself, and know when to seek help.
 
-Sexual violence is any act of violence against any woman, man or child with the aim of harming the body or person because of their gender.
-
-Sexual violence includes sexual, psychological, harmful practices and economic and social abuse.
-
-Sexual violence affects women and children more than men.
-`,
+Violence is any act or behaviour that causes physical, emotional, social, or economic harm to another person. It can involve oppression, abuse, control, the use of force, coercion, or actions that intentionally cause harm. Violence is never acceptable, regardless of who commits it or where it happens.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -1241,14 +1236,9 @@ Sexual violence affects women and children more than men.
       nodeKey: 'TYPES_OF_VIOLENCE_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `UKATILI ni matendo au maneno yanayoweza kujumuisha, ukandamizajiunyanyasaji na udhibiti unaosababisha madhara kimwili, kihisia, kijamii au kiuchumi, kama vile kutumia nguvu, kulazimisha au kudhuru mwili.
+      messageText: `Kila mtu anastahili kuishi katika mazingira salama ambapo anatendewa kwa heshima, heshima, na wema. Kuelewa ukatili ni nini kunaweza kukusaidia kuutambua, kujilinda, na kujua wakati wa kutafuta msaada.
 
-Ukatili wa kijinsia ni kitendo chochote cha kikatili anachofanyiwa mtu yeyote mwanamke, mwanaume au mtoto chenye lengo la kumuumiza mwili au kiutu kutokana na jinsia yake.
-
-Ukatili wa kijinsia unajumuisha ukatili wa kingono, kisaikolojia, mila hatarishi na unyanyasaji wa uchumi na kijamii.
-
-Ukatili wa kijinsia huathiri wanawake na watoto zaidi kuliko wanaume.
-`,
+Ukatili ni kitendo au tabia yoyote inayosababisha madhara ya kimwili, kihisia, kijamii, au kiuchumi kwa mtu mwingine. Inaweza kuhusisha ukandamizaji, unyanyasaji, udhibiti, matumizi ya nguvu, kulazimisha, au vitendo vinavyosababisha madhara kimakusudi. Ukatili haukubaliki kamwe, bila kujali ni nani anayeufanya au mahali unapotokea.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -1261,9 +1251,9 @@ Ukatili wa kijinsia huathiri wanawake na watoto zaidi kuliko wanaume.
       nodeKey: 'TYPES_OF_VIOLENCE_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `There are four types of violence:
-    • Physical violence It is an act done to a person that involves physical harm and can be directly seen or the victim feels pain. Example: Being beaten, pushed, injured, etc.
-`,
+      messageText: `What is Sexual Violence?
+
+Sexual violence is any act of violence committed against a woman, man, or child that harms them because of their gender or involves sexual acts without their consent. Sexual violence can include sexual abuse, psychological abuse, harmful traditional practices, and economic or social abuse. Although anyone can experience sexual violence, women and children are affected more often than men.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1276,9 +1266,9 @@ Ukatili wa kijinsia huathiri wanawake na watoto zaidi kuliko wanaume.
       nodeKey: 'TYPES_OF_VIOLENCE_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Kuna aina nne za ukatili:
-    • Ukatili wa kimwili Ni kitendo anachofanyiwa mtu kinachohusisha kuumizwa mwili na huweza kuonekana moja kwa moja au muathirika kuhisi maumivu. Mfano: Kupigwa, kusukumwa, kujeruhiwa n.k
-`,
+      messageText: `Ukatili wa Kijinsia ni nini?
+
+Ukatili wa kingono ni kitendo chochote cha ukatili kinachofanywa dhidi ya mwanamke, mwanamume, au mtoto kinachowadhuru kwa sababu ya jinsia yao au kinachohusisha vitendo vya kingono bila ridhaa yao. Ukatili wa kingono unaweza kujumuisha unyanyasaji wa kingono, unyanyasaji wa kisaikolojia, desturi za kitamaduni zenye madhara, na unyanyasaji wa kiuchumi au kijamii. Ingawa mtu yeyote anaweza kupitia ukatili wa kingono, wanawake na watoto huathiriwa mara nyingi zaidi kuliko wanaume.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1286,105 +1276,23 @@ Ukatili wa kijinsia huathiri wanawake na watoto zaidi kuliko wanaume.
       sortOrder: 2,
       isActive: true,
     },
-
-    {
-      subtopicCode: 'TYPES_OF_VIOLENCE',
-      nodeKey: 'TYPES_OF_VIOLENCE_08',
-      nodeType: NodeType.CONTENT,
-      language: Language.EN,
-      messageText: `• Emotional/psychological violence is violence that a person is subjected to and that causes emotional/psychological pain. Example: Being insulted, humiliated, discriminated against, abandoned, threatened.
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 8,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'TYPES_OF_VIOLENCE',
-      nodeKey: 'TYPES_OF_VIOLENCE_08',
-      nodeType: NodeType.CONTENT,
-      language: Language.SW,
-      messageText: `• Ukatili wa kihisia/kisaikolojia ni ukatili ambao mtu anatendewa na unaomsababishia maumivu kihisia/kisaikolojia Mfano: Kutukanwa, kusimangwa, kubaguliwa, kuachwa, kutishiwa
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 8,
-      isActive: true,
-    },
-
-    {
-      subtopicCode: 'TYPES_OF_VIOLENCE',
-      nodeKey: 'TYPES_OF_VIOLENCE_09',
-      nodeType: NodeType.CONTENT,
-      language: Language.EN,
-      messageText: `• Economic violence is a type of violence that deprives a woman or man of economic opportunities to increase their income and contribute to development. Example: discrimination in economic opportunities, human trafficking.
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 9,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'TYPES_OF_VIOLENCE',
-      nodeKey: 'TYPES_OF_VIOLENCE_09',
-      nodeType: NodeType.CONTENT,
-      language: Language.SW,
-      messageText: `• Ukatili wa kiuchumi ni aina ya ukatili ambao unamnyima fursa za kiuchumi mwanamke au mwanaume katika kujiongezeakipato na kuchangia katika maendeleo. Mfano: ubaguzi wa fursa za kiuchumi, usafirishaji haramu wa watu.
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 9,
-      isActive: true,
-    },
-
-    {
-      subtopicCode: 'TYPES_OF_VIOLENCE',
-      nodeKey: 'TYPES_OF_VIOLENCE_10',
-      nodeType: NodeType.CONTENT,
-      language: Language.EN,
-      messageText: `iv) Sexual violence is any sexual act that is done to a person without their consent, such as sexual harassment, sexual abuse, female genital mutilation, forced sex work, sexual exploitation and rape within marriage or relationships. Example: Rape, sodomy, groping without consent, leaking of nude photos without consent.
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 10,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'TYPES_OF_VIOLENCE',
-      nodeKey: 'TYPES_OF_VIOLENCE_10',
-      nodeType: NodeType.CONTENT,
-      language: Language.SW,
-      messageText: `iv) Ukatili wa kingono ni kitendo chochote cha kingono anachofanyiwa mtu bila ridhaa yake, mfano bugudha za kingono, unyanyasaji wa kingono, ukeketaji wa watoto wa kike, kulazimishwa kufanya biashara ya ngono, Kutumikishwa kingono na ubakaji ndani ya ndoa au mahusiano Mfano: Kubakwa, kulawitiwa, kushikwa sehemu za siri bila ridhaa, kuvujishwa kwa picha za utupu bila ridhaa.
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 10,
-      isActive: true,
-    },
-
     {
       subtopicCode: 'TYPES_OF_VIOLENCE',
       nodeKey: 'TYPES_OF_VIOLENCE_03',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `    Rape/Sodomy is one of the worst acts of sexual abuse that has serious consequences for young people. Rape involves the forcible physical penetration of a person without their consent.
-Types of rape and sodomy
-    ● Rape/sodomy within marriage
-    ● Rape/sodomy committed by a group
-    ● Rape/sodomy between family members
-    ● Rape/sodomy between strangers`,
+      messageText: `Types of Violence
+
+Violence can take different forms, and it's important to recognize that not all violence leaves visible injuries.
+
+Physical Violence
+Physical violence is any act that causes physical harm or pain to another person. The injuries may be visible, or the person may simply experience pain.
+
+Examples include:
+● Being beaten.
+● Being pushed.
+● Being injured.
+● Any other act that causes physical harm.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1397,14 +1305,18 @@ Types of rape and sodomy
       nodeKey: 'TYPES_OF_VIOLENCE_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Ubakaji/Ulawiti Ni moja kati ya matendo mabaya ya udhalilishaji wa kingono yenye madhara makubwa kwa vijana.
-Ubakaji unahusisha kumwingilia mtu kimwili kwa nguvu bila ridhaa yake.
+      messageText: `Aina za Ukatili
 
-Aina za ubakaji na ulawiti:
-    ● Ubakaji/ulawiti ndani ya ndoa
-    ● Ubakaji/ulawiti unaofanywa na kikundi
-    ● Ubakaji/ulawiti kati ya wanafamilia
-    ● Ubakaji/ulawiti kati ya watu wasiofahamiana`,
+Ukatili unaweza kuchukua aina tofauti, na ni muhimu kutambua kwamba si ukatili wote huacha majeraha yanayoonekana.
+
+Ukatili wa Kimwili
+Ukatili wa kimwili ni kitendo chochote kinachosababisha madhara ya kimwili au maumivu kwa mtu mwingine. Majeraha yanaweza kuonekana, au mtu anaweza kupata maumivu tu.
+
+Mifano ni pamoja na:
+● Kupigwa.
+● Kusukumwa.
+● Kujeruhiwa.
+● Kitendo kingine chochote kinachosababisha madhara ya kimwili.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1412,16 +1324,23 @@ Aina za ubakaji na ulawiti:
       sortOrder: 3,
       isActive: true,
     },
-
     {
       subtopicCode: 'TYPES_OF_VIOLENCE',
       nodeKey: 'TYPES_OF_VIOLENCE_04',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Young people are often raped/sodomyed by people they know and trust.
+      messageText: `Emotional or Psychological Violence
 
-These can be parents/guardians, family friends, family members, neighbors, strangers, friends/lovers, teachers, religious leaders
-`,
+Emotional or psychological violence involves actions or words that cause emotional pain or affect a person's mental wellbeing.
+
+Examples include:
+● Being insulted.
+● Being humiliated.
+● Being discriminated against.
+● Being abandoned.
+● Being threatened.
+
+Although emotional violence may not leave visible injuries, it can have a serious and lasting impact on a person's confidence, mental health, and overall wellbeing.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1434,10 +1353,18 @@ These can be parents/guardians, family friends, family members, neighbors, stran
       nodeKey: 'TYPES_OF_VIOLENCE_04',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Vijana mara nyingi wanabakwa/wanalawitiwa na watu wanaowafahamu na kuwaamini.
+      messageText: `Vurugu za Kihisia au Kisaikolojia
 
-Hao wanaweza kuwa wazazi/walezi ,marafiki wa familia ,mwanafamilia,jirani ,mgeni ,rafiki/mpenzi,walimu ,viongozi wa dini
-`,
+Vurugu za kihisia au kisaikolojia huhusisha vitendo au maneno yanayosababisha maumivu ya kihisia au kuathiri ustawi wa akili wa mtu.
+
+Mifano ni pamoja na:
+● Kutukanwa.
+● Kufedheheshwa.
+● Kubaguliwa.
+● Kuachwa.
+● Kutishiwa.
+
+Ingawa vurugu za kihisia zinaweza zisiache majeraha yanayoonekana, zinaweza kuwa na athari kubwa na ya kudumu kwa kujiamini kwa mtu, afya ya akili, na ustawi wa jumla.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1445,20 +1372,273 @@ Hao wanaweza kuwa wazazi/walezi ,marafiki wa familia ,mwanafamilia,jirani ,mgeni
       sortOrder: 4,
       isActive: true,
     },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Economic Violence
 
+Economic violence occurs when someone is denied opportunities to earn an income, become financially independent, or contribute to their own development.
+
+Examples include:
+● Discrimination in economic opportunities.
+● Human trafficking.
+● Preventing someone from accessing financial resources or opportunities.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Vurugu za Kiuchumi
+
+Vurugu za kiuchumi hutokea wakati mtu ananyimwa fursa za kupata kipato, kujitegemea kifedha, au kuchangia maendeleo yake mwenyewe.
+
+Mifano ni pamoja na:
+● Ubaguzi katika fursa za kiuchumi.
+● Usafirishaji haramu wa binadamu.
+● Kumzuia mtu kupata rasilimali za kifedha au fursa.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Sexual Violence
+
+Sexual violence is any sexual act carried out without a person's free and informed consent. It can happen to anyone and is never the victim's fault.
+
+Examples include:
+● Sexual harassment.
+● Sexual abuse.
+● Female genital mutilation (FGM).
+● Forced sex work.
+● Sexual exploitation.
+● Rape within marriage or intimate relationships.
+● Rape.
+● Sodomy.
+● Touching or groping someone without their consent.
+● Sharing or leaking nude photos without someone's consent.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Vurugu za Kijinsia
+
+Vurugu za kingono ni kitendo chochote cha kingono kinachofanywa bila ridhaa ya mtu huru na yenye taarifa. Inaweza kutokea kwa mtu yeyote na kamwe si kosa la mwathiriwa.
+
+Mifano ni pamoja na:
+● Unyanyasaji wa kingono.
+● Unyanyasaji wa kingono.
+● Ukeketaji wa wanawake (FGM).
+● Kazi ya ngono ya kulazimishwa.
+● Unyonyaji wa kingono.
+● Ubakaji ndani ya ndoa au mahusiano ya karibu.
+● Ubakaji.
+● Ulawiti.
+● Kumgusa au kumpapasa mtu bila ridhaa yake.
+● Kushiriki au kuvuja picha za uchi bila ridhaa ya mtu.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Understanding Rape and Sodomy
+
+Rape and sodomy are among the most serious forms of sexual violence because they can have lifelong physical, emotional, psychological, and social consequences for survivors.
+
+Rape involves the forced physical penetration of a person without their consent. Consent must always be given freely, willingly, and without pressure, fear, threats, manipulation, or force.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kuelewa Ubakaji na Ulawiti
+
+Ubakaji na ulawiti ni miongoni mwa aina mbaya zaidi za ukatili wa kingono kwa sababu zinaweza kuwa na matokeo ya kimwili, kihisia, kisaikolojia, na kijamii kwa waathirika.
+
+Ubakaji unahusisha kupenya kwa nguvu kimwili kwa mtu bila ridhaa yake. Ridhaa lazima itolewe kwa uhuru, kwa hiari, na bila shinikizo, hofu, vitisho, kudanganywa, au nguvu.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Rape or sodomy can occur in different situations, including:
+● Within marriage or intimate relationships.
+● By a group of people.
+● Between family members.
+● Between strangers.
+
+No matter who commits it, rape or sodomy is never acceptable and is never the survivor's fault.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ubakaji au ulawiti unaweza kutokea katika hali tofauti, ikiwa ni pamoja na:
+● Ndani ya ndoa au mahusiano ya karibu.
+● Na kundi la watu.
+● Kati ya wanafamilia.
+● Kati ya wageni.
+
+Haijalishi ni nani anayefanya hivyo, ubakaji au ulawiti haukubaliki kamwe na kamwe si kosa la aliyenusurika.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Rapists and people who commit sodomy
+
+Young people are often raped or sodomized by people they know and trust. These can be:
+● Parents or guardians.
+● Family friends.
+● Family members.
+● Neighbors.
+● Strangers.
+● Friends or lovers.
+● Teachers.
+● Religious leaders.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Wabakaji na walawiti
+
+Vijana mara nyingi wanabakwa au kulawitiwa na watu wanaowafahamu na kuwaamini. Hao wanaweza kuwa:
+● Wazazi au walezi.
+● Marafiki wa familia.
+● Mwanafamilia.
+● Jirani.
+● Mgeni.
+● Rafiki au mpenzi.
+● Walimu.
+● Viongozi wa dini.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Effects of rape and sodomy include:
+● Bruises and injuries during physical penetration.
+● Genital mutilation for women.
+● Sexually transmitted infections, including HIV.
+● Unintended pregnancy.
+● Abortion.
+● Fear.
+● Depression.
+● Suicide.
+● Possibility of becoming a drug user due to stress.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Madhara ya ubakaji na ulawiti ni pamoja na:
+● Michubuko na majeraha wakati wa kuingiliwa kimwili.
+● Kuharibika kwa viungo vya uzazi kwa mwanamke.
+● Maambukizi ya magonjwa ya ngono ikiwemo VVU.
+● Kupata mimba zisizotarajiwa.
+● Utoaji mimba.
+● Hofu.
+● Sonona.
+● Kujiua.
+● Uwezekano wa kuwa mtumiaji wa dawa za kulevya kutokana na msongo wa mawazo.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
     {
       subtopicCode: 'TYPES_OF_VIOLENCE',
       nodeKey: 'TYPES_OF_VIOLENCE_11',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Effects of rape and sodomy:
-      ● Bruises and injuries during physical penetration,
-      ● Genital mutilation (for women)
-      ● Sexually transmitted infections including HIV
-      ● Unintended pregnancy and abortion,
-      ● Fear, depression, and suicide
-      ● Possibility of becoming a drug user due to stress
-`,
+      messageText: `Symptoms of a young person who has been raped or sodomized may include:
+● Cannot walk or sit properly.
+● Tearing or swelling.
+● Itching of the genitals.
+● Bleeding from the vagina or anus.
+● Discharge from the vagina or anus.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1471,14 +1651,12 @@ Hao wanaweza kuwa wazazi/walezi ,marafiki wa familia ,mwanafamilia,jirani ,mgeni
       nodeKey: 'TYPES_OF_VIOLENCE_11',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Madhara ya ubakaji na ulawiti:
-      ● michubuko na majeraha wakati wa kuingiliwa kimwili
-      ● Kuharibika kwa viungo vya uzazi (kwa mwanamke)
-      ● Maambukizi ya magonjwa ya ngono ikiwemo VVU
-      ● Kupata mimba zisizotarajiwa na utoaji wa mimba
-      ● Hofu, sonona, na kujiua
-      ● Uwezekano wa kuwa mtumiaji wa dawa za kulevya kutokana na msongo wa mawazo
-`,
+      messageText: `Dalili za kijana aliyebakwa au kulawitiwa zinaweza kujumuisha:
+● Hawezi kutembea au kukaa vizuri.
+● Kuchanika au kuvimba.
+● Kuwashwa sehemu za siri.
+● Kutoka damu ukeni au njia ya haja kubwa.
+● Kutoka uchafu ukeni au njia ya haja kubwa.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1486,55 +1664,51 @@ Hao wanaweza kuwa wazazi/walezi ,marafiki wa familia ,mwanafamilia,jirani ,mgeni
       sortOrder: 11,
       isActive: true,
     },
-
     {
       subtopicCode: 'TYPES_OF_VIOLENCE',
       nodeKey: 'TYPES_OF_VIOLENCE_12',
-      nodeType: NodeType.CONTENT,
-      language: Language.EN,
-      messageText: `Symptoms of a young person who has been raped or sodomized:
-      ● Cannot walk/sit properly
-      ● Tearing, swelling and itching of the genitals
-      ● Bleeding from the vagina or anus
-      ● Discharge from the vagina or anus
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 12,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'TYPES_OF_VIOLENCE',
-      nodeKey: 'TYPES_OF_VIOLENCE_12',
-      nodeType: NodeType.CONTENT,
-      language: Language.SW,
-      messageText: `Dalili za kijana aliyebakwa au kulawitiwa:
-      ● Hawezi kutembea/kukaa vizuri
-      ● Kuchanika, kuvimba na kuwashwa sehemu za siri
-      ● Kutoka damu ukeni au njia ya haja kubwa
-      ● Kutoka uchafu ukeni au njia ya haja kubwa
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 12,
-      isActive: true,
-    },
-
-    {
-      subtopicCode: 'TYPES_OF_VIOLENCE',
-      nodeKey: 'TYPES_OF_VIOLENCE_13',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `How to prevent sexual violence:
-      ● Avoiding dangerous environments that can lead to violence
-      ● Providing education about sexual violence to the community
-      ● Improving policies and laws
-      ● Having the courage to reject acts of violence
-`,
+● Avoiding dangerous environments that can lead to violence.
+● Providing education about sexual violence to the community.
+● Improving policies and laws.
+● Having the courage to reject acts of violence.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_12',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Jinsi ya kuzuia unyanyasaji wa kijinsia:
+● Kujiepusha na mazingira hatarishi yanayoweza kusababisha kufanyiwa ukatili.
+● Kutoa elimu kuhusu ukatili wa kijinsia kwa jamii.
+● Kuboresha sera na sheria.
+● Kuwa na uthubutu wa kukataa vitendo vya unyanyasaji.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_13',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Steps to take after being subjected to sexual violence:
+● Leave the dangerous area and go to a safe area.
+● Preserve evidence. Do not clean your vagina or anus immediately after being raped or sodomized, and do not wash clothes. Preserve them for evidence.
+● Take the names of witnesses.
+● Report the incident of sexual violence early to the police station or to the authorities.
+● Go to a health care facility as soon as possible, importantly within 72 hours.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1547,12 +1721,12 @@ Hao wanaweza kuwa wazazi/walezi ,marafiki wa familia ,mwanafamilia,jirani ,mgeni
       nodeKey: 'TYPES_OF_VIOLENCE_13',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Jinsi ya kuzuia unyanyasaji wa kijinsia
-      ● Kujiepusha na mazingira hatarishi yanayoweza kusababisha kufanyiwa ukatili
-      ● Kutoa elimu kuhusu ukatili wa kijinsia kwa jamii
-      ● Kuboresha sera na sheria
-      ● Kuwa na uthubutu wa kukataa vitendo vya unyanyasaji
-`,
+      messageText: `Hatua za kuchukua baada ya kufanyiwa ukatili wa kingono:
+● Toka katika eneo hatarishi na uende eneo salama.
+● Tunza ushahidi, usijisafishe ukeni au sehemu ya haja kubwa mara baada ya kubakwa au kulawitiwa wala kufua nguo. Tunza kwa ajili ya ushahidi.
+● Chukua majina ya mashahidi.
+● Toa taarifa za tukio la ukatili wa kingono mapema katika kituo cha polisi au kwa viongozi.
+● Nenda katika kituo cha kutoa huduma za afya mapema iwezekanavyo, muhimu iwe ndani ya saa 72.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1562,143 +1736,23 @@ Hao wanaweza kuwa wazazi/walezi ,marafiki wa familia ,mwanafamilia,jirani ,mgeni
     },
     {
       subtopicCode: 'TYPES_OF_VIOLENCE',
-      nodeKey: 'TYPES_OF_VIOLENCE_05',
-      nodeType: NodeType.CONTENT,
-      language: Language.EN,
-      messageText: `Steps to take after being subjected to sexual violence
-    ● Leave the dangerous area and go to a safe area
-    ● Preserve evidence, do not clean your vagina or anus immediately after being raped or sodomized, nor wash clothes, preserve for evidence.
-    ● Take the names of witnesses
-    ● Report the incident of sexual violence early to the police station or to the authorities
-    ● Go to a health care facility as soon as possible (importantly within 72 hours)
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 5,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'TYPES_OF_VIOLENCE',
-      nodeKey: 'TYPES_OF_VIOLENCE_05',
-      nodeType: NodeType.CONTENT,
-      language: Language.SW,
-      messageText: `Hatua za kuchukua baada ya kufanyiwa ukatili wa kingono
-    ● Toka katika eneo hatarishi na uende eneo salama
-    ● Tunza ushahidi, usijisafishe ukeni au sehemu ya haja kubwa mara baada ya kubakwa au kulawitiwa wala kufua nguo tunza kwa ajili ya ushahidi.
-    ● Chukua majina ya mashahidi
-    ● Toa taarifa za tukio la ukatili wa kingono mapema katika kituo cha polisi au kwa viongozi
-    ● Nenda katika kituo cha kutoa huduma za afya mapema iwezekanavyo (muhimu iwe ndani ya saa 72)
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 5,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'TYPES_OF_VIOLENCE',
-      nodeKey: 'TYPES_OF_VIOLENCE_06',
-      nodeType: NodeType.CONTENT,
-      language: Language.EN,
-      messageText: `GROUPS OF YOUTH WHO ARE AT HIGHEST RISK OF BEING AFFECTED BY RISK BEHAVIOR
-    ● Youth living in extreme poverty.
-    ● Young people with physical or mental disabilities
-    ● Orphans
-    ● Young people whose parents were also abused in childhood
-    ● Young people from areas where the population is very strict about customs and traditions
-    ● Children living in vulnerable environments
-    ● Young people living in vulnerable areas such as truck parking lots, bus stands, mines, etc.
-    ● Young people living away from their parents
-    ● Young people living in ghettos or brothels
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 6,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'TYPES_OF_VIOLENCE',
-      nodeKey: 'TYPES_OF_VIOLENCE_06',
-      nodeType: NodeType.CONTENT,
-      language: Language.SW,
-      messageText: `MAKUNDI YA VIJANA AMBAO WAKO KATIKA HATARI ZAIDI YA KUATHIRIKA NA VITENDO HATARISHI
-    ● Vijana wanaoishi katika mazingira ya umasikini uliokithiri.
-    ● Vijana wenye ulemavu wa mwili au akili
-    ● Yatima
-    ● Vijana ambao wazazi wao pia walinyanyaswa utotoni
-    ● Vijana wanaotoka maeneo ambayo wakazi wake wanazingatia sanasana mila na desturi potofu
-    ● Watoto wanaoishi katika mazingira hatarishi
-    ● Vijana wanaoishi katika maeneo hatarishi mfano vituo vya maegesho ya magari ya mizigo, stendi za mabasi, migodini n.k
-    ● Vijana wanaoishi mbali na wazazi
-    ● Vijana wanaoishi kwenye mageto au madanguro
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 6,
-      isActive: true,
-    },
-
-    {
-      subtopicCode: 'TYPES_OF_VIOLENCE',
-      nodeKey: 'TYPES_OF_VIOLENCE_07',
-      nodeType: NodeType.CONTENT,
-      language: Language.EN,
-      messageText: `SERVICES FOR VICTIMS OF SEXUAL VIOLENCE
-    ● Counseling
-    ● Health care
-    ● Legal assistance
-    ● Toll-free number (116) available through all networks (National Child helpline)
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 7,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'TYPES_OF_VIOLENCE',
-      nodeKey: 'TYPES_OF_VIOLENCE_07',
-      nodeType: NodeType.CONTENT,
-      language: Language.SW,
-      messageText: `HUDUMA KWA WAATHIRIKA WA UKATILI WA KINGONO
-    ● Ushauri Nasaha
-    ● Huduma ya afya
-    ● Usaidizi wa kisheria
-    ● Nambari ya simu isiyolipishwa (116) inapatikana kupitia mitandao yote (Mstari wa Kitaifa wa Usaidizi wa Mtoto)
-`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 7,
-      isActive: true,
-    },
-
-    {
-      subtopicCode: 'TYPES_OF_VIOLENCE',
       nodeKey: 'TYPES_OF_VIOLENCE_14',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `NOTE: Information on sexual violence can be provided to:
-      ● Social Welfare Officer
-      ● Community Development Officer
-      ● Police Gender Desk
-      ● Ward Executive Officer
-      ● Paralegals
-      ● Health Care Center
-      ● Religious leaders`,
+      messageText: `Groups of youth who are at highest risk of being affected by risky behavior include:
+● Youth living in extreme poverty.
+● Young people with physical or mental disabilities.
+● Orphans.
+● Young people whose parents were also abused in childhood.
+● Young people from areas where the population is very strict about customs and traditions.
+● Children living in vulnerable environments.
+● Young people living in vulnerable areas such as truck parking lots, bus stands, mines, and similar places.
+● Young people living away from their parents.
+● Young people living in ghettos or brothels.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 14,
       isActive: true,
     },
@@ -1707,19 +1761,207 @@ Hao wanaweza kuwa wazazi/walezi ,marafiki wa familia ,mwanafamilia,jirani ,mgeni
       nodeKey: 'TYPES_OF_VIOLENCE_14',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `KUMBUKA: Taarifa kuhusu ukatili wa kijinsia zinaweza kutolewa kwa:
-      ● Afisa wa Ustawi wa Jamii
-      ● Afisa wa Maendeleo ya Jamii
-      ● Dawati la Polisi Jinsia
-      ● Afisa Mtendaji wa Kata
-      ● Wasaidizi wa Kisheria
-      ● Kituo cha Huduma ya Afya
-      ● Viongozi wa kidini`,
+      messageText: `Makundi ya vijana ambao wako katika hatari zaidi ya kuathirika na vitendo hatarishi ni pamoja na:
+● Vijana wanaoishi katika mazingira ya umasikini uliokithiri.
+● Vijana wenye ulemavu wa mwili au akili.
+● Yatima.
+● Vijana ambao wazazi wao pia walinyanyaswa utotoni.
+● Vijana wanaotoka maeneo ambayo wakazi wake wanazingatia sana mila na desturi potofu.
+● Watoto wanaoishi katika mazingira hatarishi.
+● Vijana wanaoishi katika maeneo hatarishi mfano vituo vya maegesho ya magari ya mizigo, stendi za mabasi, migodini n.k.
+● Vijana wanaoishi mbali na wazazi.
+● Vijana wanaoishi kwenye mageto au madanguro.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 14,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_15',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Services for victims of sexual violence include:
+● Counseling.
+● Health care.
+● Legal assistance.
+● Toll-free number 116, available through all networks as the National Child Helpline.
+
+Note: Information on sexual violence can be provided to the Social Welfare Officer, Community Development Officer, Police Gender Desk, Ward Executive Officer, paralegals, health care center, and religious leaders.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 15,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_15',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Huduma kwa waathirika wa ukatili wa kingono ni pamoja na:
+● Ushauri nasaha.
+● Huduma ya afya.
+● Usaidizi wa kisheria.
+● Nambari ya simu isiyolipishwa 116 inapatikana kupitia mitandao yote kama Mstari wa Kitaifa wa Usaidizi wa Mtoto.
+
+Kumbuka: Taarifa kuhusu ukatili wa kijinsia zinaweza kutolewa kwa Afisa wa Ustawi wa Jamii, Afisa wa Maendeleo ya Jamii, Dawati la Polisi Jinsia, Afisa Mtendaji wa Kata, wasaidizi wa kisheria, kituo cha huduma ya afya, na viongozi wa kidini.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 15,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_16',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you or someone you know has experienced any form of violence, remember that help is available. You deserve to be safe, supported, and treated with respect. Talking to a trusted adult, teacher, parent, guardian, healthcare provider, social welfare officer, or reporting to the appropriate authorities can help you access protection and support.
+
+Would you like to learn more about consent, recognizing sexual exploitation, reporting violence, supporting a survivor, or where to find help? I'm here to support you.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 16,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_16',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa wewe au mtu unayemjua amepitia aina yoyote ya ukatili, kumbuka kwamba msaada unapatikana. Unastahili kuwa salama, kuungwa mkono, na kutendewa kwa heshima. Kuzungumza na mtu mzima unayemwamini, mwalimu, mzazi, mlezi, mtoa huduma ya afya, afisa wa ustawi wa jamii, au kuripoti kwa mamlaka husika kunaweza kukusaidia kupata ulinzi na usaidizi.
+
+Je, ungependa kujifunza zaidi kuhusu ridhaa, kutambua unyanyasaji wa kijinsia, kuripoti ukatili, kumsaidia manusura, au wapi pa kupata msaada? Niko hapa kukusaidia.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 16,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_17',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence, or help with abuse, you do not have to face it alone. You can visit the nearest hospital, health centre, dispensary, or youth-friendly health service for confidential support and guidance. You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader, or healthcare provider.
+
+If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment, or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.
+
+For additional support, guidance, or referrals, you can contact OVAH through:
+Phone/WhatsApp: 0652 522 358`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: true,
-      sortOrder: 14,
+      sortOrder: 17,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_17',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili, au msaada kuhusu unyanyasaji, usibaki peke yako. Unaweza kutembelea hospitali, kituo cha afya, zahanati, au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama. Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini, au mtoa huduma za afya unayemwamini.
+
+Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono, au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.
+
+Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 17,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Heavy topics - types of violence. We are with you.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Mada nzito - aina za ukatili. Tuko pamoja nawe.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `● Violence can be physical, emotional, economic, or sexual - all are wrong and not normal.
+● Sexual violence includes touching without consent, rape, and forced sexual acts.
+● No one deserves to be subjected to violence of any kind.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `● Ukatili unaweza kuwa wa kimwili, kihisia, kiuchumi, au kingono - vyote ni vibaya na si vya kawaida.
+● Ukatili wa kingono ni pamoja na kuguswa bila ridhaa, ubakaji, na kulazimishwa kufanya mambo ya ngono.
+● Hakuna anayestahili kufanyiwa ukatili wa aina yoyote.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you are experiencing any kind of violence right now, contact us immediately or call 116, Child Help, free 24 hours a day.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'TYPES_OF_VIOLENCE',
+      nodeKey: 'TYPES_OF_VIOLENCE_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kama unapitia hali yoyote ya ukatili sasa hivi, wasiliana nasi mara moja au piga simu 116, Msaada wa Mtoto, bure saa zote.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 103,
       isActive: true,
     },
 
@@ -3360,18 +3602,18 @@ Unyanyasaji unaweza kufanywa na watu wanaomjua mwathiriwa. Kuripoti bado ni muhi
     },
     {
       nodeKey: 'TYPES_OF_VIOLENCE_01',
-      optionValue: 'violence_types',
-      labelEn: 'Violence types',
-      labelSw: 'Aina za ukatili',
+      optionValue: 'sexual_violence',
+      labelEn: 'Sexual violence',
+      labelSw: 'Ukatili wa kingono',
       nextNodeKey: 'TYPES_OF_VIOLENCE_02',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'TYPES_OF_VIOLENCE_01',
-      optionValue: 'rape_sodomy',
-      labelEn: 'Rape and sodomy',
-      labelSw: 'Ubakaji/ulawiti',
+      optionValue: 'violence_types',
+      labelEn: 'Types of violence',
+      labelSw: 'Aina za ukatili',
       nextNodeKey: 'TYPES_OF_VIOLENCE_03',
       sortOrder: 2,
       isActive: true,
@@ -3387,236 +3629,308 @@ Unyanyasaji unaweza kufanywa na watu wanaomjua mwathiriwa. Kuripoti bado ni muhi
     },
     {
       nodeKey: 'TYPES_OF_VIOLENCE_02',
-      optionValue: 'emotional_violence',
-      labelEn: 'Emotional violence',
-      labelSw: 'Ukatili wa hisia',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_08',
+      optionValue: 'violence_types',
+      labelEn: 'Types of violence',
+      labelSw: 'Aina za ukatili',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_03',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'TYPES_OF_VIOLENCE_02',
-      optionValue: 'economic_violence',
-      labelEn: 'Economic violence',
-      labelSw: 'Ukatili kiuchumi',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_09',
+      optionValue: 'sexual_examples',
+      labelEn: 'Sexual examples',
+      labelSw: 'Mifano ya kingono',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_06',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'TYPES_OF_VIOLENCE_02',
-      optionValue: 'sexual_violence',
-      labelEn: 'Sexual violence',
-      labelSw: 'Ukatili wa kingono',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_10',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'TYPES_OF_VIOLENCE_08',
-      optionValue: 'economic_violence',
-      labelEn: 'Economic violence',
-      labelSw: 'Ukatili kiuchumi',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_09',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'TYPES_OF_VIOLENCE_08',
-      optionValue: 'sexual_violence',
-      labelEn: 'Sexual violence',
-      labelSw: 'Ukatili wa kingono',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_10',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'TYPES_OF_VIOLENCE_08',
-      optionValue: 'rape_sodomy',
-      labelEn: 'Rape and sodomy',
-      labelSw: 'Ubakaji/ulawiti',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_03',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'TYPES_OF_VIOLENCE_09',
-      optionValue: 'sexual_violence',
-      labelEn: 'Sexual violence',
-      labelSw: 'Ukatili wa kingono',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_10',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'TYPES_OF_VIOLENCE_09',
-      optionValue: 'rape_sodomy',
-      labelEn: 'Rape and sodomy',
-      labelSw: 'Ubakaji/ulawiti',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_03',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'TYPES_OF_VIOLENCE_09',
-      optionValue: 'services',
-      labelEn: 'Services',
-      labelSw: 'Huduma',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_07',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'TYPES_OF_VIOLENCE_10',
-      optionValue: 'rape_sodomy',
-      labelEn: 'Rape and sodomy',
-      labelSw: 'Ubakaji/ulawiti',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_03',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'TYPES_OF_VIOLENCE_10',
-      optionValue: 'after_violence',
-      labelEn: 'After violence',
-      labelSw: 'Baada ya ukatili',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_05',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'TYPES_OF_VIOLENCE_10',
-      optionValue: 'report_abuse',
-      labelEn: 'Report abuse',
-      labelSw: 'Ripoti ukatili',
-      nextNodeKey: 'REPORTING_ABUSE_01',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_17',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'TYPES_OF_VIOLENCE_03',
-      optionValue: 'known_people',
-      labelEn: 'Who does this',
-      labelSw: 'Unafyika na nani',
+      optionValue: 'emotional',
+      labelEn: 'Emotional Violence',
+      labelSw: 'Ukatili wa Kihisia',
       nextNodeKey: 'TYPES_OF_VIOLENCE_04',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'TYPES_OF_VIOLENCE_03',
-      optionValue: 'effects',
-      labelEn: 'The Effects',
-      labelSw: 'Madhara yake',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_11',
+      optionValue: 'economic',
+      labelEn: 'Economic Violence',
+      labelSw: 'Ukatili wa Kiuchumi',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_05',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'TYPES_OF_VIOLENCE_03',
-      optionValue: 'after_violence',
-      labelEn: 'After violence',
-      labelSw: 'Baada ya ukatili',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_05',
+      optionValue: 'sexual',
+      labelEn: 'Sexual Violence',
+      labelSw: 'Ukatili wa Kingono',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_06',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'TYPES_OF_VIOLENCE_04',
+      optionValue: 'economic',
+      labelEn: 'Economic Violence',
+      labelSw: 'Ukatili wa Kiuchumi',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_04',
+      optionValue: 'sexual',
+      labelEn: 'Sexual Violence',
+      labelSw: 'Ukatili wa Kingono',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_06',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_04',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_17',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_05',
+      optionValue: 'sexual',
+      labelEn: 'Sexual Violence',
+      labelSw: 'Ukatili wa Kingono',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_05',
+      optionValue: 'rape_sodomy',
+      labelEn: 'Rape/sodomy',
+      labelSw: 'Ubakaji/ulawiti',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_05',
+      optionValue: 'report_abuse',
+      labelEn: 'Report abuse',
+      labelSw: 'Ripoti ukatili',
+      nextNodeKey: 'REPORTING_ABUSE_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_06',
+      optionValue: 'rape_sodomy',
+      labelEn: 'Rape/sodomy',
+      labelSw: 'Ubakaji/ulawiti',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_06',
+      optionValue: 'exploitation',
+      labelEn: 'Exploitation',
+      labelSw: 'Unyonyaji',
+      nextNodeKey: 'SEXUAL_EXPLOITATION_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_06',
+      optionValue: 'report_abuse',
+      labelEn: 'Report abuse',
+      labelSw: 'Ripoti ukatili',
+      nextNodeKey: 'REPORTING_ABUSE_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_07',
+      optionValue: 'situations',
+      labelEn: 'Different Situations',
+      labelSw: 'Hali tofauti',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_08',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_07',
+      optionValue: 'who_can_harm',
+      labelEn: 'Who can harm?',
+      labelSw: 'Mkatili ni nani?',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_09',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_07',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_17',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_08',
+      optionValue: 'who_can_harm',
+      labelEn: 'Who can harm?',
+      labelSw: 'Mkatili ni nani?',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_09',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_08',
       optionValue: 'effects',
       labelEn: 'The Effects',
-      labelSw: 'Madhara yake',
+      labelSw: 'Madhara Yake',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_10',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_08',
+      optionValue: 'steps_to_take',
+      labelEn: 'Steps to take',
+      labelSw: 'Hatua za kuchukua',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_13',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_09',
+      optionValue: 'effects',
+      labelEn: 'The Effects',
+      labelSw: 'Madhara Yake',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_10',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_09',
+      optionValue: 'symptoms',
+      labelEn: 'Symptoms',
+      labelSw: 'Dalili',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_11',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_09',
+      optionValue: 'steps_to_take',
+      labelEn: 'Steps to take',
+      labelSw: 'Hatua za kuchukua',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_13',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_10',
+      optionValue: 'symptoms',
+      labelEn: 'Symptoms',
+      labelSw: 'Dalili',
       nextNodeKey: 'TYPES_OF_VIOLENCE_11',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'TYPES_OF_VIOLENCE_04',
-      optionValue: 'symptoms',
-      labelEn: 'Symptoms',
-      labelSw: 'Dalili',
+      nodeKey: 'TYPES_OF_VIOLENCE_10',
+      optionValue: 'prevention',
+      labelEn: 'How to prevent',
+      labelSw: 'Njia za Kuzuia',
       nextNodeKey: 'TYPES_OF_VIOLENCE_12',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'TYPES_OF_VIOLENCE_04',
-      optionValue: 'prevention',
-      labelEn: 'Prevention',
-      labelSw: 'Kuzuia',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_13',
+      nodeKey: 'TYPES_OF_VIOLENCE_10',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_17',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'TYPES_OF_VIOLENCE_11',
-      optionValue: 'symptoms',
-      labelEn: 'Symptoms',
-      labelSw: 'Dalili',
+      optionValue: 'prevention',
+      labelEn: 'How to prevent',
+      labelSw: 'Njia za Kuzuia',
       nextNodeKey: 'TYPES_OF_VIOLENCE_12',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'TYPES_OF_VIOLENCE_11',
-      optionValue: 'prevention',
-      labelEn: 'Prevention',
-      labelSw: 'Kuzuia',
+      optionValue: 'steps_to_take',
+      labelEn: 'Steps to take',
+      labelSw: 'Hatua za kuchukua',
       nextNodeKey: 'TYPES_OF_VIOLENCE_13',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'TYPES_OF_VIOLENCE_11',
-      optionValue: 'after_violence',
-      labelEn: 'After violence',
-      labelSw: 'Baada ya ukatili',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_05',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'TYPES_OF_VIOLENCE_12',
-      optionValue: 'prevention',
-      labelEn: 'Prevention',
-      labelSw: 'Kuzuia',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_13',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'TYPES_OF_VIOLENCE_12',
-      optionValue: 'after_violence',
-      labelEn: 'After violence',
-      labelSw: 'Baada ya ukatili',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_05',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'TYPES_OF_VIOLENCE_12',
       optionValue: 'services',
       labelEn: 'Services',
       labelSw: 'Huduma',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_07',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_15',
       sortOrder: 3,
       isActive: true,
     },
     {
-      nodeKey: 'TYPES_OF_VIOLENCE_13',
-      optionValue: 'after_violence',
-      labelEn: 'After violence',
-      labelSw: 'Baada ya ukatili',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_05',
+      nodeKey: 'TYPES_OF_VIOLENCE_12',
+      optionValue: 'steps_to_take',
+      labelEn: 'Steps to take',
+      labelSw: 'Hatua za kuchukua',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_13',
       sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_12',
+      optionValue: 'risk_groups',
+      labelEn: 'Risk groups',
+      labelSw: 'Walio hatarini',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_14',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_12',
+      optionValue: 'report_abuse',
+      labelEn: 'Report abuse',
+      labelSw: 'Ripoti ukatili',
+      nextNodeKey: 'REPORTING_ABUSE_01',
+      sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'TYPES_OF_VIOLENCE_13',
       optionValue: 'risk_groups',
       labelEn: 'Risk groups',
-      labelSw: 'Makundi hatarini',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_06',
-      sortOrder: 2,
+      labelSw: 'Walio hatarini',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_14',
+      sortOrder: 1,
       isActive: true,
     },
     {
@@ -3624,75 +3938,57 @@ Unyanyasaji unaweza kufanywa na watu wanaomjua mwathiriwa. Kuripoti bado ni muhi
       optionValue: 'services',
       labelEn: 'Services',
       labelSw: 'Huduma',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_07',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_15',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_13',
+      optionValue: 'report_abuse',
+      labelEn: 'Report abuse',
+      labelSw: 'Ripoti ukatili',
+      nextNodeKey: 'REPORTING_ABUSE_01',
       sortOrder: 3,
       isActive: true,
     },
     {
-      nodeKey: 'TYPES_OF_VIOLENCE_05',
-      optionValue: 'risk_groups',
-      labelEn: 'Risk groups',
-      labelSw: 'Makundi hatarini',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_06',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'TYPES_OF_VIOLENCE_05',
+      nodeKey: 'TYPES_OF_VIOLENCE_14',
       optionValue: 'services',
       labelEn: 'Services',
       labelSw: 'Huduma',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_07',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'TYPES_OF_VIOLENCE_05',
-      optionValue: 'report_abuse',
-      labelEn: 'Report abuse',
-      labelSw: 'Ripoti ukatili',
-      nextNodeKey: 'REPORTING_ABUSE_01',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'TYPES_OF_VIOLENCE_06',
-      optionValue: 'services',
-      labelEn: 'Services',
-      labelSw: 'Huduma',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_07',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_15',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'TYPES_OF_VIOLENCE_06',
-      optionValue: 'where_to_report',
-      labelEn: 'Where to report',
-      labelSw: 'Wapi kuripoti',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_14',
+      nodeKey: 'TYPES_OF_VIOLENCE_14',
+      optionValue: 'anything_else',
+      labelEn: 'Anything else?',
+      labelSw: 'Kitu kingine?',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_16',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'TYPES_OF_VIOLENCE_06',
-      optionValue: 'report_abuse',
-      labelEn: 'Report abuse',
-      labelSw: 'Ripoti ukatili',
-      nextNodeKey: 'REPORTING_ABUSE_01',
+      nodeKey: 'TYPES_OF_VIOLENCE_14',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_17',
       sortOrder: 3,
       isActive: true,
     },
     {
-      nodeKey: 'TYPES_OF_VIOLENCE_07',
-      optionValue: 'where_to_report',
-      labelEn: 'Where to report',
-      labelSw: 'Wapi kuripoti',
-      nextNodeKey: 'TYPES_OF_VIOLENCE_14',
+      nodeKey: 'TYPES_OF_VIOLENCE_15',
+      optionValue: 'anything_else',
+      labelEn: 'Anything else?',
+      labelSw: 'Kitu kingine?',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_16',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'TYPES_OF_VIOLENCE_07',
+      nodeKey: 'TYPES_OF_VIOLENCE_15',
       optionValue: 'report_abuse',
       labelEn: 'Report abuse',
       labelSw: 'Ripoti ukatili',
@@ -3701,7 +3997,7 @@ Unyanyasaji unaweza kufanywa na watu wanaomjua mwathiriwa. Kuripoti bado ni muhi
       isActive: true,
     },
     {
-      nodeKey: 'TYPES_OF_VIOLENCE_07',
+      nodeKey: 'TYPES_OF_VIOLENCE_15',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
@@ -3710,25 +4006,97 @@ Unyanyasaji unaweza kufanywa na watu wanaomjua mwathiriwa. Kuripoti bado ni muhi
       isActive: true,
     },
     {
-      nodeKey: 'TYPES_OF_VIOLENCE_14',
-      optionValue: 'report_abuse',
-      labelEn: 'Report abuse',
-      labelSw: 'Ripoti ukatili',
-      nextNodeKey: 'REPORTING_ABUSE_01',
+      nodeKey: 'TYPES_OF_VIOLENCE_16',
+      optionValue: 'exploitation',
+      labelEn: 'Exploitation',
+      labelSw: 'Unyonyaji',
+      nextNodeKey: 'SEXUAL_EXPLOITATION_01',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'TYPES_OF_VIOLENCE_14',
-      optionValue: 'protection',
-      labelEn: 'Protection',
-      labelSw: 'Ulinzi',
-      nextNodeKey: 'PROTECTION_FROM_ABUSE_01',
+      nodeKey: 'TYPES_OF_VIOLENCE_16',
+      optionValue: 'report_abuse',
+      labelEn: 'Report abuse',
+      labelSw: 'Ripoti ukatili',
+      nextNodeKey: 'REPORTING_ABUSE_01',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'TYPES_OF_VIOLENCE_14',
+      nodeKey: 'TYPES_OF_VIOLENCE_16',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime Uelewa',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_REFRESHER_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_17',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_REFRESHER_01',
+      optionValue: 'start_refresher',
+      labelEn: 'Start refresher',
+      labelSw: 'Anza kujikumbusha',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_REFRESHER_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_REFRESHER_02',
+      optionValue: 'get_help_now',
+      labelEn: 'Get help now',
+      labelSw: 'Pata msaada sasa',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_REFRESHER_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_REFRESHER_02',
+      optionValue: 'report_abuse',
+      labelEn: 'Report abuse',
+      labelSw: 'Ripoti ukatili',
+      nextNodeKey: 'REPORTING_ABUSE_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_REFRESHER_02',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_REFRESHER_03',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'TYPES_OF_VIOLENCE_17',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_REFRESHER_03',
+      optionValue: 'report_abuse',
+      labelEn: 'Report abuse',
+      labelSw: 'Ripoti ukatili',
+      nextNodeKey: 'REPORTING_ABUSE_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'TYPES_OF_VIOLENCE_REFRESHER_03',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
@@ -4467,3 +4835,5 @@ Unyanyasaji unaweza kufanywa na watu wanaomjua mwathiriwa. Kuripoti bado ni muhi
     },
   ],
 };
+
+
