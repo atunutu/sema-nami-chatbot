@@ -15,6 +15,9 @@ type SeedCategory = {
   titleSw: string;
   descriptionEn: string | null;
   descriptionSw: string | null;
+  introMessageEn?: string | null;
+  introMessageSw?: string | null;
+  introMediaAssetKey?: string | null;
   audienceGender: any;
   ageBandRule: any;
   sortOrder: number;
@@ -119,6 +122,9 @@ export class ContentImportService {
             titleSw: seed.category.titleSw,
             descriptionEn: seed.category.descriptionEn,
             descriptionSw: seed.category.descriptionSw,
+            introMessageEn: seed.category.introMessageEn ?? null,
+            introMessageSw: seed.category.introMessageSw ?? null,
+            introMediaAssetKey: seed.category.introMediaAssetKey ?? null,
             audienceGender: seed.category.audienceGender,
             ageBandRule: seed.category.ageBandRule,
             sortOrder: seed.category.sortOrder,

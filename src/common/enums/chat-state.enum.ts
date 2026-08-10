@@ -4,6 +4,7 @@ export enum ChatState {
   ASK_AGE_BAND = 'ask_age_band',
   ASK_GENDER = 'ask_gender',
   ASK_TOPIC_CATEGORY = 'ask_topic_category',
+  CATEGORY_INTRO = 'category_intro',
   RETURNING_HOME = 'returning_home',
   CATEGORY_MENU = 'category_menu',
   TOPIC_MENU = 'topic_menu',

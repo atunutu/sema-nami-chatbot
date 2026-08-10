@@ -255,6 +255,23 @@ export class ChatOrchestratorService {
       return response;
     }
 
+    if (session.currentState === ChatState.CATEGORY_INTRO) {
+      const response = await this.handleCategoryIntroSelection({
+        userId: user.id,
+        sessionId: session.id,
+        interactiveValue: normalizedInput.interactiveValue,
+        currentCategoryCode: session.currentCategoryCode,
+      });
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
+    }
+
     if (
       session.currentState === ChatState.TOPIC_MENU &&
       action === 'more_topics'
@@ -450,6 +467,10 @@ export class ChatOrchestratorService {
         categoryCode: session.currentCategoryCode,
         page: 0,
       });
+    }
+
+    if (session.currentState === ChatState.CATEGORY_INTRO) {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
     }
 
     if (session.currentState === ChatState.TOPIC_MENU) {
@@ -786,6 +807,16 @@ export class ChatOrchestratorService {
       };
     }
 
+    const language = profile?.preferredLanguage ?? Language.EN;
+
+    if (this.getCategoryIntroMessage(selectedCategory, language)) {
+      return this.buildCategoryIntroResponse({
+        sessionId: data.sessionId,
+        category: selectedCategory,
+        language,
+      });
+    }
+
     if (visibleTopics.length === 1) {
       const selectedTopic = visibleTopics[0];
 
@@ -882,10 +913,7 @@ export class ChatOrchestratorService {
     });
 
     return {
-      message:
-        language === Language.SW
-          ? `Ungependa kuchunguza nini kuhusu ${selectedCategory.titleSw}.  `
-          : `What would you like to learn about  ${selectedCategory.titleEn}?`,
+      message: this.getTopicMenuMessage(selectedCategory, language),
       options,
       currentState: ChatState.TOPIC_MENU,
     };
@@ -899,6 +927,7 @@ export class ChatOrchestratorService {
   }): Promise<OrchestratorResponse> {
     const selectedTopicCode = data.interactiveValue;
     const profile = await this.profileService.findByUserId(data.userId);
+    const language = profile?.preferredLanguage ?? Language.EN;
 
     if (
       data.interactiveValue === 'more_topics' ||
@@ -938,9 +967,9 @@ export class ChatOrchestratorService {
         );
 
       return {
-        message: `You chose ${currentCategory.titleEn}. What would you like to explore next?`,
+        message: this.getTopicMenuMessage(currentCategory, language),
         options: visibleTopics.map((topic) => ({
-          label: topic.titleEn,
+          label: language === Language.SW ? topic.titleSw : topic.titleEn,
           value: topic.code,
         })),
         currentState: ChatState.TOPIC_MENU,
@@ -973,9 +1002,12 @@ export class ChatOrchestratorService {
         );
 
       return {
-        message: 'Please choose one of the available topics below.',
+        message:
+          language === Language.SW
+            ? 'Tafadhali chagua moja ya mada zilizopo hapa chini.'
+            : 'Please choose one of the available topics below.',
         options: visibleTopics.map((topic) => ({
-          label: topic.titleEn,
+          label: language === Language.SW ? topic.titleSw : topic.titleEn,
           value: topic.code,
         })),
         currentState: ChatState.TOPIC_MENU,
@@ -1000,6 +1032,7 @@ export class ChatOrchestratorService {
   }): Promise<OrchestratorResponse> {
     const selectedSubtopicCode = data.interactiveValue;
     const profile = await this.profileService.findByUserId(data.userId);
+    const language = profile?.preferredLanguage ?? Language.EN;
 
     if (
       data.interactiveValue === 'more_subtopics' ||
@@ -1037,12 +1070,14 @@ export class ChatOrchestratorService {
 
     if (!selectedSubtopicCode) {
       return {
-        message: `You chose ${currentTopic.titleEn}. What would you like to learn about next?`,
+        message: await this.getSubtopicMenuMessage({
+          categoryCode: data.currentCategoryCode ?? '',
+          topicTitleEn: currentTopic.titleEn,
+          topicTitleSw: currentTopic.titleSw,
+          language,
+        }),
         options: visibleSubtopics.map((subtopic) => ({
-          label:
-            profile?.preferredLanguage === Language.SW
-              ? subtopic.titleSw
-              : subtopic.titleEn,
+          label: language === Language.SW ? subtopic.titleSw : subtopic.titleEn,
           value: subtopic.code,
         })),
         currentState: ChatState.SUBTOPIC_MENU,
@@ -1054,19 +1089,17 @@ export class ChatOrchestratorService {
 
     if (!selectedSubtopic || !selectedSubtopic.isActive) {
       return {
-        message: 'Please choose one of the available subtopics below.',
+        message:
+          language === Language.SW
+            ? 'Tafadhali chagua moja ya mada ndogo zilizopo hapa chini.'
+            : 'Please choose one of the available subtopics below.',
         options: visibleSubtopics.map((subtopic) => ({
-          label:
-            profile?.preferredLanguage === Language.SW
-              ? subtopic.titleSw
-              : subtopic.titleEn,
+          label: language === Language.SW ? subtopic.titleSw : subtopic.titleEn,
           value: subtopic.code,
         })),
         currentState: ChatState.SUBTOPIC_MENU,
       };
     }
-
-    const language = profile?.preferredLanguage ?? Language.EN;
 
     const startNode = await this.contentService.getStartContentNodeBySubtopicId(
       selectedSubtopic.id,
@@ -1228,10 +1261,12 @@ export class ChatOrchestratorService {
       });
 
       return {
-        message:
-          language === Language.SW
-            ? `Ungependa kujifunza nini zaidi kuhusu ${currentTopic.titleSw}?`
-            : `What would you like to explore next about ${currentTopic.titleEn}?`,
+        message: await this.getSubtopicMenuMessage({
+          categoryCode: data.currentCategoryCode ?? '',
+          topicTitleEn: currentTopic.titleEn,
+          topicTitleSw: currentTopic.titleSw,
+          language,
+        }),
         options: visibleSubtopics.map((subtopic) => ({
           label: language === Language.SW ? subtopic.titleSw : subtopic.titleEn,
           value: subtopic.code,
@@ -1369,6 +1404,175 @@ export class ChatOrchestratorService {
       ChatState.ASK_GENDER,
     ].includes(state);
   }
+
+  private async handleCategoryIntroSelection(data: {
+    userId: string;
+    sessionId: string;
+    interactiveValue?: string | null;
+    currentCategoryCode?: string | null;
+  }): Promise<OrchestratorResponse> {
+    const profile = await this.profileService.findByUserId(data.userId);
+    const language = profile?.preferredLanguage ?? Language.EN;
+
+    if (!data.currentCategoryCode) {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
+    }
+
+    const currentCategory = await this.contentService.findCategoryByCode(
+      data.currentCategoryCode,
+    );
+
+    if (!currentCategory || !currentCategory.isActive) {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
+    }
+
+    if (data.interactiveValue !== 'continue') {
+      return this.buildCategoryIntroResponse({
+        sessionId: data.sessionId,
+        category: currentCategory,
+        language,
+      });
+    }
+
+    const visibleTopics =
+      await this.contentService.getVisibleTopicsByCategoryId(
+        currentCategory.id,
+        {
+          ageBand: profile?.ageBand ?? null,
+          gender: profile?.gender ?? null,
+        },
+      );
+
+    if (visibleTopics.length === 0) {
+      return {
+        message:
+          language === Language.SW
+            ? 'Samahani, hakuna mada zinazopatikana kwa sasa katika sehemu hii.'
+            : 'Sorry, there are no topics available in this section right now.',
+        options: [
+          {
+            label: language === Language.SW ? 'Menyu Kuu' : 'Main Menu',
+            value: 'main_menu',
+          },
+        ],
+        currentState: ChatState.FALLBACK,
+      };
+    }
+
+    if (visibleTopics.length === 1) {
+      const selectedTopic = visibleTopics[0];
+
+      return this.handleSubtopicMenu({
+        userId: data.userId,
+        sessionId: data.sessionId,
+        categoryCode: currentCategory.code,
+        topicCode: selectedTopic.code,
+        page: 0,
+      });
+    }
+
+    return this.handleTopicMenu({
+      userId: data.userId,
+      sessionId: data.sessionId,
+      categoryCode: currentCategory.code,
+      page: 0,
+    });
+  }
+
+  private async buildCategoryIntroResponse(data: {
+    sessionId: string;
+    category: {
+      code: string;
+      introMessageEn?: string | null;
+      introMessageSw?: string | null;
+      introMediaAssetKey?: string | null;
+    };
+    language: Language;
+  }): Promise<OrchestratorResponse> {
+    const message = this.getCategoryIntroMessage(data.category, data.language);
+
+    if (!message) {
+      return this.handleCategoryMenu(data.sessionId);
+    }
+
+    await this.sessionService.updateStateAndLocation(data.sessionId, {
+      currentState: ChatState.CATEGORY_INTRO,
+      currentCategoryCode: data.category.code,
+      currentTopicCode: null,
+      currentSubtopicCode: null,
+      currentNodeKey: null,
+      previousNodeKey: null,
+    });
+
+    return {
+      message,
+      options: [
+        {
+          label: data.language === Language.SW ? 'Endelea' : 'Continue',
+          value: 'continue',
+        },
+      ],
+      mediaAssetKey: data.category.introMediaAssetKey ?? null,
+      currentState: ChatState.CATEGORY_INTRO,
+    };
+  }
+
+  private getCategoryIntroMessage(
+    category: {
+      introMessageEn?: string | null;
+      introMessageSw?: string | null;
+    },
+    language: Language,
+  ): string | null {
+    const message =
+      language === Language.SW
+        ? (category.introMessageSw ?? category.introMessageEn)
+        : (category.introMessageEn ?? category.introMessageSw);
+
+    return message?.trim() || null;
+  }
+
+  private getTopicMenuMessage(
+    category: {
+      titleEn: string;
+      titleSw: string;
+      introMessageEn?: string | null;
+      introMessageSw?: string | null;
+    },
+    language: Language,
+  ): string {
+    if (this.getCategoryIntroMessage(category, language)) {
+      return language === Language.SW
+        ? 'Sema Nami! Ungependa kujifunza kuhusu nini?'
+        : 'Sema Nami! What would you like to learn about?';
+    }
+
+    return language === Language.SW
+      ? `Ungependa kuchunguza nini kuhusu ${category.titleSw}.`
+      : `What would you like to learn about ${category.titleEn}?`;
+  }
+
+  private async getSubtopicMenuMessage(data: {
+    categoryCode: string;
+    topicTitleEn: string;
+    topicTitleSw: string;
+    language: Language;
+  }): Promise<string> {
+    const category = data.categoryCode
+      ? await this.contentService.findCategoryByCode(data.categoryCode)
+      : null;
+
+    if (category && this.getCategoryIntroMessage(category, data.language)) {
+      return data.language === Language.SW
+        ? 'Sema Nami! Ungependa kujifunza kuhusu nini?'
+        : 'Sema Nami! What would you like to learn about?';
+    }
+
+    return data.language === Language.SW
+      ? `Ungependa kujifunza nini zaidi kuhusu ${data.topicTitleSw}`
+      : `What would you like to learn about ${data.topicTitleEn}`;
+  }
+
   private readonly TOPIC_PAGE_SIZE = 8;
 
   private buildTopicPageMarker(page: number): string {
@@ -1467,10 +1671,12 @@ export class ChatOrchestratorService {
     });
 
     return {
-      message:
-        language === Language.SW
-          ? `Ungependa kujifunza nini zaidi kuhusu ${selectedTopic.titleSw}`
-          : `What would you like to learn about ${selectedTopic.titleEn}`,
+      message: await this.getSubtopicMenuMessage({
+        categoryCode: data.categoryCode,
+        topicTitleEn: selectedTopic.titleEn,
+        topicTitleSw: selectedTopic.titleSw,
+        language,
+      }),
       options,
       currentState: ChatState.SUBTOPIC_MENU,
     };

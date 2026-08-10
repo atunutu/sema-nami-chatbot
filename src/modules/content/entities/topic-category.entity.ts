@@ -39,6 +39,28 @@ export class TopicCategory {
   descriptionSw: string | null;
 
   @Column({
+    name: 'intro_message_en',
+    type: 'text',
+    nullable: true,
+  })
+  introMessageEn: string | null;
+
+  @Column({
+    name: 'intro_message_sw',
+    type: 'text',
+    nullable: true,
+  })
+  introMessageSw: string | null;
+
+  @Column({
+    name: 'intro_media_asset_key',
+    type: 'varchar',
+    length: 255,
+    nullable: true,
+  })
+  introMediaAssetKey: string | null;
+
+  @Column({
     name: 'audience_gender',
     type: 'enum',
     enum: Gender,

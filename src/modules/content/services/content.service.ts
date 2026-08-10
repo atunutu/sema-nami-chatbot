@@ -118,6 +118,9 @@ export class ContentService {
     titleSw: string;
     descriptionEn?: string | null;
     descriptionSw?: string | null;
+    introMessageEn?: string | null;
+    introMessageSw?: string | null;
+    introMediaAssetKey?: string | null;
     audienceGender?: Gender | null;
     ageBandRule?: AgeBand | null;
     sortOrder?: number;
@@ -129,6 +132,9 @@ export class ContentService {
       titleSw: data.titleSw,
       descriptionEn: data.descriptionEn ?? null,
       descriptionSw: data.descriptionSw ?? null,
+      introMessageEn: data.introMessageEn ?? null,
+      introMessageSw: data.introMessageSw ?? null,
+      introMediaAssetKey: data.introMediaAssetKey ?? null,
       audienceGender: data.audienceGender ?? null,
       ageBandRule: data.ageBandRule ?? null,
       sortOrder: data.sortOrder ?? 0,
