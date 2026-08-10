@@ -1426,12 +1426,7 @@ Simu/WhatsApp: 0652 522 358`,
       nodeKey: 'ANXIETY_AND_WORRY_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Anxiety is a feeling of worry, fear, nervousness, or uneasiness about something that might happen now or in the future.
-It is the body's natural response to situations that feel uncertain, challenging, or threatening.
-Everyone experiences anxiety from time to time.
-For example, feeling nervous before an examination, a job interview, a public speech, or receiving important results is normal.
-However, when anxiety becomes very intense, happens frequently, or makes it difficult to study, sleep, socialize, or carry out daily activities, it may become a mental health concern that requires support.
-`,
+      messageText: `Thank you for asking about anxiety. Feeling worried sometimes is a normal part of life, but understanding the difference between normal worry and anxiety can help you know when it's time to seek support.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -1444,12 +1439,7 @@ However, when anxiety becomes very intense, happens frequently, or makes it diff
       nodeKey: 'ANXIETY_AND_WORRY_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Wasiwasi ni hisia ya wasiwasi, hofu, woga, au wasiwasi kuhusu jambo ambalo linaweza kutokea sasa au katika siku zijazo.
-Ni mwitikio wa asili wa mwili kwa hali ambazo huhisi kutokuwa na uhakika, changamoto, au vitisho.
-Kila mtu hupata wasiwasi mara kwa mara.
-Kwa mfano, kuhisi woga kabla ya mtihani, mahojiano ya kazi, hotuba ya umma, au kupata matokeo muhimu ni kawaida.
-Hata hivyo, wakati wasiwasi unakuwa mkubwa sana, hutokea mara kwa mara, au hufanya iwe vigumu kusoma, kulala, kujumuika, au kufanya shughuli za kila siku, inaweza kuwa tatizo la afya ya akili linalohitaji usaidizi.
-`,
+      messageText: `Asante kwa kuuliza kuhusu wasiwasi. Kuhisi wasiwasi wakati mwingine ni sehemu ya kawaida ya maisha, lakini kuelewa tofauti kati ya wasiwasi wa kawaida na wasiwasi kunaweza kukusaidia kujua wakati wa kutafuta msaada.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -1457,23 +1447,12 @@ Hata hivyo, wakati wasiwasi unakuwa mkubwa sana, hutokea mara kwa mara, au hufan
       sortOrder: 1,
       isActive: true,
     },
-
     {
       subtopicCode: 'ANXIETY_AND_WORRY',
       nodeKey: 'ANXIETY_AND_WORRY_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `How is Anxiety Different from Stress?
-Although stress and anxiety are related, they are not the same. Stress usually happens because of a specific challenge or pressure.
-Example: "I have exams next week and I am stressed."
-Once the exams are over, the stress may reduce.
-
-Anxiety can continue even when there is no immediate danger or problem.
-Example: "I keep worrying that I will fail, even though I have studied and my exams are months away."
-
-In simple terms:
-Stress is often a response to a current challenge.
-Anxiety is often excessive worry about what might happen`,
+      messageText: `Anxiety is a feeling of worry, fear, nervousness, or uneasiness about something that might happen now or in the future. It is the body's natural response to situations that feel uncertain, challenging, or threatening.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1486,18 +1465,7 @@ Anxiety is often excessive worry about what might happen`,
       nodeKey: 'ANXIETY_AND_WORRY_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Wasiwasi ni Tofauti Gani na Msongo wa Mawazo?
-Ingawa msongo wa mawazo na wasiwasi vinahusiana, si sawa. Msongo wa mawazo kwa kawaida hutokea kwa sababu ya changamoto au shinikizo maalum.
-
-Mfano: "Nina mitihani wiki ijayo na nina msongo wa mawazo."
-Mara tu mitihani inapoisha, msongo wa mawazo unaweza kupungua.
-
-Wasiwasi unaweza kuendelea hata wakati hakuna hatari au tatizo la haraka.
-Mfano: "Ninaendelea kuwa na wasiwasi kwamba nitashindwa, ingawa nimesoma na mitihani yangu iko miezi kadhaa mbele."
-Kwa maneno rahisi:
-
-Msongo wa mawazo mara nyingi ni jibu la changamoto ya sasa.
-Wasiwasi mara nyingi ni wasiwasi kupita kiasi kuhusu kinachoweza kutokea.`,
+      messageText: `Wasiwasi ni hisia ya wasiwasi, hofu, woga, au wasiwasi kuhusu jambo ambalo linaweza kutokea sasa au katika siku zijazo. Ni mwitikio wa asili wa mwili kwa hali ambazo huhisi kutokuwa na uhakika, changamoto, au vitisho.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1510,15 +1478,7 @@ Wasiwasi mara nyingi ni wasiwasi kupita kiasi kuhusu kinachoweza kutokea.`,
       nodeKey: 'ANXIETY_AND_WORRY_03',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Anxiety can affect the body. Examples include:
-    ● Fast heartbeat
-    ● Sweating
-    ● Shaking or trembling
-    ● Shortness of breath
-    ● Dizziness
-    ● Headaches
-    ● Stomach discomfort
-    ● Difficulty sleeping`,
+      messageText: `Everyone experiences anxiety from time to time. For example, it's completely normal to feel nervous before an examination, a job interview, speaking in front of others, or waiting for important results. These feelings don't mean that something is wrong with you; they're a natural response to situations that matter to you.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1531,15 +1491,7 @@ Wasiwasi mara nyingi ni wasiwasi kupita kiasi kuhusu kinachoweza kutokea.`,
       nodeKey: 'ANXIETY_AND_WORRY_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Wasiwasi unaweza kuathiri mwili. Mifano ni pamoja na:
-    ● Mapigo ya moyo ya haraka
-    ● Kutokwa na jasho
-    ● Kutetemeka au kutetemeka
-    ● Kushindwa kupumua
-    ● Kizunguzungu
-    ● Maumivu ya kichwa
-    ● Usumbufu wa tumbo
-    ● Ugumu wa kulala`,
+      messageText: `Kila mtu hupata wasiwasi mara kwa mara. Kwa mfano, ni kawaida kabisa kuhisi wasiwasi kabla ya mtihani, mahojiano ya kazi, kuzungumza mbele ya wengine, au kusubiri matokeo muhimu. Hisia hizi hazimaanishi kwamba kuna kitu kibaya na wewe; ni mwitikio wa kawaida kwa hali zinazokuhusu.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1552,13 +1504,7 @@ Wasiwasi mara nyingi ni wasiwasi kupita kiasi kuhusu kinachoweza kutokea.`,
       nodeKey: 'ANXIETY_AND_WORRY_04',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `
-Emotional Signs A person may feel:
-    ● Feel constantly worried
-    ● Feel nervous most of the time
-    ● Fear something bad will happen
-    ● Feel restless
-    ● Feel overwhelmed`,
+      messageText: `However, when anxiety becomes very intense, happens frequently, or makes it difficult to study, sleep, socialize, or carry out your daily activities, it may become a mental health concern that requires additional support. You don't have to wait until things feel overwhelming before reaching out for help.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1571,12 +1517,7 @@ Emotional Signs A person may feel:
       nodeKey: 'ANXIETY_AND_WORRY_04',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Ishara za Kihisia:
-    ● Kuhisi wasiwasi kila wakati
-    ● Kuhisi wasiwasi mara nyingi
-    ● Kuogopa kitu kibaya kitatokea
-    ● Kuhisi kutotulia
-    ● Kuhisi kuzidiwa`,
+      messageText: `Hata hivyo, wakati wasiwasi unakuwa mkali sana, hutokea mara kwa mara, au hufanya iwe vigumu kusoma, kulala, kushirikiana, au kufanya shughuli zako za kila siku, inaweza kuwa wasiwasi wa afya ya akili unaohitaji usaidizi wa ziada. Huna haja ya kusubiri hadi mambo yahisi kuwa mazito kabla ya kutafuta msaada.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1589,36 +1530,529 @@ Emotional Signs A person may feel:
       nodeKey: 'ANXIETY_AND_WORRY_05',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `
-Behavioral Signs A person may:
-    ● Avoid certain situations
-    ● Have difficulty concentrating
-    ● Seek constant reassurance
-    ● Withdraw from friends and activities
-    ● Struggle to make decisions`,
+      messageText: `How is anxiety different from stress?
+
+Although stress and anxiety are related, they are not the same.
+
+Stress usually happens because of a specific challenge or pressure that is happening right now.
+
+Example:
+"I have exams next week, and I am feeling stressed."
+
+Once the exams are over, the stress may reduce because the situation has passed.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 5,
       isActive: true,
     },
     {
       subtopicCode: 'ANXIETY_AND_WORRY',
       nodeKey: 'ANXIETY_AND_WORRY_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Wasiwasi unatofautianaje na msongo wa mawazo?
+
+Ingawa msongo wa mawazo na wasiwasi vinahusiana, si sawa.
+
+Msongo wa mawazo kwa kawaida hutokea kwa sababu ya changamoto au shinikizo maalum linalotokea hivi sasa.
+
+Mfano:
+"Nina mitihani wiki ijayo, na ninahisi msongo wa mawazo."
+
+Mara tu mitihani inapoisha, msongo wa mawazo unaweza kupungua kwa sababu hali imepita.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Anxiety, on the other hand, can continue even when there is no immediate danger or problem. It often involves ongoing worry about what might happen in the future.
+
+Example:
+"I keep worrying that I will fail, even though I have studied and my exams are still months away."
+
+In simple terms:
+    ● Stress is often a response to a current challenge.
+    ● Anxiety is often excessive worry about what might happen.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Wasiwasi, kwa upande mwingine, unaweza kuendelea hata wakati hakuna hatari au tatizo la haraka. Mara nyingi huhusisha wasiwasi unaoendelea kuhusu kile kinachoweza kutokea katika siku zijazo.
+
+Mfano:
+"Ninaendelea kuwa na wasiwasi kwamba nitashindwa, ingawa nimesoma na mitihani yangu bado iko miezi kadhaa mbele."
+
+Kwa maneno rahisi:
+    ● Msongo wa mawazo mara nyingi ni jibu la changamoto ya sasa.
+    ● Wasiwasi mara nyingi ni wasiwasi kupita kiasi kuhusu kile kinachoweza kutokea.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Understanding this difference can help you recognize what you're experiencing and decide whether you might benefit from additional support.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kuelewa tofauti hii kunaweza kukusaidia kutambua unachopitia na kuamua kama unaweza kufaidika na usaidizi wa ziada.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Physical signs of anxiety
+
+Anxiety doesn't only affect your thoughts - it can also affect your body. Some people may experience:
+    ● A fast heartbeat or pounding heart.
+    ● Sweating.
+    ● Shaking or trembling.
+    ● Difficulty breathing or feeling short of breath.
+    ● Muscle tension.
+    ● Stomach discomfort or nausea.
+    ● Headaches.
+    ● Trouble sleeping.
+    ● Feeling restless or unable to relax.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ishara za kimwili za wasiwasi
+
+Wasiwasi hauathiri tu mawazo yako - pia unaweza kuathiri mwili wako. Baadhi ya watu wanaweza kupata:
+    ● Mapigo ya moyo ya haraka au moyo unaodunda.
+    ● Kutokwa na jasho.
+    ● Kutetemeka au kutetemeka.
+    ● Ugumu wa kupumua au kuhisi kukosa pumzi.
+    ● Mkazo wa misuli.
+    ● Usumbufu wa tumbo au kichefuchefu.
+    ● Maumivu ya kichwa.
+    ● Shida ya kulala.
+    ● Kuhisi kutotulia au kutoweza kupumzika.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Emotional Signs A person may:
+    ● Feel constantly worried.
+    ● Feel nervous most of the time.
+    ● Fear something bad will happen.
+    ● Feel restless.
+    ● Feel overwhelmed.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ishara za Kihisia Mtu anaweza:
+    ● Kuhisi wasiwasi kila wakati.
+    ● Kuhisi wasiwasi mara nyingi.
+    ● Kuogopa kitu kibaya kitatokea.
+    ● Kuhisi kutotulia.
+    ● Kuhisi kuzidiwa.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Behavioral Signs A person may:
+    ● Avoid certain situations.
+    ● Have difficulty concentrating.
+    ● Seek constant reassurance.
+    ● Withdraw from friends and activities.
+    ● Struggle to make decisions.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_10',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Ishara za Kitabia Mtu anaweza:
-    ● Kuepuka hali fulani
-    ● Kuwa na ugumu wa kuzingatia
-    ● Kutafuta uhakikisho wa kila mara
-    ● Kujitenga na marafiki na shughuli
-    ● Kujitahidi kufanya maamuzi`,
+    ● Kuepuka hali fulani.
+    ● Kuwa na ugumu wa kuzingatia.
+    ● Kutafuta uhakikisho wa kila mara.
+    ● Kujitenga na marafiki na shughuli.
+    ● Kujitahidi kufanya maamuzi.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_11',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Not everyone experiences anxiety in the same way, and you may notice some of these signs, different ones, or none at all.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_11',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Sio kila mtu hupata wasiwasi kwa njia moja, na unaweza kugundua baadhi ya ishara hizi, tofauti, au hakuna kabisa.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_12',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `The good news is that anxiety can be managed, and many people feel better with the right support and healthy coping strategies. Learning relaxation techniques, talking to someone you trust, getting enough rest, staying physically active, and seeking professional support when needed can all help.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_12',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Habari njema ni kwamba wasiwasi unaweza kudhibitiwa, na watu wengi huhisi vizuri zaidi kwa msaada sahihi na mikakati ya kukabiliana na afya. Kujifunza mbinu za kupumzika, kuzungumza na mtu unayemwamini, kupumzika vya kutosha, kuendelea kufanya mazoezi ya mwili, na kutafuta msaada wa kitaalamu inapohitajika yote yanaweza kusaidia.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_13',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Would you like to learn more about coping with anxiety, calming yourself during stressful moments, recognizing panic attacks, or knowing when to seek mental health support? I'm here to help.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_13',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ungependa kujifunza zaidi kuhusu kukabiliana na wasiwasi, kujituliza wakati wa msongo wa mawazo, kutambua mashambulizi ya hofu, au kujua wakati wa kutafuta msaada wa afya ya akili? Niko hapa kukusaidia.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_14',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence, or help with abuse, you do not have to face it alone. You can visit the nearest hospital, health centre, dispensary, or youth-friendly health service for confidential support and guidance. You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader, or healthcare provider.
+
+If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment, or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.
+
+For additional support, guidance, or referrals, you can contact OVAH through:
+Phone/WhatsApp: 0652 522 358`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: true,
-      sortOrder: 5,
+      sortOrder: 14,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_14',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili, au msaada kuhusu unyanyasaji, usibaki peke yako. Unaweza kutembelea hospitali, kituo cha afya, zahanati, au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama. Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini, au mtoa huduma za afya unayemwamini.
+
+Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono, au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.
+
+Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 14,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Anxiety - stress vs anxiety`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Wasiwasi - tofauti yake na msongo wa mawazo.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `1) Anxiety is a persistent fear that continues even without immediate danger - unlike stress that arises from a specific challenge.
+2) Symptoms can include rapid heartbeat, restlessness, and avoidance of certain situations.
+3) If anxiety becomes too much and interferes with your daily life, it is a good idea to seek help.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `1) Wasiwasi ni hofu inayoendelea hata bila hatari ya haraka - tofauti na msongo unaotokana na changamoto maalum.
+2) Dalili zinaweza kuwa mapigo ya moyo ya haraka, kutotulia, na kuepuka hali fulani.
+3) Wasiwasi ukizidi na kuathiri maisha yako ya kila siku, ni vizuri kutafuta msaada.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `True or False: Anxiety and stress are the same thing.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kweli au Uongo: Wasiwasi na msongo wa mawazo ni kitu kimoja.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Correct: B - False. Stress comes from specific challenges, anxiety persists even without an immediate cause.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Sahihi: B - Uongo. Msongo hutoka kwa changamoto maalum, wasiwasi huendelea hata bila sababu ya haraka.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Not quite. Anxiety and stress are not the same thing. Stress comes from specific challenges, anxiety persists even without an immediate cause.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Si sahihi kabisa. Wasiwasi na msongo si kitu kimoja. Msongo hutoka kwa changamoto maalum, wasiwasi huendelea hata bila sababu ya haraka.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Have you ever felt endless anxiety?`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Umewahi kuhisi wasiwasi usioisha?`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Is anxiety preventing you from living a normal life? We're here to help.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANXIETY_AND_WORRY',
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Wasiwasi unakuzuia kuishi kawaida? Tuko hapa kukusaidia.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
       isActive: true,
     },
 
@@ -3214,51 +3648,132 @@ Tafuta msaada ikiwa:
 
     {
       nodeKey: 'ANXIETY_AND_WORRY_01',
-      optionValue: 'stress_vs_anxiety',
-      labelEn: 'Stress or anxiety?',
-      labelSw: 'Msongo au wasiwasi?',
+      optionValue: 'what_is_anxiety',
+      labelEn: 'What is anxiety?',
+      labelSw: 'Wasiwasi ni nini?',
       nextNodeKey: 'ANXIETY_AND_WORRY_02',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'ANXIETY_AND_WORRY_01',
-      optionValue: 'body_signs',
-      labelEn: 'Body signs',
-      labelSw: 'Dalili za mwili',
+      optionValue: 'normal_worry',
+      labelEn: 'Is it normal?',
+      labelSw: 'Wasiwasi ni kawaida?',
       nextNodeKey: 'ANXIETY_AND_WORRY_03',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'ANXIETY_AND_WORRY_01',
-      optionValue: 'emotional_signs',
-      labelEn: 'Emotional signs',
-      labelSw: 'Dalili za hisia',
-      nextNodeKey: 'ANXIETY_AND_WORRY_04',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'ANXIETY_AND_WORRY_14',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'ANXIETY_AND_WORRY_02',
-      optionValue: 'body_signs',
-      labelEn: 'Body signs',
-      labelSw: 'Dalili za mwili',
+      optionValue: 'normal_worry',
+      labelEn: 'Is it normal?',
+      labelSw: 'Wasiwasi ni kawaida?',
       nextNodeKey: 'ANXIETY_AND_WORRY_03',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'ANXIETY_AND_WORRY_02',
-      optionValue: 'emotional_signs',
-      labelEn: 'Emotional signs',
-      labelSw: 'Dalili za hisia',
+      optionValue: 'need_support',
+      labelEn: 'Need support?',
+      labelSw: 'Unahitaji msaada?',
       nextNodeKey: 'ANXIETY_AND_WORRY_04',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'ANXIETY_AND_WORRY_02',
+      optionValue: 'stress_diff',
+      labelEn: 'Stress and anxiety',
+      labelSw: 'Wsiwasi na msongo',
+      nextNodeKey: 'ANXIETY_AND_WORRY_05',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_03',
+      optionValue: 'need_support',
+      labelEn: 'Need support?',
+      labelSw: 'Unahitaji msaada?',
+      nextNodeKey: 'ANXIETY_AND_WORRY_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_03',
+      optionValue: 'stress_diff',
+      labelEn: 'Stress and anxiety',
+      labelSw: 'Wasiwasi na msongo',
+      nextNodeKey: 'ANXIETY_AND_WORRY_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_03',
+      optionValue: 'body_signs',
+      labelEn: 'Body signs',
+      labelSw: 'Dalili za mwili',
+      nextNodeKey: 'ANXIETY_AND_WORRY_08',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_04',
+      optionValue: 'stress_diff',
+      labelEn: 'Stress and anxiety',
+      labelSw: 'Wasiwasi na msongo',
+      nextNodeKey: 'ANXIETY_AND_WORRY_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_04',
+      optionValue: 'body_signs',
+      labelEn: 'Body signs',
+      labelSw: 'Dalili za mwili',
+      nextNodeKey: 'ANXIETY_AND_WORRY_08',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_04',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_05',
+      optionValue: 'anxiety_diff',
+      labelEn: 'Explain anxiety',
+      labelSw: 'Elezea wasiwasi?',
+      nextNodeKey: 'ANXIETY_AND_WORRY_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_05',
+      optionValue: 'body_signs',
+      labelEn: 'Body signs',
+      labelSw: 'Dalili za mwili',
+      nextNodeKey: 'ANXIETY_AND_WORRY_08',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_05',
       optionValue: 'stress',
       labelEn: 'Stress',
       labelSw: 'Msongo',
@@ -3267,79 +3782,340 @@ Tafuta msaada ikiwa:
       isActive: true,
     },
     {
-      nodeKey: 'ANXIETY_AND_WORRY_03',
+      nodeKey: 'ANXIETY_AND_WORRY_06',
+      optionValue: 'understand',
+      labelEn: 'Do you understand?',
+      labelSw: 'Umeelewa?',
+      nextNodeKey: 'ANXIETY_AND_WORRY_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_06',
+      optionValue: 'body_signs',
+      labelEn: 'Body signs',
+      labelSw: 'Dalili za mwili',
+      nextNodeKey: 'ANXIETY_AND_WORRY_08',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_06',
+      optionValue: 'stress',
+      labelEn: 'Stress',
+      labelSw: 'Msongo',
+      nextNodeKey: 'STRESS_MANAGEMENT_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_07',
+      optionValue: 'body_signs',
+      labelEn: 'Body signs',
+      labelSw: 'Dalili za mwili',
+      nextNodeKey: 'ANXIETY_AND_WORRY_08',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_07',
       optionValue: 'emotional_signs',
       labelEn: 'Emotional signs',
       labelSw: 'Dalili za hisia',
-      nextNodeKey: 'ANXIETY_AND_WORRY_04',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'ANXIETY_AND_WORRY_03',
-      optionValue: 'behavior_signs',
-      labelEn: 'Behavior signs',
-      labelSw: 'Dalili za tabia',
-      nextNodeKey: 'ANXIETY_AND_WORRY_05',
+      nextNodeKey: 'ANXIETY_AND_WORRY_09',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'ANXIETY_AND_WORRY_03',
+      nodeKey: 'ANXIETY_AND_WORRY_07',
       optionValue: 'get_support',
-      labelEn: 'Getting support',
-      labelSw: 'Kupata msaada',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
       nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
       sortOrder: 3,
       isActive: true,
     },
     {
-      nodeKey: 'ANXIETY_AND_WORRY_04',
-      optionValue: 'behavior_signs',
-      labelEn: 'Behavior signs',
-      labelSw: 'Dalili za tabia',
-      nextNodeKey: 'ANXIETY_AND_WORRY_05',
+      nodeKey: 'ANXIETY_AND_WORRY_08',
+      optionValue: 'emotional_signs',
+      labelEn: 'Emotional signs',
+      labelSw: 'Dalili za hisia',
+      nextNodeKey: 'ANXIETY_AND_WORRY_09',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'ANXIETY_AND_WORRY_04',
-      optionValue: 'self_esteem',
-      labelEn: 'Self-esteem',
-      labelSw: 'Kujithamini',
-      nextNodeKey: 'SELF_ESTEEM_01',
+      nodeKey: 'ANXIETY_AND_WORRY_08',
+      optionValue: 'behavior_signs',
+      labelEn: 'Behavior signs',
+      labelSw: 'Dalili za tabia',
+      nextNodeKey: 'ANXIETY_AND_WORRY_10',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'ANXIETY_AND_WORRY_04',
+      nodeKey: 'ANXIETY_AND_WORRY_08',
+      optionValue: 'what_helps',
+      labelEn: 'What helps?',
+      labelSw: 'Nini husaidia?',
+      nextNodeKey: 'ANXIETY_AND_WORRY_12',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_09',
+      optionValue: 'behavior_signs',
+      labelEn: 'Behavior signs',
+      labelSw: 'Dalili za tabia',
+      nextNodeKey: 'ANXIETY_AND_WORRY_10',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_09',
+      optionValue: 'different_signs',
+      labelEn: 'Different signs?',
+      labelSw: 'Dalili tofauti?',
+      nextNodeKey: 'ANXIETY_AND_WORRY_11',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_09',
+      optionValue: 'what_helps',
+      labelEn: 'What helps?',
+      labelSw: 'Nini husaidia?',
+      nextNodeKey: 'ANXIETY_AND_WORRY_12',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_10',
+      optionValue: 'different_signs',
+      labelEn: 'Different signs?',
+      labelSw: 'Dalili tofauti?',
+      nextNodeKey: 'ANXIETY_AND_WORRY_11',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_10',
+      optionValue: 'what_helps',
+      labelEn: 'What helps?',
+      labelSw: 'Nini husaidia?',
+      nextNodeKey: 'ANXIETY_AND_WORRY_12',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_10',
+      optionValue: 'self_esteem',
+      labelEn: 'Self-esteem',
+      labelSw: 'Kujithamini',
+      nextNodeKey: 'SELF_ESTEEM_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_11',
+      optionValue: 'what_helps',
+      labelEn: 'What helps?',
+      labelSw: 'Nini husaidia?',
+      nextNodeKey: 'ANXIETY_AND_WORRY_12',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_11',
+      optionValue: 'learn_more',
+      labelEn: 'Learn more?',
+      labelSw: 'Jifunze zaidi?',
+      nextNodeKey: 'ANXIETY_AND_WORRY_13',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_11',
       optionValue: 'get_support',
-      labelEn: 'Getting support',
-      labelSw: 'Kupata msaada',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
       nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
       sortOrder: 3,
       isActive: true,
     },
     {
-      nodeKey: 'ANXIETY_AND_WORRY_05',
-      optionValue: 'self_esteem',
-      labelEn: 'Self-esteem',
-      labelSw: 'Kujithamini',
-      nextNodeKey: 'SELF_ESTEEM_01',
+      nodeKey: 'ANXIETY_AND_WORRY_12',
+      optionValue: 'learn_more',
+      labelEn: 'Learn more?',
+      labelSw: 'Jifunze zaidi?',
+      nextNodeKey: 'ANXIETY_AND_WORRY_13',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'ANXIETY_AND_WORRY_05',
+      nodeKey: 'ANXIETY_AND_WORRY_12',
       optionValue: 'get_support',
-      labelEn: 'Getting support',
-      labelSw: 'Kupata msaada',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
       nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'ANXIETY_AND_WORRY_05',
+      nodeKey: 'ANXIETY_AND_WORRY_12',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime',
+      nextNodeKey: 'ANXIETY_AND_WORRY_REFRESHER_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_13',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_13',
+      optionValue: 'talk_now',
+      labelEn: 'I need help',
+      labelSw: 'Nahitaji msaada',
+      nextNodeKey: 'ANXIETY_AND_WORRY_14',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_13',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_14',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_01',
+      optionValue: 'start_refresher',
+      labelEn: 'Start refresher',
+      labelSw: 'Anza kujikumbusha',
+      nextNodeKey: 'ANXIETY_AND_WORRY_REFRESHER_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_02',
+      optionValue: 'start_quiz',
+      labelEn: 'Start quiz',
+      labelSw: 'Anza jaribio',
+      nextNodeKey: 'ANXIETY_AND_WORRY_REFRESHER_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_03',
+      optionValue: 'true',
+      labelEn: 'A) True',
+      labelSw: 'A) Kweli',
+      nextNodeKey: 'ANXIETY_AND_WORRY_REFRESHER_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_03',
+      optionValue: 'false',
+      labelEn: 'B) False',
+      labelSw: 'B) Uongo',
+      nextNodeKey: 'ANXIETY_AND_WORRY_REFRESHER_04',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_04',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali linalofuata',
+      nextNodeKey: 'ANXIETY_AND_WORRY_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_05',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali linalofuata',
+      nextNodeKey: 'ANXIETY_AND_WORRY_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_06',
+      optionValue: 'often',
+      labelEn: 'A) Often',
+      labelSw: 'A) Mara nyingi',
+      nextNodeKey: 'ANXIETY_AND_WORRY_REFRESHER_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_06',
+      optionValue: 'sometimes',
+      labelEn: 'B) Sometimes',
+      labelSw: 'B) Wakati mwingine',
+      nextNodeKey: 'ANXIETY_AND_WORRY_REFRESHER_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_06',
+      optionValue: 'rarely',
+      labelEn: 'C) Rarely',
+      labelSw: 'C) Mara chache',
+      nextNodeKey: 'ANXIETY_AND_WORRY_REFRESHER_07',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_06',
+      optionValue: 'never',
+      labelEn: 'D) Never',
+      labelSw: 'D) Hapana',
+      nextNodeKey: 'ANXIETY_AND_WORRY_REFRESHER_07',
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_07',
+      optionValue: 'talk_now',
+      labelEn: 'I need help',
+      labelSw: 'Nahitaji msaada',
+      nextNodeKey: 'ANXIETY_AND_WORRY_14',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_07',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANXIETY_AND_WORRY_REFRESHER_07',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
