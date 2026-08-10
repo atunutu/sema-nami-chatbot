@@ -721,11 +721,7 @@ Sahihi: B - Uongo. Changamoto za afya ya akili zinaweza kumpata mtu yeyote.`,
       nodeKey: 'STRESS_MANAGEMENT_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Stress is the body's natural reaction to challenges, pressure, change, or situations that feel difficult to manage.
-It can affect how a person thinks, feels, behaves, and even how their body functions.
-Stress is not always bad. In some situations, it can motivate a person to prepare, focus, or take action.
-However, when stress becomes too intense or lasts for a long time, it can affect a person's mental, emotional, and physical wellbeing.
-`,
+      messageText: `It's great that you're learning about stress. Stress is something everyone experiences at different times in life, and understanding it is the first step towards managing it in healthy ways.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: 'image_depression',
       isStartNode: true,
@@ -738,12 +734,7 @@ However, when stress becomes too intense or lasts for a long time, it can affect
       nodeKey: 'STRESS_MANAGEMENT_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Msongo wa mawazo ni mwitikio wa asili wa mwili kwa changamoto, shinikizo, mabadiliko, au hali ambazo huhisi ni vigumu kuzidhibiti.
-Inaweza kuathiri jinsi mtu anavyofikiri, anavyohisi, anavyotenda, na hata jinsi mwili wake unavyofanya kazi.
-Msongo wa mawazo si mbaya kila wakati.
-Katika baadhi ya hali, unaweza kumtia moyo mtu kujiandaa, kuzingatia, au kuchukua hatua.
-Hata hivyo, msongo wa mawazo unapozidi au kudumu kwa muda mrefu, unaweza kuathiri ustawi wa kiakili, kihisia, na kimwili wa mtu.
-`,
+      messageText: `Ni vizuri kwamba unajifunza kuhusu msongo wa mawazo. Msongo wa mawazo ni kitu ambacho kila mtu hupitia katika nyakati tofauti maishani, na kuuelewa ni hatua ya kwanza kuelekea kuudhibiti kwa njia zenye afya.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: 'image_depression',
       isStartNode: true,
@@ -756,17 +747,7 @@ Hata hivyo, msongo wa mawazo unapozidi au kudumu kwa muda mrefu, unaweza kuathir
       nodeKey: 'STRESS_MANAGEMENT_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Many young people in Tanzania experience stress related to:
-    ● National examinations.
-    ● Academic performance.
-    ● School fees.
-    ● Family financial difficulties.
-    ● Pressure to succeed.
-    ● Gender expectations.
-    ● Relationships.
-    ● Social media comparison.
-    ● Community stigma around discussing emotions.
-These can affect a person's mental, emotional, and physical wellbeing.`,
+      messageText: `Stress is the body's natural reaction to challenges, pressure, change, or situations that feel difficult to manage. It can affect how a person thinks, feels, behaves, and even how their body functions.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -779,17 +760,7 @@ These can affect a person's mental, emotional, and physical wellbeing.`,
       nodeKey: 'STRESS_MANAGEMENT_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Vijana wengi nchini Tanzania hupata msongo wa mawazo unaohusiana na:
-    ● Mitihani ya kitaifa.
-    ● Utendaji wa kitaaluma.
-    ● Ada za shule.
-    ● Matatizo ya kifedha ya familia.
-    ● Shinikizo la kufanikiwa.
-    ● Matarajio ya kijinsia.
-    ● Mahusiano.
-    ● Ulinganisho wa mitandao ya kijamii.
-    ● Unyanyapaa wa kijamii kuhusu kujadili hisia.
-Haya yote huathiri ustawi wa kiakili, kihisia, na kimwili wa mtu.`,
+      messageText: `Msongo wa mawazo ni mwitikio wa asili wa mwili kwa changamoto, shinikizo, mabadiliko, au hali ambazo huhisi ni vigumu kudhibiti. Inaweza kuathiri jinsi mtu anavyofikiria, anavyohisi, anavyotenda, na hata jinsi mwili wake unavyofanya kazi.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -802,15 +773,9 @@ Haya yote huathiri ustawi wa kiakili, kihisia, na kimwili wa mtu.`,
       nodeKey: 'STRESS_MANAGEMENT_03',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `How Does Stress Feel?
-Stress can affect people in different ways.
-Physical signs may include:
-    ● Headaches
-    ● Fast heartbeat
-    ● Sweating
-    ● Stomach aches
-    ● Tiredness
-    ● Difficulty sleeping`,
+      messageText: `The good news is that stress is not always a bad thing. In some situations, it can motivate you to prepare, stay focused, and take action. For example, feeling a little stressed before an exam can encourage you to study.
+
+However, when stress becomes too intense or lasts for a long time, it can begin to affect your mental, emotional, and physical wellbeing.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -823,15 +788,9 @@ Physical signs may include:
       nodeKey: 'STRESS_MANAGEMENT_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Msongo wa mawazo unahisije?
-Msongo wa mawazo unaweza kuathiri watu kwa njia tofauti.
-Dalili za kimwili zinaweza kujumuisha:
-    ● Maumivu ya kichwa
-    ● Mapigo ya moyo ya haraka
-    ● Kutokwa na jasho
-    ● Maumivu ya tumbo
-    ● Uchovu
-    ● Ugumu wa kulala`,
+      messageText: `Habari njema ni kwamba msongo wa mawazo si jambo baya kila wakati. Katika baadhi ya hali, unaweza kukuhamasisha kujiandaa, kubaki makini, na kuchukua hatua. Kwa mfano, kuhisi msongo wa mawazo kidogo kabla ya mtihani kunaweza kukuhimiza kusoma.
+
+Hata hivyo, msongo wa mawazo unapokuwa mkubwa sana au unaendelea kwa muda mrefu, unaweza kuanza kuathiri ustawi wako wa kiakili, kihisia, na kimwili.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -841,15 +800,19 @@ Dalili za kimwili zinaweza kujumuisha:
     },
     {
       subtopicCode: 'STRESS_MANAGEMENT',
-      nodeKey: 'STRESS_MANAGEMENT_06',
+      nodeKey: 'STRESS_MANAGEMENT_04',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Emotional signs may include:
-    ● Feeling overwhelmed
-    ● Irritability
-    ● Frustration
-    ● Anxiety
-    ● Mood swings`,
+      messageText: `Many young people in Tanzania experience stress for different reasons, including:
+    ● National examinations.
+    ● Academic performance.
+    ● School fees.
+    ● Family financial difficulties.
+    ● Pressure to succeed.
+    ● Gender expectations.
+    ● Relationships.
+    ● Social media comparison.
+    ● Community stigma around discussing emotions.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -859,121 +822,24 @@ Dalili za kimwili zinaweza kujumuisha:
     },
     {
       subtopicCode: 'STRESS_MANAGEMENT',
-      nodeKey: 'STRESS_MANAGEMENT_06',
+      nodeKey: 'STRESS_MANAGEMENT_04',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Dalili za kihisia zinaweza kujumuisha:
-    ● Kuhisi kuzidiwa
-    ● Kukasirika
-    ● Kukata tamaa
-    ● Wasiwasi
-    ● Kubadilika kwa hisia`,
+      messageText: `Vijana wengi nchini Tanzania hupata msongo wa mawazo kwa sababu tofauti, ikiwa ni pamoja na:
+    ● Mitihani ya kitaifa.
+    ● Utendaji wa kitaaluma.
+    ● Ada za shule.
+    ● Matatizo ya kifedha ya familia.
+    ● Shinikizo la kufanikiwa.
+    ● Matarajio ya kijinsia.
+    ● Mahusiano.
+    ● Ulinganisho wa mitandao ya kijamii.
+    ● Unyanyapaa wa kijamii kuhusu kujadili hisia.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: false,
       sortOrder: 4,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'STRESS_MANAGEMENT',
-      nodeKey: 'STRESS_MANAGEMENT_07',
-      nodeType: NodeType.CONTENT,
-      language: Language.EN,
-      messageText: `
-Behavioral signs may include:
-    ● Avoiding responsibilities
-    ● Difficulty concentrating
-    ● Crying more often
-    ● Withdrawing from friends and family`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 5,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'STRESS_MANAGEMENT',
-      nodeKey: 'STRESS_MANAGEMENT_07',
-      nodeType: NodeType.CONTENT,
-      language: Language.SW,
-      messageText: `Dalili za kitabia zinaweza kujumuisha:
-    ● Kuepuka majukumu
-    ● Ugumu wa kuzingatia
-    ● Kulia mara nyingi
-    ● Kujitenga na marafiki na familia`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 5,
-      isActive: true,
-    },
-
-    {
-      subtopicCode: 'STRESS_MANAGEMENT',
-      nodeKey: 'STRESS_MANAGEMENT_04',
-      nodeType: NodeType.CONTENT,
-      language: Language.EN,
-      messageText: `Some adolescents are told,
-"Be strong." "Stop overthinking." "Other people have bigger problems."
-While resilience is important, emotional struggles deserve understanding and support.`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 6,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'STRESS_MANAGEMENT',
-      nodeKey: 'STRESS_MANAGEMENT_04',
-      nodeType: NodeType.CONTENT,
-      language: Language.SW,
-      messageText: `Baadhi ya vijana huambiwa, "Kuwa imara." "Acha kufikiria kupita kiasi." "Watu wengine wana matatizo makubwa."
-Ingawa ustahimilivu ni muhimu, mapambano ya kihisia yanastahili uelewa na usaidizi.`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 6,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'STRESS_MANAGEMENT',
-      nodeKey: 'STRESS_MANAGEMENT_08',
-      nodeType: NodeType.CONTENT,
-      language: Language.EN,
-      messageText: `Healthy Ways to Manage Stress
-    ● Talk to Someone: Sharing concerns with a trusted person can help.
-    ● Break Problems into Smaller Steps: Large challenges often feel more manageable when divided into smaller tasks.
-    ● Exercise: Physical activity can improve mood and reduce stress.
-    ● Rest: Adequate sleep supports emotional wellbeing.
-    ● Take Breaks: Short breaks during studying can improve focus.`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 7,
-      isActive: true,
-    },
-    {
-      subtopicCode: 'STRESS_MANAGEMENT',
-      nodeKey: 'STRESS_MANAGEMENT_08',
-      nodeType: NodeType.CONTENT,
-      language: Language.SW,
-      messageText: `Njia Bora za Kudhibiti Msongo wa Mawazo
-    ● Zungumza na Mtu: Kushiriki wasiwasi na mtu unayemwamini kunaweza kusaidia.
-    ● Gawanya Matatizo katika Hatua Ndogo: Changamoto kubwa mara nyingi huhisi kuwa rahisi kudhibitiwa zinapogawanywa katika kazi ndogo.
-    ● Mazoezi: Shughuli za kimwili zinaweza kuboresha hisia na kupunguza msongo wa mawazo.
-    ● Pumzika: Usingizi wa kutosha husaidia ustawi wa kihisia.
-    ● Pumzika: Mapumziko mafupi wakati wa kusoma yanaweza kuboresha umakini.`,
-      inputType: InputType.BUTTON,
-      mediaAssetKey: null,
-      isStartNode: false,
-      isEndNode: false,
-      sortOrder: 7,
       isActive: true,
     },
     {
@@ -981,7 +847,320 @@ Ingawa ustahimilivu ni muhimu, mapambano ya kihisia yanastahili uelewa na usaidi
       nodeKey: 'STRESS_MANAGEMENT_05',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
+      messageText: `If any of these challenges sound familiar, you're not alone. Many adolescents experience similar pressures, and it's okay to acknowledge that these situations can sometimes feel overwhelming.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa changamoto yoyote kati ya hizi inaonekana ya kawaida, hauko peke yako. Vijana wengi hupata shinikizo kama hilo, na ni sawa kukubali kwamba hali hizi wakati mwingine zinaweza kuhisi kulemea.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `How does stress feel?
+
+Stress affects everyone differently, and your experience may not be exactly the same as someone else's.
+
+Physical signs may include:
+    ● Headaches.
+    ● Fast heartbeat.
+    ● Sweating.
+    ● Stomach aches.
+    ● Feeling tired.
+    ● Difficulty sleeping.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Msongo wa mawazo unajisikiaje?
+
+Msongo wa mawazo huathiri kila mtu tofauti, na uzoefu wako unaweza usiwe sawa kabisa na wa mtu mwingine.
+
+Ishara za kimwili zinaweza kujumuisha:
+    ● Maumivu ya kichwa.
+    ● Mapigo ya moyo ya haraka.
+    ● Kutokwa na jasho.
+    ● Maumivu ya tumbo.
+    ● Kuhisi uchovu.
+    ● Ugumu wa kulala.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Emotional signs may include:
+    ● Feeling overwhelmed.
+    ● Irritability.
+    ● Frustration.
+    ● Anxiety.
+    ● Mood swings.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ishara za kihisia zinaweza kujumuisha:
+    ● Kuhisi kuzidiwa.
+    ● Kuwashwa.
+    ● Kukata tamaa.
+    ● Wasiwasi.
+    ● Mabadiliko ya hisia.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Behavioral signs may include:
+    ● Avoiding responsibilities.
+    ● Difficulty concentrating.
+    ● Crying more often.
+    ● Withdrawing from friends and family.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ishara za kitabia zinaweza kujumuisha:
+    ● Kuepuka majukumu.
+    ● Ugumu wa kuzingatia.
+    ● Kulia mara nyingi zaidi.
+    ● Kujitenga na marafiki na familia.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Experiencing one or more of these signs doesn't necessarily mean something is seriously wrong. They may simply be your body's way of telling you that you're under pressure and could benefit from support or healthy coping strategies.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kupitia moja au zaidi ya ishara hizi haimaanishi kwamba kuna kitu kibaya sana. Huenda ikawa njia ya mwili wako ya kukuambia kwamba uko chini ya shinikizo na unaweza kufaidika na usaidizi au mikakati ya kukabiliana kwa afya.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Some adolescents are told things like, "Be strong," "Stop overthinking," or "Other people have bigger problems." While resilience is important, emotional struggles also deserve understanding, compassion, and support. Your feelings matter, and it's okay to ask for help when things feel difficult.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Baadhi ya vijana huambiwa mambo kama, "Kuwa imara," "Acha kufikiria kupita kiasi," au "Watu wengine wana matatizo makubwa." Ingawa ustahimilivu ni muhimu, mapambano ya kihisia pia yanastahili uelewa, huruma, na usaidizi. Hisia zako ni muhimu, na ni sawa kuomba msaada wakati mambo yanapoonekana kuwa magumu.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_11',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Healthy ways to manage stress
+
+The good news is that there are many healthy ways to cope with stress.
+    ● Talk to someone: Sharing your concerns with a trusted person can help you feel supported and may even help you find solutions.
+    ● Break problems into smaller steps: Large challenges often feel more manageable when you divide them into smaller, achievable tasks.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_11',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Njia bora za kudhibiti msongo wa mawazo
+
+Habari njema ni kwamba kuna njia nyingi nzuri za kukabiliana na msongo wa mawazo.
+    ● Zungumza na mtu: Kushiriki wasiwasi wako na mtu unayemwamini kunaweza kukusaidia kuhisi unaungwa mkono na kunaweza hata kukusaidia kupata suluhisho.
+    ● Gawanya matatizo katika hatua ndogo: Changamoto kubwa mara nyingi huhisi kuwa rahisi kudhibiti unapozigawanya katika kazi ndogo, zinazoweza kufikiwa.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_12',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `More healthy ways to manage stress:
+    ● Exercise: Physical activity can improve your mood, reduce stress, and help your body relax.
+    ● Rest: Getting enough sleep gives your mind and body time to recover and supports your emotional wellbeing.
+    ● Take breaks: Short breaks while studying or working can improve your focus, reduce fatigue, and help you stay productive.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_12',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Njia zaidi za kudhibiti msongo wa mawazo:
+    ● Mazoezi: Shughuli za kimwili zinaweza kuboresha hisia zako, kupunguza msongo wa mawazo, na kusaidia mwili wako kupumzika.
+    ● Pumzika: Kulala vya kutosha hupa akili na mwili wako muda wa kupona na kusaidia ustawi wako wa kihisia.
+    ● Chukua mapumziko: Mapumziko mafupi wakati wa kusoma au kufanya kazi yanaweza kuboresha umakini wako, kupunguza uchovu, na kukusaidia kuendelea kuwa na tija.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_13',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Remember, feeling stressed from time to time is a normal part of life. But if stress becomes overwhelming, lasts for a long time, or starts affecting your health, school, relationships, or daily activities, reaching out to a trusted adult or healthcare provider can make a real difference. You don't have to manage everything on your own.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_13',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kumbuka, kuhisi msongo wa mawazo mara kwa mara ni sehemu ya kawaida ya maisha. Lakini ikiwa msongo wa mawazo unazidi, hudumu kwa muda mrefu, au unaanza kuathiri afya yako, shule, mahusiano, au shughuli za kila siku, kuwasiliana na mtu mzima unayemwamini au mtoa huduma ya afya kunaweza kuleta mabadiliko makubwa. Huna haja ya kusimamia kila kitu peke yako.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_14',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Would you like to learn more about relaxation techniques, coping with exam stress, managing difficult emotions, or knowing when to seek mental health support? I'm here to help.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 14,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_14',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Je, ungependa kujifunza zaidi kuhusu mbinu za kupumzika, kukabiliana na msongo wa mitihani, kudhibiti hisia ngumu, au kujua wakati wa kutafuta msaada wa afya ya akili? Niko hapa kusaidia.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 14,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_15',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
       messageText: `Common Questions
+
 Is it normal to feel sad sometimes?
 Yes. Everyone experiences sadness occasionally.
 
@@ -993,16 +1172,17 @@ Yes. Sharing concerns with a trusted person can reduce emotional burden and help
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
-      sortOrder: 5,
+      isEndNode: false,
+      sortOrder: 15,
       isActive: true,
     },
     {
       subtopicCode: 'STRESS_MANAGEMENT',
-      nodeKey: 'STRESS_MANAGEMENT_05',
+      nodeKey: 'STRESS_MANAGEMENT_15',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Maswali ya Kawaida
+
 Je, ni kawaida kuhisi huzuni wakati mwingine?
 Ndiyo. Kila mtu hupata huzuni mara kwa mara.
 
@@ -1014,8 +1194,230 @@ Ndiyo. Kushiriki wasiwasi na mtu unayemwamini kunaweza kupunguza mzigo wa kihisi
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
+      isEndNode: false,
+      sortOrder: 15,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_16',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence, or help with abuse, you do not have to face it alone. You can visit the nearest hospital, health centre, dispensary, or youth-friendly health service for confidential support and guidance. You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader, or healthcare provider.
+
+If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment, or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.
+
+For additional support, guidance, or referrals, you can contact OVAH through:
+Phone/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
       isEndNode: true,
-      sortOrder: 5,
+      sortOrder: 16,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_16',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili, au msaada kuhusu unyanyasaji, usibaki peke yako. Unaweza kutembelea hospitali, kituo cha afya, zahanati, au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama. Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini, au mtoa huduma za afya unayemwamini.
+
+Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono, au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.
+
+Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 16,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Stress - ways to deal with it`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Msongo wa mawazo - njia za kuukabili.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 101,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `1) Stress is the body's normal response to challenges - exams, money, or the pressure to succeed.
+2) Symptoms can include headaches, restlessness, or withdrawal from others.
+3) Talk to someone, break big problems down into smaller pieces, and get enough sleep.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `1) Msongo ni mwitikio wa kawaida wa mwili kwa changamoto - mitihani, fedha, au shinikizo la kufanikiwa.
+2) Dalili zinaweza kuwa maumivu ya kichwa, kutotulia, au kujitenga na wengine.
+3) Zungumza na mtu, gawanya matatizo makubwa vipande vidogo, na pata usingizi wa kutosha.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 102,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `True or False: Stress is not always bad.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kweli au Uongo: Msongo wa mawazo si mbaya kila wakati.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 103,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Correct: A - True. Sometimes stress helps you focus and prepare.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Sahihi: A - Kweli. Wakati mwingine msongo hukusaidia kuzingatia na kujiandaa.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 104,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Not quite. Stress is not always bad. Sometimes stress helps you focus and prepare.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Si sahihi kabisa. Msongo wa mawazo si mbaya kila wakati. Wakati mwingine msongo hukusaidia kuzingatia na kujiandaa.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 105,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `What causes you the most stress?`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ni nini kinachokusababishia msongo zaidi?`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 106,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Are you feeling overwhelmed? We're here to listen.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'STRESS_MANAGEMENT',
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Msongo unakuzidi? Tuko hapa kukusikiliza.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: true,
+      sortOrder: 107,
       isActive: true,
     },
 
@@ -2280,195 +2682,384 @@ Tafuta msaada ikiwa:
     },
     {
       nodeKey: 'STRESS_MANAGEMENT_01',
-      optionValue: 'stress_sources',
-      labelEn: 'What causes stress?',
-      labelSw: 'Chanzo cha msongo?',
+      optionValue: 'what_is_stress',
+      labelEn: 'What is stress?',
+      labelSw: 'Msongo ni nini?',
       nextNodeKey: 'STRESS_MANAGEMENT_02',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'STRESS_MANAGEMENT_01',
-      optionValue: 'physical_signs',
-      labelEn: 'Physical signs',
-      labelSw: 'Dalili za mwili',
+      optionValue: 'can_stress_help',
+      labelEn: 'Can stress help?',
+      labelSw: 'Msongo husaidia?',
       nextNodeKey: 'STRESS_MANAGEMENT_03',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'STRESS_MANAGEMENT_01',
-      optionValue: 'what_can_help',
-      labelEn: 'What can help?',
-      labelSw: 'Nini husaidia?',
-      nextNodeKey: 'STRESS_MANAGEMENT_08',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'STRESS_MANAGEMENT_16',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'STRESS_MANAGEMENT_02',
-      optionValue: 'physical_signs',
-      labelEn: 'Physical signs',
-      labelSw: 'Dalili za mwili',
+      optionValue: 'can_stress_help',
+      labelEn: 'Can stress help?',
+      labelSw: 'Msongo husaidia?',
       nextNodeKey: 'STRESS_MANAGEMENT_03',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'STRESS_MANAGEMENT_02',
-      optionValue: 'what_can_help',
-      labelEn: 'What can help?',
-      labelSw: 'Nini husaidia?',
-      nextNodeKey: 'STRESS_MANAGEMENT_08',
+      optionValue: 'sources',
+      labelEn: 'Sources of stress',
+      labelSw: 'Vyanzo vya msongo',
+      nextNodeKey: 'STRESS_MANAGEMENT_04',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'STRESS_MANAGEMENT_02',
-      optionValue: 'stress_questions',
-      labelEn: 'Common questions',
-      labelSw: 'Maswali ya kawaida',
-      nextNodeKey: 'STRESS_MANAGEMENT_05',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'STRESS_MANAGEMENT_03',
-      optionValue: 'emotional_signs',
-      labelEn: 'Emotional signs',
-      labelSw: 'Dalili za hisia',
+      optionValue: 'signs',
+      labelEn: 'Signs of stress',
+      labelSw: 'Dalili za msongo',
       nextNodeKey: 'STRESS_MANAGEMENT_06',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'STRESS_MANAGEMENT_03',
-      optionValue: 'behavior_signs',
-      labelEn: 'Behavior signs',
-      labelSw: 'Dalili za tabia',
-      nextNodeKey: 'STRESS_MANAGEMENT_07',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'STRESS_MANAGEMENT_03',
-      optionValue: 'what_can_help',
-      labelEn: 'What can help?',
-      labelSw: 'Nini husaidia?',
-      nextNodeKey: 'STRESS_MANAGEMENT_08',
       sortOrder: 3,
       isActive: true,
     },
     {
-      nodeKey: 'STRESS_MANAGEMENT_06',
-      optionValue: 'behavior_signs',
-      labelEn: 'Behavior signs',
-      labelSw: 'Dalili za tabia',
-      nextNodeKey: 'STRESS_MANAGEMENT_07',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'STRESS_MANAGEMENT_06',
-      optionValue: 'what_can_help',
-      labelEn: 'What can help?',
-      labelSw: 'Nini husaidia?',
-      nextNodeKey: 'STRESS_MANAGEMENT_08',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'STRESS_MANAGEMENT_06',
-      optionValue: 'stress_questions',
-      labelEn: 'Common questions',
-      labelSw: 'Maswali ya kawaida',
-      nextNodeKey: 'STRESS_MANAGEMENT_05',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'STRESS_MANAGEMENT_07',
-      optionValue: 'unhelpful_advice',
-      labelEn: 'Unhelpful advice',
-      labelSw: 'Ushauri usiofaa',
+      nodeKey: 'STRESS_MANAGEMENT_03',
+      optionValue: 'sources',
+      labelEn: 'Sources of stress',
+      labelSw: 'Vyanzo vya msongo',
       nextNodeKey: 'STRESS_MANAGEMENT_04',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'STRESS_MANAGEMENT_07',
-      optionValue: 'what_can_help',
-      labelEn: 'What can help?',
-      labelSw: 'Nini husaidia?',
-      nextNodeKey: 'STRESS_MANAGEMENT_08',
+      nodeKey: 'STRESS_MANAGEMENT_03',
+      optionValue: 'signs',
+      labelEn: 'Signs of stress',
+      labelSw: 'Dalili za msongo',
+      nextNodeKey: 'STRESS_MANAGEMENT_06',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'STRESS_MANAGEMENT_07',
-      optionValue: 'anxiety',
-      labelEn: 'Anxiety',
-      labelSw: 'Wasiwasi',
-      nextNodeKey: 'ANXIETY_AND_WORRY_01',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'STRESS_MANAGEMENT_04',
-      optionValue: 'what_can_help',
-      labelEn: 'What can help?',
-      labelSw: 'Nini husaidia?',
-      nextNodeKey: 'STRESS_MANAGEMENT_08',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'STRESS_MANAGEMENT_04',
-      optionValue: 'stress_questions',
-      labelEn: 'Common questions',
-      labelSw: 'Maswali ya kawaida',
-      nextNodeKey: 'STRESS_MANAGEMENT_05',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'STRESS_MANAGEMENT_04',
-      optionValue: 'anxiety',
-      labelEn: 'Anxiety',
-      labelSw: 'Wasiwasi',
-      nextNodeKey: 'ANXIETY_AND_WORRY_01',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'STRESS_MANAGEMENT_08',
-      optionValue: 'stress_questions',
-      labelEn: 'Common questions',
-      labelSw: 'Maswali ya kawaida',
-      nextNodeKey: 'STRESS_MANAGEMENT_05',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'STRESS_MANAGEMENT_08',
-      optionValue: 'anxiety',
-      labelEn: 'Anxiety',
-      labelSw: 'Wasiwasi',
-      nextNodeKey: 'ANXIETY_AND_WORRY_01',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'STRESS_MANAGEMENT_08',
+      nodeKey: 'STRESS_MANAGEMENT_03',
       optionValue: 'get_support',
-      labelEn: 'Getting support',
-      labelSw: 'Kupata msaada',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
       nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
       sortOrder: 3,
       isActive: true,
     },
     {
+      nodeKey: 'STRESS_MANAGEMENT_04',
+      optionValue: 'not_alone',
+      labelEn: 'You are not alone',
+      labelSw: 'Hauko peke yako',
+      nextNodeKey: 'STRESS_MANAGEMENT_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_04',
+      optionValue: 'physical_signs',
+      labelEn: 'Physical signs',
+      labelSw: 'Dalili za mwili',
+      nextNodeKey: 'STRESS_MANAGEMENT_06',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_04',
+      optionValue: 'anxiety',
+      labelEn: 'Anxiety',
+      labelSw: 'Wasiwasi',
+      nextNodeKey: 'ANXIETY_AND_WORRY_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
       nodeKey: 'STRESS_MANAGEMENT_05',
+      optionValue: 'physical_signs',
+      labelEn: 'Physical signs',
+      labelSw: 'Dalili za mwili',
+      nextNodeKey: 'STRESS_MANAGEMENT_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_05',
+      optionValue: 'emotional_signs',
+      labelEn: 'Emotional signs',
+      labelSw: 'Dalili za hisia',
+      nextNodeKey: 'STRESS_MANAGEMENT_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_05',
+      optionValue: 'what_helps',
+      labelEn: 'What helps?',
+      labelSw: 'Nini husaidia?',
+      nextNodeKey: 'STRESS_MANAGEMENT_11',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_06',
+      optionValue: 'emotional_signs',
+      labelEn: 'Emotional signs',
+      labelSw: 'Dalili za hisia',
+      nextNodeKey: 'STRESS_MANAGEMENT_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_06',
+      optionValue: 'behavior_signs',
+      labelEn: 'Behavior signs',
+      labelSw: 'Dalili za tabia',
+      nextNodeKey: 'STRESS_MANAGEMENT_08',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_06',
+      optionValue: 'what_helps',
+      labelEn: 'What helps?',
+      labelSw: 'Nini husaidia?',
+      nextNodeKey: 'STRESS_MANAGEMENT_11',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_07',
+      optionValue: 'behavior_signs',
+      labelEn: 'Behavior signs',
+      labelSw: 'Dalili za tabia',
+      nextNodeKey: 'STRESS_MANAGEMENT_08',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_07',
+      optionValue: 'body_pressure',
+      labelEn: 'Body pressure',
+      labelSw: 'Shinikizo mwilini',
+      nextNodeKey: 'STRESS_MANAGEMENT_09',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_07',
+      optionValue: 'anxiety',
+      labelEn: 'Anxiety',
+      labelSw: 'Wasiwasi',
+      nextNodeKey: 'ANXIETY_AND_WORRY_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_08',
+      optionValue: 'body_pressure',
+      labelEn: 'Body pressure',
+      labelSw: 'Shinikizo mwilini',
+      nextNodeKey: 'STRESS_MANAGEMENT_09',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_08',
+      optionValue: 'feelings_matter',
+      labelEn: 'Feelings matter',
+      labelSw: 'Hisia ni muhimu',
+      nextNodeKey: 'STRESS_MANAGEMENT_10',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_08',
+      optionValue: 'what_helps',
+      labelEn: 'What helps?',
+      labelSw: 'Nini husaidia?',
+      nextNodeKey: 'STRESS_MANAGEMENT_11',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_09',
+      optionValue: 'feelings_matter',
+      labelEn: 'Feelings matter',
+      labelSw: 'Hisia ni muhimu',
+      nextNodeKey: 'STRESS_MANAGEMENT_10',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_09',
+      optionValue: 'what_helps',
+      labelEn: 'What helps?',
+      labelSw: 'Nini husaidia?',
+      nextNodeKey: 'STRESS_MANAGEMENT_11',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_09',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_10',
+      optionValue: 'what_helps',
+      labelEn: 'What helps?',
+      labelSw: 'Nini husaidia?',
+      nextNodeKey: 'STRESS_MANAGEMENT_11',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_10',
+      optionValue: 'more_tips',
+      labelEn: 'More tips',
+      labelSw: 'Vidokezo zaidi',
+      nextNodeKey: 'STRESS_MANAGEMENT_12',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_10',
+      optionValue: 'get_help',
+      labelEn: 'Get help',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'STRESS_MANAGEMENT_16',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_11',
+      optionValue: 'more_tips',
+      labelEn: 'More tips',
+      labelSw: 'Vidokezo zaidi',
+      nextNodeKey: 'STRESS_MANAGEMENT_12',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_11',
+      optionValue: 'when_help',
+      labelEn: 'When to get help',
+      labelSw: 'Lini nipate msaada?',
+      nextNodeKey: 'STRESS_MANAGEMENT_13',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_11',
+      optionValue: 'questions',
+      labelEn: 'Common Questions',
+      labelSw: 'Maswali ya kawaida',
+      nextNodeKey: 'STRESS_MANAGEMENT_15',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_12',
+      optionValue: 'when_help',
+      labelEn: 'When to get help?',
+      labelSw: 'Lini nipate msaada?',
+      nextNodeKey: 'STRESS_MANAGEMENT_13',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_12',
+      optionValue: 'questions',
+      labelEn: 'Common Questions',
+      labelSw: 'Maswali ya kawaida',
+      nextNodeKey: 'STRESS_MANAGEMENT_15',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_12',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_13',
+      optionValue: 'what_next',
+      labelEn: 'Anything else?',
+      labelSw: 'Kuna lingine',
+      nextNodeKey: 'STRESS_MANAGEMENT_14',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_13',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_13',
+      optionValue: 'talk_now',
+      labelEn: 'I need help',
+      labelSw: 'Nahitaji msaada',
+      nextNodeKey: 'STRESS_MANAGEMENT_16',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_14',
+      optionValue: 'emotional_wellbeing',
+      labelEn: 'Emotional wellbeing',
+      labelSw: 'Ustawi wa hisia',
+      nextNodeKey: 'EMOTIONAL_WELLBEING_01',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_14',
+      optionValue: 'anxiety',
+      labelEn: 'Anxiety',
+      labelSw: 'Wasiwasi',
+      nextNodeKey: 'ANXIETY_AND_WORRY_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_14',
+      optionValue: 'test_yourself',
+      labelEn: 'Test yourself',
+      labelSw: 'Jipime',
+      nextNodeKey: 'STRESS_MANAGEMENT_REFRESHER_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_15',
       optionValue: 'anxiety',
       labelEn: 'Anxiety',
       labelSw: 'Wasiwasi',
@@ -2477,16 +3068,142 @@ Tafuta msaada ikiwa:
       isActive: true,
     },
     {
-      nodeKey: 'STRESS_MANAGEMENT_05',
+      nodeKey: 'STRESS_MANAGEMENT_15',
       optionValue: 'get_support',
-      labelEn: 'Getting support',
-      labelSw: 'Kupata msaada',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
       nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'STRESS_MANAGEMENT_05',
+      nodeKey: 'STRESS_MANAGEMENT_15',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_16',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_01',
+      optionValue: 'start_refresher',
+      labelEn: 'Start refresher',
+      labelSw: 'Anza kujikumbusha',
+      nextNodeKey: 'STRESS_MANAGEMENT_REFRESHER_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_02',
+      optionValue: 'start_quiz',
+      labelEn: 'Start quiz',
+      labelSw: 'Anza jaribio',
+      nextNodeKey: 'STRESS_MANAGEMENT_REFRESHER_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_03',
+      optionValue: 'true',
+      labelEn: 'A) True',
+      labelSw: 'A) Kweli',
+      nextNodeKey: 'STRESS_MANAGEMENT_REFRESHER_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_03',
+      optionValue: 'false',
+      labelEn: 'B) False',
+      labelSw: 'B) Uongo',
+      nextNodeKey: 'STRESS_MANAGEMENT_REFRESHER_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_04',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali linalofuata',
+      nextNodeKey: 'STRESS_MANAGEMENT_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_05',
+      optionValue: 'next_question',
+      labelEn: 'Next question',
+      labelSw: 'Swali linalofuata',
+      nextNodeKey: 'STRESS_MANAGEMENT_REFRESHER_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_06',
+      optionValue: 'studies',
+      labelEn: 'A) Studies',
+      labelSw: 'A) Masomo',
+      nextNodeKey: 'STRESS_MANAGEMENT_REFRESHER_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_06',
+      optionValue: 'finances',
+      labelEn: 'B) Finances',
+      labelSw: 'B) Fedha',
+      nextNodeKey: 'STRESS_MANAGEMENT_REFRESHER_07',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_06',
+      optionValue: 'relationships',
+      labelEn: 'C) Relationships',
+      labelSw: 'C) Mahusiano',
+      nextNodeKey: 'STRESS_MANAGEMENT_REFRESHER_07',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_06',
+      optionValue: 'social_media',
+      labelEn: 'D) Social media',
+      labelSw: 'D) Mitandao',
+      nextNodeKey: 'STRESS_MANAGEMENT_REFRESHER_07',
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_07',
+      optionValue: 'talk_now',
+      labelEn: 'I need help',
+      labelSw: 'Nahitaji msaada',
+      nextNodeKey: 'STRESS_MANAGEMENT_16',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_07',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'SEEKING_MENTAL_HEALTH_SUPPORT_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'STRESS_MANAGEMENT_REFRESHER_07',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
