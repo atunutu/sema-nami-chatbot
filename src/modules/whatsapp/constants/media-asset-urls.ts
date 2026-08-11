@@ -5,6 +5,9 @@ export const MEDIA_ASSET_URLS: Record<string, string> = {
   image_menstrual_calendar:
     'https://ovah-chatbot-images.onrender.com/menstruation/Menstrual%20calendar-bro.png',
 
+  image_menstruation_intro_01:
+    'https://drive.google.com/file/d/1kv6NgupbPuBBNAoa3fmvgxrROZUVanPp/view?usp=drive_link',
+
   image_gender_violence:
     'https://ovah-chatbot-images.onrender.com/gender-equality/Gender%20violence-bro.png',
 
