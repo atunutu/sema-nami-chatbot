@@ -89,6 +89,17 @@ export const pubertyAdolescentDevelopmentSeed = {
       isActive: true,
     },
     {
+      code: 'PUBERTY_COMMON_QUESTIONS',
+      titleEn: 'Common Questions',
+      titleSw: 'Maswali',
+      descriptionEn: null,
+      descriptionSw: null,
+      audienceGender: null,
+      ageBandRule: null,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
       code: 'PUBERTY_SUPPORT',
       titleEn: 'Get Support',
       titleSw: 'Pata msaada',
@@ -96,7 +107,7 @@ export const pubertyAdolescentDevelopmentSeed = {
       descriptionSw: null,
       audienceGender: null,
       ageBandRule: null,
-      sortOrder: 6,
+      sortOrder: 7,
       isActive: true,
     },
   ],
@@ -639,12 +650,7 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Many young people experience emotional changes during puberty because of hormonal changes and new social experiences. These may include
-
-    • Mood swings
-    • Increased sensitivity
-    • Desire for independence
-`,
+      messageText: `Many young people experience emotional changes during puberty because of hormonal changes and new social experiences.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -657,12 +663,7 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mabadiliko ya Kihisia
-
-    • Kubadilika kwa hisia mara kwa mara
-    • Kuwa na hisia kali zaidi
-    • Kutaka kujitegemea
-`,
+      messageText: `Vijana wengi hupitia mabadiliko ya kihisia wakati wa balehe kutokana na mabadiliko ya homoni na uzoefu mpya wa kijamii.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -675,13 +676,14 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Some more emotional changes may include:
+      messageText: `Emotional changes may include:
 
-    • Strong emotions
-    • Attraction to other people
-    • Concern about appearance
-    • Curiosity about relationships
-`,
+1. Mood swings
+2. Having stronger feelings
+3. Wanting independence
+4. Being attracted to other people
+5. Caring more about body appearance
+6. Wanting to be understood and accepted`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -694,17 +696,45 @@ export const pubertyAdolescentDevelopmentSeed = {
       nodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Mabadiliko ya Kihisia
+      messageText: `Mabadiliko ya kihisia yanaweza kujumuisha:
 
-    • Kuvutiwa na watu wengine
-    • Kujali zaidi mwonekano wa mwili
-    • Kutaka kueleweka na kukubalika
-`,
+1. Kubadilika kwa hisia mara kwa mara
+2. Kuwa na hisia kali zaidi
+3. Kutaka kujitegemea
+4. Kuvutiwa na watu wengine
+5. Kujali zaidi mwonekano wa mwili
+6. Kutaka kueleweka na kukubalika`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
       isEndNode: true,
       sortOrder: 2,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PUBERTY_COMMON_QUESTIONS',
+      nodeKey: 'PUBERTY_COMMON_QUESTIONS_PLACEHOLDER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Common questions about puberty will be added here.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: true,
+      isEndNode: true,
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PUBERTY_COMMON_QUESTIONS',
+      nodeKey: 'PUBERTY_COMMON_QUESTIONS_PLACEHOLDER_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Maswali ya kawaida kuhusu balehe yataongezwa hapa.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: true,
+      isEndNode: true,
+      sortOrder: 1,
       isActive: true,
     },
     {
@@ -1072,56 +1102,47 @@ Simu/WhatsApp: 0652 522 358`,
 
     {
       nodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_01',
-      optionValue: 'more_emotions',
-      labelEn: 'More feelings',
-      labelSw: 'Mabadiliko mengine?',
+      optionValue: 'see_changes',
+      labelEn: 'See changes',
+      labelSw: 'Ona mabadiliko',
       nextNodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_02',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_01',
-      optionValue: 'common_worries',
-      labelEn: 'Common worries',
-      labelSw: 'Wasiwasi wa kawaida',
-      nextNodeKey: 'UNDERSTANDING_PUBERTY_05',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_01',
-      optionValue: 'girls_changes',
-      labelEn: 'Changes in Girls',
-      labelSw: 'Balehe kwa Wasichana',
-      nextNodeKey: 'PHYSICAL_CHANGES_IN_GIRLS_01',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
       nodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_02',
-      optionValue: 'common_worries',
-      labelEn: 'Common worries',
-      labelSw: 'Wasiwasi wa kawaida',
-      nextNodeKey: 'UNDERSTANDING_PUBERTY_05',
+      optionValue: 'common_questions',
+      labelEn: 'Common questions',
+      labelSw: 'Maswali',
+      nextNodeKey: 'PUBERTY_COMMON_QUESTIONS_PLACEHOLDER_01',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_02',
-      optionValue: 'what_is_puberty',
-      labelEn: 'What is puberty?',
-      labelSw: 'Balehe ni nini?',
-      nextNodeKey: 'UNDERSTANDING_PUBERTY_01',
+      optionValue: 'i_need_support',
+      labelEn: 'I need support',
+      labelSw: 'Nahitaji msaada',
+      nextNodeKey: 'PUBERTY_SUPPORT_01',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'EMOTIONAL_CHANGES_DURING_PUBERTY_02',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'back',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
       sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'PUBERTY_COMMON_QUESTIONS_PLACEHOLDER_01',
+      optionValue: 'back',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 1,
       isActive: true,
     },
   ],
