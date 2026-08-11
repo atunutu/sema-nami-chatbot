@@ -8,6 +8,12 @@ export const MEDIA_ASSET_URLS: Record<string, string> = {
   image_menstruation_intro_01:
     'https://drive.google.com/file/d/1kv6NgupbPuBBNAoa3fmvgxrROZUVanPp/view?usp=drive_link',
 
+  image_menstruation_what_is_01:
+    'https://drive.google.com/file/d/1q6BXgazjfsqwaA5uSzUSwf47PLgM_CN3/view?usp=drive_link',
+
+  image_menstruation_natural_01:
+    'https://drive.google.com/file/d/1fqqAuW8pcF_1urSO3j-kcOMzOuHthGLC/view?usp=drive_link',
+
   image_gender_violence:
     'https://ovah-chatbot-images.onrender.com/gender-equality/Gender%20violence-bro.png',
 
