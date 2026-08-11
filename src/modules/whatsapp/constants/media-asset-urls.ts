@@ -23,6 +23,9 @@ export const MEDIA_ASSET_URLS: Record<string, string> = {
   image_menstruation_hygiene_final_01:
     'https://drive.google.com/file/d/1QW1q6OYockks929S0i-loYTpxx6mzafd/view?usp=drive_link',
 
+  image_menstruation_pain_01:
+    'https://drive.google.com/file/d/1ZtAyCuPrlFBs122nqMQbGasse8BQdSI4/view?usp=drive_link',
+
   image_gender_violence:
     'https://ovah-chatbot-images.onrender.com/gender-equality/Gender%20violence-bro.png',
 
