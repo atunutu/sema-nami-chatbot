@@ -3106,7 +3106,9 @@ Faida za ufuasi sahihi wa dawa
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Disability is a state of lack and failure to have the opportunity to participate in normal social life on an equal basis with others due to physical, mental or social reasons.
+      messageText: `Reproductive health rights for young people with disabilities
+
+Disability is a state of lack and failure to have the opportunity to participate in normal social life on an equal basis with others due to physical, mental or social reasons.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -3120,7 +3122,9 @@ Faida za ufuasi sahihi wa dawa
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Ulemavu Ni hali ya kukosa na kushindwa kuwa na fursa ya kushiriki katika maisha ya kawaida ya kijamii kwa kiwango sawa na wengine kwa sababu za kimaumbile, kiakili au sababu za kijamii.
+      messageText: `Haki za afya ya uzazi kwa vijana wenye ulemavu
+
+Ulemavu Ni hali ya kukosa na kushindwa kuwa na fursa ya kushiriki katika maisha ya kawaida ya kijamii kwa kiwango sawa na wengine kwa sababu za kimaumbile, kiakili au sababu za kijamii.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -3135,9 +3139,12 @@ Faida za ufuasi sahihi wa dawa
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Key principles of the law on young people with disabilities.
-    - Respect for the dignity of the person, freedom of choice and independence of people with disabilities.
-    - The right to full participation and inclusion of people with disabilities in all social affairs.
-    - There is no discrimination of any kind against people with disabilities in all fields.
+
+● Respect for the dignity of the person, freedom of choice and independence of people with disabilities.
+
+● The right to full participation and inclusion of people with disabilities in all social affairs.
+
+● There is no discrimination of any kind against people with disabilities in all fields.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -3152,9 +3159,12 @@ Faida za ufuasi sahihi wa dawa
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Kanuni muhimu za sheria ya vijana wenye ulemavu.
-    - Kuheshimu utu wa mtu, uhuru wa kuchagua na kijitegemea kwa watu wenye ulemavu.
-    - Haki ya kushiriki na kushirikishwa kikamilifu kwa watu wenye ulemavu katika mambo yote ya kijamii.
-    - Hakuna ubaguzi wa aina yeyote kwa watu wenye ulemavu katika Nyanja zote.
+
+● Kuheshimu utu wa mtu, uhuru wa kuchagua na kijitegemea kwa watu wenye ulemavu.
+
+● Haki ya kushiriki na kushirikishwa kikamilifu kwa watu wenye ulemavu katika mambo yote ya kijamii.
+
+● Hakuna ubaguzi wa aina yeyote kwa watu wenye ulemavu katika Nyanja zote.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -3169,9 +3179,10 @@ Faida za ufuasi sahihi wa dawa
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Young people with disabilities have the same rights as other people without disabilities.
+
 They have the right to receive special and specialized medical services, as well as equal opportunities for education and training to help them achieve their goals in life.
+
 People with disabilities have the right to participate in sports and not to be excluded.
-Other rights include the right to life, to be respected and valued, to be free from discrimination, to have a name and nationality, to live with one's parents, to express opinions, ideas and decisions regarding one's well-being. to be protected from any form of violence and humiliation.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -3186,9 +3197,10 @@ Other rights include the right to life, to be respected and valued, to be free f
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Vijana wenye ulemavu wana haki sawa na watu wengine wasio na ulemavu.
+
 Wana haki ya kupata huduma za kipekee na maalum zinazohusu matibabu, pamoja na kupata nafasi sawa ya elimu na mazoezi ili kuwasaidia kufikia malengo yao katika maisha.
+
 Watu wenye ulemavu wana haki ya kushiriki katika michezo na pia kutokutengwa.
-Haki nyinginezo ni pamoja na haki ya kuishi ,kuheshimiwa na kuthaminiwa ,kutokubaguliwa ,jina na utaifa ,kuishi na wazazi wake ,kutoa maoni, mawazo na maamuzi kuhusiana na ustawi wake. kulindwa dhidi ya ukatili na udhalilishwaji wa aina yoyote ile.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -3263,9 +3275,12 @@ Sera hii pia inachagiza ushiriki wa vijana wenye ulemavu katika shughuli za kija
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `More principles of the law on young people with disabilities.
-    - People with disabilities should be fully included in all aspects of life.
-    - Equal opportunities for people with disabilities.
-    - Equality between women and men with disabilities and recognition of their rights and needs.
+
+● People with disabilities should be fully included in all aspects of life.
+
+● Equal opportunities for people with disabilities.
+
+● Equality between women and men with disabilities and recognition of their rights and needs.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -3280,9 +3295,12 @@ Sera hii pia inachagiza ushiriki wa vijana wenye ulemavu katika shughuli za kija
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Kanuni nyingine za sheria ya vijana wenye ulemavu.
-    - Watu wenye ulemavu wajumuishwe kikamilifu katika Nyanja zote za maisha.
-    - Fursa sawa kwa watu wenye ulemavu.
-    - Kuwepo na usawa kati ya wanawake na wanaume wenye ulemavu na kutambuliwa kwa haki na mahitaji yao.
+
+● Watu wenye ulemavu wajumuishwe kikamilifu katika Nyanja zote za maisha.
+
+● Fursa sawa kwa watu wenye ulemavu.
+
+● Kuwepo na usawa kati ya wanawake na wanaume wenye ulemavu na kutambuliwa kwa haki na mahitaji yao.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -3301,7 +3319,7 @@ Sera hii pia inachagiza ushiriki wa vijana wenye ulemavu katika shughuli za kija
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 7,
       isActive: true,
     },
@@ -3315,8 +3333,168 @@ Sera hii pia inachagiza ushiriki wa vijana wenye ulemavu katika shughuli za kija
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR',
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Other rights include the right to life, to be respected and valued, to be free from discrimination, to have a name and nationality, to live with one's parents, to express opinions, ideas and decisions regarding one's well-being, and to be protected from any form of violence and humiliation.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR',
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Haki nyinginezo ni pamoja na haki ya kuishi, kuheshimiwa na kuthaminiwa, kutokubaguliwa, jina na utaifa, kuishi na wazazi wake, kutoa maoni, mawazo na maamuzi kuhusiana na ustawi wake, na kulindwa dhidi ya ukatili na udhalilishwaji wa aina yoyote ile.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR',
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence or help with abuse, you do not have to face it alone.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR',
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili au msaada kuhusu unyanyasaji, usibaki peke yako.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR',
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You can visit the nearest hospital, health centre, dispensary or youth-friendly health service for confidential support and guidance.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR',
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza kutembelea hospitali, kituo cha afya, zahanati au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR',
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader or healthcare provider.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR',
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini au mtoa huduma za afya unayemwamini.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR',
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR',
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR',
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `For additional support, guidance or referrals, you can contact OVAH through:
+
+Phone/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR',
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
       isActive: true,
     },
     {
@@ -5352,8 +5530,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_01',
       optionValue: 'who',
-      labelEn: 'Who is included?',
-      labelSw: 'Nani ana ulemavu?',
+      labelEn: 'Definition',
+      labelSw: 'Maana',
       nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_04',
       sortOrder: 1,
       isActive: true,
@@ -5369,9 +5547,9 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_01',
-      optionValue: 'laws',
-      labelEn: 'Key Laws',
-      labelSw: 'Sheria muhimu',
+      optionValue: 'principles',
+      labelEn: 'Principles',
+      labelSw: 'Kanuni',
       nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_02',
       sortOrder: 3,
       isActive: true,
@@ -5379,8 +5557,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_02',
       optionValue: 'more_laws',
-      labelEn: 'More laws?',
-      labelSw: 'Sheria zaidi?',
+      labelEn: 'More principles',
+      labelSw: 'Kanuni zaidi',
       nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_06',
       sortOrder: 1,
       isActive: true,
@@ -5388,18 +5566,18 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_02',
       optionValue: 'rights',
-      labelEn: 'Rights of disabled',
-      labelSw: 'Haki za walemavu',
+      labelEn: 'Rights',
+      labelSw: 'Haki',
       nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_03',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_02',
-      optionValue: 'seek_care',
-      labelEn: 'Seeking Healthcare',
-      labelSw: 'Kutafuta Huduma',
-      nextNodeKey: 'HEALTH_SEEKING_BEHAVIOUR_01',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_01',
       sortOrder: 3,
       isActive: true,
     },
@@ -5846,9 +6024,9 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_04',
-      optionValue: 'laws',
-      labelEn: 'Key Laws',
-      labelSw: 'Sheria muhimu',
+      optionValue: 'principles',
+      labelEn: 'Principles',
+      labelSw: 'Kanuni',
       nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_02',
       sortOrder: 2,
       isActive: true,
@@ -5856,17 +6034,17 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_04',
       optionValue: 'rights',
-      labelEn: 'Rights of disabled',
-      labelSw: 'Haki za walemavu',
+      labelEn: 'Rights',
+      labelSw: 'Haki',
       nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_03',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_05',
-      optionValue: 'laws',
-      labelEn: 'Key Laws',
-      labelSw: 'Sheria muhimu',
+      optionValue: 'principles',
+      labelEn: 'Principles',
+      labelSw: 'Kanuni',
       nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_02',
       sortOrder: 1,
       isActive: true,
@@ -5874,26 +6052,26 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_05',
       optionValue: 'rights',
-      labelEn: 'Rights of disabled',
-      labelSw: 'Haki za walemavu',
+      labelEn: 'Rights',
+      labelSw: 'Haki',
       nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_03',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_05',
-      optionValue: 'seek_care',
-      labelEn: 'Seeking Healthcare',
-      labelSw: 'Kutafuta Huduma',
-      nextNodeKey: 'HEALTH_SEEKING_BEHAVIOUR_01',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_06',
       optionValue: 'rights',
-      labelEn: 'Rights of disabled',
-      labelSw: 'Haki za walemavu',
+      labelEn: 'Rights',
+      labelSw: 'Haki',
       nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_03',
       sortOrder: 1,
       isActive: true,
@@ -5909,19 +6087,19 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_06',
-      optionValue: 'testing',
-      labelEn: 'HIV Testing Services',
-      labelSw: 'Huduma za Upimaji',
-      nextNodeKey: 'HIV_TESTING_SERVICES_01',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_03',
-      optionValue: 'access',
-      labelEn: 'Information access',
-      labelSw: 'Kupata taarifa',
-      nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_07',
+      optionValue: 'more_rights',
+      labelEn: 'More rights',
+      labelSw: 'Haki zaidi',
+      nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_08',
       sortOrder: 1,
       isActive: true,
     },
@@ -5936,10 +6114,10 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_03',
-      optionValue: 'testing',
-      labelEn: 'HIV Testing Services',
-      labelSw: 'Huduma za Upimaji',
-      nextNodeKey: 'HIV_TESTING_SERVICES_01',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_01',
       sortOrder: 3,
       isActive: true,
     },
@@ -5972,10 +6150,10 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_07',
-      optionValue: 'rights',
-      labelEn: 'Rights of disabled',
-      labelSw: 'Haki za walemavu',
-      nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_03',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_01',
       sortOrder: 1,
       isActive: true,
     },
@@ -5990,11 +6168,101 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_07',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_08',
+      optionValue: 'access',
+      labelEn: 'Information access',
+      labelSw: 'Kupata taarifa',
+      nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_08',
+      optionValue: 'seek_care',
+      labelEn: 'Seeking Healthcare',
+      labelSw: 'Kutafuta Huduma',
+      nextNodeKey: 'HEALTH_SEEKING_BEHAVIOUR_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_08',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_01',
+      optionValue: 'where_to_go',
+      labelEn: 'Where to go',
+      labelSw: 'Niende wapi?',
+      nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_02',
+      optionValue: 'trusted_people',
+      labelEn: 'Trusted people',
+      labelSw: 'Watu wa kuamini',
+      nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_03',
+      optionValue: 'safety_support',
+      labelEn: 'Safety support',
+      labelSw: 'Msaada usalama',
+      nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_03',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_04',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_05',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ADOLESCENTS_WITH_DISABILITY_RIGHTS_SRHR_REFERRAL_05',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
+      sortOrder: 2,
       isActive: true,
     },
     {
