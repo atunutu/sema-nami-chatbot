@@ -4360,9 +4360,8 @@ Simu/WhatsApp: 0652 522 358`,
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Human immunodeficiency virus (HIV) is a microscopic virus that is invisible to the naked eye, which attacks and weakens the immune system.
-The HIV virus lives in the blood and body fluids of an infected person.
-The virus can infect another person through bodily fluids, especially blood, semen and vaginal fluids.
-`,
+
+The HIV virus lives in the blood and body fluids of an infected person. The virus can infect another person through bodily fluids, especially blood, semen and vaginal fluids.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -4375,10 +4374,9 @@ The virus can infect another person through bodily fluids, especially blood, sem
       nodeKey: 'HIV_AND_AIDS_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Virusi vya UKIMWI (VVU) ni vijidudu vidogo sana visivyoweza kuonekana kwa macho, ambavyo vina shambulia na kudhoofisha kinga-mwili.
-Virusi vya UKIMWI vinaishi katika damu na maji maji kwenye mwili wa mtu aliyeambukizwa.
-Virusi hivyo vinaweza kuambukiza mtu mwingine kwa kupitia maji maji ya mwilini hasa damu, manii na maji maji ya ukeni.
-`,
+      messageText: `Virusi vya UKIMWI (VVU) ni vijidudu vidogo sana visivyoweza kuonekana kwa macho, ambavyo vinashambulia na kudhoofisha kinga-mwili.
+
+Virusi vya UKIMWI vinaishi katika damu na maji maji kwenye mwili wa mtu aliyeambukizwa. Virusi hivyo vinaweza kuambukiza mtu mwingine kwa kupitia maji maji ya mwilini hasa damu, manii na maji maji ya ukeni.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -4392,8 +4390,8 @@ Virusi hivyo vinaweza kuambukiza mtu mwingine kwa kupitia maji maji ya mwilini h
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `AIDS is a stage in which the body's immune system has been weakened by HIV infection.
-At this stage, the body becomes vulnerable to opportunistic infections if the patient does not take antiretroviral drugs.
-`,
+
+At this stage, the body becomes vulnerable to opportunistic infections if the patient does not take antiretroviral drugs.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -4407,8 +4405,8 @@ At this stage, the body becomes vulnerable to opportunistic infections if the pa
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `UKIMWI ni hatua ambayo kinga ya mwili imeshashuka kutokana na maambukizi yatokanayo na VVU.
-Katika hatua hii mwili hushambuliwa na magonjwa nyemelezi endapo mgonjwa hatatumia dawa za kufubaza VVU.
-`,
+
+Katika hatua hii mwili hushambuliwa na magonjwa nyemelezi endapo mgonjwa hatatumia dawa za kufubaza VVU.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -4422,11 +4420,11 @@ Katika hatua hii mwili hushambuliwa na magonjwa nyemelezi endapo mgonjwa hatatum
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Transmission Routes
-    ● Having sex with an infected person without protection
-    ● An HIV-positive mother can transmit the virus to her child during pregnancy, childbirth and breastfeeding and if she is not on proper ARV medication
-    ● Receiving a transfusion of HIV-infected blood
-    ● Donating sharp objects used by an HIV-positive person
-    ● Through bodily fluids of an HIV-positive person (semen, vaginal fluids)`,
+● Having sex with an infected person without protection
+● An HIV-positive mother can transmit the virus to her child during pregnancy, childbirth and breastfeeding if she is not on proper ARV medication
+● Receiving a transfusion of HIV-infected blood
+● Sharing sharp objects used by an HIV-positive person
+● Through bodily fluids of an HIV-positive person (semen, vaginal fluids)`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -4440,11 +4438,11 @@ Katika hatua hii mwili hushambuliwa na magonjwa nyemelezi endapo mgonjwa hatatum
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Njia za Maambukizo
-    ● Kujamiiana na mtu mwenye maambukizi bila kinga
-    ● Mama mwenye VVU kumuambukiza mtoto wake wakati wa mimba, kujifungua na wakati wa kunyonyesha na kama hayuko kwenye matumizi sahihi ya dawa za ARV
-    ● Kuwekewa damu yenye maambukizi ya VVU
-    ● Kuchangia vitu vyenye ncha kali vilivyotumiwa na mtu mwenye VVU
-    ● Kupitia majimaji yanayotoka mwilini kwa mtu mwenye VVU (manii, majimaji ya ukeni) `,
+● Kujamiiana na mtu mwenye maambukizi bila kinga
+● Mama mwenye VVU kumuambukiza mtoto wake wakati wa mimba, kujifungua na wakati wa kunyonyesha kama hayuko kwenye matumizi sahihi ya dawa za ARV
+● Kuwekewa damu yenye maambukizi ya VVU
+● Kuchangia vitu vyenye ncha kali vilivyotumiwa na mtu mwenye VVU
+● Kupitia majimaji yanayotoka mwilini kwa mtu mwenye VVU (manii, majimaji ya ukeni)`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -4458,10 +4456,10 @@ Katika hatua hii mwili hushambuliwa na magonjwa nyemelezi endapo mgonjwa hatatum
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Stages of HIV transmission to AIDS
-    - Stage 1: Initial infection Most people who become infected with the HIV virus do not realize that they are infected, except for some who begin to get sick as soon as they are infected. This illness can last a few weeks and often comes with a flu-like illness with fever, body weakness, swollen glands, sore throat, rash or joint pain. These symptoms disappear after a short time. These symptoms are accompanied by the spread of the virus to different parts of the body and especially in the lymphatic system. At this stage, a person can transmit the AIDS virus to others.
 
-    - Stage 2: Asymptomatic This stage can take an average of 10 years and a person has no symptoms of any disease except for a swollen thyroid gland. In the early stages of HIV infection, many patients do not have any symptoms even though there is a strong immune response. Patients in this stage can transmit the HIV virus to others.
-`,
+Stage 1: Initial infection. Most people who become infected with the HIV virus do not realize that they are infected, except for some who begin to get sick as soon as they are infected.
+
+This illness can last a few weeks and often comes with a flu-like illness with fever, body weakness, swollen glands, sore throat, rash or joint pain. At this stage, a person can transmit the AIDS virus to others.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -4474,11 +4472,11 @@ Katika hatua hii mwili hushambuliwa na magonjwa nyemelezi endapo mgonjwa hatatum
       nodeKey: 'HIV_AND_AIDS_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Hatua za maambukizi ya VVI hadi UKIMWI
-    - Hatua ya 1: Maambukizi ya awali Watu wengi wanaopata maambukizi ya virusi vya UKIMWI, hawajitambui kwamba wameambukizwa, ila kwa wengine wanaoanza kuugua mara tu wanapoambukizwa. Ugonjwa huu unaweza kuchukua wiki chache na mara nyingi unakuja na mafua yenye homa, udhaifu wa mwili, uvimbe wa tezi maumivu kooni, ukurutu au maumivu ya viungo. Dalili hizi hupotea baada ya muda mfupi. Dalili hizo zinaambatana na ueneaji wa virusi katika sehemu tofauti za mwilini na hasa katika mfumo wa limfu. Katika hatua hii mtu anaweza kuambukiza virusi vya UKIMWI kwa wengine.
+      messageText: `Hatua za maambukizi ya VVU hadi UKIMWI
 
-    - Hatua ya 2: Haina dalili Hatua hii inaweza kuchukua wastani wa miaka 10 na mtu anakuwa hana dalili za ugonjwa wowote isipokuwa uvimbe wa tezi. Katika hatua za awali za maambukizo ya virusi vya UKIMWI, wagonjwa wengi wanakuwa hawana dalili zozote ingawa kuna mapambano makali ya kinga. Wagonjwa wa aina hii wanaweza kuambukiza virusi vya UKIMWI kwa wengine.
-`,
+Hatua ya 1: Maambukizi ya awali. Watu wengi wanaopata maambukizi ya virusi vya UKIMWI, hawajitambui kwamba wameambukizwa, ila kwa wengine wanaoanza kuugua mara tu wanapoambukizwa.
+
+Ugonjwa huu unaweza kuchukua wiki chache na mara nyingi unakuja na mafua yenye homa, udhaifu wa mwili, uvimbe wa tezi, maumivu kooni, ukurutu au maumivu ya viungo. Katika hatua hii mtu anaweza kuambukiza virusi vya UKIMWI kwa wengine.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -4491,11 +4489,9 @@ Katika hatua hii mwili hushambuliwa na magonjwa nyemelezi endapo mgonjwa hatatum
       nodeKey: 'HIV_AND_AIDS_06',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Stages of HIV transmission to AIDS
-    - Stage 3: Symptoms of HIV infection As time passes, the immune system is overwhelmed by the fight against the HIV virus, so symptoms appear. Symptoms of HIV infection are caused by opportunistic diseases. Problems that occur are fever, respiratory infections, cough, tuberculosis, skin diseases, weight loss, skin diseases, viral infections, oral mucosa, pain and swelling of the gums.
+      messageText: `Stage 3: Symptoms of HIV infection. As time passes, the immune system is overwhelmed by the fight against the HIV virus, so symptoms appear.
 
-    - Stage 4: AIDS This stage is reached when the body's immune system is significantly reduced and is accompanied by opportunistic diseases including cancer.
-`,
+Symptoms of HIV infection are caused by opportunistic diseases. Problems that occur are fever, respiratory infections, cough, tuberculosis, skin diseases, weight loss, viral infections, oral mucosa, pain and swelling of the gums.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -4508,11 +4504,9 @@ Katika hatua hii mwili hushambuliwa na magonjwa nyemelezi endapo mgonjwa hatatum
       nodeKey: 'HIV_AND_AIDS_06',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Hatua za maambukizi ya VVI hadi UKIMWI
-    - Hatua ya 3: Dalili za maambukizo ya virusi vya UKIMWI Muda unavyozidi kupita ndivyo mfumo wa kinga unazidiwa na mapambano ya virusi vya UKIMWI kwa hiyo dalili zinajitokeza. Dalili za maambukizo ya VVU zinasababishwa na magonjwa nyemelezi. Matatizo yanayojitokeza ni homa, maambukizo ya njia ya hewa, kikohozi, kifua kikuu, magonjwa ya ngozi, kupungua kwa uzito, magojwa ya ngozi, maambukizo ya virusi, utando wa mdomoni, maumivu na kuvimba mitoki.
+      messageText: `Hatua ya 3: Dalili za maambukizo ya virusi vya UKIMWI. Muda unavyozidi kupita ndivyo mfumo wa kinga unazidiwa na mapambano ya virusi vya UKIMWI kwa hiyo dalili zinajitokeza.
 
-    - Hatua ya 4: UKIMWI Hatua hii inafikiwa pale kinga ya mwili inapopungua kwa kiasi kikubwa na inaambatana na magonjwa nyemelezi ikiwemo saratani.
-`,
+Dalili za maambukizo ya VVU zinasababishwa na magonjwa nyemelezi. Matatizo yanayojitokeza ni homa, maambukizo ya njia ya hewa, kikohozi, kifua kikuu, magonjwa ya ngozi, kupungua kwa uzito, maambukizo ya virusi, utando wa mdomoni, maumivu na kuvimba mitoki.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -4526,14 +4520,15 @@ Katika hatua hii mwili hushambuliwa na magonjwa nyemelezi endapo mgonjwa hatatum
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Ways to Prevent Sexually Transmitted Diseases and HIV
-The safest way to protect yourself for a young adult who has entered into sexual relationships is to use condoms correctly, this prevents the transmission of sexually transmitted diseases and HIV, as well as unintended pregnancies. How to prevent infections
-    ● Stop having sex completely
-    ● Have one faithful, uninfected partner, for those who were married and started having sex
-    ● Discuss safe sex, for example; correct use of condoms
-    ● Condoms
-    ● Not sharing sharp objects
-    ● Identify and treat sexually transmitted diseases early
-`,
+The safest way to protect yourself for a young adult who has entered into sexual relationships is to use condoms correctly, which prevents the transmission of sexually transmitted diseases and HIV, as well as unintended pregnancies.
+
+How to prevent infections:
+● Stop having sex completely
+● Have one faithful, uninfected partner, for those who were married and started having sex
+● Discuss safe sex, for example; correct use of condoms
+● Condoms
+● Not sharing sharp objects
+● Identify and treat sexually transmitted diseases early`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -4547,14 +4542,15 @@ The safest way to protect yourself for a young adult who has entered into sexual
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Njia za Kuzuia magonjwa ya Ngono na VVU
-Njia salama ya kujikinga kwa kijana balehe aliyekwisha ingia kwenye mahusiano ya kufanya ngono ni kutumia kondomu kwa usahihi ambayo inazuia uambukizo wa magonjwa ya ngono na VVU pamoja na mimba zisizotarajiwa. Jinsi ya kuzuia maambukizo
-    ● Kuacha kabisa kufanya ngono
-    ● Kuwa na mpenzi mmoja mwaminifu asiyekuwa na maambukizi, kwa wale waliokuwa kwenye ndoa na walioanza kufanya ngono
-    ● Kujadiliana juu ya ngono salama, mfano; matumizi sahihi ya kondomu
-    ● kondomu
-    ● Kutochangia vitu vyenye ncha kali
-    ● Kutambua na kutibu magonjwa ya ngono mapema
-`,
+Njia salama ya kujikinga kwa kijana balehe aliyekwisha ingia kwenye mahusiano ya kufanya ngono ni kutumia kondomu kwa usahihi ambayo inazuia uambukizo wa magonjwa ya ngono na VVU pamoja na mimba zisizotarajiwa.
+
+Jinsi ya kuzuia maambukizo:
+● Kuacha kabisa kufanya ngono
+● Kuwa na mpenzi mmoja mwaminifu asiyekuwa na maambukizi, kwa wale waliokuwa kwenye ndoa na walioanza kufanya ngono
+● Kujadiliana juu ya ngono salama, mfano; matumizi sahihi ya kondomu
+● Kondomu
+● Kutochangia vitu vyenye ncha kali
+● Kutambua na kutibu magonjwa ya ngono mapema`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -4568,17 +4564,12 @@ Njia salama ya kujikinga kwa kijana balehe aliyekwisha ingia kwenye mahusiano ya
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `IMPORTANT THINGS TO EMPHASIZE FOR YOUNG PEOPLE WITH HIV INFECTION
-● Correct medication adherence Correct medication adherence is using the correct medication, the correct dose, the correct time, and the correct way as directed by a specialist.
 
-Benefits of proper medication adherence
-    ► Strengthens the immune system and reduces the risk of opportunistic infections
-    ► Helps prevent drug resistance
-    ► Reduces the risk of viral replication
-    ► Prevents mother-to-child transmission of HIV (during pregnancy, during delivery and during breastfeeding)`,
+Correct medication adherence is using the correct medication, the correct dose, the correct time, and the correct way as directed by a specialist.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 5,
       isActive: true,
     },
@@ -4588,19 +4579,237 @@ Benefits of proper medication adherence
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `MAMBO MUHIMU YA KUSISITIZA KWA VIJANA WENYE MAAMBUKIZI YA VVU
-● Ufuasi sahihi wa dawa Ufuasi sahihi wa dawa ni kutumia dawa sahihi, dozi sahihi, muda sahihi na kwa njia sahihi kama ilivyoelekezwa na mtaalam.
 
-Faida za ufuasi sahihi wa dawa
-    ► Huimarisha kinga-mwili na kupunguza uwezekano wa kupata magonjwa nyemelezi
-    ► Husaidia kuepuka usugu wa dawa
-    ► Hupunguza uwezekano wa kuongezeka kwa virusi
-    ► Huzuia maambukizi ya VVU kutoka kwa mama kwenda kwa mtoto (wakati wa mimba, wakati wa kujifungua nawakati wa kunyonyesha)
-`,
+Ufuasi sahihi wa dawa ni kutumia dawa sahihi, dozi sahihi, muda sahihi na kwa njia sahihi kama ilivyoelekezwa na mtaalam.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HIV_AND_AIDS',
+      nodeKey: 'HIV_AND_AIDS_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Stage 2: Asymptomatic. This stage can take an average of 10 years and a person has no symptoms of any disease except for a swollen thyroid gland.
+
+In the early stages of HIV infection, many patients do not have any symptoms even though there is a strong immune response. Patients in this stage can transmit the HIV virus to others.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HIV_AND_AIDS',
+      nodeKey: 'HIV_AND_AIDS_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Hatua ya 2: Haina dalili. Hatua hii inaweza kuchukua wastani wa miaka 10 na mtu anakuwa hana dalili za ugonjwa wowote isipokuwa uvimbe wa tezi.
+
+Katika hatua za awali za maambukizo ya virusi vya UKIMWI, wagonjwa wengi wanakuwa hawana dalili zozote ingawa kuna mapambano makali ya kinga. Wagonjwa wa aina hii wanaweza kuambukiza virusi vya UKIMWI kwa wengine.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HIV_AND_AIDS',
+      nodeKey: 'HIV_AND_AIDS_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Stage 4: AIDS. This stage is reached when the body's immune system is significantly reduced and is accompanied by opportunistic diseases including cancer.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HIV_AND_AIDS',
+      nodeKey: 'HIV_AND_AIDS_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Hatua ya 4: UKIMWI. Hatua hii inafikiwa pale kinga ya mwili inapopungua kwa kiasi kikubwa na inaambatana na magonjwa nyemelezi ikiwemo saratani.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HIV_AND_AIDS',
+      nodeKey: 'HIV_AND_AIDS_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Benefits of proper medication adherence:
+● Strengthens the immune system and reduces the risk of opportunistic infections
+● Helps prevent drug resistance
+● Reduces the risk of viral replication
+● Prevents mother-to-child transmission of HIV (during pregnancy, during delivery and during breastfeeding)`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HIV_AND_AIDS',
+      nodeKey: 'HIV_AND_AIDS_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Faida za ufuasi sahihi wa dawa:
+● Huimarisha kinga-mwili na kupunguza uwezekano wa kupata magonjwa nyemelezi
+● Husaidia kuepuka usugu wa dawa
+● Hupunguza uwezekano wa kuongezeka kwa virusi
+● Huzuia maambukizi ya VVU kutoka kwa mama kwenda kwa mtoto (wakati wa mimba, wakati wa kujifungua na wakati wa kunyonyesha)`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HIV_AND_AIDS',
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence or help with abuse, you do not have to face it alone.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HIV_AND_AIDS',
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili au msaada kuhusu unyanyasaji, usibaki peke yako.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HIV_AND_AIDS',
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You can visit the nearest hospital, health centre, dispensary or youth-friendly health service for confidential support and guidance.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HIV_AND_AIDS',
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza kutembelea hospitali, kituo cha afya, zahanati au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HIV_AND_AIDS',
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader or healthcare provider.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HIV_AND_AIDS',
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini au mtoa huduma za afya unayemwamini.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HIV_AND_AIDS',
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 14,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HIV_AND_AIDS',
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 14,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HIV_AND_AIDS',
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `For additional support, guidance or referrals, you can contact OVAH through:
+
+Phone/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 15,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HIV_AND_AIDS',
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 15,
       isActive: true,
     },
 
@@ -6970,8 +7179,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'HIV_AND_AIDS_01',
       optionValue: 'testing',
-      labelEn: 'HIV Testing Services',
-      labelSw: 'Huduma za Upimaji',
+      labelEn: 'HIV testing',
+      labelSw: 'Upimaji VVU',
       nextNodeKey: 'HIV_TESTING_SERVICES_01',
       sortOrder: 3,
       isActive: true,
@@ -6980,7 +7189,7 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
       nodeKey: 'HIV_AND_AIDS_02',
       optionValue: 'stages',
       labelEn: 'HIV stages?',
-      labelSw: 'Hatua za maambukizi',
+      labelSw: 'Hatua za VVU',
       nextNodeKey: 'HIV_AND_AIDS_03',
       sortOrder: 1,
       isActive: true,
@@ -6988,8 +7197,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'HIV_AND_AIDS_02',
       optionValue: 'prevent',
-      labelEn: 'How to prevent HIV',
-      labelSw: 'Njia za kuzuia VVU',
+      labelEn: 'Prevention',
+      labelSw: 'Kujikinga',
       nextNodeKey: 'HIV_AND_AIDS_04',
       sortOrder: 2,
       isActive: true,
@@ -6997,26 +7206,26 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'HIV_AND_AIDS_02',
       optionValue: 'testing',
-      labelEn: 'HIV Testing Services',
-      labelSw: 'Huduma za Upimaji',
+      labelEn: 'HIV testing',
+      labelSw: 'Upimaji VVU',
       nextNodeKey: 'HIV_TESTING_SERVICES_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'HIV_AND_AIDS_03',
-      optionValue: 'later_stages',
-      labelEn: 'Later stages',
-      labelSw: 'Hatua zaidi?',
-      nextNodeKey: 'HIV_AND_AIDS_06',
+      optionValue: 'stage_2',
+      labelEn: 'Stage 2',
+      labelSw: 'Hatua ya 2',
+      nextNodeKey: 'HIV_AND_AIDS_08',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'HIV_AND_AIDS_03',
       optionValue: 'prevent',
-      labelEn: 'How to prevent HIV',
-      labelSw: 'Njia za kuzuia VVU',
+      labelEn: 'Prevention',
+      labelSw: 'Kujikinga',
       nextNodeKey: 'HIV_AND_AIDS_04',
       sortOrder: 2,
       isActive: true,
@@ -7024,7 +7233,7 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'HIV_AND_AIDS_03',
       optionValue: 'medication',
-      labelEn: 'HIV Medication',
+      labelEn: 'HIV medicine',
       labelSw: 'Dawa za VVU',
       nextNodeKey: 'HIV_AND_AIDS_05',
       sortOrder: 3,
@@ -7032,27 +7241,27 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'HIV_AND_AIDS_06',
-      optionValue: 'prevent',
-      labelEn: 'How to prevent HIV',
-      labelSw: 'Njia za kuzuia VVU',
-      nextNodeKey: 'HIV_AND_AIDS_04',
+      optionValue: 'stage_4',
+      labelEn: 'Stage 4',
+      labelSw: 'Hatua ya 4',
+      nextNodeKey: 'HIV_AND_AIDS_09',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'HIV_AND_AIDS_06',
-      optionValue: 'medication',
-      labelEn: 'HIV Medication',
-      labelSw: 'Dawa za VVU',
-      nextNodeKey: 'HIV_AND_AIDS_05',
+      optionValue: 'prevent',
+      labelEn: 'Prevention',
+      labelSw: 'Kujikinga',
+      nextNodeKey: 'HIV_AND_AIDS_04',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'HIV_AND_AIDS_06',
       optionValue: 'testing',
-      labelEn: 'HIV Testing Services',
-      labelSw: 'Huduma za Upimaji',
+      labelEn: 'HIV testing',
+      labelSw: 'Upimaji VVU',
       nextNodeKey: 'HIV_TESTING_SERVICES_01',
       sortOrder: 3,
       isActive: true,
@@ -7060,7 +7269,7 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'HIV_AND_AIDS_04',
       optionValue: 'medication',
-      labelEn: 'HIV Medication',
+      labelEn: 'HIV medicine',
       labelSw: 'Dawa za VVU',
       nextNodeKey: 'HIV_AND_AIDS_05',
       sortOrder: 1,
@@ -7069,8 +7278,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'HIV_AND_AIDS_04',
       optionValue: 'testing',
-      labelEn: 'HIV Testing Services',
-      labelSw: 'Huduma za Upimaji',
+      labelEn: 'HIV testing',
+      labelSw: 'Upimaji VVU',
       nextNodeKey: 'HIV_TESTING_SERVICES_01',
       sortOrder: 2,
       isActive: true,
@@ -7610,7 +7819,7 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
       nodeKey: 'HIV_AND_AIDS_07',
       optionValue: 'stages',
       labelEn: 'HIV stages?',
-      labelSw: 'Hatua za maambukizi',
+      labelSw: 'Hatua za VVU',
       nextNodeKey: 'HIV_AND_AIDS_03',
       sortOrder: 2,
       isActive: true,
@@ -7618,8 +7827,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'HIV_AND_AIDS_07',
       optionValue: 'prevent',
-      labelEn: 'How to prevent HIV',
-      labelSw: 'Njia za kuzuia VVU',
+      labelEn: 'Prevention',
+      labelSw: 'Kujikinga',
       nextNodeKey: 'HIV_AND_AIDS_04',
       sortOrder: 3,
       isActive: true,
@@ -8841,29 +9050,173 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'HIV_AND_AIDS_05',
-      optionValue: 'need_testing',
-      labelEn: 'HIV Testing Services',
-      labelSw: 'Huduma za Upimaji',
-      nextNodeKey: 'HIV_TESTING_SERVICES_01',
+      optionValue: 'benefits',
+      labelEn: 'Benefits',
+      labelSw: 'Faida',
+      nextNodeKey: 'HIV_AND_AIDS_10',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'HIV_AND_AIDS_05',
-      optionValue: 'prevent_hiv',
-      labelEn: 'HIV Preventions',
-      labelSw: 'Kujikinga na VVU',
-      nextNodeKey: 'HIV_AND_AIDS_04',
+      optionValue: 'testing',
+      labelEn: 'HIV testing',
+      labelSw: 'Upimaji VVU',
+      nextNodeKey: 'HIV_TESTING_SERVICES_01',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'HIV_AND_AIDS_05',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'HIV_AND_AIDS_REFERRAL_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HIV_AND_AIDS_08',
+      optionValue: 'stage_3',
+      labelEn: 'Stage 3',
+      labelSw: 'Hatua ya 3',
+      nextNodeKey: 'HIV_AND_AIDS_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HIV_AND_AIDS_08',
+      optionValue: 'prevention',
+      labelEn: 'Prevention',
+      labelSw: 'Kujikinga',
+      nextNodeKey: 'HIV_AND_AIDS_04',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HIV_AND_AIDS_08',
+      optionValue: 'testing',
+      labelEn: 'HIV testing',
+      labelSw: 'Upimaji VVU',
+      nextNodeKey: 'HIV_TESTING_SERVICES_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HIV_AND_AIDS_09',
+      optionValue: 'prevention',
+      labelEn: 'Prevention',
+      labelSw: 'Kujikinga',
+      nextNodeKey: 'HIV_AND_AIDS_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HIV_AND_AIDS_09',
+      optionValue: 'medicine',
+      labelEn: 'HIV medicine',
+      labelSw: 'Dawa za VVU',
+      nextNodeKey: 'HIV_AND_AIDS_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HIV_AND_AIDS_09',
+      optionValue: 'testing',
+      labelEn: 'HIV testing',
+      labelSw: 'Upimaji VVU',
+      nextNodeKey: 'HIV_TESTING_SERVICES_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HIV_AND_AIDS_10',
+      optionValue: 'testing',
+      labelEn: 'HIV testing',
+      labelSw: 'Upimaji VVU',
+      nextNodeKey: 'HIV_TESTING_SERVICES_01',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HIV_AND_AIDS_10',
+      optionValue: 'prevention',
+      labelEn: 'Prevention',
+      labelSw: 'Kujikinga',
+      nextNodeKey: 'HIV_AND_AIDS_04',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HIV_AND_AIDS_10',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'HIV_AND_AIDS_REFERRAL_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_01',
+      optionValue: 'where_to_go',
+      labelEn: 'Where to go',
+      labelSw: 'Niende wapi?',
+      nextNodeKey: 'HIV_AND_AIDS_REFERRAL_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_02',
+      optionValue: 'trusted_people',
+      labelEn: 'Trusted people',
+      labelSw: 'Watu wa kuamini',
+      nextNodeKey: 'HIV_AND_AIDS_REFERRAL_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_03',
+      optionValue: 'safety_support',
+      labelEn: 'Safety support',
+      labelSw: 'Msaada usalama',
+      nextNodeKey: 'HIV_AND_AIDS_REFERRAL_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_03',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'HIV_AND_AIDS_REFERRAL_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_04',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'HIV_AND_AIDS_REFERRAL_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_05',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HIV_AND_AIDS_REFERRAL_05',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
+      sortOrder: 2,
       isActive: true,
     },
     {
