@@ -2248,12 +2248,6 @@ Simu/WhatsApp: 0652 522 358`,
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Adolescent pregnancy refers to pregnancy occurring between ages 10 and 19 years. During adolescence, young people are still developing physically, emotionally, socially, and economically. Pregnancy during this period can create additional challenges.
-
-Possible Effects that many adolescents face in Tanzania in perspective of health, education ,socially and economic aspects are:-
-    • Increased risk of anemia
-    • Higher risk of pregnancy complications
-    • Increased likelihood of premature birth
-    • Increased risk of low birth weight babies
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -2268,12 +2262,6 @@ Possible Effects that many adolescents face in Tanzania in perspective of health
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Mimba za vijana hurejelea ujauzito unaotokea kati ya umri wa miaka 10 na 19. Wakati wa ujana, vijana bado wanaendelea kukua kimwili, kihisia, kijamii, na kiuchumi. Mimba katika kipindi hiki inaweza kusababisha changamoto zaidi.
-
-Athari zinazowezekana ambazo vijana wengi wanakabiliana nazo nchini Tanzania katika nyanja za afya, elimu, kijamii na kiuchumi ni,
-    • Kuongezeka kwa hatari ya upungufu wa damu
-    • Hatari kubwa ya matatizo ya ujauzito
-    • Kuongezeka kwa uwezekano wa kuzaliwa mapema
-    • Kuongezeka kwa hatari ya watoto kuzaliwa na uzito mdogo.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -2288,7 +2276,9 @@ Athari zinazowezekana ambazo vijana wengi wanakabiliana nazo nchini Tanzania kat
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `In addition there is an issue of interrupted education which results in school absenteeism and reduced educational opportunities.
+
 All these have led to stigma, isolation and relationship challenges.
+
 At the end of the day many adolescents find themselves in financial hardship and reduced employment opportunities.
 `,
       inputType: InputType.BUTTON,
@@ -2304,7 +2294,9 @@ At the end of the day many adolescents find themselves in financial hardship and
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Zaidi ya hayo, kuna suala la kukatizwa kwa elimu ambayo husababisha utoro shuleni na kupungua kwa fursa za kielimu.
+
 Yote haya yamesababisha unyanyapaa, kutengwa na changamoto za mahusiano.
+
 Mwisho wa siku vijana wengi hujikuta katika shida ya kifedha na kupungua kwa fursa za ajira.
 `,
       inputType: InputType.BUTTON,
@@ -2347,20 +2339,7 @@ Mwisho wa siku vijana wengi hujikuta katika shida ya kifedha na kupungua kwa fur
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_03',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Frequently Asked Questions
-
- Q: What is the first sign of pregnancy?
- A: A missed period is often one of the earliest signs.
-
- Q: Can stress delay periods?
- A: Yes.
-
- Q: How is pregnancy confirmed?
- A: Through a pregnancy test and healthcare assessment.
-
- Q: Can I become pregnant during my first sexual encounter?
- A: Yes.
-`,
+      messageText: `Choose a common question about early and adolescent pregnancy.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -2373,20 +2352,7 @@ Mwisho wa siku vijana wengi hujikuta katika shida ya kifedha na kupungua kwa fur
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_03',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Maswali Yanayoulizwa Mara kwa Mara
-
-Swali: Ishara ya kwanza ya ujauzito ni ipi?
-Jibu: Kutopata hedhi mara nyingi ni mojawapo ya ishara za mwanzo kabisa.
-
-Swali: Je, vipindi vya kuchelewa kwa msongo wa mawazo vinaweza kucheleweshwa?
-Jibu: Ndiyo.
-
-Swali: Je, ujauzito unathibitishwaje?
-Jibu: Kupitia kipimo cha ujauzito na tathmini ya afya.
-
-Swali: Je, ninaweza kupata mimba wakati wa tendo la ndoa la kwanza?
-Jibu: Ndiyo.
-`,
+      messageText: `Chagua swali linaloulizwa mara kwa mara kuhusu ujauzito wa utotoni na ujana.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -2400,21 +2366,11 @@ Jibu: Ndiyo.
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_04',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Frequently Asked Questions
-
- Q: Can pregnancy happen if periods are irregular?
- A: Yes.
-
- Q: Can a teenager have a healthy pregnancy?
- A: Many adolescents have healthy pregnancies when they receive appropriate healthcare, although risks can be higher than for adults.
-
- Q: What should I do if I think I am pregnant?
- A: Seek support from a trusted adult and visit a healthcare facility.
-`,
+      messageText: `Choose another common question about early and adolescent pregnancy.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 4,
       isActive: true,
     },
@@ -2423,22 +2379,426 @@ Jibu: Ndiyo.
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_04',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Maswali Yanayoulizwa Mara kwa Mara
+      messageText: `Chagua swali lingine linaloulizwa mara kwa mara kuhusu ujauzito wa utotoni na ujana.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Possible effects that many adolescents face in Tanzania from health, education, social and economic perspectives are:
 
-Swali: Je, mimba inaweza kutokea ikiwa vipindi si vya kawaida?
-Jibu: Ndiyo.
+● Increased risk of anemia
 
-Swali: Je, kijana anaweza kupata mimba yenye afya?
-Jibu: Vijana wengi wana mimba zenye afya wanapopata huduma ya afya inayofaa, ingawa hatari zinaweza kuwa kubwa kuliko kwa watu wazima.
+● Higher risk of pregnancy complications
 
-Swali: Nifanye nini nikifikiri nina mjamzito?
-Jibu: Tafuta msaada kutoka kwa mtu mzima ninayemwamini na utembelee kituo cha afya.
+● Increased likelihood of premature birth
+
+● Increased risk of low birth weight babies
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
-      sortOrder: 4,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Athari zinazowezekana ambazo vijana wengi wanakabiliana nazo nchini Tanzania katika nyanja za afya, elimu, kijamii na kiuchumi ni:
+
+● Kuongezeka kwa hatari ya upungufu wa damu
+
+● Hatari kubwa ya matatizo ya ujauzito
+
+● Kuongezeka kwa uwezekano wa kuzaliwa mapema
+
+● Kuongezeka kwa hatari ya watoto kuzaliwa na uzito mdogo
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Q: What is the first sign of pregnancy?
+
+A: A missed period is often one of the earliest signs.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Swali: Ishara ya kwanza ya ujauzito ni ipi?
+
+Jibu: Kutopata hedhi mara nyingi ni mojawapo ya ishara za mwanzo kabisa.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Q: Can stress delay periods?
+
+A: Yes.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Swali: Je, msongo wa mawazo unaweza kuchelewesha hedhi?
+
+Jibu: Ndiyo.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Q: How is pregnancy confirmed?
+
+A: Through a pregnancy test and healthcare assessment.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Swali: Je, ujauzito unathibitishwaje?
+
+Jibu: Kupitia kipimo cha ujauzito na tathmini ya afya.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Q: Can I become pregnant during my first sexual encounter?
+
+A: Yes.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Swali: Je, ninaweza kupata mimba wakati wa tendo la ndoa la kwanza?
+
+Jibu: Ndiyo.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_11',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Q: Can pregnancy happen if periods are irregular?
+
+A: Yes.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_11',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Swali: Je, mimba inaweza kutokea ikiwa vipindi si vya kawaida?
+
+Jibu: Ndiyo.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_12',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Q: Can a teenager have a healthy pregnancy?
+
+A: Many adolescents have healthy pregnancies when they receive appropriate healthcare, although risks can be higher than for adults.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_12',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Swali: Je, kijana anaweza kupata mimba yenye afya?
+
+Jibu: Vijana wengi wana mimba zenye afya wanapopata huduma ya afya inayofaa, ingawa hatari zinaweza kuwa kubwa kuliko kwa watu wazima.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_13',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Q: What should I do if I think I am pregnant?
+
+A: Seek support from a trusted adult and visit a healthcare facility.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_13',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Swali: Nifanye nini nikifikiri nina mimba?
+
+Jibu: Tafuta msaada kutoka kwa mtu mzima ninayemwamini na utembelee kituo cha afya.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_14',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Choose more common questions about early and adolescent pregnancy.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 14,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_14',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Chagua maswali zaidi kuhusu ujauzito wa utotoni na ujana.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 14,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence or help with abuse, you do not have to face it alone.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 15,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili au msaada kuhusu unyanyasaji, usibaki peke yako.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 15,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You can visit the nearest hospital, health centre, dispensary or youth-friendly health service for confidential support and guidance.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 16,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza kutembelea hospitali, kituo cha afya, zahanati au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 16,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader or healthcare provider.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 17,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini au mtoa huduma za afya unayemwamini.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 17,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 18,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 18,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `For additional support, guidance or referrals, you can contact OVAH through:
+
+Phone/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 19,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'EARLY_AND_ADOLESCENT_PREGNANCY',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 19,
       isActive: true,
     },
     {
@@ -5277,44 +5637,71 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_01',
-      optionValue: 'more_effects',
-      labelEn: 'More effects?',
-      labelSw: 'Athari zaidi?',
-      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_02',
+      optionValue: 'health_effects',
+      labelEn: 'Health effects',
+      labelSw: 'Athari afya',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_06',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_01',
-      optionValue: 'faq',
-      labelEn: 'FAQ?',
-      labelSw: 'Maswali?',
-      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_03',
+      optionValue: 'other_effects',
+      labelEn: 'Other effects',
+      labelSw: 'Athari nyingine',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_02',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_01',
-      optionValue: 'anc',
-      labelEn: 'Antenatal care',
-      labelSw: 'Huduma kabla kuzaa',
-      nextNodeKey: 'ANTENATAL_CARE_01',
+      optionValue: 'questions',
+      labelEn: 'Questions?',
+      labelSw: 'Maswali?',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_03',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_06',
+      optionValue: 'other_effects',
+      labelEn: 'Other effects',
+      labelSw: 'Athari nyingine',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_06',
+      optionValue: 'support',
+      labelEn: 'Support',
+      labelSw: 'Msaada',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_06',
+      optionValue: 'questions',
+      labelEn: 'Questions?',
+      labelSw: 'Maswali?',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_03',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_02',
       optionValue: 'support',
-      labelEn: 'Available support',
-      labelSw: 'Msaada uliopo',
+      labelEn: 'Support',
+      labelSw: 'Msaada',
       nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_05',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_02',
-      optionValue: 'faq',
-      labelEn: 'FAQ?',
+      optionValue: 'questions',
+      labelEn: 'Questions?',
       labelSw: 'Maswali?',
       nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_03',
       sortOrder: 2,
@@ -5331,28 +5718,28 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_03',
-      optionValue: 'more_faq',
-      labelEn: 'More FAQ?',
-      labelSw: 'Maswali zaidi?',
-      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_04',
+      optionValue: 'first_sign',
+      labelEn: 'First sign?',
+      labelSw: 'Ishara ya kwanza?',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_07',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_03',
-      optionValue: 'testing',
-      labelEn: 'HIV Testing Services',
-      labelSw: 'Huduma za Upimaji',
-      nextNodeKey: 'HIV_TESTING_SERVICES_01',
+      optionValue: 'stress_delay',
+      labelEn: 'Stress delay?',
+      labelSw: 'Msongo?',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_08',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_03',
-      optionValue: 'seek_care',
-      labelEn: 'Seeking Healthcare',
-      labelSw: 'Kutafuta Huduma',
-      nextNodeKey: 'HEALTH_SEEKING_BEHAVIOUR_01',
+      optionValue: 'confirm',
+      labelEn: 'Confirm?',
+      labelSw: 'Kuthibitisha?',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_09',
       sortOrder: 3,
       isActive: true,
     },
@@ -6141,8 +6528,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_05',
-      optionValue: 'faq',
-      labelEn: 'FAQ?',
+      optionValue: 'questions',
+      labelEn: 'Questions?',
       labelSw: 'Maswali?',
       nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_03',
       sortOrder: 1,
@@ -6150,19 +6537,19 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_05',
-      optionValue: 'more_faq',
-      labelEn: 'More FAQ?',
-      labelSw: 'Maswali zaidi?',
-      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_04',
+      optionValue: 'needs',
+      labelEn: 'Pregnancy needs',
+      labelSw: 'Mahitaji ujauzito',
+      nextNodeKey: 'ADOLESCENTS_NEEDS_DURING_PREGNANCY_01',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_05',
-      optionValue: 'needs',
-      labelEn: 'Pregnancy needs',
-      labelSw: 'Mahitaji ya ujauzito',
-      nextNodeKey: 'ADOLESCENTS_NEEDS_DURING_PREGNANCY_01',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_01',
       sortOrder: 3,
       isActive: true,
     },
@@ -6609,16 +6996,232 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_04',
-      optionValue: 'pregnancy_needs',
-      labelEn: 'Pregnancy needs',
-      labelSw: 'Mahitaji ya ujauzito',
-      nextNodeKey: 'ADOLESCENTS_NEEDS_DURING_PREGNANCY_01',
+      optionValue: 'first_sex',
+      labelEn: 'First sex?',
+      labelSw: 'Mara ya kwanza?',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_10',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_04',
-      optionValue: 'what_care',
+      optionValue: 'irregular',
+      labelEn: 'Irregular?',
+      labelSw: 'Si kawaida?',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_11',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_04',
+      optionValue: 'more_questions',
+      labelEn: 'More questions',
+      labelSw: 'Maswali zaidi',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_14',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_14',
+      optionValue: 'healthy',
+      labelEn: 'Healthy pregnancy?',
+      labelSw: 'Mimba yenye afya?',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_12',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_14',
+      optionValue: 'what_to_do',
+      labelEn: 'What to do?',
+      labelSw: 'Nifanye nini?',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_13',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_14',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_07',
+      optionValue: 'another_question',
+      labelEn: 'Another question',
+      labelSw: 'Swali jingine',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_07',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_07',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_08',
+      optionValue: 'another_question',
+      labelEn: 'Another question',
+      labelSw: 'Swali jingine',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_08',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_08',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_09',
+      optionValue: 'another_question',
+      labelEn: 'Another question',
+      labelSw: 'Swali jingine',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_09',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_09',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_10',
+      optionValue: 'another_question',
+      labelEn: 'Another question',
+      labelSw: 'Swali jingine',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_10',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_10',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_11',
+      optionValue: 'another_question',
+      labelEn: 'Another question',
+      labelSw: 'Swali jingine',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_11',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_11',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_12',
+      optionValue: 'another_question',
+      labelEn: 'Another question',
+      labelSw: 'Swali jingine',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_12',
+      optionValue: 'pregnancy_needs',
+      labelEn: 'Pregnancy needs',
+      labelSw: 'Mahitaji ujauzito',
+      nextNodeKey: 'ADOLESCENTS_NEEDS_DURING_PREGNANCY_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_12',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_13',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_01',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_13',
+      optionValue: 'antenatal_care',
       labelEn: 'Antenatal care',
       labelSw: 'Huduma kabla kuzaa',
       nextNodeKey: 'ANTENATAL_CARE_01',
@@ -6626,12 +7229,75 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
       isActive: true,
     },
     {
-      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_04',
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_13',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_01',
+      optionValue: 'where_to_go',
+      labelEn: 'Where to go',
+      labelSw: 'Niende wapi?',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_02',
+      optionValue: 'trusted_people',
+      labelEn: 'Trusted people',
+      labelSw: 'Watu wa kuamini',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_03',
+      optionValue: 'safety_support',
+      labelEn: 'Safety support',
+      labelSw: 'Msaada usalama',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_03',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_04',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_05',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'EARLY_AND_ADOLESCENT_PREGNANCY_REFERRAL_05',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
+      sortOrder: 2,
       isActive: true,
     },
     {
