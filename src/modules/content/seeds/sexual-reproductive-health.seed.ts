@@ -2837,11 +2837,16 @@ Simu/WhatsApp: 0652 522 358`,
       messageText: `Why Is Antenatal Care Important?
 
 ANC helps:
-    - Monitor pregnancy progress
-    - Detect complications early
-    - Support healthy baby development
-    - Provide health education
-    - Prepare for childbirth
+
+● Monitor pregnancy progress
+
+● Detect complications early
+
+● Support healthy baby development
+
+● Provide health education
+
+● Prepare for childbirth
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -2858,11 +2863,16 @@ ANC helps:
       messageText: `Kwa Nini Huduma ya Kabla ya Kujifungua Ni Muhimu?
 
 Huduma ya kabla ya kujifungua husaidia:
-    - Kufuatilia maendeleo ya ujauzito
-    - Kugundua matatizo mapema
-    - Kusaidia ukuaji wa mtoto mwenye afya njema
-    - Kutoa elimu ya afya
-    - Kujiandaa kwa ajili ya kujifungua
+
+● Kufuatilia maendeleo ya ujauzito
+
+● Kugundua matatizo mapema
+
+● Kusaidia ukuaji wa mtoto mwenye afya njema
+
+● Kutoa elimu ya afya
+
+● Kujiandaa kwa ajili ya kujifungua
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -2905,13 +2915,14 @@ Huduma ya kabla ya kujifungua husaidia:
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `The following are the services offered
-    • Physical examinations
-    • Blood pressure monitoring
-    • HIV testing and counseling
-    • Nutrition counseling
-    • Malaria prevention
-    • Vaccinations
-    • Screening for complications
+
+● Physical examinations
+
+● Blood pressure monitoring
+
+● HIV testing and counseling
+
+● Nutrition counseling
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -2926,13 +2937,14 @@ Huduma ya kabla ya kujifungua husaidia:
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Zifuatazo ni huduma zinazotolewa
-    • Uchunguzi wa kimwili
-    • Ufuatiliaji wa shinikizo la damu
-    • Upimaji na ushauri nasaha wa VVU
-    • Ushauri nasaha wa lishe
-    • Kinga ya malaria
-    • Chanjo
-    • Uchunguzi wa matatizo
+
+● Uchunguzi wa kimwili
+
+● Ufuatiliaji wa shinikizo la damu
+
+● Upimaji na ushauri nasaha wa VVU
+
+● Ushauri nasaha wa lishe
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -2947,12 +2959,18 @@ Huduma ya kabla ya kujifungua husaidia:
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Post delivery problems that can affect the mother
-    - Heavy bleeding that causes anemia.
-    - Problems with poor nutrition during pregnancy can continue even after delivery.
-    - Inability to breastfeed properly.
-    - Postpartum depression and other mental health problems.
-    - Risk of various diseases and death after the adolescent delivers.
-    - Urinary tract infections (VVF and RVF)
+
+● Heavy bleeding that causes anemia.
+
+● Problems with poor nutrition during pregnancy can continue even after delivery.
+
+● Inability to breastfeed properly.
+
+● Postpartum depression and other mental health problems.
+
+● Risk of various diseases and death after the adolescent delivers.
+
+● Urinary tract infections (VVF and RVF)
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -2967,12 +2985,18 @@ Huduma ya kabla ya kujifungua husaidia:
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Matatizo ya baada ya kujifungua yanayoweza kumuathiri mama
-    - Kutokwa damu kwa wingi ambako husababisha upungufu wa damu.
-    - Matatizo ya lishe duni wakati wa mimba huweza kuendelea hata baada ya kujifungua.
-    - Kutoweza kunyonyesha vizuri.
-    - Sonona baada ya kujifungua na matatizo mengine ya afya ya akili.
-    - Uwezekano wa kushambuliwa na magonjwa mbalimbali na kifo baada ya kijana balehe kujifungua.
-    - Usuri (VVF na RVF)
+
+● Kutokwa damu kwa wingi ambako husababisha upungufu wa damu.
+
+● Matatizo ya lishe duni wakati wa mimba huweza kuendelea hata baada ya kujifungua.
+
+● Kutoweza kunyonyesha vizuri.
+
+● Sonona baada ya kujifungua na matatizo mengine ya afya ya akili.
+
+● Uwezekano wa kushambuliwa na magonjwa mbalimbali na kifo baada ya kijana balehe kujifungua.
+
+● Usuri (VVF na RVF)
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -2988,15 +3012,19 @@ Huduma ya kabla ya kujifungua husaidia:
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Post delivery problems that can affect the baby
-    - Risk of the baby being born with a birth weight of less than 2500 grams.
-    - Premature birth (premature).
-    - High risk of genetic defects.
-    - Risk of infant mortality.
+
+● Risk of the baby being born with a birth weight of less than 2500 grams.
+
+● Premature birth (premature).
+
+● High risk of genetic defects.
+
+● Risk of infant mortality.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 6,
       isActive: true,
     },
@@ -3006,16 +3034,194 @@ Huduma ya kabla ya kujifungua husaidia:
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Matatizo ya baada ya kujifungua yanayoweza kumuathiri mtoto
-    - Hatari kwa mtoto kuzaliwa na uzito chini ya gram 2500.
-    - Kuzaliwa kabla ya muda (njiti).
-    - Uwezekano mkubwa wa kasoro za maumbile.
-    - Uwezekano wa vifo vya watoto wachanga.
+
+● Hatari kwa mtoto kuzaliwa na uzito chini ya gram 2500.
+
+● Kuzaliwa kabla ya muda (njiti).
+
+● Uwezekano mkubwa wa kasoro za maumbile.
+
+● Uwezekano wa vifo vya watoto wachanga.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANTENATAL_CARE',
+      nodeKey: 'ANTENATAL_CARE_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `The following are also services offered
+
+● Malaria prevention
+
+● Vaccinations
+
+● Screening for complications
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANTENATAL_CARE',
+      nodeKey: 'ANTENATAL_CARE_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Zifuatazo pia ni huduma zinazotolewa
+
+● Kinga ya malaria
+
+● Chanjo
+
+● Uchunguzi wa matatizo
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANTENATAL_CARE',
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence or help with abuse, you do not have to face it alone.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANTENATAL_CARE',
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili au msaada kuhusu unyanyasaji, usibaki peke yako.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANTENATAL_CARE',
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You can visit the nearest hospital, health centre, dispensary or youth-friendly health service for confidential support and guidance.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANTENATAL_CARE',
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza kutembelea hospitali, kituo cha afya, zahanati au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANTENATAL_CARE',
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader or healthcare provider.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANTENATAL_CARE',
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini au mtoa huduma za afya unayemwamini.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANTENATAL_CARE',
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANTENATAL_CARE',
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANTENATAL_CARE',
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `For additional support, guidance or referrals, you can contact OVAH through:
+
+Phone/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'ANTENATAL_CARE',
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
       isActive: true,
     },
     {
@@ -5746,7 +5952,7 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'ANTENATAL_CARE_01',
       optionValue: 'why_care',
-      labelEn: 'Why is it important',
+      labelEn: 'Why is it important?',
       labelSw: 'Umuhimu wake',
       nextNodeKey: 'ANTENATAL_CARE_04',
       sortOrder: 1,
@@ -5755,7 +5961,7 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'ANTENATAL_CARE_01',
       optionValue: 'services',
-      labelEn: 'Services Provided',
+      labelEn: 'Services',
       labelSw: 'Huduma zilizopo',
       nextNodeKey: 'ANTENATAL_CARE_02',
       sortOrder: 2,
@@ -5773,8 +5979,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'ANTENATAL_CARE_04',
       optionValue: 'services',
-      labelEn: 'Services Provided',
-      labelSw: 'Kutafuta Huduma',
+      labelEn: 'Services',
+      labelSw: 'Huduma',
       nextNodeKey: 'ANTENATAL_CARE_02',
       sortOrder: 1,
       isActive: true,
@@ -5791,10 +5997,19 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'ANTENATAL_CARE_04',
       optionValue: 'after_birth',
-      labelEn: 'Post birth problems',
-      labelSw: 'Baada ya uzazi?',
+      labelEn: 'After delivery',
+      labelSw: 'Baada kujifungua',
       nextNodeKey: 'ANTENATAL_CARE_03',
       sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANTENATAL_CARE_02',
+      optionValue: 'more_services',
+      labelEn: 'More services',
+      labelSw: 'Huduma zaidi',
+      nextNodeKey: 'ANTENATAL_CARE_07',
+      sortOrder: 1,
       isActive: true,
     },
     {
@@ -5803,15 +6018,6 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
       labelEn: 'How to prepare?',
       labelSw: 'Nijiandaeje?',
       nextNodeKey: 'ANTENATAL_CARE_05',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'ANTENATAL_CARE_02',
-      optionValue: 'after_birth',
-      labelEn: 'Post birth problems',
-      labelSw: 'Baada ya uzazi?',
-      nextNodeKey: 'ANTENATAL_CARE_03',
       sortOrder: 2,
       isActive: true,
     },
@@ -5827,27 +6033,27 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'ANTENATAL_CARE_05',
       optionValue: 'after_birth',
-      labelEn: 'Post birth problems',
-      labelSw: 'Baada ya uzazi?',
+      labelEn: 'After delivery',
+      labelSw: 'Baada kujifungua',
       nextNodeKey: 'ANTENATAL_CARE_03',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'ANTENATAL_CARE_05',
-      optionValue: 'seek_care',
-      labelEn: 'Seeking Healthcare',
-      labelSw: 'Kutafuta Huduma',
-      nextNodeKey: 'HEALTH_SEEKING_BEHAVIOUR_01',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'ANTENATAL_CARE_REFERRAL_01',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'ANTENATAL_CARE_05',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
       sortOrder: 3,
       isActive: true,
     },
@@ -6565,18 +6771,18 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'ANTENATAL_CARE_03',
       optionValue: 'seek_care',
-      labelEn: 'Seeking Healthcare',
-      labelSw: 'Kutafuta Huduma',
-      nextNodeKey: 'HEALTH_SEEKING_BEHAVIOUR_01',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'ANTENATAL_CARE_REFERRAL_01',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'ANTENATAL_CARE_03',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
       sortOrder: 3,
       isActive: true,
     },
@@ -6915,10 +7121,10 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'ANTENATAL_CARE_06',
-      optionValue: 'seek_care',
-      labelEn: 'Seeking Healthcare',
-      labelSw: 'Kutafuta Huduma',
-      nextNodeKey: 'HEALTH_SEEKING_BEHAVIOUR_01',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'ANTENATAL_CARE_REFERRAL_01',
       sortOrder: 1,
       isActive: true,
     },
@@ -6926,18 +7132,108 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
       nodeKey: 'ANTENATAL_CARE_06',
       optionValue: 'pregnancy_needs',
       labelEn: 'Pregnancy needs',
-      labelSw: 'Mahitaji ya ujauzito',
+      labelSw: 'Mahitaji ujauzito',
       nextNodeKey: 'ADOLESCENTS_NEEDS_DURING_PREGNANCY_01',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'ANTENATAL_CARE_06',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANTENATAL_CARE_07',
+      optionValue: 'prepare',
+      labelEn: 'How to prepare?',
+      labelSw: 'Nijiandaeje?',
+      nextNodeKey: 'ANTENATAL_CARE_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANTENATAL_CARE_07',
+      optionValue: 'after_birth',
+      labelEn: 'After delivery',
+      labelSw: 'Baada kujifungua',
+      nextNodeKey: 'ANTENATAL_CARE_03',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANTENATAL_CARE_07',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'ANTENATAL_CARE_REFERRAL_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_01',
+      optionValue: 'where_to_go',
+      labelEn: 'Where to go',
+      labelSw: 'Niende wapi?',
+      nextNodeKey: 'ANTENATAL_CARE_REFERRAL_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_02',
+      optionValue: 'trusted_people',
+      labelEn: 'Trusted people',
+      labelSw: 'Watu wa kuamini',
+      nextNodeKey: 'ANTENATAL_CARE_REFERRAL_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_03',
+      optionValue: 'safety_support',
+      labelEn: 'Safety support',
+      labelSw: 'Msaada usalama',
+      nextNodeKey: 'ANTENATAL_CARE_REFERRAL_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_03',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'ANTENATAL_CARE_REFERRAL_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_04',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'ANTENATAL_CARE_REFERRAL_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_05',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'ANTENATAL_CARE_REFERRAL_05',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
+      sortOrder: 2,
       isActive: true,
     },
     {
