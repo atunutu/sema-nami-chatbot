@@ -5947,8 +5947,9 @@ Simu/WhatsApp: 0652 522 358`,
       nodeKey: 'CONDOM_EDUCATION_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Condoms are used because they are a barrier method that helps reduce pregnancy and the transmission of sexually transmitted diseases during sexual intercourse. There are two types of condoms including male condoms and female condoms.
-`,
+      messageText: `Condoms are a barrier method that helps reduce pregnancy and the transmission of sexually transmitted diseases during sexual intercourse.
+
+There are two types of condoms including male condoms and female condoms.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -5961,8 +5962,9 @@ Simu/WhatsApp: 0652 522 358`,
       nodeKey: 'CONDOM_EDUCATION_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Kondomu hutumika kwasababu ni njia ya kizuizi inayosaidia kupunguza mimba na maambukizi ya magonjwa ya zinaa wakati wa tendo la ndoa. Kuna aina mbili za kondomu ikiwemo kondomu za kiume na kondomu za kike.
-`,
+      messageText: `Kondomu ni njia ya kizuizi inayosaidia kupunguza mimba na maambukizi ya magonjwa ya zinaa wakati wa tendo la ndoa.
+
+Kuna aina mbili za kondomu ikiwemo kondomu za kiume na kondomu za kike.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -5977,10 +5979,9 @@ Simu/WhatsApp: 0652 522 358`,
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Benefits of using condoms:
-    - help reduce the risk of pregnancy
-    - help reduce HIV transmission
-    - help reduce the transmission of sexually transmitted diseases
-`,
+● Help reduce the risk of pregnancy
+● Help reduce HIV transmission
+● Help reduce the transmission of sexually transmitted diseases`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5994,10 +5995,9 @@ Simu/WhatsApp: 0652 522 358`,
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Faida za kutumia kondomu:
-    - husaidia kupunguza hatari ya ujauzito
-    - husaidia kupunguza maambukizi ya VVU
-    - husaidia kupunguza maambukizi ya magonjwa ya zinaa
-`,
+● Husaidia kupunguza hatari ya ujauzito
+● Husaidia kupunguza maambukizi ya VVU
+● Husaidia kupunguza maambukizi ya magonjwa ya zinaa`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -6011,21 +6011,14 @@ Simu/WhatsApp: 0652 522 358`,
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `How to use a male condom correctly
-    • Check the end of your condom, do not use an expired condom.
-    • Wash your hands Open the condom package.
-    • Press one side of the package.
-    • Tear the empty side of the package, from one end to the other.
-    • Gently push the condom out of the package.
-    • Using your fingertips, remove the condom from the package.
-    • Press the top of the condom to remove air and allow space for semen.
-    • Hold the tip of the condom and put it on the erect penis.
-    • Roll it slowly to the shaft of the penis.
-    • After the act, wrap the condom and store it in paper or any other material, throw it in a pit toilet or cover it
-REMEMBER: do not apply any type of lubricant`,
+1. Check the end of your condom, do not use an expired condom.
+2. Wash your hands. Open the condom package.
+3. Press one side of the package.
+4. Tear the empty side of the package, from one end to the other.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 2,
       isActive: true,
     },
@@ -6034,24 +6027,240 @@ REMEMBER: do not apply any type of lubricant`,
       nodeKey: 'CONDOM_EDUCATION_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Jinsi ya kutumia Kondumu ya kiume kwa usahihi
-    • Angalia mwisho wa matumizi ya kondomu yako usitumie kondomu iliyopitwa na muda wa matumizi.
-    • Nawa mikono Kufungua pakiti ya kondomu.
-    • Bonyeza upande mmoja wa pakiti.
-    • Chana upande mtupu wa pakiti, toka ncha moja mpaka nyingine.
-    • Sukuma kondomu taratibu nje ya pakiti.
-    • Kwa kutumia ncha ya vidole vyako, toa kondomu nje ya pakiti.
-    • Bonyeza ncha ya juu ya kondomu ili kuondoa hewa na kuruhusu nafasi ya shahawa.
-    • Shika chuchu ya kondomu na uivalishe kwenye uume uliosimama.
-    • Iviringishe taratibu hadi kwenye shina la uume.
-    • Baada ya tendo ,ifunge kondomu na uhifadhi kwenye karatasi au kitu kingine chochote itupe kwenye choo cha shimo au uifukie
-KUMBUKA : usiipake mafuta ya aina yoyote
-`,
+      messageText: `Jinsi ya kutumia Kondomu ya kiume kwa usahihi
+1. Angalia mwisho wa matumizi ya kondomu yako usitumie kondomu iliyopitwa na muda wa matumizi.
+2. Nawa mikono. Fungua pakiti ya kondomu.
+3. Bonyeza upande mmoja wa pakiti.
+4. Chana upande mtupu wa pakiti, toka ncha moja mpaka nyingine.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 2,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'CONDOM_EDUCATION',
+      nodeKey: 'CONDOM_EDUCATION_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `How to use a male condom correctly
+5. Gently push the condom out of the package.
+6. Using your fingertips, remove the condom from the package.
+7. Press the top of the condom to remove air and allow space for semen.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'CONDOM_EDUCATION',
+      nodeKey: 'CONDOM_EDUCATION_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Jinsi ya kutumia Kondomu ya kiume kwa usahihi
+5. Sukuma kondomu taratibu nje ya pakiti.
+6. Kwa kutumia ncha ya vidole vyako, toa kondomu nje ya pakiti.
+7. Bonyeza ncha ya juu ya kondomu ili kuondoa hewa na kuruhusu nafasi ya shahawa.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'CONDOM_EDUCATION',
+      nodeKey: 'CONDOM_EDUCATION_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `How to use a male condom correctly
+8. Hold the tip of the condom and put it on the erect penis.
+9. Roll it slowly to the shaft of the penis.
+10. After the act, wrap the condom and store it in paper or any other material, throw it in a pit toilet or cover it.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'CONDOM_EDUCATION',
+      nodeKey: 'CONDOM_EDUCATION_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Jinsi ya kutumia Kondomu ya kiume kwa usahihi
+8. Shika chuchu ya kondomu na uivalishe kwenye uume uliosimama.
+9. Iviringishe taratibu hadi kwenye shina la uume.
+10. Baada ya tendo, ifunge kondomu na uhifadhi kwenye karatasi au kitu kingine chochote itupe kwenye choo cha shimo au uifukie.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'CONDOM_EDUCATION',
+      nodeKey: 'CONDOM_EDUCATION_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `REMEMBER: do not apply any type of lubricant.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'CONDOM_EDUCATION',
+      nodeKey: 'CONDOM_EDUCATION_06',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `KUMBUKA: usiipake mafuta ya aina yoyote.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'CONDOM_EDUCATION',
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence or help with abuse, you do not have to face it alone.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'CONDOM_EDUCATION',
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili au msaada kuhusu unyanyasaji, usibaki peke yako.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'CONDOM_EDUCATION',
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You can visit the nearest hospital, health centre, dispensary or youth-friendly health service for confidential support and guidance.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'CONDOM_EDUCATION',
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza kutembelea hospitali, kituo cha afya, zahanati au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'CONDOM_EDUCATION',
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader or healthcare provider.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'CONDOM_EDUCATION',
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini au mtoa huduma za afya unayemwamini.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'CONDOM_EDUCATION',
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'CONDOM_EDUCATION',
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'CONDOM_EDUCATION',
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `For additional support, guidance or referrals, you can contact OVAH through:
+
+Phone/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'CONDOM_EDUCATION',
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
       isActive: true,
     },
 
@@ -8038,8 +8247,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'CONDOM_EDUCATION_03',
       optionValue: 'prevent_hiv',
-      labelEn: 'How to prevent HIV',
-      labelSw: 'Njia za kuzuia VVU',
+      labelEn: 'Prevention',
+      labelSw: 'Kujikinga',
       nextNodeKey: 'HIV_AND_AIDS_04',
       sortOrder: 2,
       isActive: true,
@@ -8838,10 +9047,10 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'CONDOM_EDUCATION_02',
-      optionValue: 'condom_info',
-      labelEn: 'Use of condoms',
-      labelSw: 'Matumizi ya kondomu',
-      nextNodeKey: 'CONDOM_USE_01',
+      optionValue: 'more_steps',
+      labelEn: 'More steps',
+      labelSw: 'Hatua zaidi',
+      nextNodeKey: 'CONDOM_EDUCATION_04',
       sortOrder: 1,
       isActive: true,
     },
@@ -8856,11 +9065,155 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'CONDOM_EDUCATION_02',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'CONDOM_EDUCATION_REFERRAL_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'CONDOM_EDUCATION_04',
+      optionValue: 'final_steps',
+      labelEn: 'Final steps',
+      labelSw: 'Hatua za mwisho',
+      nextNodeKey: 'CONDOM_EDUCATION_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'CONDOM_EDUCATION_04',
+      optionValue: 'reminder',
+      labelEn: 'Reminder',
+      labelSw: 'Kumbuka',
+      nextNodeKey: 'CONDOM_EDUCATION_06',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'CONDOM_EDUCATION_04',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'CONDOM_EDUCATION_REFERRAL_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'CONDOM_EDUCATION_05',
+      optionValue: 'reminder',
+      labelEn: 'Reminder',
+      labelSw: 'Kumbuka',
+      nextNodeKey: 'CONDOM_EDUCATION_06',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'CONDOM_EDUCATION_05',
+      optionValue: 'condom_use',
+      labelEn: 'Condom use',
+      labelSw: 'Matumizi kondomu',
+      nextNodeKey: 'CONDOM_USE_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'CONDOM_EDUCATION_05',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'CONDOM_EDUCATION_REFERRAL_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'CONDOM_EDUCATION_06',
+      optionValue: 'condom_use',
+      labelEn: 'Condom use',
+      labelSw: 'Matumizi kondomu',
+      nextNodeKey: 'CONDOM_USE_01',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'CONDOM_EDUCATION_06',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'CONDOM_EDUCATION_06',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'CONDOM_EDUCATION_REFERRAL_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_01',
+      optionValue: 'where_to_go',
+      labelEn: 'Where to go',
+      labelSw: 'Niende wapi?',
+      nextNodeKey: 'CONDOM_EDUCATION_REFERRAL_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_02',
+      optionValue: 'trusted_people',
+      labelEn: 'Trusted people',
+      labelSw: 'Watu wa kuamini',
+      nextNodeKey: 'CONDOM_EDUCATION_REFERRAL_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_03',
+      optionValue: 'safety_support',
+      labelEn: 'Safety support',
+      labelSw: 'Msaada usalama',
+      nextNodeKey: 'CONDOM_EDUCATION_REFERRAL_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_03',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'CONDOM_EDUCATION_REFERRAL_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_04',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'CONDOM_EDUCATION_REFERRAL_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_05',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'CONDOM_EDUCATION_REFERRAL_05',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
+      sortOrder: 2,
       isActive: true,
     },
     {
