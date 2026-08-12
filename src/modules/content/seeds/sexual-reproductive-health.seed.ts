@@ -1345,11 +1345,16 @@ Mimba ni mchakato wa asili wa kibiolojia, lakini pia huleta mabadiliko ya kimwil
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `So, How Does Pregnancy Happen?
-    • An ovary releases an egg (ovulation).
-    • Sperm fertilizes the egg.
-    • The fertilized egg travels to the uterus.
-    • The egg attaches to the uterine wall.
-    • Pregnancy begins.
+
+● An ovary releases an egg (ovulation).
+
+● Sperm fertilizes the egg.
+
+● The fertilized egg travels to the uterus.
+
+● The egg attaches to the uterine wall.
+
+● Pregnancy begins.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1365,11 +1370,16 @@ Mimba ni mchakato wa asili wa kibiolojia, lakini pia huleta mabadiliko ya kimwil
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Ujauzito Hutokeaje?
-    • Ovari hutoa yai (kutoa yai).
-    • Mbegu hutungisha yai.
-    • Yai lililorutubishwa husafiri hadi kwenye mfuko wa uzazi.
-    • Yai hushikamana na ukuta wa mfuko wa uzazi.
-    • Mimba huanza.
+
+● Ovari hutoa yai (kutoa yai).
+
+● Mbegu hutungisha yai.
+
+● Yai lililorutubishwa husafiri hadi kwenye mfuko wa uzazi.
+
+● Yai hushikamana na ukuta wa mfuko wa uzazi.
+
+● Mimba huanza.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1385,12 +1395,18 @@ Mimba ni mchakato wa asili wa kibiolojia, lakini pia huleta mabadiliko ya kimwil
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Some Early Signs of Pregnancy
-    - Missed period
-    - Nausea or vomiting
-    - Tiredness
-    - Breast tenderness
-    - Frequent urination
-    - Mood changes
+
+● Missed period
+
+● Nausea or vomiting
+
+● Tiredness
+
+● Breast tenderness
+
+● Frequent urination
+
+● Mood changes
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1405,12 +1421,18 @@ Mimba ni mchakato wa asili wa kibiolojia, lakini pia huleta mabadiliko ya kimwil
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Dalili za Awali za Ujauzito
-    - Kukosa hedhi
-    - Kichefuchefu au kutapika
-    - Uchovu
-    - Uchungu wa matiti
-    - Kukojoa mara kwa mara
-    - Mabadiliko ya hisia
+
+● Kukosa hedhi
+
+● Kichefuchefu au kutapika
+
+● Uchovu
+
+● Uchungu wa matiti
+
+● Kukojoa mara kwa mara
+
+● Mabadiliko ya hisia
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1426,10 +1448,14 @@ Mimba ni mchakato wa asili wa kibiolojia, lakini pia huleta mabadiliko ya kimwil
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Changes that happens during the First Trimester (Weeks 1-12)
-    - Morning sickness may occur
-    - Increased tiredness
-    - Hormonal changes
-    - Emotional changes
+
+● Morning sickness may occur
+
+● Increased tiredness
+
+● Hormonal changes
+
+● Emotional changes
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: 'image_pregnancy_stages',
@@ -1444,10 +1470,14 @@ Mimba ni mchakato wa asili wa kibiolojia, lakini pia huleta mabadiliko ya kimwil
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Mabadiliko yanayotokea wakati wa Trimester ya Kwanza (Wiki 1-12)
-    - Kichefuchefu cha asubuhi kinaweza kutokea
-    - Kuongezeka kwa uchovu
-    - Mabadiliko ya homoni
-    - Mabadiliko ya kihisia
+
+● Kichefuchefu cha asubuhi kinaweza kutokea
+
+● Kuongezeka kwa uchovu
+
+● Mabadiliko ya homoni
+
+● Mabadiliko ya kihisia
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: 'image_pregnancy_stages',
@@ -1462,10 +1492,14 @@ Mimba ni mchakato wa asili wa kibiolojia, lakini pia huleta mabadiliko ya kimwil
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Important Facts about pregnancy
-    - Missing a period does not always mean pregnancy.
-    - Pregnancy tests can help determine whether someone is pregnant.
-    - Early care improves health outcomes.
-    - Every pregnancy is different.
+
+● Missing a period does not always mean pregnancy.
+
+● Pregnancy tests can help determine whether someone is pregnant.
+
+● Early care improves health outcomes.
+
+● Every pregnancy is different.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1480,10 +1514,14 @@ Mimba ni mchakato wa asili wa kibiolojia, lakini pia huleta mabadiliko ya kimwil
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Ukweli Muhimu kuhusu ujauzito
-    - Kukosa hedhi haimaanishi ujauzito kila wakati.
-    - Vipimo vya ujauzito vinaweza kusaidia kubaini kama mtu ana mimba.
-    - Huduma ya mapema huboresha matokeo ya kiafya.
-    - Kila mimba ni tofauti.
+
+● Kukosa hedhi haimaanishi ujauzito kila wakati.
+
+● Vipimo vya ujauzito vinaweza kusaidia kubaini kama mtu ana mimba.
+
+● Huduma ya mapema huboresha matokeo ya kiafya.
+
+● Kila mimba ni tofauti.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1498,14 +1536,12 @@ Mimba ni mchakato wa asili wa kibiolojia, lakini pia huleta mabadiliko ya kimwil
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Second Trimester (Weeks 13-27)
-    - Belly begins to grow
-    - Baby starts moving
-    - Increased energy for many women
 
-Third Trimester (Weeks 28-40)
-    - Rapid baby growth
-    - Increased body discomfort
-    - Preparation for birth
+● Belly begins to grow
+
+● Baby starts moving
+
+● Increased energy for many women
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: 'image_pregnancy_stages',
@@ -1520,14 +1556,12 @@ Third Trimester (Weeks 28-40)
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Kipindi cha Pili cha Miezi 13-27)
-    - Tumbo linaanza kukua
-    - Mtoto anaanza kusogea
-    - Kuongezeka kwa nguvu kwa wanawake wengi
 
-Kipindi cha Tatu cha Miezi 28-40)
-    - Ukuaji wa haraka wa mtoto
-    - Kuongezeka kwa usumbufu wa mwili
-    - Maandalizi ya kuzaliwa
+● Tumbo linaanza kukua
+
+● Mtoto anaanza kusogea
+
+● Kuongezeka kwa nguvu kwa wanawake wengi
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: 'image_pregnancy_stages',
@@ -1538,23 +1572,69 @@ Kipindi cha Tatu cha Miezi 28-40)
     },
     {
       subtopicCode: 'PREGNANCY',
+      nodeKey: 'PREGNANCY_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Third Trimester (Weeks 28-40)
+
+● Rapid baby growth
+
+● Increased body discomfort
+
+● Preparation for birth
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: 'image_pregnancy_stages',
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PREGNANCY',
+      nodeKey: 'PREGNANCY_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kipindi cha Tatu cha Miezi 28-40)
+
+● Ukuaji wa haraka wa mtoto
+
+● Kuongezeka kwa usumbufu wa mwili
+
+● Maandalizi ya kuzaliwa
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: 'image_pregnancy_stages',
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PREGNANCY',
       nodeKey: 'PREGNANCY_05',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Common Concerns
-    • My period is late, am I pregnant?
-    • I think I may be pregnant.
-    • Can stress delay my period?
-    • When should I take a pregnancy test?
-    • I had sex once. Can I become pregnant?
-    • Can I tell immediately if I am pregnant?
+
+● My period is late, am I pregnant?
+
+● I think I may be pregnant.
+
+● Can stress delay my period?
+
+● When should I take a pregnancy test?
+
+● I had sex once. Can I become pregnant?
+
+● Can I tell immediately if I am pregnant?
 
 NB: A late period can have many causes including stress, illness, hormonal changes, or pregnancy.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 5,
       isActive: true,
     },
@@ -1564,20 +1644,160 @@ NB: A late period can have many causes including stress, illness, hormonal chang
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Maswali ya Kawaida ambayo vijana hujiuliza
-    • Hedhi yangu imechelewa, je, nina mimba?
-    • Nadhani naweza kuwa na mimba.
-    • Je, msongo wa mawazo unaweza kuchelewesha hedhi yangu?
-    • Ni lini ninapaswa kufanya kipimo cha ujauzito?
-    • nilifanya ngono mara moja. Je, ninaweza kupata mimba?
-    • Je, ninaweza kujua mara moja kama nina mimba?
+
+● Hedhi yangu imechelewa, je, nina mimba?
+
+● Nadhani naweza kuwa na mimba.
+
+● Je, msongo wa mawazo unaweza kuchelewesha hedhi yangu?
+
+● Ni lini ninapaswa kufanya kipimo cha ujauzito?
+
+● Nilifanya ngono mara moja. Je, ninaweza kupata mimba?
+
+● Je, ninaweza kujua mara moja kama nina mimba?
 
 NB: Hedhi iliyochelewa inaweza kuwa na sababu nyingi ikiwa ni pamoja na msongo wa mawazo, ugonjwa, mabadiliko ya homoni, au ujauzito.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PREGNANCY',
+      nodeKey: 'PREGNANCY_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence or help with abuse, you do not have to face it alone.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PREGNANCY',
+      nodeKey: 'PREGNANCY_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili au msaada kuhusu unyanyasaji, usibaki peke yako.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PREGNANCY',
+      nodeKey: 'PREGNANCY_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You can visit the nearest hospital, health centre, dispensary or youth-friendly health service for confidential support and guidance.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PREGNANCY',
+      nodeKey: 'PREGNANCY_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza kutembelea hospitali, kituo cha afya, zahanati au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PREGNANCY',
+      nodeKey: 'PREGNANCY_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader or healthcare provider.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PREGNANCY',
+      nodeKey: 'PREGNANCY_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini au mtoa huduma za afya unayemwamini.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PREGNANCY',
+      nodeKey: 'PREGNANCY_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PREGNANCY',
+      nodeKey: 'PREGNANCY_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PREGNANCY',
+      nodeKey: 'PREGNANCY_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `For additional support, guidance or referrals, you can contact OVAH through:
+
+Phone/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'PREGNANCY',
+      nodeKey: 'PREGNANCY_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
       isActive: true,
     },
 
@@ -4313,9 +4533,9 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'PREGNANCY_01',
       optionValue: 'stages',
-      labelEn: 'Early stages',
-      labelSw: 'Hatua za awali',
-      nextNodeKey: 'PREGNANCY_04',
+      labelEn: 'Key facts',
+      labelSw: 'Ukweli muhimu',
+      nextNodeKey: 'PREGNANCY_06',
       sortOrder: 3,
       isActive: true,
     },
@@ -4340,8 +4560,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'PREGNANCY_02',
       optionValue: 'concerns',
-      labelEn: 'Common concerns',
-      labelSw: 'Hofu zilizopo',
+      labelEn: 'Concerns',
+      labelSw: 'Wasiwasi',
       nextNodeKey: 'PREGNANCY_05',
       sortOrder: 3,
       isActive: true,
@@ -4367,8 +4587,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'PREGNANCY_03',
       optionValue: 'concerns',
-      labelEn: 'Common concerns',
-      labelSw: 'Hofu zilizopo',
+      labelEn: 'Concerns',
+      labelSw: 'Wasiwasi',
       nextNodeKey: 'PREGNANCY_05',
       sortOrder: 3,
       isActive: true,
@@ -4376,8 +4596,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'PREGNANCY_06',
       optionValue: 'stages',
-      labelEn: 'Early stages',
-      labelSw: 'Hatua za awali',
+      labelEn: 'First trimester',
+      labelSw: 'Miezi ya kwanza',
       nextNodeKey: 'PREGNANCY_04',
       sortOrder: 1,
       isActive: true,
@@ -4394,8 +4614,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'PREGNANCY_06',
       optionValue: 'concerns',
-      labelEn: 'Common concerns',
-      labelSw: 'Hofu zilizopo',
+      labelEn: 'Concerns',
+      labelSw: 'Wasiwasi',
       nextNodeKey: 'PREGNANCY_05',
       sortOrder: 3,
       isActive: true,
@@ -4403,8 +4623,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'PREGNANCY_04',
       optionValue: 'later_stages',
-      labelEn: 'Later stages',
-      labelSw: 'Hatua zaidi?',
+      labelEn: 'Second trimester',
+      labelSw: 'Miezi ya pili',
       nextNodeKey: 'PREGNANCY_07',
       sortOrder: 1,
       isActive: true,
@@ -4412,8 +4632,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'PREGNANCY_04',
       optionValue: 'concerns',
-      labelEn: 'Common concerns',
-      labelSw: 'Hofu zilizopo',
+      labelEn: 'Concerns',
+      labelSw: 'Wasiwasi',
       nextNodeKey: 'PREGNANCY_05',
       sortOrder: 2,
       isActive: true,
@@ -4429,10 +4649,10 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'PREGNANCY_07',
-      optionValue: 'concerns',
-      labelEn: 'Common concerns',
-      labelSw: 'Hofu zilizopo',
-      nextNodeKey: 'PREGNANCY_05',
+      optionValue: 'third_trimester',
+      labelEn: 'Third trimester',
+      labelSw: 'Miezi ya tatu',
+      nextNodeKey: 'PREGNANCY_08',
       sortOrder: 1,
       isActive: true,
     },
@@ -4447,10 +4667,37 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'PREGNANCY_07',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'concerns',
+      labelEn: 'Concerns',
+      labelSw: 'Wasiwasi',
+      nextNodeKey: 'PREGNANCY_05',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'PREGNANCY_08',
+      optionValue: 'concerns',
+      labelEn: 'Concerns',
+      labelSw: 'Wasiwasi',
+      nextNodeKey: 'PREGNANCY_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'PREGNANCY_08',
+      optionValue: 'anc',
+      labelEn: 'Antenatal care',
+      labelSw: 'Huduma kabla kuzaa',
+      nextNodeKey: 'ANTENATAL_CARE_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'PREGNANCY_08',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'PREGNANCY_REFERRAL_01',
       sortOrder: 3,
       isActive: true,
     },
@@ -6085,29 +6332,92 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'PREGNANCY_05',
-      optionValue: 'take_test',
-      labelEn: 'HIV Testing Services',
-      labelSw: 'Upimaji wa VVU',
-      nextNodeKey: 'HIV_TESTING_SERVICES_01',
+      optionValue: 'antenatal_care',
+      labelEn: 'Antenatal care',
+      labelSw: 'Huduma kabla kuzaa',
+      nextNodeKey: 'ANTENATAL_CARE_01',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'PREGNANCY_05',
-      optionValue: 'what_care',
-      labelEn: 'Antenatal care',
-      labelSw: 'Huduma kabla kuzaa',
-      nextNodeKey: 'ANTENATAL_CARE_01',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'PREGNANCY_REFERRAL_01',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'PREGNANCY_05',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'PREGNANCY_REFERRAL_01',
+      optionValue: 'where_to_go',
+      labelEn: 'Where to go',
+      labelSw: 'Niende wapi?',
+      nextNodeKey: 'PREGNANCY_REFERRAL_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'PREGNANCY_REFERRAL_02',
+      optionValue: 'trusted_people',
+      labelEn: 'Trusted people',
+      labelSw: 'Watu wa kuamini',
+      nextNodeKey: 'PREGNANCY_REFERRAL_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'PREGNANCY_REFERRAL_03',
+      optionValue: 'safety_support',
+      labelEn: 'Safety support',
+      labelSw: 'Msaada usalama',
+      nextNodeKey: 'PREGNANCY_REFERRAL_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'PREGNANCY_REFERRAL_03',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'PREGNANCY_REFERRAL_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'PREGNANCY_REFERRAL_04',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'PREGNANCY_REFERRAL_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'PREGNANCY_REFERRAL_05',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'PREGNANCY_REFERRAL_05',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
+      sortOrder: 2,
       isActive: true,
     },
     {
