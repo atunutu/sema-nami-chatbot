@@ -5214,8 +5214,7 @@ Simu/WhatsApp: 0652 522 358`,
       nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Sexually transmitted diseases are those that are spread through unprotected sex with an infected person. The relationship between sexually transmitted diseases and HIV is that the transmission route is largely similar, a person with sexually transmitted diseases has a high chance of getting HIV infection during sexual intercourse, and the methods of protection are also similar.
-`,
+      messageText: `Sexually transmitted diseases are those that are spread through unprotected sex with an infected person.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -5228,8 +5227,7 @@ Simu/WhatsApp: 0652 522 358`,
       nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Magonjwa ya ngono ni yale yaenezwayo kwa njia ya kujamiiana na mtu mwenye maambukizi ya magonjwa hayo bila kutumia kinga. Uhusiano kati ya magonjwa ya ngono na VVU ni kwamba njia ya uambukizo inashabihiana kwa kiasi kikubwa mtu mwenye magonjwa ya ngono anauwezekano mkubwa wa kupata maambukizi ya VVU wakati wa kujamiiana pia njia za kujikinga zinafanana.
-`,
+      messageText: `Magonjwa ya ngono ni yale yaenezwayo kwa njia ya kujamiiana na mtu mwenye maambukizi ya magonjwa hayo bila kutumia kinga.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: true,
@@ -5242,11 +5240,11 @@ Simu/WhatsApp: 0652 522 358`,
       nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_04',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Diseases that cause vaginal discharge / discharge are as follows
-    - Gonorrhea (Gonorrhea)
-    - Chlamydia (Chlamydia) Genital Genital Candidiasis
-    - Trichomoniasis (Trichomoniasis)
-`,
+      messageText: `Diseases that cause vaginal discharge / discharge are as follows:
+● Gonorrhea (Gonorrhea)
+● Chlamydia (Chlamydia)
+● Genital Candidiasis
+● Trichomoniasis (Trichomoniasis)`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5259,12 +5257,11 @@ Simu/WhatsApp: 0652 522 358`,
       nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_04',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Magonjwa yanayosababisha kutokwa na uchafu /usaha sehemu za siri ni kama yafuatayo
-    - Kisonono (Gonorrhea)
-    - Klamadia (Chlamydia)Jamii Ya Kisonono
-    - Fangasi (Genital Candidiasis
-    - Kisamaki (Trichomoniasis)
-`,
+      messageText: `Magonjwa yanayosababisha kutokwa na uchafu / usaha sehemu za siri ni kama yafuatayo:
+● Kisonono (Gonorrhea)
+● Klamadia (Chlamydia)
+● Fangasi (Genital Candidiasis)
+● Kisamaki (Trichomoniasis)`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5278,12 +5275,11 @@ Simu/WhatsApp: 0652 522 358`,
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Symptoms of diseases that cause vaginal discharge
-    ● Discharge / discharge from the vagina or penis
-    ● Severe pain during urination, especially in men
-    ● Itching of the vagina or penis
-    ● Abdominal pain below the navel (women)
-    ● Pain during sexual intercourse
-`,
+● Discharge / discharge from the vagina or penis
+● Severe pain during urination, especially in men
+● Itching of the vagina or penis
+● Abdominal pain below the navel (women)
+● Pain during sexual intercourse`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5296,13 +5292,12 @@ Simu/WhatsApp: 0652 522 358`,
       nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_02',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: ` Dalili za magonjwa yanayosababisha kutokwa na uchafu sehemu za siri
-    ● Kutokwa uchafu / usaha sehemu za uke au uume
-    ● Maumivu makali wakati wa kukojoa hasa wanaume
-    ● Kuwashwa sehemu za uke au uume
-    ● Maumivu ya tumbo chini ya kitovu (wanawake)
-    ● Maumivu wakati wa kujamiiana
-`,
+      messageText: `Dalili za magonjwa yanayosababisha kutokwa na uchafu sehemu za siri
+● Kutokwa uchafu / usaha sehemu za uke au uume
+● Maumivu makali wakati wa kukojoa hasa wanaume
+● Kuwashwa sehemu za uke au uume
+● Maumivu ya tumbo chini ya kitovu (wanawake)
+● Maumivu wakati wa kujamiiana`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -5316,16 +5311,16 @@ Simu/WhatsApp: 0652 522 358`,
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Effects of diseases that cause vaginal discharge in women and men
-    ● Infection in the pelvic cavity
-    ● Infertility / infertility.
-    ● Pregnancy outside the uterus.
-    ● Miscarriage
-    ● Urethral obstruction
-    ● Swelling of the testicles`,
+● Infection in the pelvic cavity
+● Infertility / infertility
+● Pregnancy outside the uterus
+● Miscarriage
+● Urethral obstruction
+● Swelling of the testicles`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 3,
       isActive: true,
     },
@@ -5335,18 +5330,181 @@ Simu/WhatsApp: 0652 522 358`,
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Madhara ya magonjwa yanayosababisha kutokwa uchafu sehemu za siri kwa wanawake na wanaume
-    ● Uambukizo kwenye pango la nyonga
-    ● Ugumba/utasa.
-    ● Mimba kutunga nje ya mji wa mimba.
-    ● Kuharibika kwa mimba
-    ● Kuziba mrija wa mkojo
-    ● Kuvimba mapumbu
-`,
+● Uambukizo kwenye pango la nyonga
+● Ugumba/utasa
+● Mimba kutunga nje ya mji wa mimba
+● Kuharibika kwa mimba
+● Kuziba mrija wa mkojo
+● Kuvimba mapumbu`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 3,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SEXUALLY_TRANSMITTED_INFECTIONS',
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `The relationship between sexually transmitted diseases and HIV is that the transmission route is largely similar.
+
+A person with sexually transmitted diseases has a high chance of getting HIV infection during sexual intercourse, and the methods of protection are also similar.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SEXUALLY_TRANSMITTED_INFECTIONS',
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Uhusiano kati ya magonjwa ya ngono na VVU ni kwamba njia ya uambukizo inashabihiana kwa kiasi kikubwa.
+
+Mtu mwenye magonjwa ya ngono ana uwezekano mkubwa wa kupata maambukizi ya VVU wakati wa kujamiiana, na pia njia za kujikinga zinafanana.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SEXUALLY_TRANSMITTED_INFECTIONS',
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence or help with abuse, you do not have to face it alone.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SEXUALLY_TRANSMITTED_INFECTIONS',
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili au msaada kuhusu unyanyasaji, usibaki peke yako.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SEXUALLY_TRANSMITTED_INFECTIONS',
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You can visit the nearest hospital, health centre, dispensary or youth-friendly health service for confidential support and guidance.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SEXUALLY_TRANSMITTED_INFECTIONS',
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza kutembelea hospitali, kituo cha afya, zahanati au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SEXUALLY_TRANSMITTED_INFECTIONS',
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader or healthcare provider.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SEXUALLY_TRANSMITTED_INFECTIONS',
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini au mtoa huduma za afya unayemwamini.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SEXUALLY_TRANSMITTED_INFECTIONS',
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SEXUALLY_TRANSMITTED_INFECTIONS',
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SEXUALLY_TRANSMITTED_INFECTIONS',
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `For additional support, guidance or referrals, you can contact OVAH through:
+
+Phone/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'SEXUALLY_TRANSMITTED_INFECTIONS',
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
       isActive: true,
     },
 
@@ -7349,19 +7507,19 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_01',
-      optionValue: 'sti_list',
-      labelEn: 'Examples of STIS',
-      labelSw: 'Mifano ya magonjwa',
-      nextNodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_04',
+      optionValue: 'sti_hiv',
+      labelEn: 'STIs and HIV',
+      labelSw: 'VVU na magonjwa',
+      nextNodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_05',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_01',
-      optionValue: 'sti_signs',
-      labelEn: 'Signs of STIs',
-      labelSw: 'Dalili za magonjwa',
-      nextNodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_02',
+      optionValue: 'sti_list',
+      labelEn: 'STI examples',
+      labelSw: 'Mifano magonjwa',
+      nextNodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_04',
       sortOrder: 2,
       isActive: true,
     },
@@ -7378,7 +7536,7 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
       nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_04',
       optionValue: 'sti_signs',
       labelEn: 'Signs of STIs',
-      labelSw: 'Dalili za magonjwa',
+      labelSw: 'Dalili',
       nextNodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_02',
       sortOrder: 1,
       isActive: true,
@@ -7387,7 +7545,7 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
       nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_04',
       optionValue: 'effects',
       labelEn: 'Effects of STIs',
-      labelSw: 'Madhara yake',
+      labelSw: 'Madhara',
       nextNodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_03',
       sortOrder: 2,
       isActive: true,
@@ -7395,8 +7553,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_04',
       optionValue: 'testing',
-      labelEn: 'HIV Testing Services',
-      labelSw: 'Huduma za Upimaji',
+      labelEn: 'HIV testing',
+      labelSw: 'Upimaji VVU',
       nextNodeKey: 'HIV_TESTING_SERVICES_01',
       sortOrder: 3,
       isActive: true,
@@ -7405,7 +7563,7 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
       nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_02',
       optionValue: 'effects',
       labelEn: 'Effects of STIs',
-      labelSw: 'Madhara ya magonjwa',
+      labelSw: 'Madhara',
       nextNodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_03',
       sortOrder: 1,
       isActive: true,
@@ -7413,8 +7571,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_02',
       optionValue: 'testing',
-      labelEn: 'HIV Testing Services',
-      labelSw: 'Huduma za Upimaji',
+      labelEn: 'HIV testing',
+      labelSw: 'Upimaji VVU',
       nextNodeKey: 'HIV_TESTING_SERVICES_01',
       sortOrder: 2,
       isActive: true,
@@ -7426,6 +7584,96 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
       labelSw: 'Kwanini Kondomu?',
       nextNodeKey: 'CONDOM_EDUCATION_01',
       sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_05',
+      optionValue: 'sti_list',
+      labelEn: 'STI examples',
+      labelSw: 'Mifano magonjwa',
+      nextNodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_05',
+      optionValue: 'sti_signs',
+      labelEn: 'Signs of STIs',
+      labelSw: 'Dalili',
+      nextNodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_02',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_05',
+      optionValue: 'hiv',
+      labelEn: 'What is HIV?',
+      labelSw: 'VVU ni nini?',
+      nextNodeKey: 'HIV_AND_AIDS_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_01',
+      optionValue: 'where_to_go',
+      labelEn: 'Where to go',
+      labelSw: 'Niende wapi?',
+      nextNodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_02',
+      optionValue: 'trusted_people',
+      labelEn: 'Trusted people',
+      labelSw: 'Watu wa kuamini',
+      nextNodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_03',
+      optionValue: 'safety_support',
+      labelEn: 'Safety support',
+      labelSw: 'Msaada usalama',
+      nextNodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_03',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_04',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_05',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_05',
+      optionValue: 'main_menu',
+      labelEn: 'Main Menu',
+      labelSw: 'Menyu Kuu',
+      nextNodeKey: 'CATEGORY_MENU',
+      sortOrder: 2,
       isActive: true,
     },
     {
@@ -9546,8 +9794,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_03',
       optionValue: 'need_testing',
-      labelEn: 'HIV Testing Services',
-      labelSw: 'Huduma za Upimaji',
+      labelEn: 'HIV testing',
+      labelSw: 'Upimaji VVU',
       nextNodeKey: 'HIV_TESTING_SERVICES_01',
       sortOrder: 1,
       isActive: true,
@@ -9563,10 +9811,10 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_03',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'SEXUALLY_TRANSMITTED_INFECTIONS_REFERRAL_01',
       sortOrder: 3,
       isActive: true,
     },
