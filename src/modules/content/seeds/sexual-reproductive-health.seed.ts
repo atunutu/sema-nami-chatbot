@@ -992,6 +992,7 @@ Simu/WhatsApp: 0652 522 358`,
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Human reproduction is the biological process through which a pregnancy begins and a baby develops.
+
 It occurs when a sperm cell from a male joins with an egg cell from a female.
 Pregnancy cannot occur without fertilization.
 `,
@@ -1008,6 +1009,7 @@ Pregnancy cannot occur without fertilization.
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Mimba hutungwa pale mbegu ya kiume inapokutana na yai la mwanamke na kulirutubisha.
+
 Ujauzito hauwezi kutokea bila urutubishaji.
 `,
       inputType: InputType.BUTTON,
@@ -1023,7 +1025,9 @@ Ujauzito hauwezi kutokea bila urutubishaji.
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Ovulation usually happens once during a menstrual cycle.
+
 Sperm can survive in the female reproductive tract for several days, which means pregnancy can occur even during the first sexual encounter.
+
 Additionally, a girl can become pregnant before her first period if ovulation has already taken place.
 `,
       inputType: InputType.BUTTON,
@@ -1039,7 +1043,9 @@ Additionally, a girl can become pregnant before her first period if ovulation ha
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Ovulusheni kwa kawaida hutokea mara moja katika mzunguko wa hedhi.
+
 Mbegu za kiume zinaweza kuishi kwenye njia ya uzazi ya mwanamke kwa siku kadhaa, jambo linalomaanisha kuwa ujauzito unaweza kutokea hata katika tendo la ndoa la kwanza.
+
 Zaidi ya hayo, msichana anaweza kupata ujauzito kabla ya kupata hedhi yake ya kwanza ikiwa ovulusheni tayari imetokea.
 `,
       inputType: InputType.BUTTON,
@@ -1055,10 +1061,10 @@ Zaidi ya hayo, msichana anaweza kupata ujauzito kabla ya kupata hedhi yake ya kw
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `How Does Human Reproduction Happen?
-    ● Step 1: Ovulation (The ovary releases an egg)
-    ● Step 2: Fertilization( If sperm meets the egg, fertilization may occur)
-    ● Step 3: Implantation(The fertilized egg travels to the uterus and attaches to the uterine wall)
-    ● Step 4: Pregnancy Begins( Once implantation occurs, pregnancy starts)`,
+
+● Step 1: Ovulation (The ovary releases an egg)
+
+● Step 2: Fertilization (If sperm meets the egg, fertilization may occur)`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1072,10 +1078,10 @@ Zaidi ya hayo, msichana anaweza kupata ujauzito kabla ya kupata hedhi yake ya kw
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Hatua za Kutungwa kwa Mimba
-    ● Hatua ya 1: Utoaji wa Yai (Ovari hutoa yai)
-    ● Hatua ya 2: Urutubishaji (Mbegu ya kiume hukutana na yai)
-    ● Hatua ya 3: Kujishikiza(Yai lililorutubishwa hujishikiza kwenye mfuko wa uzazi)
-    ● Hatua ya 4: Ujauzito Kuanza(Baada ya kujishikiza, ujauzito huanza)
+
+● Hatua ya 1: Utoaji wa Yai (Ovari hutoa yai)
+
+● Hatua ya 2: Urutubishaji (Mbegu ya kiume hukutana na yai)
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1086,18 +1092,57 @@ Zaidi ya hayo, msichana anaweza kupata ujauzito kabla ya kupata hedhi yake ya kw
     },
     {
       subtopicCode: 'HUMAN_REPRODUCTION',
+      nodeKey: 'HUMAN_REPRODUCTION_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `How Does Human Reproduction Happen?
+
+● Step 3: Implantation (The fertilized egg travels to the uterus and attaches to the uterine wall)
+
+● Step 4: Pregnancy Begins (Once implantation occurs, pregnancy starts)`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HUMAN_REPRODUCTION',
+      nodeKey: 'HUMAN_REPRODUCTION_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Hatua za Kutungwa kwa Mimba
+
+● Hatua ya 3: Kujishikiza (Yai lililorutubishwa hujishikiza kwenye mfuko wa uzazi)
+
+● Hatua ya 4: Ujauzito Kuanza (Baada ya kujishikiza, ujauzito huanza)
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HUMAN_REPRODUCTION',
       nodeKey: 'HUMAN_REPRODUCTION_02',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Common Concerns:
-    • Can I get pregnant the first time I have sex?
-    • Can pregnancy happen if my period has not started yet?
-    • How long does sperm survive?
-    • Can pregnancy occur if ejaculation happens near the vagina?`,
+
+● Can I get pregnant the first time I have sex?
+
+● Can pregnancy happen if my period has not started yet?
+
+● How long does sperm survive?
+
+● Can pregnancy occur if ejaculation happens near the vagina?`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 2,
       isActive: true,
     },
@@ -1107,15 +1152,153 @@ Zaidi ya hayo, msichana anaweza kupata ujauzito kabla ya kupata hedhi yake ya kw
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Wasiwasi wa kawaida:
-    • Mimba haiwezi kutungwa bila urutubishaji.
-    • Yai hutolewa mara moja katika mzunguko wa hedhi.
-    • Mbegu za kiume zinaweza kuishi kwa siku kadhaa ndani ya mwili wa mwanamke.
-    • Mimba inaweza kutokea hata mara ya kwanza kufanya ngono.`,
+
+● Mimba haiwezi kutungwa bila urutubishaji.
+
+● Yai hutolewa mara moja katika mzunguko wa hedhi.
+
+● Mbegu za kiume zinaweza kuishi kwa siku kadhaa ndani ya mwili wa mwanamke.
+
+● Mimba inaweza kutokea hata mara ya kwanza kufanya ngono.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 2,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HUMAN_REPRODUCTION',
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence or help with abuse, you do not have to face it alone.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HUMAN_REPRODUCTION',
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili au msaada kuhusu unyanyasaji, usibaki peke yako.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HUMAN_REPRODUCTION',
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You can visit the nearest hospital, health centre, dispensary or youth-friendly health service for confidential support and guidance.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HUMAN_REPRODUCTION',
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza kutembelea hospitali, kituo cha afya, zahanati au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HUMAN_REPRODUCTION',
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader or healthcare provider.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HUMAN_REPRODUCTION',
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini au mtoa huduma za afya unayemwamini.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HUMAN_REPRODUCTION',
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HUMAN_REPRODUCTION',
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HUMAN_REPRODUCTION',
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `For additional support, guidance or referrals, you can contact OVAH through:
+
+Phone/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'HUMAN_REPRODUCTION',
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
       isActive: true,
     },
 
@@ -4031,8 +4214,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'HUMAN_REPRODUCTION_01',
       optionValue: 'key_facts',
-      labelEn: 'Key facts?',
-      labelSw: 'Ukweli unao julikana',
+      labelEn: 'Key facts',
+      labelSw: 'Ukweli muhimu',
       nextNodeKey: 'HUMAN_REPRODUCTION_04',
       sortOrder: 1,
       isActive: true,
@@ -4049,23 +4232,50 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'HUMAN_REPRODUCTION_01',
       optionValue: 'concerns',
-      labelEn: 'Common concerns',
-      labelSw: 'Hofu zilizopo',
+      labelEn: 'Concerns',
+      labelSw: 'Wasiwasi',
       nextNodeKey: 'HUMAN_REPRODUCTION_02',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'HUMAN_REPRODUCTION_03',
-      optionValue: 'concerns',
-      labelEn: 'Common concerns',
-      labelSw: 'Hofu zilizopo',
-      nextNodeKey: 'HUMAN_REPRODUCTION_02',
+      optionValue: 'next_steps',
+      labelEn: 'Next steps',
+      labelSw: 'Hatua zaidi',
+      nextNodeKey: 'HUMAN_REPRODUCTION_05',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'HUMAN_REPRODUCTION_03',
+      optionValue: 'concerns',
+      labelEn: 'Concerns',
+      labelSw: 'Wasiwasi',
+      nextNodeKey: 'HUMAN_REPRODUCTION_02',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HUMAN_REPRODUCTION_03',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HUMAN_REPRODUCTION_05',
+      optionValue: 'concerns',
+      labelEn: 'Concerns',
+      labelSw: 'Wasiwasi',
+      nextNodeKey: 'HUMAN_REPRODUCTION_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HUMAN_REPRODUCTION_05',
       optionValue: 'pregnancy',
       labelEn: 'Pregnancy',
       labelSw: 'Ujauzito',
@@ -4074,11 +4284,11 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
       isActive: true,
     },
     {
-      nodeKey: 'HUMAN_REPRODUCTION_03',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      nodeKey: 'HUMAN_REPRODUCTION_05',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'HUMAN_REPRODUCTION_REFERRAL_01',
       sortOrder: 3,
       isActive: true,
     },
@@ -5228,18 +5438,18 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'HUMAN_REPRODUCTION_04',
       optionValue: 'concerns',
-      labelEn: 'Common concerns',
-      labelSw: 'Hofu zilizopo',
+      labelEn: 'Concerns',
+      labelSw: 'Wasiwasi',
       nextNodeKey: 'HUMAN_REPRODUCTION_02',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'HUMAN_REPRODUCTION_04',
-      optionValue: 'pregnancy',
-      labelEn: 'Pregnancy',
-      labelSw: 'Ujauzito',
-      nextNodeKey: 'PREGNANCY_01',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'HUMAN_REPRODUCTION_REFERRAL_01',
       sortOrder: 3,
       isActive: true,
     },
@@ -5767,20 +5977,83 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'HUMAN_REPRODUCTION_02',
-      optionValue: 'what_signs',
-      labelEn: 'What are the signs?',
-      labelSw: 'Dalili ni zipi?',
-      nextNodeKey: 'PREGNANCY_03',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'HUMAN_REPRODUCTION_REFERRAL_01',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'HUMAN_REPRODUCTION_02',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_01',
+      optionValue: 'where_to_go',
+      labelEn: 'Where to go',
+      labelSw: 'Niende wapi?',
+      nextNodeKey: 'HUMAN_REPRODUCTION_REFERRAL_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_02',
+      optionValue: 'trusted_people',
+      labelEn: 'Trusted people',
+      labelSw: 'Watu wa kuamini',
+      nextNodeKey: 'HUMAN_REPRODUCTION_REFERRAL_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_03',
+      optionValue: 'safety_support',
+      labelEn: 'Safety support',
+      labelSw: 'Msaada usalama',
+      nextNodeKey: 'HUMAN_REPRODUCTION_REFERRAL_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_03',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'HUMAN_REPRODUCTION_REFERRAL_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_04',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'HUMAN_REPRODUCTION_REFERRAL_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_05',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'HUMAN_REPRODUCTION_REFERRAL_05',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
+      sortOrder: 2,
       isActive: true,
     },
     {
