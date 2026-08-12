@@ -410,11 +410,11 @@ Miili ya binadamu wote hutofautiana. Tofauti ndogo katika ukubwa au muonekano wa
       language: Language.EN,
       messageText: `Female Reproductive Organs include:
 
-    ● Ovaries: The ovaries are two small organs that produce eggs (ova) and hormones such as estrogen and progesterone.
+● Ovaries: The ovaries are two small organs that produce eggs (ova) and hormones such as estrogen and progesterone.
 
-    ● Fallopian Tubes: These tubes connect the ovaries to the uterus. An egg travels through the fallopian tube after being released from an ovary.
+● Fallopian Tubes: These tubes connect the ovaries to the uterus. An egg travels through the fallopian tube after being released from an ovary.
 
-    ● Uterus (Womb): The uterus is a muscular organ where a baby develops during pregnancy. During the menstrual cycle, the lining of the uterus thickens and is shed during menstruation if pregnancy does not occur.
+● Uterus (Womb): The uterus is a muscular organ where a baby develops during pregnancy. During the menstrual cycle, the lining of the uterus thickens and is shed during menstruation if pregnancy does not occur.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: 'image_female_reproductive_system',
@@ -430,11 +430,11 @@ Miili ya binadamu wote hutofautiana. Tofauti ndogo katika ukubwa au muonekano wa
       language: Language.SW,
       messageText: `Viungo vya Uzazi vya Mwanamke
 
-    ● Ovari: Ovari huzalisha mayai na homoni za estrojeni na projesteroni.
+● Ovari: Ovari huzalisha mayai na homoni za estrojeni na projesteroni.
 
-    ● Mirija ya Uzazi: Hubeba yai kutoka ovari kwenda kwenye mfuko wa uzazi.
+● Mirija ya Uzazi: Hubeba yai kutoka ovari kwenda kwenye mfuko wa uzazi.
 
-    ● Mfuko wa Uzazi: Ni sehemu ambayo mtoto hukua wakati wa ujauzito.
+● Mfuko wa Uzazi: Ni sehemu ambayo mtoto hukua wakati wa ujauzito.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: 'image_female_reproductive_system',
@@ -450,13 +450,13 @@ Miili ya binadamu wote hutofautiana. Tofauti ndogo katika ukubwa au muonekano wa
       language: Language.EN,
       messageText: `Female Reproductive Organs include:
 
-    ● Cervix: The cervix is the lower part of the uterus that connects to the vagina.
+● Cervix: The cervix is the lower part of the uterus that connects to the vagina.
 
-    ● Vagina: The vagina is a muscular canal connecting the cervix to the outside of the body. Menstrual blood leaves the body through the vagina, and it also serves as the birth canal.
+● Vagina: The vagina is a muscular canal connecting the cervix to the outside of the body. Menstrual blood leaves the body through the vagina, and it also serves as the birth canal.
 
-    ● Vulva: The vulva refers to the external female genital organs, including the labia and clitoris.
+● Vulva: The vulva refers to the external female genital organs, including the labia and clitoris.
 
-    ● Clitoris: The clitoris is a sensitive organ located at the top of the vulva. It contains many nerve endings.`,
+● Clitoris: The clitoris is a sensitive organ located at the top of the vulva. It contains many nerve endings.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: 'image_female_reproductive_system',
       isStartNode: false,
@@ -471,13 +471,13 @@ Miili ya binadamu wote hutofautiana. Tofauti ndogo katika ukubwa au muonekano wa
       language: Language.SW,
       messageText: `Viungo vya Uzazi vya Mwanamke
 
-    ● Mlango wa Kizazi: Huunganisha mfuko wa uzazi na uke.
+● Mlango wa Kizazi: Huunganisha mfuko wa uzazi na uke.
 
-    ● Uke: Ni njia ambayo damu ya hedhi hutoka na pia njia ya kupitisha mtoto wakati wa kujifungua.
+● Uke: Ni njia ambayo damu ya hedhi hutoka na pia njia ya kupitisha mtoto wakati wa kujifungua.
 
-    ● Uke wa Nje (Vulva): Ni sehemu za nje za mfumo wa uzazi wa mwanamke.
+● Uke wa Nje (Vulva): Ni sehemu za nje za mfumo wa uzazi wa mwanamke.
 
-    ● Kinembe: Ni sehemu nyeti iliyo nje ya uke.
+● Kinembe: Ni sehemu nyeti iliyo nje ya uke.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: 'image_female_reproductive_system',
@@ -493,17 +493,11 @@ Miili ya binadamu wote hutofautiana. Tofauti ndogo katika ukubwa au muonekano wa
       language: Language.EN,
       messageText: `Male Reproductive Organs include
 
-    ● Testicles (Testes): The testicles produce sperm and the hormone testosterone.
+● Testicles (Testes): The testicles produce sperm and the hormone testosterone.
 
-    ● Scrotum: The scrotum is the pouch of skin that holds and protects the testicles.
+● Scrotum: The scrotum is the pouch of skin that holds and protects the testicles.
 
-    ● Penis: The penis is an external reproductive organ through which urine and semen leave the body.
-
-    ● Urethra: The urethra is the tube that carries urine and semen out of the body at different times.
-
-    ● Prostate Gland: The prostate helps produce fluid that forms part of semen
-
-    ● Sperm Ducts: These tubes transport sperm from the testicles.`,
+● Penis: The penis is an external reproductive organ through which urine and semen leave the body.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -518,15 +512,11 @@ Miili ya binadamu wote hutofautiana. Tofauti ndogo katika ukubwa au muonekano wa
       language: Language.SW,
       messageText: `Viungo vya Uzazi vya Mwanamume
 
-    ● Korodani: Huzalisha mbegu za kiume na homoni ya testosterone.
+● Korodani: Huzalisha mbegu za kiume na homoni ya testosterone.
 
-    ● Mfuko wa Korodani: Hubeba na kulinda korodani.
+● Mfuko wa Korodani: Hubeba na kulinda korodani.
 
-    ● Uume: Ni kiungo cha nje kinachotumika kupitisha mkojo na shahawa.
-
-    ● Mrija wa Mkojo: Hubeba mkojo na shahawa kwa nyakati tofauti.
-
-    ● Tezi Dume: Huchangia kutengeneza majimaji ya shahawa.
+● Uume: Ni kiungo cha nje kinachotumika kupitisha mkojo na shahawa.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -535,23 +525,50 @@ Miili ya binadamu wote hutofautiana. Tofauti ndogo katika ukubwa au muonekano wa
       sortOrder: 3,
       isActive: true,
     },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Male Reproductive Organs include
+
+● Urethra: The urethra is the tube that carries urine and semen out of the body at different times.
+
+● Prostate Gland: The prostate helps produce fluid that forms part of semen.
+
+● Sperm Ducts: These tubes transport sperm from the testicles.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 4,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Viungo vya Uzazi vya Mwanamume
+
+● Mrija wa Mkojo: Hubeba mkojo na shahawa kwa nyakati tofauti.
+
+● Tezi Dume: Huchangia kutengeneza majimaji ya shahawa.
+`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 4,
+      isActive: true,
+    },
 
     {
       subtopicCode: 'REPRODUCTIVE_ANATOMY',
       nodeKey: 'REPRODUCTIVE_ANATOMY_04',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Frequently Asked Questions
-
-Q: Why do girls have periods?
-A: Periods occur when the uterus sheds its lining because pregnancy has not occurred.
-
-Q: What do ovaries do?
-A: Ovaries produce eggs and hormones.
-
-Q: Why do boys have testicles?
-A: Testicles produce sperm and testosterone.
-`,
+      messageText: `Choose a common question about reproductive anatomy.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -564,10 +581,7 @@ A: Testicles produce sperm and testosterone.
       nodeKey: 'REPRODUCTIVE_ANATOMY_04',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Maswali Yanayoulizwa Mara kwa Mara
-Swali: Kwa nini matiti yangu hayafanani?
-Jibu: Tofauti ndogo katika ukubwa wa matiti ni kawaida.
-`,
+      messageText: `Chagua swali linaloulizwa mara kwa mara kuhusu mfumo wa uzazi.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -580,23 +594,11 @@ Jibu: Tofauti ndogo katika ukubwa wa matiti ni kawaida.
       nodeKey: 'REPRODUCTIVE_ANATOMY_06',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `Frequently Asked Questions
-
-Q: Is vaginal discharge normal?
-A: Clear or white discharge is often normal.
-
-Q: Why is one breast larger than the other?
-A: Slight differences are common during development.
-
-Q: Is it normal for one testicle to be lower?
-A: Yes. This is common and usually normal.
-
-Q: Can reproductive organs continue changing during adolescence?
-A: Yes. Development continue`,
+      messageText: `Choose another common question about reproductive anatomy.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 6,
       isActive: true,
     },
@@ -605,18 +607,382 @@ A: Yes. Development continue`,
       nodeKey: 'REPRODUCTIVE_ANATOMY_06',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Maswali Yanayoulizwa Mara kwa Mara
-Swali: Je, uchafu mweupe ni kawaida?
-Jibu: Ndiyo. Mara nyingi ni sehemu ya kawaida ya ukuaji wa mfumo wa uzazi.
-
-Swali: Kwa nini korodani moja iko chini zaidi?
-Jibu: Hili ni jambo la kawaida kwa wavulana wengi.
-`,
+      messageText: `Chagua swali lingine linaloulizwa mara kwa mara kuhusu mfumo wa uzazi.`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 6,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Choose another common question about reproductive anatomy.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Chagua swali lingine linaloulizwa mara kwa mara kuhusu mfumo wa uzazi.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Q: Why do girls have periods?
+
+A: Periods occur when the uterus sheds its lining because pregnancy has not occurred.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_09',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Swali: Kwa nini wasichana hupata hedhi?
+
+Jibu: Hedhi hutokea wakati mfuko wa uzazi unatoa utando wake kwa sababu mimba haijatokea.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Q: What do ovaries do?
+
+A: Ovaries produce eggs and hormones.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_10',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Swali: Ovari hufanya nini?
+
+Jibu: Ovari huzalisha mayai na homoni.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_11',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Q: Why do boys have testicles?
+
+A: Testicles produce sperm and testosterone.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_11',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Swali: Kwa nini wavulana wana korodani?
+
+Jibu: Korodani huzalisha mbegu za kiume na testosterone.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_12',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Q: Is vaginal discharge normal?
+
+A: Clear or white discharge is often normal.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_12',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Swali: Je, uchafu mweupe ni kawaida?
+
+Jibu: Ndiyo. Mara nyingi ni sehemu ya kawaida ya ukuaji wa mfumo wa uzazi.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_13',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Q: Why is one breast larger than the other?
+
+A: Slight differences are common during development.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_13',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Swali: Kwa nini matiti yangu hayafanani?
+
+Jibu: Tofauti ndogo katika ukubwa wa matiti ni kawaida.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_14',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Q: Is it normal for one testicle to be lower?
+
+A: Yes. This is common and usually normal.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_14',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Swali: Kwa nini korodani moja iko chini zaidi?
+
+Jibu: Hili ni jambo la kawaida kwa wavulana wengi.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_15',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Q: Can reproductive organs continue changing during adolescence?
+
+A: Yes. Development continues during adolescence.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 14,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_15',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Swali: Je, viungo vya uzazi vinaweza kuendelea kubadilika wakati wa ujana?
+
+Jibu: Ndiyo. Ukuaji huendelea wakati wa ujana.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 14,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence or help with abuse, you do not have to face it alone.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 15,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili au msaada kuhusu unyanyasaji, usibaki peke yako.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 15,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You can visit the nearest hospital, health centre, dispensary or youth-friendly health service for confidential support and guidance.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 16,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza kutembelea hospitali, kituo cha afya, zahanati au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 16,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader or healthcare provider.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 17,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini au mtoa huduma za afya unayemwamini.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 17,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 18,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 18,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `For additional support, guidance or referrals, you can contact OVAH through:
+
+Phone/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 19,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'REPRODUCTIVE_ANATOMY',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 19,
       isActive: true,
     },
 
@@ -3214,8 +3580,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'REPRODUCTIVE_ANATOMY_01',
-      optionValue: 'faq',
-      labelEn: 'FAQ?',
+      optionValue: 'questions',
+      labelEn: 'Questions?',
       labelSw: 'Maswali?',
       nextNodeKey: 'REPRODUCTIVE_ANATOMY_04',
       sortOrder: 3,
@@ -3224,7 +3590,7 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'REPRODUCTIVE_ANATOMY_02',
       optionValue: 'more_organs',
-      labelEn: 'More organs?',
+      labelEn: 'More organs',
       labelSw: 'Zaidi?',
       nextNodeKey: 'REPRODUCTIVE_ANATOMY_05',
       sortOrder: 1,
@@ -3241,8 +3607,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'REPRODUCTIVE_ANATOMY_02',
-      optionValue: 'faq',
-      labelEn: 'FAQ?',
+      optionValue: 'questions',
+      labelEn: 'Questions?',
       labelSw: 'Maswali?',
       nextNodeKey: 'REPRODUCTIVE_ANATOMY_04',
       sortOrder: 3,
@@ -3259,8 +3625,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'REPRODUCTIVE_ANATOMY_05',
-      optionValue: 'faq',
-      labelEn: 'FAQ?',
+      optionValue: 'questions',
+      labelEn: 'Questions?',
       labelSw: 'Maswali?',
       nextNodeKey: 'REPRODUCTIVE_ANATOMY_04',
       sortOrder: 2,
@@ -3268,65 +3634,398 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'REPRODUCTIVE_ANATOMY_05',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'REPRODUCTIVE_ANATOMY_03',
-      optionValue: 'faq',
-      labelEn: 'FAQ?',
+      optionValue: 'more_male',
+      labelEn: 'More organs',
+      labelSw: 'Zaidi?',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_07',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_03',
+      optionValue: 'questions',
+      labelEn: 'Questions?',
+      labelSw: 'Maswali?',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_04',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_03',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_07',
+      optionValue: 'questions',
+      labelEn: 'Questions?',
       labelSw: 'Maswali?',
       nextNodeKey: 'REPRODUCTIVE_ANATOMY_04',
       sortOrder: 1,
       isActive: true,
     },
     {
-      nodeKey: 'REPRODUCTIVE_ANATOMY_03',
-      optionValue: 'more_faq',
-      labelEn: 'More FAQ?',
-      labelSw: 'Maswali zaidi?',
-      nextNodeKey: 'REPRODUCTIVE_ANATOMY_06',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_07',
+      optionValue: 'human_reproduction',
+      labelEn: 'Reproduction',
+      labelSw: 'Uzazi',
+      nextNodeKey: 'HUMAN_REPRODUCTION_01',
       sortOrder: 2,
       isActive: true,
     },
     {
-      nodeKey: 'REPRODUCTIVE_ANATOMY_03',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
+      nodeKey: 'REPRODUCTIVE_ANATOMY_07',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'REPRODUCTIVE_ANATOMY_04',
-      optionValue: 'more_faq',
-      labelEn: 'More FAQ?',
-      labelSw: 'Maswali zaidi?',
-      nextNodeKey: 'REPRODUCTIVE_ANATOMY_06',
+      optionValue: 'periods',
+      labelEn: 'Periods?',
+      labelSw: 'Hedhi?',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_09',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'REPRODUCTIVE_ANATOMY_04',
-      optionValue: 'female_organs',
-      labelEn: 'Female Organs',
-      labelSw: 'Viungo kike?',
-      nextNodeKey: 'REPRODUCTIVE_ANATOMY_02',
+      optionValue: 'ovaries',
+      labelEn: 'Ovaries?',
+      labelSw: 'Ovari?',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_10',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'REPRODUCTIVE_ANATOMY_04',
+      optionValue: 'more_questions',
+      labelEn: 'More questions',
+      labelSw: 'Maswali zaidi',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_06',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_06',
+      optionValue: 'testicles',
+      labelEn: 'Testicles?',
+      labelSw: 'Korodani?',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_11',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_06',
+      optionValue: 'discharge',
+      labelEn: 'Discharge?',
+      labelSw: 'Uchafu mweupe?',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_12',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_06',
+      optionValue: 'more_questions',
+      labelEn: 'More questions',
+      labelSw: 'Maswali zaidi',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_08',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_08',
+      optionValue: 'breast_size',
+      labelEn: 'Breast size?',
+      labelSw: 'Matiti?',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_13',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_08',
+      optionValue: 'one_testicle',
+      labelEn: 'One testicle?',
+      labelSw: 'Korodani moja?',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_14',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_08',
+      optionValue: 'body_changes',
+      labelEn: 'Body changes?',
+      labelSw: 'Mabadiliko?',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_15',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_09',
+      optionValue: 'another_question',
+      labelEn: 'Another question',
+      labelSw: 'Swali jingine',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_09',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_09',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_10',
+      optionValue: 'another_question',
+      labelEn: 'Another question',
+      labelSw: 'Swali jingine',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_10',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_10',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_11',
+      optionValue: 'another_question',
+      labelEn: 'Another question',
+      labelSw: 'Swali jingine',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_11',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_11',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_12',
+      optionValue: 'another_question',
+      labelEn: 'Another question',
+      labelSw: 'Swali jingine',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_12',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_12',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_13',
+      optionValue: 'another_question',
+      labelEn: 'Another question',
+      labelSw: 'Swali jingine',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_13',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_13',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_14',
+      optionValue: 'another_question',
+      labelEn: 'Another question',
+      labelSw: 'Swali jingine',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_14',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_14',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_15',
+      optionValue: 'another_question',
+      labelEn: 'Another question',
+      labelSw: 'Swali jingine',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_15',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_15',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_01',
+      optionValue: 'where_to_go',
+      labelEn: 'Where to go',
+      labelSw: 'Niende wapi?',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_02',
+      optionValue: 'trusted_people',
+      labelEn: 'Trusted people',
+      labelSw: 'Watu wa kuamini',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_03',
+      optionValue: 'safety_support',
+      labelEn: 'Safety support',
+      labelSw: 'Msaada usalama',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_03',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_04',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_05',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'REPRODUCTIVE_ANATOMY_REFERRAL_05',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
+      sortOrder: 2,
       isActive: true,
     },
     {
@@ -5131,33 +5830,6 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'PREGNANCY_05',
-      optionValue: 'main_menu',
-      labelEn: 'Main Menu',
-      labelSw: 'Menyu Kuu',
-      nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
-      isActive: true,
-    },
-    {
-      nodeKey: 'REPRODUCTIVE_ANATOMY_06',
-      optionValue: 'pregnancy',
-      labelEn: 'Pregnancy',
-      labelSw: 'Ujauzito',
-      nextNodeKey: 'PREGNANCY_01',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'REPRODUCTIVE_ANATOMY_06',
-      optionValue: 'reproduction',
-      labelEn: 'Reproduction?',
-      labelSw: 'Uzazi?',
-      nextNodeKey: 'HUMAN_REPRODUCTION_01',
-      sortOrder: 2,
-      isActive: true,
-    },
-    {
-      nodeKey: 'REPRODUCTIVE_ANATOMY_06',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
