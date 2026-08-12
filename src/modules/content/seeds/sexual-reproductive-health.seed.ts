@@ -1806,7 +1806,9 @@ Simu/WhatsApp: 0652 522 358`,
       nodeKey: 'MISCARRIAGE_01',
       nodeType: NodeType.CONTENT,
       language: Language.EN,
-      messageText: `The meaning of miscarriage It is the loss/termination of a pregnancy at a gestational age of less than 7 months (28 weeks). A pregnancy can be spontaneous or intentionally terminated.
+      messageText: `The meaning of miscarriage
+
+It is the loss/termination of a pregnancy at a gestational age of less than 7 months (28 weeks). A pregnancy can be spontaneous or intentionally terminated.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1820,7 +1822,9 @@ Simu/WhatsApp: 0652 522 358`,
       nodeKey: 'MISCARRIAGE_01',
       nodeType: NodeType.CONTENT,
       language: Language.SW,
-      messageText: `Maana ya kuharibika kwa mimba Ni kuharibika/kukatishwa kwa mimba katika umri wa chini ya miezi 7 (wiki 28). Mimba inaweza kutoka yenyewe au kutolewa makusudi.
+      messageText: `Maana ya kuharibika kwa mimba
+
+Ni kuharibika/kukatishwa kwa mimba katika umri wa chini ya miezi 7 (wiki 28). Mimba inaweza kutoka yenyewe au kutolewa makusudi.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1835,9 +1839,10 @@ Simu/WhatsApp: 0652 522 358`,
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `Types of miscarriage
-    • Spontaneous miscarriage is a pregnancy that is lost and ends without being induced/provoked. This can be caused by fevers such as malaria, sexually transmitted diseases, the use of strong drugs or beatings.
-    • Abortion It is a pregnancy that ends after being induced/provoked such as by intentionally ingesting drugs, inserting sticks or sharp instruments into the cervix.
-    Abortion can also be performed if there is a reason and a doctor's advice (when it threatens life)
+
+● Spontaneous miscarriage is a pregnancy that is lost and ends without being induced/provoked.
+
+This can be caused by fevers such as malaria, sexually transmitted diseases, the use of strong drugs or beatings.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1852,9 +1857,10 @@ Simu/WhatsApp: 0652 522 358`,
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `Aina za kuharibika kwa mimba
-    • Kutoka yenyewe ni mimba zinazoharibika na kutoka bila kuchokonolewa/kuchokozwa. Hii huweza kusababishwa na homa kama za malaria, magonjwa ya ngono, matumizi ya madawa makali au kupigwa.
-    • Mimba iliyotolewa Ni kutoka kwa mimba baada ya kuchokonolewa/kuchokozwa kama kwa kumeza dawa kwa kudhamiria, kuingiza vijiti au vyombo vyenye ncha kali kwenye shingo ya mji wa mimba.
-Pia mimba huweza kutolewa kama kuna sababu na ushauri wa daktari (inapotishia uhai)
+
+● Kutoka yenyewe ni mimba zinazoharibika na kutoka bila kuchokonolewa/kuchokozwa.
+
+Hii huweza kusababishwa na homa kama za malaria, magonjwa ya ngono, matumizi ya madawa makali au kupigwa.
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1869,11 +1875,16 @@ Pia mimba huweza kutolewa kama kuna sababu na ushauri wa daktari (inapotishia uh
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `SYMPTOMS OF MISCARRYING PREGNANCY
-    • Abdominal pain below the navel
-    • The child stops playing
-    • The body loses strength
-    • Blood from the vagina
-    • Odorous discharge from the vagina Nausea and even vomiting`,
+
+● Abdominal pain below the navel
+
+● The child stops playing
+
+● The body loses strength
+
+● Blood from the vagina
+
+● Odorous discharge from the vagina, nausea and even vomiting`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1887,11 +1898,16 @@ Pia mimba huweza kutolewa kama kuna sababu na ushauri wa daktari (inapotishia uh
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `DALILI ZA MIMBA INAYOTOKA
-    • Maumivu ya tumbo chini ya kitovu
-    • Mtoto kuacha kucheza
-    • Mwili kuishiwa nguvu
-    • Damu kutoka ukeni
-    • Majimaji yenye harufu kutoka ukeni Kichefu chefu na hata kutapika
+
+● Maumivu ya tumbo chini ya kitovu
+
+● Mtoto kuacha kucheza
+
+● Mwili kuishiwa nguvu
+
+● Damu kutoka ukeni
+
+● Majimaji yenye harufu kutoka ukeni, kichefu chefu na hata kutapika
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
@@ -1906,10 +1922,14 @@ Pia mimba huweza kutolewa kama kuna sababu na ushauri wa daktari (inapotishia uh
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `EFFECTS OF ABORTION
-    • Infections in the reproductive tract
-    • Excessive blood loss
-    • Injury to the reproductive tract
-    • Toxic effects of drugs used for abortion Becoming sterile/infertile Death`,
+
+● Infections in the reproductive tract
+
+● Excessive blood loss
+
+● Injury to the reproductive tract
+
+● Toxic effects of drugs used for abortion, becoming sterile/infertile, or death`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1923,10 +1943,14 @@ Pia mimba huweza kutolewa kama kuna sababu na ushauri wa daktari (inapotishia uh
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `MADHARA YA KUTOA MIMBA
-    • Maambukizi kwenye via vya uzazi
-    • Kupoteza damu nyingi
-    • Kuumizwa via vya uzazi
-    • Kuathirika na sumu ya dawa zilizotumika kutoa mimba Kuwa tasa/ugumba Kifo `,
+
+● Maambukizi kwenye via vya uzazi
+
+● Kupoteza damu nyingi
+
+● Kuumizwa via vya uzazi
+
+● Kuathirika na sumu ya dawa zilizotumika kutoa mimba, kuwa tasa/ugumba, au kifo`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1940,9 +1964,12 @@ Pia mimba huweza kutolewa kama kuna sababu na ushauri wa daktari (inapotishia uh
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `HOW TO PREVENT ABORTION
-    • Stopping sex, observing the legal prohibition of abortion in accordance with the laws of the country
-    • Using contraception correctly as a method of contraception
-    • Using emergency contraception`,
+
+● Stopping sex, observing the legal prohibition of abortion in accordance with the laws of the country
+
+● Using contraception correctly as a method of contraception
+
+● Using emergency contraception`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1956,9 +1983,12 @@ Pia mimba huweza kutolewa kama kuna sababu na ushauri wa daktari (inapotishia uh
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `JINSI YA KUZUIA UTOAJI MIMBA
-    • Kuacha ngono kuzingatia katazo la kisheria la utoaji mimba kwa mujibu wa sheria za nchi
-    • Kutumia kinga kwa usahihi kama njia za uzazi wa mpango
-    • Kutumia njia ya uzazi wa mpango za dharura `,
+
+● Kuacha ngono kuzingatia katazo la kisheria la utoaji mimba kwa mujibu wa sheria za nchi
+
+● Kutumia kinga kwa usahihi kama njia za uzazi wa mpango
+
+● Kutumia njia ya uzazi wa mpango za dharura`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
@@ -1972,17 +2002,16 @@ Pia mimba huweza kutolewa kama kuna sababu na ushauri wa daktari (inapotishia uh
       nodeType: NodeType.CONTENT,
       language: Language.EN,
       messageText: `INFORMATION TO BE GIVEN TO A YOUNG PERSON WHO HAS A MISCARRIED PREGNANCY
-    • This service is available at health facilities.
-    • It is provided by a qualified service provider
-    • It is the right of the young lady
-    • Another pregnancy can be conceived seven days after the miscarriage
-    • Contraceptive methods, except for the IUD, can be used immediately after the miscarriage.
-    • Avoid having sex until the bleeding after the miscarriage stops, as doing so carries a risk of infection.
-NOTE: Abortion is a legal offence under Tanzanian law`,
+
+● This service is available at health facilities.
+
+● It is provided by a qualified service provider
+
+● It is the right of the young person`,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 5,
       isActive: true,
     },
@@ -1992,19 +2021,224 @@ NOTE: Abortion is a legal offence under Tanzanian law`,
       nodeType: NodeType.CONTENT,
       language: Language.SW,
       messageText: `TAARIFA ANAYOTAKIWA KUPEWA KIJANA ALIYEHARIBU MIMBA
-    • Huduma hii inapatikana katika vituo vya afya.
-    • Inatolewa na mtoa huduma mwenye utaalamu huo
-    • Ni haki ya kijana
-    • Mimba nyingine inaweza kutunga siku saba baada ya kuharibika
-    • Njia za uzazi wa mpango isipokuwa kitanzi, zinaweza kutumiwa mara baada ya mimba kuharibika.
-    • Epuka kufanya ngono hadi damu baada ya kuharibika mimba itakapokoma, kwa kufanya hivyo kuna hatari ya kupata maambukizo.
-KUMBUKA:Utoaji mimba ni kosa kisheria kwa mujibu wa sheria za Tanzania
+
+● Huduma hii inapatikana katika vituo vya afya.
+
+● Inatolewa na mtoa huduma mwenye utaalamu huo
+
+● Ni haki ya kijana
 `,
       inputType: InputType.BUTTON,
       mediaAssetKey: null,
       isStartNode: false,
-      isEndNode: true,
+      isEndNode: false,
       sortOrder: 5,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MISCARRIAGE',
+      nodeKey: 'MISCARRIAGE_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `Abortion is a pregnancy that ends after being induced/provoked such as by intentionally ingesting drugs, inserting sticks or sharp instruments into the cervix.
+
+Abortion can also be performed if there is a reason and a doctor's advice (when it threatens life).`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MISCARRIAGE',
+      nodeKey: 'MISCARRIAGE_07',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Mimba iliyotolewa ni kutoka kwa mimba baada ya kuchokonolewa/kuchokozwa kama kwa kumeza dawa kwa kudhamiria, kuingiza vijiti au vyombo vyenye ncha kali kwenye shingo ya mji wa mimba.
+
+Pia mimba huweza kutolewa kama kuna sababu na ushauri wa daktari (inapotishia uhai).`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 7,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MISCARRIAGE',
+      nodeKey: 'MISCARRIAGE_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `More information after a miscarriage
+
+● Another pregnancy can be conceived seven days after the miscarriage
+
+● Contraceptive methods, except for the IUD, can be used immediately after the miscarriage.
+
+● Avoid having sex until the bleeding after the miscarriage stops, as doing so carries a risk of infection.
+
+NOTE: Abortion is a legal offence under Tanzanian law`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MISCARRIAGE',
+      nodeKey: 'MISCARRIAGE_08',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Taarifa zaidi baada ya kuharibika kwa mimba
+
+● Mimba nyingine inaweza kutunga siku saba baada ya kuharibika
+
+● Njia za uzazi wa mpango isipokuwa kitanzi, zinaweza kutumiwa mara baada ya mimba kuharibika.
+
+● Epuka kufanya ngono hadi damu baada ya kuharibika mimba itakapokoma, kwa kufanya hivyo kuna hatari ya kupata maambukizo.
+
+KUMBUKA: Utoaji mimba ni kosa kisheria kwa mujibu wa sheria za Tanzania`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 8,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MISCARRIAGE',
+      nodeKey: 'MISCARRIAGE_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you need health information, HIV testing, family planning services, pregnancy-related care, mental health support, protection from violence or help with abuse, you do not have to face it alone.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MISCARRIAGE',
+      nodeKey: 'MISCARRIAGE_REFERRAL_01',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unahitaji taarifa za afya, huduma za upimaji wa VVU, uzazi wa mpango, huduma zinazohusiana na ujauzito, msaada wa afya ya akili, ulinzi dhidi ya ukatili au msaada kuhusu unyanyasaji, usibaki peke yako.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 9,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MISCARRIAGE',
+      nodeKey: 'MISCARRIAGE_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You can visit the nearest hospital, health centre, dispensary or youth-friendly health service for confidential support and guidance.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MISCARRIAGE',
+      nodeKey: 'MISCARRIAGE_REFERRAL_02',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza kutembelea hospitali, kituo cha afya, zahanati au huduma rafiki kwa vijana zilizopo karibu nawe kwa ushauri na huduma za siri na salama.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 10,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MISCARRIAGE',
+      nodeKey: 'MISCARRIAGE_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `You may also speak to a trusted parent, guardian, teacher, counselor, social welfare officer, religious leader or healthcare provider.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MISCARRIAGE',
+      nodeKey: 'MISCARRIAGE_REFERRAL_03',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Unaweza pia kuzungumza na mzazi, mlezi, mwalimu, mshauri, afisa ustawi wa jamii, kiongozi wa dini au mtoa huduma za afya unayemwamini.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 11,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MISCARRIAGE',
+      nodeKey: 'MISCARRIAGE_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `If you are experiencing violence, abuse, exploitation, neglect, forced marriage, sexual harassment or any situation that makes you feel unsafe, seek help immediately from a trusted adult or the relevant authorities.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MISCARRIAGE',
+      nodeKey: 'MISCARRIAGE_REFERRAL_04',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Ikiwa unapitia ukatili, unyanyasaji, unyonyaji, kutelekezwa, ndoa ya utotoni, ukatili wa kingono au hali yoyote inayokufanya ujisikie kutokuwa salama, tafuta msaada mara moja kutoka kwa mtu mzima unayemwamini au mamlaka husika.`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 12,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MISCARRIAGE',
+      nodeKey: 'MISCARRIAGE_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.EN,
+      messageText: `For additional support, guidance or referrals, you can contact OVAH through:
+
+Phone/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
+      isActive: true,
+    },
+    {
+      subtopicCode: 'MISCARRIAGE',
+      nodeKey: 'MISCARRIAGE_REFERRAL_05',
+      nodeType: NodeType.CONTENT,
+      language: Language.SW,
+      messageText: `Kwa msaada zaidi, ushauri au maelekezo ya huduma zinazopatikana, unaweza kuwasiliana na OVAH kupitia:
+
+Simu/WhatsApp: 0652 522 358`,
+      inputType: InputType.BUTTON,
+      mediaAssetKey: null,
+      isStartNode: false,
+      isEndNode: false,
+      sortOrder: 13,
       isActive: true,
     },
 
@@ -4882,8 +5116,8 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'MISCARRIAGE_01',
       optionValue: 'types',
-      labelEn: 'Types of miscarriage',
-      labelSw: 'Aina zake',
+      labelEn: 'Types',
+      labelSw: 'Aina',
       nextNodeKey: 'MISCARRIAGE_06',
       sortOrder: 1,
       isActive: true,
@@ -4891,7 +5125,7 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'MISCARRIAGE_01',
       optionValue: 'symptoms',
-      labelEn: 'What are the signs?',
+      labelEn: 'Signs?',
       labelSw: 'Dalili ni zipi?',
       nextNodeKey: 'MISCARRIAGE_02',
       sortOrder: 2,
@@ -4900,44 +5134,71 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'MISCARRIAGE_01',
       optionValue: 'info',
-      labelEn: 'Important Info',
+      labelEn: 'Care info',
       labelSw: 'Taarifa muhimu',
       nextNodeKey: 'MISCARRIAGE_05',
       sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MISCARRIAGE_06',
+      optionValue: 'other_type',
+      labelEn: 'Other type',
+      labelSw: 'Aina nyingine',
+      nextNodeKey: 'MISCARRIAGE_07',
+      sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'MISCARRIAGE_06',
       optionValue: 'symptoms',
-      labelEn: 'What are the signs?',
+      labelEn: 'Signs?',
       labelSw: 'Dalili ni zipi?',
       nextNodeKey: 'MISCARRIAGE_02',
-      sortOrder: 1,
-      isActive: true,
-    },
-    {
-      nodeKey: 'MISCARRIAGE_06',
-      optionValue: 'effects',
-      labelEn: 'The Effects',
-      labelSw: 'Madhara yake',
-      nextNodeKey: 'MISCARRIAGE_03',
       sortOrder: 2,
       isActive: true,
     },
     {
       nodeKey: 'MISCARRIAGE_06',
+      optionValue: 'effects',
+      labelEn: 'Effects',
+      labelSw: 'Madhara',
+      nextNodeKey: 'MISCARRIAGE_03',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MISCARRIAGE_07',
+      optionValue: 'effects',
+      labelEn: 'Effects',
+      labelSw: 'Madhara',
+      nextNodeKey: 'MISCARRIAGE_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MISCARRIAGE_07',
       optionValue: 'prevent',
       labelEn: 'How to prevent',
       labelSw: 'Njia za kuzuia',
       nextNodeKey: 'MISCARRIAGE_04',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MISCARRIAGE_07',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'MISCARRIAGE_REFERRAL_01',
       sortOrder: 3,
       isActive: true,
     },
     {
       nodeKey: 'MISCARRIAGE_02',
       optionValue: 'effects',
-      labelEn: 'The effects',
-      labelSw: 'Madhara yake',
+      labelEn: 'Effects',
+      labelSw: 'Madhara',
       nextNodeKey: 'MISCARRIAGE_03',
       sortOrder: 1,
       isActive: true,
@@ -4954,7 +5215,7 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'MISCARRIAGE_02',
       optionValue: 'info',
-      labelEn: 'Important Info',
+      labelEn: 'Care info',
       labelSw: 'Taarifa muhimu',
       nextNodeKey: 'MISCARRIAGE_05',
       sortOrder: 3,
@@ -4972,7 +5233,7 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'MISCARRIAGE_03',
       optionValue: 'info',
-      labelEn: 'Important Info',
+      labelEn: 'Care info',
       labelSw: 'Taarifa muhimu',
       nextNodeKey: 'MISCARRIAGE_05',
       sortOrder: 2,
@@ -4990,7 +5251,7 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     {
       nodeKey: 'MISCARRIAGE_04',
       optionValue: 'info',
-      labelEn: 'Important Info',
+      labelEn: 'Care info',
       labelSw: 'Taarifa muhimu',
       nextNodeKey: 'MISCARRIAGE_05',
       sortOrder: 1,
@@ -6573,15 +6834,42 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
     },
     {
       nodeKey: 'MISCARRIAGE_05',
-      optionValue: 'family_plan',
-      labelEn: 'Family planning',
-      labelSw: 'Uzazi wa mpango?',
-      nextNodeKey: 'FAMILY_PLANNING_01',
+      optionValue: 'more_info',
+      labelEn: 'More info',
+      labelSw: 'Taarifa zaidi',
+      nextNodeKey: 'MISCARRIAGE_08',
       sortOrder: 1,
       isActive: true,
     },
     {
       nodeKey: 'MISCARRIAGE_05',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'MISCARRIAGE_REFERRAL_01',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MISCARRIAGE_05',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MISCARRIAGE_08',
+      optionValue: 'family_plan',
+      labelEn: 'Family planning',
+      labelSw: 'Uzazi wa mpango',
+      nextNodeKey: 'FAMILY_PLANNING_01',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MISCARRIAGE_08',
       optionValue: 'which_methods',
       labelEn: 'Planning methods',
       labelSw: 'Njia za uzazi mpango',
@@ -6590,12 +6878,75 @@ Mifano ni pamoja na kutembelea kituo cha afya kwa ajili ya kupima VVU, taarifa z
       isActive: true,
     },
     {
-      nodeKey: 'MISCARRIAGE_05',
+      nodeKey: 'MISCARRIAGE_08',
+      optionValue: 'get_support',
+      labelEn: 'Get support',
+      labelSw: 'Pata msaada',
+      nextNodeKey: 'MISCARRIAGE_REFERRAL_01',
+      sortOrder: 3,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MISCARRIAGE_REFERRAL_01',
+      optionValue: 'where_to_go',
+      labelEn: 'Where to go',
+      labelSw: 'Niende wapi?',
+      nextNodeKey: 'MISCARRIAGE_REFERRAL_02',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MISCARRIAGE_REFERRAL_02',
+      optionValue: 'trusted_people',
+      labelEn: 'Trusted people',
+      labelSw: 'Watu wa kuamini',
+      nextNodeKey: 'MISCARRIAGE_REFERRAL_03',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MISCARRIAGE_REFERRAL_03',
+      optionValue: 'safety_support',
+      labelEn: 'Safety support',
+      labelSw: 'Msaada usalama',
+      nextNodeKey: 'MISCARRIAGE_REFERRAL_04',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MISCARRIAGE_REFERRAL_03',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'MISCARRIAGE_REFERRAL_05',
+      sortOrder: 2,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MISCARRIAGE_REFERRAL_04',
+      optionValue: 'ovah_contact',
+      labelEn: 'OVAH contact',
+      labelSw: 'Mawasiliano OVAH',
+      nextNodeKey: 'MISCARRIAGE_REFERRAL_05',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MISCARRIAGE_REFERRAL_05',
+      optionValue: 'choose_topic',
+      labelEn: 'Choose topic',
+      labelSw: 'Chagua mada',
+      nextNodeKey: 'BACK_ACTION',
+      sortOrder: 1,
+      isActive: true,
+    },
+    {
+      nodeKey: 'MISCARRIAGE_REFERRAL_05',
       optionValue: 'main_menu',
       labelEn: 'Main Menu',
       labelSw: 'Menyu Kuu',
       nextNodeKey: 'CATEGORY_MENU',
-      sortOrder: 3,
+      sortOrder: 2,
       isActive: true,
     },
     {
