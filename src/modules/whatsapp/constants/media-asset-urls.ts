@@ -6,25 +6,25 @@ export const MEDIA_ASSET_URLS: Record<string, string> = {
     'https://ovah-chatbot-images.onrender.com/menstruation/Menstrual%20calendar-bro.png',
 
   image_menstruation_intro_01:
-    'https://drive.google.com/file/d/1kv6NgupbPuBBNAoa3fmvgxrROZUVanPp/view?usp=drive_link',
+    'https://ovah-chatbot-images.onrender.com/menstruation/mwajuma4.png',
 
   image_menstruation_what_is_01:
-    'https://drive.google.com/file/d/1q6BXgazjfsqwaA5uSzUSwf47PLgM_CN3/view?usp=drive_link',
+    'https://ovah-chatbot-images.onrender.com/menstruation/Mzunguko-wa-Hedhi.png',
 
   image_menstruation_natural_01:
-    'https://drive.google.com/file/d/1fqqAuW8pcF_1urSO3j-kcOMzOuHthGLC/view?usp=drive_link',
+    'https://ovah-chatbot-images.onrender.com/menstruation/IMG_7204.PNG',
 
   image_menstruation_hygiene_01:
-    'https://drive.google.com/file/d/1JR27uieTbg-mp8z1-JRuemyk-7bP44-_/view?usp=drive_link',
+    'https://ovah-chatbot-images.onrender.com/menstruation/Enthusiastic-rafiki.png',
 
   image_menstruation_hygiene_change_01:
-    'https://drive.google.com/file/d/1ctT0mXWZcbemqStyN8pwQogGdMBMULSD/view?usp=drive_link',
+    'https://ovah-chatbot-images.onrender.com/menstruation/Aina-ya-Vifaa.png',
 
   image_menstruation_hygiene_final_01:
-    'https://drive.google.com/file/d/1QW1q6OYockks929S0i-loYTpxx6mzafd/view?usp=drive_link',
+    'https://ovah-chatbot-images.onrender.com/menstruation/Lishe-Bora.png',
 
   image_menstruation_pain_01:
-    'https://drive.google.com/file/d/1ZtAyCuPrlFBs122nqMQbGasse8BQdSI4/view?usp=drive_link',
+    'https://ovah-chatbot-images.onrender.com/menstruation/Maumivu-ya-Hedhi.png',
 
   image_gender_violence:
     'https://ovah-chatbot-images.onrender.com/gender-equality/Gender%20violence-bro.png',
