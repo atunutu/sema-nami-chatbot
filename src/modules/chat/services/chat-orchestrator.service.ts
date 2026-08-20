@@ -167,6 +167,7 @@ export class ChatOrchestratorService {
 
       const requestedLanguage = this.detectRequestedLanguage(
         normalizedInput.text,
+        language,
       );
 
       if (requestedLanguage) {
@@ -490,7 +491,10 @@ export class ChatOrchestratorService {
     };
   }
 
-  private detectRequestedLanguage(text: string): Language | null {
+  private detectRequestedLanguage(
+    text: string,
+    currentLanguage: Language,
+  ): Language | null {
     const normalizedText = text.trim().toLowerCase();
 
     if (/\b(swahili|kiswahili)\b/.test(normalizedText)) {
@@ -499,6 +503,10 @@ export class ChatOrchestratorService {
 
     if (/\b(english|kiingereza|kingereza)\b/.test(normalizedText)) {
       return Language.EN;
+    }
+
+    if (/\b(language|lugha)\b/.test(normalizedText)) {
+      return this.getAlternateLanguage(currentLanguage);
     }
 
     return null;
