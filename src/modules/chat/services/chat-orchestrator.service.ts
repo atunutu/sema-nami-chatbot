@@ -32,6 +32,9 @@ type OrchestratorResponse = {
 
 @Injectable()
 export class ChatOrchestratorService {
+  private readonly LANGUAGE_SWITCH_TO_EN = 'switch_language_en';
+  private readonly LANGUAGE_SWITCH_TO_SW = 'switch_language_sw';
+  private readonly LANGUAGE_SWITCH_CANCEL = 'switch_lang_cancel';
   private readonly usersService: UsersService;
   private readonly profileService: ProfileService;
   private readonly sessionService: SessionService;
@@ -70,6 +73,43 @@ export class ChatOrchestratorService {
     const session = await this.sessionService.getOrCreateActiveSession(user.id);
 
     const language = profile.preferredLanguage ?? Language.EN;
+    const action = normalizedInput.interactiveValue;
+
+    const languageSwitchTarget = this.getLanguageSwitchTargetFromAction(action);
+
+    if (languageSwitchTarget) {
+      const response = await this.handleLanguageSwitchConfirmation({
+        userId: user.id,
+        sessionId: session.id,
+        session,
+        targetLanguage: languageSwitchTarget,
+      });
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
+    }
+
+    if (action === this.LANGUAGE_SWITCH_CANCEL) {
+      const response = await this.handleLanguageSwitchCancel({
+        userId: user.id,
+        sessionId: session.id,
+        session,
+        language,
+      });
+
+      await this.logOutboundOrchestratorResponse({
+        sessionId: session.id,
+        userId: user.id,
+        response,
+      });
+
+      return response;
+    }
 
     if (normalizedInput.text) {
       const safeguardingReply =
@@ -124,9 +164,27 @@ export class ChatOrchestratorService {
 
         return response;
       }
-    }
 
-    const action = normalizedInput.interactiveValue;
+      const requestedLanguage = this.detectRequestedLanguage(
+        normalizedInput.text,
+      );
+
+      if (requestedLanguage) {
+        const response = this.buildLanguageSwitchPrompt({
+          currentLanguage: language,
+          requestedLanguage,
+          currentState: session.currentState,
+        });
+
+        await this.logOutboundOrchestratorResponse({
+          sessionId: session.id,
+          userId: user.id,
+          response,
+        });
+
+        return response;
+      }
+    }
 
     if (action === 'main_menu') {
       const response = await this.handleCategoryMenu(session.id, user.id);
@@ -430,6 +488,295 @@ export class ChatOrchestratorService {
       text: input.text?.trim() ?? null,
       interactiveValue: input.interactiveValue?.trim() ?? null,
     };
+  }
+
+  private detectRequestedLanguage(text: string): Language | null {
+    const normalizedText = text.trim().toLowerCase();
+
+    if (/\b(swahili|kiswahili)\b/.test(normalizedText)) {
+      return Language.SW;
+    }
+
+    if (/\b(english|kiingereza|kingereza)\b/.test(normalizedText)) {
+      return Language.EN;
+    }
+
+    return null;
+  }
+
+  private getLanguageSwitchTargetFromAction(
+    action?: string | null,
+  ): Language | null {
+    if (action === this.LANGUAGE_SWITCH_TO_EN) {
+      return Language.EN;
+    }
+
+    if (action === this.LANGUAGE_SWITCH_TO_SW) {
+      return Language.SW;
+    }
+
+    return null;
+  }
+
+  private buildLanguageSwitchPrompt(data: {
+    currentLanguage: Language;
+    requestedLanguage: Language;
+    currentState: ChatState;
+  }): OrchestratorResponse {
+    const targetLanguage =
+      data.requestedLanguage === data.currentLanguage
+        ? this.getAlternateLanguage(data.currentLanguage)
+        : data.requestedLanguage;
+
+    const isAlreadyUsingRequested =
+      data.requestedLanguage === data.currentLanguage;
+
+    if (data.currentLanguage === Language.SW) {
+      return {
+        message: isAlreadyUsingRequested
+          ? 'Tayari unatumia Kiswahili. Ungependa kubadili kwenda Kiingereza?'
+          : 'Ungependa kubadili kwenda Kiingereza?',
+        options: [
+          {
+            label: 'Badili Kiingereza',
+            value: this.getLanguageSwitchAction(targetLanguage),
+          },
+          {
+            label: 'Baki Kiswahili',
+            value: this.LANGUAGE_SWITCH_CANCEL,
+          },
+        ],
+        currentState: data.currentState,
+      };
+    }
+
+    return {
+      message: isAlreadyUsingRequested
+        ? 'You are already using English. Would you like to switch to Kiswahili?'
+        : 'Would you like to switch to Kiswahili?',
+      options: [
+        {
+          label: 'Switch to Kiswahili',
+          value: this.getLanguageSwitchAction(targetLanguage),
+        },
+        {
+          label: 'Stay in English',
+          value: this.LANGUAGE_SWITCH_CANCEL,
+        },
+      ],
+      currentState: data.currentState,
+    };
+  }
+
+  private getAlternateLanguage(language: Language): Language {
+    return language === Language.SW ? Language.EN : Language.SW;
+  }
+
+  private getLanguageSwitchAction(language: Language): string {
+    return language === Language.SW
+      ? this.LANGUAGE_SWITCH_TO_SW
+      : this.LANGUAGE_SWITCH_TO_EN;
+  }
+
+  private async handleLanguageSwitchConfirmation(data: {
+    userId: string;
+    sessionId: string;
+    session: {
+      currentState: ChatState;
+      currentCategoryCode?: string | null;
+      currentTopicCode?: string | null;
+      currentSubtopicCode?: string | null;
+      currentNodeKey?: string | null;
+      previousNodeKey?: string | null;
+    };
+    targetLanguage: Language;
+  }): Promise<OrchestratorResponse> {
+    await this.profileService.updateLanguage(data.userId, data.targetLanguage);
+
+    const response = await this.buildCurrentScreenResponse({
+      userId: data.userId,
+      sessionId: data.sessionId,
+      session: data.session,
+      language: data.targetLanguage,
+    });
+
+    return this.withMessagePrefix(
+      response,
+      data.targetLanguage === Language.SW
+        ? 'Lugha imebadilishwa kwenda Kiswahili.'
+        : 'Language switched to English.',
+    );
+  }
+
+  private async handleLanguageSwitchCancel(data: {
+    userId: string;
+    sessionId: string;
+    session: {
+      currentState: ChatState;
+      currentCategoryCode?: string | null;
+      currentTopicCode?: string | null;
+      currentSubtopicCode?: string | null;
+      currentNodeKey?: string | null;
+      previousNodeKey?: string | null;
+    };
+    language: Language;
+  }): Promise<OrchestratorResponse> {
+    const response = await this.buildCurrentScreenResponse({
+      userId: data.userId,
+      sessionId: data.sessionId,
+      session: data.session,
+      language: data.language,
+    });
+
+    return this.withMessagePrefix(
+      response,
+      data.language === Language.SW
+        ? 'Sawa, tutaendelea kwa Kiswahili.'
+        : "Okay, we'll continue in English.",
+    );
+  }
+
+  private withMessagePrefix(
+    response: OrchestratorResponse,
+    prefix: string,
+  ): OrchestratorResponse {
+    return {
+      ...response,
+      message: `${prefix}\n\n${response.message}`,
+    };
+  }
+
+  private async buildCurrentScreenResponse(data: {
+    userId: string;
+    sessionId: string;
+    session: {
+      currentState: ChatState;
+      currentCategoryCode?: string | null;
+      currentTopicCode?: string | null;
+      currentSubtopicCode?: string | null;
+      currentNodeKey?: string | null;
+      previousNodeKey?: string | null;
+    };
+    language: Language;
+  }): Promise<OrchestratorResponse> {
+    const profile = await this.profileService.findByUserId(data.userId);
+
+    if (
+      !profile?.completedOnboarding &&
+      (data.session.currentState === ChatState.WELCOME ||
+        data.session.currentState === ChatState.ASK_LANGUAGE)
+    ) {
+      if (!profile?.preferredLanguage) {
+        return this.handleOnboardingFlow({
+          userId: data.userId,
+          sessionId: data.sessionId,
+          currentState: data.session.currentState,
+          text: null,
+          interactiveValue: null,
+        });
+      }
+
+      await this.sessionService.updateStateAndLocation(data.sessionId, {
+        currentState: ChatState.ASK_AGE_BAND,
+      });
+
+      return {
+        message:
+          data.language === Language.SW
+            ? 'Tafadhali chagua kundi lako la umri.'
+            : 'Please choose your age group.',
+        options: this.getAgeBandOptions(data.language),
+        currentState: ChatState.ASK_AGE_BAND,
+      };
+    }
+
+    if (
+      !profile?.completedOnboarding &&
+      data.session.currentState === ChatState.ASK_AGE_BAND
+    ) {
+      return {
+        message:
+          data.language === Language.SW
+            ? 'Tafadhali chagua kundi lako la umri.'
+            : 'Please choose your age group.',
+        options: this.getAgeBandOptions(data.language),
+        currentState: ChatState.ASK_AGE_BAND,
+      };
+    }
+
+    if (
+      !profile?.completedOnboarding &&
+      data.session.currentState === ChatState.ASK_GENDER
+    ) {
+      return {
+        message:
+          data.language === Language.SW
+            ? 'Tafadhali chagua jinsia yako.'
+            : 'Please choose your gender.',
+        options: this.getGenderOptions(data.language),
+        currentState: ChatState.ASK_GENDER,
+      };
+    }
+
+    if (
+      data.session.currentState === ChatState.CATEGORY_INTRO &&
+      data.session.currentCategoryCode
+    ) {
+      const category = await this.contentService.findCategoryByCode(
+        data.session.currentCategoryCode,
+      );
+
+      if (category?.isActive) {
+        return this.buildCategoryIntroResponse({
+          sessionId: data.sessionId,
+          category,
+          language: data.language,
+        });
+      }
+    }
+
+    if (
+      data.session.currentState === ChatState.TOPIC_MENU &&
+      data.session.currentCategoryCode
+    ) {
+      return this.handleTopicMenu({
+        userId: data.userId,
+        sessionId: data.sessionId,
+        categoryCode: data.session.currentCategoryCode,
+        page: this.parseTopicPageMarker(data.session.previousNodeKey),
+      });
+    }
+
+    if (
+      data.session.currentState === ChatState.SUBTOPIC_MENU &&
+      data.session.currentCategoryCode &&
+      data.session.currentTopicCode
+    ) {
+      return this.handleSubtopicMenu({
+        userId: data.userId,
+        sessionId: data.sessionId,
+        categoryCode: data.session.currentCategoryCode,
+        topicCode: data.session.currentTopicCode,
+        page: this.parseSubtopicPageMarker(data.session.previousNodeKey),
+      });
+    }
+
+    if (
+      data.session.currentState === ChatState.CONTENT_NODE &&
+      data.session.currentNodeKey
+    ) {
+      return this.buildContentNodeResponse({
+        sessionId: data.sessionId,
+        currentCategoryCode: data.session.currentCategoryCode ?? null,
+        currentTopicCode: data.session.currentTopicCode ?? null,
+        currentSubtopicCode: data.session.currentSubtopicCode ?? null,
+        nodeKey: data.session.currentNodeKey,
+        language: data.language,
+        previousNodeKey: data.session.previousNodeKey ?? null,
+      });
+    }
+
+    return this.handleCategoryMenu(data.sessionId, data.userId);
   }
 
   private async handleBackAction(data: {
