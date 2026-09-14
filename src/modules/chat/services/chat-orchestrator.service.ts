@@ -1582,52 +1582,7 @@ export class ChatOrchestratorService {
     }
 
     if (selectedOptionValue === 'back') {
-      const profile = await this.profileService.findByUserId(data.userId);
-      const language = profile?.preferredLanguage ?? Language.EN;
-
-      if (!data.currentSubtopicCode || !data.currentTopicCode) {
-        return this.handleCategoryMenu(data.sessionId, data.userId);
-      }
-
-      const currentTopic = await this.contentService.findTopicByCode(
-        data.currentTopicCode,
-      );
-
-      if (!currentTopic) {
-        return this.handleCategoryMenu(data.sessionId, data.userId);
-      }
-
-      const visibleSubtopics =
-        await this.contentService.getVisibleSubtopicsByTopicId(
-          currentTopic.id,
-          {
-            ageBand: profile?.ageBand ?? null,
-            gender: profile?.gender ?? null,
-          },
-        );
-
-      await this.sessionService.updateStateAndLocation(data.sessionId, {
-        currentState: ChatState.SUBTOPIC_MENU,
-        currentCategoryCode: data.currentCategoryCode ?? null,
-        currentTopicCode: data.currentTopicCode ?? null,
-        currentSubtopicCode: null,
-        currentNodeKey: null,
-        previousNodeKey: null,
-      });
-
-      return {
-        message: await this.getSubtopicMenuMessage({
-          categoryCode: data.currentCategoryCode ?? '',
-          topicTitleEn: currentTopic.titleEn,
-          topicTitleSw: currentTopic.titleSw,
-          language,
-        }),
-        options: visibleSubtopics.map((subtopic) => ({
-          label: language === Language.SW ? subtopic.titleSw : subtopic.titleEn,
-          value: subtopic.code,
-        })),
-        currentState: ChatState.SUBTOPIC_MENU,
-      };
+      return this.handleContentBackNavigation(data);
     }
 
     const currentNode =
@@ -1652,11 +1607,43 @@ export class ChatOrchestratorService {
       };
     }
 
-    const nextNode = await this.contentService.resolveNextNodeByOption({
-      contentNodeId: currentNode.id,
-      optionValue: selectedOptionValue,
+    const currentOptions =
+      await this.contentService.getActiveOptionsByContentNodeId(currentNode.id);
+    const selectedOption = currentOptions.find(
+      (option) => option.optionValue === selectedOptionValue,
+    );
+
+    if (!selectedOption) {
+      return {
+        message:
+          language === Language.SW
+            ? 'Tafadhali chagua moja ya chaguo zilizopo hapa chini.'
+            : 'Please choose one of the available options below.',
+        options: currentOptions.map((option) => ({
+          label: language === Language.SW ? option.labelSw : option.labelEn,
+          value: option.optionValue,
+        })),
+        mediaAssetKey: currentNode.mediaAssetKey,
+        currentState: ChatState.CONTENT_NODE,
+      };
+    }
+
+    if (selectedOption.nextNodeKey === 'BACK_ACTION') {
+      return this.handleContentBackNavigation(data);
+    }
+
+    if (selectedOption.nextNodeKey === 'CATEGORY_MENU') {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
+    }
+
+    if (selectedOption.nextNodeKey === 'START_AGAIN') {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
+    }
+
+    const nextNode = await this.contentService.findContentNodeByKeyAndLanguage(
+      selectedOption.nextNodeKey,
       language,
-    });
+    );
 
     if (!nextNode) {
       return {
@@ -1664,11 +1651,7 @@ export class ChatOrchestratorService {
           language === Language.SW
             ? 'Tafadhali chagua moja ya chaguo zilizopo hapa chini.'
             : 'Please choose one of the available options below.',
-        options: (
-          await this.contentService.getActiveOptionsByContentNodeId(
-            currentNode.id,
-          )
-        ).map((option) => ({
+        options: currentOptions.map((option) => ({
           label: language === Language.SW ? option.labelSw : option.labelEn,
           value: option.optionValue,
         })),
@@ -1686,6 +1669,58 @@ export class ChatOrchestratorService {
       language,
       previousNodeKey: currentNode.nodeKey,
     });
+  }
+
+  private async handleContentBackNavigation(data: {
+    userId: string;
+    sessionId: string;
+    currentCategoryCode?: string | null;
+    currentTopicCode?: string | null;
+    currentSubtopicCode?: string | null;
+  }): Promise<OrchestratorResponse> {
+    const profile = await this.profileService.findByUserId(data.userId);
+    const language = profile?.preferredLanguage ?? Language.EN;
+
+    if (!data.currentSubtopicCode || !data.currentTopicCode) {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
+    }
+
+    const currentTopic = await this.contentService.findTopicByCode(
+      data.currentTopicCode,
+    );
+
+    if (!currentTopic) {
+      return this.handleCategoryMenu(data.sessionId, data.userId);
+    }
+
+    const visibleSubtopics =
+      await this.contentService.getVisibleSubtopicsByTopicId(currentTopic.id, {
+        ageBand: profile?.ageBand ?? null,
+        gender: profile?.gender ?? null,
+      });
+
+    await this.sessionService.updateStateAndLocation(data.sessionId, {
+      currentState: ChatState.SUBTOPIC_MENU,
+      currentCategoryCode: data.currentCategoryCode ?? null,
+      currentTopicCode: data.currentTopicCode ?? null,
+      currentSubtopicCode: null,
+      currentNodeKey: null,
+      previousNodeKey: null,
+    });
+
+    return {
+      message: await this.getSubtopicMenuMessage({
+        categoryCode: data.currentCategoryCode ?? '',
+        topicTitleEn: currentTopic.titleEn,
+        topicTitleSw: currentTopic.titleSw,
+        language,
+      }),
+      options: visibleSubtopics.map((subtopic) => ({
+        label: language === Language.SW ? subtopic.titleSw : subtopic.titleEn,
+        value: subtopic.code,
+      })),
+      currentState: ChatState.SUBTOPIC_MENU,
+    };
   }
 
   private formatReferralResources(data: {
